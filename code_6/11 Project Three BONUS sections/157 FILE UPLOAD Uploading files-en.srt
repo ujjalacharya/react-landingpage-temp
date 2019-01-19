@@ -1,0 +1,1252 @@
+1
+00:00:00,880 --> 00:00:06,320
+All right so net would be going to do on this bonus section we're going to be adding a file upload.
+
+2
+00:00:06,490 --> 00:00:12,640
+I'm logged in as an administrator so if I go to add products the only way we can add a file it's an
+
+3
+00:00:12,640 --> 00:00:14,740
+image and it's going to be declared denarii.
+
+4
+00:00:14,890 --> 00:00:20,050
+So on this section we're going to add a new route where we can send a different kind of file but we
+
+5
+00:00:20,050 --> 00:00:25,300
+will be storing this inside of the main directory right here on the upload directory.
+
+6
+00:00:25,300 --> 00:00:27,780
+We don't get it right now but it created.
+
+7
+00:00:28,090 --> 00:00:32,770
+So we're going to do that going to show you a different way of uploading files.
+
+8
+00:00:32,770 --> 00:00:33,230
+Right.
+
+9
+00:00:33,370 --> 00:00:36,910
+So to do this we need to install this middleware call.
+
+10
+00:00:36,970 --> 00:00:38,680
+It's going to be called Mulder.
+
+11
+00:00:38,710 --> 00:00:39,930
+So that's the name.
+
+12
+00:00:40,000 --> 00:00:43,370
+And with this middleware we can use it on our node server.
+
+13
+00:00:43,690 --> 00:00:47,280
+And of course to now load to a directory right here.
+
+14
+00:00:47,360 --> 00:00:48,060
+Very simple.
+
+15
+00:00:48,100 --> 00:00:49,810
+Of course you get all the documentation.
+
+16
+00:00:49,810 --> 00:00:51,090
+It's pretty simple to use.
+
+17
+00:00:51,130 --> 00:00:52,430
+I'm going to show you right now.
+
+18
+00:00:52,540 --> 00:00:55,450
+But first of course we need to install this.
+
+19
+00:00:55,540 --> 00:00:59,860
+So I'm going to go to the terminal to clear.
+
+20
+00:00:59,890 --> 00:01:05,590
+And I'm going to do yarn at mulcher and the Bertran.
+
+21
+00:01:05,590 --> 00:01:11,830
+It's I believe one of three that one going to press center and I'll be right back whenever this is done
+
+22
+00:01:12,460 --> 00:01:13,440
+everything is done.
+
+23
+00:01:13,450 --> 00:01:19,780
+So the first thing we need it's a route where we can you know upload a file so we can read the route
+
+24
+00:01:19,870 --> 00:01:23,370
+right now that's the first thing we need to do before we can even begin.
+
+25
+00:01:23,530 --> 00:01:26,000
+So I'm going to go to the server.
+
+26
+00:01:26,260 --> 00:01:28,110
+I'm going to go to the client.
+
+27
+00:01:28,210 --> 00:01:29,890
+I'm going to close off this.
+
+28
+00:01:29,910 --> 00:01:30,330
+All right.
+
+29
+00:01:30,370 --> 00:01:36,700
+So first I'm going to store this inside user because this is an admin action so I'm going to go to user
+
+30
+00:01:36,910 --> 00:01:39,420
+and store the file inside of mine.
+
+31
+00:01:39,460 --> 00:01:39,880
+Right.
+
+32
+00:01:39,920 --> 00:01:40,440
+OK.
+
+33
+00:01:40,900 --> 00:01:43,690
+So I'm going to call this at file.
+
+34
+00:01:44,070 --> 00:01:44,350
+Right.
+
+35
+00:01:44,350 --> 00:01:45,820
+Makes sense.
+
+36
+00:01:45,940 --> 00:01:47,610
+It's going to be called.
+
+37
+00:01:47,800 --> 00:01:52,860
+Underscore that file doesn't last.
+
+38
+00:01:52,930 --> 00:02:02,180
+Of course this one is going to be re-act class based component so Riak class based component.
+
+39
+00:02:02,180 --> 00:02:02,830
+All right.
+
+40
+00:02:05,020 --> 00:02:05,580
+All right.
+
+41
+00:02:05,650 --> 00:02:08,590
+So again a galat file.
+
+42
+00:02:09,190 --> 00:02:15,910
+So on this one again just like with it before we will we will use that re-act drop zone.
+
+43
+00:02:15,910 --> 00:02:19,660
+Remember we were used for it with the cloud Narey to store the image.
+
+44
+00:02:19,840 --> 00:02:24,640
+We will use the same thing for now is just going to create the component going to add the user out so
+
+45
+00:02:24,700 --> 00:02:34,360
+import that the user will lay out from dot dot for Slash one more time one more time and then for Slash
+
+46
+00:02:34,960 --> 00:02:36,890
+and I'm not getting the 0 to complete.
+
+47
+00:02:37,330 --> 00:02:43,440
+I don't know why that force last a chose C for Slash and then user.
+
+48
+00:02:43,450 --> 00:02:44,300
+All right.
+
+49
+00:02:44,370 --> 00:02:49,870
+I going to wrap everything inside the user layout and then say upload upload or something like that
+
+50
+00:02:49,930 --> 00:02:50,590
+whatever.
+
+51
+00:02:50,880 --> 00:02:51,360
+OK.
+
+52
+00:02:51,640 --> 00:02:55,300
+So now we have the component we need to add this to the routes.
+
+53
+00:02:55,450 --> 00:02:56,960
+So I'm going to go two routes.
+
+54
+00:02:57,070 --> 00:02:57,740
+Right.
+
+55
+00:02:57,760 --> 00:03:00,420
+So this one of course is an apin route.
+
+56
+00:03:00,460 --> 00:03:02,540
+So I'm going to put it right here.
+
+57
+00:03:02,650 --> 00:03:05,340
+So import import.
+
+58
+00:03:05,680 --> 00:03:19,520
+And then it's at file from DOT for Slash components for Slash user for Slash at man and then add file
+
+59
+00:03:20,580 --> 00:03:25,420
+and the route just like this one's going to copy and paste it at the bottom.
+
+60
+00:03:25,540 --> 00:03:34,090
+So the route for this it's going to be at file very simple on file and it comes with the component and
+
+61
+00:03:34,090 --> 00:03:35,870
+we are kind of good to go.
+
+62
+00:03:36,210 --> 00:03:36,510
+OK.
+
+63
+00:03:36,580 --> 00:03:42,680
+So of course if we reload the application we didn't have a way to ruin the restart server.
+
+64
+00:03:43,090 --> 00:03:47,600
+We didn't have a way to enter that route because we didn't have an option on the part.
+
+65
+00:03:47,620 --> 00:03:49,150
+So we need to add it.
+
+66
+00:03:49,270 --> 00:03:53,730
+We have this inside show c and the user right here we have the links.
+
+67
+00:03:53,770 --> 00:03:57,800
+So this one is going to be a user anatman route.
+
+68
+00:03:57,880 --> 00:04:04,120
+So I'm going to copy the first one the last one and then paste in at the bottom and we can call this
+
+69
+00:04:04,210 --> 00:04:11,740
+upload file and it's inside outman and the route is going to be at file.
+
+70
+00:04:11,800 --> 00:04:14,560
+All right let's see what happens.
+
+71
+00:04:14,560 --> 00:04:14,830
+All right.
+
+72
+00:04:14,830 --> 00:04:17,900
+So we get the route if I go to upload find a file.
+
+73
+00:04:17,950 --> 00:04:20,010
+We get this upload all right.
+
+74
+00:04:20,090 --> 00:04:21,560
+Good you know kind of weird.
+
+75
+00:04:21,940 --> 00:04:24,890
+So what we need to do.
+
+76
+00:04:24,990 --> 00:04:26,200
+I made a mistake right here.
+
+77
+00:04:26,410 --> 00:04:29,620
+It's upload backwards Breguet.
+
+78
+00:04:30,100 --> 00:04:35,920
+So now of course this file will use that drop zone and we're going to use a few things more.
+
+79
+00:04:36,010 --> 00:04:40,340
+So I'm going to go to the Eutelsat form and file upload.
+
+80
+00:04:40,340 --> 00:04:42,190
+Alot of things are going to be the same.
+
+81
+00:04:42,250 --> 00:04:45,550
+So I'm gonna copy and paste a few a couple of things.
+
+82
+00:04:45,550 --> 00:04:49,680
+So the file we will use the dropzone and we are going to use ASIO's.
+
+83
+00:04:49,690 --> 00:04:56,600
+So go to the file and load copy the dropzone and then copy the axes Begay use the link.
+
+84
+00:04:56,710 --> 00:05:09,080
+So I need to import link furrow on and then of course react and react then router and then Dom good
+
+85
+00:05:10,040 --> 00:05:12,330
+again we will use the same icons.
+
+86
+00:05:12,340 --> 00:05:13,780
+It's pretty much the same.
+
+87
+00:05:13,970 --> 00:05:18,200
+Of course we're going to make a lot of changes but you know they don't.
+
+88
+00:05:18,260 --> 00:05:19,550
+It's pretty much the same.
+
+89
+00:05:19,730 --> 00:05:21,960
+Now the constructor again we're going to need this.
+
+90
+00:05:21,980 --> 00:05:25,400
+So I'm going to copy and paste.
+
+91
+00:05:25,970 --> 00:05:32,840
+Now we could have created maybe a file app load more default because this way it's kind of a working
+
+92
+00:05:32,840 --> 00:05:35,080
+only for the images.
+
+93
+00:05:35,260 --> 00:05:38,720
+You know I was not going to add this I'm just adding this as a bonus.
+
+94
+00:05:38,840 --> 00:05:46,520
+So I cannot we use this component and I don't want to you know just break this or undo this because
+
+95
+00:05:46,600 --> 00:05:48,790
+we can already do this but that's OK.
+
+96
+00:05:48,950 --> 00:05:52,500
+We're going to create a new component just to add files with Mulder.
+
+97
+00:05:52,510 --> 00:05:56,180
+All right so can constructor we get the super and the state.
+
+98
+00:05:56,180 --> 00:05:59,030
+Now what I want to do I want to add a couple more things.
+
+99
+00:05:59,120 --> 00:06:03,450
+And for now I'm going to delete the upload files I'm going to just delete it.
+
+100
+00:06:03,590 --> 00:06:07,480
+I'm going to be adding form success.
+
+101
+00:06:07,840 --> 00:06:10,100
+And remember it's equal to false.
+
+102
+00:06:10,180 --> 00:06:11,840
+Then we have the form error.
+
+103
+00:06:11,890 --> 00:06:15,300
+Just like with the forms form error.
+
+104
+00:06:15,460 --> 00:06:17,950
+And again equal to false.
+
+105
+00:06:17,950 --> 00:06:23,040
+Then we get the uploading false and then we store the files right here.
+
+106
+00:06:23,050 --> 00:06:27,180
+So I'm going to save files and then akong Breguet.
+
+107
+00:06:27,590 --> 00:06:27,880
+OK.
+
+108
+00:06:27,910 --> 00:06:34,990
+If you remember we we use that on job function where we can catch the files and then do something.
+
+109
+00:06:35,140 --> 00:06:39,320
+So this on drop is going to take some files and then it's going to do something first.
+
+110
+00:06:39,330 --> 00:06:41,780
+We're going to build everything else.
+
+111
+00:06:42,670 --> 00:06:51,160
+So now if we go to final upload and scroll down right here on the actual you know layout we pretty much
+
+112
+00:06:51,160 --> 00:06:53,570
+need you know pretty much the same thing.
+
+113
+00:06:53,830 --> 00:06:57,390
+So I'm going to go back to that file going to go to the user.
+
+114
+00:06:57,400 --> 00:07:01,590
+Leo I'm going to say H-1 each one.
+
+115
+00:07:02,200 --> 00:07:08,840
+Well each one and I'm going to call this what do we call it upload file.
+
+116
+00:07:08,830 --> 00:07:11,570
+I mean upload file.
+
+117
+00:07:11,780 --> 00:07:13,730
+I don't know upload file.
+
+118
+00:07:14,350 --> 00:07:14,760
+All right.
+
+119
+00:07:14,890 --> 00:07:15,750
+That's good.
+
+120
+00:07:16,240 --> 00:07:20,300
+So I'm going to create a diff and inside of the division to put that dropsonde.
+
+121
+00:07:20,320 --> 00:07:27,730
+So this one we can just copy paste and then copy this one and I'm going to paste it inside everything
+
+122
+00:07:27,730 --> 00:07:28,410
+else.
+
+123
+00:07:28,480 --> 00:07:32,060
+You know this inside dropsonde THOMPSON It's pretty much the same.
+
+124
+00:07:32,170 --> 00:07:33,460
+Same thing.
+
+125
+00:07:33,460 --> 00:07:36,090
+Let me just clear this a little bit.
+
+126
+00:07:36,340 --> 00:07:36,530
+OK.
+
+127
+00:07:36,550 --> 00:07:38,870
+So we get the drop zone whenever we drop something.
+
+128
+00:07:38,890 --> 00:07:42,000
+We run the drop with the file multiple.
+
+129
+00:07:42,040 --> 00:07:42,740
+It's false.
+
+130
+00:07:42,760 --> 00:07:48,760
+And the class name still drop drop drop zone box and we get the you know the plus circle so everything
+
+131
+00:07:48,760 --> 00:07:50,290
+else is just OK.
+
+132
+00:07:50,680 --> 00:07:54,600
+Now if I go to upload we get this one we are not going to use this function.
+
+133
+00:07:54,610 --> 00:07:57,790
+We're going to do something else going to explain you why later.
+
+134
+00:07:57,990 --> 00:08:04,540
+And then I'm going to copy the disk that state that uploading are going to go right here and paste it.
+
+135
+00:08:04,610 --> 00:08:05,260
+All right.
+
+136
+00:08:05,650 --> 00:08:08,170
+Everything else is just pretty much the same.
+
+137
+00:08:08,170 --> 00:08:14,550
+Now the thing is that of course we need a button to actually not a button we need to form success and
+
+138
+00:08:14,550 --> 00:08:20,580
+a form you know error because on this one when we include it on the form we don't get the state you
+
+139
+00:08:20,580 --> 00:08:24,680
+know we get a directory from the form but the form in this case is going to be this one.
+
+140
+00:08:24,700 --> 00:08:26,670
+So we need to add a couple more things.
+
+141
+00:08:26,680 --> 00:08:27,400
+All right.
+
+142
+00:08:27,580 --> 00:08:33,700
+So I'm going to add a div and I can add style and clear both.
+
+143
+00:08:33,750 --> 00:08:36,550
+I know that this is boring but you know it can and need to do it.
+
+144
+00:08:36,940 --> 00:08:43,790
+So clear both and east out of here we will put all the messages after we do one now upload.
+
+145
+00:08:43,870 --> 00:08:46,180
+You know the forms access and the form errors.
+
+146
+00:08:46,180 --> 00:08:49,290
+So I'm going to open close this state.
+
+147
+00:08:49,330 --> 00:08:55,210
+You can catch that form success and of course if we get it we're going to do something.
+
+148
+00:08:55,240 --> 00:08:57,140
+If not we do know.
+
+149
+00:08:57,400 --> 00:08:58,230
+All right.
+
+150
+00:08:58,690 --> 00:09:07,070
+And inside of here are going to return a div with a class name of forms success nothing you so far form
+
+151
+00:09:07,090 --> 00:09:11,320
+success and saying success or something like that.
+
+152
+00:09:11,320 --> 00:09:16,750
+Then of course if you get a foreign power and then open and close and say this that state that form
+
+153
+00:09:16,810 --> 00:09:27,440
+are open and we say Divx me make it like this now a little bit better than we do know.
+
+154
+00:09:27,750 --> 00:09:36,730
+And of course the class name for this one it's error level or OK.
+
+155
+00:09:37,030 --> 00:09:44,830
+And this one could say please check your data or whatever you say that you know you want to use.
+
+156
+00:09:44,830 --> 00:09:47,400
+If not we could return just an empty string.
+
+157
+00:09:47,440 --> 00:09:48,760
+You can do that now.
+
+158
+00:09:48,790 --> 00:09:57,190
+Later after we create all the logic for uploading a file and everything else below this we can ill render
+
+159
+00:09:57,700 --> 00:10:00,780
+the whole list of files inside the upload directory.
+
+160
+00:10:00,970 --> 00:10:06,810
+So later right here we are going to be doing the uploads just like that.
+
+161
+00:10:06,820 --> 00:10:09,100
+All right let's see what we get.
+
+162
+00:10:09,280 --> 00:10:11,600
+We get the uploads and you know the upload file.
+
+163
+00:10:11,710 --> 00:10:14,610
+If I click it at least we get we are getting that window.
+
+164
+00:10:14,680 --> 00:10:16,320
+So everything is cool now.
+
+165
+00:10:16,710 --> 00:10:17,210
+OK.
+
+166
+00:10:17,470 --> 00:10:26,260
+So whenever we do a non-job if you remember we need to go to files in this case and say this that sets
+
+167
+00:10:26,260 --> 00:10:28,750
+date and we change the loading to true.
+
+168
+00:10:28,780 --> 00:10:31,230
+So uploading to true.
+
+169
+00:10:31,420 --> 00:10:33,100
+That's the first thing.
+
+170
+00:10:33,280 --> 00:10:37,790
+Then we pretty much do the same thing before some going to code go to file upload.
+
+171
+00:10:37,880 --> 00:10:39,970
+Not going to you know.
+
+172
+00:10:40,090 --> 00:10:44,190
+All of this again because I want to save some time.
+
+173
+00:10:44,280 --> 00:10:44,520
+Got it.
+
+174
+00:10:44,530 --> 00:10:48,140
+Copy this one from date config and form append.
+
+175
+00:10:48,400 --> 00:10:50,950
+And I'm going to paste it right here.
+
+176
+00:10:50,950 --> 00:10:51,470
+All right.
+
+177
+00:10:51,640 --> 00:10:51,850
+OK.
+
+178
+00:10:51,850 --> 00:10:53,710
+You know that's the first thing.
+
+179
+00:10:53,710 --> 00:10:59,170
+Now of course we need to create a request and we don't have a route for this going to create it.
+
+180
+00:10:59,170 --> 00:11:01,530
+Right now in a second.
+
+181
+00:11:01,990 --> 00:11:03,270
+OK so let's keep going.
+
+182
+00:11:03,280 --> 00:11:09,370
+We pretty much have everything we need whenever we drop something we want to upload the file and that's
+
+183
+00:11:09,370 --> 00:11:09,820
+it.
+
+184
+00:11:09,820 --> 00:11:13,820
+So we need to create the route that it's going to be listening for this files.
+
+185
+00:11:13,930 --> 00:11:16,330
+So right now we need to go to the server.
+
+186
+00:11:16,590 --> 00:11:23,370
+Can we go to the server then yes and OK I'm going to do it right here just at the beginning.
+
+187
+00:11:23,370 --> 00:11:26,920
+Now of course we need to use mulcher ride.
+
+188
+00:11:27,070 --> 00:11:37,440
+So I'm going to do Konst then mulcher equals require and then milter the usage of maltol it's real simple.
+
+189
+00:11:37,480 --> 00:11:40,410
+But first it's a little bit weird.
+
+190
+00:11:40,440 --> 00:11:40,940
+OK.
+
+191
+00:11:41,010 --> 00:11:46,340
+So with monitor you have many ways to do uploads right to handle uploads.
+
+192
+00:11:46,410 --> 00:11:50,200
+The most common one is going to be using the disk storage.
+
+193
+00:11:50,280 --> 00:11:58,070
+So I'm going to create a revival just a contest could be a lead calls storage going to call it storage
+
+194
+00:11:58,630 --> 00:11:59,320
+equals.
+
+195
+00:11:59,460 --> 00:12:04,980
+And then we use that multa we are importing the top and noticed that you can import mulcher before the
+
+196
+00:12:04,980 --> 00:12:05,630
+code.
+
+197
+00:12:05,910 --> 00:12:10,290
+Doesn't matter if you know we do it at the end of the file or at the top just like we are doing right
+
+198
+00:12:10,290 --> 00:12:12,860
+here right here doesn't matter.
+
+199
+00:12:13,330 --> 00:12:13,830
+OK.
+
+200
+00:12:14,220 --> 00:12:19,740
+So we get the matter and then we make use of a property called disk storage.
+
+201
+00:12:19,740 --> 00:12:25,980
+So inside of this this is storage we need to pass all the previous configuration and then on the actual
+
+202
+00:12:25,980 --> 00:12:31,620
+route master will grab all the logic and the files and everything else and it will use this configuration
+
+203
+00:12:31,620 --> 00:12:32,940
+we are going to do right here.
+
+204
+00:12:32,940 --> 00:12:39,990
+So we have many many options inside this torch disk search and the first one which is the most you know
+
+205
+00:12:39,990 --> 00:12:40,920
+the most important one.
+
+206
+00:12:40,920 --> 00:12:47,330
+This case is going to be the destination where are we going to be storing the files now for this one
+
+207
+00:12:47,340 --> 00:12:54,380
+you get a request because again the this is a middleware is going to be listening for that request response.
+
+208
+00:12:54,570 --> 00:12:59,310
+And then we get something that calls it that it's a callback stickleback function.
+
+209
+00:12:59,400 --> 00:13:05,110
+So whenever we process everything everything you know the request and response is going to do this.
+
+210
+00:13:05,310 --> 00:13:09,890
+What we need to do we need to return a callback so we grabbed that callback.
+
+211
+00:13:10,230 --> 00:13:13,850
+And what we do we need to pass some set of things.
+
+212
+00:13:13,890 --> 00:13:19,050
+The first one we are not going to really use it is going to be NULL if you want to read more can go
+
+213
+00:13:19,050 --> 00:13:20,750
+to the documentation and get it.
+
+214
+00:13:20,850 --> 00:13:23,510
+But for us right now is just no.
+
+215
+00:13:23,520 --> 00:13:23,950
+All right.
+
+216
+00:13:24,120 --> 00:13:31,460
+So I'm going to open and close the second argument and the destination and each property you know meets
+
+217
+00:13:31,460 --> 00:13:37,320
+some particular kind of information its Where are you going to be putting this are going to create an
+
+218
+00:13:37,360 --> 00:13:38,850
+upload directory.
+
+219
+00:13:38,850 --> 00:13:44,850
+We didn't have it but whenever we upload something is going to create the directory for us if it doesn't
+
+220
+00:13:44,860 --> 00:13:49,190
+access of course then going to coma and I can add a new one.
+
+221
+00:13:49,260 --> 00:13:51,120
+This one calls file me.
+
+222
+00:13:51,320 --> 00:13:56,840
+So the file name it's equal to you know the name of the file and we pretty much do the same thing.
+
+223
+00:13:56,850 --> 00:13:57,960
+Oh not a response.
+
+224
+00:13:57,960 --> 00:14:00,300
+The second argument is file.
+
+225
+00:14:00,300 --> 00:14:05,670
+So whenever we upload something mulcher middleware is going to grab this.
+
+226
+00:14:05,680 --> 00:14:11,250
+The request is going to give you a file which is a set of information about the files and something
+
+227
+00:14:11,250 --> 00:14:11,660
+like that.
+
+228
+00:14:11,670 --> 00:14:17,220
+You know we can access file and get information of what we are uploading and the same thing with filename
+
+229
+00:14:17,520 --> 00:14:18,690
+and we are going to need it.
+
+230
+00:14:18,690 --> 00:14:24,030
+For example we get the request the actual file we are uploading and the Colback.
+
+231
+00:14:24,330 --> 00:14:28,060
+So what I want to do I want to return a callback.
+
+232
+00:14:28,140 --> 00:14:29,690
+The first one is no.
+
+233
+00:14:29,910 --> 00:14:32,010
+And the second one is going to be the file name.
+
+234
+00:14:32,010 --> 00:14:34,900
+What am I going to use for filenames.
+
+235
+00:14:34,910 --> 00:14:35,580
+All right.
+
+236
+00:14:35,760 --> 00:14:37,510
+So I'm going to open and close.
+
+237
+00:14:37,620 --> 00:14:42,880
+So what I want to do I want to grab the original name of the file and add the date.
+
+238
+00:14:42,960 --> 00:14:45,050
+So I'm going to use template strings.
+
+239
+00:14:45,120 --> 00:14:46,400
+Real simple.
+
+240
+00:14:46,530 --> 00:14:50,440
+And first I'm going to put the date so I'm going to say date now.
+
+241
+00:14:50,790 --> 00:14:51,310
+Right.
+
+242
+00:14:51,420 --> 00:14:51,990
+OK.
+
+243
+00:14:52,380 --> 00:14:58,350
+And then when I want to do I want to do an underscore and attach the file original name like a tool
+
+244
+00:14:58,350 --> 00:15:00,310
+before you have access to the file.
+
+245
+00:15:00,450 --> 00:15:08,670
+So you can grab the file and say OK I want the or original name and the file will be uploaded to the
+
+246
+00:15:08,710 --> 00:15:14,250
+uploads with the date and the original name of this properties are under documentation.
+
+247
+00:15:14,280 --> 00:15:16,230
+You can check it out.
+
+248
+00:15:16,530 --> 00:15:17,040
+OK.
+
+249
+00:15:17,130 --> 00:15:19,970
+So let's you know kind of keep going on this.
+
+250
+00:15:19,980 --> 00:15:25,530
+So right now we have the mulcher instance the storage and what we will need to do.
+
+251
+00:15:25,620 --> 00:15:27,300
+It's an app load.
+
+252
+00:15:27,930 --> 00:15:29,360
+So upload.
+
+253
+00:15:29,880 --> 00:15:32,920
+So this instance equals to the monitor.
+
+254
+00:15:32,970 --> 00:15:36,660
+So I'm going to say mulcher opening close.
+
+255
+00:15:36,810 --> 00:15:42,970
+So whenever we upload something this all the uploads are going to go through this I'll upload.
+
+256
+00:15:43,070 --> 00:15:45,490
+So this upload can emerge.
+
+257
+00:15:45,600 --> 00:15:50,010
+They require motor and the disk storage into one instance.
+
+258
+00:15:50,010 --> 00:15:52,160
+So we say monitor and then we pass.
+
+259
+00:15:52,170 --> 00:15:52,640
+OK.
+
+260
+00:15:52,730 --> 00:16:00,770
+So for storage what I'm going to use for storage for storage I'm going to use storage now another way
+
+261
+00:16:00,770 --> 00:16:07,410
+to do it instead of passing this barbel right here we could copy all of this and put it right here.
+
+262
+00:16:07,490 --> 00:16:13,220
+Pretty much just same thing just creating a different Barville to host all this logic because you know
+
+263
+00:16:13,220 --> 00:16:14,480
+it's a little bit better.
+
+264
+00:16:14,870 --> 00:16:17,830
+And then we have a different option.
+
+265
+00:16:17,900 --> 00:16:18,650
+We can attach.
+
+266
+00:16:18,650 --> 00:16:26,770
+We can tell instruct Walter in what we want to do we want to upload a single file or multiple files.
+
+267
+00:16:26,870 --> 00:16:29,450
+So I'm going to say single file.
+
+268
+00:16:29,990 --> 00:16:32,520
+And now what is the name of this file.
+
+269
+00:16:32,540 --> 00:16:36,210
+Remember then when we upload things we are passing the name.
+
+270
+00:16:36,230 --> 00:16:40,060
+In this case in this case file could be images or whatever.
+
+271
+00:16:40,070 --> 00:16:43,970
+In this case it's just files so we're going to say file right.
+
+272
+00:16:44,330 --> 00:16:48,610
+If you want to do multiple You need to know go to the documentation and check it out.
+
+273
+00:16:48,740 --> 00:16:51,370
+It's pretty simple it just tell a select multiple.
+
+274
+00:16:51,590 --> 00:16:58,550
+But note remember that whenever you have multiple You have multiple Fink's inside of here you have file
+
+275
+00:16:58,750 --> 00:17:01,570
+maybe name last name and something like that.
+
+276
+00:17:01,670 --> 00:17:07,940
+So you will need to pass an array of all the names that this upload instance should be expecting.
+
+277
+00:17:07,940 --> 00:17:08,500
+All right.
+
+278
+00:17:08,660 --> 00:17:09,830
+All right.
+
+279
+00:17:09,840 --> 00:17:13,160
+Now this is really simple.
+
+280
+00:17:13,160 --> 00:17:17,770
+So first I'm going to create the route I'm going to create in an AP.
+
+281
+00:17:17,770 --> 00:17:26,110
+I then forced slash then users then upload file upload file.
+
+282
+00:17:26,150 --> 00:17:30,510
+Right now only our users and admin users can do this.
+
+283
+00:17:30,530 --> 00:17:35,310
+So then I'm going to do coma and you know the request and the response
+
+284
+00:17:37,910 --> 00:17:40,820
+if you're not getting this don't work you're going to get it right now.
+
+285
+00:17:41,450 --> 00:17:49,450
+So no I'm going to grab this upload instance to say upload and then open and close this upload needs
+
+286
+00:17:49,460 --> 00:17:53,930
+the request the response and a function.
+
+287
+00:17:53,990 --> 00:17:56,090
+And we could do it just like this.
+
+288
+00:17:56,090 --> 00:17:57,100
+All right.
+
+289
+00:17:57,170 --> 00:18:00,430
+Now this function just contains an error.
+
+290
+00:18:00,770 --> 00:18:06,520
+Now of course what we're doing we are making a reference to this upload upload.
+
+291
+00:18:06,830 --> 00:18:14,000
+We'll take all the information from the actual route request and response is going to go to this storage.
+
+292
+00:18:14,060 --> 00:18:16,470
+Read the request and the files and everything else.
+
+293
+00:18:16,580 --> 00:18:21,230
+It will process with the options you know with settings we pass right here and then it's going to of
+
+294
+00:18:21,230 --> 00:18:25,840
+course do the bloat and come back to this whenever we come back.
+
+295
+00:18:25,890 --> 00:18:27,450
+It come back comes back.
+
+296
+00:18:27,740 --> 00:18:29,870
+It will run the callback function.
+
+297
+00:18:29,990 --> 00:18:32,630
+If there was an error is going to tell us.
+
+298
+00:18:32,720 --> 00:18:37,430
+And of course if everything went OK we're just going to return a response to the client.
+
+299
+00:18:37,440 --> 00:18:38,420
+Real simple.
+
+300
+00:18:38,420 --> 00:18:47,350
+So if open and close are you going to say if we get an error I'm going to return a response with a Saun
+
+301
+00:18:47,450 --> 00:18:51,210
+of don't no success falls.
+
+302
+00:18:51,230 --> 00:18:53,780
+And then I'm going to be attaching the error.
+
+303
+00:18:54,200 --> 00:18:56,750
+And of course if everything goes OK we go.
+
+304
+00:18:56,750 --> 00:18:59,000
+Return responds.
+
+305
+00:18:59,260 --> 00:19:03,280
+Jason and this case begin to say chest success truce.
+
+306
+00:19:03,290 --> 00:19:10,690
+I'm going to copy and paste right true.
+
+307
+00:19:10,880 --> 00:19:13,430
+So again we are just making use of this applet.
+
+308
+00:19:13,520 --> 00:19:20,520
+We are uploading with the with it you know the settings and then we just get our callback right.
+
+309
+00:19:20,750 --> 00:19:23,220
+So we can you know kind of try this.
+
+310
+00:19:23,240 --> 00:19:30,110
+Of course we need to go back to the client and you know make a of this maybe the this went too long
+
+311
+00:19:30,160 --> 00:19:31,250
+went too long already.
+
+312
+00:19:31,250 --> 00:19:33,100
+So on the next one we're going to go to the next one.
+
+313
+00:19:33,110 --> 00:19:35,840
+And you know make the actual request with ASIO's.
+

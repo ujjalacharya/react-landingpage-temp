@@ -1,0 +1,740 @@
+1
+00:00:00,900 --> 00:00:04,150
+All right so let's create the media players section.
+
+2
+00:00:04,320 --> 00:00:09,780
+So I'm going to go right here to our project and this of course is going to be one more component inside
+
+3
+00:00:09,780 --> 00:00:10,390
+home.
+
+4
+00:00:10,470 --> 00:00:17,640
+So it kind of makes sense for me for going to go home and create a new folder and a directory called
+
+5
+00:00:17,760 --> 00:00:20,890
+I don't know meet the players or meet players.
+
+6
+00:00:20,940 --> 00:00:22,530
+That makes sense right.
+
+7
+00:00:22,620 --> 00:00:28,560
+So many players will have two different components which is the index and then we have two different
+
+8
+00:00:28,560 --> 00:00:33,750
+sections which is going over you know the main layout in the right and the main layout with the animation
+
+9
+00:00:33,780 --> 00:00:34,910
+in the left.
+
+10
+00:00:35,130 --> 00:00:43,280
+So inside the player's index the genius and the other one will be called cartes.
+
+11
+00:00:43,320 --> 00:00:50,760
+Now the cards we can have a meet to make a reusable component because the original figure and the final
+
+12
+00:00:50,760 --> 00:00:56,810
+one if I go to the team we get the you know the same cards we get from from from home.
+
+13
+00:00:57,000 --> 00:00:58,140
+So we get to make sense again.
+
+14
+00:00:58,170 --> 00:01:02,180
+For us to create a reusable component so we didn't have to repeat a lot of code.
+
+15
+00:01:02,190 --> 00:01:02,810
+All right.
+
+16
+00:01:03,270 --> 00:01:07,910
+So from cartes for now I'm not going to do anything inside of the players.
+
+17
+00:01:08,010 --> 00:01:10,770
+I need a re-act class based components.
+
+18
+00:01:10,770 --> 00:01:16,620
+You're going to see why I'm using a class based component and this one is going to be called Meet the
+
+19
+00:01:16,650 --> 00:01:17,730
+or meet players.
+
+20
+00:01:17,730 --> 00:01:22,880
+Just to sum it up mid players and then meet players forget.
+
+21
+00:01:23,230 --> 00:01:29,010
+So if you notice in the background we have kind of a tiny PNB is a sprite.
+
+22
+00:01:29,130 --> 00:01:31,850
+So we're going to repeat it and create this background.
+
+23
+00:01:31,950 --> 00:01:39,960
+And this of course is in resources and images right here resources images and I believe it was called
+
+24
+00:01:39,960 --> 00:01:40,660
+stripes.
+
+25
+00:01:40,680 --> 00:01:41,240
+There we go.
+
+26
+00:01:41,280 --> 00:01:42,560
+We have you know this.
+
+27
+00:01:42,750 --> 00:01:45,650
+So we're going to bring it so we can attach it to the background.
+
+28
+00:01:45,810 --> 00:01:55,580
+I'm going to go and say import the stripes stripes from that that for Slashdot for Slash one more time.
+
+29
+00:01:55,680 --> 00:02:01,820
+And then of course resources for Slash images for Slash and store right.
+
+30
+00:02:01,900 --> 00:02:02,850
+Yes.
+
+31
+00:02:03,000 --> 00:02:04,520
+There we go.
+
+32
+00:02:04,560 --> 00:02:08,760
+What else are we going to use tax right here the in the right.
+
+33
+00:02:08,760 --> 00:02:13,050
+We use the tax we've been using before that reusable component.
+
+34
+00:02:13,050 --> 00:02:21,570
+So we need to import it as well because we're going to be using it import Takk from DOD for Slashdot
+
+35
+00:02:21,570 --> 00:02:23,630
+that forward slash you I.
+
+36
+00:02:23,790 --> 00:02:26,510
+And then from the misc file.
+
+37
+00:02:26,620 --> 00:02:26,880
+Right.
+
+38
+00:02:26,880 --> 00:02:28,430
+Miscellaneous.
+
+39
+00:02:28,500 --> 00:02:29,460
+Now we will have a state.
+
+40
+00:02:29,460 --> 00:02:30,890
+For now I'm going to leave it empty.
+
+41
+00:02:30,900 --> 00:02:36,210
+Going to say state and then we're going to talk why we are using a stake right here.
+
+42
+00:02:36,210 --> 00:02:42,990
+Now on the return we're going to be returning for now just a class a container of course with the class
+
+43
+00:02:42,990 --> 00:02:47,430
+name of home meet players something like this.
+
+44
+00:02:47,430 --> 00:02:48,050
+All right.
+
+45
+00:02:48,300 --> 00:02:52,980
+Now this container has the background with the stripes.
+
+46
+00:02:52,980 --> 00:02:58,960
+So I need to pass the style and the background with the you know the image so background.
+
+47
+00:02:59,190 --> 00:03:01,880
+And then we use Collen template strings.
+
+48
+00:03:01,980 --> 00:03:07,530
+And I'm going to say that the background is going to be white by default and we're going to be using
+
+49
+00:03:07,530 --> 00:03:09,110
+that pride as well.
+
+50
+00:03:09,210 --> 00:03:12,400
+And I'm going to open and close and use that.
+
+51
+00:03:12,750 --> 00:03:19,860
+Tripes I believe I called the strypes stripes and of course by default it's repeat.
+
+52
+00:03:19,890 --> 00:03:22,830
+So we can generate dat and repeat the background.
+
+53
+00:03:22,890 --> 00:03:28,900
+If I put something inside of here me go back put something inside of here and save it.
+
+54
+00:03:29,160 --> 00:03:33,930
+Of course we're going to get something but first we need to go to the index of home and require and
+
+55
+00:03:33,930 --> 00:03:35,740
+import this meet players.
+
+56
+00:03:35,910 --> 00:03:48,780
+So we're going to go here in Port meet for years players from that forward slash meet players and since
+
+57
+00:03:48,780 --> 00:03:52,530
+we have an index there is no need to put in X than meet the players.
+
+58
+00:03:52,530 --> 00:03:54,230
+No standard stuff right here.
+
+59
+00:03:54,330 --> 00:03:56,060
+Nothing new.
+
+60
+00:03:56,460 --> 00:04:00,750
+And of course we get you know that line of code with the background Burguet.
+
+61
+00:04:01,020 --> 00:04:01,620
+OK.
+
+62
+00:04:01,950 --> 00:04:03,300
+So let's go back to meet the players.
+
+63
+00:04:03,300 --> 00:04:06,390
+I'm going to remove blocks because are not going to use it.
+
+64
+00:04:06,420 --> 00:04:12,750
+The source firebase you know a lot of components we don't really need right now mask goodbye and matches
+
+65
+00:04:12,750 --> 00:04:13,200
+goodbye.
+
+66
+00:04:13,230 --> 00:04:16,990
+I'm just going to leave to meet the players which is the index and then cartes.
+
+67
+00:04:17,020 --> 00:04:17,640
+All right.
+
+68
+00:04:18,030 --> 00:04:25,170
+So here we need to do a lot more going to do lead and create a dev with a class of container because
+
+69
+00:04:25,170 --> 00:04:27,030
+we need to center everything.
+
+70
+00:04:27,030 --> 00:04:33,330
+So it's container and inside of here are going to add one more wrapper.
+
+71
+00:04:33,540 --> 00:04:38,160
+So Dev because his obsession flexed flex and he's flex right here.
+
+72
+00:04:38,340 --> 00:04:45,360
+So class name opening close and this one this class KOLs home meet players we just know pretty much
+
+73
+00:04:45,360 --> 00:04:46,220
+the same thing in this.
+
+74
+00:04:46,230 --> 00:04:49,790
+I'm going to copy and paste and then wrapper.
+
+75
+00:04:50,310 --> 00:04:53,690
+So instead of here whenever the app loads.
+
+76
+00:04:53,940 --> 00:04:55,210
+Of course now we get nothing.
+
+77
+00:04:55,320 --> 00:04:59,220
+But now we're going to get something like this you know a default to sites in the left.
+
+78
+00:04:59,220 --> 00:05:01,390
+We'll have the animation in the right.
+
+79
+00:05:01,390 --> 00:05:03,950
+We'll have the you know the text.
+
+80
+00:05:03,990 --> 00:05:10,490
+So I'm going to create a container for the left and a container for the can you know the right so diff
+
+81
+00:05:10,740 --> 00:05:19,380
+opening close the class name of this one is going to be home card and then wrapper and right here we
+
+82
+00:05:19,380 --> 00:05:23,280
+can have the card that begin to be creating in a few minutes.
+
+83
+00:05:23,490 --> 00:05:25,630
+And then this one which is the right side.
+
+84
+00:05:25,770 --> 00:05:31,750
+Class name opening close home text and then wrapper.
+
+85
+00:05:31,770 --> 00:05:32,270
+All right.
+
+86
+00:05:32,360 --> 00:05:40,810
+And right here we're going to get the text real simple and if we reloaded we have cart and we have text
+
+87
+00:05:41,210 --> 00:05:41,890
+that is good.
+
+88
+00:05:42,280 --> 00:05:48,200
+Now inside of the home text wrapper we need to add the text the same component we have right here.
+
+89
+00:05:48,280 --> 00:05:50,360
+But of course with different properties.
+
+90
+00:05:50,500 --> 00:05:56,820
+So I'm going to add the first tack when I say dev opening close and I'm going to add a tack right here.
+
+91
+00:05:57,200 --> 00:06:00,730
+The meat to it right.
+
+92
+00:06:01,030 --> 00:06:01,890
+There we go.
+
+93
+00:06:02,320 --> 00:06:05,860
+So instead of here we need to keep the put the wart meat.
+
+94
+00:06:05,860 --> 00:06:07,350
+This is the first tack.
+
+95
+00:06:07,690 --> 00:06:10,170
+So meat right.
+
+96
+00:06:10,360 --> 00:06:14,410
+Of course we need to be packed we need to pass some properties in order for this work.
+
+97
+00:06:14,440 --> 00:06:19,540
+If you remember is the background I'm going to close this so that we can see everything the background
+
+98
+00:06:19,690 --> 00:06:22,840
+and the background has does that blue color.
+
+99
+00:06:22,850 --> 00:06:29,200
+It's 0 1 7 7 3 1 0 1.
+
+100
+00:06:29,200 --> 00:06:30,250
+There we go.
+
+101
+00:06:30,400 --> 00:06:34,560
+Then the size I'm going to say its size and it's the font size.
+
+102
+00:06:34,570 --> 00:06:41,880
+So 100 pixels then we say color and we find the color of the you know of the text.
+
+103
+00:06:41,890 --> 00:06:50,150
+So once you have three one two three it's white and that one should be getting something at least.
+
+104
+00:06:50,350 --> 00:06:57,520
+Now we need to add additional CSX information so I'm going to use that and again you know concatenate
+
+105
+00:06:57,520 --> 00:06:59,350
+the styles with the props.
+
+106
+00:06:59,500 --> 00:07:01,870
+If you remember this weekend it did this before.
+
+107
+00:07:01,870 --> 00:07:03,600
+So the display for this one.
+
+108
+00:07:03,760 --> 00:07:08,620
+This play will be in line and then block.
+
+109
+00:07:09,100 --> 00:07:13,190
+And I'm going to add a margin bottom of tiny pixels.
+
+110
+00:07:13,290 --> 00:07:17,540
+We need to do pretty much this on all the tacks right here.
+
+111
+00:07:18,160 --> 00:07:22,190
+All right so get we get meat.
+
+112
+00:07:22,310 --> 00:07:27,060
+Now the next one will be pretty much the same same idea than this.
+
+113
+00:07:27,170 --> 00:07:29,700
+So I'm going to copy this.
+
+114
+00:07:29,690 --> 00:07:31,480
+I'm not going to copy this.
+
+115
+00:07:31,690 --> 00:07:40,020
+I'm going to go at the bottom and say Meet D and save it and we got the.
+
+116
+00:07:40,220 --> 00:07:47,460
+Then the players and players Oh sorry for that.
+
+117
+00:07:47,520 --> 00:07:50,710
+Meet the players.
+
+118
+00:07:52,470 --> 00:07:53,530
+And we get beat the players.
+
+119
+00:07:53,530 --> 00:07:54,200
+That's good.
+
+120
+00:07:54,310 --> 00:07:56,960
+Now again this is a lot of space.
+
+121
+00:07:57,040 --> 00:08:03,780
+So I'm going to go back I did this just to you know show you this.
+
+122
+00:08:03,800 --> 00:08:11,170
+But you know I see it in a lot of space just for you know two or three things so I don't really like
+
+123
+00:08:11,170 --> 00:08:13,770
+it just get to do this.
+
+124
+00:08:13,870 --> 00:08:14,500
+Sorry for this.
+
+125
+00:08:14,500 --> 00:08:18,000
+I'm going to take one minute or less.
+
+126
+00:08:18,130 --> 00:08:22,600
+Almost done and then the ad and then we go a little bit better.
+
+127
+00:08:22,690 --> 00:08:26,760
+You know and this one could go right here as well.
+
+128
+00:08:26,830 --> 00:08:28,890
+So this one was done and was done.
+
+129
+00:08:28,920 --> 00:08:33,360
+I'm sorry if this I don't regret it anyways.
+
+130
+00:08:33,630 --> 00:08:34,030
+All right.
+
+131
+00:08:34,080 --> 00:08:35,130
+Almost done.
+
+132
+00:08:35,630 --> 00:08:36,340
+There we go.
+
+133
+00:08:36,550 --> 00:08:37,030
+So OK.
+
+134
+00:08:37,050 --> 00:08:40,600
+So now after me the players we have.
+
+135
+00:08:40,640 --> 00:08:44,590
+But in so an action so we can click here and we go to the team.
+
+136
+00:08:44,760 --> 00:08:45,550
+Right.
+
+137
+00:08:45,600 --> 00:08:47,300
+So we need to bring a button.
+
+138
+00:08:47,310 --> 00:08:51,430
+Same thing that's attacked but the tag is going to be a link Tac.
+
+139
+00:08:51,480 --> 00:08:56,580
+So at the bottom we're going to say Open of course and again we use takk.
+
+140
+00:08:56,790 --> 00:08:59,550
+Now the TAC will pretty much contain the same thing in there.
+
+141
+00:08:59,570 --> 00:09:01,740
+But we're going to change some values.
+
+142
+00:09:01,860 --> 00:09:06,660
+So I'm going to say attack and the background instead of blue is going to be white.
+
+143
+00:09:06,660 --> 00:09:08,880
+So one two three one two three.
+
+144
+00:09:09,000 --> 00:09:09,680
+Right.
+
+145
+00:09:09,750 --> 00:09:10,610
+The size.
+
+146
+00:09:10,680 --> 00:09:14,850
+It's not 100 pixels much smaller 27 pixels.
+
+147
+00:09:15,030 --> 00:09:20,590
+The caller will have that blue color so I'm going to copy this one from the top and paste it.
+
+148
+00:09:20,610 --> 00:09:23,690
+Now of course we need to add all the other properties.
+
+149
+00:09:23,730 --> 00:09:26,820
+And on this one I'm going to put it like light like this.
+
+150
+00:09:26,870 --> 00:09:33,450
+So link if you remember to make it linkable we need to pass a boolean true and then we need to pass
+
+151
+00:09:33,460 --> 00:09:35,930
+that link to property.
+
+152
+00:09:35,940 --> 00:09:37,500
+I believe it was linked to.
+
+153
+00:09:37,590 --> 00:09:39,080
+I always forget this.
+
+154
+00:09:39,180 --> 00:09:40,710
+I'm going to go to you.
+
+155
+00:09:41,270 --> 00:09:46,760
+I was Minsk and it's the link to property.
+
+156
+00:09:46,820 --> 00:09:47,620
+There you go.
+
+157
+00:09:48,090 --> 00:09:48,920
+So linked to.
+
+158
+00:09:49,140 --> 00:09:52,410
+And we're going to go to the route the team.
+
+159
+00:09:52,410 --> 00:09:55,170
+So Forth slash the team.
+
+160
+00:09:55,170 --> 00:09:56,330
+All right.
+
+161
+00:09:56,630 --> 00:10:01,860
+I'm going to add that we're going to add more things just like we did with apps going to copy this one
+
+162
+00:10:02,510 --> 00:10:06,690
+go over here at the bottom and at it we are still using the inline block.
+
+163
+00:10:06,870 --> 00:10:11,870
+I'm going to add more margin Bunim and I'm going to add or I can add a border.
+
+164
+00:10:11,910 --> 00:10:14,240
+You take a look we have a blue border.
+
+165
+00:10:14,640 --> 00:10:18,230
+So are going to go with the bottom and say border.
+
+166
+00:10:18,250 --> 00:10:20,600
+And we're almost done one pixels.
+
+167
+00:10:20,730 --> 00:10:25,090
+I want pixel solid and we can use this bluish color.
+
+168
+00:10:25,110 --> 00:10:32,830
+So dark and blue and the text for this one it's me at them here.
+
+169
+00:10:32,880 --> 00:10:34,380
+Whatever doesn't matter.
+
+170
+00:10:36,290 --> 00:10:36,770
+All right.
+
+171
+00:10:36,770 --> 00:10:37,320
+So we get it.
+
+172
+00:10:37,340 --> 00:10:39,940
+And if I click this I open a new tab.
+
+173
+00:10:39,950 --> 00:10:43,410
+I did it on purpose so he get the team very good.
+
+174
+00:10:43,730 --> 00:10:50,030
+So now the only thing left is going to be the carts and this one will be you know really really simple
+
+175
+00:10:50,030 --> 00:10:51,470
+not not at the heart.
+
+176
+00:10:51,470 --> 00:10:54,520
+There is a catch anyways and I'm going to tell you right now.
+
+177
+00:10:54,530 --> 00:11:01,430
+So you can be excited on the front for the next session so we can create an animation right here we'll
+
+178
+00:11:01,520 --> 00:11:05,420
+include that karst with the animation everything else.
+
+179
+00:11:05,420 --> 00:11:11,800
+Now the thing is that if the web page loads right here that animation happens in the bottom.
+
+180
+00:11:11,930 --> 00:11:17,870
+So whenever we reach here the animation will be done then we have done animation.
+
+181
+00:11:17,870 --> 00:11:19,790
+So we are now going to see animation.
+
+182
+00:11:19,790 --> 00:11:26,000
+So we're going to chain they react move to create the animations and we are going to use re-act reveal
+
+183
+00:11:26,240 --> 00:11:33,560
+as a callback to you know for years whenever we reach here Riak revealed will tell us to run to try
+
+184
+00:11:33,560 --> 00:11:37,670
+and function or run the animation and react move will do the animation.
+
+185
+00:11:37,670 --> 00:11:41,960
+So let's go to the next section and do the do the animation right here.
+

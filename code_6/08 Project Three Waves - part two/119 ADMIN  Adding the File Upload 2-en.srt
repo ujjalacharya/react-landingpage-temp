@@ -1,0 +1,1380 @@
+1
+00:00:01,170 --> 00:00:01,770
+All right.
+
+2
+00:00:01,770 --> 00:00:03,270
+So let's do the server.
+
+3
+00:00:03,380 --> 00:00:08,430
+So I going to go to the server digests and before we can start creating the route we need to use some
+
+4
+00:00:08,440 --> 00:00:09,990
+more things right here.
+
+5
+00:00:10,180 --> 00:00:13,170
+And we've already installed them inside of the package.
+
+6
+00:00:13,210 --> 00:00:22,330
+Jason so we can use this express formidable and the cloud in every connector are going to go to the
+
+7
+00:00:22,330 --> 00:00:24,150
+server and start requiring.
+
+8
+00:00:24,150 --> 00:00:30,400
+And of course I'm going to explain you why we bringing that we are bringing this so Konst formidable
+
+9
+00:00:30,910 --> 00:00:40,190
+equals require require opening close and it's called Xpress formidable.
+
+10
+00:00:40,240 --> 00:00:46,810
+So just like we're doing right here whenever we get a request with Jason we use the body parser whenever
+
+11
+00:00:46,810 --> 00:00:47,970
+we want cookies.
+
+12
+00:00:47,980 --> 00:00:50,120
+We are using this middleware cookie parser.
+
+13
+00:00:50,290 --> 00:00:51,130
+We're formidable.
+
+14
+00:00:51,130 --> 00:00:52,720
+It's pretty much the same thing.
+
+15
+00:00:52,840 --> 00:00:58,840
+Whenever we get a request that has files inside we use formidable to help us get the files.
+
+16
+00:00:58,960 --> 00:00:59,820
+That is it.
+
+17
+00:01:00,160 --> 00:01:02,540
+So then of course we need to set up coding houri.
+
+18
+00:01:02,710 --> 00:01:10,540
+So chlo the Nyree are equals to require open and close.
+
+19
+00:01:10,570 --> 00:01:13,160
+And we said cloud Narey right.
+
+20
+00:01:13,330 --> 00:01:15,090
+Get it right here.
+
+21
+00:01:15,640 --> 00:01:18,700
+Now importing the cloud in every file.
+
+22
+00:01:18,700 --> 00:01:20,470
+It's not enough.
+
+23
+00:01:20,470 --> 00:01:26,220
+We need to configure the cloud in every instance with the API keys we get right here.
+
+24
+00:01:26,410 --> 00:01:31,330
+So what I'm going to do when we go wrong here at the bottom I'm going to make a reference to that cloud
+
+25
+00:01:31,330 --> 00:01:35,270
+in every instance and say config we're going to use that method.
+
+26
+00:01:35,530 --> 00:01:37,750
+It's actually a method from them.
+
+27
+00:01:37,750 --> 00:01:44,060
+So whenever we do config we need to pass three different things we need to pass a cloud name.
+
+28
+00:01:44,140 --> 00:01:54,270
+We need to give going to set it empty for now coma we need an API key API key to nothing.
+
+29
+00:01:54,460 --> 00:01:59,100
+And then we need an API secret just like this.
+
+30
+00:01:59,110 --> 00:01:59,660
+All right.
+
+31
+00:02:00,070 --> 00:02:00,910
+So now this.
+
+32
+00:02:01,070 --> 00:02:03,800
+The keys and the secret and the club name.
+
+33
+00:02:03,940 --> 00:02:09,920
+They will be stored on the node environments are the environment virals ride.
+
+34
+00:02:10,060 --> 00:02:14,430
+So if they are inside of the environment bbls we need to set it on the EMV.
+
+35
+00:02:14,440 --> 00:02:18,430
+And whenever we go to production we need to set the Virals right there.
+
+36
+00:02:18,430 --> 00:02:18,670
+Right.
+
+37
+00:02:18,670 --> 00:02:20,780
+That's why we are using the dot M-B.
+
+38
+00:02:20,980 --> 00:02:26,490
+So of course you can go to cloud named API you can and you can just copy them.
+
+39
+00:02:26,590 --> 00:02:31,250
+I'm going to have them right here so I'm going to paste right here.
+
+40
+00:02:31,420 --> 00:02:37,960
+So cloud we are going to create a cloud name cloud API key and cloud API secret just paste them tried
+
+41
+00:02:37,960 --> 00:02:42,220
+to create your own account don't use mine if you can of course.
+
+42
+00:02:42,260 --> 00:02:48,400
+And now since we have everything inside the data EMV we can use it right here because we are requiring
+
+43
+00:02:48,400 --> 00:02:50,190
+that thought be all right.
+
+44
+00:02:50,200 --> 00:02:51,020
+That is good.
+
+45
+00:02:51,370 --> 00:02:52,970
+So I'm going to go here.
+
+46
+00:02:53,200 --> 00:03:00,760
+And again the same process that TMB and the key word for the cloud name is going to be cloud name.
+
+47
+00:03:00,780 --> 00:03:04,350
+I'm doing a copy paste so I can avoid mistakes.
+
+48
+00:03:04,780 --> 00:03:07,380
+So I've got the second one is the API key.
+
+49
+00:03:07,510 --> 00:03:12,720
+So I'm going to say process that EMV and the name is going to be cloud API key.
+
+50
+00:03:12,760 --> 00:03:14,410
+You can call this whatever you want.
+
+51
+00:03:14,410 --> 00:03:25,810
+It's completely up to you then process that M-B and it's the cloud API secret or Burguet.
+
+52
+00:03:25,840 --> 00:03:28,340
+So we are done with this.
+
+53
+00:03:28,720 --> 00:03:30,620
+So I'm going to answer right here.
+
+54
+00:03:30,760 --> 00:03:32,860
+You know it's Mark it's so me.
+
+55
+00:03:33,070 --> 00:03:34,100
+You're wrong.
+
+56
+00:03:34,210 --> 00:03:35,130
+Why am I wrong.
+
+57
+00:03:35,130 --> 00:03:35,980
+Am I wrong.
+
+58
+00:03:35,980 --> 00:03:36,740
+There we go.
+
+59
+00:03:37,060 --> 00:03:41,710
+So now we have all the information we need to perform.
+
+60
+00:03:41,890 --> 00:03:43,160
+Of course the uploader.
+
+61
+00:03:43,240 --> 00:03:44,360
+Now we need route.
+
+62
+00:03:44,440 --> 00:03:48,270
+Now if you remember we are using a user api for this.
+
+63
+00:03:48,270 --> 00:03:49,120
+The user around.
+
+64
+00:03:49,300 --> 00:03:54,990
+So we're going to do a post with API for Slash users just like we get it right here.
+
+65
+00:03:55,000 --> 00:03:59,350
+API users so I'm going to go and do it at the bottom of users.
+
+66
+00:03:59,350 --> 00:04:00,780
+Why not.
+
+67
+00:04:01,360 --> 00:04:02,240
+Why not.
+
+68
+00:04:02,800 --> 00:04:10,960
+So it's app that post of course opening close and we pass the API that users and the ride we are using
+
+69
+00:04:10,960 --> 00:04:16,180
+which is upload image right upload image.
+
+70
+00:04:16,190 --> 00:04:17,030
+All right.
+
+71
+00:04:17,100 --> 00:04:22,020
+Now of course we need to do more things right here because whenever we get a post it means that we are
+
+72
+00:04:22,020 --> 00:04:24,660
+adding data to some place.
+
+73
+00:04:24,660 --> 00:04:27,630
+So for this one we need the AUF.
+
+74
+00:04:27,690 --> 00:04:29,840
+And of course we need the admin.
+
+75
+00:04:30,000 --> 00:04:35,880
+Now since we are getting data from the files and we are using formidable we're going to use formidable
+
+76
+00:04:35,910 --> 00:04:42,340
+as a middleware and at the very end whenever this is done we will get that request and that response.
+
+77
+00:04:42,410 --> 00:04:43,540
+Right.
+
+78
+00:04:43,650 --> 00:04:47,680
+So it's like a chain now uploading to cloud the Narey.
+
+79
+00:04:47,700 --> 00:04:49,420
+It's so simple.
+
+80
+00:04:49,560 --> 00:04:55,280
+We use cloud denarii dot we use the key or the uploader.
+
+81
+00:04:55,500 --> 00:04:56,950
+And then we do upload.
+
+82
+00:04:57,660 --> 00:05:01,280
+Open and close now inside of the upload.
+
+83
+00:05:01,500 --> 00:05:02,070
+Sorry.
+
+84
+00:05:02,190 --> 00:05:03,690
+We need to pass two things.
+
+85
+00:05:03,870 --> 00:05:08,480
+One is that we want to upload and then the kind of for the callback.
+
+86
+00:05:08,490 --> 00:05:09,300
+All right.
+
+87
+00:05:09,300 --> 00:05:11,860
+So they actually have three arguments.
+
+88
+00:05:11,880 --> 00:05:14,880
+It's the what we need to upload the callback.
+
+89
+00:05:14,910 --> 00:05:15,800
+And this is weird.
+
+90
+00:05:15,810 --> 00:05:18,080
+And then the configuration.
+
+91
+00:05:18,180 --> 00:05:18,420
+Yeah.
+
+92
+00:05:18,450 --> 00:05:19,850
+That is the way it works.
+
+93
+00:05:19,860 --> 00:05:23,470
+So how can we get the data we are posting from within the middleware.
+
+94
+00:05:23,470 --> 00:05:24,450
+Formidable.
+
+95
+00:05:24,450 --> 00:05:32,460
+So we have it inside request that files and that file Remember we are using that keyboard file right
+
+96
+00:05:32,460 --> 00:05:33,130
+here.
+
+97
+00:05:33,270 --> 00:05:36,420
+If we had images right here that would be images instead of file.
+
+98
+00:05:36,660 --> 00:05:42,050
+And then we say path and it's going to get it from there because everything is memory of course then
+
+99
+00:05:42,060 --> 00:05:43,260
+we get the callback.
+
+100
+00:05:43,290 --> 00:05:44,790
+So I'm going to do this.
+
+101
+00:05:44,790 --> 00:05:45,870
+And the third one.
+
+102
+00:05:45,870 --> 00:05:50,310
+The third argument is going to be an object with the configuration.
+
+103
+00:05:50,310 --> 00:05:50,770
+Right.
+
+104
+00:05:50,910 --> 00:05:51,630
+OK.
+
+105
+00:05:52,200 --> 00:05:54,070
+So first I'm going to do the configuration and I'm going to.
+
+106
+00:05:54,200 --> 00:05:56,380
+And then I'm going to go to the of the other one.
+
+107
+00:05:56,640 --> 00:06:03,150
+So we get a public I.D. and the public I.D. would be you know what are you going to use to display the
+
+108
+00:06:03,150 --> 00:06:03,900
+image.
+
+109
+00:06:03,900 --> 00:06:09,660
+You know the idea of the public file so you can use whatever you want right here going to do something
+
+110
+00:06:09,660 --> 00:06:11,950
+very simple and to use templates strengths.
+
+111
+00:06:11,960 --> 00:06:17,150
+And I got to say that the name to date now.
+
+112
+00:06:17,280 --> 00:06:21,630
+Now you can attach whatever you want right here.
+
+113
+00:06:21,660 --> 00:06:24,450
+Maybe you want to create maybe some hash.
+
+114
+00:06:24,660 --> 00:06:26,820
+So of course you can do the hash right here.
+
+115
+00:06:26,820 --> 00:06:28,820
+Doesn't matter is completely up to you.
+
+116
+00:06:29,130 --> 00:06:29,980
+Then it coma.
+
+117
+00:06:30,120 --> 00:06:34,090
+And now we have an option that says that it's called resource type.
+
+118
+00:06:34,230 --> 00:06:41,310
+So we source underscore and then type we can tell cautionary what what is the kind of file we are uploading
+
+119
+00:06:41,560 --> 00:06:41,790
+now.
+
+120
+00:06:41,850 --> 00:06:45,680
+If you don't really know or you know you don't really care much.
+
+121
+00:06:45,810 --> 00:06:47,370
+You can set it to auto.
+
+122
+00:06:47,640 --> 00:06:52,550
+So if you're using a G they will recognize that you're using a JPT that's it.
+
+123
+00:06:52,560 --> 00:06:54,800
+Or maybe a PMG or something like that.
+
+124
+00:06:55,230 --> 00:06:55,490
+So.
+
+125
+00:06:55,490 --> 00:06:56,100
+OK.
+
+126
+00:06:56,610 --> 00:07:00,090
+And of course you get a lot more configurations.
+
+127
+00:07:00,090 --> 00:07:05,640
+You can even do transforms transform stipes which sample you upload an image and you want to crop it
+
+128
+00:07:05,910 --> 00:07:08,220
+maybe on a 200 200.
+
+129
+00:07:08,220 --> 00:07:14,600
+You can use transformations right here and store the image in different formats so you can do that.
+
+130
+00:07:14,600 --> 00:07:18,450
+It's Turner it's it works really really get used to it in the past.
+
+131
+00:07:18,450 --> 00:07:19,580
+Never had a problem.
+
+132
+00:07:20,010 --> 00:07:22,820
+But of course we're going to do something very simple right here.
+
+133
+00:07:22,860 --> 00:07:30,210
+So on the callback whenever you do the upload to clouting Ari now we will come back and then trigger
+
+134
+00:07:30,270 --> 00:07:31,660
+this callback function.
+
+135
+00:07:31,800 --> 00:07:36,280
+And this one of course will get a result as an argument.
+
+136
+00:07:36,630 --> 00:07:41,790
+And inside of the result we will get all the information we need about that file and we're going to
+
+137
+00:07:41,790 --> 00:07:43,760
+do console log.
+
+138
+00:07:44,040 --> 00:07:46,120
+And that result right.
+
+139
+00:07:48,030 --> 00:07:52,800
+And of course we need to send the response back from this route if not you know everything is going
+
+140
+00:07:52,800 --> 00:07:53,850
+to fail.
+
+141
+00:07:53,850 --> 00:07:55,390
+We're going to get a frozen screen.
+
+142
+00:07:55,680 --> 00:08:03,450
+So I'm going to go and say responds sorry that status I'm not out of that cold yet.
+
+143
+00:08:03,670 --> 00:08:06,300
+Then it's status 200 do that.
+
+144
+00:08:06,390 --> 00:08:07,690
+And we do a send.
+
+145
+00:08:07,800 --> 00:08:15,120
+So whenever we send something we're going to send the same thing we did right here file upload notice
+
+146
+00:08:15,120 --> 00:08:19,760
+that we are getting the response data and everything else so we are just need to return whenever we
+
+147
+00:08:19,760 --> 00:08:24,750
+are going to be using as a value on the on the parent component.
+
+148
+00:08:24,750 --> 00:08:26,550
+So we need to be careful right here.
+
+149
+00:08:26,550 --> 00:08:31,400
+Now I did cancel logs so we can inspect what we get back from it from a coronary.
+
+150
+00:08:31,590 --> 00:08:33,450
+And it's a pretty long object.
+
+151
+00:08:33,450 --> 00:08:35,520
+We have a lot of things right now.
+
+152
+00:08:35,520 --> 00:08:38,690
+The only thing I want to return from this route.
+
+153
+00:08:38,880 --> 00:08:45,650
+It's the public I.D. and the u r l where we can you know get the image and maybe show it right here.
+
+154
+00:08:45,960 --> 00:08:55,240
+So I'm going to go and say public I.D. equals real salt dot and that public I.D..
+
+155
+00:08:55,450 --> 00:08:55,930
+All right.
+
+156
+00:08:55,950 --> 00:09:02,520
+CONAN And then I'm going to be passing the urinal so we can get to two entries right here we solved
+
+157
+00:09:02,940 --> 00:09:03,600
+that.
+
+158
+00:09:03,620 --> 00:09:06,920
+You are al and that is Ed man.
+
+159
+00:09:07,460 --> 00:09:11,710
+So now of course we're going to try to blow something and we're going to get a console log on the server
+
+160
+00:09:11,810 --> 00:09:20,570
+on the terminal and then we should be getting our response back from to our client to the client side.
+
+161
+00:09:20,780 --> 00:09:26,630
+And just for fun I'm going to do the same thing on the console whatever.
+
+162
+00:09:26,790 --> 00:09:27,500
+What happen.
+
+163
+00:09:27,500 --> 00:09:29,770
+Cancel that log.
+
+164
+00:09:29,990 --> 00:09:34,460
+And then responds that data.
+
+165
+00:09:34,870 --> 00:09:35,410
+Right.
+
+166
+00:09:35,510 --> 00:09:36,400
+Well see if this works.
+
+167
+00:09:36,400 --> 00:09:38,750
+Hopefully there are no mistakes.
+
+168
+00:09:38,810 --> 00:09:41,150
+Of course it could happen that we get sent.
+
+169
+00:09:41,160 --> 00:09:43,700
+We have some mistakes that it's normal.
+
+170
+00:09:43,820 --> 00:09:48,890
+So are going to reload the application are going to bring the inspect and the cons..
+
+171
+00:09:48,890 --> 00:09:49,520
+All right.
+
+172
+00:09:49,790 --> 00:09:51,810
+That's right you blow something up.
+
+173
+00:09:51,860 --> 00:09:58,070
+Oh and one more thing in the inside of the project inside public an image just you know the folder I
+
+174
+00:09:58,070 --> 00:09:59,770
+gave you you have a guitar.
+
+175
+00:09:59,840 --> 00:10:02,420
+And you have like seven guitars so you don't need to search.
+
+176
+00:10:02,450 --> 00:10:08,170
+They are all honest because I went to their website and get that I got that image from there.
+
+177
+00:10:08,440 --> 00:10:15,620
+And but you know if you want to go to to the to the browser and get your images.
+
+178
+00:10:15,620 --> 00:10:16,340
+That's cool.
+
+179
+00:10:16,340 --> 00:10:17,110
+No problem.
+
+180
+00:10:17,330 --> 00:10:22,320
+So like guitar's going to it's like the R and going to blow this one.
+
+181
+00:10:22,580 --> 00:10:24,920
+And whenever we upload it we get a mistake.
+
+182
+00:10:24,920 --> 00:10:25,490
+All right.
+
+183
+00:10:25,580 --> 00:10:27,110
+So that is get old.
+
+184
+00:10:27,120 --> 00:10:29,250
+Actually it's not that good but that's OK.
+
+185
+00:10:29,390 --> 00:10:31,660
+We get an internal server error.
+
+186
+00:10:32,000 --> 00:10:42,370
+So local host API users upload images so upload an image or images image the route API users for Slash.
+
+187
+00:10:43,130 --> 00:10:43,620
+All right.
+
+188
+00:10:43,640 --> 00:10:44,680
+So let's do the following.
+
+189
+00:10:44,690 --> 00:10:46,550
+This actually might happen.
+
+190
+00:10:46,880 --> 00:10:52,070
+We installed new dependencies so maybe we need to.
+
+191
+00:10:53,030 --> 00:10:56,480
+Oh cannot we property file fun defined ha.
+
+192
+00:10:57,950 --> 00:11:00,730
+Right ok.
+
+193
+00:11:00,760 --> 00:11:01,340
+Um no.
+
+194
+00:11:01,350 --> 00:11:02,700
+I know what is wrong.
+
+195
+00:11:02,700 --> 00:11:05,380
+Maybe you saw it and didn't fix it.
+
+196
+00:11:05,400 --> 00:11:07,390
+I'm going to fix it right here with you right here.
+
+197
+00:11:07,390 --> 00:11:10,900
+Says on the server and always you always need to check the server.
+
+198
+00:11:10,920 --> 00:11:15,840
+You know the command so it cannot read property file of undefined an outpost.
+
+199
+00:11:15,840 --> 00:11:24,060
+All right so a request file file no files or go.
+
+200
+00:11:24,270 --> 00:11:25,720
+Hopefully everything is OK.
+
+201
+00:11:25,950 --> 00:11:28,010
+So let's try it again.
+
+202
+00:11:28,280 --> 00:11:30,920
+I've got to reload the application.
+
+203
+00:11:31,770 --> 00:11:34,380
+I'm going to try and send the same image.
+
+204
+00:11:34,620 --> 00:11:36,890
+And I do open we get no mistake.
+
+205
+00:11:37,020 --> 00:11:42,030
+And at the end of course we get a response but now we need of course to create a function that rules
+
+206
+00:11:42,420 --> 00:11:43,140
+this part.
+
+207
+00:11:43,200 --> 00:11:49,430
+But we get something back from the server which is the public I.D. and we get the your L and this is
+
+208
+00:11:49,430 --> 00:11:53,820
+a URL where we can actually do some copy pasting on the browser.
+
+209
+00:11:53,820 --> 00:11:56,580
+And you know get the image right.
+
+210
+00:11:56,700 --> 00:11:57,080
+OK.
+
+211
+00:11:57,210 --> 00:11:58,000
+That's good.
+
+212
+00:11:58,320 --> 00:12:00,770
+So let me show you what we get on the server.
+
+213
+00:12:00,780 --> 00:12:06,280
+This is the whole object that they give you and this might be my change of course.
+
+214
+00:12:06,420 --> 00:12:12,420
+If you pass more more things you might be getting a trim your e-mail or maybe something else you need
+
+215
+00:12:12,420 --> 00:12:15,000
+to check the of course the documentation.
+
+216
+00:12:15,120 --> 00:12:16,830
+It's pretty well documented.
+
+217
+00:12:17,040 --> 00:12:23,550
+So you get the public I.D. and you are now you're just using this once but you get how much is the image.
+
+218
+00:12:23,700 --> 00:12:25,520
+What was that tie your tie.
+
+219
+00:12:25,530 --> 00:12:28,170
+You know they were sourced type when it was created.
+
+220
+00:12:28,170 --> 00:12:29,830
+You get a lot of things.
+
+221
+00:12:29,880 --> 00:12:32,410
+And of course you get the original file name.
+
+222
+00:12:32,440 --> 00:12:33,260
+All right.
+
+223
+00:12:33,600 --> 00:12:35,450
+So you can use whatever you want right here.
+
+224
+00:12:35,460 --> 00:12:37,800
+Depends on the on your application.
+
+225
+00:12:37,800 --> 00:12:38,340
+All right.
+
+226
+00:12:38,550 --> 00:12:41,940
+But the important thing right now is that we are getting our response right.
+
+227
+00:12:41,940 --> 00:12:43,700
+We're getting our response right here.
+
+228
+00:12:43,950 --> 00:12:45,490
+So whenever we get a response.
+
+229
+00:12:45,510 --> 00:12:48,380
+And if I upload a new one let's see this one.
+
+230
+00:12:48,570 --> 00:12:52,740
+Whenever I upload it and we get it.
+
+231
+00:12:52,830 --> 00:12:57,070
+So of course now on the state since we are doing.
+
+232
+00:12:57,420 --> 00:13:04,230
+Let me go here since we are doing this we can have on the state two images and our parent component
+
+233
+00:13:04,260 --> 00:13:07,710
+is going to be receiving two images right.
+
+234
+00:13:08,220 --> 00:13:08,660
+All right.
+
+235
+00:13:08,770 --> 00:13:09,330
+OK.
+
+236
+00:13:09,570 --> 00:13:14,970
+So now what are we going to do before we go to the parent begin to do the show uploaded images we can
+
+237
+00:13:15,000 --> 00:13:20,110
+catch whatever we have inside this uploaded files and begin to show it right here.
+
+238
+00:13:21,510 --> 00:13:25,240
+Right let's do the show uploaded images function.
+
+239
+00:13:25,530 --> 00:13:29,480
+So I'm going to go here and what we need to do is pretty pretty simple.
+
+240
+00:13:29,520 --> 00:13:33,830
+We just return whatever we have inside the uploaded files.
+
+241
+00:13:33,870 --> 00:13:34,390
+Right.
+
+242
+00:13:34,410 --> 00:13:35,820
+We just do a map.
+
+243
+00:13:36,030 --> 00:13:42,000
+So I'm going to say does that state that uploaded files and first I'm going to change this.
+
+244
+00:13:42,000 --> 00:13:45,740
+Let me copy this because we want to return some GSX.
+
+245
+00:13:45,780 --> 00:13:47,740
+So we need to do this.
+
+246
+00:13:47,850 --> 00:13:51,130
+So this that state that uploaded files that map.
+
+247
+00:13:51,270 --> 00:13:53,730
+And then we do we get the item.
+
+248
+00:13:54,000 --> 00:13:56,350
+And again there's no need to do this.
+
+249
+00:13:56,420 --> 00:14:00,780
+We get the item and we just return again more GSX.
+
+250
+00:14:01,110 --> 00:14:07,570
+So Dave open it close and we will use that drop soap box class name right here.
+
+251
+00:14:08,000 --> 00:14:09,430
+Drop soap box.
+
+252
+00:14:09,750 --> 00:14:11,840
+Then of course this needs a key.
+
+253
+00:14:11,840 --> 00:14:16,270
+So I'm going to add a key and the key is going to be equal to.
+
+254
+00:14:16,280 --> 00:14:22,100
+And remember that if we get two things that you are l and the public I.D. I'm going to say item that
+
+255
+00:14:22,160 --> 00:14:26,680
+public I.D. You could use whatever you want right here maybe the iteration.
+
+256
+00:14:27,010 --> 00:14:27,940
+All right.
+
+257
+00:14:27,980 --> 00:14:31,990
+Now later when we have the when you get the image right here.
+
+258
+00:14:32,160 --> 00:14:35,430
+When I went to click it if I want to remove it.
+
+259
+00:14:35,540 --> 00:14:37,060
+So I'm going to do something very simple.
+
+260
+00:14:37,070 --> 00:14:40,070
+I'm going to add an unclick of course in real life.
+
+261
+00:14:40,070 --> 00:14:42,110
+This is going to get much complicated.
+
+262
+00:14:42,140 --> 00:14:45,210
+You need more success in real life.
+
+263
+00:14:45,330 --> 00:14:50,510
+This is going to create on remove that begin to do later.
+
+264
+00:14:50,510 --> 00:14:55,460
+So this remove will go to cloud denarii and remove the image.
+
+265
+00:14:55,460 --> 00:14:55,750
+Right.
+
+266
+00:14:55,760 --> 00:15:00,380
+Because again if you don't need the image maybe it's better to remove it.
+
+267
+00:15:00,500 --> 00:15:07,940
+And whenever we remove it I'm going to be passing the item that the public and the ID and of course
+
+268
+00:15:08,100 --> 00:15:09,100
+on the on remove.
+
+269
+00:15:09,140 --> 00:15:12,170
+I'm going to pass the I.D. right.
+
+270
+00:15:12,170 --> 00:15:17,210
+Of course we're going to do this later because we need to create a route to unset the image from cloud
+
+271
+00:15:17,210 --> 00:15:17,520
+Inari.
+
+272
+00:15:17,540 --> 00:15:19,860
+But it's it's going to be real simple.
+
+273
+00:15:19,960 --> 00:15:20,570
+So OK.
+
+274
+00:15:20,630 --> 00:15:23,960
+So after the remove of course we need to show something.
+
+275
+00:15:24,140 --> 00:15:29,370
+Just like with it with the wrap right here with wrap we do pretty much the same thing.
+
+276
+00:15:29,420 --> 00:15:36,440
+So we just create a div with the wrap inside and the wrap will contain as a background image.
+
+277
+00:15:36,760 --> 00:15:38,920
+The file that we just uploaded.
+
+278
+00:15:39,080 --> 00:15:41,160
+So I'm going to go right here at the bottom.
+
+279
+00:15:41,270 --> 00:15:43,580
+Maybe some space and I'm going to say OK.
+
+280
+00:15:43,670 --> 00:15:50,160
+I want the class name of rap but as I said I also want the background image.
+
+281
+00:15:50,210 --> 00:15:51,810
+So I'm going to say background.
+
+282
+00:15:51,980 --> 00:15:52,850
+Open it close.
+
+283
+00:15:52,850 --> 00:16:01,090
+We just passed a u r l and then we say open and then item dot and you are l and it's going to be a note.
+
+284
+00:16:01,100 --> 00:16:05,720
+Repeat Repeat.
+
+285
+00:16:05,990 --> 00:16:06,900
+All right.
+
+286
+00:16:07,170 --> 00:16:08,100
+This is done.
+
+287
+00:16:08,420 --> 00:16:10,920
+So let's see what happens.
+
+288
+00:16:11,150 --> 00:16:19,920
+Of course the server needs to restart are going at it going to maybe a different one.
+
+289
+00:16:20,810 --> 00:16:23,280
+Why not this one.
+
+290
+00:16:23,300 --> 00:16:27,020
+I'm going to upload it and when we get the response we get the image.
+
+291
+00:16:27,050 --> 00:16:33,970
+Now if you're if I have a new one this one should be staying here and we can add one right there.
+
+292
+00:16:33,980 --> 00:16:34,660
+So let me.
+
+293
+00:16:34,730 --> 00:16:35,460
+There we go.
+
+294
+00:16:35,720 --> 00:16:36,950
+So going to upload this one
+
+295
+00:16:40,300 --> 00:16:40,740
+right.
+
+296
+00:16:40,840 --> 00:16:41,360
+All right.
+
+297
+00:16:41,410 --> 00:16:41,620
+OK.
+
+298
+00:16:41,640 --> 00:16:43,830
+So we get it we get it works.
+
+299
+00:16:44,060 --> 00:16:44,710
+So.
+
+300
+00:16:44,750 --> 00:16:47,630
+So when I click I want to remove it.
+
+301
+00:16:47,630 --> 00:16:52,550
+Of course now nothing is going to happen when we click it because nothing is happening right here now
+
+302
+00:16:52,550 --> 00:16:58,370
+in real life you might be creating a Hoeber where you can show something maybe a next or something or
+
+303
+00:16:58,370 --> 00:16:58,860
+move.
+
+304
+00:16:59,000 --> 00:17:02,930
+I'm not going to do it because it's something very simple and it's going to take us time and we need
+
+305
+00:17:02,930 --> 00:17:06,170
+to do us still we need to do a lot of things right.
+
+306
+00:17:06,370 --> 00:17:06,580
+OK.
+
+307
+00:17:06,650 --> 00:17:13,460
+So what we are able to create images now what is what is happening right now is that when we added We're
+
+308
+00:17:13,490 --> 00:17:20,090
+going to images that handler and we are saying OK now you get the uploaded files so we need to go back
+
+309
+00:17:20,090 --> 00:17:25,790
+to our product and go to the images handler because we are getting new images and you know process and
+
+310
+00:17:25,820 --> 00:17:27,320
+add them to the state.
+
+311
+00:17:27,380 --> 00:17:28,910
+You're not really doing this.
+
+312
+00:17:29,060 --> 00:17:30,540
+So let's do it right now.
+
+313
+00:17:30,610 --> 00:17:31,030
+OK.
+
+314
+00:17:31,280 --> 00:17:32,720
+So the images handler.
+
+315
+00:17:32,780 --> 00:17:34,150
+It's very simple.
+
+316
+00:17:34,220 --> 00:17:39,700
+We will be getting some images and we will create a new form data.
+
+317
+00:17:39,710 --> 00:17:45,890
+So I'm going to say new form data and this new form data equals something.
+
+318
+00:17:45,890 --> 00:17:53,780
+So dot dot dot this dot state that form data like before we are just making a copy of the form data.
+
+319
+00:17:53,780 --> 00:17:59,150
+Now what we want to do we want to enter images and add the value add to the value whatever image we
+
+320
+00:17:59,150 --> 00:18:00,060
+get from here.
+
+321
+00:18:00,200 --> 00:18:05,750
+So I'm going to access this form data I can access the key of images because that's where we are storing
+
+322
+00:18:05,780 --> 00:18:06,550
+everything.
+
+323
+00:18:06,740 --> 00:18:11,080
+And then say OK now the value of this one it's whatever we get back from Image.
+
+324
+00:18:11,260 --> 00:18:12,670
+Yes.
+
+325
+00:18:12,880 --> 00:18:13,910
+All right.
+
+326
+00:18:13,910 --> 00:18:22,550
+And that is it of course if the case is that the new form data images has a ballad of fonts we just
+
+327
+00:18:22,550 --> 00:18:23,740
+need to change it.
+
+328
+00:18:23,780 --> 00:18:26,730
+So I'm going to say valid just like this.
+
+329
+00:18:26,850 --> 00:18:28,760
+Ballasted equals to true.
+
+330
+00:18:28,790 --> 00:18:31,190
+Because you know just in case.
+
+331
+00:18:31,340 --> 00:18:33,250
+And then of course which is this.
+
+332
+00:18:33,320 --> 00:18:41,330
+That said state opening close and we're going to say that form data that we have on the state let me
+
+333
+00:18:41,330 --> 00:18:51,030
+do it right form data contains a new contains the you from data which just updating the state.
+
+334
+00:18:51,050 --> 00:18:51,560
+All right.
+
+335
+00:18:51,690 --> 00:18:52,040
+OK.
+
+336
+00:18:52,100 --> 00:18:52,950
+Looks nice.
+
+337
+00:18:53,030 --> 00:18:55,690
+Of course we're not going to really see it right now.
+
+338
+00:18:55,780 --> 00:18:57,340
+We reload.
+
+339
+00:18:57,350 --> 00:19:03,800
+You're not going to really get it because this happens when we submit the form and we need to do a few
+
+340
+00:19:03,800 --> 00:19:05,860
+things before we go there.
+
+341
+00:19:05,870 --> 00:19:11,120
+Just one thing we need to add some rules to the validation but again went too long going to go to the
+
+342
+00:19:11,120 --> 00:19:11,930
+next one.
+
+343
+00:19:12,080 --> 00:19:16,300
+Do finish with the data to submit and we're going to do the on remove.
+
+344
+00:19:16,310 --> 00:19:17,730
+So we can remove the image.
+
+345
+00:19:17,900 --> 00:19:19,790
+And that is that we are done with the file upload.
+

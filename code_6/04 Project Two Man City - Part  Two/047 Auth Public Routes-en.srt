@@ -1,0 +1,532 @@
+1
+00:00:00,400 --> 00:00:03,860
+Write so let's create the public routes.
+
+2
+00:00:04,070 --> 00:00:08,580
+It's going to be pretty similar to private routes but with a little twist.
+
+3
+00:00:08,690 --> 00:00:17,780
+So inside out routes new file Pavlik and then routes that yes of course I'm going to import it from
+
+4
+00:00:17,780 --> 00:00:18,420
+here.
+
+5
+00:00:18,440 --> 00:00:31,580
+So even port Pawlick route from DOT for Slash components for Slash I'll throw out ans for Slash and
+
+6
+00:00:31,580 --> 00:00:35,110
+then of course public routes Burguet.
+
+7
+00:00:35,150 --> 00:00:35,880
+All right.
+
+8
+00:00:36,500 --> 00:00:42,450
+So we do pretty much same thing are going to start with home right here at the bottom public route open
+
+9
+00:00:42,460 --> 00:00:43,530
+and close.
+
+10
+00:00:43,550 --> 00:00:49,980
+So what we do we pass the props just like we did with the other ones which is past the props.
+
+11
+00:00:50,120 --> 00:00:52,660
+What else we need to be passing a path.
+
+12
+00:00:52,730 --> 00:00:59,280
+So I'm going to be passing a path and the path in this case is some doing home is going to be home again.
+
+13
+00:00:59,300 --> 00:01:05,550
+We pass exact and this is actually from Riak router and the next one is is the actual component.
+
+14
+00:01:05,720 --> 00:01:09,670
+So I'm going to copy component and I'm going to paste it right here at home.
+
+15
+00:01:09,990 --> 00:01:11,230
+I'm going to delete this.
+
+16
+00:01:11,240 --> 00:01:12,830
+I don't need this anymore.
+
+17
+00:01:13,130 --> 00:01:19,540
+Now I'm going to do the same and I'm going to copy the public route pasted the public out path.
+
+18
+00:01:19,670 --> 00:01:26,650
+It will be a sign and with an underscore and that component is going to be signed in.
+
+19
+00:01:26,870 --> 00:01:28,300
+And that is it.
+
+20
+00:01:28,910 --> 00:01:34,530
+So now I'm going to go to public routes and I'm going to create a re-act stateless component react to
+
+21
+00:01:34,530 --> 00:01:36,060
+stateless components.
+
+22
+00:01:36,060 --> 00:01:36,840
+Right.
+
+23
+00:01:37,060 --> 00:01:37,720
+OK.
+
+24
+00:01:38,290 --> 00:01:43,850
+I'm going to change the to capital P public routes and this is going to be pretty much the same with
+
+25
+00:01:43,850 --> 00:01:45,020
+private drought's.
+
+26
+00:01:45,020 --> 00:01:51,230
+I will need to import everything from Briac router you know route and we direct I will still need to
+
+27
+00:01:51,590 --> 00:01:57,890
+you know use some destructuring bring the user grabbed that component and rename it to come.
+
+28
+00:01:57,890 --> 00:01:59,290
+Same thing with it before.
+
+29
+00:01:59,450 --> 00:02:07,640
+And grab the rest of the props and at the end what we will be returning is just a rout.
+
+30
+00:02:07,970 --> 00:02:15,710
+Now this route will be injecting we will inject the rest of the Propst and then at the end we will re
+
+31
+00:02:15,830 --> 00:02:19,590
+return a component with a function.
+
+32
+00:02:19,610 --> 00:02:22,500
+Same thing we did before same thing nothing new so far.
+
+33
+00:02:22,790 --> 00:02:28,750
+So this one will be of course getting the props and injecting the props inside of here.
+
+34
+00:02:28,940 --> 00:02:34,690
+Now if we check the private sprouts The only thing with that is checking if the user eats authenticator
+
+35
+00:02:34,690 --> 00:02:35,230
+or not.
+
+36
+00:02:35,360 --> 00:02:38,110
+So now I'm just going to copy paste.
+
+37
+00:02:38,270 --> 00:02:44,970
+Now we have kind of a problem because we have a public route.
+
+38
+00:02:45,080 --> 00:02:47,270
+Right now we have a problem right here.
+
+39
+00:02:47,480 --> 00:02:48,460
+Doesn't matter.
+
+40
+00:02:48,920 --> 00:02:50,870
+So right now what do we need to do.
+
+41
+00:02:51,020 --> 00:02:53,540
+We need to return a component.
+
+42
+00:02:53,570 --> 00:02:57,830
+In this case we are not redirecting and that's why we are getting this.
+
+43
+00:02:57,890 --> 00:02:59,480
+So I'm going to go to come.
+
+44
+00:02:59,660 --> 00:03:01,670
+I'm going to paste it right here.
+
+45
+00:03:01,760 --> 00:03:06,870
+And what we want to return is whatever component we want to pass because it's a public route.
+
+46
+00:03:06,890 --> 00:03:08,320
+Anyone can enter this.
+
+47
+00:03:08,650 --> 00:03:10,600
+So come up opening close.
+
+48
+00:03:10,880 --> 00:03:12,680
+And we do dot dot dot.
+
+49
+00:03:12,860 --> 00:03:20,380
+Perhaps space and up right here we're going to delete that too because we don't really need to.
+
+50
+00:03:20,420 --> 00:03:24,730
+What I need is a user equals and then user.
+
+51
+00:03:24,950 --> 00:03:28,950
+And for now I'm going to do this because we don't need it.
+
+52
+00:03:29,030 --> 00:03:29,670
+All right.
+
+53
+00:03:30,170 --> 00:03:34,450
+So we get the comp we get the props we get the user that is OK.
+
+54
+00:03:34,820 --> 00:03:38,610
+Now of course everything works not going to really work but that's ok.
+
+55
+00:03:38,660 --> 00:03:39,960
+If I go to home.
+
+56
+00:03:40,380 --> 00:03:40,640
+OK.
+
+57
+00:03:40,670 --> 00:03:42,350
+We were able to go to home.
+
+58
+00:03:42,650 --> 00:03:50,860
+Now if I go to sign and sign in just like this we can go to sign in.
+
+59
+00:03:50,930 --> 00:03:54,460
+Now the problem is that after a user is locked in.
+
+60
+00:03:54,460 --> 00:03:55,160
+Right.
+
+61
+00:03:55,370 --> 00:03:57,380
+We shouldn't be able to go to sign in.
+
+62
+00:03:57,380 --> 00:04:04,820
+And this is what happens right now if I sign in put passport one two three and go to sign and we are
+
+63
+00:04:04,820 --> 00:04:12,170
+going to go to dashboard and if I go to dashboard we can enter but if I go back to sign and we can enter
+
+64
+00:04:12,170 --> 00:04:13,340
+too.
+
+65
+00:04:13,490 --> 00:04:19,110
+Now the problem is that the sign in it is still a private route.
+
+66
+00:04:19,280 --> 00:04:19,840
+Right.
+
+67
+00:04:20,000 --> 00:04:24,470
+It is still a that we are returning milk as white Nothing gets returned.
+
+68
+00:04:24,500 --> 00:04:26,820
+Return the sign in.
+
+69
+00:04:26,840 --> 00:04:28,240
+It's a private drought.
+
+70
+00:04:28,550 --> 00:04:32,180
+Only if you're authenticated right.
+
+71
+00:04:32,250 --> 00:04:32,860
+OK.
+
+72
+00:04:32,980 --> 00:04:40,470
+So we need an additional check right here to check if this route is kind of restricted are not.
+
+73
+00:04:40,600 --> 00:04:42,020
+So what I'm going to do.
+
+74
+00:04:42,020 --> 00:04:43,960
+I'm going to add one more problem.
+
+75
+00:04:44,020 --> 00:04:50,380
+Only two private two public routes are going to say restricted equals opening close.
+
+76
+00:04:50,500 --> 00:04:51,920
+And I will add a boolean.
+
+77
+00:04:52,060 --> 00:04:56,720
+So if I do falls it means that this route is accessible by anyone.
+
+78
+00:04:56,740 --> 00:05:01,260
+Anyone can access this whether they are Lagann or not.
+
+79
+00:05:01,360 --> 00:05:04,660
+But the other one is going to be true.
+
+80
+00:05:05,290 --> 00:05:12,060
+So if the user is signed in then they are not going to be able to see this screen to access this component.
+
+81
+00:05:12,070 --> 00:05:14,540
+They are going to go directly to dashboard.
+
+82
+00:05:14,560 --> 00:05:21,940
+So right now inside public routes we have the ability to check if we have a restricted or not restricted.
+
+83
+00:05:21,940 --> 00:05:22,510
+All right.
+
+84
+00:05:22,690 --> 00:05:29,260
+So I'm going to go to public routes right here and it instead of returning uster and then checking user
+
+85
+00:05:29,260 --> 00:05:36,330
+and just know I'm going to say rest because we haven't on the rest we have the prop inside breast.
+
+86
+00:05:36,340 --> 00:05:39,030
+I'm going to check for restrict it.
+
+87
+00:05:39,100 --> 00:05:44,380
+Let me just copy the name just to avoid any mistakes restrictive.
+
+88
+00:05:44,560 --> 00:05:47,540
+So if we do have restricted what are we going to do something.
+
+89
+00:05:47,620 --> 00:05:53,980
+If not begin to return to component right here again we're going to check if the user is south indicated.
+
+90
+00:05:54,010 --> 00:05:56,820
+So I'm going to say user opening close.
+
+91
+00:05:56,860 --> 00:06:01,610
+So if the user is both educated and going to do something if not I'm going to do something else.
+
+92
+00:06:01,630 --> 00:06:06,680
+Now if the user is authenticated I don't want the user go to log in to sign in.
+
+93
+00:06:06,700 --> 00:06:11,260
+I want them to go to dashboard so I'm going to use the redirect.
+
+94
+00:06:11,290 --> 00:06:18,870
+So he directs me to a drive and read direct and to.
+
+95
+00:06:18,930 --> 00:06:23,660
+And where are we going to be sending to dashboard dashboard.
+
+96
+00:06:24,080 --> 00:06:29,420
+And of course then because it if the user of course is not often think of indicated we're going to let
+
+97
+00:06:29,420 --> 00:06:33,600
+the user go to sign in because they are not authenticated.
+
+98
+00:06:33,770 --> 00:06:36,080
+So it's calm probs and user.
+
+99
+00:06:36,320 --> 00:06:36,730
+All right.
+
+100
+00:06:36,800 --> 00:06:38,860
+So let me let's try again.
+
+101
+00:06:40,470 --> 00:06:47,860
+All right we are signed in and so the application reloaded detected this and send this back to dashboard.
+
+102
+00:06:47,860 --> 00:06:49,910
+So it's going to this scenario.
+
+103
+00:06:50,000 --> 00:06:51,570
+It is a restricted route.
+
+104
+00:06:51,620 --> 00:06:59,060
+We are out we are authentic hate it and we go to dashboard and if I tried to go to sign in not happening
+
+105
+00:06:59,450 --> 00:07:00,630
+go to dashboard.
+
+106
+00:07:00,710 --> 00:07:07,640
+Now if I log out we are still able to go to sign in and if I go to dashboard we cannot go just of course
+
+107
+00:07:07,640 --> 00:07:10,190
+this is entering private routes section.
+
+108
+00:07:10,190 --> 00:07:15,620
+So if I log in again that that flashing that we were getting before not going to happen.
+
+109
+00:07:15,620 --> 00:07:17,990
+So passport one two three.
+
+110
+00:07:18,160 --> 00:07:21,620
+Logan and we go to dashboard.
+
+111
+00:07:21,740 --> 00:07:27,770
+What is happening is that whenever we see the application reloads of course it takes some time for this
+
+112
+00:07:27,770 --> 00:07:29,200
+logic to kick in.
+
+113
+00:07:29,360 --> 00:07:35,930
+So it's going to try to it we are logging in going to dashboard and says no you're not authenticated
+
+114
+00:07:35,930 --> 00:07:36,390
+yet.
+
+115
+00:07:36,600 --> 00:07:42,520
+It's going to go in back log in and log in says Oh you are authenticated right now so go to dashboard.
+
+116
+00:07:42,580 --> 00:07:45,100
+So this is what is happening just behind the scenes.
+
+117
+00:07:45,280 --> 00:07:51,490
+But we are good we are able to you know prevent users not that ticket users from going to administer
+
+118
+00:07:51,860 --> 00:07:52,580
+routes.
+
+119
+00:07:52,960 --> 00:07:55,280
+And you know and backwards with public routes.
+
+120
+00:07:55,350 --> 00:07:58,430
+So you know it's Scott so I'm going to skip this.
+
+121
+00:07:58,430 --> 00:08:00,350
+These state know this code.
+
+122
+00:08:00,450 --> 00:08:06,220
+The the state of our application right now and incipit going to added its resource in the section and
+
+123
+00:08:06,220 --> 00:08:09,610
+on the next one we will start with something new.
+
+124
+00:08:09,660 --> 00:08:12,690
+We're going to start with all the admin sections.
+
+125
+00:08:12,700 --> 00:08:14,800
+So let me show you this one.
+
+126
+00:08:14,980 --> 00:08:22,960
+So if I go to the dashboard we have matches we have at match and inside the same match we will be able
+
+127
+00:08:22,960 --> 00:08:26,500
+to edit the match or create a new match.
+
+128
+00:08:26,500 --> 00:08:30,620
+So first we'll start it start easy going to create the matches and point.
+
+129
+00:08:30,820 --> 00:08:34,830
+So we're going to get this from the server create a created table.
+
+130
+00:08:34,840 --> 00:08:42,100
+And if you want to edit we will be able to click on one get all the data from that ID from the server.
+
+131
+00:08:42,250 --> 00:08:45,770
+And you know pre-populated the the form.
+
+132
+00:08:45,880 --> 00:08:46,460
+Right.
+
+133
+00:08:46,480 --> 00:08:49,750
+So let's go to the next section and do the matches section.
+

@@ -1,0 +1,640 @@
+1
+00:00:00,880 --> 00:00:05,730
+So in the re-act world there are many many ways to style our projects.
+
+2
+00:00:05,830 --> 00:00:10,450
+So we're going to be talking about some different methods going to show you different ways.
+
+3
+00:00:10,450 --> 00:00:17,260
+So first we have the inline styling with re-act we can do what we can do is create an object that looks
+
+4
+00:00:17,260 --> 00:00:21,710
+like a C Ss and then pass the properties to the actual element.
+
+5
+00:00:21,740 --> 00:00:23,630
+I know sounds kind of confusing.
+
+6
+00:00:23,660 --> 00:00:24,800
+I'm going to do it right now.
+
+7
+00:00:24,820 --> 00:00:29,570
+And by the way I've added Google fonts to our project is going to be the aunt.
+
+8
+00:00:29,570 --> 00:00:32,080
+Finally you can choose whatever font you wish.
+
+9
+00:00:32,110 --> 00:00:33,380
+It's up to you.
+
+10
+00:00:33,420 --> 00:00:37,660
+So I'm going to go back to the header and I'm going to create a variable that is going to be an object
+
+11
+00:00:37,720 --> 00:00:40,910
+and noticed that I'm doing it inside the render OK.
+
+12
+00:00:41,200 --> 00:00:42,620
+So I'm going to say let.
+
+13
+00:00:42,640 --> 00:00:45,920
+And this is of course 6 is going to create a variable.
+
+14
+00:00:45,970 --> 00:00:47,120
+This could be Konst.
+
+15
+00:00:47,160 --> 00:00:48,770
+Thus I'm going to say Konst.
+
+16
+00:00:49,270 --> 00:00:51,620
+So it's going to be equal to styles.
+
+17
+00:00:51,820 --> 00:00:52,670
+And this is style.
+
+18
+00:00:52,720 --> 00:00:54,700
+It's going to be an actual object.
+
+19
+00:00:54,880 --> 00:01:00,580
+So right here inside styles are going to add a property for the header and for the logo.
+
+20
+00:01:00,580 --> 00:01:03,070
+Real simple just an object notation.
+
+21
+00:01:03,280 --> 00:01:07,090
+So it's going to be Hetter and header is going to have several properties.
+
+22
+00:01:07,090 --> 00:01:12,830
+You can have background just like that and the background is going to be a color and it's going to be
+
+23
+00:01:12,830 --> 00:01:18,490
+called two hash tag then 0 3 a 9 4.
+
+24
+00:01:18,790 --> 00:01:25,720
+But now I'm going to add logo and since it's an update I'm going to do a coma and create the logo one
+
+25
+00:01:26,870 --> 00:01:32,020
+and logo of course it's going to have several properties you can have a color you can do something simple
+
+26
+00:01:32,790 --> 00:01:34,350
+a color of white.
+
+27
+00:01:34,360 --> 00:01:41,430
+It's going to be white one two three and then coma and I need to put the font family with standard DSS
+
+28
+00:01:41,500 --> 00:01:44,750
+what you do is font then style and then family.
+
+29
+00:01:44,770 --> 00:01:47,600
+But this is not yes that's going to be Javascript.
+
+30
+00:01:47,770 --> 00:01:55,370
+So we need to keep the hyphens and do it all together family family all the OK.
+
+31
+00:01:55,660 --> 00:02:00,000
+And that's what is going to be equal to on the phone to Google phone.
+
+32
+00:02:00,010 --> 00:02:01,110
+I just added.
+
+33
+00:02:01,480 --> 00:02:06,880
+So we're going to do coma and we can add a new property and I'm going to do text align and remember
+
+34
+00:02:06,970 --> 00:02:07,930
+this is javascript.
+
+35
+00:02:07,960 --> 00:02:15,870
+We do in camel case text align and text line is going to be center just like that.
+
+36
+00:02:16,150 --> 00:02:22,460
+So now how do we pass this styles to reference to this to the sex.
+
+37
+00:02:22,720 --> 00:02:28,420
+So what we can do we can go right here to the Petar for example and we're going to say style equals
+
+38
+00:02:28,420 --> 00:02:33,180
+to something since you're going to be passing object data you know javascript.
+
+39
+00:02:33,220 --> 00:02:34,390
+We cannot use this.
+
+40
+00:02:34,390 --> 00:02:40,900
+We cannot use the double quotes what are begin going to use curly braces and begin to make a reference
+
+41
+00:02:40,900 --> 00:02:42,980
+to that object is going to be styles.
+
+42
+00:02:43,030 --> 00:02:47,160
+Remember we have styles and then pass the property.
+
+43
+00:02:47,170 --> 00:02:49,000
+That's the one we want.
+
+44
+00:02:49,000 --> 00:02:51,630
+And if I reload the page you know it's working.
+
+45
+00:02:51,970 --> 00:02:58,450
+So I'm going to go to logo and do the same thing styles style it called to an object and it's going
+
+46
+00:02:58,450 --> 00:03:02,090
+to be styles dot logo.
+
+47
+00:03:02,110 --> 00:03:07,160
+And if you go right here we have the Anton and the logo with the center text.
+
+48
+00:03:07,300 --> 00:03:09,220
+Let's get you know it works.
+
+49
+00:03:09,220 --> 00:03:14,650
+So again you know imagine that you have tons of styles right here.
+
+50
+00:03:14,920 --> 00:03:17,350
+So you know you're going to have a pretty long file.
+
+51
+00:03:17,380 --> 00:03:23,860
+You can do an import you know of a could you could have this inside of a different javascript and then
+
+52
+00:03:23,870 --> 00:03:25,440
+include the variables.
+
+53
+00:03:25,450 --> 00:03:27,450
+Right here you could do that if you wish.
+
+54
+00:03:27,790 --> 00:03:34,280
+I don't really like this method because everything it's inline it's inside the actual elements.
+
+55
+00:03:34,330 --> 00:03:36,100
+And you know I like it.
+
+56
+00:03:36,100 --> 00:03:37,080
+So what we could do.
+
+57
+00:03:37,090 --> 00:03:38,830
+Let me just delete this.
+
+58
+00:03:38,860 --> 00:03:40,650
+You're not going to need it for now.
+
+59
+00:03:40,970 --> 00:03:41,330
+Sorry.
+
+60
+00:03:41,410 --> 00:03:43,520
+I'm going to leave it so I can copy it.
+
+61
+00:03:43,620 --> 00:03:47,590
+Remove the heterostyled and then remove the one in the logo.
+
+62
+00:03:47,950 --> 00:03:52,470
+So what we could do we could do it the old fashioned way we can.
+
+63
+00:03:52,630 --> 00:03:57,640
+We can put a link inside the index to a real CSSA file.
+
+64
+00:03:57,780 --> 00:04:02,060
+So I'm going to go to public and I'm going to create a new folder that it's going to be.
+
+65
+00:04:02,090 --> 00:04:03,560
+Now let's create a new file.
+
+66
+00:04:03,580 --> 00:04:09,420
+Let me show you why in a minute it's going to be styles going to call it styles not us.
+
+67
+00:04:09,940 --> 00:04:13,430
+So this stylus is going to have a stylus of course.
+
+68
+00:04:13,450 --> 00:04:20,200
+So first going out of body to remove the margin the ugly margin that we get by default with with you
+
+69
+00:04:20,210 --> 00:04:20,790
+now.
+
+70
+00:04:20,890 --> 00:04:22,720
+OK so I'm going to say margined zero.
+
+71
+00:04:22,990 --> 00:04:29,290
+Then of course the header and on the head are if you remember we have text a line background.
+
+72
+00:04:29,290 --> 00:04:29,770
+Sorry.
+
+73
+00:04:29,780 --> 00:04:31,210
+So I'm going to copy it from here.
+
+74
+00:04:31,210 --> 00:04:32,760
+That's why I left it.
+
+75
+00:04:32,860 --> 00:04:40,520
+Background and the background is going to be the color I'm going to do text align and then Center.
+
+76
+00:04:41,080 --> 00:04:41,440
+What else.
+
+77
+00:04:41,440 --> 00:04:47,380
+We have the logo so I'm going to create a class with logo and then the logo is going to be color of
+
+78
+00:04:48,010 --> 00:04:57,080
+white then koma font size font size and the font size is going to be I don't know 40 pixels.
+
+79
+00:04:57,130 --> 00:04:58,810
+Sounds good.
+
+80
+00:04:58,810 --> 00:04:59,530
+What else.
+
+81
+00:04:59,530 --> 00:05:04,550
+We have the really get to do fun family and it's going to be on time.
+
+82
+00:05:05,010 --> 00:05:06,230
+Very good.
+
+83
+00:05:06,310 --> 00:05:10,790
+Now we have the input so I'm going to add styles for the impot going to be using this later.
+
+84
+00:05:11,050 --> 00:05:12,710
+That's why I'm doing it right now.
+
+85
+00:05:12,770 --> 00:05:14,040
+It's going to be head or input.
+
+86
+00:05:14,050 --> 00:05:17,450
+And I'm going to add some font size something really simple.
+
+87
+00:05:17,450 --> 00:05:21,610
+So we don't waste too much time then we could have a margin.
+
+88
+00:05:21,680 --> 00:05:26,910
+Let's add a margin of 20 pixels and then zero pixels from the side.
+
+89
+00:05:27,130 --> 00:05:28,660
+Let's get it.
+
+90
+00:05:28,660 --> 00:05:31,970
+So now how do how do we include this.
+
+91
+00:05:32,090 --> 00:05:34,110
+You know we are inside the public folder.
+
+92
+00:05:34,120 --> 00:05:39,260
+So everything you have in public is going to go to the real world is going to go to production.
+
+93
+00:05:39,280 --> 00:05:44,830
+Let's say so right here what I can do I can just add a reference to that idea.
+
+94
+00:05:45,030 --> 00:05:45,750
+Yes.
+
+95
+00:05:45,940 --> 00:05:53,830
+So we say link a draft and then we pastilles that CSSA just like that.
+
+96
+00:05:53,920 --> 00:05:58,950
+And of course I'm going to do the role just to make things right.
+
+97
+00:05:59,230 --> 00:06:05,760
+And then we do stylesheet of course style sheet and we load the application.
+
+98
+00:06:05,860 --> 00:06:09,170
+We are kind of getting it you're not getting the background C-y.
+
+99
+00:06:09,310 --> 00:06:12,020
+It's because I forgot to remove this.
+
+100
+00:06:12,440 --> 00:06:16,120
+So you know let's get that's the old fashioned way.
+
+101
+00:06:16,120 --> 00:06:22,230
+Now there is a different way and a lot of developers like they like to do this.
+
+102
+00:06:22,360 --> 00:06:24,700
+I don't really like it but you know you could use it.
+
+103
+00:06:24,700 --> 00:06:28,690
+I'm going to leave this right here the logo we need to add a class.
+
+104
+00:06:28,700 --> 00:06:31,240
+Remember we add a class right here to logo.
+
+105
+00:06:31,300 --> 00:06:34,510
+So we are not going to use class but we use class name.
+
+106
+00:06:34,870 --> 00:06:37,700
+And this one is going to be called to a logo.
+
+107
+00:06:37,780 --> 00:06:39,860
+And if we reloaded we get the content.
+
+108
+00:06:39,910 --> 00:06:40,770
+That's good.
+
+109
+00:06:41,230 --> 00:06:42,510
+So what you can do.
+
+110
+00:06:42,520 --> 00:06:50,440
+You can import that CSSA right here on the javascript and then whenever you are the web pack it's compiling
+
+111
+00:06:50,440 --> 00:06:54,640
+all the information it's going it's going to include that javascript.
+
+112
+00:06:54,650 --> 00:06:57,610
+I'm sorry that CSSA inside the blue.
+
+113
+00:06:57,640 --> 00:06:59,240
+So how do we import it.
+
+114
+00:06:59,260 --> 00:07:00,410
+This is real simple.
+
+115
+00:07:00,460 --> 00:07:03,430
+I'm going to say import just like that import.
+
+116
+00:07:03,640 --> 00:07:06,500
+The thing is here comes the problem.
+
+117
+00:07:06,550 --> 00:07:14,570
+You cannot import files from when the public folder the only files that you can import might hear that
+
+118
+00:07:14,750 --> 00:07:21,360
+pack is going to let you import are going to be you know they need to be inside the source father.
+
+119
+00:07:21,550 --> 00:07:24,740
+So if I do public it's not kind of let me.
+
+120
+00:07:24,940 --> 00:07:27,380
+So let me let me just show you.
+
+121
+00:07:27,560 --> 00:07:34,160
+Going to say we're going to open up right here single quotes and we're not importing Javascript.
+
+122
+00:07:34,210 --> 00:07:39,950
+So whenever we import CSSA we do import and then we pass the location of that file.
+
+123
+00:07:39,970 --> 00:07:42,480
+So right here we're inside indexed.
+
+124
+00:07:42,580 --> 00:07:48,210
+So I'm going to say that that forward slash and are going to go to that that forward slash and go to
+
+125
+00:07:48,220 --> 00:07:55,300
+public folder and the public is going to bring the styles that CSSA just like that you're getting out
+
+126
+00:07:55,300 --> 00:07:58,520
+of the index entering the public and bring in CSX.
+
+127
+00:07:58,750 --> 00:08:04,450
+And right here it's going to say you attempt to import public styles he assess which which falls outside
+
+128
+00:08:04,450 --> 00:08:06,550
+the project's source directory.
+
+129
+00:08:06,550 --> 00:08:13,000
+So you know we cannot do this we can bypass and just trying to modify things but we're not going to
+
+130
+00:08:13,000 --> 00:08:13,850
+do that.
+
+131
+00:08:13,880 --> 00:08:19,750
+What I'm going to do I'm going to just have to see a just create a new folder inside here that is going
+
+132
+00:08:19,750 --> 00:08:26,840
+to be called CSX and right here going it just grab the styles and put it inside the source.
+
+133
+00:08:27,120 --> 00:08:32,410
+So I got to go back to Hetter and instead of doing this we just delete it.
+
+134
+00:08:32,410 --> 00:08:37,940
+We're going to say that for Slash we're going to go into SS for Slash and we're going to bring this
+
+135
+00:08:37,940 --> 00:08:42,500
+dials Nazi SS and if we reload this it's going to work.
+
+136
+00:08:42,580 --> 00:08:43,750
+That's going to work.
+
+137
+00:08:43,780 --> 00:08:49,850
+Now what is the downside of this if you consider this as a downside of course.
+
+138
+00:08:50,170 --> 00:08:56,190
+Whenever we do the application LOTES the pack is going to convert everything is going to transpire everything
+
+139
+00:08:56,510 --> 00:08:58,100
+and it's going to give you that Mandola.
+
+140
+00:08:58,180 --> 00:08:58,940
+Yes.
+
+141
+00:08:58,960 --> 00:09:02,320
+But in addition you're passing an import.
+
+142
+00:09:02,470 --> 00:09:09,250
+So this information this into the C Ss is going to get compiled with the import with the bundle and
+
+143
+00:09:09,250 --> 00:09:14,610
+the bundle is going to inject the CSSA inside the DOM.
+
+144
+00:09:14,620 --> 00:09:18,840
+So if we take a look right here we have it inside the header.
+
+145
+00:09:19,060 --> 00:09:21,590
+Everything gets injected right here.
+
+146
+00:09:21,910 --> 00:09:28,040
+So let's say you have I don't know three different CSSA style sheets with a lot of code.
+
+147
+00:09:28,090 --> 00:09:29,610
+A lot of CSSA styles.
+
+148
+00:09:29,860 --> 00:09:33,210
+They're going to get injected into the DOM.
+
+149
+00:09:33,280 --> 00:09:36,680
+So again a lot of developers likes like this.
+
+150
+00:09:36,820 --> 00:09:38,560
+I don't like it that much.
+
+151
+00:09:38,860 --> 00:09:41,130
+But again it's just up to you.
+
+152
+00:09:41,470 --> 00:09:48,980
+So we have more things with stylings but we can do a lot of tricks with styles.
+
+153
+00:09:49,120 --> 00:09:55,840
+But the thing is that this tricks we need to use this tricks along with some options with classes and
+
+154
+00:09:55,840 --> 00:09:59,150
+with all the things that begin to be using with react.
+
+155
+00:09:59,260 --> 00:10:01,100
+But we are not there yet.
+
+156
+00:10:01,140 --> 00:10:02,180
+So I'm not going to show you.
+
+157
+00:10:02,180 --> 00:10:08,210
+Right now we can wait until we know what else we can do with classes and we'd react and then we to bring
+
+158
+00:10:08,270 --> 00:10:12,980
+kind of styles sections advanced something like that.
+
+159
+00:10:12,980 --> 00:10:15,270
+So let's keep moving forward on the next section.
+
+160
+00:10:15,290 --> 00:10:20,070
+Going to be talking about events and it's going to be really really interesting.
+

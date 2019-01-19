@@ -1,0 +1,320 @@
+1
+00:00:01,100 --> 00:00:03,850
+OK so let's create a log out route.
+
+2
+00:00:04,040 --> 00:00:04,970
+Going to be very simple.
+
+3
+00:00:04,970 --> 00:00:12,530
+So app that get opening close and I'm going to say for Slash API users and then log out.
+
+4
+00:00:12,890 --> 00:00:18,580
+Now the user can only logout if there are log in if they are authenticated.
+
+5
+00:00:18,800 --> 00:00:21,610
+So I'm going to use that Alv middleware.
+
+6
+00:00:21,830 --> 00:00:27,080
+And of course if the user is not authenticated and they tried to go to this route the out is going to
+
+7
+00:00:27,080 --> 00:00:28,360
+kick them out.
+
+8
+00:00:28,610 --> 00:00:31,710
+If not it's going to move forward and do the log out so.
+
+9
+00:00:31,910 --> 00:00:33,380
+So open and close.
+
+10
+00:00:33,740 --> 00:00:39,000
+So we will get a request and a response just like before.
+
+11
+00:00:39,410 --> 00:00:40,370
+So what are we going to do.
+
+12
+00:00:40,370 --> 00:00:48,020
+It's very simple we're going to enter to the database right here the database and scenes from mouth.
+
+13
+00:00:48,050 --> 00:00:50,060
+We are getting the user data.
+
+14
+00:00:50,240 --> 00:00:56,120
+What we can do we can grab that user data and we can update the user.
+
+15
+00:00:56,180 --> 00:00:58,670
+You know a record inside that database.
+
+16
+00:00:58,670 --> 00:00:59,450
+All right.
+
+17
+00:00:59,450 --> 00:01:06,220
+So I'm going to use user which is the model then find one an update.
+
+18
+00:01:06,830 --> 00:01:07,250
+All right.
+
+19
+00:01:07,430 --> 00:01:08,860
+So going to open and close.
+
+20
+00:01:09,170 --> 00:01:14,180
+So what I'm going to do I'm just going to find a user by ID because we do have it from our inside of
+
+21
+00:01:14,180 --> 00:01:20,600
+the user request that user and I'm going to just set the token to nothing and it just does chip pretty
+
+22
+00:01:20,600 --> 00:01:22,340
+much destroyed the token.
+
+23
+00:01:22,340 --> 00:01:26,950
+So the first argument is that what we want to find in this case we want to find by ID.
+
+24
+00:01:26,960 --> 00:01:28,700
+So we say there's core ID.
+
+25
+00:01:28,860 --> 00:01:36,570
+All right then I'm going to say request that user and we use that underscore ID Vergon.
+
+26
+00:01:36,720 --> 00:01:37,850
+Going to a coma.
+
+27
+00:01:38,000 --> 00:01:39,260
+And what am I going to do.
+
+28
+00:01:39,260 --> 00:01:43,910
+I'm going to enter the token and I'm going to just delete it set it back to nothing.
+
+29
+00:01:44,000 --> 00:01:48,240
+And of course after that we get a callback function just like this.
+
+30
+00:01:48,290 --> 00:01:50,920
+We get error and we get a doc.
+
+31
+00:01:50,970 --> 00:01:51,500
+All right.
+
+32
+00:01:52,400 --> 00:01:53,830
+So if we do get an error.
+
+33
+00:01:53,870 --> 00:01:59,730
+So if error I can return Jaison.
+
+34
+00:02:00,010 --> 00:02:01,530
+Why did what happen.
+
+35
+00:02:01,550 --> 00:02:11,140
+So read my response Jaison and we sent some objects to project success falls and then error.
+
+36
+00:02:11,820 --> 00:02:20,720
+But of course if we are able to you know destroy that token we say return response then status just
+
+37
+00:02:20,720 --> 00:02:24,150
+like this opening close and we say 200.
+
+38
+00:02:24,410 --> 00:02:29,300
+What we do we send our response and what we do is success.
+
+39
+00:02:29,300 --> 00:02:29,920
+True.
+
+40
+00:02:30,080 --> 00:02:36,100
+So at the end from redux and from react we are able to destroy that token we going get inside of something.
+
+41
+00:02:36,100 --> 00:02:38,600
+Of course we're going to check that later.
+
+42
+00:02:38,660 --> 00:02:40,200
+We're going to get this success true.
+
+43
+00:02:40,220 --> 00:02:46,790
+And if that happens of course we're going to log out of the user from the front end of things.
+
+44
+00:02:47,100 --> 00:02:49,310
+And that is it reasonable.
+
+45
+00:02:49,310 --> 00:02:51,140
+So now let's try it out.
+
+46
+00:02:51,140 --> 00:02:55,490
+Going to go right here I'm going to save this I can save it.
+
+47
+00:02:55,490 --> 00:03:00,700
+And going to call it auf and I going to create a new one.
+
+48
+00:03:00,700 --> 00:03:04,940
+Same thing you are l mustache.
+
+49
+00:03:04,980 --> 00:03:10,890
+You r l r u r l and paste it.
+
+50
+00:03:10,960 --> 00:03:12,830
+We do have a token.
+
+51
+00:03:13,000 --> 00:03:15,400
+And this one is for the Francis Ford.
+
+52
+00:03:15,580 --> 00:03:19,810
+So I'm going to send it and we get success.
+
+53
+00:03:19,810 --> 00:03:20,020
+True.
+
+54
+00:03:20,030 --> 00:03:21,560
+So we are able to log out.
+
+55
+00:03:21,710 --> 00:03:26,720
+And if I go to user and this is the old version I'm going to open a new one to see the updated one.
+
+56
+00:03:26,780 --> 00:03:28,050
+We don't have a token.
+
+57
+00:03:28,070 --> 00:03:34,520
+So on the next thing we the users can log out if they are trying to enter someplace where they need
+
+58
+00:03:34,520 --> 00:03:39,500
+to be authenticated since they don't have a token the indication is going to fail and it's going to
+
+59
+00:03:39,500 --> 00:03:40,370
+keep the user back.
+
+60
+00:03:40,370 --> 00:03:43,420
+So they need to lock in again and generate a new token.
+
+61
+00:03:43,460 --> 00:03:43,900
+Right.
+
+62
+00:03:43,910 --> 00:03:44,920
+Makes sense.
+
+63
+00:03:45,350 --> 00:03:49,960
+All right so we are pretty much done with a user on the server side.
+
+64
+00:03:50,000 --> 00:03:53,000
+Now we're going to go to a different different thing.
+
+65
+00:03:53,010 --> 00:03:59,480
+We're going to do a lot of more things with users but not right now because we need some context.
+
+66
+00:03:59,510 --> 00:04:06,200
+For example if I go to the final one the users they can create actions like a store or something on
+
+67
+00:04:06,200 --> 00:04:10,430
+the account or go into a card on actually making the purchase.
+
+68
+00:04:10,430 --> 00:04:15,030
+We need to store more things into the users information.
+
+69
+00:04:15,140 --> 00:04:18,370
+And for example right here we have the cart and the history.
+
+70
+00:04:18,590 --> 00:04:25,150
+So whenever we have to card we need to go back to that user's part in the server.
+
+71
+00:04:25,520 --> 00:04:33,110
+But again everything happens in context after we update or we enter a cart or maybe when we when we
+
+72
+00:04:33,110 --> 00:04:39,140
+add things to history we need some context because if we do it right now is going to be really hard
+
+73
+00:04:39,140 --> 00:04:40,400
+to explain for me.
+
+74
+00:04:40,460 --> 00:04:42,500
+So we're going to just keep going forward.
+
+75
+00:04:42,530 --> 00:04:46,910
+We're going to do most of the things we need to do from the server and when we reached the section where
+
+76
+00:04:46,910 --> 00:04:49,940
+we need to add to the cart or to the split history.
+
+77
+00:04:50,020 --> 00:04:55,420
+Can go back to the server and create the routes a little bit more context.
+
+78
+00:04:55,490 --> 00:04:55,860
+Right.
+
+79
+00:04:55,930 --> 00:04:56,500
+Okay.
+
+80
+00:04:56,930 --> 00:05:01,340
+So let's go to the next section and we're going to start with a different thing inside the server.
+

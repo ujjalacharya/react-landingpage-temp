@@ -1,0 +1,488 @@
+1
+00:00:01,180 --> 00:00:07,990
+OK since we don't expect for the user to be changing the Ural manually just like you are doing right
+
+2
+00:00:07,990 --> 00:00:14,810
+here changing to profile the posts or whatever we need to do something first.
+
+3
+00:00:14,840 --> 00:00:18,100
+No you must be thinking Dude we need to add a link.
+
+4
+00:00:18,130 --> 00:00:22,980
+I'm going to put a than a ref and whatever we want ad will react.
+
+5
+00:00:22,980 --> 00:00:24,530
+This is not going to work.
+
+6
+00:00:24,730 --> 00:00:28,120
+We cannot use an ailing ATAC just like that.
+
+7
+00:00:28,390 --> 00:00:35,020
+So what we need to use is we need to use a property that is going to give us a router is going to give
+
+8
+00:00:35,020 --> 00:00:37,510
+us a model that is going to be called Link.
+
+9
+00:00:37,960 --> 00:00:40,710
+So this link is going to create a link.
+
+10
+00:00:41,030 --> 00:00:45,870
+So I'm going to go right here inside the header and I'm going to say link now.
+
+11
+00:00:45,890 --> 00:00:49,530
+Open and close this link is going to take us to home.
+
+12
+00:00:49,720 --> 00:00:56,320
+Now with each link we have a property that we need to use that is going to be too.
+
+13
+00:00:56,590 --> 00:00:59,990
+Now the two is going to be of course like the ref.
+
+14
+00:01:00,070 --> 00:01:01,910
+So it seems we want to go to home.
+
+15
+00:01:02,050 --> 00:01:06,850
+We're going to pass a four slash and we go to home so we are getting a link of home and it's taking
+
+16
+00:01:06,850 --> 00:01:07,440
+us.
+
+17
+00:01:07,550 --> 00:01:08,200
+OK.
+
+18
+00:01:08,350 --> 00:01:09,820
+So MacCready the other.
+
+19
+00:01:09,820 --> 00:01:10,400
+All the.
+
+20
+00:01:10,420 --> 00:01:14,310
+All the other links are going to go right here instead of home.
+
+21
+00:01:14,320 --> 00:01:18,940
+It's going to be posts and of course we want to go to posts.
+
+22
+00:01:19,240 --> 00:01:27,110
+And then of course we can have the profile and begin to say profile and then take us to profile.
+
+23
+00:01:27,440 --> 00:01:34,210
+And at the end I'm going to add just a ruler just a line so we can split everything up.
+
+24
+00:01:34,480 --> 00:01:35,160
+OK.
+
+25
+00:01:35,410 --> 00:01:37,210
+So to get home we go to home.
+
+26
+00:01:37,210 --> 00:01:41,390
+If you go to posts it's taking us to posts profile profiles.
+
+27
+00:01:41,410 --> 00:01:43,190
+Everything works fine.
+
+28
+00:01:43,580 --> 00:01:45,070
+You're getting home inside profile.
+
+29
+00:01:45,070 --> 00:01:51,060
+Maybe I'd change it by mistake muse profile again profile profile.
+
+30
+00:01:51,130 --> 00:01:54,380
+So everything works as expected.
+
+31
+00:01:54,400 --> 00:01:58,330
+Now with this link we have some additional options.
+
+32
+00:01:58,390 --> 00:02:00,050
+We can do some settings right here.
+
+33
+00:02:00,070 --> 00:02:01,660
+We can use them settings.
+
+34
+00:02:01,660 --> 00:02:08,320
+So I'm going to delete this route and instead of passing chess with a text string with double quotes
+
+35
+00:02:08,660 --> 00:02:13,040
+going to pass an object and then inside I'm going to pass an object.
+
+36
+00:02:13,090 --> 00:02:16,050
+So the first curly braces it's not an object.
+
+37
+00:02:16,060 --> 00:02:21,010
+Actually it's you're making reference that we want to use something from react and then inside of course
+
+38
+00:02:21,010 --> 00:02:23,730
+we pass a set of rules inside an object.
+
+39
+00:02:23,860 --> 00:02:24,280
+OK.
+
+40
+00:02:24,640 --> 00:02:30,800
+So this right here the options are going to be the pathname a hash and a search.
+
+41
+00:02:30,970 --> 00:02:34,090
+I know that it doesn't make sense but it's going to make sense in a minute.
+
+42
+00:02:34,360 --> 00:02:38,470
+I'm going to say hash and of course then search.
+
+43
+00:02:38,490 --> 00:02:43,520
+So the pathname is going to be equal to whatever we are using inside the two.
+
+44
+00:02:43,780 --> 00:02:45,560
+So it's going to be the actual route.
+
+45
+00:02:45,610 --> 00:02:47,310
+So it's going to be profiled.
+
+46
+00:02:47,890 --> 00:02:48,510
+OK.
+
+47
+00:02:48,880 --> 00:02:53,890
+Now the second one the hash whenever we use around is going to take us to profile and it's going to
+
+48
+00:02:53,890 --> 00:03:00,390
+add at the end of the Al is going to add hash in this case let's say that I want to add.
+
+49
+00:03:00,850 --> 00:03:01,150
+I don't know.
+
+50
+00:03:01,150 --> 00:03:08,440
+Hash tag Francis whatever it's going to go at the end and paste it and just put it at the end.
+
+51
+00:03:08,450 --> 00:03:10,940
+You're going to say coma and then the search.
+
+52
+00:03:11,170 --> 00:03:13,650
+So the search is going to be just a crazy string.
+
+53
+00:03:13,840 --> 00:03:22,530
+So if I do chest like this and say profile and that equal to true if we go right here to the profiles
+
+54
+00:03:22,900 --> 00:03:28,480
+your dating profile then the query string and at the end of the URL we get the hash tag.
+
+55
+00:03:28,750 --> 00:03:36,370
+So of course this is really useful but it depends on which that what you're building which kind of application
+
+56
+00:03:36,370 --> 00:03:37,300
+you're building.
+
+57
+00:03:37,360 --> 00:03:43,600
+Maybe you can use search to pass properties between you or else since we are using re-active just a
+
+58
+00:03:43,660 --> 00:03:44,620
+single page job.
+
+59
+00:03:44,650 --> 00:03:46,920
+You're not going to use it that much but it's cool.
+
+60
+00:03:46,940 --> 00:03:51,230
+You know it's good to know that we have access to this.
+
+61
+00:03:51,250 --> 00:03:51,640
+OK.
+
+62
+00:03:51,910 --> 00:03:55,620
+So let's keep moving moving to the next thing.
+
+63
+00:03:55,640 --> 00:04:02,410
+Now what I want to do I want to catch it say let's pretend that I am inside profile.
+
+64
+00:04:02,410 --> 00:04:04,870
+Let me just delete this for now.
+
+65
+00:04:04,870 --> 00:04:07,050
+Just delete it.
+
+66
+00:04:07,150 --> 00:04:08,600
+Just leave the pathname.
+
+67
+00:04:08,800 --> 00:04:09,690
+OK.
+
+68
+00:04:10,120 --> 00:04:12,950
+So if I go to profile we go to profile.
+
+69
+00:04:13,000 --> 00:04:21,190
+Now what I want to do I want to add a link inside of posts but this link should be taking me to slash
+
+70
+00:04:21,220 --> 00:04:24,220
+profile for Slash posts.
+
+71
+00:04:24,630 --> 00:04:27,230
+OK so let's pretend right here.
+
+72
+00:04:27,320 --> 00:04:34,990
+That said that I have a domain is going to be my awesome app outcome and I whenever I click this dad
+
+73
+00:04:35,730 --> 00:04:40,720
+is going to take me to user but I'm sorry to profile just like that.
+
+74
+00:04:41,210 --> 00:04:41,540
+Sorry.
+
+75
+00:04:41,560 --> 00:04:43,620
+Posts are going to use posts.
+
+76
+00:04:44,020 --> 00:04:53,170
+But since we are inside profile what I want this link to do is to take me to forward slash profile for
+
+77
+00:04:53,170 --> 00:05:01,170
+Slash posts just like that one for the link to know that we are inside profile and instead of taking
+
+78
+00:05:01,230 --> 00:05:05,270
+me two posts just take me to profile for snatch posts.
+
+79
+00:05:05,270 --> 00:05:06,920
+We can do this by hand.
+
+80
+00:05:06,950 --> 00:05:11,190
+You know we need to do something kind of dynamic right here.
+
+81
+00:05:11,190 --> 00:05:15,550
+So OK so I'm going to go to profiles and first we're going to be using.
+
+82
+00:05:15,560 --> 00:05:17,220
+We're going to be using a link right here.
+
+83
+00:05:17,450 --> 00:05:21,870
+So whenever we need to use a link we need to bring re-act road or dom.
+
+84
+00:05:21,950 --> 00:05:24,540
+If not you're not going to be able to use it.
+
+85
+00:05:24,620 --> 00:05:30,590
+So I'm going to paste it and the only thing that we can be using from here from here the reground Dom
+
+86
+00:05:30,890 --> 00:05:31,950
+is going to be link.
+
+87
+00:05:32,060 --> 00:05:35,330
+So I get to copy paste and say link.
+
+88
+00:05:35,720 --> 00:05:44,480
+So right here I'm going to create a link real simple link open close and then take me to forward slash
+
+89
+00:05:44,810 --> 00:05:50,450
+profile for Slash posts so I can know that this is clear.
+
+90
+00:05:50,750 --> 00:05:56,530
+OK so I'm going to say to open close and I'm going to say posts whatever.
+
+91
+00:05:56,570 --> 00:05:58,640
+Of course it's not going to happen.
+
+92
+00:05:58,640 --> 00:06:02,190
+If I click right here it's going to take me two posts.
+
+93
+00:06:02,240 --> 00:06:02,950
+I don't want this.
+
+94
+00:06:02,990 --> 00:06:04,800
+I want to do something else.
+
+95
+00:06:04,850 --> 00:06:13,160
+Now whenever you use react to writer Dom Rianne router and you have the browser router this parent component's
+
+96
+00:06:13,220 --> 00:06:17,790
+is going to pass a set of options just like what you're using prompts.
+
+97
+00:06:17,870 --> 00:06:23,750
+Well same thing this browser router is going to give you some probs with all the information about the
+
+98
+00:06:23,750 --> 00:06:26,260
+routes and whatever you're using.
+
+99
+00:06:26,400 --> 00:06:30,350
+OK so if I go to profiles I'm going to catch that.
+
+100
+00:06:30,380 --> 00:06:36,170
+I'm going to catch the prompts and going to see props and they're going to cancel out the proms and
+
+101
+00:06:36,230 --> 00:06:38,440
+see what we get.
+
+102
+00:06:38,630 --> 00:06:46,320
+And sorry props I don't know why I say bedposts props but going to reload the page.
+
+103
+00:06:46,320 --> 00:06:49,450
+And of course going to have that check the console.
+
+104
+00:06:49,670 --> 00:06:57,640
+And of course there we go to profile and we have a history inside probs a location and a match.
+
+105
+00:06:57,830 --> 00:07:04,550
+So you know we have a lot of information inside the props whenever we use Riak router we have a lot
+
+106
+00:07:04,550 --> 00:07:06,180
+of things we can use.
+
+107
+00:07:06,620 --> 00:07:14,960
+So what I want to do I want to get a dynamic Eurail from here and you know we check prop's we have the
+
+108
+00:07:14,960 --> 00:07:18,770
+information right here we know that the path its profile.
+
+109
+00:07:18,770 --> 00:07:23,080
+So what we can do we can get the Euro dollar the you are l from there.
+
+110
+00:07:23,280 --> 00:07:30,170
+OK so I'm going to go right here and I'm going to pass a set of rules just like we did before with pathname
+
+111
+00:07:30,510 --> 00:07:38,300
+and I say pathname open close and the path for this one is going to be using tempera strengths open
+
+112
+00:07:38,330 --> 00:07:38,970
+close.
+
+113
+00:07:39,110 --> 00:07:44,360
+And what I want to get is going to be inside props inside match.
+
+114
+00:07:44,360 --> 00:07:52,700
+Inside you are all going to go right here and going to say prompts that match dot you are l and then
+
+115
+00:07:52,700 --> 00:07:59,630
+whenever you get the parent directory which in this case is profile I want you to take me to posts.
+
+116
+00:08:00,020 --> 00:08:05,150
+So in this case we are always getting a dynamic Eurail you know dynamic directory.
+
+117
+00:08:05,150 --> 00:08:11,090
+If we use it this way whenever we are inside profile it's going to be profiled force posts and if we
+
+118
+00:08:11,090 --> 00:08:15,650
+are inside posts it's going to be for Slash post for Slash posts.
+
+119
+00:08:16,080 --> 00:08:20,350
+Ok so if we click this it's going to take us to profile and then post.
+
+120
+00:08:20,390 --> 00:08:21,940
+So that is working.
+
+121
+00:08:22,360 --> 00:08:25,130
+OK let's get let's talk.
+
+122
+00:08:25,130 --> 00:08:26,460
+Talk about something else right now.
+

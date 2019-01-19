@@ -1,0 +1,568 @@
+1
+00:00:01,200 --> 00:00:03,180
+So let's keep moving forward.
+
+2
+00:00:03,180 --> 00:00:09,100
+Right now we're going to be doing the ad products section beginning go to the log in since we are our
+
+3
+00:00:09,100 --> 00:00:13,040
+admins we're going to get this option we're going to create this part for the app.
+
+4
+00:00:13,230 --> 00:00:15,950
+And then when we click our products we're going to go to here.
+
+5
+00:00:16,110 --> 00:00:18,480
+So it is pretty much a form just a form.
+
+6
+00:00:18,510 --> 00:00:19,560
+We did a lot of this.
+
+7
+00:00:19,650 --> 00:00:23,620
+So we need to do it again of course but it's going to be very simple this time.
+
+8
+00:00:23,790 --> 00:00:30,600
+And then at the end we can add the upload image and we're going to use this we can upload to a service
+
+9
+00:00:30,960 --> 00:00:31,950
+much much later.
+
+10
+00:00:31,980 --> 00:00:37,100
+And I've already wrote this down on a note as a bonus to this project.
+
+11
+00:00:37,140 --> 00:00:43,620
+I will add pretty much the same behavior than uploading an image but to you know to our directories
+
+12
+00:00:43,620 --> 00:00:50,040
+to our server instead of using everything as a service I would still recommend doing this service and
+
+13
+00:00:50,040 --> 00:00:53,090
+you have a bunch of a bunch of services for this.
+
+14
+00:00:53,100 --> 00:00:55,010
+You can even use firebase for this.
+
+15
+00:00:55,170 --> 00:00:55,630
+Yeah.
+
+16
+00:00:56,010 --> 00:00:56,730
+So OK.
+
+17
+00:00:57,090 --> 00:01:03,370
+So after after we do this before doing this we need to do the nap now before doing the nav.
+
+18
+00:01:03,480 --> 00:01:08,880
+I want to give you I want to tell you something I forgot to do from our project right here.
+
+19
+00:01:08,880 --> 00:01:10,320
+What we did right here.
+
+20
+00:01:10,380 --> 00:01:16,200
+Now let me go here and to the road 380 and I'm going to check the last entry.
+
+21
+00:01:16,200 --> 00:01:18,050
+It's a 700.
+
+22
+00:01:18,060 --> 00:01:20,260
+So this is the one we get right here.
+
+23
+00:01:20,570 --> 00:01:23,460
+Seven hundred and the public for this one.
+
+24
+00:01:23,460 --> 00:01:24,300
+It's false.
+
+25
+00:01:24,390 --> 00:01:26,200
+So we shouldn't be getting this image.
+
+26
+00:01:26,220 --> 00:01:27,880
+I forgot to block this.
+
+27
+00:01:27,900 --> 00:01:29,180
+Now there's two ways you can do it.
+
+28
+00:01:29,190 --> 00:01:34,350
+You can go to the carts and say Dude if it's published false don't show it.
+
+29
+00:01:34,380 --> 00:01:34,940
+That's it.
+
+30
+00:01:35,040 --> 00:01:38,190
+But you will still be loading the from this.
+
+31
+00:01:38,250 --> 00:01:41,260
+The actual data from this product.
+
+32
+00:01:41,280 --> 00:01:45,290
+So what you can do you can go to the service to the server to the route.
+
+33
+00:01:45,300 --> 00:01:54,590
+Actually whenever you reload this routes there's a product you can enter and pie and pass a new arc.
+
+34
+00:01:54,810 --> 00:02:00,300
+For example going to go right here and we're going to say find Arkes and the key for this is going to
+
+35
+00:02:00,300 --> 00:02:03,760
+be publish just like this publish.
+
+36
+00:02:03,770 --> 00:02:10,210
+So I'm just adding the art I'm going to say publish and.
+
+37
+00:02:10,340 --> 00:02:17,040
+And the art and say OK I want to bring all the files as long as they are true just like this.
+
+38
+00:02:17,160 --> 00:02:21,560
+And this is a public route so you can do whatever you want right here and you're not using the admin
+
+39
+00:02:21,570 --> 00:02:25,940
+of course if you use the admin you're going to block everything if the user is not locked in.
+
+40
+00:02:26,070 --> 00:02:27,000
+That is a problem.
+
+41
+00:02:28,040 --> 00:02:36,280
+So if reload this used not there anymore it's just blocking the products that are not published.
+
+42
+00:02:36,340 --> 00:02:37,020
+That is it.
+
+43
+00:02:37,040 --> 00:02:38,720
+That is the only thing you're doing.
+
+44
+00:02:38,720 --> 00:02:44,300
+And of course later if you want to fetch things from the server and they need to be admin you maybe
+
+45
+00:02:44,540 --> 00:02:50,380
+need to export this and create a function maybe and then create a different route or modify the hour
+
+46
+00:02:50,400 --> 00:02:52,510
+an admin so you can put it right here.
+
+47
+00:02:52,640 --> 00:02:54,950
+But you know that's not a good idea.
+
+48
+00:02:54,950 --> 00:02:56,400
+All right let's get.
+
+49
+00:02:56,720 --> 00:02:58,970
+So we're going to do this right now.
+
+50
+00:02:59,120 --> 00:03:02,830
+So we need to create the route I'm going to go to my account.
+
+51
+00:03:02,840 --> 00:03:05,120
+We need to create the NAF right here.
+
+52
+00:03:05,510 --> 00:03:06,640
+So I'm going to close everything.
+
+53
+00:03:06,650 --> 00:03:14,370
+We don't need it and I'm going to go where we have this now which is going to be user inside h o z.
+
+54
+00:03:14,880 --> 00:03:15,390
+OK.
+
+55
+00:03:15,510 --> 00:03:23,550
+Just like the links we need to add a new viable Konst and I'm going to call it admin equals right because
+
+56
+00:03:23,610 --> 00:03:26,530
+the admin section open and close.
+
+57
+00:03:26,720 --> 00:03:30,410
+They're going to copy this one and paste it right here.
+
+58
+00:03:30,510 --> 00:03:33,670
+Now the first one it's going to be the site info.
+
+59
+00:03:33,780 --> 00:03:36,020
+So site and then info.
+
+60
+00:03:36,300 --> 00:03:43,670
+So this one this one we will be able to change some things on on the on the side to the global bbls
+
+61
+00:03:44,060 --> 00:03:46,270
+but that's got to do it later.
+
+62
+00:03:46,590 --> 00:03:49,770
+It's just some information about the above the Web site.
+
+63
+00:03:49,810 --> 00:03:50,450
+OK.
+
+64
+00:03:50,790 --> 00:03:56,550
+So then I'm going to go to app products which is the one we're going to be using right now an advent
+
+65
+00:03:56,600 --> 00:04:00,870
+inside info no it's going to be a product.
+
+66
+00:04:01,000 --> 00:04:01,830
+All right.
+
+67
+00:04:02,060 --> 00:04:03,380
+And I'm going to copy this one.
+
+68
+00:04:03,410 --> 00:04:05,060
+Go with the bottom and paste it.
+
+69
+00:04:05,240 --> 00:04:07,760
+And this one is going to be managed categories later.
+
+70
+00:04:07,760 --> 00:04:13,400
+Of course we need a place where we can enter brands or what so we'll create a tiny little thing for
+
+71
+00:04:13,400 --> 00:04:14,210
+this.
+
+72
+00:04:14,270 --> 00:04:22,420
+So manage categories and instead of admen it's going to be manage categories.
+
+73
+00:04:22,450 --> 00:04:22,980
+OK.
+
+74
+00:04:23,390 --> 00:04:24,500
+So we are pretty much done.
+
+75
+00:04:24,590 --> 00:04:31,700
+Now the thing is and the promise that we want to show this is show this only if the user is authenticated.
+
+76
+00:04:32,030 --> 00:04:36,390
+And remember that the South is a different agency so it's kind of an a different place.
+
+77
+00:04:36,410 --> 00:04:39,550
+We cannot really really use it right here.
+
+78
+00:04:39,560 --> 00:04:46,790
+We could but I prefer to do something else since we have all everything injected in Propst after we
+
+79
+00:04:46,790 --> 00:04:52,850
+load this component because this is the wrapper of a parent print component that actually it's inside
+
+80
+00:04:52,850 --> 00:04:53,560
+the router.
+
+81
+00:04:53,690 --> 00:04:54,310
+What we can do.
+
+82
+00:04:54,310 --> 00:04:56,320
+We could just written redux right.
+
+83
+00:04:56,330 --> 00:04:59,500
+We can bring the maps data to props and get and get it from there.
+
+84
+00:04:59,600 --> 00:05:06,990
+So I'm going to say map state to props to the own prompts and begin to bring user user.
+
+85
+00:05:07,010 --> 00:05:10,210
+And I'm going to say user right.
+
+86
+00:05:10,280 --> 00:05:13,030
+Of course we need to bring connect on the top.
+
+87
+00:05:13,300 --> 00:05:19,950
+So import import than it connect just like this.
+
+88
+00:05:20,330 --> 00:05:26,380
+When they make it right connect to connect and then from re-act redux.
+
+89
+00:05:26,630 --> 00:05:31,080
+Right of course we need to wrap everything inside of here.
+
+90
+00:05:32,060 --> 00:05:36,470
+And now we have reductions here so we can access the maps data props.
+
+91
+00:05:36,500 --> 00:05:41,440
+Of course we need we need to go we need to pass the maps stage props.
+
+92
+00:05:41,570 --> 00:05:43,420
+Forgot to do that.
+
+93
+00:05:43,490 --> 00:05:44,560
+All right.
+
+94
+00:05:44,960 --> 00:05:51,030
+So now of course it will make a reference to Propst inside of there is here we can access the data.
+
+95
+00:05:51,170 --> 00:06:00,950
+So I'm going to go below this and I'm going to say if prop's that user that user data remember that
+
+96
+00:06:00,980 --> 00:06:05,300
+we have it inside user data user data done.
+
+97
+00:06:05,470 --> 00:06:09,680
+And we have as admin then begin to show it.
+
+98
+00:06:10,280 --> 00:06:16,000
+So if not we going to do no good you know same as always.
+
+99
+00:06:16,100 --> 00:06:23,030
+So now I'm going to go right here and enter a new div and the it will contain an H2 called Atman.
+
+100
+00:06:23,480 --> 00:06:30,190
+And inside of here are going to create a new div with a class name of links just like with it before.
+
+101
+00:06:30,350 --> 00:06:32,740
+Notice at the top we pretty much have the same thing.
+
+102
+00:06:32,830 --> 00:06:37,780
+I'm just going to copy and OK now it's going to be GeneDx links.
+
+103
+00:06:37,820 --> 00:06:43,030
+But in this case it's going to be admin you know a different list.
+
+104
+00:06:43,030 --> 00:06:46,170
+So if we check it we have the admin and everything else.
+
+105
+00:06:46,610 --> 00:06:48,680
+So that's good right now.
+
+106
+00:06:48,680 --> 00:06:52,100
+Later of course we shouldn't be getting this right.
+
+107
+00:06:52,130 --> 00:06:57,280
+If you're not anatman but remember that we're going to be going to be using anatman out.
+
+108
+00:06:57,330 --> 00:06:59,380
+We are actually using the admin.
+
+109
+00:06:59,590 --> 00:07:05,420
+So if we want to poll the user you can break this and enter and tried to post something.
+
+110
+00:07:05,600 --> 00:07:10,260
+It's not going to really happen unless they have the correct token.
+
+111
+00:07:10,580 --> 00:07:11,210
+OK.
+
+112
+00:07:11,720 --> 00:07:14,680
+So if we go to our product we have this route.
+
+113
+00:07:14,840 --> 00:07:19,030
+We don't have the route defined Let's create it.
+
+114
+00:07:19,040 --> 00:07:20,630
+So what are we going to do.
+
+115
+00:07:20,660 --> 00:07:24,260
+We're going to go inside user because this is in use or use around.
+
+116
+00:07:24,260 --> 00:07:30,530
+So I'm going to go inside and I'm going to create a new directory called outman and instead of admen
+
+117
+00:07:30,560 --> 00:07:36,110
+of course we will have this at products that.
+
+118
+00:07:36,530 --> 00:07:36,790
+All right.
+
+119
+00:07:36,800 --> 00:07:39,500
+Of course this is going to be a re-act class based component.
+
+120
+00:07:39,500 --> 00:07:41,540
+We need to do a lot of things right here.
+
+121
+00:07:41,630 --> 00:07:48,200
+So I'm going to call it ad products product in real life product.
+
+122
+00:07:48,260 --> 00:07:51,620
+We just enter a single product from here.
+
+123
+00:07:51,720 --> 00:07:52,120
+OK.
+
+124
+00:07:52,220 --> 00:07:57,740
+So our product and our product that's the same thing as product.
+
+125
+00:07:58,040 --> 00:08:00,350
+So now of course we need to add the route.
+
+126
+00:08:00,440 --> 00:08:01,210
+And we're going to do this.
+
+127
+00:08:01,200 --> 00:08:06,590
+And then just move on to the next section so we can start from scratch with the product.
+
+128
+00:08:06,590 --> 00:08:07,190
+All right.
+
+129
+00:08:07,550 --> 00:08:12,880
+So I'm going to go two routes and I'm going to include it.
+
+130
+00:08:13,360 --> 00:08:20,230
+Import product from that forward slash components forward slash user.
+
+131
+00:08:20,450 --> 00:08:25,720
+And then Aben forward slash and end product.
+
+132
+00:08:25,730 --> 00:08:26,200
+All right.
+
+133
+00:08:26,240 --> 00:08:31,310
+So I'm going to copy the same dashboard route because it's had been round and noticed that I'm putting
+
+134
+00:08:31,310 --> 00:08:36,180
+all the things right here in the last public or semipublic right here.
+
+135
+00:08:36,470 --> 00:08:44,550
+So it's instead of user it's admen and it's add product and product.
+
+136
+00:08:44,540 --> 00:08:49,930
+They're going to copy the name of the component paste it and in theory we should be getting the product
+
+137
+00:08:50,740 --> 00:08:54,730
+and we can do of course we didn't have the Napp we need to add it right now.
+
+138
+00:08:54,980 --> 00:08:58,000
+But we are pretty much ready to start doing this.
+
+139
+00:08:58,120 --> 00:09:02,920
+So let's go to the next section and we will start with the easy part which is going to be creating the
+
+140
+00:09:02,920 --> 00:09:08,980
+state bringing the lay out you know all the imports and then and adding the form fields.
+
+141
+00:09:09,070 --> 00:09:10,580
+That is the easy part.
+
+142
+00:09:10,580 --> 00:09:12,060
+So let's go to the next section into this.
+

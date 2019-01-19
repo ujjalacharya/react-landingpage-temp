@@ -1,0 +1,716 @@
+1
+00:00:00,810 --> 00:00:04,610
+OK so before we start preventing routes we need one more route.
+
+2
+00:00:04,620 --> 00:00:07,730
+We need to pre-event which is you know the use or dash for it.
+
+3
+00:00:07,860 --> 00:00:14,550
+If I go two routes we have the register and the log in which are not really private routes because they
+
+4
+00:00:14,550 --> 00:00:15,120
+are public.
+
+5
+00:00:15,120 --> 00:00:18,100
+If you're not logged in and then of course we have a public.
+
+6
+00:00:18,240 --> 00:00:24,810
+So now we need to create one completely private route and that could be the user dashboard.
+
+7
+00:00:24,810 --> 00:00:25,330
+All right.
+
+8
+00:00:25,620 --> 00:00:31,790
+So inside of the components what I'm going to do I'm going to create a folder or a directory where we
+
+9
+00:00:31,790 --> 00:00:34,740
+are going to be hosting all the private routes.
+
+10
+00:00:34,760 --> 00:00:40,620
+You know the user private routes are going to create a directory called user and he's out of here.
+
+11
+00:00:40,790 --> 00:00:44,700
+And this yes this is going to be the user dashboard.
+
+12
+00:00:44,700 --> 00:00:49,440
+Now the user dashboard is going to be up just of reacts like this component.
+
+13
+00:00:49,450 --> 00:01:00,330
+We don't need a class based component and I we call this user dashboard copy paste or I get to say dashboard
+
+14
+00:01:00,330 --> 00:01:03,530
+right now and I'm going to add the routes right here.
+
+15
+00:01:03,550 --> 00:01:09,640
+So import user dashboard from that for Slash components.
+
+16
+00:01:09,660 --> 00:01:10,760
+Now we have user.
+
+17
+00:01:10,800 --> 00:01:13,950
+And now of course we don't need to bring it.
+
+18
+00:01:14,340 --> 00:01:18,400
+So I'm going to copy this and I'm going to paste it down here.
+
+19
+00:01:18,840 --> 00:01:25,900
+And we're going to be using the user dashboard route right components of the route will be different.
+
+20
+00:01:25,920 --> 00:01:30,460
+So user forward slash dashboard.
+
+21
+00:01:31,470 --> 00:01:32,090
+All right.
+
+22
+00:01:32,250 --> 00:01:37,530
+So if you go to use a dashboard now we get dashboard that is now on the final one this is what we get
+
+23
+00:01:37,590 --> 00:01:38,420
+at the end.
+
+24
+00:01:38,550 --> 00:01:41,590
+So the user dashboard should be looking like this.
+
+25
+00:01:41,610 --> 00:01:48,120
+Now if you notice we have right here the contents and in the left have the nav ride and the nav it's
+
+26
+00:01:48,150 --> 00:01:49,340
+always the same.
+
+27
+00:01:49,500 --> 00:01:54,450
+So it kind of makes sense for us to create a high order component to show the nav and then of course
+
+28
+00:01:54,450 --> 00:02:00,970
+we will need to change it to show the admin routes which is on the same high or that component.
+
+29
+00:02:01,200 --> 00:02:04,190
+But we're going to do the admin part of things much later.
+
+30
+00:02:04,200 --> 00:02:09,050
+Now we're going to create the the high or the components so we can show the children's and the now.
+
+31
+00:02:09,110 --> 00:02:09,950
+All right.
+
+32
+00:02:09,960 --> 00:02:15,660
+So I'm going to go to h o CS and create a new file and I'm going to go.
+
+33
+00:02:15,660 --> 00:02:20,910
+This user could be called user lay out or something like that.
+
+34
+00:02:20,910 --> 00:02:24,820
+So this user will show pretty much the nav and the children.
+
+35
+00:02:24,840 --> 00:02:27,930
+So this is going to be a re-act stateless component.
+
+36
+00:02:27,940 --> 00:02:29,670
+We don't need a class right now.
+
+37
+00:02:30,150 --> 00:02:38,190
+So instead of user going to call it user and then lay out copy paste Raggatt.
+
+38
+00:02:38,760 --> 00:02:41,420
+So again we will have links.
+
+39
+00:02:41,490 --> 00:02:52,630
+So I need to import link from re-act router Dom.
+
+40
+00:02:52,690 --> 00:02:53,230
+All right.
+
+41
+00:02:54,090 --> 00:02:54,560
+So OK.
+
+42
+00:02:55,090 --> 00:03:00,930
+Now first we need a lynx and we need some links and we're going to create a marble where are we going
+
+43
+00:03:00,930 --> 00:03:02,570
+to be hosting this links.
+
+44
+00:03:02,570 --> 00:03:05,680
+It's going to create an array of objects with the links inside.
+
+45
+00:03:05,710 --> 00:03:10,460
+Now each link will have a name and a link to ride.
+
+46
+00:03:10,500 --> 00:03:13,740
+Need to pass where are we going to go when we click here.
+
+47
+00:03:13,980 --> 00:03:20,240
+So in this case the first link is going to be my account that a coma and we need to tell where are we
+
+48
+00:03:20,250 --> 00:03:20,900
+going to go.
+
+49
+00:03:20,910 --> 00:03:27,800
+So we're going to go to user and the main one which is dashboard right that I get a copy this.
+
+50
+00:03:27,900 --> 00:03:30,340
+So we don't need to type over again.
+
+51
+00:03:30,600 --> 00:03:33,050
+And this one will be the user information.
+
+52
+00:03:33,180 --> 00:03:40,110
+Now on user information is going to be pretty much a form where we can update the user profile.
+
+53
+00:03:40,110 --> 00:03:49,410
+So again user profile and we will be able to change the name and you know some user data as we move
+
+54
+00:03:49,410 --> 00:03:52,910
+forward through the project of course this is going to get much bigger.
+
+55
+00:03:53,310 --> 00:04:01,170
+So of course whenever the user add something to the cart they need to of course inspect what's inside
+
+56
+00:04:01,170 --> 00:04:02,970
+the card and make the purchase.
+
+57
+00:04:02,970 --> 00:04:10,730
+So my cart capital-T and this one will be inside user and then card of course we don't have all these
+
+58
+00:04:10,740 --> 00:04:14,050
+routes who will create this much later much much later.
+
+59
+00:04:14,050 --> 00:04:16,100
+So we're going to be displaying children.
+
+60
+00:04:16,170 --> 00:04:20,190
+I want to get the props from the you know the components.
+
+61
+00:04:20,280 --> 00:04:25,360
+Now I'm going to go right here inside and say that I want a class of container.
+
+62
+00:04:25,650 --> 00:04:34,340
+And inside I will create a new div with a class name of user Container container.
+
+63
+00:04:34,880 --> 00:04:41,910
+All right now in the left will have the user now in in the right you have the it will get the props
+
+64
+00:04:41,910 --> 00:04:49,970
+that children so div class name of user left now.
+
+65
+00:04:50,510 --> 00:04:52,240
+Now there we go.
+
+66
+00:04:52,530 --> 00:04:54,260
+And there right.
+
+67
+00:04:54,330 --> 00:05:02,780
+We will get the class name of user and then right now if I do inside you are right.
+
+68
+00:05:02,790 --> 00:05:04,140
+Right.
+
+69
+00:05:04,370 --> 00:05:04,760
+Yeah.
+
+70
+00:05:04,880 --> 00:05:05,300
+Right.
+
+71
+00:05:05,370 --> 00:05:10,100
+And then props the children we can get whatever content we get from the parent component.
+
+72
+00:05:10,170 --> 00:05:16,440
+In this case right now we do we only have dashboard so we can get this keyboard just dashboard in the
+
+73
+00:05:16,500 --> 00:05:17,260
+left.
+
+74
+00:05:17,340 --> 00:05:25,920
+Of course I need to add a title so I will add an edge to saying my account and after my account I'm
+
+75
+00:05:25,920 --> 00:05:30,190
+going to wrap all the links inside of a container called lynx.
+
+76
+00:05:30,250 --> 00:05:35,880
+As a matter right now what I'm going to do instead of rendering press here I'm going to create a function
+
+77
+00:05:35,880 --> 00:05:42,930
+that calls generate links and I will pass the links we have inside the firewall.
+
+78
+00:05:43,170 --> 00:05:43,770
+All right.
+
+79
+00:05:44,040 --> 00:05:45,170
+Pretty simple you know.
+
+80
+00:05:45,490 --> 00:05:46,450
+Not not so hard.
+
+81
+00:05:46,470 --> 00:05:48,090
+Really simple stuff.
+
+82
+00:05:48,420 --> 00:05:48,770
+OK.
+
+83
+00:05:48,840 --> 00:05:56,190
+So I'm going to create a viable call Konst and then generate links and this link this function will
+
+84
+00:05:56,190 --> 00:05:59,410
+be receiving the prob of links.
+
+85
+00:05:59,460 --> 00:06:02,640
+You know the argument links and then we will do something now.
+
+86
+00:06:02,670 --> 00:06:04,410
+I want to return single sex.
+
+87
+00:06:04,470 --> 00:06:09,880
+So I need to return this the prentices.
+
+88
+00:06:10,020 --> 00:06:11,720
+Now we're going to grab this links.
+
+89
+00:06:11,770 --> 00:06:13,920
+You're going to say map opening close.
+
+90
+00:06:14,010 --> 00:06:19,920
+Sometimes when I say something and then a pause for two seconds it's to give you time to you know just
+
+91
+00:06:19,920 --> 00:06:20,980
+write this.
+
+92
+00:06:21,300 --> 00:06:27,900
+Of course like it's all the four at the bottom of the BDO you have the go slower option or go faster
+
+93
+00:06:27,900 --> 00:06:30,060
+if you want to go faster.
+
+94
+00:06:30,060 --> 00:06:34,360
+Now on each iteration will you will be oh my god the hour to complete.
+
+95
+00:06:34,380 --> 00:06:36,940
+Sometimes drives me crazy.
+
+96
+00:06:37,080 --> 00:06:38,270
+I don't know why it's doing that.
+
+97
+00:06:38,310 --> 00:06:43,860
+So I put in place besides data transfer item.
+
+98
+00:06:43,910 --> 00:06:44,920
+What is that.
+
+99
+00:06:45,360 --> 00:06:53,610
+So item and then we get I need to go to my plug in inside B-S code and disable all of them.
+
+100
+00:06:53,670 --> 00:06:57,230
+So whenever we run this function we want to return and Jane sex.
+
+101
+00:06:57,240 --> 00:07:04,830
+So we will do parenthesis instead of brackets and each time on each loop we want to return a link right.
+
+102
+00:07:04,890 --> 00:07:05,420
+OK.
+
+103
+00:07:05,760 --> 00:07:13,740
+So like now each link will have a name and the name is going to be item that name which is the one we
+
+104
+00:07:13,980 --> 00:07:18,280
+have right here at the top and the then we need to pass it to.
+
+105
+00:07:18,330 --> 00:07:22,660
+And that too is going to be item that link to.
+
+106
+00:07:22,890 --> 00:07:27,830
+And then of course we need to add a key because we're looping something and we will pass that iteration.
+
+107
+00:07:28,050 --> 00:07:29,520
+This is pretty much done.
+
+108
+00:07:29,540 --> 00:07:35,620
+So now every time we want to render a private route we need to display the user layout.
+
+109
+00:07:35,760 --> 00:07:43,820
+So I'm going to go right here to index which is the user dashboard and we need to import user layout
+
+110
+00:07:44,230 --> 00:07:50,890
+from that that force last one more time a Tosi for Slash and the user.
+
+111
+00:07:51,540 --> 00:07:53,040
+All right.
+
+112
+00:07:53,050 --> 00:08:00,670
+Now what we want to do is we want to wrap the complete rout inside of the user layout.
+
+113
+00:08:00,670 --> 00:08:05,740
+So now every time we just play around with it with an app in route we need to wrap it with the user
+
+114
+00:08:05,750 --> 00:08:08,430
+layout and at the end we get this right.
+
+115
+00:08:08,440 --> 00:08:11,950
+We get the NAB and then whatever content we have inside.
+
+116
+00:08:12,130 --> 00:08:16,480
+Now on the dashboard and going to do it right now and the next section we're going to prevent the routes
+
+117
+00:08:16,690 --> 00:08:22,240
+and then arrange all the links right here at the top so we can have something a little bit more complete
+
+118
+00:08:23,260 --> 00:08:24,540
+inside of here.
+
+119
+00:08:24,940 --> 00:08:26,860
+We will have two different sections.
+
+120
+00:08:26,860 --> 00:08:32,480
+Let me just show you the user information where we can go and edit info and then history of protasis
+
+121
+00:08:32,530 --> 00:08:38,930
+if we do have a history and all that is going to come from the database and we going do it much later.
+
+122
+00:08:39,070 --> 00:08:48,410
+But for now I'm just going to create the minimum layout so user info underscore and then panel any sort
+
+123
+00:08:48,420 --> 00:08:55,160
+of peer who will get the one with the title which has user information.
+
+124
+00:08:55,720 --> 00:09:03,040
+I'm putting this here because I need to put it someplace and just create a single route for history
+
+125
+00:09:03,280 --> 00:09:07,600
+a single route for using information and everything else to have makes no sense we're going to do it
+
+126
+00:09:07,600 --> 00:09:14,800
+right here now instead of here we'll get a div and expense and span it's going to be the information
+
+127
+00:09:14,800 --> 00:09:15,660
+above the user.
+
+128
+00:09:15,730 --> 00:09:20,660
+In this case we were going to put the name the last name and maybe the e-mail.
+
+129
+00:09:20,980 --> 00:09:25,030
+So again you can choose whatever you want to put right here.
+
+130
+00:09:25,510 --> 00:09:30,400
+Now of course we need to fetch using information but for that we have the outof route.
+
+131
+00:09:30,430 --> 00:09:32,780
+So we going to do it in a couple of minutes.
+
+132
+00:09:32,890 --> 00:09:39,220
+So after here we need a button so we can send the user to edit the account info.
+
+133
+00:09:39,220 --> 00:09:49,510
+So since we are using a button we're going to import my button at the top and we will use reusable components.
+
+134
+00:09:49,510 --> 00:09:53,280
+So you tell us for a slash and then button.
+
+135
+00:09:53,280 --> 00:09:54,420
+All right.
+
+136
+00:09:54,850 --> 00:10:01,210
+So if you remember with the button we need to make a reference to it and pass some props.
+
+137
+00:10:01,210 --> 00:10:06,120
+We have the type which is default we're not going to do anything you write here.
+
+138
+00:10:06,340 --> 00:10:15,550
+So the default then title equals and we no added account info.
+
+139
+00:10:15,910 --> 00:10:16,420
+All right.
+
+140
+00:10:18,700 --> 00:10:19,860
+What else.
+
+141
+00:10:19,860 --> 00:10:23,620
+Since the default link is the default button it's a link.
+
+142
+00:10:23,620 --> 00:10:26,640
+So we have to look at the property link too.
+
+143
+00:10:26,730 --> 00:10:29,880
+And this one is going to go to user for Slash.
+
+144
+00:10:29,950 --> 00:10:39,100
+And if you remember we can did this and it's user profile right user profile now but it's got user user
+
+145
+00:10:39,100 --> 00:10:43,270
+profile could be user information or something like that.
+
+146
+00:10:43,640 --> 00:10:45,230
+But this one's OK.
+
+147
+00:10:45,460 --> 00:10:49,950
+So if I go to user information we just use a profile we kind of get it.
+
+148
+00:10:50,000 --> 00:10:50,480
+All right.
+
+149
+00:10:51,540 --> 00:10:52,070
+OK.
+
+150
+00:10:52,280 --> 00:10:54,300
+So this is get now at the bottom.
+
+151
+00:10:54,320 --> 00:10:58,930
+We will have the history of protasis are going to create the place where we're going to be putting this.
+
+152
+00:10:59,000 --> 00:11:02,900
+But begin to do this much later because we need to have.
+
+153
+00:11:02,900 --> 00:11:07,790
+We need to get on the database at least you know maybe history or something.
+
+154
+00:11:07,940 --> 00:11:10,170
+Right now we don't have the ability to do that.
+
+155
+00:11:10,190 --> 00:11:14,090
+So when we get to that section we're going to fill this.
+
+156
+00:11:14,090 --> 00:11:23,040
+So on this one I'm going to put in each one of history so we are almost done.
+
+157
+00:11:23,570 --> 00:11:28,580
+Car chases one of our purchases.
+
+158
+00:11:28,580 --> 00:11:29,240
+All right.
+
+159
+00:11:29,690 --> 00:11:35,030
+And instead of here and this is actually a pretty important class for this one because this is kind
+
+160
+00:11:35,030 --> 00:11:36,500
+of a table.
+
+161
+00:11:36,500 --> 00:11:38,580
+So I'm going to put the class right here.
+
+162
+00:11:38,990 --> 00:11:47,300
+And then it will be put the history so class name equals two and I use user underscore product user
+
+163
+00:11:47,630 --> 00:11:55,500
+block and then wrapper and then of course we got the history and we are done.
+
+164
+00:11:55,790 --> 00:12:01,500
+I'm going to reload the application right here preloaded and look at it.
+
+165
+00:12:01,570 --> 00:12:03,810
+But of course we need to do a lot of things.
+
+166
+00:12:03,820 --> 00:12:05,560
+We will create history later.
+
+167
+00:12:05,560 --> 00:12:08,110
+But all of this it's pretty much done.
+
+168
+00:12:08,140 --> 00:12:08,470
+All right.
+
+169
+00:12:08,490 --> 00:12:10,910
+Go to my information user profile.
+
+170
+00:12:10,930 --> 00:12:13,750
+My cart my cart everything works.
+
+171
+00:12:14,080 --> 00:12:19,810
+So now we have a private route a completely private route not so private.
+
+172
+00:12:19,810 --> 00:12:21,830
+And then we have the plug the public one.
+
+173
+00:12:22,000 --> 00:12:27,610
+So let's go to the next section and start creating the logic of authenticated user of indicating users.
+
+174
+00:12:27,700 --> 00:12:31,180
+And then actually creating private and public routes.
+
+175
+00:12:31,180 --> 00:12:37,900
+And if you remember on the previous the previous project we did we created our own component that managers
+
+176
+00:12:37,960 --> 00:12:40,330
+of this logic right here.
+
+177
+00:12:40,480 --> 00:12:41,950
+But right now we are not going to do that.
+
+178
+00:12:41,950 --> 00:12:46,880
+We're going to do that pretty much the same same exact thing but on a different way.
+
+179
+00:12:46,990 --> 00:12:48,950
+So let's go to the next one and start with this.
+

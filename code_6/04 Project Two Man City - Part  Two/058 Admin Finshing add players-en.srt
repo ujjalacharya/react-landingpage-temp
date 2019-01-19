@@ -1,0 +1,860 @@
+1
+00:00:00,730 --> 00:00:01,170
+Right.
+
+2
+00:00:01,170 --> 00:00:05,530
+So now we do have a image name and of course a download image.
+
+3
+00:00:05,760 --> 00:00:10,710
+So OK so now we will grab this name and we will go back to this function.
+
+4
+00:00:10,740 --> 00:00:17,520
+Remember we were using the file uploader and whenever we get uploaded right here we need to make a reference
+
+5
+00:00:17,790 --> 00:00:22,250
+to the file name store file name right here.
+
+6
+00:00:22,470 --> 00:00:28,560
+So I'm going to go back to the file uploader and after you know we upload everything and we get the
+
+7
+00:00:28,560 --> 00:00:34,850
+image name and everything else we're gonna make a reference to this that prompts that file name.
+
+8
+00:00:35,250 --> 00:00:40,310
+We open file name and they're going to be passing the file on the file name is not dead.
+
+9
+00:00:40,310 --> 00:00:47,130
+Download your mail it's just a file on the right just the name the ID and then PAGG that that is it.
+
+10
+00:00:47,130 --> 00:00:50,180
+So now this file name will be receiving the name of the file.
+
+11
+00:00:50,190 --> 00:00:55,020
+So can it go back to store file the right here on a store file name.
+
+12
+00:00:55,020 --> 00:01:01,030
+We will be receiving a file on name and this is going to be a little bit weird at the beginning.
+
+13
+00:01:01,050 --> 00:01:07,590
+Now whenever we get this file name the name of the name of the file what we want to do is we want to
+
+14
+00:01:07,680 --> 00:01:12,610
+update the form because right here at the top we have a state of image.
+
+15
+00:01:12,660 --> 00:01:20,040
+So I want to enter the update form function we have right here at the bottom and I want to update the
+
+16
+00:01:20,040 --> 00:01:25,890
+value of this which is going to be the image name and we going to set the valid to true right now could
+
+17
+00:01:25,890 --> 00:01:26,840
+be false.
+
+18
+00:01:28,140 --> 00:01:28,500
+OK.
+
+19
+00:01:28,570 --> 00:01:29,880
+So we're going to do that.
+
+20
+00:01:29,940 --> 00:01:33,960
+We're going to go right here at the bottom to store filing and we're going to do.
+
+21
+00:01:33,970 --> 00:01:37,920
+I'm going to say does that update form just like this.
+
+22
+00:01:38,230 --> 00:01:41,360
+And this is going to be weird passing an object.
+
+23
+00:01:41,500 --> 00:01:44,080
+It's going to be an I.D. off image.
+
+24
+00:01:44,080 --> 00:01:45,990
+Why I'm using the image keyword.
+
+25
+00:01:46,090 --> 00:01:51,110
+It's because in the state on the form data we have image that this would be picture.
+
+26
+00:01:51,130 --> 00:01:55,930
+I would need to use picture on that on that you know that call right here at the bottom.
+
+27
+00:01:56,030 --> 00:01:58,250
+There's one good picture but we are using image.
+
+28
+00:01:58,270 --> 00:01:59,630
+So it's going to be image.
+
+29
+00:01:59,660 --> 00:02:00,270
+All right.
+
+30
+00:02:00,580 --> 00:02:02,770
+And then as the second argument.
+
+31
+00:02:02,890 --> 00:02:05,020
+And that is again the weird part.
+
+32
+00:02:05,230 --> 00:02:12,220
+I'm going to pass the file name now if I go to this update form the update form function.
+
+33
+00:02:12,280 --> 00:02:15,500
+It's not the way you know it's not the way it works.
+
+34
+00:02:15,700 --> 00:02:22,980
+The update form what it does it grabs that element then access the element through the ID and then adds
+
+35
+00:02:23,020 --> 00:02:25,280
+the event target that value.
+
+36
+00:02:25,570 --> 00:02:35,680
+So if I go right here on the top and do console log and then element just like this and I type something
+
+37
+00:02:36,880 --> 00:02:42,310
+we get the event and then the ID but we get one single object.
+
+38
+00:02:42,520 --> 00:02:48,610
+Right now on our you know file name update or whatever you want to call it right here we are passing
+
+39
+00:02:48,610 --> 00:02:52,410
+two arguments an object with the ID and a file name.
+
+40
+00:02:52,420 --> 00:02:58,240
+So what we will need to do we will need to Krafty ID from the first argument because right here we have
+
+41
+00:02:58,240 --> 00:03:00,960
+an ID but we don't have an event.
+
+42
+00:03:01,030 --> 00:03:03,770
+We have just the file name which is just a string.
+
+43
+00:03:04,000 --> 00:03:05,720
+So we don't have an event.
+
+44
+00:03:05,740 --> 00:03:11,950
+So what we can do if we go to update form right here the top can do this and make it right.
+
+45
+00:03:12,220 --> 00:03:16,870
+I'm going to say that this update update form is going to be receiving two arguments.
+
+46
+00:03:16,930 --> 00:03:20,800
+The first one is the element which is the new one we know and the second one.
+
+47
+00:03:20,790 --> 00:03:22,660
+And then we call it content.
+
+48
+00:03:22,660 --> 00:03:25,150
+Now the content it's equal to nothing.
+
+49
+00:03:25,150 --> 00:03:31,540
+Now if we don't end this is default arguments this is something from ESX if we don't have this argument
+
+50
+00:03:31,870 --> 00:03:38,680
+whenever this function gets called the content this Marvel is going to be equal to nothing if we do
+
+51
+00:03:38,680 --> 00:03:43,590
+have an argument for this one this content it's going to be equal to whatever.
+
+52
+00:03:43,630 --> 00:03:45,880
+You know we are passing to this function.
+
+53
+00:03:46,000 --> 00:03:51,910
+So for all of this input no player name last name and number and position the content is going to be
+
+54
+00:03:52,000 --> 00:03:53,070
+empty.
+
+55
+00:03:53,140 --> 00:03:57,900
+Right but for file name we will have the name of the file.
+
+56
+00:03:57,990 --> 00:04:00,580
+You know the id and the PMG.
+
+57
+00:04:00,880 --> 00:04:07,060
+So what we can do right here instead of saying Dude just enter the element even the target value when
+
+58
+00:04:07,090 --> 00:04:16,610
+I can do it say if opening close and if content it's equal to you know triple equal to nothing.
+
+59
+00:04:16,660 --> 00:04:22,900
+Then of course we go to the default scenario and we entered the target the value if not of course we
+
+60
+00:04:22,900 --> 00:04:29,500
+know that it's an image so we grab the new elements that are new and we say that we want to store inside
+
+61
+00:04:29,520 --> 00:04:34,260
+value whatever we have inside content which is the name of the image.
+
+62
+00:04:34,270 --> 00:04:36,380
+Of course that is it.
+
+63
+00:04:36,640 --> 00:04:37,150
+That's it.
+
+64
+00:04:37,150 --> 00:04:38,270
+Of course is it.
+
+65
+00:04:38,290 --> 00:04:48,220
+So now when we go to the render console log opening close does not state that for data we're going to
+
+66
+00:04:48,430 --> 00:04:50,000
+try again.
+
+67
+00:04:50,200 --> 00:04:57,550
+We're going to go to choose player Vincent Kompany opening close we're going to upload the image and
+
+68
+00:04:57,550 --> 00:04:59,500
+at the end we will get new state.
+
+69
+00:04:59,650 --> 00:05:04,140
+And if I go to image we will have inside image validation.
+
+70
+00:05:04,180 --> 00:05:10,930
+True because we are running a validation on the update form right here we are running this and we do
+
+71
+00:05:10,930 --> 00:05:16,030
+have a valid true and you know the value it's the actual image.
+
+72
+00:05:16,030 --> 00:05:20,870
+So whenever we push this to the database now we upload the new player.
+
+73
+00:05:21,010 --> 00:05:24,250
+We will have the image as a valid value.
+
+74
+00:05:24,520 --> 00:05:25,060
+Right.
+
+75
+00:05:25,290 --> 00:05:26,730
+No this is good.
+
+76
+00:05:27,040 --> 00:05:29,230
+So we are pretty much done with the file upload.
+
+77
+00:05:29,230 --> 00:05:36,610
+The only thing that's missing right now is going to be the you know the reset image the remove image
+
+78
+00:05:37,030 --> 00:05:41,190
+and we can do something very very very simple.
+
+79
+00:05:41,210 --> 00:05:46,180
+We're not going to delete it from the database because what we can do we can remove maybe cache the
+
+80
+00:05:46,180 --> 00:05:50,610
+file name go to storage and remove it directly from storage.
+
+81
+00:05:50,680 --> 00:05:51,810
+But we're not going to do that.
+
+82
+00:05:51,820 --> 00:05:58,030
+I'm just going to reset the state so we can delete the image from image right here from this and from
+
+83
+00:05:58,030 --> 00:05:59,300
+the State of the file.
+
+84
+00:05:59,300 --> 00:06:01,940
+Uploader So we're going to do that.
+
+85
+00:06:02,110 --> 00:06:02,550
+All right.
+
+86
+00:06:02,620 --> 00:06:05,630
+So of course we don't have that logic right here.
+
+87
+00:06:05,650 --> 00:06:07,600
+We're going at it right now.
+
+88
+00:06:07,780 --> 00:06:12,310
+So at the bottom we have this upload again function.
+
+89
+00:06:12,310 --> 00:06:18,630
+So the only thing that this upload again is going to reset the state of this back to nothing.
+
+90
+00:06:18,850 --> 00:06:23,490
+So going to create the function right here or the bottom are going to call it again upload again he
+
+91
+00:06:23,510 --> 00:06:29,110
+calls open it closed just to function and back in bed can do this.
+
+92
+00:06:29,200 --> 00:06:35,860
+That set stayed open and close and they're going to say that everything is back to zero so I'm going
+
+93
+00:06:35,860 --> 00:06:39,090
+to copy the state and store it.
+
+94
+00:06:40,110 --> 00:06:45,550
+That is that of course we are setting all the props inside a file of bloater.
+
+95
+00:06:45,550 --> 00:06:49,610
+We also need to clear the state on at players.
+
+96
+00:06:49,660 --> 00:06:54,110
+We need to go to here and reset back to zero.
+
+97
+00:06:54,340 --> 00:07:02,950
+So this file our bloater if you remember if I go here to the file uploader we have a reset image function
+
+98
+00:07:03,370 --> 00:07:06,550
+so we could trigger this to you know do the resetting.
+
+99
+00:07:06,730 --> 00:07:13,720
+So at the end of this I'm going to call this Probst does that and then reset image.
+
+100
+00:07:13,720 --> 00:07:16,440
+I believe I called this this way reset image.
+
+101
+00:07:16,450 --> 00:07:17,670
+I'll just double check.
+
+102
+00:07:17,910 --> 00:07:18,580
+Reset image.
+
+103
+00:07:18,640 --> 00:07:19,560
+Finger.
+
+104
+00:07:19,690 --> 00:07:21,490
+Now again this function.
+
+105
+00:07:21,490 --> 00:07:23,250
+So far it does nothing.
+
+106
+00:07:23,380 --> 00:07:27,610
+So what we need to do we need to do pretty much custom update form.
+
+107
+00:07:27,610 --> 00:07:32,120
+So first I got to make a copy of new form data.
+
+108
+00:07:32,160 --> 00:07:36,210
+I'm going to do that really quick because we kind of did this a million times.
+
+109
+00:07:36,300 --> 00:07:42,590
+It's going to be a copy of this that state that form data and he's out of here.
+
+110
+00:07:42,710 --> 00:07:44,640
+So I have a new form data.
+
+111
+00:07:44,680 --> 00:07:47,300
+Let me correct it from data.
+
+112
+00:07:47,320 --> 00:07:51,720
+What I'm going to do I'm going to access new form data I can access image.
+
+113
+00:07:51,720 --> 00:07:56,240
+I'm going to do value just like this equals to nothing.
+
+114
+00:07:56,260 --> 00:07:58,140
+And again new form data.
+
+115
+00:07:58,360 --> 00:08:03,180
+We do image and they're valid.
+
+116
+00:08:03,420 --> 00:08:06,690
+We're going to reset it back to false.
+
+117
+00:08:06,860 --> 00:08:12,800
+And of course then we need to do this that sets stayed open and close and we do default image remember
+
+118
+00:08:12,800 --> 00:08:16,010
+that we do have a default image is back to nothing.
+
+119
+00:08:16,220 --> 00:08:20,900
+And then we sent the form data with the updated new form data.
+
+120
+00:08:21,080 --> 00:08:21,680
+Really simple.
+
+121
+00:08:21,680 --> 00:08:23,720
+We did this a million times.
+
+122
+00:08:23,720 --> 00:08:26,570
+So now we try again and I've saved it forgot to save it.
+
+123
+00:08:26,690 --> 00:08:30,900
+If we try it again I'm going to upload company.
+
+124
+00:08:30,960 --> 00:08:36,140
+It's going to take a second and we get the image I'm going to do remove and notice that we have a console
+
+125
+00:08:36,170 --> 00:08:39,080
+I have a lock in this state that form data.
+
+126
+00:08:39,150 --> 00:08:40,330
+I'm going to remove it.
+
+127
+00:08:40,430 --> 00:08:45,090
+I get the new state and inside image it's valid false and value.
+
+128
+00:08:45,170 --> 00:08:46,580
+It's back to nothing.
+
+129
+00:08:46,580 --> 00:08:50,220
+So we are ready to upload again like it's all before right here.
+
+130
+00:08:50,240 --> 00:08:52,460
+When you reset an image what you can do.
+
+131
+00:08:52,460 --> 00:08:56,800
+You can go to firebase and unset the image from the storage.
+
+132
+00:08:56,990 --> 00:09:03,110
+And I'm not going to do it just to save time and it's as simple as doing you know firebase storage and
+
+133
+00:09:03,110 --> 00:09:05,110
+then ref and unset.
+
+134
+00:09:05,360 --> 00:09:06,760
+That is it.
+
+135
+00:09:07,160 --> 00:09:08,100
+So very good.
+
+136
+00:09:08,240 --> 00:09:13,410
+We have pretty much everything we need for the file uploader right.
+
+137
+00:09:13,760 --> 00:09:17,570
+So OK so now what's next is doing everything else.
+
+138
+00:09:17,690 --> 00:09:23,800
+You know the player name player last name you just posting the form to submitting the form with the
+
+139
+00:09:23,900 --> 00:09:25,400
+real data.
+
+140
+00:09:25,430 --> 00:09:26,670
+So let's do that right now.
+
+141
+00:09:28,480 --> 00:09:34,630
+So let's go to the submit form and instead of the form is valid I want to check what I get from the
+
+142
+00:09:34,630 --> 00:09:38,690
+console log and data to submit as usual.
+
+143
+00:09:38,710 --> 00:09:40,130
+You know we did this.
+
+144
+00:09:40,450 --> 00:09:44,470
+So data meant and I will now delete it already.
+
+145
+00:09:44,650 --> 00:09:48,190
+So you know let's start the whole process again.
+
+146
+00:09:48,310 --> 00:09:54,560
+So play M.H. company the name it's company.
+
+147
+00:09:54,790 --> 00:09:57,220
+It's actually been sent so I don't know.
+
+148
+00:09:57,350 --> 00:10:00,260
+Vincent never then company.
+
+149
+00:10:00,370 --> 00:10:03,480
+It's a very good player one of the best defenders in the world.
+
+150
+00:10:03,700 --> 00:10:06,340
+Maybe you don't like football and maybe you don't care.
+
+151
+00:10:06,560 --> 00:10:07,270
+OK.
+
+152
+00:10:07,690 --> 00:10:12,840
+So we select defense in the deposition defense of player and the data.
+
+153
+00:10:12,970 --> 00:10:16,030
+We do have an image last name name number and position.
+
+154
+00:10:16,030 --> 00:10:17,260
+Very good.
+
+155
+00:10:17,410 --> 00:10:20,980
+So we are ready to do the uploading.
+
+156
+00:10:21,090 --> 00:10:22,810
+So OK so I'm going to go here.
+
+157
+00:10:22,870 --> 00:10:27,760
+And if you remember you're using the same file to do two types of operations.
+
+158
+00:10:27,760 --> 00:10:32,650
+So if open close and of course then we go to the else.
+
+159
+00:10:32,740 --> 00:10:42,510
+So if the does that state that form type it's equal to added player.
+
+160
+00:10:42,510 --> 00:10:47,770
+We are not going to enter this scenario because we are not adding editing a player we are adding a player.
+
+161
+00:10:47,770 --> 00:10:48,980
+So we're going to go here.
+
+162
+00:10:49,240 --> 00:10:53,100
+And the way you add things with push just like we did with teams.
+
+163
+00:10:53,320 --> 00:11:02,650
+So firebase then players that push opening close when we can be pushing is the data to submit after
+
+164
+00:11:02,650 --> 00:11:08,650
+we do this we go to then and are going to or of course.
+
+165
+00:11:08,650 --> 00:11:11,600
+Right now we could know that we couldn't pass anything.
+
+166
+00:11:11,610 --> 00:11:18,240
+We didn't need actually to pass anything after we get the data to submit there's no snapshot nothing.
+
+167
+00:11:18,700 --> 00:11:22,240
+After we get it they submit that they of course the promise we'll get resolved.
+
+168
+00:11:22,360 --> 00:11:24,050
+So we need to do something.
+
+169
+00:11:24,160 --> 00:11:32,200
+In this case this Probst that history can access history I'm going to push and I'm going to go back
+
+170
+00:11:32,200 --> 00:11:38,730
+to the end point of players so men and then players right here you can do whatever you want.
+
+171
+00:11:38,770 --> 00:11:39,600
+Doesn't matter.
+
+172
+00:11:39,910 --> 00:11:45,200
+So then I'm going to do catch just like this catch open and close.
+
+173
+00:11:45,220 --> 00:11:48,530
+And if we do have another I want to do something else.
+
+174
+00:11:48,640 --> 00:11:49,420
+I'm going to say this.
+
+175
+00:11:49,420 --> 00:12:00,620
+That said state that said state opening close and then for him are it's equal to true.
+
+176
+00:12:00,640 --> 00:12:01,370
+All right.
+
+177
+00:12:01,960 --> 00:12:04,240
+So let's try it again.
+
+178
+00:12:04,240 --> 00:12:07,230
+So I will add the image of Sterling.
+
+179
+00:12:07,340 --> 00:12:08,440
+Doesn't matter.
+
+180
+00:12:08,770 --> 00:12:11,160
+And for the name I'm going to type whatever.
+
+181
+00:12:11,410 --> 00:12:13,860
+You know maybe I don't know.
+
+182
+00:12:14,060 --> 00:12:21,750
+Robert penny because if I add the real name we've already have the real names inside players.
+
+183
+00:12:21,830 --> 00:12:23,560
+So I'm going to add a new name.
+
+184
+00:12:23,710 --> 00:12:28,540
+So the play number 77 doesn't matter and he's a midfielder.
+
+185
+00:12:28,660 --> 00:12:34,840
+So going to add the player and we go back to the main point and we have it right here Robert Penney
+
+186
+00:12:34,970 --> 00:12:36,780
+77 midfield.
+
+187
+00:12:36,940 --> 00:12:39,810
+And of course we get this inside the database.
+
+188
+00:12:39,820 --> 00:12:41,240
+Let's just double check.
+
+189
+00:12:42,160 --> 00:12:47,020
+So it can take a second close matches.
+
+190
+00:12:47,050 --> 00:12:48,700
+And this is a new player.
+
+191
+00:12:48,700 --> 00:12:50,460
+We get the image up.
+
+192
+00:12:50,480 --> 00:12:51,800
+No this is not a new player.
+
+193
+00:12:51,850 --> 00:12:53,000
+This is it.
+
+194
+00:12:53,050 --> 00:12:54,130
+So we get the image.
+
+195
+00:12:54,140 --> 00:12:56,510
+Penny Robert 6:53 and mid-fielder.
+
+196
+00:12:56,560 --> 00:12:59,170
+Everything works as expected so far.
+
+197
+00:12:59,530 --> 00:13:00,230
+All right.
+
+198
+00:13:00,340 --> 00:13:06,580
+Of course if I answer this everything breaks because we didn't have the logic to pre-load the information
+
+199
+00:13:06,580 --> 00:13:14,200
+from the from the Id and we will need to do the storage to get the image from the you know the actual
+
+200
+00:13:14,200 --> 00:13:17,080
+name and we will need to complete it right here.
+
+201
+00:13:17,080 --> 00:13:24,040
+So again we still need to do a few things but the player logic done we are done with the player.
+
+202
+00:13:24,070 --> 00:13:24,630
+All right.
+
+203
+00:13:24,790 --> 00:13:25,910
+So let's go to the next one.
+
+204
+00:13:25,910 --> 00:13:30,010
+Start doing the player and we are almost done.
+
+205
+00:13:30,010 --> 00:13:33,850
+If you really if you've reached this section we did it a lot.
+
+206
+00:13:33,850 --> 00:13:36,060
+It's like you know seven hours of coding.
+
+207
+00:13:36,100 --> 00:13:37,520
+So it's a lot of time.
+
+208
+00:13:37,840 --> 00:13:44,230
+And you know we did a lot of things and covering all of this no uploading files uploading images and
+
+209
+00:13:44,260 --> 00:13:47,100
+all the other things with the routes and everything else.
+
+210
+00:13:47,130 --> 00:13:49,310
+Man you you're ready to do whatever you want.
+
+211
+00:13:49,350 --> 00:13:56,230
+At least with firebase because that said even though you have more sections to maybe categories or something
+
+212
+00:13:56,230 --> 00:13:57,580
+else.
+
+213
+00:13:57,940 --> 00:14:04,600
+Everything else has the same logic inputs you know file and form and that's it.
+
+214
+00:14:04,630 --> 00:14:09,560
+And then you just grab it from the server and you render everything from your component.
+
+215
+00:14:09,940 --> 00:14:13,530
+So we're going to go to the next one and do the edit player.
+

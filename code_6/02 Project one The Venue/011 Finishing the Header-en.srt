@@ -1,0 +1,420 @@
+1
+00:00:00,530 --> 00:00:04,900
+All right so now we're going to be creating this transparency effect we get.
+
+2
+00:00:05,170 --> 00:00:10,670
+So when whenever the page loads and the head are it's on the top we want a transparent background not
+
+3
+00:00:10,670 --> 00:00:11,690
+a black.
+
+4
+00:00:11,980 --> 00:00:16,760
+So I'm going to create a new state right here and I'm going to say I don't know.
+
+5
+00:00:16,770 --> 00:00:23,830
+Hetter show some like that at her show and at the beginning whenever the page loads it's going to be
+
+6
+00:00:23,830 --> 00:00:24,540
+false.
+
+7
+00:00:24,600 --> 00:00:25,020
+OK.
+
+8
+00:00:25,420 --> 00:00:31,720
+So now right here instead of just hard coding the color I could ask the application for head or Joe
+
+9
+00:00:31,840 --> 00:00:32,360
+show.
+
+10
+00:00:32,400 --> 00:00:33,260
+It's false.
+
+11
+00:00:33,280 --> 00:00:36,540
+So if it's false We're going to show Transparent.
+
+12
+00:00:36,550 --> 00:00:38,630
+But if it's true we can show a color.
+
+13
+00:00:38,770 --> 00:00:39,250
+OK.
+
+14
+00:00:39,520 --> 00:00:45,850
+So it's going to be this dot state DOT show drawer.
+
+15
+00:00:46,120 --> 00:00:51,930
+Sorry had her show and I'm going to use a ternary.
+
+16
+00:00:52,260 --> 00:00:55,120
+So if it is true we can it show this color.
+
+17
+00:00:55,260 --> 00:00:57,780
+But if it's not we're going to do transparent.
+
+18
+00:00:57,810 --> 00:01:03,170
+Just like this transparent the application right now loads.
+
+19
+00:01:03,210 --> 00:01:04,150
+And this is false.
+
+20
+00:01:04,170 --> 00:01:06,380
+So it's going to go to this scenario.
+
+21
+00:01:06,450 --> 00:01:11,230
+So if I go to our application the application starts and we have a transparent color.
+
+22
+00:01:11,430 --> 00:01:18,330
+So now whenever we scroll we need to ask the application OK the user scrolled from the top.
+
+23
+00:01:18,360 --> 00:01:18,710
+Yeah.
+
+24
+00:01:18,740 --> 00:01:18,990
+OK.
+
+25
+00:01:18,990 --> 00:01:22,070
+Just change the color so we're going to do it through state.
+
+26
+00:01:22,350 --> 00:01:27,990
+Because whenever we change the states the application we renders and this state is going to be true.
+
+27
+00:01:28,110 --> 00:01:30,750
+So it's going to go to this scenario instead of this one.
+
+28
+00:01:30,750 --> 00:01:32,030
+Let me remove it.
+
+29
+00:01:32,030 --> 00:01:32,850
+There you go.
+
+30
+00:01:33,360 --> 00:01:35,770
+So what can we do.
+
+31
+00:01:35,910 --> 00:01:42,720
+So on the component did mount attached to the window an event listener and this listener is going to
+
+32
+00:01:42,720 --> 00:01:44,210
+listen for this cruel event.
+
+33
+00:01:44,210 --> 00:01:51,330
+No this is just a vanilla javascript not not react so at event just like this.
+
+34
+00:01:51,390 --> 00:01:52,560
+Sorry.
+
+35
+00:01:52,740 --> 00:01:55,430
+Let me do something else I forgot to do something.
+
+36
+00:01:55,530 --> 00:02:00,890
+I'm going to first go to the component mount so component at Mt..
+
+37
+00:02:00,950 --> 00:02:02,490
+Open and Close.
+
+38
+00:02:02,490 --> 00:02:09,090
+Now I'm going to make a reference to window Dodd then at event listener opening Krogh close and the
+
+39
+00:02:09,090 --> 00:02:13,050
+listener is going to be scroll and remember again this is vanilla Javascript.
+
+40
+00:02:13,410 --> 00:02:16,450
+So whenever you use a scroll to run a function.
+
+41
+00:02:16,500 --> 00:02:23,510
+So I'm going to say this that handle scroll we didn't we didn't have this function we can create it
+
+42
+00:02:23,520 --> 00:02:24,210
+right now.
+
+43
+00:02:24,360 --> 00:02:26,250
+This hander's call.
+
+44
+00:02:26,610 --> 00:02:30,930
+So I'm going to go right here at the bottom and create the function handle scroll.
+
+45
+00:02:31,010 --> 00:02:32,160
+Open and Close.
+
+46
+00:02:32,160 --> 00:02:34,470
+Let me just do it like this.
+
+47
+00:02:34,620 --> 00:02:35,930
+There's no difference anyways.
+
+48
+00:02:36,290 --> 00:02:38,310
+In this case because we are using a class.
+
+49
+00:02:38,520 --> 00:02:47,600
+So right you're just going to do console log user scrolling or something like that user.
+
+50
+00:02:47,610 --> 00:02:49,320
+Let me make it right.
+
+51
+00:02:49,320 --> 00:02:49,830
+All right.
+
+52
+00:02:49,980 --> 00:02:55,180
+So whenever the application loads the application after its mount it bounces.
+
+53
+00:02:55,200 --> 00:02:59,040
+It will add and even listener office scroll to our components.
+
+54
+00:02:59,220 --> 00:03:03,960
+So if I scroll I run we run our function.
+
+55
+00:03:03,960 --> 00:03:05,610
+This one handles Krull.
+
+56
+00:03:05,670 --> 00:03:13,260
+So on this one what we can do we can check the window scroll position and if it's greater than zero
+
+57
+00:03:13,530 --> 00:03:19,590
+then you know we don't show the caller but if it's greater than zero it means that the user scrolled
+
+58
+00:03:20,070 --> 00:03:20,830
+from the top.
+
+59
+00:03:20,850 --> 00:03:22,160
+So we changed a color.
+
+60
+00:03:22,230 --> 00:03:22,800
+All right.
+
+61
+00:03:23,100 --> 00:03:30,140
+So I got to into this for now I'm going to say F just a good old F and then of course an else.
+
+62
+00:03:30,510 --> 00:03:37,130
+So right here I get to be checking the window dot scroll and the why.
+
+63
+00:03:37,140 --> 00:03:42,120
+Because we only need to check the y axis not the horizontal axis.
+
+64
+00:03:42,150 --> 00:03:48,520
+So if this one it's greater than zero right we will do something.
+
+65
+00:03:48,540 --> 00:03:50,230
+If not we will do something else.
+
+66
+00:03:50,370 --> 00:03:53,610
+So what do we do we toggle the state of Hetter show.
+
+67
+00:03:53,790 --> 00:04:01,830
+So I'm going to say this that set stayed open and close and the draw were show for this one is going
+
+68
+00:04:01,830 --> 00:04:06,060
+to be true because it's greater than zero so we want to show the color.
+
+69
+00:04:06,290 --> 00:04:09,660
+And if it's not we're going to say false.
+
+70
+00:04:09,840 --> 00:04:10,630
+Right.
+
+71
+00:04:10,800 --> 00:04:12,880
+So false.
+
+72
+00:04:12,960 --> 00:04:18,750
+So if I were the application we and you know the application loads and you know this crawl is try here.
+
+73
+00:04:18,750 --> 00:04:23,260
+So we get the caliber you scroll up you know we are at the top.
+
+74
+00:04:23,280 --> 00:04:27,570
+So it goes to the Falls condition to the outs so we don't get the car.
+
+75
+00:04:27,570 --> 00:04:29,070
+And if we scroll down we get it.
+
+76
+00:04:29,100 --> 00:04:31,230
+And if not we don't get it.
+
+77
+00:04:31,410 --> 00:04:33,180
+So that you know the recall.
+
+78
+00:04:33,180 --> 00:04:38,250
+So this one works OK because this is a single page it's a landing page.
+
+79
+00:04:38,250 --> 00:04:45,210
+So we don't have a route because maybe if you're doing and you're adding an event listener on this page
+
+80
+00:04:45,540 --> 00:04:51,360
+and maybe on don't know and your application you have a different route where you didn't use this effect
+
+81
+00:04:51,660 --> 00:04:57,510
+would be a good idea to remove the add even listener instead of at it's going to be removed event listener
+
+82
+00:04:57,900 --> 00:05:01,750
+and you're going to be doing this on the component will unmount.
+
+83
+00:05:01,800 --> 00:05:07,890
+Always remember to remove the event listeners whenever you go to a different component where you're
+
+84
+00:05:07,890 --> 00:05:09,650
+not really using this.
+
+85
+00:05:10,040 --> 00:05:11,260
+OK.
+
+86
+00:05:11,280 --> 00:05:15,990
+So goes so everything works as expected for now.
+
+87
+00:05:15,990 --> 00:05:21,530
+All right so now we're going to be creating the you know the slider and the countdown on this one.
+
+88
+00:05:21,530 --> 00:05:22,410
+I made a mistake.
+
+89
+00:05:22,410 --> 00:05:26,440
+Let me just give me a second let me just fix it one second.
+
+90
+00:05:26,760 --> 00:05:31,950
+So this site you're sorry the event starts and this is the final one.
+
+91
+00:05:32,100 --> 00:05:41,110
+But I did this this project you know a few weeks ago and I have a date right here we calculate the date
+
+92
+00:05:41,610 --> 00:05:45,690
+and let me just give me one second let me find this one right here.
+
+93
+00:05:46,460 --> 00:05:46,680
+OK.
+
+94
+00:05:46,680 --> 00:05:51,290
+I modified this on the original you know file on the original project.
+
+95
+00:05:51,290 --> 00:05:53,600
+So the end starts in what does.
+
+96
+00:05:53,720 --> 00:05:58,540
+We pass a date in this case is going to be December 16th of this year.
+
+97
+00:05:58,700 --> 00:06:06,320
+So we have one 166 days and what it does it's going to calculate how many days minutes hours and seconds
+
+98
+00:06:06,740 --> 00:06:09,860
+until you know the event starts.
+
+99
+00:06:09,860 --> 00:06:11,110
+So this is what we're going to be doing.
+
+100
+00:06:11,120 --> 00:06:18,430
+And whenever the the application loads we'll use the transition and we will do this you know this slide
+
+101
+00:06:18,440 --> 00:06:19,760
+or this carousel.
+
+102
+00:06:20,000 --> 00:06:20,430
+OK.
+
+103
+00:06:20,480 --> 00:06:25,820
+So let's go to the next section and we'll start with the carousel and then with the the event starts
+
+104
+00:06:25,930 --> 00:06:31,790
+in and I'm going to skip this version of the project with all of this I'm going to upload it to this
+
+105
+00:06:31,790 --> 00:06:35,540
+section so you can get the code we have so far.
+

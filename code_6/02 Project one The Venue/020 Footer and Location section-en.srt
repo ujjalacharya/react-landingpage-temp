@@ -1,0 +1,496 @@
+1
+00:00:00,910 --> 00:00:05,110
+All right so now we can read the location and the footer and there are going to be real simple so it's
+
+2
+00:00:05,110 --> 00:00:07,510
+going to take it's going to take a couple minutes.
+
+3
+00:00:07,690 --> 00:00:14,290
+So I'm going to go to Google Maps and you know a chosen Magnolia Dallas downtown whatever just to get
+
+4
+00:00:14,290 --> 00:00:15,520
+the address of.
+
+5
+00:00:15,700 --> 00:00:18,300
+Go to Google Maps and get get one link.
+
+6
+00:00:18,330 --> 00:00:19,510
+Going to use it in a minute.
+
+7
+00:00:19,630 --> 00:00:22,180
+But first we need to create a component right here.
+
+8
+00:00:22,320 --> 00:00:26,540
+So I'm going to go to a new folder and I'm going to call this one location.
+
+9
+00:00:26,620 --> 00:00:31,140
+And inside of location index that day is that yes.
+
+10
+00:00:31,470 --> 00:00:33,540
+All right we go.
+
+11
+00:00:33,910 --> 00:00:34,470
+OK.
+
+12
+00:00:34,720 --> 00:00:37,390
+So again this one is just going to show a map.
+
+13
+00:00:37,420 --> 00:00:45,550
+So there's no need to create a class based component so react stalest component and the name its location.
+
+14
+00:00:45,550 --> 00:00:48,480
+Now with the wrapper for this one special class.
+
+15
+00:00:48,580 --> 00:00:54,180
+So location and then underscore robber Breguet again.
+
+16
+00:00:54,280 --> 00:00:56,680
+The only thing we need right here is just indifferent.
+
+17
+00:00:56,890 --> 00:00:59,480
+So I'm going to go and click and share I'm sorry.
+
+18
+00:00:59,480 --> 00:01:01,460
+Mine has since Panish can change this.
+
+19
+00:01:01,660 --> 00:01:06,230
+So I'm going to copy the HVM L and let me open it again.
+
+20
+00:01:07,840 --> 00:01:12,370
+Because it was NOT GIVE ME SOMETIMES up the the Google Maps fails.
+
+21
+00:01:12,400 --> 00:01:14,920
+So once I go let me get the address again.
+
+22
+00:01:15,070 --> 00:01:16,190
+Can I click on this.
+
+23
+00:01:16,210 --> 00:01:19,480
+The Dallas aquarium because I should be getting this.
+
+24
+00:01:19,480 --> 00:01:22,260
+You know that after PV I should be getting this.
+
+25
+00:01:22,300 --> 00:01:23,440
+I was not getting it.
+
+26
+00:01:23,590 --> 00:01:31,150
+So I got a copy and I'm going to pay the I-frame right here and make it a little bit nicer after you
+
+27
+00:01:31,150 --> 00:01:32,980
+know all the settings.
+
+28
+00:01:33,320 --> 00:01:34,780
+Sorry for this.
+
+29
+00:01:34,780 --> 00:01:37,090
+So we have the long string.
+
+30
+00:01:37,570 --> 00:01:40,420
+Well when we do it like this why not.
+
+31
+00:01:40,490 --> 00:01:44,680
+Then at the bottom like this almost done
+
+32
+00:01:47,640 --> 00:01:48,320
+and there we go.
+
+33
+00:01:48,450 --> 00:01:50,850
+So there's nothing else right.
+
+34
+00:01:51,160 --> 00:01:57,780
+So OK so we have an I-frame we have the actual link with the word and the word I want to change it to
+
+35
+00:01:57,780 --> 00:01:59,610
+100 percent.
+
+36
+00:01:59,610 --> 00:02:06,600
+Then the height is going to be 500 pixels around and then three more there is going to be zero.
+
+37
+00:02:06,600 --> 00:02:12,390
+And if you run just like this re-act is going to give you an error message that frame border should
+
+38
+00:02:12,390 --> 00:02:14,280
+be frame border.
+
+39
+00:02:14,310 --> 00:02:18,570
+Remember that this is not an actual It's not an actual I-frame.
+
+40
+00:02:18,570 --> 00:02:19,500
+This is J.
+
+41
+00:02:19,500 --> 00:02:26,100
+It's just some code which actually which is GSX and it's going to be translated to HVM else so we need
+
+42
+00:02:26,100 --> 00:02:28,270
+to use their tax.
+
+43
+00:02:28,280 --> 00:02:33,110
+Now style I don't need style go back goodbye and allow Fultz full screen.
+
+44
+00:02:33,180 --> 00:02:38,810
+It's the same idea allow capital F and then S and that is that.
+
+45
+00:02:38,970 --> 00:02:43,210
+Then we have the location here at bottom this tack.
+
+46
+00:02:43,320 --> 00:02:53,010
+So I'm going to go and create a div with a class name of location tag right and on the bottom just Dave
+
+47
+00:02:53,160 --> 00:02:57,010
+and then location.
+
+48
+00:02:57,550 --> 00:03:01,050
+Me write it correctly location.
+
+49
+00:03:01,800 --> 00:03:04,970
+OK so now of course we need to include this components.
+
+50
+00:03:04,980 --> 00:03:07,360
+And one thing before we move forward.
+
+51
+00:03:07,830 --> 00:03:14,400
+If you run the application and go to go to the console you're going to get an error message from the
+
+52
+00:03:14,400 --> 00:03:15,050
+buttons.
+
+53
+00:03:15,090 --> 00:03:19,560
+It's because of a mistake and I know I should be use soon using small.
+
+54
+00:03:19,580 --> 00:03:20,160
+And that's it.
+
+55
+00:03:20,160 --> 00:03:21,260
+Sorry for that.
+
+56
+00:03:21,650 --> 00:03:21,940
+OK.
+
+57
+00:03:21,990 --> 00:03:26,030
+Let's include the location right here on the top.
+
+58
+00:03:26,050 --> 00:03:29,110
+So import location.
+
+59
+00:03:29,310 --> 00:03:32,830
+When they make it ride location from.
+
+60
+00:03:32,910 --> 00:03:44,520
+And you know same thing from components that for Slash components for Slash prizing sorry location location
+
+61
+00:03:44,790 --> 00:03:45,800
+where you get it.
+
+62
+00:03:46,080 --> 00:03:46,410
+OK.
+
+63
+00:03:46,470 --> 00:03:51,090
+So now let's include this after prising location.
+
+64
+00:03:51,630 --> 00:03:54,910
+And we should be good.
+
+65
+00:03:54,940 --> 00:03:56,730
+So we are done with this.
+
+66
+00:03:56,730 --> 00:04:01,380
+So now the next thing is going to be the footer and we are this one is going to be real simple.
+
+67
+00:04:01,490 --> 00:04:06,030
+And then the next section we're going to create this remember that whenever we click in this we need
+
+68
+00:04:06,030 --> 00:04:10,100
+to do a scroll and we will use a third party library for this.
+
+69
+00:04:10,260 --> 00:04:15,360
+Our on our project the one we are doing right now this one of course does not work.
+
+70
+00:04:15,360 --> 00:04:18,900
+So let's do the footer.
+
+71
+00:04:18,990 --> 00:04:20,500
+OK so I'm going to go right here.
+
+72
+00:04:20,550 --> 00:04:23,650
+And if you remember we have a or fritter component.
+
+73
+00:04:23,690 --> 00:04:28,760
+So the only thing I need to do is just create a new file with the name footer.
+
+74
+00:04:28,940 --> 00:04:30,620
+Yes.
+
+75
+00:04:30,860 --> 00:04:34,450
+So inside footer we need to create a stateless component.
+
+76
+00:04:34,520 --> 00:04:41,610
+There's no need to create a class based so re-act stateless component and of course it calls footer.
+
+77
+00:04:41,930 --> 00:04:50,390
+Now inside of the footer are going to change this four footer and the class name it's a b c k.
+
+78
+00:04:50,670 --> 00:04:52,150
+Red instead of black.
+
+79
+00:04:52,160 --> 00:04:54,080
+Well this one is just red.
+
+80
+00:04:54,110 --> 00:05:03,530
+Now if you notice on the original one whenever we go to the footer reloaded again we get to feeling
+
+81
+00:05:03,890 --> 00:05:06,080
+that effect from re-act reveal.
+
+82
+00:05:06,080 --> 00:05:17,740
+So I'm going to do import then Faid opening close reac reveal for Slash and then fade up fate.
+
+83
+00:05:17,740 --> 00:05:18,970
+There you go.
+
+84
+00:05:19,780 --> 00:05:20,110
+OK.
+
+85
+00:05:20,140 --> 00:05:22,310
+So forget the From.
+
+86
+00:05:22,790 --> 00:05:23,260
+OK.
+
+87
+00:05:23,440 --> 00:05:28,380
+So now I'm going to bring Faid just like here and I'm going to do.
+
+88
+00:05:28,390 --> 00:05:31,700
+I'm going to select going to put a delay of hundred.
+
+89
+00:05:31,830 --> 00:05:36,750
+At this point of this you know should be easy for you with this a few times already.
+
+90
+00:05:36,820 --> 00:05:39,000
+So 500 dead inside of here.
+
+91
+00:05:39,040 --> 00:05:41,240
+We have the name of the place.
+
+92
+00:05:41,350 --> 00:05:45,390
+So I'm going to say dev with a class name of.
+
+93
+00:05:45,610 --> 00:05:50,550
+And again we are using that word font which is fonde righteous.
+
+94
+00:05:50,610 --> 00:05:55,490
+I have it right here let me copy and paste it and then footer.
+
+95
+00:05:55,830 --> 00:06:02,320
+Then Logo and then venue and right here says the venue.
+
+96
+00:06:02,920 --> 00:06:06,100
+OK so the next thing is going to be the copyright.
+
+97
+00:06:06,130 --> 00:06:10,070
+I know this is boring but this is something actually we we need we always need to do.
+
+98
+00:06:10,120 --> 00:06:15,360
+If you ask me what is the deal part of a web page or an app.
+
+99
+00:06:15,400 --> 00:06:19,440
+I hate creating it it's the footer.
+
+100
+00:06:19,510 --> 00:06:21,600
+I just hate the footer.
+
+101
+00:06:21,730 --> 00:06:26,410
+I don't know why I just hate them so I don't know electrum.
+
+102
+00:06:26,470 --> 00:06:32,210
+Maybe not electrum the venue or something like that the venue to 18.
+
+103
+00:06:32,290 --> 00:06:35,700
+All rights reserved.
+
+104
+00:06:36,010 --> 00:06:43,620
+I hate them because most of the times the client will always ask absurd things sweet things on footer.
+
+105
+00:06:43,840 --> 00:06:44,230
+I don't know.
+
+106
+00:06:44,290 --> 00:06:45,620
+It's just the way it is.
+
+107
+00:06:45,900 --> 00:06:55,720
+So I'm going to save it and I'm going to go to app and in poor footer from that for Slash and we we
+
+108
+00:06:55,730 --> 00:06:58,800
+are almost done and we're going to go to the next one.
+
+109
+00:06:59,020 --> 00:07:02,710
+The next project and the next one is going to be really really fun.
+
+110
+00:07:02,710 --> 00:07:04,820
+So footer for her.
+
+111
+00:07:05,080 --> 00:07:05,490
+All right.
+
+112
+00:07:05,600 --> 00:07:10,600
+So let's go to our project and if we go the bottom up we are not getting it.
+
+113
+00:07:10,600 --> 00:07:14,790
+Maybe I didn't say something footer from of course for her.
+
+114
+00:07:15,040 --> 00:07:16,020
+That was a problem.
+
+115
+00:07:18,360 --> 00:07:19,790
+Cannot solve for footer.
+
+116
+00:07:19,810 --> 00:07:25,960
+So again I made a mistake components and it's inside header footer and then fruiterer.
+
+117
+00:07:25,990 --> 00:07:27,870
+That's my mistake.
+
+118
+00:07:28,560 --> 00:07:29,210
+OK.
+
+119
+00:07:29,890 --> 00:07:32,760
+So if I go down we get the footer.
+
+120
+00:07:32,790 --> 00:07:33,170
+OK.
+
+121
+00:07:33,220 --> 00:07:35,580
+So we are pretty much done.
+
+122
+00:07:35,590 --> 00:07:38,980
+Let's go to the next section and do the scroll to that.
+
+123
+00:07:39,190 --> 00:07:40,200
+That's interesting.
+
+124
+00:07:40,210 --> 00:07:41,810
+So let's go to the next one and do this.
+

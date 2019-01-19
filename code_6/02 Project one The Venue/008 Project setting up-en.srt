@@ -1,0 +1,400 @@
+1
+00:00:00,690 --> 00:00:04,320
+OK so let's start with the first project.
+
+2
+00:00:04,320 --> 00:00:06,780
+So the first project is going to be called the venue.
+
+3
+00:00:06,780 --> 00:00:10,530
+We've already seen this on the previews of the preview project.
+
+4
+00:00:10,650 --> 00:00:12,210
+So it's going to be called the venue.
+
+5
+00:00:12,210 --> 00:00:16,380
+I've opened the virus code and navigated to that directory called the venue.
+
+6
+00:00:16,500 --> 00:00:18,090
+You can call this whatever you want.
+
+7
+00:00:18,090 --> 00:00:19,270
+Doesn't really matter.
+
+8
+00:00:19,320 --> 00:00:22,570
+And then in the batch and the command or if you're in Windows.
+
+9
+00:00:22,620 --> 00:00:26,750
+Same thing command you can navigate to the same directory.
+
+10
+00:00:26,910 --> 00:00:29,060
+So the first thing we need to do to start.
+
+11
+00:00:29,140 --> 00:00:32,710
+It's to create a re-act application right here to bring a template.
+
+12
+00:00:32,760 --> 00:00:38,250
+So I'm going to be using the see if you didn't solve ACL I just go back a couple of question a couple
+
+13
+00:00:38,250 --> 00:00:44,200
+sections and you can find the instructions in how to install the globally.
+
+14
+00:00:44,250 --> 00:00:48,640
+So we're going to start with create then react and then app.
+
+15
+00:00:48,660 --> 00:00:56,010
+And since I'm already inside the directory I want are going to do a blank space and a dot and it will
+
+16
+00:00:56,040 --> 00:00:58,660
+install everything inside of this directory.
+
+17
+00:00:58,890 --> 00:01:04,920
+Maybe if you're in a different directory and you want to create a directory and store everything inside
+
+18
+00:01:05,160 --> 00:01:11,070
+you will call it or maybe the venue or you know my app or something like that and it will create a directory
+
+19
+00:01:11,070 --> 00:01:13,290
+for you and install everything inside.
+
+20
+00:01:13,470 --> 00:01:19,320
+So since I'm already inside the directory the venue I'm going to put into place just dot.
+
+21
+00:01:19,430 --> 00:01:24,450
+Bryce Precentor and this is of course it's going to take a couple minutes maybe a few seconds and when
+
+22
+00:01:24,450 --> 00:01:26,340
+it's done I'll be right back.
+
+23
+00:01:26,880 --> 00:01:29,370
+OK so everything was installed for me.
+
+24
+00:01:29,610 --> 00:01:33,980
+Maybe if you're using NPM you're going to get NPM start instead of yorn.
+
+25
+00:01:34,020 --> 00:01:38,190
+I'm using yarned and it's computer Yorn it's kind of a something like NPM.
+
+26
+00:01:38,190 --> 00:01:39,980
+They are pretty much the same thing.
+
+27
+00:01:40,020 --> 00:01:43,540
+I like to use yarn and NPM comes with a note.
+
+28
+00:01:43,740 --> 00:01:48,030
+So if you wouldn't Yorn you will need to go and install yarn in your computer.
+
+29
+00:01:48,030 --> 00:01:49,790
+If you don't want to there is no no me.
+
+30
+00:01:49,860 --> 00:01:55,680
+The only thing you need to know is that instead of using yarn you need to use and PM ride and I will
+
+31
+00:01:55,680 --> 00:01:57,040
+tell you when we need to use it.
+
+32
+00:01:57,060 --> 00:01:58,070
+OK don't worry.
+
+33
+00:01:58,320 --> 00:02:02,110
+So first I'm going to check if everything was installed successfully.
+
+34
+00:02:02,130 --> 00:02:04,940
+So I'm going to do and Yorn start in your case.
+
+35
+00:02:04,950 --> 00:02:06,060
+NPM start.
+
+36
+00:02:06,060 --> 00:02:12,340
+I'm going to press enter and this will begin with the development server of this project.
+
+37
+00:02:12,360 --> 00:02:15,090
+It's going to take a second a few seconds.
+
+38
+00:02:15,110 --> 00:02:22,670
+OK so after everything you know after this you to get a window just like this with localhost 3000.
+
+39
+00:02:22,670 --> 00:02:25,560
+So if you're getting this means that everything is OK.
+
+40
+00:02:25,760 --> 00:02:31,370
+So for now I'm just going to leave it here and I'm going to go back to the terminal and kill the terminal
+
+41
+00:02:31,370 --> 00:02:33,600
+kill the command to clear.
+
+42
+00:02:33,650 --> 00:02:38,680
+And now would we need to do we need to install all the dependencies we need to use in our project.
+
+43
+00:02:38,690 --> 00:02:43,850
+So if you remember in the previous section I gave you a text with an ad and a bunch of commands and
+
+44
+00:02:43,850 --> 00:02:45,740
+same thing for NPM install.
+
+45
+00:02:45,920 --> 00:02:49,300
+So I'm going to use I can copy the Yorn one because I'm using yarn.
+
+46
+00:02:49,340 --> 00:02:53,720
+If you're using NPM copy the NPM one I'm going to paste it right here.
+
+47
+00:02:53,990 --> 00:03:02,270
+So we will be using materail UI for to create some things than re-act reveal re-act scroll and re-act
+
+48
+00:03:02,270 --> 00:03:02,690
+slick.
+
+49
+00:03:02,690 --> 00:03:06,450
+So these are these are third party libraries.
+
+50
+00:03:06,510 --> 00:03:11,940
+We're going to be using the word whenever we read your section where we use re-act reveal.
+
+51
+00:03:11,990 --> 00:03:14,610
+I will show you the get have page and everything else.
+
+52
+00:03:14,840 --> 00:03:16,760
+So for now just going to press enter.
+
+53
+00:03:17,240 --> 00:03:19,350
+And this is going to take a minute.
+
+54
+00:03:19,360 --> 00:03:20,060
+We'll be right back.
+
+55
+00:03:20,090 --> 00:03:23,970
+Whenever this is done OK so everything was installed.
+
+56
+00:03:23,980 --> 00:03:30,010
+And before we start coding like it tool before if there is something we are not going to do is to see
+
+57
+00:03:30,060 --> 00:03:30,820
+assess.
+
+58
+00:03:30,880 --> 00:03:33,190
+And of course we are responsive.
+
+59
+00:03:33,220 --> 00:03:34,090
+Right.
+
+60
+00:03:34,120 --> 00:03:41,920
+So attached to the section on the resources I've added a directory called you know resources you need
+
+61
+00:03:41,920 --> 00:03:49,660
+to download that sip and incipit inside of the source begin to drop a resources folder right here.
+
+62
+00:03:49,670 --> 00:03:50,790
+Going to do that right now.
+
+63
+00:03:50,980 --> 00:03:54,720
+OK so I've added this directory is going to be called resources.
+
+64
+00:03:54,790 --> 00:03:59,680
+Again you can call this whatever you want but later of course remember you changed the name right here.
+
+65
+00:03:59,680 --> 00:04:04,580
+So on this directory you have the images and some icons maybe the sliders.
+
+66
+00:04:04,750 --> 00:04:08,160
+The images were going to be using on the slider with this woman.
+
+67
+00:04:08,410 --> 00:04:11,790
+And then of course you get the styles that CSSA.
+
+68
+00:04:11,950 --> 00:04:16,090
+And this is the all the styles of the web page is not a long web page.
+
+69
+00:04:16,090 --> 00:04:18,940
+So again we are not going to do styles right here.
+
+70
+00:04:18,940 --> 00:04:25,110
+We're going to focus everything in that javascript section of the of the project.
+
+71
+00:04:25,110 --> 00:04:25,910
+So OK.
+
+72
+00:04:25,950 --> 00:04:28,490
+So remember to put it inside of the source.
+
+73
+00:04:28,740 --> 00:04:29,000
+OK.
+
+74
+00:04:29,020 --> 00:04:36,130
+So to begin first I'm going to go to the app that is going to leave that one I'm going to go to APS-C
+
+75
+00:04:36,140 --> 00:04:37,570
+assess I'm going to delete this one.
+
+76
+00:04:37,570 --> 00:04:41,510
+We are not really going to use it are going to go to the app tests.
+
+77
+00:04:41,530 --> 00:04:42,490
+Not going to use it.
+
+78
+00:04:42,490 --> 00:04:44,040
+So delete this.
+
+79
+00:04:44,290 --> 00:04:45,940
+Then we have an index CSSA.
+
+80
+00:04:46,000 --> 00:04:47,580
+I'm going to delete this as well.
+
+81
+00:04:48,040 --> 00:04:48,430
+What else.
+
+82
+00:04:48,430 --> 00:04:54,490
+We have the index Dangi as I'm going to leave that one and then logo SPG goodbye logo as Weegee and
+
+83
+00:04:54,490 --> 00:04:56,350
+then register service worker.
+
+84
+00:04:56,470 --> 00:04:57,450
+Delete it.
+
+85
+00:04:57,460 --> 00:05:01,630
+All right so we get we only get the index.
+
+86
+00:05:01,750 --> 00:05:03,490
+And the app digests.
+
+87
+00:05:03,550 --> 00:05:07,990
+So on the index dodgiest I'm going to delete this lines because we didn't have those files anymore.
+
+88
+00:05:08,260 --> 00:05:09,480
+And we're going to get an error.
+
+89
+00:05:09,520 --> 00:05:14,920
+So I'm going to delete everything and just leave this this and then of course I'm going to go to Abdin
+
+90
+00:05:14,920 --> 00:05:21,880
+Jesus I'm going to delete the import for the logo and the APS-C SS and then the return just leave one
+
+91
+00:05:21,880 --> 00:05:23,190
+day of saying I don't know.
+
+92
+00:05:23,290 --> 00:05:24,230
+Hello.
+
+93
+00:05:24,850 --> 00:05:28,180
+All right so now I'm going to go right here and do your start.
+
+94
+00:05:28,200 --> 00:05:30,790
+We're going to begin with our development server.
+
+95
+00:05:32,810 --> 00:05:33,780
+Get going to take a second
+
+96
+00:05:37,020 --> 00:05:38,130
+look at we get hello.
+
+97
+00:05:38,130 --> 00:05:39,280
+So that is OK.
+
+98
+00:05:39,570 --> 00:05:43,560
+So we're going to go to the next section if we're going to start building the website.
+
+99
+00:05:43,570 --> 00:05:44,660
+We're going to build.
+
+100
+00:05:44,670 --> 00:05:46,170
+We're going to start with the hetter.
+

@@ -1,0 +1,1080 @@
+1
+00:00:01,100 --> 00:00:01,580
+OK.
+
+2
+00:00:01,630 --> 00:00:09,130
+So now we're going to be creating all the logic to prevent users not authenticated users into entering
+
+3
+00:00:09,130 --> 00:00:14,460
+to private route Ryan because we need that and I'm going to go a little bit slower.
+
+4
+00:00:14,560 --> 00:00:19,030
+I was going a little bit fast because you know we can and did all of this already.
+
+5
+00:00:19,210 --> 00:00:23,890
+So again I was going a little bit fast now and right now this is going to look a little bit weird.
+
+6
+00:00:24,010 --> 00:00:27,760
+So going to go slow because it's new something you never talk about this.
+
+7
+00:00:27,760 --> 00:00:28,370
+So OK.
+
+8
+00:00:28,480 --> 00:00:35,210
+So first we need a way to check with firebase if the user is authenticated or not.
+
+9
+00:00:35,280 --> 00:00:37,320
+Right where these are is going to enter here.
+
+10
+00:00:37,330 --> 00:00:40,770
+Maybe some other user is going to go to this route.
+
+11
+00:00:40,840 --> 00:00:44,850
+And if we don't have the correct logic they will be able to enter.
+
+12
+00:00:44,890 --> 00:00:53,350
+So we need to check if the user that it's trying to enter is indicated or so firebase they give us a
+
+13
+00:00:53,350 --> 00:00:54,830
+way to check this.
+
+14
+00:00:54,880 --> 00:01:00,850
+So I'm going to go to index dodginess you know the main index of our application and this is going to
+
+15
+00:01:00,850 --> 00:01:02,740
+be our starting point.
+
+16
+00:01:02,740 --> 00:01:07,450
+So again just like with that before we can add that this part already are going to go right here the
+
+17
+00:01:07,450 --> 00:01:10,330
+bottom and import something.
+
+18
+00:01:10,360 --> 00:01:16,730
+I'm going to import firebase right from the dot for Slash and then firebase.
+
+19
+00:01:16,750 --> 00:01:17,380
+All right.
+
+20
+00:01:17,830 --> 00:01:24,720
+So now what they give us is this firebase not mouth and they give us a method called an oath state changed.
+
+21
+00:01:24,790 --> 00:01:31,830
+So whenever the alpha state change if these are indicated or they logout they get to this for this function
+
+22
+00:01:31,840 --> 00:01:34,260
+this method is going to fire a function.
+
+23
+00:01:34,540 --> 00:01:35,590
+So how can we use it.
+
+24
+00:01:35,590 --> 00:01:35,870
+OK.
+
+25
+00:01:35,920 --> 00:01:42,610
+So first I'm going to say Firebrace then I'm going to use an hour and then I'm going to use an hour
+
+26
+00:01:43,180 --> 00:01:48,410
+just like this on out with state changed and this one of course is going to be a method.
+
+27
+00:01:48,520 --> 00:01:54,550
+And after doing after it's done doing its job it will run a function.
+
+28
+00:01:54,550 --> 00:02:01,240
+Now this function after we you know we checked this the only thing we need to do is just return this
+
+29
+00:02:01,300 --> 00:02:05,650
+app you know return our app and let me show you how this works.
+
+30
+00:02:05,650 --> 00:02:11,890
+Of course whenever we add the out states change changes we will receive a user.
+
+31
+00:02:11,890 --> 00:02:18,760
+So before before rendering this I'm going to do Konsole that blog and it get a console this user.
+
+32
+00:02:18,910 --> 00:02:21,700
+And let me show you how this works really good.
+
+33
+00:02:21,700 --> 00:02:25,160
+So of course going to bring the costs a lot.
+
+34
+00:02:25,750 --> 00:02:26,490
+All right.
+
+35
+00:02:26,530 --> 00:02:27,880
+Right now we'll get no.
+
+36
+00:02:28,270 --> 00:02:31,150
+And it's because the user is not authenticated at all.
+
+37
+00:02:31,150 --> 00:02:36,790
+So the application starts we entered to the south and host of the state changed and is checking if the
+
+38
+00:02:36,790 --> 00:02:37,870
+users are authenticated.
+
+39
+00:02:37,870 --> 00:02:42,790
+So I'm doing a lot for the user but of course no one is logged in.
+
+40
+00:02:42,790 --> 00:02:44,090
+We don't have a user.
+
+41
+00:02:44,170 --> 00:02:47,650
+So this index doing the comms log user it's full.
+
+42
+00:02:47,680 --> 00:02:50,460
+And of course then it will render our app.
+
+43
+00:02:50,560 --> 00:02:51,090
+All right.
+
+44
+00:02:51,490 --> 00:02:53,330
+So what happens if I log in.
+
+45
+00:02:53,470 --> 00:02:53,820
+All right.
+
+46
+00:02:53,860 --> 00:02:55,410
+So let me go back to console.
+
+47
+00:02:55,420 --> 00:02:58,340
+Make this a little bit smaller right now.
+
+48
+00:02:58,780 --> 00:03:00,550
+And I'm going to go to sign in.
+
+49
+00:03:00,850 --> 00:03:02,020
+All right.
+
+50
+00:03:02,020 --> 00:03:08,630
+So inside sign and we are still getting know I can do Frances passport one two three.
+
+51
+00:03:08,700 --> 00:03:13,900
+I'm going to log in and of course we are going to the dashboard and that user Barville you know that
+
+52
+00:03:13,900 --> 00:03:17,180
+use of Marvel will return the correct information.
+
+53
+00:03:17,200 --> 00:03:17,650
+It will tell.
+
+54
+00:03:17,650 --> 00:03:19,450
+OK so the user South indicated.
+
+55
+00:03:19,580 --> 00:03:20,330
+Here you go.
+
+56
+00:03:20,360 --> 00:03:23,250
+Here you have all the information above the user.
+
+57
+00:03:23,350 --> 00:03:29,290
+You know some a lot of things that tokened refresh tokin and a lot of information that we actually don't
+
+58
+00:03:29,290 --> 00:03:29,800
+really need.
+
+59
+00:03:29,800 --> 00:03:33,880
+We just need a copy of information maybe an e-mail or something like that.
+
+60
+00:03:33,880 --> 00:03:35,510
+But we do get something right.
+
+61
+00:03:35,530 --> 00:03:36,010
+It's not.
+
+62
+00:03:36,020 --> 00:03:36,580
+No.
+
+63
+00:03:36,700 --> 00:03:43,060
+So now what we can do every time something happens on an application or a user or a user logs in or
+
+64
+00:03:43,060 --> 00:03:45,510
+logs out we can pass some props.
+
+65
+00:03:45,520 --> 00:03:48,530
+You know this user Propp and that's what we're going to be doing.
+
+66
+00:03:48,640 --> 00:03:50,580
+So I'm going to go right here now.
+
+67
+00:03:50,590 --> 00:03:56,890
+Every time we render our app I'm going to be adding a prop called user which will contain all the logic
+
+68
+00:03:56,890 --> 00:03:57,650
+of this user.
+
+69
+00:03:57,700 --> 00:04:01,170
+So are we going to get this object or no.
+
+70
+00:04:01,190 --> 00:04:05,190
+And note is that now the application is going to is going to reload.
+
+71
+00:04:05,440 --> 00:04:08,230
+And we are still able to see the app.
+
+72
+00:04:08,320 --> 00:04:16,220
+And of course if I do console log user just like before you're not going to get all on the first attempt.
+
+73
+00:04:16,310 --> 00:04:19,780
+We are still getting the information because I am blocked and right now.
+
+74
+00:04:19,970 --> 00:04:25,520
+So now every time we render our application we will have a user prob with no.
+
+75
+00:04:25,550 --> 00:04:28,930
+If we don't have a user or with all the data of the user.
+
+76
+00:04:29,110 --> 00:04:31,710
+And right here we are rendering our app.
+
+77
+00:04:31,730 --> 00:04:39,420
+So what we can do we can pass the props just like this props and whenever we rendered component route
+
+78
+00:04:39,440 --> 00:04:46,230
+which is this one we can pass a new prop with the user insights inside.
+
+79
+00:04:46,230 --> 00:04:49,680
+So I'm going to say that that prompts.
+
+80
+00:04:49,820 --> 00:04:57,050
+Now if I go to route and I go right here at the bottom and I do console log props and let me make sure
+
+81
+00:04:57,050 --> 00:04:58,900
+to Liddie the console right here.
+
+82
+00:04:59,090 --> 00:05:01,630
+Let me fix it or go.
+
+83
+00:05:02,270 --> 00:05:04,040
+I going to save the application.
+
+84
+00:05:04,220 --> 00:05:07,610
+The application will reload and we are getting this user prob..
+
+85
+00:05:07,610 --> 00:05:10,690
+And this comes from route's ride from this prompts.
+
+86
+00:05:10,970 --> 00:05:18,080
+And with all the user information right here if I log out when we do log out we get log out successful
+
+87
+00:05:18,110 --> 00:05:19,990
+and the user is equal to no.
+
+88
+00:05:20,120 --> 00:05:25,850
+So now inside routes we have the ability to check if we do have a user or we you know we don't have
+
+89
+00:05:25,850 --> 00:05:27,010
+an user.
+
+90
+00:05:27,020 --> 00:05:28,650
+So now what are we going to do.
+
+91
+00:05:28,670 --> 00:05:34,580
+We're going to create a new place a new endpoint and there are there are there are very different ways
+
+92
+00:05:34,640 --> 00:05:40,310
+of doing this going to show you this right now and the next project on the next one or the third project
+
+93
+00:05:40,610 --> 00:05:42,010
+we will do pretty much the same thing.
+
+94
+00:05:42,020 --> 00:05:43,500
+But on a different way.
+
+95
+00:05:43,940 --> 00:05:45,410
+So what we will create.
+
+96
+00:05:45,620 --> 00:05:49,030
+It's a place where we can check if we have a user.
+
+97
+00:05:49,190 --> 00:05:53,660
+And if we do have a user we will send the user to Dasch where we can and let the user end.
+
+98
+00:05:53,780 --> 00:05:59,930
+But of course if we don't have a user we will not we will kick the user out to a different place and
+
+99
+00:05:59,930 --> 00:06:03,340
+maybe not dashboard maybe the sign or something else.
+
+100
+00:06:03,350 --> 00:06:09,450
+So for this we need to create two different components one for private drought's because we have private
+
+101
+00:06:09,450 --> 00:06:10,960
+routes just like this one.
+
+102
+00:06:11,120 --> 00:06:16,210
+But we have other routes which are public that anyone can enter this route.
+
+103
+00:06:16,530 --> 00:06:16,950
+OK.
+
+104
+00:06:17,270 --> 00:06:21,910
+So first we need to create a place where we are going to be hosting this files.
+
+105
+00:06:22,120 --> 00:06:30,200
+So I'm going to go to component's new directory and I'm going to call out routes routes just like this
+
+106
+00:06:30,290 --> 00:06:37,120
+out routes now inside out Froude we have two different things the private routes and the public routes.
+
+107
+00:06:37,190 --> 00:06:44,600
+So the first file is going to be creating it's private and then routes Dodge's and him first we're going
+
+108
+00:06:44,600 --> 00:06:49,690
+to do the private then we're going to do the public because the private is less code.
+
+109
+00:06:49,700 --> 00:06:50,520
+All right.
+
+110
+00:06:51,560 --> 00:06:59,490
+So now we're going to go right here at the top and import private riped from.
+
+111
+00:06:59,510 --> 00:07:06,730
+And of course components for slash our throats for Slash private Droughns.
+
+112
+00:07:06,740 --> 00:07:07,460
+All right.
+
+113
+00:07:08,850 --> 00:07:15,930
+So now the logic is that instead of rendering this route from Briac rounder we will render a private
+
+114
+00:07:15,930 --> 00:07:22,710
+round and this private route we will send all the probs with the user and all the properties we need
+
+115
+00:07:22,890 --> 00:07:27,510
+to render a route and we will send this route on a different route.
+
+116
+00:07:27,510 --> 00:07:28,300
+All right.
+
+117
+00:07:28,620 --> 00:07:32,540
+So I'm going to go right here right.
+
+118
+00:07:32,820 --> 00:07:35,480
+And I can say first I want to render a private route.
+
+119
+00:07:35,490 --> 00:07:36,510
+Everything is going to fail right now.
+
+120
+00:07:36,510 --> 00:07:40,850
+I'm just going to ride everything all the things that it's need.
+
+121
+00:07:40,950 --> 00:07:43,140
+So private routes.
+
+122
+00:07:43,150 --> 00:07:43,670
+Right.
+
+123
+00:07:43,830 --> 00:07:44,560
+OK.
+
+124
+00:07:45,300 --> 00:07:48,590
+So I'm going to open and close Macinnis self-closing tack.
+
+125
+00:07:48,660 --> 00:07:53,190
+Now what we need to pass to this component because it's going to be just to function we need to pass
+
+126
+00:07:53,190 --> 00:07:55,830
+the props we get from the parent component.
+
+127
+00:07:56,040 --> 00:08:01,370
+This case going to open and close and say Dad that Dad props right.
+
+128
+00:08:01,470 --> 00:08:05,010
+The next one is going to be the path where we want to go on this route.
+
+129
+00:08:05,160 --> 00:08:11,250
+So the path for this one will be dashboard just like this one dashboard.
+
+130
+00:08:11,250 --> 00:08:12,620
+All right.
+
+131
+00:08:12,960 --> 00:08:14,160
+What else do we need.
+
+132
+00:08:14,190 --> 00:08:18,580
+Remember that we are getting in on this routes we could use exact.
+
+133
+00:08:18,690 --> 00:08:22,120
+So I could use it right here on a normal route.
+
+134
+00:08:22,320 --> 00:08:24,270
+So I'm going to still use it right here.
+
+135
+00:08:24,270 --> 00:08:28,150
+Going to tell you why in a minute and notice that right here we have a component.
+
+136
+00:08:28,230 --> 00:08:31,980
+So we still need to pass the components just like this.
+
+137
+00:08:32,160 --> 00:08:34,770
+And I'm going to delete that dashboard route.
+
+138
+00:08:34,890 --> 00:08:38,700
+Of course if I reload the application nothing is going to really happen.
+
+139
+00:08:38,730 --> 00:08:43,840
+And if I go to dashboard of course it's going to fail.
+
+140
+00:08:44,030 --> 00:08:44,290
+Right.
+
+141
+00:08:44,300 --> 00:08:46,610
+We get a big fat error message.
+
+142
+00:08:46,700 --> 00:08:47,600
+All right.
+
+143
+00:08:47,600 --> 00:08:51,820
+So now this function this component needs to take all the props.
+
+144
+00:08:51,830 --> 00:08:56,110
+We are passing and evaluate if you're going to let the user end.
+
+145
+00:08:56,120 --> 00:08:56,480
+All right.
+
+146
+00:08:56,480 --> 00:09:01,430
+And it's going to be exact not exact or so inside private route.
+
+147
+00:09:01,430 --> 00:09:03,410
+We're going to go to private drought's.
+
+148
+00:09:03,680 --> 00:09:11,040
+We need to create re-act stateless components just for now and are going to change the capital piece
+
+149
+00:09:11,170 --> 00:09:13,510
+for that it's going to be private routes
+
+150
+00:09:16,200 --> 00:09:16,650
+OK.
+
+151
+00:09:17,050 --> 00:09:22,200
+So if you remember on this private drought's we're getting a lot of props.
+
+152
+00:09:22,390 --> 00:09:25,490
+Now I'm going to make use of these structuring just like this.
+
+153
+00:09:25,630 --> 00:09:29,720
+They're going to bring it back just like this just to make some space.
+
+154
+00:09:29,740 --> 00:09:31,920
+Now what do we need inside of here.
+
+155
+00:09:31,960 --> 00:09:34,300
+What are we going to be bringing from props.
+
+156
+00:09:34,480 --> 00:09:37,870
+Well we're going to be using all the props pretty much.
+
+157
+00:09:38,110 --> 00:09:40,860
+But I need to change some names.
+
+158
+00:09:41,110 --> 00:09:45,640
+So first the first thing we're going to need you going to use from all the props we are getting right
+
+159
+00:09:45,640 --> 00:09:48,920
+here is the use of props we get from the parent.
+
+160
+00:09:49,090 --> 00:09:52,880
+So I'm going to go right here and say OK I want the user right.
+
+161
+00:09:52,900 --> 00:09:54,970
+So I have the user on a separate marble.
+
+162
+00:09:55,000 --> 00:10:01,840
+I can just say I make say user right here and we're going to be making use of that user object.
+
+163
+00:10:01,840 --> 00:10:02,120
+All right.
+
+164
+00:10:02,230 --> 00:10:03,720
+What's the first thing.
+
+165
+00:10:03,760 --> 00:10:04,750
+What else do we need.
+
+166
+00:10:04,760 --> 00:10:08,910
+We're going to need the component so I can say component.
+
+167
+00:10:08,940 --> 00:10:09,130
+OK.
+
+168
+00:10:09,140 --> 00:10:15,150
+I'm going to bring the component but I will change the name to come up later.
+
+169
+00:10:15,160 --> 00:10:19,440
+We will render whatever component we are passing right here.
+
+170
+00:10:19,660 --> 00:10:23,150
+Now I cannot make a reference to components.
+
+171
+00:10:23,170 --> 00:10:30,880
+I cannot do this because remember that to render a component we need a capital C just like this.
+
+172
+00:10:30,880 --> 00:10:35,560
+So by doing this the only thing I'm doing is just renaming components.
+
+173
+00:10:35,710 --> 00:10:39,220
+So now whenever we make a reference to component we need to do it like this.
+
+174
+00:10:39,220 --> 00:10:42,820
+So if I make comp it's going to be an actual component.
+
+175
+00:10:42,820 --> 00:10:43,100
+Right.
+
+176
+00:10:43,150 --> 00:10:44,950
+That's the second thing.
+
+177
+00:10:44,980 --> 00:10:50,800
+And then of course we need all the other props that path the exact and everything else.
+
+178
+00:10:50,800 --> 00:10:53,970
+So I'm going to do coma and we do dot dot dot.
+
+179
+00:10:53,980 --> 00:10:59,950
+They're going to say rest this rest could be whatever could be you know remaining or something like
+
+180
+00:10:59,950 --> 00:11:01,240
+that doesn't matter.
+
+181
+00:11:01,290 --> 00:11:03,030
+Just going to call it dressed.
+
+182
+00:11:03,110 --> 00:11:10,120
+So whenever we make reference to rest it's going to be the rest of the props that we are not bringing
+
+183
+00:11:10,120 --> 00:11:11,350
+in right here at the top.
+
+184
+00:11:11,350 --> 00:11:12,050
+All right.
+
+185
+00:11:12,370 --> 00:11:14,370
+So now we need to return something.
+
+186
+00:11:14,620 --> 00:11:16,890
+So what we need to return it's a rout.
+
+187
+00:11:16,930 --> 00:11:17,280
+Right.
+
+188
+00:11:17,320 --> 00:11:17,550
+OK.
+
+189
+00:11:17,590 --> 00:11:25,590
+So I'm going to delete this and I'm just going to say OK I need to return just to route just like this.
+
+190
+00:11:25,930 --> 00:11:29,200
+Now let me make it right right.
+
+191
+00:11:31,190 --> 00:11:31,460
+All right.
+
+192
+00:11:31,490 --> 00:11:37,610
+Just right now of course route it's reserved component from Briac router.
+
+193
+00:11:37,610 --> 00:11:45,980
+So we need to import it at the top so import route coma and re direct.
+
+194
+00:11:45,980 --> 00:11:46,600
+All right.
+
+195
+00:11:46,940 --> 00:11:52,090
+And it can be from re-act router Dom.
+
+196
+00:11:52,100 --> 00:11:53,340
+All right.
+
+197
+00:11:53,450 --> 00:11:57,520
+Later we are going to be using the redirect going to tell you how to use it resemble.
+
+198
+00:11:57,590 --> 00:11:58,860
+So now we are using a router.
+
+199
+00:11:58,910 --> 00:12:01,170
+So we need to return a route.
+
+200
+00:12:01,400 --> 00:12:05,600
+In this case of course we're going to be returning this one but only We're going to be turning over
+
+201
+00:12:05,630 --> 00:12:06,350
+this one.
+
+202
+00:12:06,470 --> 00:12:10,780
+If the users have authenticated or not so we need to do some checking.
+
+203
+00:12:11,000 --> 00:12:16,990
+So first I'm going to open it close and I'm going to pass the rest of the props into this components
+
+204
+00:12:17,060 --> 00:12:19,370
+I'm going to say Dot dot dot.
+
+205
+00:12:19,490 --> 00:12:20,640
+Rest.
+
+206
+00:12:20,780 --> 00:12:27,590
+Now if you remember the rest are going to be the exact the path which is the thing we need on routes
+
+207
+00:12:27,590 --> 00:12:33,050
+components and everything else that it's not component and it's not the user.
+
+208
+00:12:33,050 --> 00:12:33,430
+Right.
+
+209
+00:12:33,610 --> 00:12:34,170
+OK.
+
+210
+00:12:34,640 --> 00:12:41,750
+So now if you know with routes with this component from Briac rotor Domm we can say components just
+
+211
+00:12:41,750 --> 00:12:48,080
+like this and we instead of just rendering that component in this case that dashboard for example what
+
+212
+00:12:48,080 --> 00:12:53,280
+we can do we can return a function and that function needs to be returning a component.
+
+213
+00:12:53,360 --> 00:12:55,100
+That's why we do it like this.
+
+214
+00:12:55,100 --> 00:12:55,770
+All right.
+
+215
+00:12:56,000 --> 00:13:02,810
+So now this if you remember roud whenever we use a around inside Riak router re-act router will inject
+
+216
+00:13:03,050 --> 00:13:05,310
+a lot of props like the history.
+
+217
+00:13:05,330 --> 00:13:11,890
+Remember we do history that push now a lot of information so we can grab that props and this props are
+
+218
+00:13:11,900 --> 00:13:15,760
+from reac router not from our props right here.
+
+219
+00:13:16,010 --> 00:13:21,410
+So we can put them we can select them right here and get we going to be passing them to whatever we
+
+220
+00:13:21,410 --> 00:13:23,580
+are going to be returning right here.
+
+221
+00:13:23,630 --> 00:13:27,720
+Now if you remember right here at the top we have a user.
+
+222
+00:13:27,890 --> 00:13:34,760
+So what we going to be doing is just say okay if I have a user I want to return a components just like
+
+223
+00:13:34,800 --> 00:13:35,550
+just here.
+
+224
+00:13:35,780 --> 00:13:44,000
+If I don't how to have a user what I want to do I want to read direct user to and maybe the sign in
+
+225
+00:13:44,120 --> 00:13:50,960
+page and point no make sense sign and that's it.
+
+226
+00:13:50,960 --> 00:13:51,670
+All right.
+
+227
+00:13:52,050 --> 00:13:52,600
+OK.
+
+228
+00:13:52,850 --> 00:13:55,250
+So of course we need to do something right here.
+
+229
+00:13:55,250 --> 00:13:59,790
+So for now I'm going to I'm going to do this because I want to show you something else.
+
+230
+00:13:59,790 --> 00:14:04,050
+Comp There we go.
+
+231
+00:14:04,060 --> 00:14:09,070
+So now we're going to be doing of course if the user is not authenticated we can every direct user to
+
+232
+00:14:09,070 --> 00:14:09,950
+sign in.
+
+233
+00:14:10,330 --> 00:14:13,330
+If not we're going to render a component.
+
+234
+00:14:13,610 --> 00:14:18,000
+Now right here I'm making a reference to come up and come up.
+
+235
+00:14:18,070 --> 00:14:22,700
+It's equal to the component we are receiving as props from the parent.
+
+236
+00:14:22,770 --> 00:14:26,510
+And if I check the parent the component is going to be equal to.
+
+237
+00:14:26,590 --> 00:14:27,960
+In this case dashboard.
+
+238
+00:14:28,090 --> 00:14:31,600
+So comp it's equal to dashboard.
+
+239
+00:14:31,690 --> 00:14:37,200
+So it's just like we are pretty much doing instead of comp we are doing this same thing.
+
+240
+00:14:37,290 --> 00:14:39,010
+We are just changing the name.
+
+241
+00:14:39,220 --> 00:14:45,700
+So we're going to return a component get a graph all the props we get from re-act router This prompts
+
+242
+00:14:46,000 --> 00:14:49,350
+and begin to inject them inside of the component.
+
+243
+00:14:49,630 --> 00:14:54,210
+And then of course are going to be passing again that user and we are willing to do this.
+
+244
+00:14:54,220 --> 00:14:59,740
+But you know we might need the user information inside this component.
+
+245
+00:15:00,070 --> 00:15:07,120
+So of course if the user South indicate it will be we will be displaying whatever component we are passing
+
+246
+00:15:07,120 --> 00:15:08,030
+right here.
+
+247
+00:15:08,500 --> 00:15:14,120
+And with all the props inside and of course a user in the using information.
+
+248
+00:15:14,130 --> 00:15:19,810
+All right if the user is not antiquated and they are trying to enter a private route we will kick the
+
+249
+00:15:19,810 --> 00:15:21,760
+user back to sign an.
+
+250
+00:15:21,900 --> 00:15:23,640
+OK so let's test this.
+
+251
+00:15:23,700 --> 00:15:25,230
+Let's see if this works.
+
+252
+00:15:25,410 --> 00:15:27,170
+Right now I'm not allowed to dictate it.
+
+253
+00:15:27,180 --> 00:15:33,010
+So if I go to dashboard just like this it's getting us back to sign in.
+
+254
+00:15:33,030 --> 00:15:34,470
+So you know it's can work.
+
+255
+00:15:34,590 --> 00:15:39,080
+And if I tried to log in we're going to get kind of a flushing screen but that's OK.
+
+256
+00:15:39,090 --> 00:15:46,210
+For now I'm going to put password 1 two three log in we get the flashing screen but that's OK.
+
+257
+00:15:46,410 --> 00:15:52,860
+We're going to fix it right now so we get to go to dashboard and since we are authenticated it's letting
+
+258
+00:15:52,860 --> 00:15:54,440
+us go in.
+
+259
+00:15:54,450 --> 00:15:55,620
+So that is good.
+
+260
+00:15:55,620 --> 00:16:02,150
+Now if I do logout of course we go back to sign in and if I try to go to dashboard not happening.
+
+261
+00:16:02,490 --> 00:16:04,360
+Very very good.
+
+262
+00:16:04,710 --> 00:16:08,910
+So now what is the other problem and begin to go to the next section of course.
+
+263
+00:16:08,910 --> 00:16:15,710
+So we do have a private route so we are restricting private routes but some other routes are public
+
+264
+00:16:15,720 --> 00:16:21,200
+just like home and some other routes are public just like the sign in.
+
+265
+00:16:21,300 --> 00:16:25,800
+But we are not going to let the user go to sign in if they are already authenticated.
+
+266
+00:16:25,810 --> 00:16:26,170
+What.
+
+267
+00:16:26,190 --> 00:16:28,130
+What's the point of doing that.
+
+268
+00:16:28,320 --> 00:16:33,790
+So for this we need to create a different place called public routes and do some more checking.
+
+269
+00:16:33,920 --> 00:16:34,290
+All right.
+
+270
+00:16:34,320 --> 00:16:37,550
+So let's go to the next one and create the public of rights.
+

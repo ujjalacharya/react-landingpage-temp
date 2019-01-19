@@ -1,0 +1,1124 @@
+1
+00:00:01,070 --> 00:00:01,470
+Good.
+
+2
+00:00:01,480 --> 00:00:01,820
+OK.
+
+3
+00:00:01,850 --> 00:00:08,440
+So let's create a component that it's going to be receiving the props for the buy sell and the arrival
+
+4
+00:00:08,660 --> 00:00:10,970
+and it's going to loop them and show each card.
+
+5
+00:00:11,080 --> 00:00:11,760
+All right.
+
+6
+00:00:11,870 --> 00:00:15,890
+So I'm going to create this inside you tells so inside details.
+
+7
+00:00:15,930 --> 00:00:20,240
+I'm going to create a component called Card block.
+
+8
+00:00:20,330 --> 00:00:23,000
+You'll have two types of card blocks.
+
+9
+00:00:23,000 --> 00:00:28,190
+This one will just print or four or maybe a little bit more if you have you know a sing line but they
+
+10
+00:00:28,190 --> 00:00:32,440
+will be all all rendered in a single line single straight line.
+
+11
+00:00:32,450 --> 00:00:38,230
+The other one is going to do a different thing which you know right here we get this kind of a lay out.
+
+12
+00:00:38,360 --> 00:00:39,950
+So they are kind of two different things.
+
+13
+00:00:39,950 --> 00:00:44,230
+They look pretty much similar pretty similar but they're different.
+
+14
+00:00:44,330 --> 00:00:52,870
+So inside the card block right here we need to create just up a component right to react statelets components.
+
+15
+00:00:53,180 --> 00:00:58,020
+So there's one tool called Card block card block.
+
+16
+00:00:58,250 --> 00:00:59,070
+OK.
+
+17
+00:00:59,450 --> 00:01:06,440
+And this one will be receiving props because we get it from the server and we pass it to this component.
+
+18
+00:01:06,440 --> 00:01:14,540
+So on the return and I'm going to mix them spacebar here I can create a container class name of card
+
+19
+00:01:15,160 --> 00:01:16,350
+block.
+
+20
+00:01:16,850 --> 00:01:19,790
+Now each side of the card block we will have a container.
+
+21
+00:01:19,790 --> 00:01:26,330
+So Dave called class name of container just like this.
+
+22
+00:01:26,330 --> 00:01:26,930
+All right.
+
+23
+00:01:27,080 --> 00:01:30,490
+Everything is going to be center right in the in the middle.
+
+24
+00:01:30,490 --> 00:01:35,220
+Now I'm going to do this before hand on each card section.
+
+25
+00:01:35,240 --> 00:01:37,130
+Let me go to home.
+
+26
+00:01:37,190 --> 00:01:40,860
+We will get a title and then you know the elements.
+
+27
+00:01:40,880 --> 00:01:44,870
+Now what happens if I want to use this component but with a different title.
+
+28
+00:01:45,020 --> 00:01:46,230
+We are doing right here.
+
+29
+00:01:46,370 --> 00:01:47,870
+So right here we have new arrivals.
+
+30
+00:01:48,080 --> 00:01:53,980
+And the best on the guitar so I can not just do H-1 and hard code that.
+
+31
+00:01:54,230 --> 00:01:55,290
+So when I'm going to do.
+
+32
+00:01:55,290 --> 00:01:57,620
+We're going to be passing the props by title.
+
+33
+00:01:57,620 --> 00:01:59,280
+So I got to X props.
+
+34
+00:01:59,400 --> 00:02:03,960
+I'm going to check if we do have a title I'm doing this because we might not have a title.
+
+35
+00:02:03,980 --> 00:02:05,790
+Maybe we don't need a title.
+
+36
+00:02:05,930 --> 00:02:13,160
+So we have the ability of not passing the title so that props and then I'm going to add a class name
+
+37
+00:02:13,520 --> 00:02:19,950
+and there's one title and this one will be renderer rendering whatever we have inside props.
+
+38
+00:02:20,210 --> 00:02:21,740
+And then that title.
+
+39
+00:02:22,370 --> 00:02:29,390
+Now the actual container that contain that contains the going good style right here inline style an
+
+40
+00:02:29,510 --> 00:02:30,680
+opening close.
+
+41
+00:02:30,980 --> 00:02:39,720
+And this one will be a display that is play and that Sprague is going to be flex and are going to app
+
+42
+00:02:39,830 --> 00:02:45,500
+flex wrap just like this and then wrap.
+
+43
+00:02:45,710 --> 00:02:46,970
+All right.
+
+44
+00:02:47,030 --> 00:02:47,740
+There you go.
+
+45
+00:02:48,050 --> 00:02:53,470
+So now I'm going to create a function that it's going to be looping the cartes render cards.
+
+46
+00:02:53,820 --> 00:02:59,580
+And remember that we only can only render one card inside a component.
+
+47
+00:02:59,600 --> 00:03:02,830
+We just need to create a component with a single card.
+
+48
+00:03:03,080 --> 00:03:07,460
+So this one is the one in charge of looping of this.
+
+49
+00:03:07,460 --> 00:03:13,070
+So again it's a process that list and begin to be passing the list of cards inside the list property
+
+50
+00:03:13,680 --> 00:03:15,960
+we're going to do it in a minute now.
+
+51
+00:03:15,960 --> 00:03:16,550
+OK.
+
+52
+00:03:16,940 --> 00:03:26,580
+So this one will be called Konst and the function name it's rent or cartes equal to open and close.
+
+53
+00:03:26,990 --> 00:03:30,400
+So this one will need to check if we do have a list.
+
+54
+00:03:30,440 --> 00:03:32,210
+Now if we do have a list we do something.
+
+55
+00:03:32,210 --> 00:03:35,240
+If not we do we don't do anything.
+
+56
+00:03:35,240 --> 00:03:38,150
+Now I'm going to enter props.
+
+57
+00:03:38,150 --> 00:03:46,540
+I'm going to enter list and I get a map and whenever we map we need a card which is what we get a card.
+
+58
+00:03:46,700 --> 00:03:49,460
+And then each ration number Y card block.
+
+59
+00:03:49,460 --> 00:03:52,900
+No card.
+
+60
+00:03:52,910 --> 00:03:55,650
+Then of course we need to return some GSX.
+
+61
+00:03:55,790 --> 00:04:00,120
+So I'm going to do this and I made a mistake right here says we are going to return J sacks.
+
+62
+00:04:00,230 --> 00:04:02,580
+I need to do the parenthesis.
+
+63
+00:04:02,630 --> 00:04:03,740
+All right.
+
+64
+00:04:04,660 --> 00:04:05,140
+OK.
+
+65
+00:04:05,270 --> 00:04:06,360
+So now what do we need to do.
+
+66
+00:04:06,380 --> 00:04:08,210
+We just need to return something for now.
+
+67
+00:04:08,240 --> 00:04:10,320
+I'm just going to say card in a string.
+
+68
+00:04:10,340 --> 00:04:17,900
+Just going to render a string maybe a div with a string because at the end we will have a div or a div
+
+69
+00:04:18,140 --> 00:04:21,500
+with the word card.
+
+70
+00:04:21,560 --> 00:04:22,680
+Doesn't matter.
+
+71
+00:04:23,240 --> 00:04:24,200
+OK.
+
+72
+00:04:24,740 --> 00:04:30,620
+So in the end when we rendered this component we should be getting two cards to keywords cards right
+
+73
+00:04:30,620 --> 00:04:31,170
+here.
+
+74
+00:04:31,400 --> 00:04:31,940
+OK.
+
+75
+00:04:32,290 --> 00:04:33,590
+So let's go home.
+
+76
+00:04:33,950 --> 00:04:36,540
+So now let's import this component from this.
+
+77
+00:04:36,620 --> 00:04:38,890
+Let's pass the props and see what happens.
+
+78
+00:04:39,140 --> 00:04:42,370
+So import import.
+
+79
+00:04:42,770 --> 00:04:49,450
+And it's going to be called Card block from the dot for Slash utils for Slash.
+
+80
+00:04:49,580 --> 00:04:51,210
+And then a card block.
+
+81
+00:04:51,800 --> 00:04:58,040
+Now I'm going to go below the home slider and then make reference to the card block and we open and
+
+82
+00:04:58,040 --> 00:04:58,810
+close.
+
+83
+00:04:58,820 --> 00:05:04,470
+Now if you remember we need to pass a list and a title so list with equals.
+
+84
+00:05:04,700 --> 00:05:11,210
+And if you remember again we are using redux So we are injecting props and begin to be passing this
+
+85
+00:05:11,810 --> 00:05:19,460
+props Dodd products because we are storing everything inside products and then we have the buy sell
+
+86
+00:05:20,210 --> 00:05:21,110
+property.
+
+87
+00:05:21,110 --> 00:05:34,870
+All right then I'm going to say title title equals and the title and I believe best selling guitars.
+
+88
+00:05:34,920 --> 00:05:38,340
+All right so the application will reload.
+
+89
+00:05:38,350 --> 00:05:43,580
+And what we get we get the best selling guitars and we get four different card renders.
+
+90
+00:05:43,580 --> 00:05:43,960
+All right.
+
+91
+00:05:43,960 --> 00:05:44,860
+So that's good.
+
+92
+00:05:44,870 --> 00:05:46,410
+This is actually working.
+
+93
+00:05:46,640 --> 00:05:50,390
+And I've got to create a new one for the whole promotion and just do it right now.
+
+94
+00:05:50,590 --> 00:05:55,380
+So the only thing left will be creating the actual card that it's going to go inside card block.
+
+95
+00:05:55,600 --> 00:06:05,340
+And this one it's by the arrival OK and new arrivals you arrivals right.
+
+96
+00:06:05,900 --> 00:06:06,330
+OK.
+
+97
+00:06:06,400 --> 00:06:10,790
+Let's see what you get and.
+
+98
+00:06:10,840 --> 00:06:13,590
+Oh and of course I'm storing this.
+
+99
+00:06:13,780 --> 00:06:21,580
+And of course it's restarting this notion is restarting the server and we are trying to fetch something
+
+100
+00:06:21,580 --> 00:06:23,380
+before the server gets restart.
+
+101
+00:06:23,380 --> 00:06:30,100
+So if you get just like this frozen like this just reload the page because the server you know it's
+
+102
+00:06:30,160 --> 00:06:31,920
+already up and running.
+
+103
+00:06:32,040 --> 00:06:34,550
+OK so now we need to create the cart.
+
+104
+00:06:34,840 --> 00:06:35,700
+Right.
+
+105
+00:06:35,710 --> 00:06:36,260
+All right.
+
+106
+00:06:36,340 --> 00:06:39,070
+So let's go to you tell us one more time.
+
+107
+00:06:39,270 --> 00:06:44,060
+And inside your tears your tools are going to create a new file called cart.
+
+108
+00:06:44,590 --> 00:06:45,940
+All right.
+
+109
+00:06:45,940 --> 00:06:49,380
+So the card component it's going to be pretty pretty much simple.
+
+110
+00:06:49,600 --> 00:06:53,950
+But later we're going to extend this a little bit more.
+
+111
+00:06:54,250 --> 00:07:00,460
+And I'm going to use a class based component so create a react class based component.
+
+112
+00:07:00,460 --> 00:07:06,290
+All right I'm going to call this car with a capital C right.
+
+113
+00:07:07,650 --> 00:07:08,280
+OK.
+
+114
+00:07:08,990 --> 00:07:12,380
+So what do we need to do here.
+
+115
+00:07:12,710 --> 00:07:18,580
+First when we are going to get some props around here this card will only be rendering of course went
+
+116
+00:07:18,620 --> 00:07:23,240
+with props the props or be are passing from the card blog that we're going to make a reference right
+
+117
+00:07:23,240 --> 00:07:23,880
+here.
+
+118
+00:07:24,200 --> 00:07:25,930
+So we're going to be passing props.
+
+119
+00:07:25,940 --> 00:07:26,450
+OK.
+
+120
+00:07:26,780 --> 00:07:31,970
+So whenever we get the props we just need to show with the template the template with the props we have
+
+121
+00:07:31,970 --> 00:07:32,480
+inside.
+
+122
+00:07:32,510 --> 00:07:33,570
+Really simple.
+
+123
+00:07:33,590 --> 00:07:38,480
+So I'm going to import from the card block the card.
+
+124
+00:07:39,000 --> 00:07:46,210
+I believe the gold cart cart not carts from that for Slash and then just cart.
+
+125
+00:07:46,520 --> 00:07:47,460
+All right.
+
+126
+00:07:48,020 --> 00:07:48,580
+So OK.
+
+127
+00:07:48,650 --> 00:07:51,110
+Let's make a reference to this card.
+
+128
+00:07:52,860 --> 00:07:54,210
+Open and close.
+
+129
+00:07:54,230 --> 00:07:57,470
+So again we are looping something right here.
+
+130
+00:07:57,470 --> 00:08:03,560
+So I'm going to remove the div and just pass the card and I'm going to give the key a key to these actual
+
+131
+00:08:03,560 --> 00:08:04,100
+component.
+
+132
+00:08:04,100 --> 00:08:07,640
+So going to say key and you make it right.
+
+133
+00:08:07,730 --> 00:08:10,960
+Keep off.
+
+134
+00:08:10,970 --> 00:08:16,740
+And I pass the iteration and the other thing we need is whatever we get back from carts.
+
+135
+00:08:16,860 --> 00:08:23,900
+Now if I do a card like this and then pass whatever I have inside card inside of the card component
+
+136
+00:08:24,170 --> 00:08:26,000
+I will need to do this.
+
+137
+00:08:26,030 --> 00:08:32,750
+Probst up card the card and you know it's not right so I'm going to do something else.
+
+138
+00:08:32,750 --> 00:08:35,430
+I'm going to do that dad and then cart.
+
+139
+00:08:35,880 --> 00:08:41,690
+All right so now with all the promise that we all the kids devalues everything else we get from card.
+
+140
+00:08:41,730 --> 00:08:44,220
+We're going to inject this to the cart.
+
+141
+00:08:44,220 --> 00:08:45,810
+So now it's out of here.
+
+142
+00:08:45,900 --> 00:08:51,260
+We just need to make a reference to this doc Probst and the whatever name we have inside of their movie
+
+143
+00:08:51,270 --> 00:08:55,500
+The images or the name or the brand or whatever.
+
+144
+00:08:55,500 --> 00:08:56,580
+All right.
+
+145
+00:08:56,760 --> 00:08:57,480
+That's good.
+
+146
+00:08:57,830 --> 00:09:02,090
+So let's go right here inside and start creating the template first.
+
+147
+00:09:02,210 --> 00:09:08,790
+I don't want to make a reference to props to this that props every time I'm going to say this props
+
+148
+00:09:09,360 --> 00:09:11,770
+and now I'm going to make a reference just props.
+
+149
+00:09:12,000 --> 00:09:17,340
+So the class name for this is going to be class name and I'm going to do the following.
+
+150
+00:09:17,460 --> 00:09:23,710
+Now later much later and I'm going to show you this right now.
+
+151
+00:09:24,450 --> 00:09:25,910
+We're going to get this at the top.
+
+152
+00:09:25,950 --> 00:09:32,560
+We're going to show the elements by this type of cart or by this type of cart ride.
+
+153
+00:09:32,880 --> 00:09:38,640
+So we need to change classes the only thing I'm doing right here is change the name of a couple of classes.
+
+154
+00:09:39,000 --> 00:09:45,010
+So we will get whenever we pass a cart we will pass a property of you know style type of style.
+
+155
+00:09:45,060 --> 00:09:50,420
+You're not doing it right here at home because we don't need it but we can use it much later.
+
+156
+00:09:50,430 --> 00:09:55,480
+So instead of giving a class name with just quotes are going to use templates strings and then anything
+
+157
+00:09:55,530 --> 00:09:57,870
+to attach or detach classes.
+
+158
+00:09:57,870 --> 00:10:04,440
+So this one is going to be cart item and then wrapper then it's paste and we're going to get this from
+
+159
+00:10:04,440 --> 00:10:05,060
+props.
+
+160
+00:10:05,130 --> 00:10:14,340
+So if we do get something that says props that grew red we can you know display the other type of layout.
+
+161
+00:10:14,340 --> 00:10:16,050
+But right now we are not going to do it.
+
+162
+00:10:16,050 --> 00:10:18,120
+I'm just going to leave it ready for the future.
+
+163
+00:10:18,240 --> 00:10:24,780
+Whenever we create this of course whenever we go we create this component this behavior we can go back
+
+164
+00:10:24,930 --> 00:10:25,750
+to here.
+
+165
+00:10:25,770 --> 00:10:26,300
+OK.
+
+166
+00:10:26,850 --> 00:10:28,800
+So the first thing we need to render is the image.
+
+167
+00:10:28,840 --> 00:10:31,060
+So Def opening close.
+
+168
+00:10:31,100 --> 00:10:37,010
+I going to add a class name to dip a class name of image.
+
+169
+00:10:37,020 --> 00:10:37,930
+Very simple.
+
+170
+00:10:38,090 --> 00:10:41,580
+And then we need to pass the style because the background image.
+
+171
+00:10:41,580 --> 00:10:44,370
+So style open and close.
+
+172
+00:10:44,400 --> 00:10:45,620
+We need to pass the background.
+
+173
+00:10:45,630 --> 00:10:47,860
+So back ground.
+
+174
+00:10:48,060 --> 00:10:50,520
+All right.
+
+175
+00:10:50,520 --> 00:10:58,060
+So opening closer a template string parenthesis and then I'm going to make a reference to.
+
+176
+00:10:58,380 --> 00:11:01,040
+And what are we going to be using.
+
+177
+00:11:01,050 --> 00:11:02,860
+Let me comment this now.
+
+178
+00:11:02,890 --> 00:11:04,280
+What are we going to be using.
+
+179
+00:11:04,290 --> 00:11:17,010
+So if I go back to home and I check I state open and close by cell and we get 38 and a c we don't really
+
+180
+00:11:17,010 --> 00:11:20,270
+have images so we have an empty array of images.
+
+181
+00:11:20,280 --> 00:11:22,180
+What are we going to be displaying.
+
+182
+00:11:22,590 --> 00:11:25,460
+So in theory we should be getting at least one image.
+
+183
+00:11:25,470 --> 00:11:29,470
+If we end whenever we enter a product later we get do it.
+
+184
+00:11:29,670 --> 00:11:34,170
+We should be getting at least one image but right now we could happen that we get nothing.
+
+185
+00:11:34,320 --> 00:11:37,720
+Maybe the image of the product is not ready yet.
+
+186
+00:11:37,950 --> 00:11:39,950
+We don't even have the product maybe.
+
+187
+00:11:40,020 --> 00:11:45,800
+So you know again the attachment of image whenever we create products it's not required.
+
+188
+00:11:45,880 --> 00:11:49,800
+So we need to create a way to detect if we have empty images.
+
+189
+00:11:49,810 --> 00:11:53,650
+You know if we don't have an image and maybe show a different one.
+
+190
+00:11:53,670 --> 00:11:54,270
+All right.
+
+191
+00:11:54,570 --> 00:12:02,730
+So instead instead of background I will say this dot render card image which is I'm just going to call
+
+192
+00:12:02,730 --> 00:12:07,470
+to a function and I'm going to pass probs dot images.
+
+193
+00:12:07,470 --> 00:12:11,320
+So what going to happen of course is that we have an empty array.
+
+194
+00:12:11,430 --> 00:12:14,630
+Later much later we will attach images.
+
+195
+00:12:14,730 --> 00:12:19,360
+But for now we're going to do this function so we can catch that.
+
+196
+00:12:19,380 --> 00:12:23,380
+We have no images and maybe show a different image or none available image.
+
+197
+00:12:23,490 --> 00:12:25,510
+So we have no repeat and that is good.
+
+198
+00:12:25,640 --> 00:12:33,300
+So I'm going to create the render card image function we are using a class we can do this.
+
+199
+00:12:33,300 --> 00:12:36,610
+So right here we will be getting images.
+
+200
+00:12:36,720 --> 00:12:38,420
+We know that this is an empty array.
+
+201
+00:12:38,580 --> 00:12:43,350
+So I'm going to create a NF and an else.
+
+202
+00:12:43,350 --> 00:12:52,370
+So if images dot length it's greater than zero it means that we do have an image.
+
+203
+00:12:52,500 --> 00:12:55,870
+So I'm going to access that array with the same return.
+
+204
+00:12:55,950 --> 00:13:00,840
+I'm going to access the images and I'm going to pass the first image and then I remember that we have
+
+205
+00:13:00,840 --> 00:13:04,400
+a new or else I'm going to be passing the R L.
+
+206
+00:13:04,410 --> 00:13:10,620
+Now of course we didn't have that scenario right now but later when we enter images inside of the aerial
+
+207
+00:13:10,650 --> 00:13:15,960
+images we'll have of course objects and inside of object we have the title of the image or maybe the
+
+208
+00:13:15,960 --> 00:13:17,930
+you are an L or something like that.
+
+209
+00:13:18,210 --> 00:13:23,780
+So we can call it by you r l we need to remember this but we are not there yet.
+
+210
+00:13:24,300 --> 00:13:25,870
+OK return.
+
+211
+00:13:26,580 --> 00:13:32,580
+And since we don't have an image I want to return whatever is inside images and we have an image not
+
+212
+00:13:32,580 --> 00:13:40,420
+available image not available and then that PNB pinchy just like this.
+
+213
+00:13:40,470 --> 00:13:44,820
+If I go to images we have the image not available right here.
+
+214
+00:13:44,820 --> 00:13:46,630
+All right.
+
+215
+00:13:47,190 --> 00:13:48,210
+Very good.
+
+216
+00:13:48,690 --> 00:13:50,850
+So are we getting something so far.
+
+217
+00:13:50,850 --> 00:13:52,070
+Maybe not.
+
+218
+00:13:52,200 --> 00:13:53,030
+Not yet.
+
+219
+00:13:53,100 --> 00:13:53,700
+OK.
+
+220
+00:13:54,390 --> 00:13:54,870
+So OK.
+
+221
+00:13:54,930 --> 00:14:00,360
+So now I'm going to go right here at the bottom and say Dave and I are going to go to create a class
+
+222
+00:14:00,360 --> 00:14:01,630
+name off.
+
+223
+00:14:01,710 --> 00:14:05,430
+I'm going to call it action underscore container.
+
+224
+00:14:05,860 --> 00:14:07,400
+Me move it around.
+
+225
+00:14:07,420 --> 00:14:08,270
+All right.
+
+226
+00:14:08,820 --> 00:14:11,380
+Oh sorry it's not inside the actual image.
+
+227
+00:14:11,430 --> 00:14:14,670
+It's outside of the image container.
+
+228
+00:14:14,740 --> 00:14:16,200
+So let me move this
+
+229
+00:14:20,590 --> 00:14:20,850
+so.
+
+230
+00:14:21,050 --> 00:14:22,080
+So now what we need to do.
+
+231
+00:14:22,100 --> 00:14:23,390
+We need to feel this.
+
+232
+00:14:23,570 --> 00:14:26,160
+We have pretty much all the information about the product.
+
+233
+00:14:26,510 --> 00:14:32,400
+So you know the brands the type the name and you know that model name.
+
+234
+00:14:32,510 --> 00:14:36,260
+So inside the actual container and it created one more container.
+
+235
+00:14:36,260 --> 00:14:41,600
+And this one will be getting the class name of tax because they are pretty much tax.
+
+236
+00:14:41,960 --> 00:14:46,100
+So they're open and close we're going to make it on one line.
+
+237
+00:14:46,100 --> 00:14:48,670
+So the class name for this one it's brand.
+
+238
+00:14:48,680 --> 00:14:53,320
+I'm using different class name because maybe later we can do something special.
+
+239
+00:14:53,330 --> 00:14:54,740
+I'm not sure yet.
+
+240
+00:14:54,790 --> 00:15:03,140
+So this prompts the brand that and we get the name we remember that the brands are inside an object
+
+241
+00:15:03,790 --> 00:15:04,750
+then we have the name.
+
+242
+00:15:04,760 --> 00:15:09,350
+So I'm going to say name prop's that name.
+
+243
+00:15:09,950 --> 00:15:10,670
+What else.
+
+244
+00:15:10,670 --> 00:15:15,520
+We have the price so we get price.
+
+245
+00:15:15,950 --> 00:15:21,180
+And of course we can attach the dollar sign or currency sign or whatever.
+
+246
+00:15:21,250 --> 00:15:21,580
+OK.
+
+247
+00:15:21,650 --> 00:15:24,600
+So we get something we are not getting the images.
+
+248
+00:15:24,860 --> 00:15:25,410
+I don't know why.
+
+249
+00:15:25,430 --> 00:15:27,030
+We're going to check it in a minute.
+
+250
+00:15:27,320 --> 00:15:32,360
+So but for now it's get what else we have a description right.
+
+251
+00:15:32,360 --> 00:15:37,910
+We have a description of this one but we might not have a description on this one we didn't have it
+
+252
+00:15:37,940 --> 00:15:39,170
+but we could attach it.
+
+253
+00:15:39,170 --> 00:15:45,110
+Now if I go to the grid mode we do have a description and that of course comes from the server.
+
+254
+00:15:45,290 --> 00:15:46,720
+So I'm going to do it right now.
+
+255
+00:15:46,730 --> 00:15:50,390
+I'm going to go right here after the action conductor after the tax.
+
+256
+00:15:50,570 --> 00:15:59,260
+I'm going to open something and say OK if prop's dot grid opening close we're going to return something.
+
+257
+00:15:59,420 --> 00:16:00,640
+If not begin to return.
+
+258
+00:16:00,650 --> 00:16:01,290
+No.
+
+259
+00:16:01,430 --> 00:16:02,340
+Right.
+
+260
+00:16:02,360 --> 00:16:05,270
+So I'm going to create a class name.
+
+261
+00:16:05,380 --> 00:16:06,670
+I don't know Dave.
+
+262
+00:16:07,270 --> 00:16:07,690
+Yeah.
+
+263
+00:16:07,880 --> 00:16:12,810
+And the class name of the scription.
+
+264
+00:16:13,210 --> 00:16:19,450
+And this of course is going to be whatever we get into this later much much later then we need to do
+
+265
+00:16:19,450 --> 00:16:20,540
+more.
+
+266
+00:16:20,620 --> 00:16:22,850
+We have the actions right.
+
+267
+00:16:22,950 --> 00:16:23,500
+OK.
+
+268
+00:16:23,700 --> 00:16:29,950
+And this one is going to be a little bit longer because the actions the buttons that we get are really
+
+269
+00:16:29,950 --> 00:16:32,400
+different than the other ones we get.
+
+270
+00:16:32,410 --> 00:16:34,290
+You know this one has a different style.
+
+271
+00:16:34,300 --> 00:16:35,020
+We even get it.
+
+272
+00:16:35,110 --> 00:16:36,380
+Hoover.
+
+273
+00:16:37,000 --> 00:16:38,050
+Hoover effect.
+
+274
+00:16:38,260 --> 00:16:41,760
+And it was just when it's bigger so they have different DSS.
+
+275
+00:16:41,950 --> 00:16:47,800
+And on this one we just have a Nikon So again instead of using the default link we need to create two
+
+276
+00:16:47,800 --> 00:16:50,570
+different links because they are of course different.
+
+277
+00:16:50,950 --> 00:16:52,210
+So this one went a little long.
+
+278
+00:16:52,280 --> 00:16:53,410
+Yeah a bit long.
+
+279
+00:16:53,590 --> 00:16:54,800
+So let's go to the next one.
+
+280
+00:16:54,880 --> 00:16:56,310
+And keep doing this.
+
+281
+00:16:56,440 --> 00:16:59,560
+Meanwhile I'm going to check why we are not getting the image.
+

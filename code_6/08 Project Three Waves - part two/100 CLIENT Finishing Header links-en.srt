@@ -1,0 +1,832 @@
+1
+00:00:00,700 --> 00:00:02,560
+OK so let's try to finish this.
+
+2
+00:00:02,670 --> 00:00:06,380
+So now we're going to do it in my cart and noticed that this one is kind of a different link.
+
+3
+00:00:06,600 --> 00:00:09,630
+So I'm going to create a different function to just render this one.
+
+4
+00:00:09,780 --> 00:00:14,470
+What you can do for example in real life is just I don't know of a third argument.
+
+5
+00:00:14,490 --> 00:00:19,170
+Same type of the item of whatever and then handle everything on the same link.
+
+6
+00:00:19,200 --> 00:00:21,110
+You can just check the third argument.
+
+7
+00:00:21,120 --> 00:00:23,920
+Render does if it's a default or random the other one.
+
+8
+00:00:23,940 --> 00:00:25,190
+If it's a different one.
+
+9
+00:00:25,500 --> 00:00:31,350
+So in this case I want to be a little bit more clear here because in the future of course this project
+
+10
+00:00:31,440 --> 00:00:35,930
+this whole whole project it's going to go to you.
+
+11
+00:00:36,060 --> 00:00:40,380
+So you're going to see default link and then card link and you can notice that there is a difference
+
+12
+00:00:40,380 --> 00:00:41,090
+right there.
+
+13
+00:00:41,370 --> 00:00:42,640
+So I'm going to go right here.
+
+14
+00:00:42,650 --> 00:00:49,230
+We're going to create an opening close and then else else open it close.
+
+15
+00:00:49,230 --> 00:00:54,120
+Now of course if you have a default link We're going to go to the default link.
+
+16
+00:00:54,210 --> 00:01:01,960
+So I'm going to say if item dot name it's different than my cart the one happening here.
+
+17
+00:01:01,980 --> 00:01:05,270
+Then of course we want to render the full one.
+
+18
+00:01:05,310 --> 00:01:07,820
+If not we can go to my link.
+
+19
+00:01:08,370 --> 00:01:14,880
+Now instead of this one and then it copy this I'm going to return and this one cart like right.
+
+20
+00:01:14,940 --> 00:01:16,560
+We didn't have the function going to create.
+
+21
+00:01:16,560 --> 00:01:20,010
+Right now agoo right here at the top card link.
+
+22
+00:01:20,040 --> 00:01:22,380
+It calls something else something else.
+
+23
+00:01:22,440 --> 00:01:25,890
+And at the end of course we will return some GSX.
+
+24
+00:01:25,950 --> 00:01:29,050
+Now the Codling link it's a little bit more complicated.
+
+25
+00:01:29,160 --> 00:01:35,910
+Instead of doing just a render of GSX going to render a function that at the end will be returning some
+
+26
+00:01:35,910 --> 00:01:37,400
+GSX.
+
+27
+00:01:37,470 --> 00:01:42,640
+Now on this Karch link we can it every time let me show you on the real one.
+
+28
+00:01:42,780 --> 00:01:52,770
+Every time I add something to the let me do the log in again Francis and then Francis and then pass
+
+29
+00:01:52,860 --> 00:01:55,420
+Ward 1 to 3.
+
+30
+00:01:56,190 --> 00:02:03,240
+Every time I go to guitars for example and I add a new guitar just like this we get this from the user
+
+31
+00:02:03,240 --> 00:02:03,800
+data.
+
+32
+00:02:03,900 --> 00:02:07,780
+Remember that we are going to redux and storing everything on the user data.
+
+33
+00:02:07,800 --> 00:02:11,630
+So every time it comes back we get injected into props.
+
+34
+00:02:11,640 --> 00:02:15,720
+We're going to be changing the number we have right here of course at the beginning it's going to be
+
+35
+00:02:15,720 --> 00:02:16,220
+zero.
+
+36
+00:02:16,230 --> 00:02:17,550
+But then we can get it.
+
+37
+00:02:17,580 --> 00:02:22,480
+So we kind of need to get how many items this user has on the user data.
+
+38
+00:02:22,680 --> 00:02:23,410
+Right.
+
+39
+00:02:23,520 --> 00:02:25,400
+So first I'm going to return to Divx.
+
+40
+00:02:26,010 --> 00:02:33,240
+So that will have a class name just like this of cart link.
+
+41
+00:02:33,270 --> 00:02:37,370
+Then of course I'm going to add a key and a key of I just like with it.
+
+42
+00:02:37,380 --> 00:02:42,780
+For now the number you know the red number is going to be just a span.
+
+43
+00:02:42,850 --> 00:02:44,690
+And I'm going to open it close.
+
+44
+00:02:44,790 --> 00:02:52,560
+Now this card item the card link is going to get an item and iteration and tore inside barbel called
+
+45
+00:02:52,590 --> 00:02:58,560
+user that does not probs that user that user data.
+
+46
+00:02:59,070 --> 00:03:03,360
+So I had you know the next time I make a reference to this I'm going to say this user.
+
+47
+00:03:03,510 --> 00:03:10,590
+So right here I'm going to say OK if user that cart has something you know and it's defined you're going
+
+48
+00:03:10,590 --> 00:03:15,840
+to get the user that cart Dodd and we get the length.
+
+49
+00:03:16,020 --> 00:03:17,430
+So langue.
+
+50
+00:03:17,730 --> 00:03:18,560
+There we go.
+
+51
+00:03:18,600 --> 00:03:20,250
+If not we turn zero.
+
+52
+00:03:20,370 --> 00:03:23,600
+So if we do have a user card we have something in user card.
+
+53
+00:03:23,700 --> 00:03:28,980
+We're going to return how many items we have on that list if not by default zero.
+
+54
+00:03:29,820 --> 00:03:38,130
+And then of course we return a link and this link is going to go to you know the user profile user card
+
+55
+00:03:38,190 --> 00:03:39,920
+inside the dashboard.
+
+56
+00:03:39,960 --> 00:03:46,440
+So the two will be item that link too.
+
+57
+00:03:46,470 --> 00:03:47,070
+All right.
+
+58
+00:03:47,070 --> 00:03:56,570
+And then of course just like the day before we get the item name so item that oops item that name.
+
+59
+00:03:56,730 --> 00:03:57,590
+Right.
+
+60
+00:03:58,060 --> 00:03:59,740
+OK let's see what we get.
+
+61
+00:03:59,790 --> 00:04:01,070
+I'm going to go.
+
+62
+00:04:01,290 --> 00:04:11,370
+I'm going to log in Francis and then pass Ward 1 to 3 and we get my card and nothing else inside.
+
+63
+00:04:11,540 --> 00:04:17,810
+Now this one it's kind of interactive this one because you know I need to make some changes but for
+
+64
+00:04:17,810 --> 00:04:18,980
+now it's going to work.
+
+65
+00:04:19,010 --> 00:04:20,370
+So my cart and we get to zero.
+
+66
+00:04:20,370 --> 00:04:21,820
+So that is working.
+
+67
+00:04:21,860 --> 00:04:24,270
+The next thing is going to be the logout.
+
+68
+00:04:24,410 --> 00:04:28,060
+Whenever we go to logout we click the logout.
+
+69
+00:04:28,070 --> 00:04:30,620
+It's not going to be a link just like it is right now.
+
+70
+00:04:30,620 --> 00:04:36,680
+If I click it we go to use or log out but instead of doing that if fire a function that is going to
+
+71
+00:04:36,680 --> 00:04:37,960
+do the logout.
+
+72
+00:04:37,970 --> 00:04:38,740
+All right.
+
+73
+00:04:39,350 --> 00:04:41,500
+So how do we do this.
+
+74
+00:04:41,510 --> 00:04:48,470
+So again we need to make some changes right here we are saying OK item name equals different log and
+
+75
+00:04:48,470 --> 00:04:50,180
+we are just pushing the items.
+
+76
+00:04:50,330 --> 00:04:53,000
+And then of course we return a default link.
+
+77
+00:04:53,180 --> 00:04:59,020
+So the default link instead of creating a new F conditional.
+
+78
+00:04:59,150 --> 00:05:04,950
+If we have a log out button on the default link I'm going to do just that and then enter right here.
+
+79
+00:05:05,420 --> 00:05:06,380
+I'm going to say OK.
+
+80
+00:05:06,590 --> 00:05:16,890
+If the item that name that we are getting triple equals out on the copy the name logout will equals
+
+81
+00:05:16,910 --> 00:05:17,410
+log out.
+
+82
+00:05:17,410 --> 00:05:24,670
+We're going to do something if not we're going to do whatever we do with the default links.
+
+83
+00:05:24,680 --> 00:05:30,830
+Now on this one instead of returning a link or going to return a dip and a definite date for this one
+
+84
+00:05:30,830 --> 00:05:32,380
+it's going to be class name.
+
+85
+00:05:32,630 --> 00:05:38,150
+Log out link because this is not a natural legs.
+
+86
+00:05:38,150 --> 00:05:42,130
+I need to keep it a class to give it all the link style.
+
+87
+00:05:42,190 --> 00:05:44,590
+I'm going to go right here and add more props.
+
+88
+00:05:44,600 --> 00:05:54,230
+Remember we need to add a key and a key it's why am I going to do click on click just like this and
+
+89
+00:05:54,230 --> 00:06:02,820
+whenever we click this what I want to do I went to a fire function that calls this dad lock out.
+
+90
+00:06:02,840 --> 00:06:07,030
+Handler could be just logout handler.
+
+91
+00:06:07,070 --> 00:06:07,880
+All right.
+
+92
+00:06:07,900 --> 00:06:11,450
+This one is a function that you know we don't help right now.
+
+93
+00:06:11,690 --> 00:06:16,980
+And then of course instead of here we just rendered the item that name so item that name.
+
+94
+00:06:17,510 --> 00:06:18,170
+All right.
+
+95
+00:06:18,230 --> 00:06:19,100
+See what we get.
+
+96
+00:06:22,090 --> 00:06:23,430
+Of course we are inside logout.
+
+97
+00:06:23,440 --> 00:06:24,930
+We don't have this.
+
+98
+00:06:25,120 --> 00:06:26,640
+So you know we have to log out.
+
+99
+00:06:26,650 --> 00:06:27,290
+If I look at.
+
+100
+00:06:27,310 --> 00:06:31,870
+Of course it's going to fail because we don't have this function so that's created right now.
+
+101
+00:06:31,930 --> 00:06:33,570
+And now on this one.
+
+102
+00:06:34,270 --> 00:06:41,020
+What we need to do we need to go to redux again because this love that we have on the server a route
+
+103
+00:06:41,260 --> 00:06:47,500
+that is going to be up for force listening to this log out and after we of course we log of the user
+
+104
+00:06:47,560 --> 00:06:52,550
+on the server we destroy that token we can kick the user back to hope.
+
+105
+00:06:52,550 --> 00:06:54,890
+Now we don't have dysfunction that's created right now.
+
+106
+00:06:55,730 --> 00:06:55,890
+Right.
+
+107
+00:06:55,910 --> 00:07:03,890
+So I'm going to go at the top and I'm going to import opening close and going to create a function called
+
+108
+00:07:03,980 --> 00:07:10,880
+log out user and it's going to be from that that force slash that that slash.
+
+109
+00:07:10,940 --> 00:07:12,010
+One more time.
+
+110
+00:07:12,110 --> 00:07:17,210
+And then we go to actions or slash and user actions.
+
+111
+00:07:17,240 --> 00:07:18,280
+Very good.
+
+112
+00:07:18,320 --> 00:07:20,070
+Now we don't have this we need to create it.
+
+113
+00:07:20,060 --> 00:07:23,250
+So let's go to user actions right here.
+
+114
+00:07:23,570 --> 00:07:26,810
+And of course we need to export that function.
+
+115
+00:07:26,880 --> 00:07:33,760
+Ok I'm going to go and say export function logo user open and close.
+
+116
+00:07:33,830 --> 00:07:41,740
+So I'm going to do Konst request X-ers that get just like this.
+
+117
+00:07:42,300 --> 00:07:48,500
+And I forgot to put that equal actually those that get and we do open and close.
+
+118
+00:07:48,500 --> 00:07:53,030
+We use the same user server and that we close it.
+
+119
+00:07:53,120 --> 00:07:58,110
+And this one the route for this if you remember it's lock out right.
+
+120
+00:07:58,220 --> 00:07:59,220
+And that is it.
+
+121
+00:07:59,510 --> 00:08:01,150
+Then of course we will get it.
+
+122
+00:08:01,150 --> 00:08:10,670
+We will get the promise will get resolved and then we will do response and we will send responds that
+
+123
+00:08:10,730 --> 00:08:11,880
+data.
+
+124
+00:08:12,540 --> 00:08:13,290
+All right.
+
+125
+00:08:13,580 --> 00:08:22,310
+Now we need to type so return I'm going to say type and I'm going to call this logout underscore user
+
+126
+00:08:22,670 --> 00:08:29,280
+coma and then we will add a payload and the payload it's whatever we get back from their request.
+
+127
+00:08:29,300 --> 00:08:35,780
+Now let's add to the type and after a while this gets you know really repetitive.
+
+128
+00:08:35,840 --> 00:08:42,110
+So it's at the time it's going to be called export Condes logout user.
+
+129
+00:08:42,350 --> 00:08:46,730
+And then you log out user.
+
+130
+00:08:46,910 --> 00:08:51,910
+OK so now we have the type we have the function of inside user actions.
+
+131
+00:08:51,920 --> 00:08:54,580
+What else we need to go to the producer.
+
+132
+00:08:54,800 --> 00:09:01,120
+So import the type and then use a reducer of course pretty much the same thing.
+
+133
+00:09:01,160 --> 00:09:03,310
+Case log on user.
+
+134
+00:09:03,470 --> 00:09:08,240
+We return open and close that state of coma.
+
+135
+00:09:08,270 --> 00:09:14,120
+And in this case we actually don't need anything because if the user logs out we just destroyed the
+
+136
+00:09:14,120 --> 00:09:15,440
+token from the server.
+
+137
+00:09:15,560 --> 00:09:16,000
+And that said.
+
+138
+00:09:16,010 --> 00:09:22,770
+So you could do something like log out something like that and the server will be returning so successful.
+
+139
+00:09:22,850 --> 00:09:24,090
+So you can attach it.
+
+140
+00:09:24,210 --> 00:09:25,420
+Now in this case there's no need.
+
+141
+00:09:25,430 --> 00:09:27,360
+We don't need any verification of this.
+
+142
+00:09:27,590 --> 00:09:31,540
+So I'm going to log out of this just to state and say just returned stated.
+
+143
+00:09:31,540 --> 00:09:32,270
+All right.
+
+144
+00:09:32,750 --> 00:09:39,860
+So of course now we need to go back to the header to see if I can find it or go and I'm going to go
+
+145
+00:09:39,860 --> 00:09:41,830
+to the logout handler.
+
+146
+00:09:42,200 --> 00:09:46,740
+Now on the handler we just need to dispatch the action and afterwards do something.
+
+147
+00:09:46,940 --> 00:09:56,300
+So this that probs that this patch just like this opening close we do the lock out user and then just
+
+148
+00:09:56,300 --> 00:10:02,690
+then we get a response back open and close and just like this.
+
+149
+00:10:02,690 --> 00:10:08,860
+Now remember that the server will be returning log out just like this.
+
+150
+00:10:08,940 --> 00:10:14,560
+We believe it's going to be returning the log out success true or log out success false.
+
+151
+00:10:14,630 --> 00:10:17,180
+So we can directly catch it directly from here.
+
+152
+00:10:17,180 --> 00:10:18,640
+Instead the props.
+
+153
+00:10:18,690 --> 00:10:28,210
+So if open it close responds response that payload just like this.
+
+154
+00:10:28,340 --> 00:10:30,670
+Success.
+
+155
+00:10:31,160 --> 00:10:32,110
+What we need to do.
+
+156
+00:10:32,190 --> 00:10:37,960
+We're going to do this this that props that history
+
+157
+00:10:40,710 --> 00:10:46,280
+that push open and close and we go to forward slash you hope response payload success.
+
+158
+00:10:46,290 --> 00:10:47,590
+I believe it called success.
+
+159
+00:10:47,700 --> 00:10:48,010
+Yeah.
+
+160
+00:10:48,070 --> 00:10:48,530
+OK.
+
+161
+00:10:48,660 --> 00:10:50,370
+OK so let's see if this works.
+
+162
+00:10:50,460 --> 00:10:53,630
+I'm going to click and log out and nothing happens.
+
+163
+00:10:53,660 --> 00:10:55,030
+Pre-shared that this is an error.
+
+164
+00:10:55,170 --> 00:10:56,710
+So I'm going to go to cons log.
+
+165
+00:10:56,910 --> 00:11:02,400
+We get some errors and says Fate's low resource the server responded with 4 0 4 and this is because
+
+166
+00:11:02,400 --> 00:11:04,060
+it's not finding the route.
+
+167
+00:11:04,110 --> 00:11:12,840
+So on user actions we are saying that we want to go to log out and we do have a log out and oh look
+
+168
+00:11:12,880 --> 00:11:14,200
+at its users.
+
+169
+00:11:14,280 --> 00:11:17,170
+Rowdiest users not user.
+
+170
+00:11:17,180 --> 00:11:17,700
+All right.
+
+171
+00:11:17,700 --> 00:11:19,230
+So let's try again.
+
+172
+00:11:19,720 --> 00:11:23,910
+Going to reload the application and we're going to get a prompt.
+
+173
+00:11:24,360 --> 00:11:28,950
+If you get what we did wrong right here what we are actually we are not doing are going to give you
+
+174
+00:11:28,950 --> 00:11:29,640
+a tip.
+
+175
+00:11:29,760 --> 00:11:35,770
+What we are not doing on the head header right here and the push just you know trying to fix the need
+
+176
+00:11:35,890 --> 00:11:39,020
+to fix the problem then log out and.
+
+177
+00:11:39,050 --> 00:11:40,190
+OK we get an error.
+
+178
+00:11:40,190 --> 00:11:41,240
+It's different error.
+
+179
+00:11:41,240 --> 00:11:44,900
+Can we properly push of undefined right.
+
+180
+00:11:44,960 --> 00:11:49,830
+Of course this component it's not really related to react router.
+
+181
+00:11:50,090 --> 00:11:51,040
+Sorry.
+
+182
+00:11:51,050 --> 00:11:56,220
+So of course we are pushing something from the prop's we are finding trying to find something other
+
+183
+00:11:56,240 --> 00:12:00,930
+Propst that it's related to history but you know we don't have anything like that.
+
+184
+00:12:01,160 --> 00:12:07,280
+So just like we did before we need to inject inject with the router right here.
+
+185
+00:12:07,280 --> 00:12:16,490
+So we're going to go right at the top and import with router and then from and it's from Bre-X router
+
+186
+00:12:16,520 --> 00:12:22,790
+Dom and now that I think about it I have to write here so I don't need to bring it again so I can import
+
+187
+00:12:22,790 --> 00:12:24,720
+it from broken down.
+
+188
+00:12:25,040 --> 00:12:32,720
+So we need to wrap the component right here and since we are using connect I'm going to go just like
+
+189
+00:12:32,720 --> 00:12:36,290
+this and close it and let's try again.
+
+190
+00:12:36,290 --> 00:12:37,940
+Of course we need to log in again.
+
+191
+00:12:37,950 --> 00:12:46,640
+So I mean it closes Francis at GM and dot com and then password 2:59 log in.
+
+192
+00:12:46,760 --> 00:12:48,810
+And if I log out back to home.
+
+193
+00:12:48,860 --> 00:12:50,480
+So everything works.
+
+194
+00:12:50,600 --> 00:12:57,470
+And if I tried to go to restrict the route just like user or dashboard not happening.
+
+195
+00:12:57,690 --> 00:13:03,640
+So now we are able to log in again log out and we get all the options at the top.
+
+196
+00:13:03,650 --> 00:13:06,190
+So very good.
+
+197
+00:13:06,410 --> 00:13:11,890
+So now at this point do you have a you have a website you have a server you're fetching you could if
+
+198
+00:13:12,170 --> 00:13:16,250
+you could fetch some information you know from the server like the products and everything else and
+
+199
+00:13:16,250 --> 00:13:19,300
+you have a logic for logging in and logging out.
+
+200
+00:13:19,310 --> 00:13:23,530
+This is the most difficult part of the application.
+
+201
+00:13:23,540 --> 00:13:29,060
+The other part if I go to the final one is going to be the filtering but everything else just gets really
+
+202
+00:13:29,060 --> 00:13:30,460
+really really simple.
+
+203
+00:13:30,590 --> 00:13:31,230
+Right.
+
+204
+00:13:31,400 --> 00:13:34,140
+We just need to do coding of course we need to code a lot.
+
+205
+00:13:34,340 --> 00:13:39,020
+But there is there is no complex logic right now.
+
+206
+00:13:39,260 --> 00:13:43,100
+All them the most complex thing we can ever over to did it right here.
+
+207
+00:13:43,110 --> 00:13:43,570
+OK.
+
+208
+00:13:43,760 --> 00:13:47,600
+So let's go to the next section and move to maybe a different thing.
+

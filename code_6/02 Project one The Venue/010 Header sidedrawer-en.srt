@@ -1,0 +1,1056 @@
+1
+00:00:00,780 --> 00:00:06,630
+Write so now we'll be we will add the button right here so we can cook it and whenever we click it we
+
+2
+00:00:06,870 --> 00:00:08,360
+will create a side drawer.
+
+3
+00:00:08,430 --> 00:00:09,750
+So first is the button.
+
+4
+00:00:09,810 --> 00:00:10,110
+OK.
+
+5
+00:00:10,110 --> 00:00:16,110
+So going to go back to our project and if you remember right here we've imported a menu icon and I made
+
+6
+00:00:16,110 --> 00:00:16,560
+a mistake.
+
+7
+00:00:16,560 --> 00:00:19,110
+This one it's not from core is from icons.
+
+8
+00:00:19,110 --> 00:00:21,810
+It's kind of a different dependency.
+
+9
+00:00:21,840 --> 00:00:27,900
+If we go to you know the package to Jason we have material you like core and then icons so it's a different
+
+10
+00:00:27,990 --> 00:00:28,540
+library.
+
+11
+00:00:28,670 --> 00:00:29,200
+OK.
+
+12
+00:00:29,640 --> 00:00:36,300
+So sort of for that are going to go at the bottom and first we need to bring that Bunim now to use buttons
+
+13
+00:00:36,390 --> 00:00:40,070
+inside the toolbar and actually inside the module.
+
+14
+00:00:40,280 --> 00:00:43,030
+We need to use the Eye button.
+
+15
+00:00:43,050 --> 00:00:46,220
+So we're going to open and say icon button.
+
+16
+00:00:46,270 --> 00:00:46,670
+OK.
+
+17
+00:00:46,680 --> 00:00:51,210
+And remember we are importing Eichenbaum button right here at the top.
+
+18
+00:00:51,720 --> 00:00:58,890
+So now from within I can button we can put an icon and in this case I'm using a Nikon from you know
+
+19
+00:00:59,010 --> 00:00:59,840
+material.
+
+20
+00:01:00,000 --> 00:01:01,710
+And you can use whatever you want.
+
+21
+00:01:01,720 --> 00:01:02,740
+It doesn't really matter.
+
+22
+00:01:02,880 --> 00:01:06,810
+Right here we can see the icons can have a black eye we've going to change that.
+
+23
+00:01:06,810 --> 00:01:12,100
+And again if you put your own your own icon is going to work as well.
+
+24
+00:01:12,330 --> 00:01:15,580
+But you know this one comes already ready to go.
+
+25
+00:01:15,750 --> 00:01:16,280
+OK.
+
+26
+00:01:16,710 --> 00:01:25,150
+So the I can button needs some configurations so I'm going to do Area Leavell area labeled just like
+
+27
+00:01:25,150 --> 00:01:25,730
+this.
+
+28
+00:01:26,020 --> 00:01:28,750
+And this one is going to be a menu.
+
+29
+00:01:29,020 --> 00:01:29,850
+The color.
+
+30
+00:01:29,860 --> 00:01:35,670
+And you know the color we will inherit because the color by default it's white.
+
+31
+00:01:35,830 --> 00:01:40,420
+So we can get it in a white collar and of course if we cook it nothing happens.
+
+32
+00:01:40,630 --> 00:01:45,480
+So in real life what it needs to happen is that whenever we click it we open the side door.
+
+33
+00:01:45,490 --> 00:01:52,480
+We didn't have a side drawer but are going to add and click event listener opening close.
+
+34
+00:01:52,570 --> 00:01:55,440
+And in this one whenever we click it we will write a function.
+
+35
+00:01:55,480 --> 00:01:59,220
+In this case I'm just going to say conc lock open.
+
+36
+00:01:59,220 --> 00:01:59,580
+All right.
+
+37
+00:01:59,650 --> 00:02:01,330
+So let's see if this works.
+
+38
+00:02:01,330 --> 00:02:04,420
+So inspect and I'm going to go to console.
+
+39
+00:02:04,420 --> 00:02:09,920
+I'm going to cook it and we get open or whenever I typed it open.
+
+40
+00:02:10,300 --> 00:02:10,540
+OK.
+
+41
+00:02:10,570 --> 00:02:11,980
+You know you're going to get it.
+
+42
+00:02:12,160 --> 00:02:12,880
+Let's get.
+
+43
+00:02:13,150 --> 00:02:18,660
+OK so now what we need to do is we need to add a side door just like this.
+
+44
+00:02:18,700 --> 00:02:19,990
+So let's do it right now.
+
+45
+00:02:21,030 --> 00:02:25,260
+All right so let's add this side door first let's go to the documentation.
+
+46
+00:02:25,260 --> 00:02:30,170
+So if you go to drawers right here you're going to get.
+
+47
+00:02:30,170 --> 00:02:36,680
+Of course all the documentation all the this is actually the demo section so you can open it left or
+
+48
+00:02:36,680 --> 00:02:37,810
+you can open right.
+
+49
+00:02:37,850 --> 00:02:38,440
+You can open.
+
+50
+00:02:38,440 --> 00:02:41,680
+Actually you can open tops of this is really really cool.
+
+51
+00:02:41,780 --> 00:02:44,370
+So we can use the open write option.
+
+52
+00:02:44,420 --> 00:02:51,500
+Now if I show the resource right here of course we need to import drawer and you know set some state
+
+53
+00:02:51,530 --> 00:02:55,320
+and everything you know like that we go to the door option.
+
+54
+00:02:55,430 --> 00:03:00,680
+So which each drawer you can set an encore which is going to be where you're going to open it from the
+
+55
+00:03:00,680 --> 00:03:02,550
+left or the right.
+
+56
+00:03:02,600 --> 00:03:05,880
+And in this case we're going to be passing an open state.
+
+57
+00:03:06,050 --> 00:03:10,740
+So whenever the page loads if this is the state top it's actually true.
+
+58
+00:03:10,760 --> 00:03:18,080
+This you know this value it's true the page will load with the side door open so we can meet to mind
+
+59
+00:03:18,080 --> 00:03:18,620
+that.
+
+60
+00:03:18,860 --> 00:03:24,560
+And then we have a third prop which is going to be the on close whenever we want to close it.
+
+61
+00:03:24,560 --> 00:03:30,650
+We need to trigger a function to close it so we can change the state of this state that top in this
+
+62
+00:03:30,650 --> 00:03:31,510
+case.
+
+63
+00:03:31,610 --> 00:03:31,990
+That's fine.
+
+64
+00:03:32,130 --> 00:03:32,590
+Don't worry.
+
+65
+00:03:32,600 --> 00:03:34,070
+We're going to do it right now.
+
+66
+00:03:34,070 --> 00:03:40,820
+So I'm going to go back to our project and I'm going to host the side door on a different file so I'm
+
+67
+00:03:40,820 --> 00:03:48,470
+going to create a new file and this one is going to be called side and then drawer that jacks so the
+
+68
+00:03:48,470 --> 00:03:51,850
+side door is going to be just a stateless function.
+
+69
+00:03:51,950 --> 00:03:59,300
+So I'm going to use the the in red react state those components going to press center and it will create
+
+70
+00:03:59,300 --> 00:04:00,700
+a side door for me.
+
+71
+00:04:00,920 --> 00:04:03,880
+So I'm in a mistake made changed I always make this mistake.
+
+72
+00:04:03,890 --> 00:04:11,450
+I don't know why something you know so side drawer with a capital S and then side door with a capital
+
+73
+00:04:11,460 --> 00:04:12,350
+S..
+
+74
+00:04:12,960 --> 00:04:19,140
+So this side drawer will be receiving some props which are all the configurations we need to use you
+
+75
+00:04:19,140 --> 00:04:23,700
+know the ancor maybe or maybe the open this top and everything else.
+
+76
+00:04:23,880 --> 00:04:27,570
+In this case we're going to be passing the open and the close props.
+
+77
+00:04:27,570 --> 00:04:28,150
+All right.
+
+78
+00:04:28,590 --> 00:04:33,780
+So first we need to import the drawer from the top so I have it right here.
+
+79
+00:04:33,840 --> 00:04:35,890
+So we have it right here drawer.
+
+80
+00:04:36,180 --> 00:04:42,090
+So I'm going to copy this one and paste it right here at the top import drawer from multi-role you I
+
+81
+00:04:42,110 --> 00:04:43,750
+court's always the same thing.
+
+82
+00:04:43,920 --> 00:04:48,270
+And then drawer them are going to be using list and then list item.
+
+83
+00:04:48,300 --> 00:04:54,810
+I have the list right here so I'm a little bit lazy so i going to copy and paste it's import list from
+
+84
+00:04:54,960 --> 00:05:01,080
+then material the core and then just list and we're going to be using one more thing I'm going to import
+
+85
+00:05:01,170 --> 00:05:02,000
+right here.
+
+86
+00:05:02,100 --> 00:05:03,810
+It's called a list item.
+
+87
+00:05:03,810 --> 00:05:06,310
+We're going to talk about this in a couple minutes.
+
+88
+00:05:06,570 --> 00:05:13,350
+So again is from matyr you ice core and then you know same name list item.
+
+89
+00:05:13,350 --> 00:05:13,560
+Right.
+
+90
+00:05:13,560 --> 00:05:16,480
+So we have there's three things we can be using.
+
+91
+00:05:16,770 --> 00:05:20,220
+Now this component will just return the drawer.
+
+92
+00:05:20,310 --> 00:05:27,990
+So I'm going to delete this step to open and close tag and say door open and close and inside of here
+
+93
+00:05:28,080 --> 00:05:29,880
+we will get you know our door.
+
+94
+00:05:29,910 --> 00:05:31,910
+So we're right now I'm going into say door.
+
+95
+00:05:31,950 --> 00:05:33,290
+That's good.
+
+96
+00:05:33,300 --> 00:05:36,250
+So the door just like we spoke briefly.
+
+97
+00:05:36,600 --> 00:05:41,970
+It receives a Natcore which is going to be where are we going to be opening it in the right or the left.
+
+98
+00:05:42,000 --> 00:05:47,050
+In this case is going to be that right now we have an open prop which is required.
+
+99
+00:05:47,070 --> 00:05:52,860
+We need to pass it and then we have a nun close which is what's going to happen whenever the we want
+
+100
+00:05:52,860 --> 00:05:53,980
+to close this.
+
+101
+00:05:54,090 --> 00:05:56,870
+And this one it's a function in this case.
+
+102
+00:05:57,210 --> 00:05:59,100
+So we didn't have that function right now.
+
+103
+00:05:59,190 --> 00:06:03,440
+So we're going to be passing it from the parents which is Hetter now from within.
+
+104
+00:06:03,470 --> 00:06:07,810
+Within Hetter we need to include the side door so I'm going to import.
+
+105
+00:06:07,830 --> 00:06:08,250
+Right.
+
+106
+00:06:08,430 --> 00:06:13,650
+OK I'm going to go at the bottom import then side door.
+
+107
+00:06:13,920 --> 00:06:16,900
+Just like this drawer from.
+
+108
+00:06:16,920 --> 00:06:20,820
+And then that for Slash and then side door.
+
+109
+00:06:21,180 --> 00:06:27,330
+So I'm going to copy this and I'm going to go at the bottom and include the side door on the on the
+
+110
+00:06:27,330 --> 00:06:28,140
+actual header.
+
+111
+00:06:28,150 --> 00:06:30,760
+So right that's the only thing we need to do right now.
+
+112
+00:06:30,900 --> 00:06:34,840
+Let me make it at self-closing tack.
+
+113
+00:06:34,980 --> 00:06:38,720
+So if you remember we need to be passing from parents to child.
+
+114
+00:06:38,880 --> 00:06:41,260
+The Open and the unclose property.
+
+115
+00:06:41,550 --> 00:06:47,460
+So right here we will get an open equals to you know something we're going to be adding right now and
+
+116
+00:06:47,460 --> 00:06:49,260
+then and close.
+
+117
+00:06:49,270 --> 00:06:50,050
+All right.
+
+118
+00:06:50,190 --> 00:06:57,540
+Open and close the open is going to be true or false if we want the door open whenever the app starts
+
+119
+00:06:57,780 --> 00:07:05,470
+it's going to be true or false so I'm going to store this inside this state and then door and that open.
+
+120
+00:07:05,550 --> 00:07:07,730
+We don't have the state going to create right now.
+
+121
+00:07:07,980 --> 00:07:15,390
+So we're going to go right here at the top and again going to say state open and close and we will be
+
+122
+00:07:15,390 --> 00:07:17,310
+adding the of course the state.
+
+123
+00:07:17,310 --> 00:07:18,980
+So in this case is door open.
+
+124
+00:07:19,110 --> 00:07:22,470
+And whenever the application starts I want it closed.
+
+125
+00:07:22,500 --> 00:07:24,000
+So it's going to be false.
+
+126
+00:07:24,000 --> 00:07:28,570
+All right so now we are we are passing this that state jor.
+
+127
+00:07:28,590 --> 00:07:33,810
+So the this when will we be receiving a prop called Open.
+
+128
+00:07:34,020 --> 00:07:42,150
+So we need to pass probes and then oh sorry props that open.
+
+129
+00:07:42,150 --> 00:07:42,850
+All right.
+
+130
+00:07:43,230 --> 00:07:45,750
+And remember this is a stateless component.
+
+131
+00:07:45,780 --> 00:07:47,620
+We don't need to use this that props.
+
+132
+00:07:47,640 --> 00:07:48,740
+It's not a class.
+
+133
+00:07:48,870 --> 00:07:49,500
+All right.
+
+134
+00:07:49,980 --> 00:07:56,940
+So now we need to create a function that it will tackling that this state door open whenever we want
+
+135
+00:07:56,940 --> 00:07:58,130
+to close it.
+
+136
+00:07:58,140 --> 00:08:01,630
+Now we didn't have this function or could it create right now it's real simple.
+
+137
+00:08:01,650 --> 00:08:03,940
+So I can run a function.
+
+138
+00:08:04,230 --> 00:08:08,280
+And whenever we run this function we're going to be passing a value in this case.
+
+139
+00:08:08,610 --> 00:08:16,820
+And then this is going to be does that toggle and then door open and close and then value.
+
+140
+00:08:17,150 --> 00:08:23,700
+Now maybe there is no need to pass a value we can just you know use a turnaround but the time for now
+
+141
+00:08:23,700 --> 00:08:24,980
+is just going to be passing the value.
+
+142
+00:08:24,980 --> 00:08:26,820
+I want to show you something else.
+
+143
+00:08:26,910 --> 00:08:34,180
+So inside side drawer whenever we click whenever the drawer wants to close we will fire this around.
+
+144
+00:08:34,270 --> 00:08:34,680
+OK.
+
+145
+00:08:34,830 --> 00:08:39,930
+So inside side drawer are going to be making a reference to the props we are passing which is probs
+
+146
+00:08:40,380 --> 00:08:44,650
+on close and then false.
+
+147
+00:08:44,760 --> 00:08:48,210
+So and this is why I want to show you because maybe you didn't know it.
+
+148
+00:08:48,360 --> 00:08:51,310
+Right here we are passing a prop called on close.
+
+149
+00:08:51,330 --> 00:08:51,700
+Right.
+
+150
+00:08:51,710 --> 00:08:52,290
+OK.
+
+151
+00:08:52,620 --> 00:08:54,310
+So this one is just a function.
+
+152
+00:08:54,330 --> 00:08:55,530
+We don't have this function.
+
+153
+00:08:55,550 --> 00:08:57,080
+You're going to create it right now.
+
+154
+00:08:57,360 --> 00:09:03,660
+So this function is going to be running this with the with an argument which in this case is going to
+
+155
+00:09:03,660 --> 00:09:04,280
+be false.
+
+156
+00:09:04,280 --> 00:09:11,200
+So from within here will trigger the this function called unclose on close makes a reference to this
+
+157
+00:09:11,280 --> 00:09:14,520
+the Tuggle and this unclose we see if that falls.
+
+158
+00:09:14,520 --> 00:09:19,990
+So grab false run this function and it's kind of a passing this to this.
+
+159
+00:09:20,010 --> 00:09:22,090
+So this pretty much are the same thing.
+
+160
+00:09:22,200 --> 00:09:27,430
+If I don't do this this value this double door will never receive that false.
+
+161
+00:09:27,570 --> 00:09:32,010
+I need to pass it from no child to parent.
+
+162
+00:09:32,040 --> 00:09:34,080
+That's why I want to show you this.
+
+163
+00:09:34,200 --> 00:09:42,060
+So we don't have this function is a really dumb function going to go with the top and say Tuggle dollar
+
+164
+00:09:42,300 --> 00:09:48,020
+equals you know just a function opening close and this will we will be setting the.
+
+165
+00:09:48,110 --> 00:09:56,280
+This nut said state opening close and it's going to be door open and then banlieue.
+
+166
+00:09:56,460 --> 00:09:57,400
+All right.
+
+167
+00:09:57,900 --> 00:10:02,320
+So we are receiving a value which is the actual prop which is just false.
+
+168
+00:10:02,340 --> 00:10:05,160
+We could just say you know false or something like that.
+
+169
+00:10:05,610 --> 00:10:07,670
+But in this case I wanted to show you this OK.
+
+170
+00:10:07,990 --> 00:10:13,930
+Right so let's try to open the talk of the sidebar so I'm going to refresh the web page.
+
+171
+00:10:13,930 --> 00:10:18,980
+I'm going to open and nothing happens because when I click it we are getting this Cancellara.
+
+172
+00:10:19,140 --> 00:10:24,270
+So whenever we are clicking it we are not really opening anything because the unclick it's just cancel
+
+173
+00:10:24,270 --> 00:10:24,960
+luck.
+
+174
+00:10:24,990 --> 00:10:26,330
+So we need to change it of course.
+
+175
+00:10:26,580 --> 00:10:31,950
+And we're going to be using the toggle drawer as why we are doing this like this.
+
+176
+00:10:32,220 --> 00:10:38,300
+So whenever we click the disk that toggle the drawer the value it's going to be true.
+
+177
+00:10:38,400 --> 00:10:42,780
+Right because we want that to change the state of the drawer open to true.
+
+178
+00:10:42,850 --> 00:10:43,430
+All right.
+
+179
+00:10:43,740 --> 00:10:45,030
+Right now it's false.
+
+180
+00:10:45,030 --> 00:10:50,610
+So if I reload the application I click it and we get the jar or I can remember if you change the default
+
+181
+00:10:51,090 --> 00:10:57,480
+defaults to true and you reload the application is going to you know start as open but we don't want
+
+182
+00:10:57,480 --> 00:10:57,840
+that.
+
+183
+00:10:57,870 --> 00:10:59,390
+In this case.
+
+184
+00:10:59,390 --> 00:10:59,730
+All right.
+
+185
+00:10:59,740 --> 00:11:02,470
+So everything works fine right now.
+
+186
+00:11:02,790 --> 00:11:06,550
+So of course in real life we're going to get something like this.
+
+187
+00:11:06,570 --> 00:11:10,170
+So notice when I hoover it can it get kind of this but in effect.
+
+188
+00:11:10,170 --> 00:11:14,860
+And if I click it we will of course go to a different section on the page.
+
+189
+00:11:14,880 --> 00:11:16,660
+But you're not going to do that right now.
+
+190
+00:11:16,920 --> 00:11:24,020
+So on the side door we need to add something called List and list items to show you right here.
+
+191
+00:11:24,300 --> 00:11:32,190
+So material you go to lists at the bottom you can get something like this nested list so you can get
+
+192
+00:11:32,190 --> 00:11:34,110
+this effect with lists.
+
+193
+00:11:34,110 --> 00:11:37,040
+And of course you can nest lists and everything else.
+
+194
+00:11:37,050 --> 00:11:39,670
+So we will be using this inside of that now.
+
+195
+00:11:39,840 --> 00:11:40,550
+All right.
+
+196
+00:11:40,980 --> 00:11:46,880
+So on the side drawer are going to go and create a list just like this year.
+
+197
+00:11:46,890 --> 00:11:53,340
+Remember we are importing this at the top so this list meets what kind of component we're going to be
+
+198
+00:11:53,340 --> 00:11:53,880
+using.
+
+199
+00:11:53,880 --> 00:12:01,190
+And in this case it's going to be a nav because we're using it inside of a navigation.
+
+200
+00:12:01,620 --> 00:12:05,560
+So inside of here we need to add each button.
+
+201
+00:12:05,570 --> 00:12:10,610
+We're going to be using right here and for this one we use the list item.
+
+202
+00:12:10,710 --> 00:12:17,630
+So I'm going to open and close that and this list item needs some configuration.
+
+203
+00:12:17,700 --> 00:12:21,280
+And in this case what is this list item is going to be.
+
+204
+00:12:21,390 --> 00:12:25,330
+And in this case I'm going to say button and all this is on the documentation.
+
+205
+00:12:25,710 --> 00:12:27,870
+So whenever we use button it will do that.
+
+206
+00:12:27,870 --> 00:12:30,120
+You know how we're in fact and everything else.
+
+207
+00:12:30,150 --> 00:12:32,610
+If you don't use it it's going to do something else.
+
+208
+00:12:32,610 --> 00:12:35,780
+So whenever we we click this button we need to do something.
+
+209
+00:12:35,910 --> 00:12:45,170
+So I will attach an on click with a function and for now we are just going to do console log.
+
+210
+00:12:45,560 --> 00:12:51,070
+And in this case the first button is going to be featured it's just going to say featured.
+
+211
+00:12:51,260 --> 00:12:51,940
+All right.
+
+212
+00:12:52,460 --> 00:12:55,080
+So this one will be the option.
+
+213
+00:12:55,110 --> 00:13:03,350
+Event Starts in which Actually it's you know when the event starts the main section of our Web page.
+
+214
+00:13:03,480 --> 00:13:04,010
+OK.
+
+215
+00:13:04,640 --> 00:13:05,780
+So.
+
+216
+00:13:05,810 --> 00:13:06,230
+Right.
+
+217
+00:13:06,230 --> 00:13:06,910
+Are going to write it.
+
+218
+00:13:06,920 --> 00:13:16,070
+Event starts and if I reload the application Mikko's that's going to open and we get you know that same
+
+219
+00:13:16,070 --> 00:13:17,930
+effect event starts in.
+
+220
+00:13:17,990 --> 00:13:22,380
+And if I click it and go to inspect we get the console feature.
+
+221
+00:13:22,380 --> 00:13:22,970
+All right.
+
+222
+00:13:23,300 --> 00:13:27,830
+So now pretty much we need to do the same thing for all the other options when you impose highlights
+
+223
+00:13:27,830 --> 00:13:35,100
+pricing and location and later we going to be creating a different function so we can scroll to a section
+
+224
+00:13:35,150 --> 00:13:40,070
+but it's a little bit more complicated than it is than it sounds.
+
+225
+00:13:40,070 --> 00:13:41,180
+So a list item.
+
+226
+00:13:41,180 --> 00:13:46,250
+The second one is going to be Benue info.
+
+227
+00:13:46,580 --> 00:13:51,530
+I mean do with capital and f o going to copy paste.
+
+228
+00:13:51,560 --> 00:13:52,540
+Sorry for that.
+
+229
+00:13:52,870 --> 00:13:54,740
+The mike is maybe too close.
+
+230
+00:13:54,920 --> 00:13:55,780
+So list item.
+
+231
+00:13:55,790 --> 00:13:57,910
+The next one is going to be highlights.
+
+232
+00:13:58,030 --> 00:14:02,380
+So he's going to write highlights.
+
+233
+00:14:02,390 --> 00:14:03,490
+There you go.
+
+234
+00:14:03,530 --> 00:14:07,580
+Sorry high lights.
+
+235
+00:14:08,660 --> 00:14:09,050
+There we go.
+
+236
+00:14:09,050 --> 00:14:11,460
+Copy paste.
+
+237
+00:14:11,740 --> 00:14:14,660
+Then we have the prising.
+
+238
+00:14:14,660 --> 00:14:21,250
+So let me remove this prising now we're almost done.
+
+239
+00:14:21,350 --> 00:14:28,330
+I'm going to copy one more and this one is going to be location location.
+
+240
+00:14:29,110 --> 00:14:31,360
+So I'm going to reload it.
+
+241
+00:14:31,360 --> 00:14:34,210
+And if we open we get all the options.
+
+242
+00:14:34,210 --> 00:14:40,310
+Now there's one more thing I want to do before we finish with the header and everything else.
+
+243
+00:14:40,630 --> 00:14:47,910
+So right now on the final one if I scroll to the top we get kind of a you know transparent effect.
+
+244
+00:14:48,070 --> 00:14:52,840
+And if you scroll down you know it shows with the background color.
+
+245
+00:14:52,840 --> 00:14:58,980
+So first to do this and to to check if everything is working with a fixed position.
+
+246
+00:14:59,200 --> 00:15:03,400
+I need to add more height to the you know to our application.
+
+247
+00:15:03,400 --> 00:15:05,760
+So I'm going to go to the app then yes.
+
+248
+00:15:05,920 --> 00:15:12,940
+And I'm just going to hard code some styling so we can you know simulate that we have actual real content
+
+249
+00:15:13,030 --> 00:15:14,590
+in our web page.
+
+250
+00:15:14,860 --> 00:15:18,450
+So I'm going to add height.
+
+251
+00:15:18,650 --> 00:15:23,450
+There we go a height of I don't know something big 100.
+
+252
+00:15:23,740 --> 00:15:25,260
+Yeah that's good pixels.
+
+253
+00:15:25,370 --> 00:15:26,040
+Very good.
+
+254
+00:15:26,390 --> 00:15:32,180
+And I'm going to change the background because I want to see that you know transparency.
+
+255
+00:15:32,300 --> 00:15:35,860
+So I'm going to ride corn flower blue.
+
+256
+00:15:35,860 --> 00:15:38,210
+You can put red or whatever doesn't matter.
+
+257
+00:15:38,720 --> 00:15:40,200
+So OK so we get this.
+
+258
+00:15:40,220 --> 00:15:43,930
+And if I scroll down the header it's in a position fixed.
+
+259
+00:15:44,090 --> 00:15:48,010
+So this this proposition fixed works.
+
+260
+00:15:48,140 --> 00:15:55,990
+Now when I when I am at the top of the screen when I want to do I want to give Does this transparency.
+
+261
+00:15:56,000 --> 00:15:56,440
+Right.
+
+262
+00:15:56,450 --> 00:16:00,050
+And when I scroll I went to show the color so we can do that.
+
+263
+00:16:00,050 --> 00:16:00,690
+And the next action.
+
+264
+00:16:00,710 --> 00:16:01,990
+Let's go to the next one.
+

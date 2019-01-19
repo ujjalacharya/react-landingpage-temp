@@ -1,0 +1,524 @@
+1
+00:00:00,660 --> 00:00:01,050
+Right.
+
+2
+00:00:01,060 --> 00:00:07,640
+So now that everything is inside you know get and get have what we will do will do.
+
+3
+00:00:07,840 --> 00:00:09,780
+It's at S-sh keys.
+
+4
+00:00:09,790 --> 00:00:16,930
+So again if we think about this we are kind of sending things to you know our files our rent maybe maybe
+
+5
+00:00:17,230 --> 00:00:20,150
+very private files to the cloud.
+
+6
+00:00:20,260 --> 00:00:27,290
+And it's you know a good idea to add some kind of authentication or maybe some security in what we are
+
+7
+00:00:27,290 --> 00:00:28,320
+doing and this.
+
+8
+00:00:28,370 --> 00:00:30,080
+It's through S-sh case.
+
+9
+00:00:30,220 --> 00:00:35,760
+So if you go to your profile and you go to S-sh keys you can generate an SH key.
+
+10
+00:00:35,770 --> 00:00:40,640
+Now the problem is that we need to create these keys in our computer.
+
+11
+00:00:40,640 --> 00:00:42,410
+We create the keys locally.
+
+12
+00:00:42,490 --> 00:00:42,990
+Right.
+
+13
+00:00:43,030 --> 00:00:43,640
+OK.
+
+14
+00:00:44,500 --> 00:00:48,950
+So we're willing to do is we need to follow a series of steps right.
+
+15
+00:00:48,970 --> 00:00:56,360
+To generate the keys first in our computer and then associate associate the keys to get help Brian.
+
+16
+00:00:56,410 --> 00:00:56,790
+OK.
+
+17
+00:00:57,010 --> 00:01:04,160
+So the starting point is going to be this go to Google and type checking for existing S-sh keys.
+
+18
+00:01:04,180 --> 00:01:05,820
+This is the first thing we need to do.
+
+19
+00:01:06,070 --> 00:01:08,820
+So once you're here you're going to get different options.
+
+20
+00:01:08,820 --> 00:01:10,540
+Mac Windows and Linux.
+
+21
+00:01:10,600 --> 00:01:16,780
+Now if you're a Windows computer go to the other BDO have another video for the same action.
+
+22
+00:01:16,840 --> 00:01:23,800
+That of course is related to windows because we need to do some other stuff we do in a different way
+
+23
+00:01:23,810 --> 00:01:24,550
+for Mac.
+
+24
+00:01:24,550 --> 00:01:25,610
+So go to the windows.
+
+25
+00:01:25,630 --> 00:01:26,100
+Right.
+
+26
+00:01:26,260 --> 00:01:31,160
+If you're on a Mac computer use Mac of course and going to do both.
+
+27
+00:01:31,180 --> 00:01:36,080
+So right here if you're not getting anything nothing is associated to your search.
+
+28
+00:01:36,100 --> 00:01:37,410
+So we need to do this.
+
+29
+00:01:37,420 --> 00:01:42,380
+Copy this this code and go right here and paste it right.
+
+30
+00:01:42,400 --> 00:01:45,700
+Doesn't matter I am inside waves because I'm using the tiller.
+
+31
+00:01:46,000 --> 00:01:51,310
+So if we press Enter you're going to get some kind of information just like this.
+
+32
+00:01:51,310 --> 00:01:57,090
+Now if you're getting something that says Id something perve or ID areas are s a.
+
+33
+00:01:57,130 --> 00:02:03,930
+It means that you already have A.H. keys so you will need to go to add your S-sh key to the SSA agent
+
+34
+00:02:03,930 --> 00:02:05,170
+to begin to do this later.
+
+35
+00:02:05,320 --> 00:02:10,690
+So first we need to generate a key if you don't have a key and this is what we're going to do now.
+
+36
+00:02:10,960 --> 00:02:16,390
+So we're not going to you know make this up I'm going to just show you the steps are going to follow
+
+37
+00:02:16,390 --> 00:02:17,710
+the steps and get help.
+
+38
+00:02:17,710 --> 00:02:19,990
+So generate a new message key.
+
+39
+00:02:20,110 --> 00:02:20,690
+All right.
+
+40
+00:02:21,010 --> 00:02:24,160
+So first we're going to go here and we need to generate the key.
+
+41
+00:02:24,250 --> 00:02:29,920
+So I'm going to copy this line of code I'm going to do clear.
+
+42
+00:02:30,260 --> 00:02:32,030
+It's actually actually is a command.
+
+43
+00:02:32,030 --> 00:02:35,250
+And we do sh t minus T whatever whatever.
+
+44
+00:02:35,270 --> 00:02:38,160
+And then you need to provide it need mail and e-mail.
+
+45
+00:02:38,210 --> 00:02:44,510
+It's the e-mail you're using for get have are going to delete this one and going to put my e-mail.
+
+46
+00:02:44,670 --> 00:02:47,100
+So right.
+
+47
+00:02:47,330 --> 00:02:47,850
+Yeah.
+
+48
+00:02:47,900 --> 00:02:50,110
+And Gmail that com.
+
+49
+00:02:50,790 --> 00:02:51,640
+OK.
+
+50
+00:02:52,000 --> 00:02:57,260
+So I'm going to press enter and generate a public key and then it's going to say Enter file in which
+
+51
+00:02:57,260 --> 00:03:02,110
+you want to save the key so you have the option to store the key in a different place than you know
+
+52
+00:03:02,120 --> 00:03:02,980
+the usual.
+
+53
+00:03:03,000 --> 00:03:07,520
+But but the one way or we're going to be storing by default I'm going to store it on the default place
+
+54
+00:03:07,620 --> 00:03:08,850
+I'm going to press enter.
+
+55
+00:03:08,900 --> 00:03:14,330
+Now you have the ability to pad to enter passphrase for this I'm not going to do this I'm just going
+
+56
+00:03:14,330 --> 00:03:15,620
+to go default.
+
+57
+00:03:15,680 --> 00:03:16,860
+I'm going to press enter.
+
+58
+00:03:16,910 --> 00:03:19,260
+And then of course you need to confirm the passphrase.
+
+59
+00:03:19,340 --> 00:03:20,780
+I'm going to press enter.
+
+60
+00:03:20,780 --> 00:03:27,380
+Now if you're getting this it's because the key was already in it get it's generated in your computer.
+
+61
+00:03:27,380 --> 00:03:30,190
+So now if I do this.
+
+62
+00:03:30,310 --> 00:03:32,930
+LS And you know we check for the S.H. keys.
+
+63
+00:03:32,930 --> 00:03:35,380
+We get the ID say and the pup.
+
+64
+00:03:35,380 --> 00:03:37,140
+So we have keys now.
+
+65
+00:03:37,150 --> 00:03:37,670
+Right.
+
+66
+00:03:37,730 --> 00:03:38,370
+Very good.
+
+67
+00:03:38,560 --> 00:03:44,240
+Let's go to the next step is going to be adding your sh key to the SSA agent.
+
+68
+00:03:44,240 --> 00:03:47,040
+Now I'm going to do clear just like this.
+
+69
+00:03:47,120 --> 00:03:49,550
+I'm going to copy this line of code.
+
+70
+00:03:49,550 --> 00:03:50,700
+This command actually.
+
+71
+00:03:50,900 --> 00:03:51,990
+And paste it.
+
+72
+00:03:52,040 --> 00:03:52,670
+Evil.
+
+73
+00:03:52,700 --> 00:03:53,940
+And then everything else.
+
+74
+00:03:53,960 --> 00:03:58,110
+So I'm going to press enter and it's going to say Agent P ID 4:7.
+
+75
+00:03:58,110 --> 00:04:04,640
+So if you're getting this good track I'm going to copy this one again as well and again paste it down
+
+76
+00:04:04,640 --> 00:04:05,330
+here.
+
+77
+00:04:05,330 --> 00:04:08,960
+I'm going to press enter and we get the identity added right.
+
+78
+00:04:08,960 --> 00:04:12,680
+So we're kind of linking this computer to the SSA to key.
+
+79
+00:04:12,680 --> 00:04:13,940
+Right.
+
+80
+00:04:13,970 --> 00:04:16,880
+So the next step it's adding the S-sh key to get help.
+
+81
+00:04:16,870 --> 00:04:17,240
+All right.
+
+82
+00:04:17,240 --> 00:04:18,980
+So I'm going to go to that one.
+
+83
+00:04:19,040 --> 00:04:23,170
+How can we do it really is simple so we can accomplish this.
+
+84
+00:04:23,660 --> 00:04:25,630
+And again pasted right here.
+
+85
+00:04:25,760 --> 00:04:29,300
+Now I'm going to press enter and it seems like nothing happened.
+
+86
+00:04:29,450 --> 00:04:35,600
+And it's because the PV copy it's a command that it's entering this file copying all the constants and
+
+87
+00:04:35,600 --> 00:04:39,200
+everything you know got copied on the memory of the computer.
+
+88
+00:04:39,200 --> 00:04:43,000
+So now of course if I do a command and B to paste it.
+
+89
+00:04:43,230 --> 00:04:45,980
+Are going to be pasting the contents of this file.
+
+90
+00:04:45,980 --> 00:04:47,210
+So now what we need to do.
+
+91
+00:04:47,360 --> 00:04:48,620
+You need to follow these steps.
+
+92
+00:04:48,620 --> 00:04:50,080
+Don't worry you're going to do it right here.
+
+93
+00:04:50,210 --> 00:04:58,640
+So we need to go to to get help and go to the section inside the profile S-sh and deep keys and click
+
+94
+00:04:58,790 --> 00:05:00,650
+on new S-sh key.
+
+95
+00:05:00,860 --> 00:05:01,940
+You need to add a name.
+
+96
+00:05:01,940 --> 00:05:07,310
+For example if you're in your Mac computer you know that you're going to a Mac for example or maybe
+
+97
+00:05:07,310 --> 00:05:12,530
+you can you know give a name but of course this name needs to be related of where you're you know you're
+
+98
+00:05:12,530 --> 00:05:13,020
+storing.
+
+99
+00:05:13,040 --> 00:05:16,680
+You get this sh he's And this is my Mac computer.
+
+100
+00:05:16,790 --> 00:05:18,700
+Later I'm going to get a windows.
+
+101
+00:05:18,980 --> 00:05:25,100
+So I'm going to paste the contents control the end you're pasting all the contents of the same key.
+
+102
+00:05:25,100 --> 00:05:31,720
+Now I'm going to click Add a search key and we are pretty much done now of course we can and need a
+
+103
+00:05:31,850 --> 00:05:37,460
+way to validate the S-sh key we get right here in our computer with the one that it's linked and get
+
+104
+00:05:37,460 --> 00:05:37,970
+help.
+
+105
+00:05:37,970 --> 00:05:39,980
+So I'm going to go back to the command.
+
+106
+00:05:40,100 --> 00:05:44,320
+I'm going to do clear and I'm going to do as a sage just like that.
+
+107
+00:05:44,410 --> 00:05:53,510
+Mynahs capital-T space and then get at get have dot com of course.
+
+108
+00:05:53,530 --> 00:05:54,190
+All right.
+
+109
+00:05:54,190 --> 00:05:59,820
+So going to press Enter it's going to take a while and it is going to give you your username.
+
+110
+00:05:59,820 --> 00:06:04,620
+This is my username you know successfully authenticated but get have does not provide shared access.
+
+111
+00:06:04,760 --> 00:06:05,530
+Ok that is good.
+
+112
+00:06:05,550 --> 00:06:12,260
+You know if you're getting this everything work now if we go back here to get have a reload get a green
+
+113
+00:06:12,260 --> 00:06:12,800
+now.
+
+114
+00:06:12,870 --> 00:06:14,400
+So everything was validated.
+
+115
+00:06:14,490 --> 00:06:20,050
+Now the S.H. key is related to get have and we have a more secure way to send the files.
+
+116
+00:06:20,070 --> 00:06:22,930
+Of course this works just like before.
+
+117
+00:06:23,010 --> 00:06:29,230
+If I modify the file and go to get status we can get it.
+
+118
+00:06:29,250 --> 00:06:38,850
+So I'm going to get to get at that get commit minus them and then you know changes on index.
+
+119
+00:06:39,240 --> 00:06:41,790
+I'm going to press enter and then you push it again.
+
+120
+00:06:42,060 --> 00:06:43,700
+You know to push the files.
+
+121
+00:06:43,730 --> 00:06:47,530
+Usually we did get pushed master and this one since we already did this.
+
+122
+00:06:47,550 --> 00:06:50,910
+We can do get push because the Master is already there.
+
+123
+00:06:50,910 --> 00:06:52,080
+So I'm going to do get pushed
+
+124
+00:06:54,910 --> 00:06:55,890
+and we are done.
+
+125
+00:06:55,900 --> 00:06:57,360
+Everything is good.
+
+126
+00:06:57,430 --> 00:07:04,510
+So again once you get the keys you get get get get have and everything else you're ready to go to get
+
+127
+00:07:04,540 --> 00:07:06,190
+to Heroku link.
+
+128
+00:07:06,250 --> 00:07:10,530
+The same etch Etch a Sketch key but it can be much much easier.
+
+129
+00:07:10,660 --> 00:07:13,990
+And then we will be able to deploy to production.
+
+130
+00:07:13,990 --> 00:07:14,270
+All right.
+
+131
+00:07:14,290 --> 00:07:15,940
+So let's go to the next one and do that.
+

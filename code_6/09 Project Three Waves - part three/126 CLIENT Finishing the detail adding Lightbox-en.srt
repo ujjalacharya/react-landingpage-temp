@@ -1,0 +1,1060 @@
+1
+00:00:01,360 --> 00:00:03,790
+All right so let's create the light box.
+
+2
+00:00:03,980 --> 00:00:11,170
+So first I'm going to go to you tell us and create a new file called light box.
+
+3
+00:00:11,340 --> 00:00:13,540
+Yes so a light box.
+
+4
+00:00:13,600 --> 00:00:15,090
+Yes.
+
+5
+00:00:15,200 --> 00:00:15,470
+All right.
+
+6
+00:00:15,470 --> 00:00:18,230
+So this one is going to be a re-act class based components.
+
+7
+00:00:18,410 --> 00:00:21,990
+So let me get the there you go.
+
+8
+00:00:22,400 --> 00:00:26,010
+So with a capital L..
+
+9
+00:00:26,030 --> 00:00:27,410
+All right.
+
+10
+00:00:27,740 --> 00:00:29,630
+So you're kind of get to go now.
+
+11
+00:00:29,640 --> 00:00:35,870
+This light box will be receiving some things from the parent which is the image.
+
+12
+00:00:36,020 --> 00:00:37,000
+And what we're going to be doing.
+
+13
+00:00:37,010 --> 00:00:40,370
+We're going to be attaching and detaching the light box right.
+
+14
+00:00:40,430 --> 00:00:41,130
+OK.
+
+15
+00:00:41,420 --> 00:00:45,440
+Now this handle Lovebox and we're going to do this functions right now so we can get them out of the
+
+16
+00:00:45,440 --> 00:00:51,850
+way they handle light box is the one we click right here to pass which position we want to open on the
+
+17
+00:00:51,860 --> 00:00:57,380
+light box and right here we have the image position so we can need to toggle the state between zero
+
+18
+00:00:57,380 --> 00:01:03,020
+and one or two or whatever is that you know we are opening and then we have the live box false whenever
+
+19
+00:01:03,020 --> 00:01:04,330
+we attach something.
+
+20
+00:01:04,400 --> 00:01:10,040
+We were doing unclick going to change the light box to troops so we can you know toggle the state and
+
+21
+00:01:10,040 --> 00:01:11,560
+show the light box.
+
+22
+00:01:11,600 --> 00:01:17,390
+So I'm going to go to handle light box and remember that we are going to get a position now of course
+
+23
+00:01:18,110 --> 00:01:22,750
+we need to trigger the handle light box that opens the light box only if we have more than image.
+
+24
+00:01:22,760 --> 00:01:27,930
+You know if we have more than just one image I don't want to show the light box.
+
+25
+00:01:28,190 --> 00:01:35,140
+So I'm going to go and say this that state that light box images that length.
+
+26
+00:01:35,480 --> 00:01:39,560
+And if I have more than one then I want to you know toggled state.
+
+27
+00:01:39,560 --> 00:01:45,920
+So there's not set state and are going to say that now the light box is equal to true which is going
+
+28
+00:01:45,920 --> 00:01:50,810
+to open the light box and then I'm going to be passing the image position of where we are clicking and
+
+29
+00:01:50,810 --> 00:01:53,420
+we have a pulse right.
+
+30
+00:01:53,420 --> 00:01:54,490
+Real simple.
+
+31
+00:01:54,530 --> 00:01:58,360
+Now later we need the ability to close the light box.
+
+32
+00:01:58,460 --> 00:02:04,740
+So this closing the light box the what it's going to do is going to toggle the light box to false.
+
+33
+00:02:05,210 --> 00:02:05,470
+All right.
+
+34
+00:02:05,510 --> 00:02:09,810
+So I'm going to go and say handle light box and then close.
+
+35
+00:02:10,010 --> 00:02:14,720
+I'm creating the function right now because now we are going to be including the light box at the bottom
+
+36
+00:02:14,720 --> 00:02:15,800
+as a component.
+
+37
+00:02:15,800 --> 00:02:21,410
+And we need to pass this as props so this that sets state and we say that the lead box.
+
+38
+00:02:21,540 --> 00:02:23,790
+It's now false.
+
+39
+00:02:24,110 --> 00:02:24,960
+Right.
+
+40
+00:02:25,540 --> 00:02:26,040
+OK.
+
+41
+00:02:26,270 --> 00:02:30,480
+So we pretty much have everything to include the light box right.
+
+42
+00:02:30,520 --> 00:02:30,920
+OK.
+
+43
+00:02:31,250 --> 00:02:36,550
+So we're going to go with one and we need to call it a light box right here at the bottom.
+
+44
+00:02:36,680 --> 00:02:42,500
+So we only want to show the lead box if the state of flood light box is true if it's false we are not
+
+45
+00:02:42,500 --> 00:02:43,700
+going to display anything.
+
+46
+00:02:43,700 --> 00:02:46,730
+So again we are attaching and detaching the box.
+
+47
+00:02:46,940 --> 00:02:53,690
+So this that state DOT and then light box if we do have it true we do something.
+
+48
+00:02:53,690 --> 00:02:55,030
+If not we do know.
+
+49
+00:02:55,430 --> 00:02:59,550
+Now of course we need to import this light box from you tells at the top.
+
+50
+00:02:59,630 --> 00:03:05,130
+So let's include it import analemma mixes space import image.
+
+51
+00:03:05,180 --> 00:03:06,970
+I've been called black box.
+
+52
+00:03:07,070 --> 00:03:16,000
+Oh I'm going to clog image just like this image like box and I believe the name is wrong.
+
+53
+00:03:17,820 --> 00:03:23,370
+That's putting an image light box there we go.
+
+54
+00:03:23,390 --> 00:03:23,960
+Sorry for that.
+
+55
+00:03:23,960 --> 00:03:28,700
+I just want to get the correct name too you know because maybe.
+
+56
+00:03:28,730 --> 00:03:32,950
+I'm not sure that the box will leave you with the light box.
+
+57
+00:03:32,950 --> 00:03:36,590
+We need to import something that calls a light box.
+
+58
+00:03:36,620 --> 00:03:42,950
+So if we do it we can you know interrupt we can do we use the same class name as a viable that are real
+
+59
+00:03:42,950 --> 00:03:44,200
+that we're going to be importing.
+
+60
+00:03:44,210 --> 00:03:46,340
+You know the compound we are importing at the top.
+
+61
+00:03:46,430 --> 00:03:48,160
+So we're going to get a problem.
+
+62
+00:03:48,240 --> 00:03:56,480
+So I'm going to called Image lightbox and it's from you tales from DOT forward slash you tails for Slash
+
+63
+00:03:56,540 --> 00:03:58,010
+and then lightbox.
+
+64
+00:03:58,100 --> 00:03:59,230
+Right.
+
+65
+00:03:59,320 --> 00:04:04,940
+So I'm going to go at the bottom and I'm going to include the light box right.
+
+66
+00:04:05,120 --> 00:04:05,830
+All right.
+
+67
+00:04:06,140 --> 00:04:08,360
+So of course we need to pass a lot of props
+
+68
+00:04:10,990 --> 00:04:12,490
+so I'm going to add props.
+
+69
+00:04:12,490 --> 00:04:18,850
+So first I'm going to add the ID we are going to need the ID So detail ID right.
+
+70
+00:04:18,910 --> 00:04:25,410
+So then I'm going to do this I'm going to pass the images that we need to be passing to the light box.
+
+71
+00:04:25,570 --> 00:04:32,560
+So you know we can show it and these images are the one we have inside box images that array of routers
+
+72
+00:04:32,770 --> 00:04:34,820
+you know are real sources.
+
+73
+00:04:35,140 --> 00:04:39,740
+So there's that state that light box images.
+
+74
+00:04:39,740 --> 00:04:44,310
+All right one thing less than we need to tell the Lightbox if it should be open.
+
+75
+00:04:44,320 --> 00:04:50,820
+So I'm going to say open and this that state that open.
+
+76
+00:04:50,860 --> 00:04:59,470
+What else we need that persistence so pass open and close this that state that position.
+
+77
+00:04:59,710 --> 00:05:00,550
+What else.
+
+78
+00:05:00,550 --> 00:05:01,420
+We need the unclose.
+
+79
+00:05:01,420 --> 00:05:04,300
+Remember we made a a function to close it.
+
+80
+00:05:04,300 --> 00:05:14,830
+So I'm going to say on close calls whatever function we created to close the the light box so it was
+
+81
+00:05:14,830 --> 00:05:18,920
+can handle handle live box close.
+
+82
+00:05:18,940 --> 00:05:21,320
+And of course this is a function so.
+
+83
+00:05:21,370 --> 00:05:26,960
+We pass the array of images and we know that here we have an array just with the with the Uriel's then
+
+84
+00:05:26,960 --> 00:05:28,970
+the open which start just falls.
+
+85
+00:05:29,050 --> 00:05:34,480
+The position with the Starts is zero and it's going to change if we click on one of the images on the
+
+86
+00:05:34,480 --> 00:05:35,730
+thumb or the other one.
+
+87
+00:05:35,860 --> 00:05:41,310
+And then of course we tripled the clocks which is going to target the state of open to false.
+
+88
+00:05:41,850 --> 00:05:44,190
+So we are good Let's go to the lovebox.
+
+89
+00:05:44,440 --> 00:05:46,360
+So the light box is pretty much simple.
+
+90
+00:05:46,360 --> 00:05:47,860
+First we need to include it.
+
+91
+00:05:47,920 --> 00:05:50,640
+So import and this is what I was talking about.
+
+92
+00:05:50,830 --> 00:05:53,740
+The light box just like this.
+
+93
+00:05:53,770 --> 00:05:55,180
+It's pretty much the same name.
+
+94
+00:05:55,270 --> 00:06:01,100
+So if we use the same name as class and the import you know the application will fail.
+
+95
+00:06:01,270 --> 00:06:04,270
+So it's from re-act images.
+
+96
+00:06:04,510 --> 00:06:10,410
+Maybe they react lightbox was already taken so that's why they are using re-act images.
+
+97
+00:06:10,680 --> 00:06:11,380
+That's good.
+
+98
+00:06:11,670 --> 00:06:19,000
+So we need more state right here and there's state it's strictly related to the Lightbox right here.
+
+99
+00:06:19,140 --> 00:06:22,600
+So we need to use the same names and everything is on the documentation.
+
+100
+00:06:22,680 --> 00:06:27,960
+So the first one is going to be light box it's open.
+
+101
+00:06:27,960 --> 00:06:33,360
+This is the name of the O is open.
+
+102
+00:06:33,880 --> 00:06:34,380
+OK.
+
+103
+00:06:34,680 --> 00:06:36,830
+So this one is going to be true.
+
+104
+00:06:36,870 --> 00:06:37,880
+Why is it true.
+
+105
+00:06:37,890 --> 00:06:40,350
+Because right here we are attaching and detaching.
+
+106
+00:06:40,410 --> 00:06:43,830
+So whenever we attach the Lightbox is hopen.
+
+107
+00:06:44,070 --> 00:06:44,870
+All right.
+
+108
+00:06:45,030 --> 00:06:50,580
+So I'm going to go and say current image and this is again everything comes from the documentation of
+
+109
+00:06:50,580 --> 00:06:56,130
+this component's writing just doing this the props that the state I'm setting the state like they tell
+
+110
+00:06:56,130 --> 00:06:57,370
+us we should do it.
+
+111
+00:06:57,690 --> 00:06:59,510
+So we're going to do this.
+
+112
+00:06:59,560 --> 00:07:06,060
+The problem the past whenever we get we attached this class you know to the actual window we say that
+
+113
+00:07:06,060 --> 00:07:10,440
+the current image is whatever we are getting from the parent component which is Depass.
+
+114
+00:07:10,520 --> 00:07:17,750
+Ryan starts at zero and then we need to pass the images and right here we have a problem we can discuss
+
+115
+00:07:17,760 --> 00:07:22,690
+right now the images what we get on the images is just an array with you or else.
+
+116
+00:07:22,890 --> 00:07:28,630
+And what this component needs is an array with objects and then source inside.
+
+117
+00:07:28,920 --> 00:07:31,060
+And I I did this just like this.
+
+118
+00:07:31,140 --> 00:07:36,350
+So we can reuse that component later maybe you have a different section where we have an array of images.
+
+119
+00:07:36,750 --> 00:07:39,410
+Maybe here with a different structure.
+
+120
+00:07:39,600 --> 00:07:45,240
+So by processing the images from the parent we are making sure that we only pass the sources you know
+
+121
+00:07:45,240 --> 00:07:50,900
+they your else and this light box will always receive chess to you or else nothing else.
+
+122
+00:07:51,200 --> 00:07:57,990
+So but before we can you know pass the images to the actual light box we need to process this.
+
+123
+00:07:57,990 --> 00:08:00,730
+We need to change it to this structure.
+
+124
+00:08:00,810 --> 00:08:03,630
+So the books can you know understand this.
+
+125
+00:08:03,630 --> 00:08:05,940
+So for this we're going to do something simple.
+
+126
+00:08:05,970 --> 00:08:15,230
+I'm going to use the steps from props open and close and then I'm going to say OK props and state.
+
+127
+00:08:15,750 --> 00:08:23,890
+So if we do get props that images props DOD images just like this from props.
+
+128
+00:08:24,090 --> 00:08:25,350
+We're going to do something.
+
+129
+00:08:25,670 --> 00:08:30,340
+I'm going to do all of this if not of course we return false.
+
+130
+00:08:30,360 --> 00:08:35,420
+So what we do here we just change the structure and we return to a new state of images just with the
+
+131
+00:08:35,600 --> 00:08:40,670
+with the object the array of objects and the source keys on each Eurail.
+
+132
+00:08:40,740 --> 00:08:41,280
+OK.
+
+133
+00:08:41,610 --> 00:08:45,500
+So Konst images equals an empty array.
+
+134
+00:08:46,140 --> 00:08:46,690
+OK.
+
+135
+00:08:46,980 --> 00:08:48,870
+So then I'm going to enter props.
+
+136
+00:08:48,990 --> 00:08:50,380
+I'm going to enter images.
+
+137
+00:08:50,410 --> 00:08:57,360
+Remember we are passing this one right here going to enter images and I'm going to do a for each for
+
+138
+00:08:57,630 --> 00:09:01,770
+each now for each element we have right there.
+
+139
+00:09:01,830 --> 00:09:03,340
+We're going to do something.
+
+140
+00:09:03,540 --> 00:09:08,450
+I'm going to enter images are going to do push and this image is not the Sims.
+
+141
+00:09:08,470 --> 00:09:10,900
+It's the Bible you're creating right here.
+
+142
+00:09:11,130 --> 00:09:18,390
+I'm going to push to that array an object that contains a source of whatever we get back from you know
+
+143
+00:09:18,510 --> 00:09:19,960
+that loop.
+
+144
+00:09:20,000 --> 00:09:22,070
+So which is going to be the Eurail.
+
+145
+00:09:22,200 --> 00:09:22,950
+Right.
+
+146
+00:09:23,010 --> 00:09:27,810
+And then at the end of all of this we just need to return the new state of things which is going to
+
+147
+00:09:27,810 --> 00:09:34,280
+be images and the images will be equal to whatever we get from prompts and images.
+
+148
+00:09:34,290 --> 00:09:41,190
+The only difference is that we have this structure right now we just find the structure of the data.
+
+149
+00:09:42,120 --> 00:09:49,530
+So I'm going to go right here but I'm going to include the Lightbox so I'm going to copy the name right
+
+150
+00:09:49,530 --> 00:09:50,040
+here.
+
+151
+00:09:50,040 --> 00:09:54,240
+Light box paste it and then close it.
+
+152
+00:09:54,270 --> 00:09:55,720
+Everything is on the recommendation.
+
+153
+00:09:55,770 --> 00:09:56,700
+All right.
+
+154
+00:09:56,700 --> 00:10:03,500
+So first we need to tell the Lightbox What does the current image if we just open it from the from here.
+
+155
+00:10:03,630 --> 00:10:05,540
+The light box of course it will be zero.
+
+156
+00:10:05,550 --> 00:10:08,750
+This one will be one two three four whatever.
+
+157
+00:10:08,910 --> 00:10:11,660
+So we need to tell the light box the current image.
+
+158
+00:10:11,660 --> 00:10:21,490
+So current image and this one is going to be equal to this that state that current image.
+
+159
+00:10:21,750 --> 00:10:22,180
+Right.
+
+160
+00:10:22,200 --> 00:10:24,700
+Remember we store this at the top.
+
+161
+00:10:24,690 --> 00:10:31,530
+The current image of the next Propp the images that we want to render inside light box and this one
+
+162
+00:10:31,530 --> 00:10:37,770
+is this state that images because we are catching them with good derived state from props and modifying
+
+163
+00:10:37,770 --> 00:10:38,750
+this.
+
+164
+00:10:38,820 --> 00:10:39,370
+All right.
+
+165
+00:10:39,540 --> 00:10:43,650
+Next week to pass that is open so that it's open.
+
+166
+00:10:43,650 --> 00:10:45,990
+It's going to toggle between open and close.
+
+167
+00:10:45,990 --> 00:10:55,320
+So there's that state DOT and remember that we have that light box is open right next.
+
+168
+00:10:55,680 --> 00:11:01,010
+And this one I can you whenever we let me just show you the final whenever we click something.
+
+169
+00:11:01,140 --> 00:11:03,080
+Of course the lead box with open.
+
+170
+00:11:03,120 --> 00:11:08,030
+Now if I click on the arrow we are going to go to the next pick right.
+
+171
+00:11:08,130 --> 00:11:10,770
+So this one will be handled by a function.
+
+172
+00:11:10,770 --> 00:11:15,900
+So we need to do on Kleek previews.
+
+173
+00:11:16,040 --> 00:11:18,290
+And this is actually their property.
+
+174
+00:11:18,300 --> 00:11:23,260
+We are not just making this up whenever we this listener gets fired.
+
+175
+00:11:23,420 --> 00:11:25,840
+What we want to do is to trigger a function.
+
+176
+00:11:25,970 --> 00:11:30,110
+So this doesn't go to previews and all this.
+
+177
+00:11:30,110 --> 00:11:31,710
+Again it's on the documentation.
+
+178
+00:11:31,710 --> 00:11:35,050
+I'm not making this up previous.
+
+179
+00:11:35,810 --> 00:11:40,970
+Are right that we have a different scenario which is going to be the on click but the next.
+
+180
+00:11:41,100 --> 00:11:48,920
+So we're going to say on click next and then it's going to be go to next right and then we have the
+
+181
+00:11:48,920 --> 00:11:49,920
+on close.
+
+182
+00:11:49,940 --> 00:11:58,430
+So I'm going to say on close just like this equals to open and close and we again we use a function
+
+183
+00:11:58,850 --> 00:12:01,170
+this close.
+
+184
+00:12:01,320 --> 00:12:04,130
+Light box.
+
+185
+00:12:04,130 --> 00:12:04,840
+All right.
+
+186
+00:12:05,180 --> 00:12:09,320
+Let's do the closed locked box because it's the easy easy one.
+
+187
+00:12:09,320 --> 00:12:12,050
+So what do we do on the closed box.
+
+188
+00:12:12,050 --> 00:12:18,290
+We already have a prop that is attaching or attached detaching or attaching that which is the prop on
+
+189
+00:12:18,290 --> 00:12:18,970
+close.
+
+190
+00:12:19,130 --> 00:12:19,700
+So what do we do.
+
+191
+00:12:19,700 --> 00:12:20,870
+We just trigger on close.
+
+192
+00:12:20,960 --> 00:12:29,760
+So close close like box and this one it's going to be just a function that it's going to trigger does
+
+193
+00:12:29,900 --> 00:12:33,500
+that problem that on close this one.
+
+194
+00:12:33,500 --> 00:12:40,820
+And remember the on close it's with a single C you know no capital and this is a function.
+
+195
+00:12:40,820 --> 00:12:41,450
+All right.
+
+196
+00:12:41,450 --> 00:12:45,550
+So if we go to here our component can reload it just in case.
+
+197
+00:12:45,710 --> 00:12:46,760
+If I click the first one.
+
+198
+00:12:46,760 --> 00:12:47,900
+Ok we get the first one.
+
+199
+00:12:47,900 --> 00:12:51,480
+Now if I go to the next one of course nothing is going to really happen.
+
+200
+00:12:51,530 --> 00:12:53,170
+Begin to get an error right.
+
+201
+00:12:53,180 --> 00:12:54,730
+Because we don't have that function.
+
+202
+00:12:55,120 --> 00:12:56,380
+Let me reload it again.
+
+203
+00:12:56,570 --> 00:13:02,300
+Now if I open the back of the guitar we should be getting the back and no we get the front because there
+
+204
+00:13:02,300 --> 00:13:03,650
+is of course an error.
+
+205
+00:13:03,840 --> 00:13:07,220
+So let me just check.
+
+206
+00:13:07,220 --> 00:13:09,110
+I'm pretty sure that this is the car.
+
+207
+00:13:09,170 --> 00:13:12,640
+So this state that plus we didn't have this state to pass.
+
+208
+00:13:12,650 --> 00:13:14,990
+We have an image pass as well.
+
+209
+00:13:15,000 --> 00:13:16,210
+You're not getting the position.
+
+210
+00:13:16,220 --> 00:13:18,020
+It's always a zero.
+
+211
+00:13:18,680 --> 00:13:19,190
+OK.
+
+212
+00:13:19,430 --> 00:13:22,970
+So again the first one works.
+
+213
+00:13:23,180 --> 00:13:25,350
+The second one works right.
+
+214
+00:13:25,400 --> 00:13:27,790
+And again of course this one doesn't work.
+
+215
+00:13:27,850 --> 00:13:32,290
+So OK let's do the next and the preview so we can finish the lightbox.
+
+216
+00:13:32,530 --> 00:13:33,530
+Going to go here.
+
+217
+00:13:33,560 --> 00:13:34,720
+And first one I'm going to go.
+
+218
+00:13:34,730 --> 00:13:38,770
+Go to previous opening close and right here.
+
+219
+00:13:38,780 --> 00:13:41,320
+And again this is on the documentation.
+
+220
+00:13:41,330 --> 00:13:42,890
+This is going to be very simple.
+
+221
+00:13:42,890 --> 00:13:47,810
+We just need to get the current image that we are getting from state and we need to rest one.
+
+222
+00:13:47,900 --> 00:13:48,900
+That's it.
+
+223
+00:13:48,910 --> 00:13:49,520
+It was simple.
+
+224
+00:13:49,520 --> 00:13:56,480
+So there's that said state open and close and I'm going to say that the current image now it's equal
+
+225
+00:13:56,480 --> 00:14:02,970
+to whatever we have inside this that state that current image minus one.
+
+226
+00:14:02,990 --> 00:14:04,530
+And they go to next.
+
+227
+00:14:04,550 --> 00:14:05,630
+It's the same.
+
+228
+00:14:05,630 --> 00:14:06,790
+Same thing.
+
+229
+00:14:06,840 --> 00:14:09,380
+But plus one you know the opposite.
+
+230
+00:14:09,680 --> 00:14:12,720
+So we do plus one.
+
+231
+00:14:13,110 --> 00:14:13,550
+All right.
+
+232
+00:14:13,550 --> 00:14:14,950
+Let's try it again.
+
+233
+00:14:15,680 --> 00:14:16,530
+Going to open.
+
+234
+00:14:16,700 --> 00:14:18,190
+I'm going to go to next.
+
+235
+00:14:19,100 --> 00:14:26,130
+And of course go to next with me.
+
+236
+00:14:26,150 --> 00:14:27,950
+Copy go to next.
+
+237
+00:14:27,950 --> 00:14:29,320
+There you go again.
+
+238
+00:14:31,870 --> 00:14:34,410
+Opened next we get it.
+
+239
+00:14:34,450 --> 00:14:34,970
+And three.
+
+240
+00:14:34,960 --> 00:14:36,640
+And of course we are not getting the next one.
+
+241
+00:14:36,640 --> 00:14:39,770
+This is getting handled by lightbox.
+
+242
+00:14:39,940 --> 00:14:47,080
+So if I go to previous go to previews and if I close we close it and if I open it again it works.
+
+243
+00:14:47,110 --> 00:14:48,810
+All right I'm in.
+
+244
+00:14:48,930 --> 00:14:50,040
+So one thing.
+
+245
+00:14:50,050 --> 00:14:52,070
+One less thing to do.
+
+246
+00:14:53,050 --> 00:14:53,680
+So I'm done.
+
+247
+00:14:53,680 --> 00:14:58,160
+We are done with the light box and the product detail right here.
+
+248
+00:14:58,360 --> 00:15:04,540
+So the next thing the next thing we're going to do is doing all the logic for adding to cart right.
+
+249
+00:15:04,540 --> 00:15:08,730
+Whenever we click Add to Cart and remember that we have it at home on the carts.
+
+250
+00:15:09,230 --> 00:15:16,630
+We are going to trigger a function where we get to you know add this item to the user cart and it's
+
+251
+00:15:16,630 --> 00:15:22,620
+going to be it's going to be pretty long because we need to do a few few things and not just on the
+
+252
+00:15:22,830 --> 00:15:28,030
+on the client the client is going to be very simple it's just a function that dispatches an action to
+
+253
+00:15:28,030 --> 00:15:28,970
+redux.
+
+254
+00:15:29,020 --> 00:15:35,860
+Right but on the server we need to create a route that calls at item to cart that will be getting you
+
+255
+00:15:35,860 --> 00:15:40,720
+know the actual card and it needs to get the ID go to the history.
+
+256
+00:15:40,730 --> 00:15:46,900
+I'm sorry go to the cart on the models for example to the user schema.
+
+257
+00:15:46,900 --> 00:15:51,660
+Right here we get the cart and attached the you know all the information we can a need and we can if
+
+258
+00:15:51,700 --> 00:15:56,930
+need to merge some part of the user information with the part of the of the actual cart.
+
+259
+00:15:56,980 --> 00:15:59,080
+So we need to do a few things.
+
+260
+00:15:59,100 --> 00:16:02,350
+It's going to be very very fun because everything it's on the server.
+
+261
+00:16:02,350 --> 00:16:10,050
+So it's something I kind of want to say new but you know something we were not doing in the past.
+
+262
+00:16:10,120 --> 00:16:13,570
+I don't know six hours maybe 10 hours.
+
+263
+00:16:14,050 --> 00:16:15,640
+All right let's go to the next section.
+
+264
+00:16:15,640 --> 00:16:19,760
+Going to sip the current state of this project so you can get it.
+
+265
+00:16:19,960 --> 00:16:21,970
+And we're going to start with add to cart.
+

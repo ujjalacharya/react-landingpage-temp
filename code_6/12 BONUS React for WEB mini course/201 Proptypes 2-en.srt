@@ -1,0 +1,240 @@
+1
+00:00:00,680 --> 00:00:03,280
+All right so we have one more we can use.
+
+2
+00:00:03,310 --> 00:00:10,430
+It's going to be a custom custom prop type are going to be I'm going to be using the mother promp I'm
+
+3
+00:00:10,520 --> 00:00:12,260
+going to delete everything inside.
+
+4
+00:00:12,460 --> 00:00:15,460
+I'm going to create a custom function that is going to be checking.
+
+5
+00:00:15,650 --> 00:00:17,870
+So first we need to create a function.
+
+6
+00:00:17,870 --> 00:00:18,140
+OK.
+
+7
+00:00:18,170 --> 00:00:19,290
+Just a function.
+
+8
+00:00:19,370 --> 00:00:24,880
+So this function with Propp types is going to be getting three different arguments.
+
+9
+00:00:24,890 --> 00:00:30,830
+First is going to be it's going to be Propst then begin to be receiving the props and the name this
+
+10
+00:00:30,830 --> 00:00:36,040
+case it's proper name and then coma and then the component name is.
+
+11
+00:00:36,050 --> 00:00:39,240
+These are the arguments that we get by default.
+
+12
+00:00:39,620 --> 00:00:45,530
+So just to check what we're getting I'm going to say console log and are going to be canceling doing
+
+13
+00:00:45,530 --> 00:00:48,020
+the console log on with prompts.
+
+14
+00:00:48,350 --> 00:00:52,810
+So OK so if we cancel all the prompts you're getting the props.
+
+15
+00:00:52,820 --> 00:00:58,390
+Let's get if I do it grab the prop name we get the name.
+
+16
+00:00:58,400 --> 00:01:00,020
+In this case it's going to be mother.
+
+17
+00:01:00,050 --> 00:01:02,550
+It's the name of the prom that we are checking.
+
+18
+00:01:02,620 --> 00:01:07,970
+And if we put the component name of course we get the component name makes sense.
+
+19
+00:01:07,970 --> 00:01:14,680
+So right now Mother it's given back just a string with the name Martha.
+
+20
+00:01:14,810 --> 00:01:20,750
+So what we can do we can check for something since we have the access to the value we can check for
+
+21
+00:01:20,750 --> 00:01:21,280
+that.
+
+22
+00:01:21,410 --> 00:01:25,910
+So I'm going to I'm going to write just an if statement something real simple and first are going to
+
+23
+00:01:25,910 --> 00:01:26,440
+be ugly.
+
+24
+00:01:26,450 --> 00:01:32,680
+Grab the props which is the actual object the actual array and are going to be accessing the product
+
+25
+00:01:32,750 --> 00:01:36,280
+name which in this case is going to be mother.
+
+26
+00:01:36,380 --> 00:01:42,140
+So this is going to access the mother and it's going to be checking the values we have access to the
+
+27
+00:01:42,140 --> 00:01:43,640
+value what we can do.
+
+28
+00:01:43,640 --> 00:01:46,050
+We can check for us for things.
+
+29
+00:01:46,100 --> 00:01:52,570
+So I'm going to say if this value is not equal to Jane we're going to give back an error message.
+
+30
+00:01:52,730 --> 00:01:56,350
+So I'm going to say cancel log and then no that's good.
+
+31
+00:01:56,750 --> 00:01:59,680
+So if I reload the application I'm getting no.
+
+32
+00:01:59,690 --> 00:02:03,500
+And that's good because as value of mother I have Martha.
+
+33
+00:02:03,500 --> 00:02:05,210
+So you know should I be working.
+
+34
+00:02:05,210 --> 00:02:10,980
+So if I say Jane if I correct this we're going to because it's going to pass.
+
+35
+00:02:11,010 --> 00:02:13,060
+Let's get so now right here.
+
+36
+00:02:13,100 --> 00:02:18,130
+Something else what we can do we can return our own custom error message.
+
+37
+00:02:18,170 --> 00:02:27,080
+So I'm going to say return just like that and then knew and then error and this one again I can pass
+
+38
+00:02:27,080 --> 00:02:29,130
+right here whatever I want.
+
+39
+00:02:29,230 --> 00:02:30,680
+In this case just going to pass.
+
+40
+00:02:30,680 --> 00:02:31,840
+Attempt to strings.
+
+41
+00:02:31,850 --> 00:02:33,620
+I'm going to say the name.
+
+42
+00:02:33,830 --> 00:02:42,350
+And then of course I'm going to make a reference to props and then prop name just like that prop some
+
+43
+00:02:42,350 --> 00:02:49,200
+prop name and then I'm going to ride is incorrect should be.
+
+44
+00:02:49,310 --> 00:02:54,430
+And then Jane says we have Jane right now is going to pass.
+
+45
+00:02:54,600 --> 00:03:02,090
+But if I change it back to Martha just like this is going to give us our custom our message didn't Martha
+
+46
+00:03:02,150 --> 00:03:03,560
+Martha is incorrect.
+
+47
+00:03:03,590 --> 00:03:05,030
+Should be Jane.
+
+48
+00:03:05,030 --> 00:03:11,800
+So this is a way where you can use you can write your own custom messages and of course it always depends.
+
+49
+00:03:12,080 --> 00:03:18,950
+Depends on what you want to do or which kind of a message you want to output you have to have a lot
+
+50
+00:03:18,950 --> 00:03:25,280
+of more options for this going to go to the browser and I'm going to go to and be NPM J.S. and then
+
+51
+00:03:25,280 --> 00:03:32,330
+package and then prop types you know is the NPM Web site and then we're going to go to these to these
+
+52
+00:03:32,330 --> 00:03:33,210
+pensee.
+
+53
+00:03:33,400 --> 00:03:36,350
+So you know you have a lot of more options right here.
+
+54
+00:03:36,350 --> 00:03:41,280
+You can check things is going to give you the the information of what you can do you can change.
+
+55
+00:03:41,370 --> 00:03:45,050
+We we would you just covered most of them.
+
+56
+00:03:45,050 --> 00:03:48,140
+You know the most used prop types.
+
+57
+00:03:48,140 --> 00:03:48,730
+So let's go.
+
+58
+00:03:48,760 --> 00:03:49,120
+OK.
+
+59
+00:03:49,170 --> 00:03:55,430
+That's good let's keep moving to the next topic we're going to be talking about something else completely
+
+60
+00:03:55,520 --> 00:03:56,390
+different topic.
+

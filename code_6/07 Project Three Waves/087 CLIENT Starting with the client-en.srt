@@ -1,0 +1,932 @@
+1
+00:00:00,880 --> 00:00:05,640
+OK so now we need to bring the clients you know react to the client.
+
+2
+00:00:05,660 --> 00:00:07,740
+Right we're going to start with client so.
+
+3
+00:00:07,760 --> 00:00:08,160
+OK.
+
+4
+00:00:08,200 --> 00:00:10,590
+So we need to do create we act out.
+
+5
+00:00:10,630 --> 00:00:11,770
+Very simple.
+
+6
+00:00:11,770 --> 00:00:13,810
+Now you don't need to close the server.
+
+7
+00:00:13,810 --> 00:00:19,140
+Actually you need to keep the server alive for now beginning to do all the configuration but you know
+
+8
+00:00:19,210 --> 00:00:20,130
+keep it alive.
+
+9
+00:00:20,440 --> 00:00:25,960
+Now what I need you to do is to open a new tap again to go right here.
+
+10
+00:00:25,960 --> 00:00:32,140
+If you're Mac new tab with settings and it will open and you tap inside of waifs already.
+
+11
+00:00:32,140 --> 00:00:39,910
+Now if you're using the terminal of the code if you're using B as code right here when you go to terminal
+
+12
+00:00:40,150 --> 00:00:45,850
+you can open a new one right here by clicking the plus is going to open and you bash.
+
+13
+00:00:45,850 --> 00:00:47,040
+Right.
+
+14
+00:00:47,170 --> 00:00:53,170
+And if you're using Windows you just need to go to again command and you will need to navigate to know
+
+15
+00:00:53,250 --> 00:00:54,270
+this directory.
+
+16
+00:00:54,280 --> 00:01:01,050
+Now when we are in sort of waves are going to do CD and then client I'm going to go inside that directory
+
+17
+00:01:01,120 --> 00:01:05,080
+inside this directory and we can install right here.
+
+18
+00:01:05,080 --> 00:01:12,130
+So we do create then react then app and then of course seems I'm already inside the directory.
+
+19
+00:01:12,250 --> 00:01:17,470
+I'm going to put a dot and I get a press center.
+
+20
+00:01:17,550 --> 00:01:23,460
+It's going to take a while and I'll be right back OK so everything was installed.
+
+21
+00:01:23,590 --> 00:01:26,130
+So now we need to install the dependencies.
+
+22
+00:01:26,380 --> 00:01:33,220
+So I'm going to do a clear and remember that on the previous section I gave you a text with all the
+
+23
+00:01:33,220 --> 00:01:35,020
+dependencies we need to install.
+
+24
+00:01:35,110 --> 00:01:38,790
+So I'm going to make this a little bit bigger and I'm going to paste them right here.
+
+25
+00:01:39,040 --> 00:01:42,870
+So we will need to install a lot of things we will use Fonte awesome.
+
+26
+00:01:42,880 --> 00:01:44,250
+So a lot of fun.
+
+27
+00:01:44,260 --> 00:01:46,370
+Awesome to use icons.
+
+28
+00:01:46,630 --> 00:01:48,130
+We use material.
+
+29
+00:01:48,190 --> 00:01:51,200
+I actually use for making the requests.
+
+30
+00:01:51,220 --> 00:01:56,960
+Now this re-act images is going to be the light box when we use the light box.
+
+31
+00:01:57,040 --> 00:01:58,600
+We have a light box right here.
+
+32
+00:01:58,630 --> 00:02:01,500
+Maybe it didn't show you right here.
+
+33
+00:02:01,870 --> 00:02:04,650
+So that is the dependency.
+
+34
+00:02:04,990 --> 00:02:06,310
+So we use redux.
+
+35
+00:02:06,300 --> 00:02:11,180
+We're going to use redux here re-act router we use the slider Riak slick.
+
+36
+00:02:11,380 --> 00:02:18,870
+And then again redux redux promise we use redux thunk and this Riak drops.
+
+37
+00:02:18,910 --> 00:02:23,440
+It's where we're going to use this one to upload the images right.
+
+38
+00:02:23,470 --> 00:02:29,080
+And then we have a moment for time and then we're going to use a different dependency for Pay-Pal because
+
+39
+00:02:29,080 --> 00:02:36,520
+we will use Paypal right here a fake Paypal is the sandbox of PayPal so we need to install things.
+
+40
+00:02:36,580 --> 00:02:40,470
+So Precentor is going to take a while and I'll be right back.
+
+41
+00:02:41,080 --> 00:02:42,640
+OK so everything was installed.
+
+42
+00:02:42,730 --> 00:02:43,890
+So I'm going to do clear.
+
+43
+00:02:44,020 --> 00:02:45,720
+And before I start the server again.
+
+44
+00:02:45,730 --> 00:02:47,530
+Let me close this before I start.
+
+45
+00:02:47,530 --> 00:02:50,920
+Server a development server or react.
+
+46
+00:02:51,000 --> 00:02:54,190
+I'm going to go to public remember I gave you this already.
+
+47
+00:02:54,190 --> 00:02:56,070
+All the links we can all be using.
+
+48
+00:02:56,320 --> 00:02:58,890
+I'm going to paste them right now so.
+
+49
+00:02:59,350 --> 00:02:59,590
+All right.
+
+50
+00:02:59,590 --> 00:03:01,580
+So we will use the icons from the front.
+
+51
+00:03:01,590 --> 00:03:01,930
+Awesome.
+
+52
+00:03:01,980 --> 00:03:04,780
+So we need that CSSA the Google fonts.
+
+53
+00:03:04,800 --> 00:03:05,920
+Going to be using.
+
+54
+00:03:05,920 --> 00:03:12,080
+And the last one the last see SS is going to be for the right here for re-act slick.
+
+55
+00:03:12,190 --> 00:03:14,300
+And notice that we are using this CDN.
+
+56
+00:03:14,480 --> 00:03:18,180
+All right now inside of the source directory.
+
+57
+00:03:18,430 --> 00:03:19,580
+Going to go right here.
+
+58
+00:03:19,750 --> 00:03:22,480
+And we don't need to see a sunken going to delete it.
+
+59
+00:03:22,690 --> 00:03:27,030
+Just like this.
+
+60
+00:03:27,140 --> 00:03:32,330
+What else we we don't need the app that pass that test so I can delete it again.
+
+61
+00:03:33,780 --> 00:03:37,050
+The index Yes that's not going to really use it.
+
+62
+00:03:37,160 --> 00:03:39,460
+Going to trash logo.
+
+63
+00:03:40,360 --> 00:03:46,060
+Goodbye just like with the other projects and the service worker I'm going to just delete it.
+
+64
+00:03:46,940 --> 00:03:48,770
+So I'm going to go to this.
+
+65
+00:03:48,920 --> 00:03:52,880
+I'm going to delete this so that this the reference to index's.
+
+66
+00:03:52,880 --> 00:03:55,610
+SS Can I save it go to app.
+
+67
+00:03:55,670 --> 00:03:57,860
+Delete the import for the logo.
+
+68
+00:03:57,890 --> 00:03:59,720
+Delete the import for the CSSA.
+
+69
+00:03:59,960 --> 00:04:03,430
+And I'm going to say just my app whatever.
+
+70
+00:04:03,440 --> 00:04:06,350
+All right so now let's run the server.
+
+71
+00:04:06,580 --> 00:04:07,540
+So I'm going to go right here.
+
+72
+00:04:07,550 --> 00:04:10,700
+And how can we run it just like with that yarn.
+
+73
+00:04:10,900 --> 00:04:14,280
+And I did I did NPM install on the other one.
+
+74
+00:04:14,300 --> 00:04:15,350
+I'm not really sure.
+
+75
+00:04:15,380 --> 00:04:16,760
+Now I did remember.
+
+76
+00:04:16,800 --> 00:04:19,490
+You always need to NPM if you're using NPM.
+
+77
+00:04:19,760 --> 00:04:23,870
+So NPM start going to start.
+
+78
+00:04:24,050 --> 00:04:25,140
+Give it a minute.
+
+79
+00:04:25,670 --> 00:04:26,900
+OK so everything is working.
+
+80
+00:04:26,900 --> 00:04:29,410
+We get my app very very good.
+
+81
+00:04:29,700 --> 00:04:36,050
+Now we have one tiny problem this localhost is going to be 3000.
+
+82
+00:04:36,050 --> 00:04:36,490
+Right.
+
+83
+00:04:36,500 --> 00:04:42,550
+It's the default by react and our server it's working on a different place.
+
+84
+00:04:42,650 --> 00:04:45,070
+It's working at 0 0 2.
+
+85
+00:04:45,140 --> 00:04:49,760
+So right from the start we have the problem that we have this development server every act of the client
+
+86
+00:04:50,150 --> 00:04:54,300
+in one place and the server our server in a different place.
+
+87
+00:04:54,350 --> 00:04:56,360
+So just to give you an example.
+
+88
+00:04:56,430 --> 00:04:59,260
+And what's going to happen what's the problem with this.
+
+89
+00:04:59,330 --> 00:05:06,160
+I can import ASIO's from ASIO's and it can make a request to our server.
+
+90
+00:05:06,410 --> 00:05:14,390
+So on the component just like this did mount going to open and close.
+
+91
+00:05:14,410 --> 00:05:20,400
+I'm going to do actually those dot get opening close and going to make a request to France.
+
+92
+00:05:20,420 --> 00:05:22,260
+I just want to get the prints right.
+
+93
+00:05:22,400 --> 00:05:24,540
+So if you remember it's API.
+
+94
+00:05:24,620 --> 00:05:26,130
+I don't remember.
+
+95
+00:05:26,130 --> 00:05:27,430
+Let me say this.
+
+96
+00:05:27,770 --> 00:05:33,270
+The brands were API product brands.
+
+97
+00:05:33,350 --> 00:05:40,640
+So if I make a request here and then of course we can't the response just like this.
+
+98
+00:05:40,670 --> 00:05:45,160
+And we run a function I'm going to cancel log whatever response I get.
+
+99
+00:05:45,210 --> 00:05:55,460
+So response in relo the application Embryon the console and on the console we get failed to load we
+
+100
+00:05:55,460 --> 00:06:01,460
+source to server respond with situs of course your for now right here when we whenever we do this we
+
+101
+00:06:01,460 --> 00:06:07,330
+are making a request to the server and this server it's in localhost 3000.
+
+102
+00:06:07,340 --> 00:06:10,630
+So it's a different location different different domain.
+
+103
+00:06:10,880 --> 00:06:12,360
+So we're not going to really work.
+
+104
+00:06:12,500 --> 00:06:13,820
+Now what happens if I do.
+
+105
+00:06:13,850 --> 00:06:14,120
+OK.
+
+106
+00:06:14,150 --> 00:06:16,060
+My server it's in H.
+
+107
+00:06:16,140 --> 00:06:21,030
+TTP Kallen forward slash forward slash local host.
+
+108
+00:06:21,380 --> 00:06:22,210
+Let me do it right.
+
+109
+00:06:22,280 --> 00:06:26,500
+Localhost host and our server it's in 3 0 0 2.
+
+110
+00:06:26,570 --> 00:06:28,660
+So I'm going to do 3 0 0 2.
+
+111
+00:06:28,880 --> 00:06:30,380
+So this one should work right.
+
+112
+00:06:30,520 --> 00:06:33,000
+OK I'm going to make the request.
+
+113
+00:06:33,160 --> 00:06:39,040
+Not really happening because you're not allowed to make request requests from your server to a different
+
+114
+00:06:39,040 --> 00:06:39,710
+server.
+
+115
+00:06:39,760 --> 00:06:46,060
+If the other server it's not allowing you now instead of here whenever we push production this is going
+
+116
+00:06:46,060 --> 00:06:49,030
+to be one server a single location.
+
+117
+00:06:49,030 --> 00:06:50,940
+The problem is that now we react.
+
+118
+00:06:51,010 --> 00:06:52,970
+We are running the development server.
+
+119
+00:06:53,010 --> 00:06:54,610
+You're running two servers.
+
+120
+00:06:54,670 --> 00:06:55,950
+So what do we need to do.
+
+121
+00:06:56,170 --> 00:07:02,260
+We need to modify things a little bit so we can run one server and they can communicate just with one
+
+122
+00:07:02,260 --> 00:07:03,560
+server.
+
+123
+00:07:03,630 --> 00:07:05,850
+First I'm going to delete this.
+
+124
+00:07:05,950 --> 00:07:08,210
+I'm going to delete it and save it.
+
+125
+00:07:08,350 --> 00:07:09,580
+How can we fix this.
+
+126
+00:07:09,580 --> 00:07:12,540
+So first I get to go to inside the client.
+
+127
+00:07:12,640 --> 00:07:17,260
+I'm going to go inside the package and Jason now react.
+
+128
+00:07:17,290 --> 00:07:22,530
+They give us the ability to proxy our you know our development server.
+
+129
+00:07:22,780 --> 00:07:24,590
+So I'm going to do a coma.
+
+130
+00:07:24,750 --> 00:07:29,470
+I'm going to go right here at the bottom and I'm going to say proxy now proxy.
+
+131
+00:07:29,470 --> 00:07:31,350
+Of course we need to pass some values.
+
+132
+00:07:31,360 --> 00:07:34,660
+What we can do we can set where we want to go.
+
+133
+00:07:34,660 --> 00:07:38,550
+In this case for I-Slash API for Slash.
+
+134
+00:07:38,590 --> 00:07:44,920
+So all the routes all the requests from our server from the re-act server going to this location they're
+
+135
+00:07:44,920 --> 00:07:46,990
+going to target a different place.
+
+136
+00:07:47,020 --> 00:07:59,380
+So Target open it close and it's a TTP call and forward slash force slash and local post 3 0 0 2.
+
+137
+00:08:00,160 --> 00:08:03,830
+All right what happens if we try again and then reload the application.
+
+138
+00:08:04,910 --> 00:08:09,530
+Same prom the thing is that we are making changes to package that Jason to this one.
+
+139
+00:08:09,530 --> 00:08:11,250
+So we need to restart the server.
+
+140
+00:08:11,480 --> 00:08:13,220
+So I to go to react.
+
+141
+00:08:13,430 --> 00:08:16,140
+It could kill it and start again.
+
+142
+00:08:17,860 --> 00:08:22,440
+So now the server is going to refresh.
+
+143
+00:08:22,600 --> 00:08:23,940
+And now we get a response.
+
+144
+00:08:23,950 --> 00:08:28,150
+So we are getting a response for data with all the data we need.
+
+145
+00:08:28,150 --> 00:08:32,560
+Remember I'm not doing console log response data.
+
+146
+00:08:32,620 --> 00:08:33,890
+If we do it we get the data.
+
+147
+00:08:34,120 --> 00:08:35,710
+But we are getting the correct response.
+
+148
+00:08:35,720 --> 00:08:36,520
+This is what we need.
+
+149
+00:08:36,520 --> 00:08:41,980
+So now we can make a request to this and every and the application will treat it at the same as the
+
+150
+00:08:41,980 --> 00:08:44,420
+same server.
+
+151
+00:08:44,620 --> 00:08:48,120
+And then when we need to push this to production of course we need to change them settings.
+
+152
+00:08:48,130 --> 00:08:51,490
+But for now this is going to work like a charm.
+
+153
+00:08:51,490 --> 00:08:52,170
+All right.
+
+154
+00:08:52,420 --> 00:08:53,900
+So what is the other problem.
+
+155
+00:08:53,950 --> 00:09:01,630
+The other problem is that we have a right here and a batch opened with this with the server and then
+
+156
+00:09:01,630 --> 00:09:06,350
+we have a different one with our server where our server notes server.
+
+157
+00:09:06,400 --> 00:09:10,950
+So it would be wonderful if we could Dron all in the same place.
+
+158
+00:09:10,960 --> 00:09:11,380
+Right.
+
+159
+00:09:11,500 --> 00:09:12,030
+OK.
+
+160
+00:09:12,490 --> 00:09:14,040
+So we can do this now.
+
+161
+00:09:14,080 --> 00:09:20,740
+If I go to let me close the client right now if I go to the server to our main package that Jason right
+
+162
+00:09:20,740 --> 00:09:24,540
+here we've installed something called concurrently.
+
+163
+00:09:24,730 --> 00:09:26,420
+So concurrently what it does.
+
+164
+00:09:26,530 --> 00:09:34,570
+It can run two different commands at the same time not at the same time but will it will execute one
+
+165
+00:09:34,810 --> 00:09:39,060
+and then another one with the same command line.
+
+166
+00:09:39,280 --> 00:09:46,720
+So am I'm going to go right here into the scripts of the package at Chaisson in the main the root directory
+
+167
+00:09:46,720 --> 00:09:47,470
+Arayan.
+
+168
+00:09:47,890 --> 00:09:49,310
+So we have test.
+
+169
+00:09:49,630 --> 00:09:51,790
+We have start and we have server.
+
+170
+00:09:51,980 --> 00:09:55,850
+So I'm going to go right here and create a new one which is going to be client.
+
+171
+00:09:56,020 --> 00:10:02,520
+Now the client will be to will do the NPM run start.
+
+172
+00:10:02,830 --> 00:10:06,780
+So what do we need to do when it triggered this kind within concurrently.
+
+173
+00:10:06,880 --> 00:10:12,640
+Then we have to just show you we have a different command which is going to be Deppe and this def will
+
+174
+00:10:12,670 --> 00:10:16,370
+execute the server command and then the client commands.
+
+175
+00:10:16,420 --> 00:10:22,810
+Now the client the server inside the client it's inside the client so we need to go to the root and
+
+176
+00:10:22,810 --> 00:10:29,560
+turn the client and let the application know that we need to run this one inside the client so to do
+
+177
+00:10:29,560 --> 00:10:35,720
+this we do NPM Bruhn start and we need to specify where we are where can we find this MP from start.
+
+178
+00:10:35,980 --> 00:10:41,110
+And there's one it's inside the package that Jasen of the client.
+
+179
+00:10:41,110 --> 00:10:41,990
+All right.
+
+180
+00:10:42,280 --> 00:10:43,950
+So what we do we do.
+
+181
+00:10:43,960 --> 00:10:48,110
+Minus minus prefix and then a client.
+
+182
+00:10:48,160 --> 00:10:49,880
+So pretty much we are going to route.
+
+183
+00:10:49,900 --> 00:10:52,360
+We are entering client and that we go.
+
+184
+00:10:52,840 --> 00:10:53,410
+All right.
+
+185
+00:10:53,650 --> 00:11:01,750
+So inside dev to run the server and declined from the same place we need to use concurrently we have
+
+186
+00:11:01,750 --> 00:11:02,770
+it right here at the bottom.
+
+187
+00:11:02,790 --> 00:11:04,960
+I'm going to paste in it now.
+
+188
+00:11:05,090 --> 00:11:08,080
+What do we need to do instead of doing a four slash.
+
+189
+00:11:08,140 --> 00:11:09,530
+We need to do a backslash.
+
+190
+00:11:09,550 --> 00:11:11,500
+Now if your keyword it's a little bit weird.
+
+191
+00:11:11,530 --> 00:11:14,270
+And I have this problem in the past.
+
+192
+00:11:14,440 --> 00:11:16,490
+Someone hired me to do the job.
+
+193
+00:11:16,750 --> 00:11:20,000
+But I had to go to their office and they gave me a computer.
+
+194
+00:11:20,050 --> 00:11:22,070
+It was the weirdest computer man.
+
+195
+00:11:22,090 --> 00:11:26,140
+So you need to copy the one at the top the one of the tests.
+
+196
+00:11:26,140 --> 00:11:26,490
+All right.
+
+197
+00:11:26,590 --> 00:11:27,950
+And then paste it.
+
+198
+00:11:28,180 --> 00:11:36,830
+So we do quotes and we add and you quote and what we do we do and PM run server.
+
+199
+00:11:37,090 --> 00:11:41,980
+If you noticed we are running this command from this command.
+
+200
+00:11:41,980 --> 00:11:49,460
+This is the idea of this of course I need to close that and I need to add one more one more quote.
+
+201
+00:11:49,480 --> 00:11:55,430
+Now what I want to do again I want to run the server and the client at the same time.
+
+202
+00:11:55,560 --> 00:11:56,990
+So I'm going to do space.
+
+203
+00:11:57,040 --> 00:11:58,300
+I'm going to do the same thing.
+
+204
+00:11:58,480 --> 00:12:03,250
+Open quote and PM run clients now.
+
+205
+00:12:03,310 --> 00:12:05,250
+Now I'm running this one.
+
+206
+00:12:05,320 --> 00:12:08,670
+Then of course again and we close it.
+
+207
+00:12:08,740 --> 00:12:09,970
+And that is it.
+
+208
+00:12:09,970 --> 00:12:17,140
+So now when we do pian run Dev from a single batch concurrently is going to first run the server and
+
+209
+00:12:17,140 --> 00:12:19,230
+then run the client.
+
+210
+00:12:19,300 --> 00:12:20,830
+That is what's going to happen.
+
+211
+00:12:21,100 --> 00:12:21,730
+OK.
+
+212
+00:12:21,970 --> 00:12:25,130
+So I'm going to go right here to the terminal.
+
+213
+00:12:25,900 --> 00:12:27,460
+I'm going to kill it.
+
+214
+00:12:27,460 --> 00:12:28,500
+I'm going to close it.
+
+215
+00:12:28,510 --> 00:12:30,040
+I don't need it anymore.
+
+216
+00:12:30,280 --> 00:12:34,240
+And on this one I'm going to kill it and I'm going to close it get it to clear.
+
+217
+00:12:34,270 --> 00:12:36,620
+Now I am inside the root directory.
+
+218
+00:12:36,680 --> 00:12:37,040
+Right.
+
+219
+00:12:37,060 --> 00:12:47,710
+Our main route and now I'm going to do NPM from DEP so NPM or I could do John run def in my case I'm
+
+220
+00:12:47,710 --> 00:12:56,740
+using yarn so I'm going to run it first and you can see it right here concurrently running this too.
+
+221
+00:12:57,130 --> 00:12:58,840
+So first we start to server.
+
+222
+00:12:59,110 --> 00:12:59,950
+This is what it's doing.
+
+223
+00:12:59,950 --> 00:13:01,570
+Sorry it close.
+
+224
+00:13:01,570 --> 00:13:06,520
+So first we start the server and then it's going to run react.
+
+225
+00:13:06,620 --> 00:13:08,850
+And that's why the server reloads.
+
+226
+00:13:08,950 --> 00:13:12,860
+And we have the local host three thousand and we are still able to get the data.
+
+227
+00:13:13,000 --> 00:13:15,950
+So now you don't need to run two batches you just run one.
+
+228
+00:13:16,090 --> 00:13:18,250
+And if in the future you need to run more things.
+
+229
+00:13:18,340 --> 00:13:21,040
+It's just added to concurrently and that's it.
+
+230
+00:13:21,040 --> 00:13:25,360
+All right man so this is pretty much done now on the next section.
+
+231
+00:13:25,360 --> 00:13:33,220
+We will start building the actual Web site you know adding header footer the body and creating home
+
+232
+00:13:33,280 --> 00:13:34,150
+and everything else.
+
+233
+00:13:34,300 --> 00:13:36,340
+So let's go to the next section and start.
+

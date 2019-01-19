@@ -1,0 +1,624 @@
+1
+00:00:00,850 --> 00:00:03,160
+So let's see the logic for this.
+
+2
+00:00:03,160 --> 00:00:09,430
+So what I want to do what we want to do is that whenever the component loads we want to trigger a function
+
+3
+00:00:09,670 --> 00:00:12,170
+that is going to get the deadline.
+
+4
+00:00:12,190 --> 00:00:18,880
+You know where this event is going to start and the date right now and we're going to compare both.
+
+5
+00:00:18,880 --> 00:00:23,870
+And of course if the event already passed we're going to display zero or maybe something else.
+
+6
+00:00:24,100 --> 00:00:30,380
+But if not we're going to do some math operations and calculate how many days until that date.
+
+7
+00:00:30,400 --> 00:00:35,050
+So whenever the component load we need to trigger that function and remember that we're going to be
+
+8
+00:00:35,170 --> 00:00:40,160
+animating the numbers right here so the display how much left.
+
+9
+00:00:40,240 --> 00:00:47,530
+So we need to run the same function after one second so after each second we need to run it again and
+
+10
+00:00:47,740 --> 00:00:49,870
+get the numbers again.
+
+11
+00:00:49,870 --> 00:00:55,810
+So first we're going to go right here at the bottom and say component that Mount opening close.
+
+12
+00:00:55,900 --> 00:00:58,690
+So we're going to create and trigger function.
+
+13
+00:00:58,690 --> 00:01:04,750
+Now this function are going to call it gain get don't get get.
+
+14
+00:01:04,750 --> 00:01:11,310
+Sorry did not get get time until opening close.
+
+15
+00:01:11,320 --> 00:01:11,850
+All right.
+
+16
+00:01:12,070 --> 00:01:19,350
+So this component mount will be triggering this function on a loop after each after one second.
+
+17
+00:01:19,420 --> 00:01:22,690
+So for this we can use a set interval.
+
+18
+00:01:22,690 --> 00:01:27,180
+So after one second begin to be running a function.
+
+19
+00:01:27,310 --> 00:01:29,990
+So it's going to be after one second.
+
+20
+00:01:30,040 --> 00:01:36,490
+Now of course we need to do this not get time until and begin to run this function.
+
+21
+00:01:36,490 --> 00:01:38,640
+Of course nothing happened so far.
+
+22
+00:01:38,650 --> 00:01:45,600
+Now we need to know where or when actually the deadline of this show is going to be.
+
+23
+00:01:45,640 --> 00:01:52,920
+You know when it's going to be a singer doing the show so we're going to host this inside of the state.
+
+24
+00:01:52,930 --> 00:01:57,590
+The state is going to go right here and say deadline sounds like that.
+
+25
+00:01:58,210 --> 00:02:06,790
+So the date is going to be first the month in this format than coma space then the day coma space and
+
+26
+00:02:06,790 --> 00:02:07,500
+the year.
+
+27
+00:02:07,630 --> 00:02:10,150
+So this is the formal beginning to be using.
+
+28
+00:02:10,150 --> 00:02:15,850
+So then coma and right here we're going to be storing how many days how many hours how many minutes
+
+29
+00:02:16,060 --> 00:02:16,960
+and how many seconds.
+
+30
+00:02:16,960 --> 00:02:21,470
+And this is going to come it's going to go from the time until.
+
+31
+00:02:21,470 --> 00:02:23,750
+So first we have days.
+
+32
+00:02:23,880 --> 00:02:25,480
+Not that eight days.
+
+33
+00:02:25,610 --> 00:02:25,940
+OK.
+
+34
+00:02:26,020 --> 00:02:26,690
+Sorry.
+
+35
+00:02:26,950 --> 00:02:28,880
+So then we have zero days.
+
+36
+00:02:28,900 --> 00:02:29,480
+Right.
+
+37
+00:02:29,500 --> 00:02:31,910
+The application starts with zero.
+
+38
+00:02:31,930 --> 00:02:37,200
+So then coma we have hours then we have zero then coma.
+
+39
+00:02:37,210 --> 00:02:38,930
+We have minutes.
+
+40
+00:02:39,570 --> 00:02:40,280
+All right.
+
+41
+00:02:40,330 --> 00:02:41,080
+Same thing.
+
+42
+00:02:41,080 --> 00:02:45,540
+We have zero and then seconds and then again zero.
+
+43
+00:02:45,640 --> 00:02:46,320
+All right.
+
+44
+00:02:46,750 --> 00:02:48,270
+So we have a deadline right now.
+
+45
+00:02:48,310 --> 00:02:52,790
+So whenever we run this function I want to pass to the function.
+
+46
+00:02:53,740 --> 00:02:59,440
+You know the the deadline is going to be and then when this is going to end.
+
+47
+00:02:59,440 --> 00:03:01,330
+So winter is going and it's going to be the deadline.
+
+48
+00:03:01,330 --> 00:03:04,780
+So we passed this that state that that line.
+
+49
+00:03:05,020 --> 00:03:08,220
+So instead of doing this you can just leave this to empty.
+
+50
+00:03:08,240 --> 00:03:14,530
+Set of game time game time until you can get get it from this that state that deadline this doesn't
+
+51
+00:03:14,530 --> 00:03:16,630
+change when the application loads.
+
+52
+00:03:16,780 --> 00:03:18,680
+You know I'm pretty much doing the same thing.
+
+53
+00:03:19,030 --> 00:03:21,260
+So OK so here's the thing.
+
+54
+00:03:21,280 --> 00:03:22,670
+Here's the important part.
+
+55
+00:03:22,730 --> 00:03:25,390
+I'm going to create a barbell called time.
+
+56
+00:03:25,390 --> 00:03:31,030
+Now time is going to get that line and it's going to get to today's state and it's going to get it.
+
+57
+00:03:31,030 --> 00:03:34,700
+Get them both and it's going to arrest this deadline.
+
+58
+00:03:34,750 --> 00:03:36,580
+Minus the current date.
+
+59
+00:03:36,700 --> 00:03:43,820
+So if you get a negative number it means that the date of the event already passed that's what's going
+
+60
+00:03:43,820 --> 00:03:44,700
+to happen.
+
+61
+00:03:44,710 --> 00:03:47,500
+So if it didn't pass it's going to be a positive number.
+
+62
+00:03:47,740 --> 00:03:48,790
+So I'm going to go.
+
+63
+00:03:48,820 --> 00:03:55,540
+I'm going to go right here I'm going to say date dot pars opening close and are going to make a reference
+
+64
+00:03:55,540 --> 00:04:01,290
+to the the argument we are passing which is deadline and deadline.
+
+65
+00:04:01,300 --> 00:04:01,840
+All right.
+
+66
+00:04:02,140 --> 00:04:11,700
+So it's going to be minus date same thing Date dot parse open it close and we calculate the new date.
+
+67
+00:04:11,710 --> 00:04:13,670
+So I'm going to bring today's date.
+
+68
+00:04:13,870 --> 00:04:15,000
+Right.
+
+69
+00:04:15,730 --> 00:04:19,820
+So if I cancel law I'm going to do cancel law and I can look.
+
+70
+00:04:19,820 --> 00:04:24,350
+Time with me reload the application.
+
+71
+00:04:24,480 --> 00:04:28,180
+We're going to get you know the current time after 1 second.
+
+72
+00:04:28,440 --> 00:04:38,370
+Now if I change this to January and let me change it first Jan. And we are on break here on July.
+
+73
+00:04:38,370 --> 00:04:43,300
+So of course the date or so we should be getting a negative number.
+
+74
+00:04:43,470 --> 00:04:44,550
+And we do.
+
+75
+00:04:44,550 --> 00:04:45,080
+All right.
+
+76
+00:04:45,270 --> 00:04:46,110
+So now what is simple.
+
+77
+00:04:46,140 --> 00:04:51,210
+What we can do we can create a conditional if time.
+
+78
+00:04:51,240 --> 00:04:54,070
+It's less than zero of course.
+
+79
+00:04:54,180 --> 00:04:55,020
+We can do some.
+
+80
+00:04:55,020 --> 00:04:56,110
+Do something else.
+
+81
+00:04:56,130 --> 00:04:57,780
+I'm not going to really do it right now.
+
+82
+00:04:57,780 --> 00:05:01,700
+Maybe saying date past something like that.
+
+83
+00:05:01,800 --> 00:05:04,210
+You know something simple we could hide.
+
+84
+00:05:04,260 --> 00:05:05,580
+You know this component.
+
+85
+00:05:05,580 --> 00:05:06,470
+I'm not going to do it.
+
+86
+00:05:06,470 --> 00:05:11,420
+Begin to do a lot of things a lot more difficult than this and fun than this.
+
+87
+00:05:11,430 --> 00:05:16,990
+So now what do we need to do we need to calculate each second date hour and minute.
+
+88
+00:05:17,210 --> 00:05:17,560
+OK.
+
+89
+00:05:17,610 --> 00:05:21,830
+So I'm going to create our Marvel and let me go.
+
+90
+00:05:22,620 --> 00:05:28,920
+So I'm going to do Kunst And first I'm going to get the seconds so the seconds you're going to use a
+
+91
+00:05:28,920 --> 00:05:34,100
+math dot then floor opening close.
+
+92
+00:05:34,200 --> 00:05:40,200
+Now to get the seconds what do we need to do is to bring the time divided by 1000 and then get it from
+
+93
+00:05:40,200 --> 00:05:40,960
+60.
+
+94
+00:05:41,040 --> 00:05:43,440
+So opening close one more time.
+
+95
+00:05:43,440 --> 00:05:50,980
+So each time that one falls for Slash 1000 and then by 60.
+
+96
+00:05:51,120 --> 00:05:55,980
+So if I do a console log for the seconds I'll just show you
+
+97
+00:05:59,620 --> 00:06:00,990
+console.
+
+98
+00:06:01,000 --> 00:06:03,610
+So of course to date pass.
+
+99
+00:06:03,610 --> 00:06:06,470
+Let me change to December.
+
+100
+00:06:06,530 --> 00:06:07,430
+All right.
+
+101
+00:06:07,430 --> 00:06:13,370
+So we get 16 15 14 until the of course the next minute.
+
+102
+00:06:13,370 --> 00:06:13,790
+All right.
+
+103
+00:06:13,820 --> 00:06:22,330
+So I'm going to copy this one and I'm going to do the minutes so minutes and the math it's kind of a
+
+104
+00:06:22,430 --> 00:06:26,700
+pretty much the same but not really after the 1000 fours.
+
+105
+00:06:26,960 --> 00:06:27,890
+And then 60.
+
+106
+00:06:27,890 --> 00:06:29,320
+That is it with numbers.
+
+107
+00:06:29,420 --> 00:06:31,100
+Now with the hours is going to be a little bit different.
+
+108
+00:06:31,100 --> 00:06:37,660
+So I'm going to copy this one for now and say hours and I I'm going to delete this one right here.
+
+109
+00:06:37,670 --> 00:06:38,810
+What floor.
+
+110
+00:06:38,840 --> 00:06:47,060
+So for the hours we do again our parentheses and then time and then forward slash and we need to open
+
+111
+00:06:47,060 --> 00:06:48,260
+a new Burnand to see.
+
+112
+00:06:48,260 --> 00:06:50,640
+So all of this is of course vanilla Javascript.
+
+113
+00:06:50,750 --> 00:07:01,460
+So we need to do 1000 then star than 60 star and then 60 and everything is going to be by 24.
+
+114
+00:07:01,940 --> 00:07:03,810
+So this is how we get the hours.
+
+115
+00:07:04,070 --> 00:07:07,430
+Of course you can get us get this from Stack Overflow.
+
+116
+00:07:07,940 --> 00:07:12,490
+So then four instead of hours we can calculate the dates.
+
+117
+00:07:12,530 --> 00:07:16,350
+So four days is going to be the time this is going to be the same for us.
+
+118
+00:07:16,460 --> 00:07:23,930
+Instead of Birnam see 1000 by 60 by 60 by 24.
+
+119
+00:07:24,620 --> 00:07:27,800
+And then of course I'm going to remove this 24.
+
+120
+00:07:27,890 --> 00:07:29,210
+That's it.
+
+121
+00:07:29,210 --> 00:07:30,350
+And ok.
+
+122
+00:07:30,410 --> 00:07:31,970
+I have one more.
+
+123
+00:07:32,000 --> 00:07:32,600
+Me.
+
+124
+00:07:32,660 --> 00:07:38,480
+Just make sure of this dropping everything in one Princie.
+
+125
+00:07:38,590 --> 00:07:39,630
+So there we go.
+
+126
+00:07:39,700 --> 00:07:41,070
+This is what we need to do.
+
+127
+00:07:41,080 --> 00:07:43,410
+Time than 1066.
+
+128
+00:07:43,480 --> 00:07:44,630
+And then 24.
+
+129
+00:07:44,740 --> 00:07:46,650
+And this is how we get the dates.
+
+130
+00:07:46,660 --> 00:07:49,790
+So now we have the seconds minutes hours and days.
+
+131
+00:07:49,810 --> 00:07:50,830
+So what do we need to do.
+
+132
+00:07:50,830 --> 00:07:58,070
+We just need to set the stage so this that said state opening close and then days.
+
+133
+00:07:58,680 --> 00:08:05,290
+And OK since we are using the same names for the same values we can use some six magic so we can use
+
+134
+00:08:05,290 --> 00:08:08,780
+days hours just like this.
+
+135
+00:08:08,890 --> 00:08:14,680
+Then we have minutes and then we have seconds.
+
+136
+00:08:14,710 --> 00:08:22,300
+So this if you don't know if you don't know ESX that much this is going to be translated as days equals
+
+137
+00:08:22,450 --> 00:08:24,560
+equals equals days.
+
+138
+00:08:24,810 --> 00:08:25,900
+It's a key value pair.
+
+139
+00:08:25,990 --> 00:08:29,990
+So if the key and the value are the same name we can do it like this.
+
+140
+00:08:30,010 --> 00:08:32,880
+And U-6 will translate this for us.
+
+141
+00:08:32,920 --> 00:08:38,530
+So if we love the application of course nothing really happens right now because everything happens
+
+142
+00:08:38,530 --> 00:08:46,890
+on the state and right here we have kind of a hard coded values right here on the bottom of with this.
+
+143
+00:08:46,970 --> 00:08:52,150
+OK so first we need to calculate the days so open and close.
+
+144
+00:08:52,360 --> 00:08:56,740
+And this one is going to be equal to this state that takes.
+
+145
+00:08:56,850 --> 00:09:01,540
+All right we're going to do the same thing for hours instead of days.
+
+146
+00:09:01,540 --> 00:09:10,460
+It's going to be hours copy then go to minutes and there we go.
+
+147
+00:09:10,600 --> 00:09:16,870
+And the last thing it's seconds so seconds.
+
+148
+00:09:17,150 --> 00:09:17,520
+Right.
+
+149
+00:09:17,530 --> 00:09:19,810
+Let's see if this works.
+
+150
+00:09:22,680 --> 00:09:23,030
+All right.
+
+151
+00:09:23,040 --> 00:09:28,030
+So we get two seconds and the minute changes and everything starts again.
+
+152
+00:09:28,260 --> 00:09:28,550
+Right.
+
+153
+00:09:28,550 --> 00:09:30,000
+So everything works.
+
+154
+00:09:31,020 --> 00:09:33,750
+OK so now I'm going to sip this.
+
+155
+00:09:33,900 --> 00:09:39,450
+This said I'm going to skip the project so you can get the files until this section and we're going
+
+156
+00:09:39,450 --> 00:09:43,430
+to be moving forward to the next one to this one and it's going to be with simple.
+

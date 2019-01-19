@@ -1,0 +1,1016 @@
+1
+00:00:00,530 --> 00:00:03,580
+OK so let's bring the imports.
+
+2
+00:00:03,720 --> 00:00:05,110
+We need the user layouts.
+
+3
+00:00:05,130 --> 00:00:15,850
+So user layout user layouts and with a capital L and it's from of course you tell us I'm sorry the H.O.
+
+4
+00:00:15,860 --> 00:00:18,050
+sees that for Slashdot for us.
+
+5
+00:00:18,050 --> 00:00:23,690
+Last one more and H.O. see forward slash and the user.
+
+6
+00:00:23,800 --> 00:00:24,700
+All right.
+
+7
+00:00:25,170 --> 00:00:33,270
+And of course we can wrap everything inside of this user layout well and we just do it now so we can
+
+8
+00:00:33,270 --> 00:00:36,030
+get something at least on the screen.
+
+9
+00:00:36,390 --> 00:00:40,110
+Because right now it's not really we actually.
+
+10
+00:00:40,110 --> 00:00:41,010
+All right.
+
+11
+00:00:41,010 --> 00:00:44,030
+So you know we get our product and then decide that right.
+
+12
+00:00:44,250 --> 00:00:48,580
+So we need to import a lot of more things we need to form fields remember.
+
+13
+00:00:48,720 --> 00:00:50,710
+So I'm going to say important.
+
+14
+00:00:51,240 --> 00:00:54,510
+And actually we can we can just save time right here.
+
+15
+00:00:54,630 --> 00:01:02,050
+Remember that we have some form fields on other parts of the application maybe we have the other log
+
+16
+00:01:02,050 --> 00:01:04,020
+in of course or the register.
+
+17
+00:01:04,120 --> 00:01:10,240
+So if you go to we're just log in and then you go to register you have it right here.
+
+18
+00:01:10,360 --> 00:01:13,240
+So I'm going to copy this because we can really use it.
+
+19
+00:01:13,300 --> 00:01:15,230
+So I'm going to add products and paste it.
+
+20
+00:01:15,370 --> 00:01:17,920
+Of course they are not on the same place.
+
+21
+00:01:17,950 --> 00:01:25,370
+There are going to be inside one more data that forward slash and I'm going to do it right here.
+
+22
+00:01:25,940 --> 00:01:28,770
+One two or three up and there we go.
+
+23
+00:01:29,480 --> 00:01:36,230
+So then we of course would need to import connect import connect because we're going to be dispatching
+
+24
+00:01:36,230 --> 00:01:37,290
+actions of course.
+
+25
+00:01:37,430 --> 00:01:42,590
+And remember that we are entering products and they need woods and they need brands.
+
+26
+00:01:42,620 --> 00:01:45,590
+So we need to import the list of brands.
+
+27
+00:01:45,800 --> 00:01:50,830
+So I'm going to say good brand remember that this is the name of the function.
+
+28
+00:01:51,050 --> 00:01:58,520
+I'm going to just double check it going to go to actions product actions and we have the category which
+
+29
+00:01:58,520 --> 00:01:59,580
+is get brands.
+
+30
+00:01:59,590 --> 00:01:59,920
+Right.
+
+31
+00:01:59,930 --> 00:02:06,170
+So that's one that when he's done and then we have to get woods so so get puts coma and we're going
+
+32
+00:02:06,170 --> 00:02:07,520
+to have a one more.
+
+33
+00:02:07,700 --> 00:02:09,650
+But we're going to do it at the end.
+
+34
+00:02:09,710 --> 00:02:15,020
+It's going to be the dead dispatch of actually publishing you know storing everything on the database.
+
+35
+00:02:15,020 --> 00:02:19,630
+So we go to actions and that product actions right.
+
+36
+00:02:19,640 --> 00:02:22,130
+We are always done right here at the top.
+
+37
+00:02:22,190 --> 00:02:27,310
+Of course we need to we have connect we need to operate the components.
+
+38
+00:02:27,830 --> 00:02:34,430
+So connect open and close and begin to add the product.
+
+39
+00:02:34,430 --> 00:02:35,020
+All right.
+
+40
+00:02:35,120 --> 00:02:37,000
+We're going to do my Up-State props.
+
+41
+00:02:37,070 --> 00:02:37,910
+We could use it.
+
+42
+00:02:37,970 --> 00:02:46,130
+So I'm going to say map state to prop's own prompts and we're going to use the products and then we
+
+43
+00:02:46,130 --> 00:02:51,640
+bring state products and begin to put it right here.
+
+44
+00:02:51,650 --> 00:02:52,500
+All right.
+
+45
+00:02:53,030 --> 00:02:56,160
+So pretty much done everything that we need to import.
+
+46
+00:02:56,420 --> 00:03:00,320
+Now the first thing of course it's the state of the forum right.
+
+47
+00:03:00,320 --> 00:03:02,090
+We need to do a lot of things right here.
+
+48
+00:03:02,270 --> 00:03:07,810
+So we're going to go to the top and say state opening close.
+
+49
+00:03:08,000 --> 00:03:09,750
+So we have the form error.
+
+50
+00:03:09,920 --> 00:03:13,210
+So this one will be false at the beginning.
+
+51
+00:03:13,340 --> 00:03:21,280
+Then we have the form success you know form success and then again it's false coma.
+
+52
+00:03:21,410 --> 00:03:25,180
+And then we have our form data right.
+
+53
+00:03:25,280 --> 00:03:29,510
+So the form data will have many many things.
+
+54
+00:03:29,540 --> 00:03:37,760
+Ryan will have a name and are going to go again to register and copy the name because they are very
+
+55
+00:03:37,850 --> 00:03:40,010
+very similar if not the same.
+
+56
+00:03:40,250 --> 00:03:42,090
+So we still have an input.
+
+57
+00:03:42,110 --> 00:03:44,200
+We do have a value right.
+
+58
+00:03:44,210 --> 00:03:47,350
+We have a name a type and a placeholder.
+
+59
+00:03:47,360 --> 00:03:52,670
+And if you remember maybe on the previous project with the label thing.
+
+60
+00:03:52,670 --> 00:03:53,990
+So we're going to do it right now.
+
+61
+00:03:53,990 --> 00:04:02,470
+Again we're going to still do this so we can add a label and we're going to say product name right.
+
+62
+00:04:02,510 --> 00:04:08,400
+I don't remember we added this but if we don't we don't have it we can add it just very simple anyways.
+
+63
+00:04:08,690 --> 00:04:12,930
+So we have we still have ballot touch validation message.
+
+64
+00:04:12,950 --> 00:04:18,330
+And remember that to show the label we need one more prop which is show label.
+
+65
+00:04:18,530 --> 00:04:22,250
+And this one will be set true because we want to show the label.
+
+66
+00:04:22,730 --> 00:04:23,170
+Okay.
+
+67
+00:04:23,210 --> 00:04:27,440
+We have more things going to copy name go at the bottom.
+
+68
+00:04:27,710 --> 00:04:29,360
+And this one is going to be the description.
+
+69
+00:04:29,360 --> 00:04:40,580
+So this Christian Right and this one will be a text area so text area and this one product description.
+
+70
+00:04:40,580 --> 00:04:44,700
+The this one description input Yeah.
+
+71
+00:04:45,680 --> 00:04:46,620
+All right.
+
+72
+00:04:46,970 --> 00:04:49,790
+It's going to be just Stillwell type text does matter.
+
+73
+00:04:49,880 --> 00:04:58,640
+And then add your description validation is going to be required Matt it is still touch and show level
+
+74
+00:04:58,640 --> 00:04:59,650
+will be true.
+
+75
+00:04:59,930 --> 00:05:00,400
+All right.
+
+76
+00:05:00,710 --> 00:05:02,740
+I'm going to copy the one that has the name.
+
+77
+00:05:02,750 --> 00:05:07,460
+So we're going to copy the name and I'm going to go right here at the bottom and I'm going to close
+
+78
+00:05:07,460 --> 00:05:11,230
+this because they bother me right now.
+
+79
+00:05:11,540 --> 00:05:13,150
+So this one will be the price.
+
+80
+00:05:13,160 --> 00:05:14,780
+What is the price of the guitar.
+
+81
+00:05:14,880 --> 00:05:20,240
+So input product price and then price.
+
+82
+00:05:20,240 --> 00:05:24,610
+All right then the type is going to be number right.
+
+83
+00:05:24,620 --> 00:05:26,330
+And you can do this on your own.
+
+84
+00:05:26,420 --> 00:05:27,730
+Right.
+
+85
+00:05:28,610 --> 00:05:31,590
+And the price then valid.
+
+86
+00:05:31,760 --> 00:05:34,680
+Everything is the same and show Leavell true.
+
+87
+00:05:34,850 --> 00:05:39,280
+All right then we have a brand and right here we have a different element.
+
+88
+00:05:39,800 --> 00:05:46,430
+So with the brand just like this instead of unempowered it's going to be a select begin to load all
+
+89
+00:05:46,430 --> 00:05:48,500
+the brands right here.
+
+90
+00:05:48,500 --> 00:05:50,550
+So this one will be a select.
+
+91
+00:05:50,600 --> 00:05:51,650
+We don't have a select.
+
+92
+00:05:51,650 --> 00:05:53,960
+We're going to create it in a couple of minutes.
+
+93
+00:05:54,200 --> 00:05:58,550
+So brand and then brand input right.
+
+94
+00:05:58,550 --> 00:06:02,000
+That type is going to be whatever Actually we don't need a tiebreak here.
+
+95
+00:06:02,210 --> 00:06:05,760
+And the placeholder we don't really need a placeholder.
+
+96
+00:06:05,990 --> 00:06:07,080
+So there we go.
+
+97
+00:06:07,580 --> 00:06:08,170
+OK.
+
+98
+00:06:08,600 --> 00:06:12,890
+So now what we need in this one is going to be the options.
+
+99
+00:06:12,950 --> 00:06:18,890
+So the options is going to start as an empty array but much later we going to fetch the brands and then
+
+100
+00:06:18,890 --> 00:06:23,930
+we're going to inject the brand so we can pretty much update the state of options inside brand.
+
+101
+00:06:24,260 --> 00:06:24,860
+All right.
+
+102
+00:06:24,860 --> 00:06:26,710
+The validation is still required.
+
+103
+00:06:26,720 --> 00:06:28,470
+Show level 2 everything else.
+
+104
+00:06:28,620 --> 00:06:30,420
+It's just the same.
+
+105
+00:06:30,630 --> 00:06:32,640
+Now I'm going to copy the brand.
+
+106
+00:06:33,450 --> 00:06:37,500
+We go right here at the bottom and then we have the I have the shipping.
+
+107
+00:06:37,710 --> 00:06:39,330
+So the shipping it's pretty simple.
+
+108
+00:06:39,330 --> 00:06:44,370
+We don't need to load information inside of the options.
+
+109
+00:06:44,400 --> 00:06:45,740
+We can just add it right here.
+
+110
+00:06:45,860 --> 00:06:52,820
+So I'm going to say shipping this is still select and it's product shipping or could be just shipping
+
+111
+00:06:53,910 --> 00:07:01,020
+right and then shipping impot now options are going at it right here.
+
+112
+00:07:01,040 --> 00:07:02,160
+We're going to open it close.
+
+113
+00:07:02,240 --> 00:07:07,120
+And if you remember we have a key a coma and then we have a value right.
+
+114
+00:07:07,130 --> 00:07:11,110
+This is what we used in the previous project where we're going to do the same thing right here.
+
+115
+00:07:11,330 --> 00:07:13,270
+So we have a key and a value of.
+
+116
+00:07:13,370 --> 00:07:15,510
+Yes.
+
+117
+00:07:16,460 --> 00:07:24,450
+And unmangled it goes we are using of course the true false type of Moul you know we're using booleans.
+
+118
+00:07:24,650 --> 00:07:29,200
+So this one is going to be false and this one no.
+
+119
+00:07:29,480 --> 00:07:32,380
+All right everything good the still required.
+
+120
+00:07:32,390 --> 00:07:34,360
+And we will show the label.
+
+121
+00:07:34,550 --> 00:07:35,690
+All right.
+
+122
+00:07:35,750 --> 00:07:36,960
+Next.
+
+123
+00:07:36,960 --> 00:07:40,250
+So the next one is going to be if it's available or not.
+
+124
+00:07:40,580 --> 00:07:45,420
+So I'm going to go right here and the available key is going to him is going to.
+
+125
+00:07:45,470 --> 00:07:49,920
+Right now we are not really using it on the products but when we go to the.
+
+126
+00:07:50,060 --> 00:07:51,750
+Let me just go right here.
+
+127
+00:07:52,130 --> 00:07:57,020
+Well of course we are doing it when we go right here and we go to the product.
+
+128
+00:07:57,140 --> 00:08:00,970
+It says Free Shipping and Return and none available preorder only.
+
+129
+00:08:01,080 --> 00:08:09,010
+So you know just that detail is something that you might have on real life of a level we call it available.
+
+130
+00:08:09,010 --> 00:08:10,290
+We're going to check later anyways.
+
+131
+00:08:10,460 --> 00:08:20,060
+So it's a small select and available and it's dark and of course this one will be available to copy
+
+132
+00:08:20,110 --> 00:08:22,310
+from here and paste it here.
+
+133
+00:08:22,760 --> 00:08:24,790
+And again this one will be the same key.
+
+134
+00:08:24,800 --> 00:08:26,990
+True false yes no.
+
+135
+00:08:27,060 --> 00:08:28,030
+Right.
+
+136
+00:08:28,550 --> 00:08:29,810
+It's a validation.
+
+137
+00:08:29,810 --> 00:08:31,790
+Everything else is just the same.
+
+138
+00:08:31,790 --> 00:08:34,710
+Then we have the wood and the wood again.
+
+139
+00:08:35,030 --> 00:08:36,160
+It's just like this.
+
+140
+00:08:36,250 --> 00:08:38,410
+I'm going to copy and paste it.
+
+141
+00:08:38,480 --> 00:08:40,050
+I'm going to say a word.
+
+142
+00:08:40,680 --> 00:08:45,540
+So I still select and then word material.
+
+143
+00:08:45,560 --> 00:08:49,110
+Now this one actually is kind of a fake with guitars.
+
+144
+00:08:49,520 --> 00:08:53,090
+I'm not sure if I told you already of this guitar guitars you might have.
+
+145
+00:08:53,090 --> 00:08:56,480
+Of course any time which one word that could happen.
+
+146
+00:08:56,630 --> 00:09:03,190
+But most of the times that guitar guitars are made of different words sometimes most of the times.
+
+147
+00:09:03,250 --> 00:09:03,610
+Could have.
+
+148
+00:09:03,680 --> 00:09:08,260
+You could get a guitar completely made in mahogany for example.
+
+149
+00:09:08,300 --> 00:09:08,870
+I get it.
+
+150
+00:09:09,050 --> 00:09:14,950
+Meanwhile do this in mahogany but most of the times you just get a guitar.
+
+151
+00:09:15,050 --> 00:09:19,610
+And of course we will load the words from the server so we can leave this empty.
+
+152
+00:09:19,610 --> 00:09:24,790
+You're going to get a guitar with a buddy of basswood and a neck of mahogany or something like that.
+
+153
+00:09:24,800 --> 00:09:26,630
+You know most of the times you get a mix.
+
+154
+00:09:26,930 --> 00:09:28,720
+So next one it's the frets.
+
+155
+00:09:28,790 --> 00:09:35,940
+Now with the frets we pretty much have another select but this one we just need to fix.
+
+156
+00:09:36,380 --> 00:09:38,270
+Put the hard coded information right here.
+
+157
+00:09:38,270 --> 00:09:42,950
+You are not going to load everything from the server because we just have about three four options.
+
+158
+00:09:42,950 --> 00:09:44,160
+It's really simple.
+
+159
+00:09:44,180 --> 00:09:53,410
+So this one will be Fretz And of course instead of wood it's going to be Fretz and we are almost done.
+
+160
+00:09:53,420 --> 00:10:01,280
+We are almost done and we are using the key value person going to copy this and paste it right here
+
+161
+00:10:01,670 --> 00:10:04,190
+and say a key of number in this case.
+
+162
+00:10:04,340 --> 00:10:08,240
+So we have 21 Fretz which is very uncommon.
+
+163
+00:10:08,240 --> 00:10:12,770
+We have 22 Freda's 22 frets.
+
+164
+00:10:13,100 --> 00:10:19,870
+And then we have 24 guitars with 23 frets that doesn't exist.
+
+165
+00:10:22,530 --> 00:10:30,350
+So 20 and 20 Why 24 frets is the longest because it's two octaves.
+
+166
+00:10:30,500 --> 00:10:31,010
+That's it.
+
+167
+00:10:31,020 --> 00:10:33,750
+That's really why so OCHA.
+
+168
+00:10:33,920 --> 00:10:37,990
+So we have Fretz select frets frets and put everything else.
+
+169
+00:10:38,050 --> 00:10:39,460
+It's just the same right.
+
+170
+00:10:39,740 --> 00:10:45,170
+And the last actually we have two more but we are not going to do the last one because it's the images.
+
+171
+00:10:45,170 --> 00:10:49,070
+I mean going to do that at the end is the public the public option.
+
+172
+00:10:49,070 --> 00:10:52,970
+So I'm going to copy the one that's available because we have a yes no value.
+
+173
+00:10:53,330 --> 00:10:58,160
+So we're going to paste it here and say publish.
+
+174
+00:10:58,530 --> 00:10:59,360
+Remember this one.
+
+175
+00:10:59,360 --> 00:11:06,390
+This is the one we use to show the product or not are not to common users.
+
+176
+00:11:06,560 --> 00:11:13,170
+So publish and then publish then the key is still true false.
+
+177
+00:11:13,280 --> 00:11:19,150
+But we can say instead of yes we can say public and then hidden.
+
+178
+00:11:19,730 --> 00:11:20,660
+All right.
+
+179
+00:11:20,660 --> 00:11:24,440
+Still the show labels just same everything else the same.
+
+180
+00:11:24,740 --> 00:11:25,750
+A lot of things.
+
+181
+00:11:25,880 --> 00:11:26,750
+All right.
+
+182
+00:11:26,750 --> 00:11:34,350
+So let's let's include the form fields right here for all of this feels write so let's do the form fields
+
+183
+00:11:34,560 --> 00:11:35,940
+and I made a mistake right here at the top.
+
+184
+00:11:35,940 --> 00:11:37,980
+Maybe you noticed and I didn't.
+
+185
+00:11:38,070 --> 00:11:40,490
+So it's re-act redux.
+
+186
+00:11:41,010 --> 00:11:43,390
+That's why nothing is working right here.
+
+187
+00:11:43,710 --> 00:11:47,510
+So let's of course reload and we should be getting something at least.
+
+188
+00:11:47,520 --> 00:11:47,830
+OK.
+
+189
+00:11:47,830 --> 00:11:48,940
+So that is good.
+
+190
+00:11:49,330 --> 00:11:52,430
+Again just like with the Before we go we're here we don't need it.
+
+191
+00:11:52,440 --> 00:11:58,240
+And you know that this exists at this point this is this should be very very familiar to you.
+
+192
+00:11:58,240 --> 00:12:03,390
+So I'm going to close it because you know it's a lot of information and I don't like it.
+
+193
+00:12:03,390 --> 00:12:06,310
+So I'm going to go inside.
+
+194
+00:12:06,450 --> 00:12:08,110
+We're of course going to delete everything.
+
+195
+00:12:08,250 --> 00:12:14,960
+I'm going to put a wrapper div and inside just an 8 one stack the form it's not really that complicated
+
+196
+00:12:14,970 --> 00:12:16,400
+it's real simple.
+
+197
+00:12:16,490 --> 00:12:19,070
+That was what I did it this way on purpose.
+
+198
+00:12:19,110 --> 00:12:23,990
+You know so we can spend less time doing layouts.
+
+199
+00:12:24,930 --> 00:12:29,120
+So we have a form we have an ounce of met just like before.
+
+200
+00:12:29,250 --> 00:12:31,100
+So the answer met again.
+
+201
+00:12:31,470 --> 00:12:32,760
+We open and close.
+
+202
+00:12:32,910 --> 00:12:34,540
+We pass the event.
+
+203
+00:12:34,690 --> 00:12:35,710
+So just like this.
+
+204
+00:12:35,820 --> 00:12:44,550
+And then we just create a function that calls the submit forms of meant submit and then form right.
+
+205
+00:12:44,640 --> 00:12:47,100
+Then of course we pass the event.
+
+206
+00:12:47,100 --> 00:12:49,430
+Same same same as always.
+
+207
+00:12:49,530 --> 00:12:50,190
+All right.
+
+208
+00:12:50,460 --> 00:12:53,660
+So now instead of here we just start adding inputs.
+
+209
+00:12:53,940 --> 00:12:56,490
+So I'm going to go to predict actions.
+
+210
+00:12:56,520 --> 00:13:01,870
+No I'm going to go to register and I'm going to copy one of the form fields so we don't have to type
+
+211
+00:13:02,200 --> 00:13:03,210
+type it again.
+
+212
+00:13:03,270 --> 00:13:05,880
+I'm going to copy the form name on it.
+
+213
+00:13:05,990 --> 00:13:09,700
+I'm going to go to for Maime paste right.
+
+214
+00:13:09,740 --> 00:13:13,350
+Let me do this first form of selection.
+
+215
+00:13:13,350 --> 00:13:14,150
+All right.
+
+216
+00:13:14,580 --> 00:13:20,490
+So OK so the form fields just in this case it's just a name right.
+
+217
+00:13:20,490 --> 00:13:21,220
+Just like this.
+
+218
+00:13:21,300 --> 00:13:23,800
+Name form date a name and then the element.
+
+219
+00:13:23,910 --> 00:13:27,900
+So that one we are get later right here at the top right here.
+
+220
+00:13:27,960 --> 00:13:30,550
+We will be adding the image file a file upload.
+
+221
+00:13:30,570 --> 00:13:31,990
+But for now this is good.
+
+222
+00:13:32,120 --> 00:13:32,590
+OK.
+
+223
+00:13:32,760 --> 00:13:34,850
+So right from the start we have a problem.
+
+224
+00:13:35,010 --> 00:13:35,880
+We didn't have.
+
+225
+00:13:35,940 --> 00:13:37,490
+And let me just do the log in
+
+226
+00:13:41,620 --> 00:13:42,520
+right from the start.
+
+227
+00:13:42,520 --> 00:13:46,710
+We didn't have the attack names so we need to add them right.
+
+228
+00:13:46,800 --> 00:13:47,340
+OK.
+
+229
+00:13:47,560 --> 00:13:54,130
+So if you remember this it's inside you tells form form fields right here.
+
+230
+00:13:54,250 --> 00:13:59,350
+So we need to start adding the the tax form here and then the next section maybe I'm not I'm not sure
+
+231
+00:13:59,470 --> 00:14:05,440
+we're going to do it right now but on the next section we need to add all the select and the text area.
+
+232
+00:14:05,440 --> 00:14:08,620
+Remember that now we have a select and we have a text area.
+
+233
+00:14:08,650 --> 00:14:10,290
+So we need to use them.
+
+234
+00:14:10,360 --> 00:14:16,420
+So I'm going to go to below the foreign block opening close and going to say okay if we have a form
+
+235
+00:14:16,420 --> 00:14:24,880
+data that show a label on here not a capital L label then of course we want to display something if
+
+236
+00:14:24,880 --> 00:14:25,710
+not no.
+
+237
+00:14:25,900 --> 00:14:34,270
+So what we do we just pass a div with a class the class name it's called to label inputs.
+
+238
+00:14:35,110 --> 00:14:42,640
+And inside we would just put the form data so form data that config dot whatever we are passing to the
+
+239
+00:14:42,640 --> 00:14:43,820
+label.
+
+240
+00:14:43,930 --> 00:14:45,960
+So we load it.
+
+241
+00:14:46,480 --> 00:14:47,350
+Oh sorry.
+
+242
+00:14:47,360 --> 00:14:48,790
+There's one problem with this.
+
+243
+00:14:48,790 --> 00:14:51,630
+And the store is just keep logging me out.
+
+244
+00:14:51,640 --> 00:14:52,480
+That's OK.
+
+245
+00:14:52,960 --> 00:14:57,800
+So we have the password one two three.
+
+246
+00:14:58,410 --> 00:14:58,750
+OK.
+
+247
+00:14:58,790 --> 00:15:01,620
+That is get so we get we get the tag.
+
+248
+00:15:01,630 --> 00:15:02,500
+So all right.
+
+249
+00:15:02,500 --> 00:15:04,490
+So that works.
+
+250
+00:15:04,480 --> 00:15:06,790
+So OK so let's keep keep moving forward.
+
+251
+00:15:06,790 --> 00:15:09,010
+We do have a select ride.
+
+252
+00:15:09,280 --> 00:15:10,780
+So let's do the select right now.
+
+253
+00:15:10,780 --> 00:15:11,910
+I don't know if we have time.
+
+254
+00:15:12,040 --> 00:15:17,510
+Now it's already too long so let's go to the next section and begin at the select and the text area.
+

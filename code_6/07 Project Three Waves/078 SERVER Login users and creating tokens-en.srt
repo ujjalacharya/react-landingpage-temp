@@ -1,0 +1,1408 @@
+1
+00:00:01,110 --> 00:00:03,790
+OK so now we need to read the log in route.
+
+2
+00:00:03,840 --> 00:00:08,460
+Of course the users are going to log in with their e-mail and their passport.
+
+3
+00:00:08,460 --> 00:00:09,030
+All right.
+
+4
+00:00:09,030 --> 00:00:10,770
+We don't have this route.
+
+5
+00:00:10,830 --> 00:00:12,480
+So we need to create it first.
+
+6
+00:00:12,570 --> 00:00:14,120
+So I'm going to go right here.
+
+7
+00:00:14,190 --> 00:00:21,150
+The bottom just at the bottom and I'm going to say app just like this and I'm going to use post y post
+
+8
+00:00:21,420 --> 00:00:23,740
+because they need to send the user and the password.
+
+9
+00:00:23,780 --> 00:00:26,230
+We could use get but you know I'm going to use Cox.
+
+10
+00:00:26,610 --> 00:00:31,620
+So app API for Flash users same thing than before.
+
+11
+00:00:31,650 --> 00:00:35,050
+But this time it's going to be log in now when they log in.
+
+12
+00:00:35,070 --> 00:00:40,140
+Of course we have our callback with a request and our response so we're going to do this.
+
+13
+00:00:40,140 --> 00:00:42,330
+A lot of time times.
+
+14
+00:00:42,400 --> 00:00:44,220
+So we need to do three things.
+
+15
+00:00:44,220 --> 00:00:47,190
+First find the e-mail.
+
+16
+00:00:47,190 --> 00:00:51,590
+So if the e-mail of the user it's not on the database it means that the user is not registered.
+
+17
+00:00:51,600 --> 00:00:54,370
+So we're going to say do you need to register it.
+
+18
+00:00:54,480 --> 00:01:00,950
+So if the e-mail is on the database we can grab the password and check the password right.
+
+19
+00:01:00,960 --> 00:01:02,540
+That's the next step.
+
+20
+00:01:02,550 --> 00:01:07,590
+So if the password they are entering they're giving us matches the one we have on the database because
+
+21
+00:01:07,590 --> 00:01:09,010
+they are already registered.
+
+22
+00:01:09,080 --> 00:01:12,550
+We're going to let the user end if not begin to kick the user out.
+
+23
+00:01:12,570 --> 00:01:17,480
+And finally if the passwords and the email are correct we can generate a new token.
+
+24
+00:01:17,520 --> 00:01:20,630
+So we generate raid a token.
+
+25
+00:01:20,820 --> 00:01:21,160
+Right.
+
+26
+00:01:21,240 --> 00:01:24,210
+So we need to complete three different steps.
+
+27
+00:01:24,210 --> 00:01:25,580
+First is the e-mail.
+
+28
+00:01:25,580 --> 00:01:26,550
+So we're going to do this.
+
+29
+00:01:26,580 --> 00:01:27,650
+We don't need it.
+
+30
+00:01:27,660 --> 00:01:28,810
+So first is the e-mail.
+
+31
+00:01:28,980 --> 00:01:35,170
+So whenever the Antar going to be passing an e-mail and a password so we can use that user we brought
+
+32
+00:01:35,530 --> 00:01:37,620
+the top this user model.
+
+33
+00:01:37,620 --> 00:01:44,640
+We're going to enter there and we're going to try to find the user on the database and to do this we
+
+34
+00:01:44,640 --> 00:01:49,030
+use the method find one opening close.
+
+35
+00:01:49,170 --> 00:01:50,100
+Now find one.
+
+36
+00:01:50,100 --> 00:01:54,060
+Of course needs to needs to know what is going to be searching for it.
+
+37
+00:01:54,240 --> 00:01:58,000
+So in this case begin to search the e-mail of the user on the database.
+
+38
+00:01:58,170 --> 00:01:59,670
+And where do we have the e-mail.
+
+39
+00:01:59,730 --> 00:02:03,790
+Well we're going to be we are doing a post and we will be receiving some Jason.
+
+40
+00:02:03,930 --> 00:02:11,580
+So we have it just like here on their request that body so request that body that e-mail.
+
+41
+00:02:11,620 --> 00:02:12,410
+All right.
+
+42
+00:02:12,720 --> 00:02:18,780
+After this of course we need to run a function the callback function and this function will contain
+
+43
+00:02:18,840 --> 00:02:19,500
+an error.
+
+44
+00:02:19,530 --> 00:02:23,450
+Let me go back with one an error or the actual user.
+
+45
+00:02:23,450 --> 00:02:26,610
+So if it's not finding anything it will give us back an error.
+
+46
+00:02:26,790 --> 00:02:29,300
+If not is going to give us back a user.
+
+47
+00:02:29,310 --> 00:02:31,870
+Now either way this find one what it does.
+
+48
+00:02:32,070 --> 00:02:35,980
+It's not going to give you actually an error is going to give you no user.
+
+49
+00:02:36,000 --> 00:02:40,570
+If we cannot find a user or is going to give you the actual user data back.
+
+50
+00:02:40,740 --> 00:02:41,830
+So what we can do.
+
+51
+00:02:41,840 --> 00:02:43,710
+We're not going to use the air right now.
+
+52
+00:02:43,740 --> 00:02:48,090
+We should add it but you're not going to do it right now just to keep it simple.
+
+53
+00:02:48,150 --> 00:02:57,460
+So if no user begin to return responds that Jaison and we can send something back.
+
+54
+00:02:57,720 --> 00:03:03,430
+So we're going to say log in success just like this log in success.
+
+55
+00:03:03,600 --> 00:03:08,520
+And this one is going to be equal to false because you know that the user is not able to log in.
+
+56
+00:03:08,520 --> 00:03:14,280
+We are not finding the user back and we're going to say message and we're going to display the message
+
+57
+00:03:14,280 --> 00:03:15,150
+on screen.
+
+58
+00:03:15,180 --> 00:03:21,890
+So our failed e-mail not found very good.
+
+59
+00:03:22,200 --> 00:03:25,520
+So out of there we go.
+
+60
+00:03:25,710 --> 00:03:30,270
+So of course if we are not able to find the user We're going to go to this scenario.
+
+61
+00:03:30,270 --> 00:03:35,550
+Now if we are able to find the user the application will not enter this and it's going to go to the
+
+62
+00:03:35,550 --> 00:03:37,450
+next step of checking.
+
+63
+00:03:37,470 --> 00:03:42,720
+Now what we need to do is we need to compare the passports and for this of course we need the database
+
+64
+00:03:42,720 --> 00:03:43,240
+again.
+
+65
+00:03:43,440 --> 00:03:50,780
+But we also need for this big crypt we need to grab the password they are giving us in this case pass
+
+66
+00:03:50,880 --> 00:03:57,960
+2:59 we need to compared the one with the hash one they have on the database and check if they match.
+
+67
+00:03:58,020 --> 00:04:00,090
+And again for this when we need decrypt.
+
+68
+00:04:00,120 --> 00:04:07,170
+So what I'm going to do are going to create a method inside of this so we can add methods to two Mongul
+
+69
+00:04:07,170 --> 00:04:12,230
+D-B and use them inside of schema and use them with a server request.
+
+70
+00:04:12,420 --> 00:04:18,170
+So I'm going to go right here at the bottom and we need to create a method to compare a password.
+
+71
+00:04:18,180 --> 00:04:24,330
+So first just like with that before we use that user schema I'm going to enter and add a methods and
+
+72
+00:04:24,330 --> 00:04:27,970
+then the name of the method compare passport.
+
+73
+00:04:27,990 --> 00:04:30,370
+And this one could be whatever you want.
+
+74
+00:04:30,420 --> 00:04:34,290
+Ryan kind of makes sense that it's a compair password.
+
+75
+00:04:34,290 --> 00:04:39,030
+Now compare passport it's going to be just a function that it's going to do something.
+
+76
+00:04:39,300 --> 00:04:47,220
+Now this will receive two different arguments to candidate password just like this.
+
+77
+00:04:47,220 --> 00:04:52,450
+Let me do it a capital P the candidate passport and then a callback function.
+
+78
+00:04:52,620 --> 00:05:00,150
+So when we are done checking the passport either the passport match or not we will run a function which
+
+79
+00:05:00,150 --> 00:05:01,230
+is callback.
+
+80
+00:05:01,400 --> 00:05:05,620
+And of course this call was going to get executed and it's going to go back here.
+
+81
+00:05:05,940 --> 00:05:09,120
+So this Seabee its callback is just a function.
+
+82
+00:05:09,130 --> 00:05:09,850
+All right.
+
+83
+00:05:10,080 --> 00:05:15,890
+So for now we are going to go back to the server and we need to make a reference to this compare passport
+
+84
+00:05:16,140 --> 00:05:21,150
+since we are using user we have user that Methot we just added to the user model.
+
+85
+00:05:21,210 --> 00:05:22,830
+It's already there.
+
+86
+00:05:22,830 --> 00:05:27,240
+So I'm going to go right here and I'm going to make reference to this user.
+
+87
+00:05:27,270 --> 00:05:28,080
+All right.
+
+88
+00:05:28,110 --> 00:05:30,730
+Why am I making a reference to this user.
+
+89
+00:05:30,810 --> 00:05:35,580
+Now the thing is that right now we are connected to the do the model right here and we are finding one
+
+90
+00:05:36,300 --> 00:05:42,530
+whenever this is done it will return this user and this user kind of in the background and this object
+
+91
+00:05:42,570 --> 00:05:47,570
+which is all the data of the user has a lot of things that are connected to this model.
+
+92
+00:05:47,580 --> 00:05:53,500
+So whenever we say user we are sent We're talking about this user and not the whole schema.
+
+93
+00:05:53,640 --> 00:05:55,820
+We are making a reference to this user.
+
+94
+00:05:55,950 --> 00:06:01,020
+So if we make a reference to the user that we come back we can even either get the password or we can
+
+95
+00:06:01,020 --> 00:06:05,990
+access all the methods inside here in reference to that user.
+
+96
+00:06:06,270 --> 00:06:13,740
+So I'm going to say compare password which is the name of the here the name of the method and opening
+
+97
+00:06:13,740 --> 00:06:17,430
+close as it is we are doing this user and not these user.
+
+98
+00:06:17,430 --> 00:06:23,160
+We have all the data the user Mongul divi it's going to know that we're talking about Frances and not
+
+99
+00:06:23,340 --> 00:06:26,830
+some somebody else or maybe the entire schema.
+
+100
+00:06:26,880 --> 00:06:27,470
+OK.
+
+101
+00:06:27,720 --> 00:06:33,450
+So this compare passport and passport expects two different things the passport so we can match it and
+
+102
+00:06:33,450 --> 00:06:34,710
+then a callback function.
+
+103
+00:06:34,710 --> 00:06:35,230
+All right.
+
+104
+00:06:35,400 --> 00:06:41,640
+So compare passport first we need to pass the first argument with this request the body and then the
+
+105
+00:06:41,640 --> 00:06:42,520
+passport.
+
+106
+00:06:42,590 --> 00:06:43,770
+Right.
+
+107
+00:06:43,950 --> 00:06:49,770
+And this requires the body the passport it's this passport the one we are getting from the request and
+
+108
+00:06:49,770 --> 00:06:52,300
+then we need to pass the Colback.
+
+109
+00:06:52,380 --> 00:06:55,010
+And if you remember the callback it's function.
+
+110
+00:06:55,050 --> 00:06:57,340
+So I'm going to do this and this.
+
+111
+00:06:57,600 --> 00:07:02,880
+So again if you notice it's just a callback function it means that when we are done checking we trigger
+
+112
+00:07:02,970 --> 00:07:07,410
+this callback and this function will be executed whatever function that says.
+
+113
+00:07:07,710 --> 00:07:13,410
+So this function at the end is going to get two things could be getting an error and it's going to get
+
+114
+00:07:13,410 --> 00:07:14,660
+something called mismatch.
+
+115
+00:07:14,760 --> 00:07:16,430
+You can call this whatever you want.
+
+116
+00:07:16,430 --> 00:07:20,070
+It's match you know password good or whatever.
+
+117
+00:07:20,490 --> 00:07:25,720
+So match is going to be true or false is going to be true if the passports match.
+
+118
+00:07:25,800 --> 00:07:30,510
+You know they decrypt encrypt it in the past where they're giving us they match on the database and
+
+119
+00:07:30,510 --> 00:07:31,330
+it's going to be false.
+
+120
+00:07:31,360 --> 00:07:34,630
+If of course the passport don't match.
+
+121
+00:07:34,890 --> 00:07:43,080
+So I'm going to create if it's match just like this if the password of course they are wrong we're going
+
+122
+00:07:43,080 --> 00:07:44,500
+to return something.
+
+123
+00:07:44,730 --> 00:07:52,400
+So what I return are going to say return just like we did before a response in a Jason format and I'm
+
+124
+00:07:52,400 --> 00:07:53,650
+going to do something.
+
+125
+00:07:53,780 --> 00:08:01,620
+We're going to add these log in success equals to falls coma and then again a message.
+
+126
+00:08:01,620 --> 00:08:06,900
+But this one is going to be different and it's going to be wrong passport.
+
+127
+00:08:07,230 --> 00:08:07,420
+Right.
+
+128
+00:08:07,450 --> 00:08:09,520
+Because the user accessed the password.
+
+129
+00:08:09,750 --> 00:08:10,470
+It's wrong.
+
+130
+00:08:11,160 --> 00:08:17,890
+All right of course if it's good it's get begin to move forward to the next thing which is generally
+
+131
+00:08:17,890 --> 00:08:18,440
+talking.
+
+132
+00:08:18,580 --> 00:08:24,560
+But first we need to go to a user and check create a function that checks if the password is OK or not
+
+133
+00:08:25,600 --> 00:08:27,610
+so how do you compare the passwords.
+
+134
+00:08:27,760 --> 00:08:30,880
+First we need to use the script that Crypta give us.
+
+135
+00:08:30,970 --> 00:08:33,930
+Just like generating the salt or salt or hashing.
+
+136
+00:08:34,030 --> 00:08:37,750
+They give us a method back so we can compare password rules were simple.
+
+137
+00:08:37,840 --> 00:08:39,480
+So I'm going to go right here.
+
+138
+00:08:39,510 --> 00:08:43,210
+I'm going to say crypt dot then compare.
+
+139
+00:08:43,210 --> 00:08:43,780
+That's it.
+
+140
+00:08:43,780 --> 00:08:44,720
+That is it.
+
+141
+00:08:44,830 --> 00:08:49,570
+And what we take is the candidate password which is the non hashed passport.
+
+142
+00:08:50,140 --> 00:08:53,280
+And what we do we pass the data off the user.
+
+143
+00:08:53,300 --> 00:08:58,150
+Now since we are inside the function we are not inside of a function of a function.
+
+144
+00:08:58,230 --> 00:08:59,830
+We there's no need to do this.
+
+145
+00:08:59,830 --> 00:09:03,950
+We can use this dot and then password.
+
+146
+00:09:04,330 --> 00:09:06,840
+And this is going to be equal to the user password.
+
+147
+00:09:06,880 --> 00:09:07,480
+Right.
+
+148
+00:09:07,660 --> 00:09:08,430
+OK.
+
+149
+00:09:09,250 --> 00:09:15,580
+And coma and what is going to happen after we do all of this after we compare the candidate password
+
+150
+00:09:15,880 --> 00:09:20,020
+and the password that we have stored on the database which is this one.
+
+151
+00:09:20,020 --> 00:09:21,710
+All right we need to run a function.
+
+152
+00:09:21,820 --> 00:09:24,490
+So a function opening close.
+
+153
+00:09:24,910 --> 00:09:30,160
+And if you remember this function will be returning an error and is a match.
+
+154
+00:09:30,340 --> 00:09:36,790
+So what we do we pass the error and oh sorry error and coma is match.
+
+155
+00:09:36,790 --> 00:09:44,320
+Now if we do get an hour we're going to say error and are going to return the call back with the actual
+
+156
+00:09:44,320 --> 00:09:46,760
+error which is not going to really happen.
+
+157
+00:09:47,170 --> 00:09:53,950
+But if we get if you get a response from Decrypter saying that the passport matches are not going to
+
+158
+00:09:53,950 --> 00:09:58,960
+get that error in a it of no we're not going to get really an error.
+
+159
+00:09:59,110 --> 00:10:00,800
+And then we're going to get an S match.
+
+160
+00:10:01,030 --> 00:10:06,630
+So if the password they match this Barville right here this argument's going to be true if they.
+
+161
+00:10:06,710 --> 00:10:07,580
+There is no match.
+
+162
+00:10:07,600 --> 00:10:08,660
+It's going to be false.
+
+163
+00:10:08,800 --> 00:10:11,890
+If you go back to the server we are already checking this.
+
+164
+00:10:12,040 --> 00:10:14,830
+If it's false we do this.
+
+165
+00:10:14,830 --> 00:10:19,160
+But if it's true we can move forward right here and that is it.
+
+166
+00:10:19,540 --> 00:10:23,880
+All right next we need to generate a token.
+
+167
+00:10:23,880 --> 00:10:24,530
+All right.
+
+168
+00:10:24,780 --> 00:10:27,410
+So again we need to create a method for this.
+
+169
+00:10:27,510 --> 00:10:32,080
+So we're going to just created right now are going to make a reference to user dot.
+
+170
+00:10:32,100 --> 00:10:34,190
+And again the user is the same user.
+
+171
+00:10:34,200 --> 00:10:38,850
+So Bungo divvies going to know which user to check.
+
+172
+00:10:39,090 --> 00:10:39,600
+Right.
+
+173
+00:10:39,780 --> 00:10:45,010
+So my function is going to be called generated token opening close.
+
+174
+00:10:45,030 --> 00:10:48,730
+So again after we run this we will run a callback.
+
+175
+00:10:48,780 --> 00:10:51,920
+So with an error and then a user.
+
+176
+00:10:51,950 --> 00:10:52,770
+All right.
+
+177
+00:10:53,070 --> 00:10:56,650
+So let me make this a little bit nicer.
+
+178
+00:10:57,150 --> 00:10:58,170
+So we don't have this function.
+
+179
+00:10:58,190 --> 00:10:59,370
+We're going to create it right now.
+
+180
+00:10:59,380 --> 00:11:05,400
+We're going to go this method actually going to go right here make a reference to user schema to add
+
+181
+00:11:05,490 --> 00:11:07,630
+methods and then generate token.
+
+182
+00:11:07,650 --> 00:11:16,210
+And it's going to be just a function opening close Virga So now on this one since everything is OK and
+
+183
+00:11:16,210 --> 00:11:22,630
+we have the user id the user data the passwords and everything else we need to generate a new token
+
+184
+00:11:23,220 --> 00:11:23,720
+now.
+
+185
+00:11:23,830 --> 00:11:29,920
+Right here at the top we are not importing anything to generate tokens so we need to bring it in if
+
+186
+00:11:29,920 --> 00:11:35,320
+I go to a package that Chaisson have it right here we are including Jason weap token.
+
+187
+00:11:35,320 --> 00:11:35,850
+All right.
+
+188
+00:11:36,160 --> 00:11:44,170
+So going to go and say Konst date w t short for Jason Webb token and then require opening close and
+
+189
+00:11:44,200 --> 00:11:44,980
+Jason.
+
+190
+00:11:45,020 --> 00:11:48,040
+Well tokin OK.
+
+191
+00:11:48,380 --> 00:11:49,640
+Now.
+
+192
+00:11:49,840 --> 00:11:54,070
+Sorry I was going to add something but I'm going to add it in a couple minutes because if not you're
+
+193
+00:11:54,070 --> 00:11:55,110
+not going to get it.
+
+194
+00:11:55,170 --> 00:11:56,500
+You're not going to get one.
+
+195
+00:11:56,900 --> 00:11:57,370
+OK.
+
+196
+00:11:57,430 --> 00:12:02,140
+So now we have this library this dependency so we can generate tokens.
+
+197
+00:12:02,290 --> 00:12:03,270
+How this works.
+
+198
+00:12:03,280 --> 00:12:10,620
+Again I'm going to make an alias of user and say this because we need to use it inside of a function.
+
+199
+00:12:10,690 --> 00:12:12,790
+So user now it's equal to this.
+
+200
+00:12:12,910 --> 00:12:19,400
+So the application will know which user then we need to generate a token token it's equal to.
+
+201
+00:12:19,510 --> 00:12:25,770
+And then we use that JWT we've imported at the top and the how can we get generally token.
+
+202
+00:12:25,810 --> 00:12:35,440
+We use a sign now sign needs several arguments and how some web token work is that they take something
+
+203
+00:12:35,440 --> 00:12:39,190
+of you user could be the user id let me write something here.
+
+204
+00:12:39,400 --> 00:12:45,280
+They take the user id just like this and they generate a token which is kind of a hash.
+
+205
+00:12:45,280 --> 00:12:47,140
+It's a very long strings.
+
+206
+00:12:47,160 --> 00:12:48,680
+They code this right.
+
+207
+00:12:48,700 --> 00:12:50,050
+It's a encryption.
+
+208
+00:12:50,180 --> 00:12:50,910
+All right.
+
+209
+00:12:51,130 --> 00:12:58,030
+So the thing is that the a web token we just need we would not use Cester user ID to generate the token
+
+210
+00:12:58,360 --> 00:13:04,630
+what we do we generate a token based on this string which is the ID plus a password.
+
+211
+00:13:04,750 --> 00:13:11,080
+And this is not the password of the user is our passport the password of the environment we need to
+
+212
+00:13:11,080 --> 00:13:19,430
+set a super secret password that the server is going to only know again what we can do.
+
+213
+00:13:19,450 --> 00:13:24,100
+We can use this M-B file we can use dot and B.
+
+214
+00:13:24,250 --> 00:13:30,040
+So we're going to go to that M-B and we can add a secret password later when we send this to production
+
+215
+00:13:30,040 --> 00:13:31,650
+to Heroku for example.
+
+216
+00:13:31,750 --> 00:13:37,040
+We need to go to the environment variables of the server and add the super secret password.
+
+217
+00:13:37,270 --> 00:13:41,260
+So right now are going to do something very simple are going to say supersecret password which are three
+
+218
+00:13:41,680 --> 00:13:43,500
+of course of course in real life.
+
+219
+00:13:43,780 --> 00:13:46,610
+You need to do something more challenging than this.
+
+220
+00:13:46,940 --> 00:13:48,870
+So but we have our secret password.
+
+221
+00:13:49,270 --> 00:13:52,300
+Now we need to bring right here at the top.
+
+222
+00:13:52,300 --> 00:14:00,160
+We need to bring that M-B so we can make use of that process that Jambi and password so require opening
+
+223
+00:14:00,160 --> 00:14:00,930
+close.
+
+224
+00:14:00,960 --> 00:14:10,220
+And let me make it right require opening close DOD EMV then data and then Ficke open opening close.
+
+225
+00:14:10,570 --> 00:14:16,190
+So now we can make use of process that M-B that secret secret right here.
+
+226
+00:14:16,450 --> 00:14:17,440
+All right.
+
+227
+00:14:17,440 --> 00:14:24,700
+And then go with the bottom and what we need to do this JWT sign what it needs is what are we going
+
+228
+00:14:24,700 --> 00:14:27,570
+to be using to generate a token ride.
+
+229
+00:14:27,610 --> 00:14:28,080
+OK.
+
+230
+00:14:28,270 --> 00:14:36,700
+So what we do we use the user id so user that underscore Id remember that on Mongo DVH we store the
+
+231
+00:14:36,700 --> 00:14:44,230
+users within the Mungiki be will store an ID of the user with their score ID and then I need to convert
+
+232
+00:14:44,260 --> 00:14:49,760
+this to strings so to has X string and its a method.
+
+233
+00:14:50,600 --> 00:14:51,410
+All right.
+
+234
+00:14:51,550 --> 00:14:55,080
+And then what do we need to do with it to pass the supersecret password.
+
+235
+00:14:55,090 --> 00:15:00,550
+So this is inside process that EMV dot and then secret.
+
+236
+00:15:00,970 --> 00:15:01,590
+All right.
+
+237
+00:15:01,900 --> 00:15:08,740
+So after this function of course this method runs we will get a new token But what we need to do is
+
+238
+00:15:08,740 --> 00:15:14,800
+we need to enter the user and store the token just like with it at the top.
+
+239
+00:15:14,860 --> 00:15:18,160
+We are entering the user and putting the new version of the password.
+
+240
+00:15:18,220 --> 00:15:23,320
+All right here we create a new entry or we enter actually token and we store the token with whatever
+
+241
+00:15:23,320 --> 00:15:25,960
+we get back from JWT.
+
+242
+00:15:25,960 --> 00:15:26,660
+All right.
+
+243
+00:15:26,800 --> 00:15:30,440
+And after this we need to save the token inside of the user.
+
+244
+00:15:30,530 --> 00:15:33,050
+So going to enter user are going to do save.
+
+245
+00:15:33,150 --> 00:15:37,600
+Open and close and then I'm going to run a function.
+
+246
+00:15:37,600 --> 00:15:40,560
+And of course we pass an error.
+
+247
+00:15:41,410 --> 00:15:44,280
+And if everything goes OK we get a user back.
+
+248
+00:15:44,680 --> 00:15:46,470
+Now if we do get an error.
+
+249
+00:15:46,510 --> 00:15:53,240
+So if error we will return open and close the callback that we have at the top.
+
+250
+00:15:53,260 --> 00:15:58,860
+I didn't include this or for this callback begin it pass a callback as an argument with the error.
+
+251
+00:15:59,170 --> 00:16:03,980
+If everything goes OK we will return the same callback with no as an error.
+
+252
+00:16:04,120 --> 00:16:05,900
+But the actual user.
+
+253
+00:16:06,130 --> 00:16:07,070
+As a result.
+
+254
+00:16:07,240 --> 00:16:12,160
+So this version of the user if everything goes OK is going to be pretty much the same thing than this.
+
+255
+00:16:12,280 --> 00:16:14,060
+But with a token.
+
+256
+00:16:14,070 --> 00:16:14,480
+All right.
+
+257
+00:16:14,500 --> 00:16:16,570
+So we will get the token.
+
+258
+00:16:16,570 --> 00:16:19,300
+So if everything goes OK we run this callback.
+
+259
+00:16:19,300 --> 00:16:21,630
+Now we are not doing anything right here on the server.
+
+260
+00:16:21,790 --> 00:16:25,380
+We are just passing this function which is the actual callback.
+
+261
+00:16:25,390 --> 00:16:30,800
+Now when this go this comes back we could get an error or we could get a user.
+
+262
+00:16:30,820 --> 00:16:39,700
+So I got to say if we do get an hour we're going to return something else return a response of status
+
+263
+00:16:40,180 --> 00:16:41,580
+and then 400.
+
+264
+00:16:41,590 --> 00:16:44,660
+Which means that no Something happened.
+
+265
+00:16:44,770 --> 00:16:49,650
+Something bad happened and we just send the r back if everything goes OK.
+
+266
+00:16:49,780 --> 00:16:56,320
+We need to store the Kuki and we can see are we going to store up the token as it Kuki later much much
+
+267
+00:16:56,320 --> 00:16:59,090
+later when we reach the bonus sections and everything else.
+
+268
+00:16:59,290 --> 00:17:04,870
+I could show you a different way maybe the local store or maybe a different way of authentication that
+
+269
+00:17:04,870 --> 00:17:05,720
+it's not this one.
+
+270
+00:17:05,740 --> 00:17:07,460
+But for now this one is OK.
+
+271
+00:17:07,780 --> 00:17:11,730
+So response cookie opening close.
+
+272
+00:17:11,800 --> 00:17:14,150
+So what do we need to do is we need to set a cookie.
+
+273
+00:17:14,290 --> 00:17:17,800
+So the first argument inside cookie is the name of the cookie.
+
+274
+00:17:17,800 --> 00:17:20,740
+My one mind is going to be w out.
+
+275
+00:17:20,810 --> 00:17:21,640
+Yeah.
+
+276
+00:17:21,670 --> 00:17:23,800
+You can use whatever you want X out.
+
+277
+00:17:23,860 --> 00:17:25,350
+It's very common.
+
+278
+00:17:25,900 --> 00:17:30,940
+So I'm going to do koma this cookie we are setting the name and then the value of the cookie and the
+
+279
+00:17:30,940 --> 00:17:35,810
+value is going to be the actual token we get back on this callback function from the user.
+
+280
+00:17:35,950 --> 00:17:37,120
+So use user.
+
+281
+00:17:37,180 --> 00:17:38,100
+And then tokin.
+
+282
+00:17:38,260 --> 00:17:44,690
+And if you're asking yourself it's really secure or not secure in storing tokens or as a cookie.
+
+283
+00:17:44,830 --> 00:17:47,330
+Well there's a world of discussion.
+
+284
+00:17:47,350 --> 00:17:51,190
+Some people they breed they say that it's better to store cookies.
+
+285
+00:17:51,340 --> 00:17:55,490
+Some other people they say they should use local storage.
+
+286
+00:17:55,560 --> 00:17:57,850
+All the people they say we shouldn't use tokens.
+
+287
+00:17:57,850 --> 00:18:04,870
+So again it's just the discussion never ends by using a token and storing as a cookie after that for
+
+288
+00:18:04,870 --> 00:18:11,050
+example the user is going to log out of the website for example and the cookie is going to remain there.
+
+289
+00:18:11,050 --> 00:18:14,370
+We can actually delete it but the cookie will remain there.
+
+290
+00:18:14,470 --> 00:18:21,480
+And that cookie with the token it's not valid anymore because remember that we are hashing the ID with
+
+291
+00:18:21,480 --> 00:18:22,950
+a super secret password.
+
+292
+00:18:23,020 --> 00:18:25,900
+And of course there's a lot more hashing.
+
+293
+00:18:25,930 --> 00:18:28,850
+So again the token will not be found anymore.
+
+294
+00:18:28,870 --> 00:18:34,240
+So it doesn't matter if you store it on a cookie because when they logout or if we change it or something
+
+295
+00:18:34,240 --> 00:18:41,430
+happens no one is able to decode this unless of course they have all the keys all of your passwords.
+
+296
+00:18:41,620 --> 00:18:45,130
+And in either way it's not that easy.
+
+297
+00:18:45,160 --> 00:18:46,720
+So get that suport.
+
+298
+00:18:46,960 --> 00:18:52,620
+If we are setting the cookie and we say status 200.
+
+299
+00:18:52,860 --> 00:18:53,460
+All right.
+
+300
+00:18:53,560 --> 00:18:59,140
+And then I'm going to send a Jason response because I need to get something back and to send something
+
+301
+00:18:59,140 --> 00:19:00,760
+back to react.
+
+302
+00:19:00,760 --> 00:19:07,000
+So Jason and I are going to say luggin success and true note is that at the top we are always sending
+
+303
+00:19:07,020 --> 00:19:10,390
+false but now at the end it's going to be true.
+
+304
+00:19:11,020 --> 00:19:11,530
+All right.
+
+305
+00:19:11,530 --> 00:19:13,770
+So let's check this out.
+
+306
+00:19:13,810 --> 00:19:20,110
+I'm going to copy the route I'm going to create a new entry which is going to be a post just like this.
+
+307
+00:19:20,350 --> 00:19:23,470
+And of course we use the moustache bars.
+
+308
+00:19:23,590 --> 00:19:28,030
+You are all forward slash and opps sorry.
+
+309
+00:19:28,150 --> 00:19:31,040
+And then API users log in.
+
+310
+00:19:31,060 --> 00:19:32,550
+So same thing than before.
+
+311
+00:19:32,710 --> 00:19:42,400
+We need to set the content type just like this and application that Jason that it's OK.
+
+312
+00:19:42,560 --> 00:19:46,540
+We need the body and the body Raul and Jaison.
+
+313
+00:19:46,670 --> 00:19:51,280
+So what we are passing is the user the e-mail and the password.
+
+314
+00:19:51,500 --> 00:20:01,520
+So e-mail and the user we have so far it's Francis at gmail that come that coma and we need the password
+
+315
+00:20:02,150 --> 00:20:07,160
+and the passport is password one two three.
+
+316
+00:20:07,160 --> 00:20:08,640
+All right we'll see what happens.
+
+317
+00:20:09,090 --> 00:20:12,240
+I'm going to send that and we get wrong passport.
+
+318
+00:20:12,260 --> 00:20:15,470
+Maybe I'm in a mistake on this one.
+
+319
+00:20:16,040 --> 00:20:16,330
+OK.
+
+320
+00:20:16,340 --> 00:20:18,270
+I'm sorry if that's a mistake.
+
+321
+00:20:18,500 --> 00:20:19,720
+Actually it's not a mistake.
+
+322
+00:20:19,760 --> 00:20:23,670
+The first user we we've entered it's Francis Aggi that they come.
+
+323
+00:20:23,750 --> 00:20:25,460
+But this one has no hash.
+
+324
+00:20:25,520 --> 00:20:27,320
+That's why we are getting from passport.
+
+325
+00:20:27,440 --> 00:20:32,320
+At least we know that it's working with the wrong password the past passport.
+
+326
+00:20:32,330 --> 00:20:39,620
+We we've got it's for Frances for at G.M. that come and I probably use the same passport once you're
+
+327
+00:20:39,650 --> 00:20:40,150
+three.
+
+328
+00:20:40,250 --> 00:20:44,400
+So I got to say Pat Francis for Jamail I'm going to send it.
+
+329
+00:20:44,480 --> 00:20:46,580
+And OK let me do it again.
+
+330
+00:20:48,650 --> 00:20:50,050
+Maybe the server went down.
+
+331
+00:20:50,060 --> 00:20:54,010
+Yeah the server went down and it's TDX string.
+
+332
+00:20:54,110 --> 00:20:55,320
+That is my mistake.
+
+333
+00:20:55,610 --> 00:21:03,140
+It's always good to have to get back to check the console whenever you're lost and you're not really
+
+334
+00:21:03,140 --> 00:21:04,390
+sure of what's happening.
+
+335
+00:21:04,400 --> 00:21:06,060
+Just go back to the con..
+
+336
+00:21:06,470 --> 00:21:09,510
+So send again we get success.
+
+337
+00:21:09,510 --> 00:21:09,940
+True.
+
+338
+00:21:10,110 --> 00:21:15,400
+And right here we get the cookies and if we go to cookies we can see R.W. out.
+
+339
+00:21:15,640 --> 00:21:21,440
+And if we go to the database to that particular user of the Wonham we get the actual token.
+
+340
+00:21:21,720 --> 00:21:27,660
+So now we're going to be using this token throughout our whole application to check if the user it's
+
+341
+00:21:27,660 --> 00:21:34,800
+actually registered and able to enter two private routes or not if the token changes or goes away or
+
+342
+00:21:34,800 --> 00:21:35,550
+whatever.
+
+343
+00:21:35,550 --> 00:21:38,640
+You're not going to let the user end because now we have a token.
+
+344
+00:21:38,850 --> 00:21:39,360
+Right.
+
+345
+00:21:39,450 --> 00:21:39,930
+OK.
+
+346
+00:21:40,020 --> 00:21:47,260
+What happens if I enter the wrong e-mail consent and we get luggin success fall out fails.
+
+347
+00:21:47,490 --> 00:21:53,320
+E-mail not found so it should be failed failed Burguet.
+
+348
+00:21:53,610 --> 00:21:56,110
+OK so now we are able to log in users.
+
+349
+00:21:56,220 --> 00:21:58,130
+Of course we need to create a log out.
+
+350
+00:21:58,140 --> 00:22:05,010
+We need to log out users and you know to do a couple more things with users before we move out of this.
+
+351
+00:22:05,010 --> 00:22:05,370
+All right.
+
+352
+00:22:05,370 --> 00:22:10,060
+So let's go to the next one because this one went too long and keep moving forward.
+

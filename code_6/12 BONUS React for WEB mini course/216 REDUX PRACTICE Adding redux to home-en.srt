@@ -1,0 +1,1068 @@
+1
+00:00:00,670 --> 00:00:04,960
+OK so now we need to modify the structure for home.
+
+2
+00:00:04,960 --> 00:00:10,240
+So right here whenever the application loads we need to fetch a list of articles we to fetch.
+
+3
+00:00:10,930 --> 00:00:15,760
+So whenever the application slows again is going to show some default articles so we can have something
+
+4
+00:00:15,760 --> 00:00:21,250
+on screen then we need to dispatch a different action going to dispatch an action for this and we're
+
+5
+00:00:21,280 --> 00:00:26,470
+going to dispatch a different action for whenever the user type something and begin to do a search with
+
+6
+00:00:26,470 --> 00:00:27,310
+the keywords.
+
+7
+00:00:27,310 --> 00:00:30,860
+So we need two different actions are going into this.
+
+8
+00:00:30,880 --> 00:00:35,530
+For now I'm going to go right here to source and create an action directory.
+
+9
+00:00:35,530 --> 00:00:38,930
+So I'm going to say actions have this just yet.
+
+10
+00:00:39,040 --> 00:00:41,870
+So I'm going to say Index stodginess.
+
+11
+00:00:42,550 --> 00:00:50,770
+So now again each action is going to use Actio so I'm going to import X-ers from X-ers.
+
+12
+00:00:50,890 --> 00:00:52,430
+That's the first thing.
+
+13
+00:00:52,450 --> 00:00:59,120
+Now since we are using Jason's server we need to we need the actual R L and we are using local host
+
+14
+00:00:59,170 --> 00:01:06,370
+3 or 4 so I'm going to create a viral is going to call your L and we're going to host everything inside
+
+15
+00:01:06,370 --> 00:01:12,420
+of a barbel so we don't have to type it every time we need to make a request to this.
+
+16
+00:01:12,910 --> 00:01:14,560
+So an action is just a function.
+
+17
+00:01:14,560 --> 00:01:19,720
+So I'm going to say export than function opening close.
+
+18
+00:01:20,170 --> 00:01:23,820
+And each each function needs a name.
+
+19
+00:01:23,820 --> 00:01:24,300
+All right.
+
+20
+00:01:24,340 --> 00:01:25,630
+So we can call it.
+
+21
+00:01:25,780 --> 00:01:32,800
+So I'm going to call it our artists list and then all because you know make sense before getting all
+
+22
+00:01:32,800 --> 00:01:33,910
+the artists.
+
+23
+00:01:34,060 --> 00:01:43,750
+So each action whenever we dispatch an action is going to return return an object and this object contains
+
+24
+00:01:43,930 --> 00:01:46,540
+a payload and a type remember.
+
+25
+00:01:46,660 --> 00:01:50,370
+So we going to say type and then we can say payload.
+
+26
+00:01:50,510 --> 00:01:53,410
+Now the type is going to be the actual name.
+
+27
+00:01:53,410 --> 00:02:01,000
+So we can begin to call get artists and then or again because it makes sense to do a coma.
+
+28
+00:02:01,170 --> 00:02:08,560
+And now the redux promise comes into place whenever we Imbolc this whenever we call this action with
+
+29
+00:02:08,560 --> 00:02:10,410
+dispatch and action with this name.
+
+30
+00:02:10,480 --> 00:02:14,590
+The application is going to go here and it's going to immediately return this.
+
+31
+00:02:14,590 --> 00:02:20,620
+The problem is that we are making a request and a request might take some time.
+
+32
+00:02:20,620 --> 00:02:25,690
+We remember with ASIO's we make the request and then returns the promise and then might take a few seconds
+
+33
+00:02:25,690 --> 00:02:27,430
+or milliseconds or whatever.
+
+34
+00:02:27,700 --> 00:02:32,940
+So this act this return it's not going to stop for the requests you know for the promise.
+
+35
+00:02:32,980 --> 00:02:39,080
+So we need a way to stop everything until the promise gets resolved and then return the payload and
+
+36
+00:02:39,100 --> 00:02:45,520
+thats what the promise middleware dust is going to stop everything until the promise is done and then
+
+37
+00:02:45,520 --> 00:02:51,510
+its going to return this with the actual payload and the response from the database.
+
+38
+00:02:51,520 --> 00:02:53,220
+So how does this works.
+
+39
+00:02:53,230 --> 00:03:00,190
+Real simple we can say Konst going to create a viral and I get a call request could be any name.
+
+40
+00:03:00,370 --> 00:03:07,120
+So I'm going to say X-post dot get open close and I'm going to use template template strengths and first
+
+41
+00:03:07,120 --> 00:03:13,330
+we need to use the your L we are including the top forward slash and then artists.
+
+42
+00:03:13,330 --> 00:03:15,060
+Now what are we going to be doing.
+
+43
+00:03:15,070 --> 00:03:16,830
+Are we going to be limiting this.
+
+44
+00:03:16,870 --> 00:03:21,610
+So I want to limit everything to six results.
+
+45
+00:03:22,390 --> 00:03:24,710
+So I'm going to do going into space.
+
+46
+00:03:24,730 --> 00:03:32,200
+And then of course this returns the promise with the response of response that is going to do something
+
+47
+00:03:32,200 --> 00:03:33,240
+with that response.
+
+48
+00:03:33,320 --> 00:03:40,540
+Now since the only thing we are doing is just returning the data and that response there's no need to
+
+49
+00:03:40,540 --> 00:03:43,960
+do this and to do this return what we can do.
+
+50
+00:03:43,960 --> 00:03:47,630
+We can just pass response that data.
+
+51
+00:03:47,770 --> 00:03:52,540
+So the only thing that is going to get returned to this Marvel is going to be this right.
+
+52
+00:03:52,560 --> 00:03:54,240
+There is no need to do the old thing.
+
+53
+00:03:54,640 --> 00:03:54,950
+Okay.
+
+54
+00:03:54,970 --> 00:04:01,600
+So after the the ex-CEO access is done and the response that the promise gets resolved is going to return
+
+55
+00:04:01,660 --> 00:04:04,460
+whatever data we get from this request.
+
+56
+00:04:04,830 --> 00:04:08,450
+Okay so I'm going to copy their request and I'm going to paste it down here.
+
+57
+00:04:08,950 --> 00:04:13,980
+So now promise it knows that we have a promise right here and it's going to wait until everything it
+
+58
+00:04:13,990 --> 00:04:16,420
+gets resolved and then it's going to return this.
+
+59
+00:04:16,480 --> 00:04:24,740
+That is the main point of using this is really you know great because it fixes a lot of issues for us.
+
+60
+00:04:24,820 --> 00:04:26,120
+So I'm going to save it.
+
+61
+00:04:26,140 --> 00:04:27,580
+So now this action is ready.
+
+62
+00:04:27,580 --> 00:04:34,410
+What we don't have yet is going to be the actual reduce or we didn't have get artists or reduce her.
+
+63
+00:04:34,570 --> 00:04:37,550
+So let's go to the we do hers and create one.
+
+64
+00:04:37,580 --> 00:04:44,480
+We're going to go over here and say case open it close and it's going to be called get Artest all this
+
+65
+00:04:44,480 --> 00:04:47,610
+one is going to return something but it's going to be returning.
+
+66
+00:04:47,710 --> 00:04:49,050
+It's going to be first.
+
+67
+00:04:49,240 --> 00:04:54,000
+That thought and the previous state and they were going to do coma.
+
+68
+00:04:54,330 --> 00:05:00,920
+Well this one is going to be doing is going to be honest and then list is going to return a of artists
+
+69
+00:05:01,340 --> 00:05:10,160
+and the contents of this artist's list is going to be the action that payload right so this is pretty
+
+70
+00:05:10,160 --> 00:05:11,970
+much done.
+
+71
+00:05:12,010 --> 00:05:13,260
+US it's working.
+
+72
+00:05:13,300 --> 00:05:14,990
+We are not getting any errors.
+
+73
+00:05:15,050 --> 00:05:21,850
+But for now we need to do we need to go to Home and convert this home promoted to our container.
+
+74
+00:05:22,220 --> 00:05:26,540
+So I'm going to go right here to source create a new file.
+
+75
+00:05:26,540 --> 00:05:34,110
+Sorry not in your file new directory that is going to be called containers.
+
+76
+00:05:34,340 --> 00:05:36,730
+Now this container is going to be the actual home.
+
+77
+00:05:36,740 --> 00:05:40,930
+So I'm going to create a new file and I'm going to call it Home.
+
+78
+00:05:40,940 --> 00:05:41,870
+Home container.
+
+79
+00:05:41,900 --> 00:05:43,830
+You can call this whatever you want.
+
+80
+00:05:44,150 --> 00:05:45,590
+And then that jazz.
+
+81
+00:05:45,950 --> 00:05:51,260
+So this home container is going to pretty much have all have all the logic we have home.
+
+82
+00:05:51,260 --> 00:05:56,180
+So I'm going to copy all and again paste it there we're going to be modifying this don't worry.
+
+83
+00:05:56,510 --> 00:05:57,790
+And this one.
+
+84
+00:05:57,920 --> 00:05:58,760
+Delete it all.
+
+85
+00:05:58,880 --> 00:05:59,930
+Yeah sorry for that.
+
+86
+00:05:59,930 --> 00:06:02,060
+Just begin to delete everything.
+
+87
+00:06:02,060 --> 00:06:07,220
+So now what are we going to be doing is just create a functional component and you know include this
+
+88
+00:06:07,370 --> 00:06:08,390
+home container.
+
+89
+00:06:08,390 --> 00:06:10,220
+You're just delegating.
+
+90
+00:06:10,220 --> 00:06:16,740
+So I'm going to say import and then react from react just like that.
+
+91
+00:06:16,850 --> 00:06:22,520
+And we close it and we want to import home container and that is the key word.
+
+92
+00:06:22,520 --> 00:06:28,430
+We know that home is a container because it's related to is going to be related to redux.
+
+93
+00:06:28,730 --> 00:06:34,210
+So it's dot dot dot for Slash containers for Slash and home container.
+
+94
+00:06:34,280 --> 00:06:42,050
+This one is going to just return a function that is going to be called home opening close again return.
+
+95
+00:06:42,380 --> 00:06:44,910
+And then we return some GSX.
+
+96
+00:06:45,020 --> 00:06:49,200
+We're going to be returning a dev with this home container inside.
+
+97
+00:06:49,430 --> 00:06:59,330
+And of course we need to do export default and then home for this one is going to fail because it's
+
+98
+00:06:59,360 --> 00:07:00,290
+outside.
+
+99
+00:07:00,290 --> 00:07:01,030
+We are making.
+
+100
+00:07:01,070 --> 00:07:07,750
+We are requesting this views from components and not we are just behind us.
+
+101
+00:07:07,760 --> 00:07:14,810
+So OK first I got to get rid of this compound with mouth for now and again to get rid of this artist
+
+102
+00:07:14,810 --> 00:07:17,710
+list and then just delete it going to use it.
+
+103
+00:07:17,770 --> 00:07:19,370
+Use this in a minute.
+
+104
+00:07:19,630 --> 00:07:22,030
+We are going to be changing and using this one for now.
+
+105
+00:07:22,280 --> 00:07:24,570
+So first we need to change.
+
+106
+00:07:24,740 --> 00:07:30,800
+We need to change some things we need to change the search and the artists because we have the wrong
+
+107
+00:07:31,250 --> 00:07:32,960
+directory right here.
+
+108
+00:07:32,960 --> 00:07:41,090
+So this one is going to be inside dot and then components for Slash and the same thing with the other
+
+109
+00:07:41,090 --> 00:07:46,430
+one its components for latch on to copy this and paste it.
+
+110
+00:07:46,430 --> 00:07:47,410
+Right.
+
+111
+00:07:48,030 --> 00:07:48,280
+OK.
+
+112
+00:07:48,290 --> 00:07:50,260
+So at least we get something that's good.
+
+113
+00:07:50,280 --> 00:07:54,850
+We're not getting any data but you know we get something you're not going to use this state and get
+
+114
+00:07:54,860 --> 00:07:56,060
+it delete the state.
+
+115
+00:07:56,060 --> 00:07:57,040
+That's good.
+
+116
+00:07:57,590 --> 00:07:59,390
+OK so the first thing we're going to do.
+
+117
+00:07:59,420 --> 00:08:03,240
+We can fetch the articles whenever the application loads.
+
+118
+00:08:03,350 --> 00:08:04,140
+OK.
+
+119
+00:08:04,400 --> 00:08:11,030
+So we need a few things we need to first connect with redux and then we need to bring the actions and
+
+120
+00:08:11,030 --> 00:08:12,910
+use find action creators.
+
+121
+00:08:13,130 --> 00:08:20,750
+So I'm going to say import and the first thing is Connect and then it's going to be from and then react
+
+122
+00:08:21,080 --> 00:08:22,640
+and then redux.
+
+123
+00:08:22,770 --> 00:08:27,230
+That's the first thing that we need to import the actions we're going to be using.
+
+124
+00:08:27,230 --> 00:08:34,310
+For now we have only one we have this artist list or so I'm going to go back to home container and bring
+
+125
+00:08:34,310 --> 00:08:35,060
+that one.
+
+126
+00:08:35,180 --> 00:08:40,100
+So it's going to be from and then dot dot dot for Slash actions.
+
+127
+00:08:40,640 --> 00:08:45,890
+We're going to be using bind action creators because you know for now we know that we have one action
+
+128
+00:08:45,980 --> 00:08:49,220
+but to be using another one in a minute.
+
+129
+00:08:49,220 --> 00:08:57,500
+So it's going to be behind action just like this and then creators from.
+
+130
+00:08:57,620 --> 00:09:00,480
+And then redux.
+
+131
+00:09:00,500 --> 00:09:03,310
+I should be getting the snippet I'm not getting the snippets I know.
+
+132
+00:09:03,350 --> 00:09:03,890
+I don't know why.
+
+133
+00:09:03,900 --> 00:09:08,130
+Sometimes it doesn't work the way he does what he wants.
+
+134
+00:09:08,240 --> 00:09:10,910
+OK so now we have the artists list all.
+
+135
+00:09:10,940 --> 00:09:14,120
+And we have the by action creators and we have to connect.
+
+136
+00:09:14,120 --> 00:09:19,370
+So what do we need to do now is to convert the home to use redux.
+
+137
+00:09:19,370 --> 00:09:21,580
+So I'm going to delete it all.
+
+138
+00:09:21,640 --> 00:09:30,280
+I going to say export the default and instead of exporting the home default or go.
+
+139
+00:09:31,060 --> 00:09:38,210
+OK Verio export default and we can just connect.
+
+140
+00:09:38,730 --> 00:09:45,030
+Now connect is going to use the map stage props and the map dispatched to props for Navigon Noga uses
+
+141
+00:09:45,040 --> 00:09:45,720
+I'm going to say.
+
+142
+00:09:45,800 --> 00:09:46,780
+All right.
+
+143
+00:09:46,830 --> 00:09:47,900
+OK.
+
+144
+00:09:47,900 --> 00:09:51,980
+So if I say this of course nothing is going to be working OK.
+
+145
+00:09:52,400 --> 00:09:57,560
+So now what do we need to do with the connect we need to pass the actual components.
+
+146
+00:09:57,570 --> 00:10:01,630
+And in this case it calls home but we already have a home.
+
+147
+00:10:01,640 --> 00:10:03,780
+So I'm going to call it home container.
+
+148
+00:10:03,980 --> 00:10:04,640
+OK.
+
+149
+00:10:04,910 --> 00:10:08,130
+So I to copy and past the home container.
+
+150
+00:10:09,420 --> 00:10:11,200
+I know that that's working.
+
+151
+00:10:11,200 --> 00:10:13,550
+So now the first thing we need to do right.
+
+152
+00:10:13,570 --> 00:10:19,380
+The next thing we need to do is to do the maps they do props and the maps dispatched to props.
+
+153
+00:10:19,590 --> 00:10:20,210
+OK.
+
+154
+00:10:20,620 --> 00:10:25,310
+So first I'm going to do function and then map sorry.
+
+155
+00:10:25,390 --> 00:10:30,100
+Map state 2 and then props.
+
+156
+00:10:30,130 --> 00:10:35,900
+Now the map states prop's uses a state and at the end is just going to return something.
+
+157
+00:10:36,040 --> 00:10:36,560
+Right.
+
+158
+00:10:36,640 --> 00:10:37,150
+OK.
+
+159
+00:10:37,570 --> 00:10:40,690
+So what is going to be returning is going to be the artists.
+
+160
+00:10:40,720 --> 00:10:43,980
+So I'm going to say artists just like this.
+
+161
+00:10:44,470 --> 00:10:51,350
+Now inside artist is going to be going can host whatever we get from the state DOT artists.
+
+162
+00:10:51,370 --> 00:10:55,390
+If you go to the artists reducers this one is going to return an artist list.
+
+163
+00:10:55,390 --> 00:10:59,450
+But on the index of artist it's going to be called artists.
+
+164
+00:10:59,470 --> 00:11:04,830
+So this is what the name the name will be going to be using inside Home is going to be inside St..
+
+165
+00:11:04,990 --> 00:11:10,860
+And then the name whatever name we are passing if we are creating this with dogs this one should be
+
+166
+00:11:10,870 --> 00:11:11,770
+thanks.
+
+167
+00:11:12,100 --> 00:11:16,750
+So we're going to say state and then artists Okay.
+
+168
+00:11:17,140 --> 00:11:25,870
+And just for fun I'm going to console log stick open close state now we are not dispatching any action
+
+169
+00:11:25,880 --> 00:11:28,300
+so you're not really going to get anything.
+
+170
+00:11:28,310 --> 00:11:33,950
+So I'm going to create the map this patch to prop's you know the opposite of this map.
+
+171
+00:11:34,010 --> 00:11:41,470
+This patch and then two and then prop's opening Kotz.
+
+172
+00:11:41,600 --> 00:11:46,730
+So this one has this patch just like that open and close again.
+
+173
+00:11:47,180 --> 00:11:50,650
+So what are we going to be using is going to be divined action creators.
+
+174
+00:11:50,660 --> 00:11:51,650
+We have the top.
+
+175
+00:11:51,710 --> 00:11:55,860
+We only have one action but we're going to be using another one in a minute.
+
+176
+00:11:56,090 --> 00:12:00,650
+So we're going to say return and then bind action creators.
+
+177
+00:12:00,650 --> 00:12:03,530
+The first argument and this one is going to be the actions.
+
+178
+00:12:03,620 --> 00:12:10,140
+So we are we've only have one which is the artist list all sound going to be passing that one.
+
+179
+00:12:10,160 --> 00:12:15,240
+The second argument is going to be this this patch this patch.
+
+180
+00:12:15,530 --> 00:12:19,500
+So we have the maps the props and the dispatch the props are ready.
+
+181
+00:12:19,550 --> 00:12:21,960
+The thing is that you're not really using them.
+
+182
+00:12:22,160 --> 00:12:27,770
+So I'm going to copy maps maps tipped props and it's the first argument and then the second one is going
+
+183
+00:12:27,770 --> 00:12:29,290
+to be the dispatch.
+
+184
+00:12:29,390 --> 00:12:30,160
+Right.
+
+185
+00:12:30,200 --> 00:12:31,700
+Going to reload the page.
+
+186
+00:12:31,870 --> 00:12:35,020
+And of course at least it's not failing.
+
+187
+00:12:35,030 --> 00:12:36,680
+We get the actual view.
+
+188
+00:12:37,040 --> 00:12:42,860
+So OK so inside state inside this state to Propst we should be getting this function.
+
+189
+00:12:42,860 --> 00:12:46,240
+So what I'm going to do just just to check me not do this.
+
+190
+00:12:46,290 --> 00:12:47,690
+Oh sorry.
+
+191
+00:12:47,750 --> 00:12:53,680
+Now do this and on the Render I'm going to do console that law.
+
+192
+00:12:53,810 --> 00:12:59,340
+And then this that prompts just a check if at least we get the action inside.
+
+193
+00:12:59,350 --> 00:13:00,380
+Props.
+
+194
+00:13:00,920 --> 00:13:01,330
+OK.
+
+195
+00:13:01,550 --> 00:13:05,460
+So let me make this bigger and go to cons. I'm going to remove this.
+
+196
+00:13:05,490 --> 00:13:06,850
+We don't really need it.
+
+197
+00:13:06,920 --> 00:13:12,800
+So we have an object and we have artists which is the object and then artist on which is the function.
+
+198
+00:13:12,800 --> 00:13:13,780
+This is our action.
+
+199
+00:13:13,790 --> 00:13:15,920
+So we have it inside props.
+
+200
+00:13:16,040 --> 00:13:17,090
+That's very good.
+
+201
+00:13:17,420 --> 00:13:17,720
+OK.
+
+202
+00:13:17,760 --> 00:13:18,810
+Let's get.
+
+203
+00:13:18,930 --> 00:13:22,750
+So now let me let me just leave the console open.
+
+204
+00:13:22,760 --> 00:13:24,830
+We're going to use this in a minute.
+
+205
+00:13:24,850 --> 00:13:26,510
+So just going to leave it open.
+
+206
+00:13:26,920 --> 00:13:27,530
+OK.
+
+207
+00:13:27,860 --> 00:13:34,550
+So now we have the actions the action the artists list all inside this component.
+
+208
+00:13:34,550 --> 00:13:36,320
+So we need to make to use it.
+
+209
+00:13:36,320 --> 00:13:38,340
+We need to dispatch an action.
+
+210
+00:13:38,390 --> 00:13:43,780
+So what we're going to be doing is doing on the component will now the application will start and begin
+
+211
+00:13:43,790 --> 00:13:45,110
+to do a request for it.
+
+212
+00:13:45,110 --> 00:13:45,400
+I don't know.
+
+213
+00:13:45,400 --> 00:13:49,870
+6 6 6 buse 6 articles.
+
+214
+00:13:49,880 --> 00:13:51,490
+Just like with it here.
+
+215
+00:13:51,710 --> 00:13:58,410
+So we say this that prompts dot artists all because we have it inside props.
+
+216
+00:13:58,460 --> 00:14:04,100
+This one is going to dispatch an action is going to go to the actions it's going to dispatch it is going
+
+217
+00:14:04,100 --> 00:14:05,620
+to get the data we need.
+
+218
+00:14:05,810 --> 00:14:07,760
+It's going to trigger the get artists on.
+
+219
+00:14:07,800 --> 00:14:14,300
+Art is always going to go to redux update the store and then we're going to be getting everything inside
+
+220
+00:14:14,300 --> 00:14:15,400
+the consulate.
+
+221
+00:14:15,530 --> 00:14:20,530
+So this is the second time right this is the second request after we dispatched the action.
+
+222
+00:14:20,930 --> 00:14:23,230
+We get this an inside artist.
+
+223
+00:14:23,240 --> 00:14:27,910
+We have the list of artists so that let's recall and we have sex of course.
+
+224
+00:14:28,160 --> 00:14:28,370
+Right.
+
+225
+00:14:28,370 --> 00:14:33,830
+So the next thing is going to be passing whatever we are getting inside artist and then artists list
+
+226
+00:14:34,220 --> 00:14:38,890
+to the actual component that renders the information which is going to be on this list.
+
+227
+00:14:38,900 --> 00:14:42,050
+So I got a copy on this list and go right here at the bottom.
+
+228
+00:14:42,050 --> 00:14:45,710
+And you know include that component open it close.
+
+229
+00:14:45,780 --> 00:14:52,100
+It's I'm going to be passing a prop with the you know the list of artists that of course makes sense.
+
+230
+00:14:52,100 --> 00:14:52,870
+Right.
+
+231
+00:14:52,910 --> 00:14:56,200
+So it is going to be artists just like this artists.
+
+232
+00:14:56,330 --> 00:15:03,980
+It's going to be equal to opening close and it's going to be inside this that prompts that artists just
+
+233
+00:15:03,980 --> 00:15:11,530
+like this dot and then it's going to be called Artist list artists list.
+
+234
+00:15:11,800 --> 00:15:14,020
+It's with a capital L..
+
+235
+00:15:14,120 --> 00:15:14,660
+It's OK.
+
+236
+00:15:14,720 --> 00:15:16,820
+Everything kind of looks nice.
+
+237
+00:15:16,820 --> 00:15:21,790
+Let me just double check the artist reducers is artist artist list.
+
+238
+00:15:21,890 --> 00:15:23,190
+It's going to be singler.
+
+239
+00:15:23,600 --> 00:15:24,970
+So let me just change it.
+
+240
+00:15:24,980 --> 00:15:26,790
+It's going to be artist list.
+
+241
+00:15:27,200 --> 00:15:28,710
+Everything looks nice.
+
+242
+00:15:28,730 --> 00:15:30,610
+So now we're going to be getting in there.
+
+243
+00:15:30,800 --> 00:15:36,390
+Now if you remember the first time we do the consulate this prompts that there's a props artist.
+
+244
+00:15:36,470 --> 00:15:37,670
+It's empty.
+
+245
+00:15:37,670 --> 00:15:38,030
+You know.
+
+246
+00:15:38,030 --> 00:15:43,930
+So we are trying to map something that you know has two keys is that is empty we cannot map it.
+
+247
+00:15:44,240 --> 00:15:50,100
+So what we can do to fix this in this case what we can do we can just add some checking right here so
+
+248
+00:15:50,110 --> 00:15:56,870
+we can add we can check if the you know the list it's empty or not and do something if the list is not
+
+249
+00:15:56,930 --> 00:15:57,410
+empty.
+
+250
+00:15:57,410 --> 00:15:59,680
+If it's empty of course do nothing.
+
+251
+00:15:59,690 --> 00:16:06,990
+So I'm going to say if props Dodd artists just like this it's it's of course it's true.
+
+252
+00:16:07,040 --> 00:16:10,830
+We're going to do something and I'm going to be adding an additional checking.
+
+253
+00:16:10,970 --> 00:16:17,690
+I'm going to say props that artists just like this dot and then lenge.
+
+254
+00:16:18,560 --> 00:16:20,620
+And it's greater than zero.
+
+255
+00:16:20,720 --> 00:16:28,140
+So this way we are sure that we have something decide that props that artists are and if not if it's
+
+256
+00:16:28,140 --> 00:16:29,740
+empty What are we going to be doing.
+
+257
+00:16:29,750 --> 00:16:31,170
+You're just going to return.
+
+258
+00:16:31,170 --> 00:16:34,010
+No we're not going to show anything.
+
+259
+00:16:34,050 --> 00:16:36,700
+So if I say it we are going to be getting the list.
+
+260
+00:16:36,720 --> 00:16:37,700
+And we're getting six.
+
+261
+00:16:37,710 --> 00:16:40,040
+So this comes from burritos right.
+
+262
+00:16:40,050 --> 00:16:40,900
+Really cool right.
+
+263
+00:16:40,950 --> 00:16:43,380
+So everything works as expected.
+
+264
+00:16:43,830 --> 00:16:49,710
+OK so the next thing is going to be dispatching an action whenever we type something right here we are
+
+265
+00:16:49,710 --> 00:16:54,250
+getting the data inside the console lock because we have an event listening for this.
+
+266
+00:16:54,420 --> 00:16:57,420
+But we don't have an action that listens for this.
+
+267
+00:16:57,420 --> 00:17:02,030
+So let's go to the next section and add an action an action for that for the for the search.
+

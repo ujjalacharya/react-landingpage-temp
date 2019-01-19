@@ -1,0 +1,1144 @@
+1
+00:00:00,580 --> 00:00:04,690
+OK so now we're going to be creating an out route going to cause this.
+
+2
+00:00:04,720 --> 00:00:10,240
+So every time we go to a new route just like there is for example this is the final one we go to a new
+
+3
+00:00:10,240 --> 00:00:10,790
+route.
+
+4
+00:00:10,830 --> 00:00:19,120
+We are constantly checking if the user possessed the correct token if I go to go to the console at to
+
+5
+00:00:19,120 --> 00:00:20,950
+cancel the actual application.
+
+6
+00:00:20,950 --> 00:00:23,130
+Let me find it right here.
+
+7
+00:00:23,170 --> 00:00:23,660
+Sorry.
+
+8
+00:00:23,770 --> 00:00:27,380
+Application and I go to cookies.
+
+9
+00:00:27,610 --> 00:00:29,070
+We get a lot of things of course.
+
+10
+00:00:30,170 --> 00:00:36,410
+But we have our daylily out so we are constantly grabbing D-W out from the cookies going to the server
+
+11
+00:00:36,440 --> 00:00:41,930
+and asking the server do is this guy allowed right here yes or no.
+
+12
+00:00:42,110 --> 00:00:48,170
+So when we need to create a route where we get him he of course constantly checking if the user is authenticated
+
+13
+00:00:48,390 --> 00:00:49,160
+or not.
+
+14
+00:00:49,300 --> 00:00:54,710
+First thing going to this store this I'm going to save it as a log in because we might use it later
+
+15
+00:00:55,410 --> 00:00:56,010
+logon.
+
+16
+00:00:56,270 --> 00:00:56,700
+OK.
+
+17
+00:00:56,840 --> 00:00:58,180
+Saved two ways.
+
+18
+00:00:58,640 --> 00:01:00,140
+I'm going to create a new route.
+
+19
+00:01:00,170 --> 00:01:01,850
+But first I'm going to do it right here.
+
+20
+00:01:02,180 --> 00:01:04,990
+So this is going to be called an elf route.
+
+21
+00:01:05,180 --> 00:01:10,850
+So I'm going to go right here at the top because it's pretty important and I'm going to say of course
+
+22
+00:01:11,200 --> 00:01:12,960
+up up.
+
+23
+00:01:13,070 --> 00:01:14,910
+And in this case we're going to use a get.
+
+24
+00:01:14,930 --> 00:01:17,750
+We don't we are not really sending any information.
+
+25
+00:01:17,830 --> 00:01:21,180
+We just we are going to be passing Christic cookies with them oath.
+
+26
+00:01:21,440 --> 00:01:27,530
+And whenever you do this again or a post or whatever the cookies are inside the request you get that
+
+27
+00:01:27,530 --> 00:01:28,990
+information easily.
+
+28
+00:01:29,270 --> 00:01:30,610
+So I'm going to do this.
+
+29
+00:01:30,710 --> 00:01:38,550
+I'm going to do for Slash AP I then users for Slash and then out and then of course just like before.
+
+30
+00:01:38,600 --> 00:01:49,280
+After we do this we just run a function and the function will contain a request and our response.
+
+31
+00:01:49,280 --> 00:01:51,600
+All right just like this.
+
+32
+00:01:51,650 --> 00:01:58,870
+Now we need to do this not just in the south but we need to do this again later on different requests.
+
+33
+00:01:58,880 --> 00:02:03,000
+What happens if the user tries to post something to our database.
+
+34
+00:02:03,290 --> 00:02:06,030
+We need to check if the user South indicated.
+
+35
+00:02:06,170 --> 00:02:11,780
+So it of makes sense for us to create maybe a different function or something else we can use on different
+
+36
+00:02:11,780 --> 00:02:14,750
+routes to pretty much Check the same thing.
+
+37
+00:02:14,750 --> 00:02:17,030
+And for this we can create a middleware.
+
+38
+00:02:17,120 --> 00:02:23,500
+So we're going to go to the server and create a new directory called middleware.
+
+39
+00:02:23,500 --> 00:02:26,380
+And if you're asking yourself what is a middleware.
+
+40
+00:02:26,600 --> 00:02:28,410
+This is a matter where the body parts are.
+
+41
+00:02:28,550 --> 00:02:35,210
+So this middleware acts before or maybe adoring of what we are doing in this case what it's doing it's
+
+42
+00:02:35,210 --> 00:02:40,110
+just converting what we get on the body from the Jason in getting it back to us.
+
+43
+00:02:40,130 --> 00:02:42,160
+So that's what the middleware is doing.
+
+44
+00:02:42,470 --> 00:02:48,550
+So what we can do we can create our own middleware and use them right here is simple.
+
+45
+00:02:48,790 --> 00:02:49,330
+OK.
+
+46
+00:02:49,520 --> 00:02:56,290
+So this middleware is going to be called of you could have a lot of middleware.
+
+47
+00:02:56,330 --> 00:02:59,060
+So let me make it right.
+
+48
+00:02:59,060 --> 00:03:00,420
+Rename it.
+
+49
+00:03:00,560 --> 00:03:01,500
+Yes.
+
+50
+00:03:01,970 --> 00:03:02,520
+OK.
+
+51
+00:03:02,810 --> 00:03:06,150
+So on this middleware we're going to create a new method right here.
+
+52
+00:03:06,230 --> 00:03:11,320
+So we need to import the user model the same one we are importing right here.
+
+53
+00:03:11,600 --> 00:03:16,190
+So it's going to be pretty much the same thing so I'm going to copy this one I'm going to paste it but
+
+54
+00:03:16,190 --> 00:03:18,500
+the route is going to be a little bit different.
+
+55
+00:03:18,500 --> 00:03:20,790
+Let me just change it.
+
+56
+00:03:21,020 --> 00:03:26,250
+So it's going to be that for Slash I'm sorry dot dot for Slash middleware.
+
+57
+00:03:26,480 --> 00:03:27,510
+Oh sorry.
+
+58
+00:03:27,700 --> 00:03:29,810
+Dot for Slash dot dot.
+
+59
+00:03:29,810 --> 00:03:30,870
+Forward slash.
+
+60
+00:03:31,070 --> 00:03:38,050
+And then we enter models for Slash and we enter user right so we have our users Kema right here.
+
+61
+00:03:38,510 --> 00:03:40,750
+So what we do we just return a function.
+
+62
+00:03:40,790 --> 00:03:41,840
+This is what a middleware.
+
+63
+00:03:41,860 --> 00:03:44,390
+This is just a function that does something.
+
+64
+00:03:44,390 --> 00:03:48,280
+So I'm going to call again to create an oath just like this.
+
+65
+00:03:48,860 --> 00:03:52,760
+And we will of course execute a function.
+
+66
+00:03:53,180 --> 00:04:01,520
+So this auf will receive our request response and next we can talk about this in a minute.
+
+67
+00:04:01,520 --> 00:04:08,390
+Of course we need to make this function available this middleware available so module exports equals.
+
+68
+00:04:08,540 --> 00:04:10,700
+And then we export this out.
+
+69
+00:04:10,730 --> 00:04:14,420
+All right we're going to go back here in a minute.
+
+70
+00:04:14,510 --> 00:04:16,650
+Now how can we use this out.
+
+71
+00:04:16,850 --> 00:04:21,540
+Well first we need to import it just like we are doing right here.
+
+72
+00:04:21,650 --> 00:04:23,720
+We need to import the middleware.
+
+73
+00:04:23,990 --> 00:04:30,530
+So I'm going to go right here at the bottom and say Merrill Where's whenever there's one it's going
+
+74
+00:04:30,530 --> 00:04:39,830
+to be called Konst and then south equals to require open and close that forward slash middleware for
+
+75
+00:04:39,830 --> 00:04:41,750
+Slash in out.
+
+76
+00:04:42,530 --> 00:04:45,540
+So how can we use the outcome from where in our right.
+
+77
+00:04:45,740 --> 00:04:47,080
+Well we do it right here.
+
+78
+00:04:47,090 --> 00:04:50,410
+We're going to put middleware you know the outs and then coma.
+
+79
+00:04:50,600 --> 00:04:51,730
+So what is going to happen.
+
+80
+00:04:51,770 --> 00:04:54,090
+We're going to get a request from this round.
+
+81
+00:04:54,110 --> 00:04:55,160
+Right.
+
+82
+00:04:55,160 --> 00:04:56,060
+So what do we do.
+
+83
+00:04:56,060 --> 00:05:01,520
+What this is going to do is going to go to our allies is going to do something and it will receive the
+
+84
+00:05:01,520 --> 00:05:04,090
+same you know request and response everything we get.
+
+85
+00:05:04,100 --> 00:05:05,780
+So we get right here.
+
+86
+00:05:05,810 --> 00:05:11,210
+So now right here we're going to do some checking and depending on what we get we're going to move forward
+
+87
+00:05:11,390 --> 00:05:12,430
+or not.
+
+88
+00:05:12,440 --> 00:05:18,260
+So if we choose to move forward with this next we're going to go to the next line of code which is the
+
+89
+00:05:18,260 --> 00:05:19,640
+callback function.
+
+90
+00:05:19,730 --> 00:05:25,820
+If something goes wrong instead of next we're just going to you know send the message try here or something
+
+91
+00:05:25,820 --> 00:05:31,560
+like like you're not allowed to enter or something like that kill it right here before going to the
+
+92
+00:05:31,560 --> 00:05:33,820
+next line of code which is the callback.
+
+93
+00:05:34,140 --> 00:05:35,970
+That's how we use a middleware.
+
+94
+00:05:36,000 --> 00:05:38,090
+Of course we still need to do a lot of things.
+
+95
+00:05:38,220 --> 00:05:44,190
+I've got to go back to the south and what we're going to be doing right here is checking if the token
+
+96
+00:05:44,280 --> 00:05:45,140
+is OK.
+
+97
+00:05:45,300 --> 00:05:45,620
+Right.
+
+98
+00:05:45,640 --> 00:05:50,250
+We can find the user check if the token IDs ride and everything else.
+
+99
+00:05:50,250 --> 00:05:56,100
+So first I'm going to create a marvel called token and this one is going to be equal to the token that
+
+100
+00:05:56,100 --> 00:06:01,540
+we get from the actual request and they go back to postponement whenever we make a request.
+
+101
+00:06:01,560 --> 00:06:03,060
+We pass this.
+
+102
+00:06:03,230 --> 00:06:03,650
+All right.
+
+103
+00:06:03,660 --> 00:06:08,940
+So we need to catch it from here from the server so we can access request and we have the access to
+
+104
+00:06:08,940 --> 00:06:16,100
+cookies dot and our is going to be called ours is going to be called Donnelley out.
+
+105
+00:06:16,470 --> 00:06:19,970
+So whenever we enter here we have the token right here.
+
+106
+00:06:19,970 --> 00:06:24,160
+So now we need to grab the token and check if the token it's OK.
+
+107
+00:06:24,360 --> 00:06:31,020
+So for this we can add a method called find by token again you can call this whatever you want.
+
+108
+00:06:31,030 --> 00:06:39,300
+So going to make use of a user the user model are going to say that they're going to find find by token
+
+109
+00:06:39,360 --> 00:06:42,180
+this is my own custom name.
+
+110
+00:06:42,990 --> 00:06:48,560
+So what we do this find by tokin is going to receive the token that we get from the cookies.
+
+111
+00:06:48,870 --> 00:06:55,880
+And after it's done it's going to execute a function and this function will get a narrower and a user.
+
+112
+00:06:56,210 --> 00:06:56,880
+OK.
+
+113
+00:06:57,690 --> 00:07:02,020
+So of course we don't have this we need to add this to the server.
+
+114
+00:07:02,130 --> 00:07:06,950
+I'm sorry to the user model so I'm going to go right here at the bottom and the middle of this.
+
+115
+00:07:07,050 --> 00:07:07,720
+OK.
+
+116
+00:07:08,280 --> 00:07:16,860
+So just like we did before we need to add this method right defined by tokin so we use user schema d'arte
+
+117
+00:07:16,950 --> 00:07:20,220
+statics just like we did before statics.
+
+118
+00:07:20,460 --> 00:07:21,150
+Oh sorry.
+
+119
+00:07:21,450 --> 00:07:23,100
+It's a little bit different.
+
+120
+00:07:23,100 --> 00:07:28,330
+The study is it's kind of a own custom method but you know kind of in a different way.
+
+121
+00:07:28,410 --> 00:07:29,890
+But don't worry it's just a method.
+
+122
+00:07:30,150 --> 00:07:38,330
+So we do find by token or a function opening close.
+
+123
+00:07:38,610 --> 00:07:42,490
+And what I'm going to do I'm going to create a token and the callback.
+
+124
+00:07:42,510 --> 00:07:44,090
+Remember we are passing the token.
+
+125
+00:07:44,100 --> 00:07:51,780
+And the callback function just like we did before I got to say bar user equals this.
+
+126
+00:07:51,990 --> 00:07:52,640
+All right.
+
+127
+00:07:52,830 --> 00:08:00,440
+So now this function this method find by token it will be receiving a token and a callback which is
+
+128
+00:08:00,440 --> 00:08:01,560
+the function.
+
+129
+00:08:01,570 --> 00:08:09,520
+Now what we need to do we need to grab the token read the one we have right here we need to decode it
+
+130
+00:08:09,700 --> 00:08:17,530
+with JWT with Jason Webb token this we need to decode it and from there we will get the user id of the
+
+131
+00:08:17,570 --> 00:08:21,910
+of the user and we can check if the token it's ok on the user.
+
+132
+00:08:21,910 --> 00:08:22,970
+All right.
+
+133
+00:08:23,830 --> 00:08:28,120
+I know that sounds simple when I say it but it's a little bit confusing.
+
+134
+00:08:28,120 --> 00:08:36,250
+So first to verify if the tokens are correct we use JWT then we use the method and it's actually from
+
+135
+00:08:36,250 --> 00:08:38,120
+them but very fine.
+
+136
+00:08:38,260 --> 00:08:44,100
+And we what we do we pass the token you know the token that we get from the cookies.
+
+137
+00:08:44,560 --> 00:08:48,310
+And we need to pass the secret super secret password.
+
+138
+00:08:48,310 --> 00:08:52,090
+And what it does it's going to do it's going to check the token and it's get it checked the super secret
+
+139
+00:08:52,090 --> 00:08:55,330
+password and if they are OK we move forward.
+
+140
+00:08:55,390 --> 00:08:57,010
+If not of course we can.
+
+141
+00:08:57,250 --> 00:08:59,880
+So the supersecret passport it's inside process.
+
+142
+00:08:59,900 --> 00:09:01,520
+Jambi and secret.
+
+143
+00:09:01,800 --> 00:09:08,300
+All right and after warts we get we run a function or a function.
+
+144
+00:09:08,620 --> 00:09:12,850
+So this function will get an error if we get an error and a decode.
+
+145
+00:09:13,480 --> 00:09:21,090
+So what we do get here on the de-code is going to be pretty much the user ID whenever we verify with
+
+146
+00:09:21,340 --> 00:09:28,410
+the token they generate code or something you know a very long string with the password and the token
+
+147
+00:09:28,420 --> 00:09:32,860
+but whenever we decoded we decode that we get the user ID.
+
+148
+00:09:33,040 --> 00:09:39,030
+So if we are getting the user id it means that the token it's valid if we don't get it.
+
+149
+00:09:39,070 --> 00:09:41,950
+It means it means that it's not valid.
+
+150
+00:09:41,950 --> 00:09:42,460
+All right.
+
+151
+00:09:42,820 --> 00:09:43,800
+So we get to decode.
+
+152
+00:09:43,840 --> 00:09:46,280
+So what we do I'm going to access user.
+
+153
+00:09:46,500 --> 00:09:52,750
+I'm going to DOD and I'm going to find one find one open and close.
+
+154
+00:09:52,810 --> 00:09:53,800
+So what do we do.
+
+155
+00:09:53,800 --> 00:09:59,290
+We grab whatever we got back from the de-code and inside de-code we have the user ID.
+
+156
+00:09:59,440 --> 00:09:59,860
+All right.
+
+157
+00:10:00,160 --> 00:10:08,950
+So I'm going to say I want to find one and I want to find the one that has ID of decode and then coma
+
+158
+00:10:09,190 --> 00:10:15,370
+and I want to find the one that has token of whatever we are passing as a token.
+
+159
+00:10:15,400 --> 00:10:20,740
+So pretty much we are finding a user with these user ID that we only get from this de-code from this
+
+160
+00:10:20,740 --> 00:10:22,100
+JWT fine.
+
+161
+00:10:22,300 --> 00:10:27,810
+And it was of course it needs to match the token as well if not of course everything is going to fail.
+
+162
+00:10:28,120 --> 00:10:35,380
+And then of course we run a function opening close and this function we will get an error if we do get
+
+163
+00:10:35,380 --> 00:10:38,020
+an error and a user back.
+
+164
+00:10:38,030 --> 00:10:41,270
+All right so if we get an error.
+
+165
+00:10:41,740 --> 00:10:43,180
+Pretty standard stuff.
+
+166
+00:10:43,180 --> 00:10:50,340
+We return a callback with we return sorry the callback with the error.
+
+167
+00:10:50,360 --> 00:10:51,030
+All right.
+
+168
+00:10:51,340 --> 00:10:56,590
+And if everything goes OK and you know it's there's no problem with a server or something like that.
+
+169
+00:10:56,710 --> 00:11:01,430
+We will run that callback with no as an error and the user.
+
+170
+00:11:01,440 --> 00:11:06,460
+Now if the user of course exists we will get something if the user doesn't access is still going to
+
+171
+00:11:06,460 --> 00:11:07,420
+run the callback.
+
+172
+00:11:07,570 --> 00:11:11,550
+But without a user and we can check on out if we do have a user.
+
+173
+00:11:11,560 --> 00:11:12,460
+All right.
+
+174
+00:11:12,580 --> 00:11:15,770
+So this is pretty much done.
+
+175
+00:11:16,120 --> 00:11:21,930
+So now we need to go back to us because this find by token will be receiving this callback.
+
+176
+00:11:22,070 --> 00:11:24,420
+And now we of course we need to do some checking.
+
+177
+00:11:24,520 --> 00:11:33,040
+So if we do get an error from the server that maybe that server is down we're going to throw a new error.
+
+178
+00:11:33,040 --> 00:11:34,850
+And this one actually is going to happen on the server.
+
+179
+00:11:34,960 --> 00:11:36,030
+Doesn't matter right now.
+
+180
+00:11:36,400 --> 00:11:44,350
+Now if we don't have a user it means that the token it's incorrect to use if no user is going to return
+
+181
+00:11:45,430 --> 00:11:51,140
+a report our response in Jaison or an opening close.
+
+182
+00:11:51,370 --> 00:11:57,010
+And what are going to be returning and this is actually for re-act for redux it's going to be false
+
+183
+00:11:57,270 --> 00:11:58,560
+and then error.
+
+184
+00:11:58,820 --> 00:11:59,340
+True.
+
+185
+00:11:59,490 --> 00:12:04,870
+We're going to get there later but you need to know that if we don't have a user we just send this Jason
+
+186
+00:12:05,170 --> 00:12:09,920
+that it's not outdated antiquated and an airbag.
+
+187
+00:12:10,090 --> 00:12:16,840
+Now if everything goes OK if the token is correct and the user should be allowed to enter what we sent
+
+188
+00:12:16,960 --> 00:12:20,470
+is a request with a token right.
+
+189
+00:12:20,680 --> 00:12:22,480
+Now why are we doing this.
+
+190
+00:12:22,510 --> 00:12:23,320
+What I'm doing.
+
+191
+00:12:23,500 --> 00:12:31,450
+I'm entering the request that we are seeing from this route and I'm entering I'm just pushing a value
+
+192
+00:12:31,450 --> 00:12:33,750
+that calls token ride.
+
+193
+00:12:33,940 --> 00:12:36,400
+We are not going to use it right right now.
+
+194
+00:12:36,490 --> 00:12:38,420
+But we're going to use it later.
+
+195
+00:12:38,590 --> 00:12:38,870
+Right.
+
+196
+00:12:38,890 --> 00:12:39,250
+OK.
+
+197
+00:12:39,280 --> 00:12:39,900
+Don't worry.
+
+198
+00:12:39,970 --> 00:12:41,620
+We're going to use it later.
+
+199
+00:12:41,680 --> 00:12:48,340
+Now what I want to do I want to add to the request whenever we get back from fine by token if you remember
+
+200
+00:12:49,120 --> 00:12:57,340
+right here at the bottom if we are finding the user with the token in the ID we and all the user data
+
+201
+00:12:57,580 --> 00:13:03,760
+and the user data is whatever we have on the database which is the name and password maybe the name
+
+202
+00:13:03,760 --> 00:13:06,550
+the last name the email and everything else.
+
+203
+00:13:06,580 --> 00:13:09,990
+So this wealth will be receiving that document.
+
+204
+00:13:10,210 --> 00:13:13,470
+So what I want to do I want to attach it to request.
+
+205
+00:13:13,570 --> 00:13:20,770
+So I'm going to say now inside request we have something that calls user and we have all the user information
+
+206
+00:13:20,830 --> 00:13:27,800
+inside of there since we want to move forward to the next line of code we call next.
+
+207
+00:13:28,780 --> 00:13:34,330
+So now we're going to go here we're going to add the token to the request and ask the user data to the
+
+208
+00:13:34,330 --> 00:13:35,050
+request.
+
+209
+00:13:35,260 --> 00:13:37,380
+So now this function it's done.
+
+210
+00:13:37,450 --> 00:13:42,910
+So we call next and we move forward to the next line of code and the next line of code is going to be
+
+211
+00:13:42,910 --> 00:13:43,620
+here.
+
+212
+00:13:43,840 --> 00:13:50,080
+Since we attach a lot of things to the request we have inside the request the user data and the actual
+
+213
+00:13:50,080 --> 00:13:50,830
+token.
+
+214
+00:13:50,830 --> 00:13:51,490
+All right.
+
+215
+00:13:51,990 --> 00:13:53,560
+So I'm going to go right here.
+
+216
+00:13:54,250 --> 00:13:57,950
+And of course we need to do some more stuff.
+
+217
+00:13:58,030 --> 00:14:01,000
+So if the it's OK what do we want to do.
+
+218
+00:14:01,000 --> 00:14:03,380
+We want to send a response right.
+
+219
+00:14:03,520 --> 00:14:06,640
+If the out is not OK we exit it here.
+
+220
+00:14:06,730 --> 00:14:07,740
+This line of code.
+
+221
+00:14:07,780 --> 00:14:12,730
+The next one which is the function will not be executed if the user is allowed to enter.
+
+222
+00:14:12,730 --> 00:14:18,440
+I want to send the response with a status of two hundred.
+
+223
+00:14:18,670 --> 00:14:21,680
+Then Dodd and I are going to send the Jaison response.
+
+224
+00:14:24,300 --> 00:14:25,770
+Opening close.
+
+225
+00:14:25,820 --> 00:14:26,420
+All right.
+
+226
+00:14:26,790 --> 00:14:33,090
+Now I'm going to just show you right now I'm going to say user and I'm going to attach right here whatever
+
+227
+00:14:33,090 --> 00:14:38,310
+we attach to request and the user around is going to do that.
+
+228
+00:14:38,520 --> 00:14:40,000
+So I'm going to copy this route.
+
+229
+00:14:40,350 --> 00:14:44,410
+Going to go to postman and we already have a valid token right here.
+
+230
+00:14:44,450 --> 00:14:52,650
+Remember that I'm going to go to a new tab and I'm going to make a get request to our u r l and then
+
+231
+00:14:52,650 --> 00:14:59,550
+forward slash and then API users and Alf says we have a valid token we should be getting a good response
+
+232
+00:14:59,610 --> 00:15:00,530
+and this is what we get.
+
+233
+00:15:00,540 --> 00:15:04,350
+We get the user the card history and everything else.
+
+234
+00:15:04,350 --> 00:15:04,690
+All right.
+
+235
+00:15:04,710 --> 00:15:06,550
+So everything is OK.
+
+236
+00:15:06,720 --> 00:15:11,500
+So if on react on the client side we are getting this kind of response.
+
+237
+00:15:11,520 --> 00:15:16,720
+We let the user and from the client side if not we get to kick the user to a different place.
+
+238
+00:15:16,830 --> 00:15:18,150
+Makes sense.
+
+239
+00:15:18,180 --> 00:15:24,200
+Now the thing is that I'm sending back all of this information and I don't want to do that.
+
+240
+00:15:24,240 --> 00:15:27,810
+I want to maybe pass some of this information.
+
+241
+00:15:27,840 --> 00:15:34,200
+So what I'm going to do I'm going to go right here and say is outman and remember that we have a role.
+
+242
+00:15:34,260 --> 00:15:36,740
+So I'm going to be checking if we do have a role.
+
+243
+00:15:36,780 --> 00:15:42,200
+User requires a user role and the value for this one it's zero.
+
+244
+00:15:42,330 --> 00:15:47,600
+I can send false as the value of this one if not I'm going to send.
+
+245
+00:15:47,600 --> 00:15:47,970
+True.
+
+246
+00:15:48,160 --> 00:15:53,640
+So pretty much whenever we do we're you can check if these areas have been straight or not we're going
+
+247
+00:15:53,640 --> 00:15:57,450
+to add more rules later but not by now then coma.
+
+248
+00:15:57,450 --> 00:15:58,930
+I want to add one more thing.
+
+249
+00:15:59,160 --> 00:16:03,980
+I'm going to use is our if so if the user is south antiquated I would say.
+
+250
+00:16:03,980 --> 00:16:05,490
+True.
+
+251
+00:16:05,490 --> 00:16:06,400
+All right.
+
+252
+00:16:06,540 --> 00:16:12,000
+What else are going to send e-mail and this information whenever we go to new routes.
+
+253
+00:16:12,000 --> 00:16:16,710
+This information about the user is going to be available for us to use in react.
+
+254
+00:16:16,740 --> 00:16:19,530
+That's why I am attaching all of this information.
+
+255
+00:16:19,550 --> 00:16:24,220
+All right then I'm going to say name we do need the name request.
+
+256
+00:16:24,600 --> 00:16:25,480
+Oops.
+
+257
+00:16:25,680 --> 00:16:27,250
+Let me do it like this.
+
+258
+00:16:27,330 --> 00:16:29,820
+Request that user that name.
+
+259
+00:16:29,820 --> 00:16:33,030
+We need a last name so a copy paste.
+
+260
+00:16:33,060 --> 00:16:35,880
+I'm going to say last and last.
+
+261
+00:16:36,060 --> 00:16:36,950
+Almost done.
+
+262
+00:16:37,320 --> 00:16:37,740
+All right.
+
+263
+00:16:37,800 --> 00:16:38,550
+Let's get.
+
+264
+00:16:38,820 --> 00:16:40,530
+So we can add the roll.
+
+265
+00:16:40,530 --> 00:16:41,160
+I'm going to add it.
+
+266
+00:16:41,160 --> 00:16:48,210
+Why not so request that user that role or the way for the role we're going to use this as a checking
+
+267
+00:16:48,340 --> 00:16:50,140
+when I'm going to attach it anyways.
+
+268
+00:16:50,250 --> 00:16:53,080
+Now if we check it we have a cart and a history.
+
+269
+00:16:53,180 --> 00:16:54,460
+We're going to use them later.
+
+270
+00:16:54,480 --> 00:16:56,760
+So I'm going to put it right here.
+
+271
+00:16:57,150 --> 00:17:06,150
+So request that user dot and then cart and the last one is going to be history the history of purchases
+
+272
+00:17:06,150 --> 00:17:10,990
+so request the user and then history.
+
+273
+00:17:10,990 --> 00:17:11,700
+All right.
+
+274
+00:17:11,910 --> 00:17:18,600
+Now if you remember when we were just passing the user data on I don't want to do this I don't want
+
+275
+00:17:18,600 --> 00:17:20,600
+to send the all the user data.
+
+276
+00:17:20,610 --> 00:17:21,240
+I just want to sex.
+
+277
+00:17:21,240 --> 00:17:22,150
+SS true.
+
+278
+00:17:22,320 --> 00:17:26,020
+You're going to see why when we get to react so let's try again.
+
+279
+00:17:26,130 --> 00:17:31,530
+I'm going to go and and now we get some different information with all the IDs and everything else a
+
+280
+00:17:31,530 --> 00:17:33,430
+little bit cleaner.
+
+281
+00:17:33,540 --> 00:17:35,490
+As a user it's not an administrator.
+
+282
+00:17:35,490 --> 00:17:37,320
+Of course we get false.
+
+283
+00:17:37,320 --> 00:17:37,960
+All right man.
+
+284
+00:17:38,030 --> 00:17:39,630
+So everything works.
+
+285
+00:17:39,630 --> 00:17:43,700
+So now of course we need to log out and for the log out begin to do something very simple.
+
+286
+00:17:43,710 --> 00:17:46,340
+All right so let's go to the next section and do the log out.
+

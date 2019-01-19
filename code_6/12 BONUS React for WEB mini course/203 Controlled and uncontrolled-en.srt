@@ -1,0 +1,1184 @@
+1
+00:00:00,540 --> 00:00:03,150
+All right so now we're going to be talking about forms.
+
+2
+00:00:03,260 --> 00:00:06,510
+We're going to be talking about controlled and uncontrolled.
+
+3
+00:00:06,510 --> 00:00:10,820
+So first we're going to be using a template I've made so you need to download it.
+
+4
+00:00:10,840 --> 00:00:13,470
+You can find it in the project resource.
+
+5
+00:00:13,470 --> 00:00:18,960
+So downlow the project put it inside a folder whatever folder doesn't matter.
+
+6
+00:00:18,960 --> 00:00:21,480
+And then of course you need to navigate to that folder.
+
+7
+00:00:21,480 --> 00:00:28,950
+I've called mine 0 5 forms and then you need to do NPM install so you it's going to go and download
+
+8
+00:00:28,950 --> 00:00:30,220
+all the dependencies.
+
+9
+00:00:30,420 --> 00:00:34,920
+And after you are done you need to do and pm start just like that.
+
+10
+00:00:35,080 --> 00:00:38,360
+I'm going to run it right now because everything is installed for me.
+
+11
+00:00:38,520 --> 00:00:40,740
+So it's going to show it's right here.
+
+12
+00:00:40,740 --> 00:00:42,090
+So this is what we're going to get.
+
+13
+00:00:42,090 --> 00:00:43,870
+It's going to reload in a second.
+
+14
+00:00:43,890 --> 00:00:44,920
+So this is what we get.
+
+15
+00:00:44,940 --> 00:00:47,540
+We're going to have three different routes right here.
+
+16
+00:00:47,540 --> 00:00:52,650
+We have a do we have a controlled controlled and then a user is going to be doing something else right
+
+17
+00:00:52,650 --> 00:00:53,700
+here.
+
+18
+00:00:53,820 --> 00:00:58,010
+Right from the start we have an uncontrolled component and are controlled by you.
+
+19
+00:00:58,020 --> 00:00:59,760
+Sorry not component.
+
+20
+00:00:59,760 --> 00:01:04,810
+So first we're going to be using the control we're going to build a controlled component so going to
+
+21
+00:01:04,820 --> 00:01:08,980
+close everything I have right here is all I'm going to go to controlled.
+
+22
+00:01:09,180 --> 00:01:15,300
+So inside control we just have a class based component with the state and you know with render really
+
+23
+00:01:15,340 --> 00:01:16,060
+really simple.
+
+24
+00:01:16,200 --> 00:01:18,040
+So remember to download and run it.
+
+25
+00:01:18,060 --> 00:01:18,760
+OK.
+
+26
+00:01:19,290 --> 00:01:22,360
+So OK so a control component.
+
+27
+00:01:22,480 --> 00:01:25,760
+It's whenever we use re-act 100 percent.
+
+28
+00:01:25,980 --> 00:01:30,550
+And you know we don't bypass react just like we do with draps.
+
+29
+00:01:30,750 --> 00:01:36,640
+So the best example comes directly from the playbook and it's of course working with forms.
+
+30
+00:01:36,870 --> 00:01:39,340
+So right here we're going to have a just component.
+
+31
+00:01:39,390 --> 00:01:40,040
+OK.
+
+32
+00:01:40,350 --> 00:01:46,590
+And the Whenever we work with the form whenever we use control component everything has to go through
+
+33
+00:01:46,590 --> 00:01:47,430
+state.
+
+34
+00:01:47,520 --> 00:01:48,770
+You know nuts just like ref.
+
+35
+00:01:48,780 --> 00:01:51,580
+We don't put the things directly into the DOM.
+
+36
+00:01:51,690 --> 00:01:57,870
+So let's build a form that's really the form for this and to begin to be changing everything else and
+
+37
+00:01:57,870 --> 00:02:02,680
+passing the functions so we can know and see how a control component works.
+
+38
+00:02:02,690 --> 00:02:08,850
+So OK so first they're going to have a div that it's going to have a class name of container inside
+
+39
+00:02:08,850 --> 00:02:15,030
+the the up the CSSA you all have already have the styles so you don't have to worry about that.
+
+40
+00:02:15,030 --> 00:02:19,530
+So we have a class named container and inside of course we can have a form.
+
+41
+00:02:19,620 --> 00:02:21,900
+So I'm going to open and close the form.
+
+42
+00:02:21,990 --> 00:02:22,620
+Right.
+
+43
+00:02:22,980 --> 00:02:28,290
+So inside a form we can have two different elements one for a name and one for last name.
+
+44
+00:02:28,290 --> 00:02:30,200
+It's a very simple form.
+
+45
+00:02:30,210 --> 00:02:40,170
+So inside form I can have one element that is going to have a class name of form element just like that.
+
+46
+00:02:40,200 --> 00:02:40,880
+OK.
+
+47
+00:02:41,040 --> 00:02:46,440
+So then we're going to have a label of course because we need a label just to be correct and my label
+
+48
+00:02:46,440 --> 00:02:49,550
+is going to say Antar name makes sense right.
+
+49
+00:02:49,990 --> 00:02:50,260
+OK.
+
+50
+00:02:50,280 --> 00:02:55,660
+What else you're going to have an input and the input is going to be I'm going to put it down here is
+
+51
+00:02:55,690 --> 00:02:57,060
+going to be equal type.
+
+52
+00:02:57,120 --> 00:02:59,060
+And of course it's going to be equal text.
+
+53
+00:02:59,190 --> 00:03:00,740
+And then for now I'm just going to close it.
+
+54
+00:03:00,740 --> 00:03:02,930
+Begin to do more here in a minute.
+
+55
+00:03:03,030 --> 00:03:08,410
+We're going to have a different a different container just a different div.
+
+56
+00:03:08,760 --> 00:03:14,220
+It's going to be the same class opening close just like this and we're going to have a different level
+
+57
+00:03:14,280 --> 00:03:18,800
+on going to copy this and paste at the bottom because I'm lazy and it's going to be.
+
+58
+00:03:18,800 --> 00:03:21,020
+Enter last name.
+
+59
+00:03:21,060 --> 00:03:22,220
+Makes sense again.
+
+60
+00:03:22,490 --> 00:03:27,770
+Then we can have a different input and this input again is going to be type text.
+
+61
+00:03:27,810 --> 00:03:32,720
+So I'm going to copy the one we have on top and paste it down here.
+
+62
+00:03:33,270 --> 00:03:36,060
+So I'm going to delete this again to save the form.
+
+63
+00:03:36,060 --> 00:03:39,570
+And you know we get the Leavell and the input Frigga.
+
+64
+00:03:39,840 --> 00:03:45,810
+So now the thing is that whenever we use a control component because we are in the control view everything
+
+65
+00:03:45,870 --> 00:03:48,030
+needs to go through react.
+
+66
+00:03:48,030 --> 00:03:54,300
+If I type something right here this for example let's say Francis this Francis.
+
+67
+00:03:54,350 --> 00:03:57,610
+Being put by the by us inside the actual input.
+
+68
+00:03:57,630 --> 00:04:01,410
+So we put it directly into the DOM right.
+
+69
+00:04:01,410 --> 00:04:04,590
+We're putting the data inside the input ourselves.
+
+70
+00:04:04,620 --> 00:04:09,970
+And so this is not controlled because this Francis is not going through state.
+
+71
+00:04:10,170 --> 00:04:15,600
+So what we need to do we need to do something right here create a couple of functions and this function
+
+72
+00:04:15,600 --> 00:04:18,760
+will detect when we type something inside here.
+
+73
+00:04:18,840 --> 00:04:24,360
+And instead of putting it right here is going to add the state is going to read render with this value
+
+74
+00:04:24,560 --> 00:04:28,950
+and it's going to putit react is going to put that value for us around.
+
+75
+00:04:29,170 --> 00:04:35,230
+So OK so first what do we need first we need a value right here in this input we don't have a value.
+
+76
+00:04:35,460 --> 00:04:41,460
+So I'm going to say value is going to be equal to you know something else and we're going to say this
+
+77
+00:04:41,550 --> 00:04:46,180
+that state that name we don't have it we're going to create it in a minute.
+
+78
+00:04:46,200 --> 00:04:47,350
+I'm going to copy this one.
+
+79
+00:04:47,350 --> 00:04:53,150
+I'm going to put it at the bottom and this one is going to be last name last name.
+
+80
+00:04:53,150 --> 00:04:54,120
+We're going to have the state.
+
+81
+00:04:54,150 --> 00:04:55,940
+So let's create it right now.
+
+82
+00:04:56,130 --> 00:05:03,060
+We're going to go right here and we're going to say name and it's going to be to Francis whatever coma.
+
+83
+00:05:03,140 --> 00:05:06,920
+And then last name Jones.
+
+84
+00:05:07,250 --> 00:05:14,540
+So now if you reload the application we do have a stading site value so react it's placing the values
+
+85
+00:05:14,540 --> 00:05:17,980
+whenever the application Lute's you know makes sense.
+
+86
+00:05:17,990 --> 00:05:19,690
+Now of course we don't want to do this.
+
+87
+00:05:19,730 --> 00:05:28,550
+We want to pass an empty stage and have re-act put the data that in pass since begin to be typing things.
+
+88
+00:05:28,550 --> 00:05:30,390
+We need an event listener.
+
+89
+00:05:30,620 --> 00:05:36,530
+So we're going to do on change now whenever we the emptiness re-act is going to run a function.
+
+90
+00:05:36,530 --> 00:05:43,400
+So I'm going to say this dot handle and you can choose whatever name you want right here handle name
+
+91
+00:05:43,400 --> 00:05:45,120
+change makes sense.
+
+92
+00:05:45,600 --> 00:05:46,160
+OK.
+
+93
+00:05:46,430 --> 00:05:51,590
+I'm going to do the same thing going to copy the onchange and I'm going to paste it down here but this
+
+94
+00:05:51,590 --> 00:05:55,100
+one instead of name is going to be last name.
+
+95
+00:05:55,730 --> 00:05:59,550
+All right going to save it for now of course we didn't have this functions.
+
+96
+00:05:59,570 --> 00:06:01,080
+We need to create them.
+
+97
+00:06:01,360 --> 00:06:01,640
+OK.
+
+98
+00:06:01,670 --> 00:06:03,560
+So I'm going to go right here.
+
+99
+00:06:03,950 --> 00:06:06,730
+And at the top going to get it just create two different functions.
+
+100
+00:06:06,740 --> 00:06:13,400
+I'm going to say handle name change is going to be equal and we can grab that event that is going to
+
+101
+00:06:13,730 --> 00:06:16,860
+be provided by the change even listener.
+
+102
+00:06:16,900 --> 00:06:19,760
+So OK I'm going to say event now.
+
+103
+00:06:19,930 --> 00:06:31,350
+First thing it to do console log and check the event dot target dot value just like that.
+
+104
+00:06:32,390 --> 00:06:33,060
+OK.
+
+105
+00:06:33,380 --> 00:06:37,850
+And I'm going to do the same thing and again copy this and paste it at the bottom and this one is going
+
+106
+00:06:37,850 --> 00:06:39,100
+to be last name.
+
+107
+00:06:39,110 --> 00:06:42,530
+So we're going to have two functions for two different inputs.
+
+108
+00:06:42,910 --> 00:06:43,350
+OK.
+
+109
+00:06:43,400 --> 00:06:49,380
+Now if I'm going to open the console let me put it at the bottom.
+
+110
+00:06:49,490 --> 00:06:53,540
+Now this one let me make a bigger because I see the options.
+
+111
+00:06:53,540 --> 00:06:54,540
+There we go.
+
+112
+00:06:54,540 --> 00:06:56,150
+I'm going to put it at the bottom.
+
+113
+00:06:56,150 --> 00:06:57,330
+Good.
+
+114
+00:06:57,410 --> 00:06:59,300
+I'm going to be opening the console.
+
+115
+00:06:59,300 --> 00:07:00,170
+There you go.
+
+116
+00:07:00,170 --> 00:07:07,010
+So now if I type something we get an F and if I type something else we get an F and if I type a letter
+
+117
+00:07:07,250 --> 00:07:07,890
+we get a name.
+
+118
+00:07:07,910 --> 00:07:13,760
+So we get one character individually because we are typing only one character.
+
+119
+00:07:13,940 --> 00:07:19,880
+The thing is that whenever we do this you know re-act is going to grab that the letter is going to show
+
+120
+00:07:19,880 --> 00:07:20,450
+it right here.
+
+121
+00:07:20,450 --> 00:07:24,250
+But the thing is that nothing gets placed right here.
+
+122
+00:07:24,290 --> 00:07:29,360
+So this function the main purpose of having this function is going to be updating the state.
+
+123
+00:07:29,360 --> 00:07:33,500
+So the next time we type we can have all their information right here.
+
+124
+00:07:33,530 --> 00:07:35,620
+So let me show you how to handle change.
+
+125
+00:07:35,650 --> 00:07:42,790
+I'm going to say this that said state said the new state and this one is going to be equal to name.
+
+126
+00:07:42,980 --> 00:07:44,500
+And we pass the same thing.
+
+127
+00:07:44,510 --> 00:07:46,450
+Event the target the value.
+
+128
+00:07:46,550 --> 00:07:47,460
+OK.
+
+129
+00:07:47,930 --> 00:07:49,070
+So let's try again.
+
+130
+00:07:50,810 --> 00:07:57,110
+So if I type an F the F stays right here inside the input.
+
+131
+00:07:57,190 --> 00:08:01,110
+You're right and this f is going to be placed by the state.
+
+132
+00:08:01,150 --> 00:08:05,370
+Remember that we are the state then the application is going to read render.
+
+133
+00:08:05,410 --> 00:08:08,610
+And now the Baalu is going to be equal to f..
+
+134
+00:08:08,620 --> 00:08:15,880
+Now if I type an e d e it's still going to get there because the application is going to add that E
+
+135
+00:08:16,510 --> 00:08:20,740
+F and that e is going to abduct this state the obligation will we render.
+
+136
+00:08:20,740 --> 00:08:23,370
+And now the value is going to be f e.
+
+137
+00:08:23,470 --> 00:08:28,490
+And the same thing as long as we type No the information is still there.
+
+138
+00:08:28,480 --> 00:08:30,440
+It's not getting delete.
+
+139
+00:08:30,600 --> 00:08:36,280
+And OK so what is the point of doing all of this whenever we type something we are not entering the
+
+140
+00:08:36,280 --> 00:08:40,950
+information directly into the input re-act is doing this through the state.
+
+141
+00:08:40,970 --> 00:08:47,860
+You know whenever the we we render is going to output whatever we have inside this state and whatever
+
+142
+00:08:47,920 --> 00:08:52,730
+input you know that's the main idea of using a control component.
+
+143
+00:08:52,750 --> 00:08:56,960
+You don't do things manually re-act is going to do it for you.
+
+144
+00:08:56,980 --> 00:08:59,670
+So I'm going to say last name just like that.
+
+145
+00:09:01,460 --> 00:09:07,780
+An ok and everything should work and if I say Frances we get Frances and if I say last name we get the
+
+146
+00:09:07,770 --> 00:09:08,560
+last name.
+
+147
+00:09:08,680 --> 00:09:12,070
+So you know this is the main idea of using a control component.
+
+148
+00:09:12,100 --> 00:09:16,480
+And if on the future in future you will work with the forms.
+
+149
+00:09:16,480 --> 00:09:22,780
+This should be the best approach working with state and you know using a control component.
+
+150
+00:09:23,050 --> 00:09:28,510
+We have the other way which is an uncontrolled component and we're going to be talking about this right
+
+151
+00:09:28,510 --> 00:09:28,870
+now.
+
+152
+00:09:30,050 --> 00:09:33,590
+OK so now let's see how an uncontrolled component works.
+
+153
+00:09:33,590 --> 00:09:35,720
+We know how a controlled compound works.
+
+154
+00:09:35,720 --> 00:09:37,480
+So let's talk about this one.
+
+155
+00:09:37,500 --> 00:09:42,890
+I'm going to be going to controlled and because I don't want to type all over all over again I'm just
+
+156
+00:09:42,890 --> 00:09:44,750
+going to copy the whole container.
+
+157
+00:09:44,790 --> 00:09:49,190
+This is going to copy go to control and just paste it down there.
+
+158
+00:09:49,190 --> 00:09:50,780
+There's a few things that we need to delete.
+
+159
+00:09:50,780 --> 00:09:55,880
+We don't need the on change and we don't need the values are going to go ahead and just delete those
+
+160
+00:09:55,880 --> 00:09:56,240
+ones.
+
+161
+00:09:56,250 --> 00:09:57,990
+OK good.
+
+162
+00:09:58,440 --> 00:09:59,290
+We're going to save it.
+
+163
+00:09:59,390 --> 00:10:03,000
+Let's go to our control and inside of control we get the same result.
+
+164
+00:10:03,010 --> 00:10:05,310
+The Enter name and enter last name.
+
+165
+00:10:05,630 --> 00:10:09,580
+So with an uncontrolled component we don't use the state.
+
+166
+00:10:09,590 --> 00:10:16,010
+There is no need to use the state because we are going to get that information devalues directly from
+
+167
+00:10:16,010 --> 00:10:16,690
+the DOM.
+
+168
+00:10:16,870 --> 00:10:17,420
+OK.
+
+169
+00:10:17,870 --> 00:10:22,960
+So how do we use an uncontrolled component how do we make it an uncontrolled.
+
+170
+00:10:23,060 --> 00:10:24,540
+Well we use refs.
+
+171
+00:10:24,560 --> 00:10:27,060
+We talked about refs in the future in the past.
+
+172
+00:10:27,200 --> 00:10:32,080
+So we're going to be using refs to catch the value of each input.
+
+173
+00:10:32,300 --> 00:10:34,040
+So I'm going to go ahead and just do it.
+
+174
+00:10:34,070 --> 00:10:35,230
+I'm going to say ref.
+
+175
+00:10:35,430 --> 00:10:37,310
+And now this is going to look a little bit weird.
+
+176
+00:10:37,310 --> 00:10:38,320
+Let me type it first.
+
+177
+00:10:38,330 --> 00:10:41,750
+I'm going to say input is going to be equal to this name.
+
+178
+00:10:41,990 --> 00:10:44,120
+And then it's going to be equal to input.
+
+179
+00:10:44,180 --> 00:10:46,290
+So that's pretty much what we're doing.
+
+180
+00:10:46,290 --> 00:10:52,160
+We're creating a variable called this that name and that this that name contains whatever information
+
+181
+00:10:52,400 --> 00:10:53,710
+we have inside the input.
+
+182
+00:10:53,720 --> 00:10:57,180
+No just like event this input this variable right here.
+
+183
+00:10:57,320 --> 00:10:58,780
+It's just like an event.
+
+184
+00:10:58,820 --> 00:10:59,670
+We catch it.
+
+185
+00:10:59,720 --> 00:11:05,180
+We create desirable and we put inside this marble whatever we have inside this event.
+
+186
+00:11:05,180 --> 00:11:06,450
+This is the main reason.
+
+187
+00:11:06,590 --> 00:11:12,760
+So now whenever we use that name it's going to store this viable that there's that name inside the class
+
+188
+00:11:12,890 --> 00:11:18,950
+so we can make a reference to that wherever we are and you know and get the values of this input.
+
+189
+00:11:19,070 --> 00:11:25,170
+Of course right here we could use something else but we're going to lead the state doesn't matter.
+
+190
+00:11:25,490 --> 00:11:29,670
+So we have the this name that contains all the information about this.
+
+191
+00:11:29,760 --> 00:11:30,240
+OK.
+
+192
+00:11:30,380 --> 00:11:32,940
+So we need to do the same thing with the last name.
+
+193
+00:11:32,940 --> 00:11:38,210
+So I'm going to copy all of this in a copy and then just paste it at the bottom and I'm going to say
+
+194
+00:11:38,210 --> 00:11:41,050
+last name.
+
+195
+00:11:41,240 --> 00:11:46,920
+So now we have a variable called this last name that contains all the information about the template.
+
+196
+00:11:47,270 --> 00:11:48,930
+So now I'm going to be adding something.
+
+197
+00:11:48,950 --> 00:11:54,650
+We're going to be of course extending this a lot so I'm going to say button and now whenever we submit
+
+198
+00:11:54,650 --> 00:12:00,680
+the form I want to get the values that we have inside ref but I need a way I need something that tells
+
+199
+00:12:00,680 --> 00:12:06,080
+me that the user submitted the form so I'm going to create an unclick for now.
+
+200
+00:12:06,200 --> 00:12:08,940
+We're going to do this in a different way in a minute.
+
+201
+00:12:09,260 --> 00:12:14,580
+And this button is going to be opening close and we're going to say button.
+
+202
+00:12:15,320 --> 00:12:16,520
+There we go.
+
+203
+00:12:16,610 --> 00:12:22,570
+And this button is going to say don't no sign and good because we have a user and last name whatever
+
+204
+00:12:23,090 --> 00:12:24,760
+it did register you know.
+
+205
+00:12:24,950 --> 00:12:28,230
+So this unclick is going to be running a function.
+
+206
+00:12:28,520 --> 00:12:32,610
+So again we're going to call it handle self.
+
+207
+00:12:33,590 --> 00:12:36,110
+And then just click you know make sense.
+
+208
+00:12:36,110 --> 00:12:41,350
+So the main purpose of this function is going to be grabbing whatever we have and this ref.
+
+209
+00:12:41,490 --> 00:12:45,980
+So going to go right here at the top of me just copy the name going to go right here.
+
+210
+00:12:45,980 --> 00:12:50,930
+The tab is going to be creating a marble I'm sorry a function that is going to be doing all the logic
+
+211
+00:12:50,960 --> 00:12:56,840
+with this refs so I'm going to say Handels of Klegg is going to be equal to the event because we are
+
+212
+00:12:56,840 --> 00:13:04,460
+using any vandalism were going to be grabbing that event and then say prevent and then default.
+
+213
+00:13:04,490 --> 00:13:09,650
+Of course we need to prevent the default behavior of this form because if we click on this it's going
+
+214
+00:13:09,650 --> 00:13:12,910
+to be made in the form and the application will reload.
+
+215
+00:13:12,920 --> 00:13:13,900
+And we don't want that.
+
+216
+00:13:13,940 --> 00:13:15,990
+With this we prevent that.
+
+217
+00:13:16,010 --> 00:13:17,870
+This is standard Javascript.
+
+218
+00:13:17,960 --> 00:13:22,990
+So now we need to get the information that we have inside this name and this last name.
+
+219
+00:13:23,080 --> 00:13:26,820
+OK so I'm going to go round here and going to say Konst values.
+
+220
+00:13:26,840 --> 00:13:30,640
+It's going to be it called to name and last name.
+
+221
+00:13:30,650 --> 00:13:34,420
+You know the two inputs we have last name.
+
+222
+00:13:35,030 --> 00:13:35,270
+OK.
+
+223
+00:13:35,270 --> 00:13:39,380
+So the name is going to be equal to this the name.
+
+224
+00:13:39,380 --> 00:13:42,510
+And now we need to get the values since we restored this.
+
+225
+00:13:42,670 --> 00:13:44,820
+We're going to save value and there we go.
+
+226
+00:13:44,840 --> 00:13:47,090
+We can't get the value of this that name.
+
+227
+00:13:47,200 --> 00:13:52,290
+And the same thing with this that last name dot value.
+
+228
+00:13:52,580 --> 00:14:01,570
+All right I'm going to do Cancellara just like this and I'm going to get values about values.
+
+229
+00:14:01,580 --> 00:14:03,380
+Let's make it plural bodies.
+
+230
+00:14:03,380 --> 00:14:04,150
+There you go.
+
+231
+00:14:04,550 --> 00:14:09,270
+So now I'm going to go to Control of course I'm going to type something it's going to be Frances.
+
+232
+00:14:09,380 --> 00:14:11,910
+And the last name is going to be Jones.
+
+233
+00:14:12,020 --> 00:14:18,290
+Now this information we are entering the characters and you know Francis and Jones inside the input
+
+234
+00:14:18,290 --> 00:14:21,920
+directly inside Dom react is not doing this job for us.
+
+235
+00:14:21,920 --> 00:14:23,750
+We are just entering the information.
+
+236
+00:14:23,960 --> 00:14:30,860
+So now whenever we click on sign n this handles of click is going to grab the formation stored inside
+
+237
+00:14:31,190 --> 00:14:33,000
+an object and then begin to get it.
+
+238
+00:14:33,000 --> 00:14:38,230
+So if I do sign and we get named Francis and last name JONES So this works.
+
+239
+00:14:38,270 --> 00:14:40,790
+But this of course is an uncontrolled component.
+
+240
+00:14:40,790 --> 00:14:46,560
+We don't have a state and re-act is not entering and just ruling the information for us.
+
+241
+00:14:46,580 --> 00:14:49,360
+We are just doing it directly with drafts.
+
+242
+00:14:49,580 --> 00:14:52,910
+So this is an example of uncontrolled and control component.
+
+243
+00:14:53,030 --> 00:14:58,110
+And of course in the future whenever we you work with forms you can use whatever you want.
+
+244
+00:14:58,110 --> 00:15:02,050
+You know you can use a control and you can use an uncontrolled.
+
+245
+00:15:02,360 --> 00:15:09,110
+And of course the main difference is that using a control component needs more logic a lot more code
+
+246
+00:15:09,350 --> 00:15:14,020
+you know right this way you could do this directly you know which is much much simpler.
+
+247
+00:15:14,240 --> 00:15:22,310
+But again if you're using react to y bypassing react if you're going to use re-act use we 100 percent
+
+248
+00:15:22,370 --> 00:15:24,600
+not just half way.
+
+249
+00:15:24,650 --> 00:15:24,980
+OK.
+
+250
+00:15:25,010 --> 00:15:30,860
+So bear on this course we're going to use the correct way to encode the correct way.
+
+251
+00:15:30,950 --> 00:15:33,950
+We're just going to be using a controlled component.
+
+252
+00:15:33,950 --> 00:15:38,250
+Now this set up right here you can choose to do something like this.
+
+253
+00:15:38,270 --> 00:15:44,850
+It's still going to work of course and I'm going to do one more thing I'm going to go to control components.
+
+254
+00:15:44,860 --> 00:15:50,580
+And now the thing is that right here you're clicking the handles of click to get the values.
+
+255
+00:15:50,690 --> 00:15:51,280
+OK.
+
+256
+00:15:51,500 --> 00:15:56,010
+So how do we do to get the data from this one.
+
+257
+00:15:56,060 --> 00:16:03,380
+You know from the state if you remember right here in form what we can do we can say on SIFF med just
+
+258
+00:16:03,380 --> 00:16:04,190
+like that.
+
+259
+00:16:04,490 --> 00:16:10,870
+And then we're going to be passing a function then I'm going to be calling this that on as handler or
+
+260
+00:16:10,900 --> 00:16:12,690
+whatever doesn't matter.
+
+261
+00:16:13,280 --> 00:16:20,620
+So this on as handler the main job of this one is going to be stopping the form from submission.
+
+262
+00:16:20,630 --> 00:16:24,980
+So I'm going to go and copy the event prevent default.
+
+263
+00:16:24,980 --> 00:16:29,330
+And now where do we have the information about the inputs inside the state.
+
+264
+00:16:29,330 --> 00:16:30,080
+Right.
+
+265
+00:16:30,170 --> 00:16:40,940
+So if I do console that law then this opening the the server that stayed we should be getting the information
+
+266
+00:16:40,940 --> 00:16:42,340
+about the form.
+
+267
+00:16:42,540 --> 00:16:43,650
+So ok me.
+
+268
+00:16:43,910 --> 00:16:46,680
+I made a mistake for the user and whatever.
+
+269
+00:16:46,700 --> 00:16:50,310
+Ok so I'm going to say event I forgot to do that.
+
+270
+00:16:50,710 --> 00:16:52,130
+So going to reload the application.
+
+271
+00:16:52,130 --> 00:16:53,430
+I'm inside control.
+
+272
+00:16:53,510 --> 00:16:56,330
+I do Francis and then Jones.
+
+273
+00:16:56,540 --> 00:17:00,060
+And then of course I don't have a button but I'm going to press enter.
+
+274
+00:17:00,210 --> 00:17:00,880
+OK.
+
+275
+00:17:01,030 --> 00:17:10,100
+When we just do it like this I'm going to do Bunin and then I have met and that type is going to be
+
+276
+00:17:10,140 --> 00:17:11,050
+Superman of course
+
+277
+00:17:14,650 --> 00:17:16,370
+reload again.
+
+278
+00:17:16,450 --> 00:17:20,610
+It's going to be Francis and then Jones and then SIFF mad.
+
+279
+00:17:20,750 --> 00:17:24,300
+You know we get the same information we get the name and we get the last name.
+
+280
+00:17:24,400 --> 00:17:31,060
+So the way to get the information about your form and all the inputs is through state because we are
+
+281
+00:17:31,060 --> 00:17:32,120
+using control.
+
+282
+00:17:32,290 --> 00:17:37,220
+So with these on submit you get to know when the user is submitting something.
+
+283
+00:17:37,300 --> 00:17:43,210
+So you just get to the state of whatever you have inside the form and then you just do the network request
+
+284
+00:17:43,570 --> 00:17:50,790
+to store the information or to log in the user or whatever is that you want to do with with this information.
+
+285
+00:17:50,800 --> 00:17:53,740
+All right of course this is a very very simple approach.
+
+286
+00:17:53,860 --> 00:18:00,160
+On the next sections we're going to be discussing kind of a I wouldn't say better but it's a more complete
+
+287
+00:18:00,190 --> 00:18:02,970
+and complex way to work with forms.
+
+288
+00:18:02,980 --> 00:18:08,020
+Because of course whenever you were forms you need to validate the information and you need to do a
+
+289
+00:18:08,020 --> 00:18:08,860
+lot of things.
+
+290
+00:18:08,860 --> 00:18:09,410
+OK.
+
+291
+00:18:09,580 --> 00:18:10,610
+So we're going to be doing that.
+
+292
+00:18:10,600 --> 00:18:15,910
+We're going to be building a template inside the user where the user is going to enter something formation
+
+293
+00:18:15,970 --> 00:18:20,020
+and we're going to be using a template to validate everything to show the inputs.
+
+294
+00:18:20,230 --> 00:18:22,190
+And you know we're going to be using a lot of logic.
+
+295
+00:18:22,240 --> 00:18:25,500
+So it's going to take a little bit of time.
+
+296
+00:18:25,510 --> 00:18:28,210
+So grab a cup of coffee and let's begin with that.
+

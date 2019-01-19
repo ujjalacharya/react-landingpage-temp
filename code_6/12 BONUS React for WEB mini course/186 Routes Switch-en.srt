@@ -1,0 +1,348 @@
+1
+00:00:00,930 --> 00:00:01,280
+Right.
+
+2
+00:00:01,280 --> 00:00:07,050
+So so far we were getting a tiny problem but we fixed it using the exact keyword.
+
+3
+00:00:07,120 --> 00:00:10,020
+I'm going to leave the exact I'm going to go back to that problem.
+
+4
+00:00:10,050 --> 00:00:12,310
+I'm going to give you a different solution for this.
+
+5
+00:00:12,530 --> 00:00:17,950
+So of course if I remove the X act and we go to the main application to home we get home.
+
+6
+00:00:17,960 --> 00:00:25,360
+But if we go to posts we get home and we get posts and this is because the route is pretty much the
+
+7
+00:00:25,360 --> 00:00:26,390
+same right here.
+
+8
+00:00:26,420 --> 00:00:29,300
+We have four slash and right here we have four slash.
+
+9
+00:00:29,300 --> 00:00:34,640
+So this passes through and it's rendering the home and the same thing with posts is going to go to the
+
+10
+00:00:34,640 --> 00:00:35,370
+next one.
+
+11
+00:00:35,460 --> 00:00:42,500
+And we have four slash and then posts is going to render that of course you know this makes sense.
+
+12
+00:00:42,500 --> 00:00:47,720
+Now the thing is that if we put ex-addict just like here we are telling we are prouder that we want
+
+13
+00:00:47,720 --> 00:00:53,180
+to rendered this route only if it matches everything that we have in the path.
+
+14
+00:00:53,180 --> 00:00:56,190
+And of course that is fixing the problem.
+
+15
+00:00:56,390 --> 00:00:59,860
+Now a router is going to give us a different solution for this.
+
+16
+00:00:59,990 --> 00:01:03,500
+We're going to have the ability to use switch.
+
+17
+00:01:03,530 --> 00:01:09,560
+So I'm going to do coma and I'm going to bring switch to this just like a majoris crypt switch.
+
+18
+00:01:09,570 --> 00:01:11,780
+Well same same idea.
+
+19
+00:01:11,940 --> 00:01:20,480
+I'm going to go at the bottom and I'm going to wrap all the routes inside the switch statement but not
+
+20
+00:01:20,480 --> 00:01:22,610
+statement so much good.
+
+21
+00:01:22,610 --> 00:01:22,860
+OK.
+
+22
+00:01:22,880 --> 00:01:25,050
+So everything is inside switch.
+
+23
+00:01:25,190 --> 00:01:27,820
+So how how is this going to work.
+
+24
+00:01:27,920 --> 00:01:28,430
+OK.
+
+25
+00:01:28,640 --> 00:01:35,150
+So in theory if I just really love the application and I made a mistake is going to be switch just like
+
+26
+00:01:35,150 --> 00:01:38,950
+that or reload the application.
+
+27
+00:01:38,990 --> 00:01:40,630
+Everything works good.
+
+28
+00:01:40,640 --> 00:01:41,590
+You know we go to home.
+
+29
+00:01:41,600 --> 00:01:45,150
+We go to posts profile and everything works great.
+
+30
+00:01:45,410 --> 00:01:48,020
+But the problem is that we're still using Excel.
+
+31
+00:01:48,050 --> 00:01:51,420
+So if I remove this it should be working right.
+
+32
+00:01:51,430 --> 00:01:51,860
+OK.
+
+33
+00:01:51,890 --> 00:01:53,700
+So that's really the application.
+
+34
+00:01:53,900 --> 00:01:58,790
+If I go to home we get home if I go to posts we get home.
+
+35
+00:01:58,960 --> 00:02:01,960
+We are not getting posts at all at all.
+
+36
+00:02:01,970 --> 00:02:03,170
+And if you go to profile.
+
+37
+00:02:03,170 --> 00:02:03,760
+Same thing.
+
+38
+00:02:03,770 --> 00:02:05,330
+We are just getting home.
+
+39
+00:02:05,390 --> 00:02:08,150
+So how this switch is working.
+
+40
+00:02:08,150 --> 00:02:09,600
+How does this work.
+
+41
+00:02:09,920 --> 00:02:16,730
+So if this switch is just like a switch statement just vanilla javascript switch is going to start checking
+
+42
+00:02:16,730 --> 00:02:18,970
+the route is going to get around right here.
+
+43
+00:02:19,010 --> 00:02:21,280
+It's going to start checking the routes is going to say OK.
+
+44
+00:02:21,290 --> 00:02:24,040
+Does this match the criteria.
+
+45
+00:02:24,170 --> 00:02:25,970
+Yes because we have a latch.
+
+46
+00:02:26,300 --> 00:02:31,080
+It's going to be rendering this one which is home which is what we get and everything else.
+
+47
+00:02:31,100 --> 00:02:32,420
+It's not going to be rendered.
+
+48
+00:02:32,480 --> 00:02:33,540
+It's just a rendering.
+
+49
+00:02:33,560 --> 00:02:36,220
+The first one that matches the criteria.
+
+50
+00:02:36,670 --> 00:02:37,150
+OK.
+
+51
+00:02:37,170 --> 00:02:39,560
+And if you go to post of course not that's going work.
+
+52
+00:02:39,560 --> 00:02:42,920
+Let me just remove this just like this.
+
+53
+00:02:43,030 --> 00:02:46,610
+If you go to posts of course we get posts we get home.
+
+54
+00:02:46,690 --> 00:02:50,850
+We are of course we are not getting home we will get nothing because we didn't have that route.
+
+55
+00:02:50,870 --> 00:02:52,900
+If you go to a profile you know it works.
+
+56
+00:02:53,120 --> 00:02:54,710
+But the thing is that we need a home.
+
+57
+00:02:54,740 --> 00:02:56,770
+So how can we make this work.
+
+58
+00:02:57,110 --> 00:02:59,200
+OK so I'm going to grab this one.
+
+59
+00:02:59,210 --> 00:03:05,920
+It just says just chop it and paste it at the end of the switch.
+
+60
+00:03:05,970 --> 00:03:08,830
+Of course if I do this it should be working well.
+
+61
+00:03:08,870 --> 00:03:09,140
+Yeah.
+
+62
+00:03:09,170 --> 00:03:10,100
+We go to home.
+
+63
+00:03:10,250 --> 00:03:12,850
+If you go to posts we are getting posts.
+
+64
+00:03:12,860 --> 00:03:21,800
+If you go to a profile of your getting profile so the the logic behind that is is that this works like
+
+65
+00:03:21,800 --> 00:03:22,900
+a switch statement.
+
+66
+00:03:23,090 --> 00:03:26,290
+We need to send all the less specific routes.
+
+67
+00:03:26,360 --> 00:03:31,330
+At the end of the chain and the more specific routes at the top.
+
+68
+00:03:31,370 --> 00:03:34,920
+For example if we start checking posts Let's go to posts.
+
+69
+00:03:34,970 --> 00:03:36,580
+Going to go to posts.
+
+70
+00:03:36,650 --> 00:03:39,830
+Number two and remember we added a username.
+
+71
+00:03:39,890 --> 00:03:42,610
+I'm going to say Francis whatever.
+
+72
+00:03:42,680 --> 00:03:50,510
+If I go right here you know you're not getting the ID and Francis it's because this one matches this
+
+73
+00:03:50,510 --> 00:03:55,630
+one so search is going to render this one but not the other one so it's not going to go here.
+
+74
+00:03:55,880 --> 00:04:03,350
+So again same then before we need to put this one at the end of the chain because it's less specific.
+
+75
+00:04:03,350 --> 00:04:06,660
+And if we notice of course this one it's really really specific.
+
+76
+00:04:06,980 --> 00:04:08,060
+OK.
+
+77
+00:04:08,540 --> 00:04:11,200
+With that logic let's just check it out.
+
+78
+00:04:11,270 --> 00:04:17,210
+If you go to two and Francis we are getting the tomb Francis we go to posts we get posts and profile
+
+79
+00:04:17,330 --> 00:04:17,870
+and home.
+
+80
+00:04:17,900 --> 00:04:25,010
+So everything works remember with search send the less specific routes on the bottom and the most specific
+
+81
+00:04:25,020 --> 00:04:26,240
+routes up top.
+
+82
+00:04:26,270 --> 00:04:28,990
+And that way it's going to work just fine.
+
+83
+00:04:29,450 --> 00:04:31,100
+OK so let's move forward.
+
+84
+00:04:31,100 --> 00:04:32,910
+Let's go to the next section.
+
+85
+00:04:33,070 --> 00:04:39,260
+We're going to be talking about the red redirections and the 4 0 4 page because of course you always
+
+86
+00:04:39,260 --> 00:04:41,000
+need for 0 4 pitch.
+
+87
+00:04:41,000 --> 00:04:42,650
+Let's go to the next section.
+

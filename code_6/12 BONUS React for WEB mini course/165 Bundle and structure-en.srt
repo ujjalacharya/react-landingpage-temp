@@ -1,0 +1,436 @@
+1
+00:00:00,920 --> 00:00:07,470
+So when you work with react or enage single page applications you're going to have a lot of files.
+
+2
+00:00:07,700 --> 00:00:12,390
+But what the user sees on the screen is going to be something else something different.
+
+3
+00:00:12,590 --> 00:00:14,960
+So let me bring you a chart right here.
+
+4
+00:00:15,230 --> 00:00:18,460
+So in one hand you can have your application right here.
+
+5
+00:00:18,860 --> 00:00:25,080
+So your application of course is going to contain a lot of files a lot of javascript and different files.
+
+6
+00:00:25,110 --> 00:00:32,060
+Let's get you could have hundreds of files then whenever you need to finish your project and you need
+
+7
+00:00:32,060 --> 00:00:38,660
+to publish to put it inside production you're going to be using web Pech and vavle and web pack and
+
+8
+00:00:38,660 --> 00:00:43,820
+battle is going to grab all your project is going to compile everything and then is going to give you
+
+9
+00:00:43,820 --> 00:00:45,370
+just a couple files.
+
+10
+00:00:45,380 --> 00:00:49,620
+You can have two or three or maybe a little bit more but just a few files.
+
+11
+00:00:49,970 --> 00:00:55,520
+So this index is going to be what the browser is going to be using is going to be seeing on the screen
+
+12
+00:00:55,940 --> 00:01:01,700
+and all your code or your application code is going to be bundled into one.
+
+13
+00:01:01,760 --> 00:01:07,040
+So battle and well-padded they're going to merge all your code and put it in some inside something that
+
+14
+00:01:07,040 --> 00:01:09,210
+calls bundle that D.S..
+
+15
+00:01:09,290 --> 00:01:11,330
+Now the bundle the name.
+
+16
+00:01:11,420 --> 00:01:17,060
+It's my convention bundle you can use you can use whatever name you want to react and create the app
+
+17
+00:01:17,060 --> 00:01:18,880
+is going to do this job.
+
+18
+00:01:19,040 --> 00:01:23,750
+And it's going to stored inside Vandel that has some mean exit right here.
+
+19
+00:01:23,750 --> 00:01:25,040
+So we have our application.
+
+20
+00:01:25,040 --> 00:01:26,860
+This one is the one we have right here.
+
+21
+00:01:26,870 --> 00:01:27,710
+We know that.
+
+22
+00:01:27,890 --> 00:01:34,550
+So if I do right click and I do inspect is going to give me the console and right here we can have that
+
+23
+00:01:34,640 --> 00:01:35,610
+actual Dom.
+
+24
+00:01:35,780 --> 00:01:42,170
+If I go to the header you can have a few tacks the fight the con Condon the styles and whatever.
+
+25
+00:01:42,170 --> 00:01:49,280
+Now if I scroll down and go to the body you can have a script and notice that right here we have a bundle
+
+26
+00:01:49,370 --> 00:01:50,350
+that jast.
+
+27
+00:01:50,510 --> 00:01:54,460
+So all the code for this application it's merge into one.
+
+28
+00:01:54,470 --> 00:02:02,960
+Let me just do a right click and let me go right here to network and reload the page again and this
+
+29
+00:02:02,960 --> 00:02:06,960
+Varndell that Jesus is going to be a bunch of files.
+
+30
+00:02:06,980 --> 00:02:11,250
+A lot of a lot of code bundled into one.
+
+31
+00:02:11,330 --> 00:02:16,520
+Right here we have all the code and this is going to be a really long coat of course and it's going
+
+32
+00:02:16,520 --> 00:02:17,930
+to get longer of course.
+
+33
+00:02:18,180 --> 00:02:18,460
+OK.
+
+34
+00:02:18,500 --> 00:02:19,670
+Let me close it.
+
+35
+00:02:19,740 --> 00:02:26,730
+So Noda know that whenever you work with react or single any single page application you're going to
+
+36
+00:02:26,740 --> 00:02:29,050
+be using just a bundle.
+
+37
+00:02:29,080 --> 00:02:29,860
+Yes.
+
+38
+00:02:30,260 --> 00:02:36,050
+And for now we are now going to learn how to do this by hand because we're using create re-act app and
+
+39
+00:02:36,050 --> 00:02:38,850
+create re-act up is going to do it for us.
+
+40
+00:02:39,080 --> 00:02:44,900
+But then when we reached the web pack section of the course we're going to do this Vandel manually.
+
+41
+00:02:45,230 --> 00:02:45,500
+OK.
+
+42
+00:02:45,500 --> 00:02:47,260
+So let's keep moving forward.
+
+43
+00:02:48,260 --> 00:02:48,500
+Right.
+
+44
+00:02:48,500 --> 00:02:52,930
+So let's talk a little bit of what's happening with the project structure.
+
+45
+00:02:52,970 --> 00:02:59,480
+So on top of the chain let me make this bigger just like here on top of the chain we have the node modules
+
+46
+00:02:59,810 --> 00:03:04,930
+here are all the dependencies that our project is going to need.
+
+47
+00:03:04,940 --> 00:03:09,540
+So if our project works is because we have the node modules.
+
+48
+00:03:09,770 --> 00:03:11,560
+So this is kind of the vendor folder.
+
+49
+00:03:11,570 --> 00:03:14,480
+If I open this can see a lot of files.
+
+50
+00:03:14,480 --> 00:03:19,070
+That's why it's taking a lot of time in installing and creating the re-act app.
+
+51
+00:03:19,070 --> 00:03:23,030
+It's installing all the dependencies for our project.
+
+52
+00:03:23,050 --> 00:03:25,100
+So OK we can have a bunch of files.
+
+53
+00:03:25,130 --> 00:03:27,730
+If you do this one nothing is going to work.
+
+54
+00:03:27,890 --> 00:03:31,700
+So think of this the node modules as the vendor folder.
+
+55
+00:03:31,730 --> 00:03:37,640
+Every piece of code you use from different developers is going to be right here just like we act and
+
+56
+00:03:37,640 --> 00:03:38,950
+everything else.
+
+57
+00:03:38,960 --> 00:03:42,570
+So then at the bottom of the chain we can have the package that Jason.
+
+58
+00:03:42,590 --> 00:03:44,370
+Let me make this better.
+
+59
+00:03:44,510 --> 00:03:50,630
+So the package that Jason is going to be the manifest for your project all the information about the
+
+60
+00:03:50,630 --> 00:03:56,810
+project modules just like nobody else and dependencies you're going to use is going to be listed right
+
+61
+00:03:56,820 --> 00:03:58,760
+here right here and dependencies.
+
+62
+00:03:58,880 --> 00:04:02,230
+We have re-act react Domm the name of the project.
+
+63
+00:04:02,240 --> 00:04:05,700
+It's one reac basics version and everything else.
+
+64
+00:04:05,810 --> 00:04:08,460
+And then of course you can have the scripts folder.
+
+65
+00:04:08,600 --> 00:04:15,080
+So this is what we're going to do what node is going to be listening to start the application remember
+
+66
+00:04:15,080 --> 00:04:16,550
+to start this.
+
+67
+00:04:16,640 --> 00:04:19,860
+We did NPM start this one.
+
+68
+00:04:19,880 --> 00:04:21,010
+We are doing NPM.
+
+69
+00:04:21,050 --> 00:04:26,160
+It's entering here start and it's starting the development server.
+
+70
+00:04:26,600 --> 00:04:27,030
+Good.
+
+71
+00:04:27,150 --> 00:04:32,960
+So we're going to be talking more about commands when we reach the notes section of the course but this
+
+72
+00:04:32,960 --> 00:04:35,300
+file it's really important.
+
+73
+00:04:35,300 --> 00:04:37,090
+And this is not a re-act file.
+
+74
+00:04:37,130 --> 00:04:41,100
+It's going to be a node jast file got me close.
+
+75
+00:04:41,120 --> 00:04:41,960
+Yes.
+
+76
+00:04:42,400 --> 00:04:42,770
+OK.
+
+77
+00:04:42,800 --> 00:04:47,200
+So then we have the public folder and the source folder.
+
+78
+00:04:47,480 --> 00:04:52,480
+So the important part of the public for there is going to be the index.
+
+79
+00:04:52,600 --> 00:04:58,910
+H Tim L So this index HMO is going to be what it's going to be rendered on the screen it's what we get
+
+80
+00:04:58,910 --> 00:05:02,170
+right here with the bundle that jazz and everything else.
+
+81
+00:05:02,180 --> 00:05:08,180
+Now the funny thing about this is that if I scroll down right here let me make it smaller.
+
+82
+00:05:09,630 --> 00:05:13,100
+We didn't have a bundled digest just like we have right here.
+
+83
+00:05:13,100 --> 00:05:19,040
+So what is happening why we are getting the bundle jast inside the HDMI out on the browser.
+
+84
+00:05:19,100 --> 00:05:20,200
+Not right here.
+
+85
+00:05:20,390 --> 00:05:27,670
+Well whenever you do NPM start re-act they create we act app and we pack are going to build a development's
+
+86
+00:05:27,670 --> 00:05:28,320
+server.
+
+87
+00:05:28,520 --> 00:05:34,310
+So the server is going to be something that can happen behind the scenes and what you see right here
+
+88
+00:05:34,400 --> 00:05:36,660
+is going to be rendered from memory.
+
+89
+00:05:36,740 --> 00:05:38,520
+It's not using the actual files.
+
+90
+00:05:38,540 --> 00:05:45,160
+It's building everything storing in memory and then you get this because you are in a development server.
+
+91
+00:05:45,440 --> 00:05:50,770
+Then whenever you go to production it's going to run web pack is going to create build and you're going
+
+92
+00:05:50,770 --> 00:05:53,380
+to see that that bundled that J.
+
+93
+00:05:53,510 --> 00:05:55,920
+So right here you get no development build.
+
+94
+00:05:55,940 --> 00:05:59,140
+It's not optimized then to create a production build.
+
+95
+00:05:59,180 --> 00:06:06,260
+We need to use a different command not NPM start but am pm on built and we're going to get this at the
+
+96
+00:06:06,260 --> 00:06:08,070
+end of this section.
+
+97
+00:06:08,380 --> 00:06:08,830
+OK.
+
+98
+00:06:08,870 --> 00:06:11,780
+Then the second folder is going to be the source folder.
+
+99
+00:06:11,810 --> 00:06:12,860
+We have it right here.
+
+100
+00:06:12,860 --> 00:06:19,150
+Make it bigger so we can have ab you know with the C Ss the javascript attached and everything else.
+
+101
+00:06:19,160 --> 00:06:21,810
+We're not going to be using a lot of files right here.
+
+102
+00:06:21,810 --> 00:06:28,950
+Now one of the files is going to be really important the index that has an inside the source begin to
+
+103
+00:06:28,970 --> 00:06:31,550
+store all the files for our application.
+
+104
+00:06:31,700 --> 00:06:33,710
+But the main file.
+
+105
+00:06:33,710 --> 00:06:38,600
+The one that that starts the application is going to be the index that G-S.
+
+106
+00:06:38,600 --> 00:06:44,510
+So this file is going to start everything for us inside our application and we're going to be using
+
+107
+00:06:44,510 --> 00:06:45,830
+this one of course.
+
+108
+00:06:46,160 --> 00:06:47,020
+OK that's good.
+
+109
+00:06:47,090 --> 00:06:50,250
+Let's go to the next section and keep moving forward.
+

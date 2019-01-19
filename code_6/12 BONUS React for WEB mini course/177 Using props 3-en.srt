@@ -1,0 +1,424 @@
+1
+00:00:01,240 --> 00:00:03,570
+OK so we are rendering all the items.
+
+2
+00:00:03,700 --> 00:00:10,090
+But the thing is that we have one component right here use list item that needs to grab this information
+
+3
+00:00:10,330 --> 00:00:13,780
+and show each news each post.
+
+4
+00:00:13,780 --> 00:00:15,640
+So we need to do that right now.
+
+5
+00:00:15,640 --> 00:00:22,870
+First we don't have anything inside news list items so we need to create a component for this.
+
+6
+00:00:22,870 --> 00:00:26,110
+So first I'm going to do import I'm sorry import react.
+
+7
+00:00:26,140 --> 00:00:29,170
+Yes react from.
+
+8
+00:00:29,170 --> 00:00:32,740
+And then of course we need to bring it from react right go.
+
+9
+00:00:33,130 --> 00:00:37,900
+So now we're going to create a functional component because we don't need classes right here.
+
+10
+00:00:37,900 --> 00:00:40,510
+We don't need to state it's going to be Konst.
+
+11
+00:00:40,570 --> 00:00:45,430
+And then of course it's going to be equal to news something that makes sense.
+
+12
+00:00:45,550 --> 00:00:46,470
+News item.
+
+13
+00:00:46,480 --> 00:00:47,060
+OK.
+
+14
+00:00:47,560 --> 00:00:54,670
+So this news item is going to be equal to a function just like this and this function is going to be
+
+15
+00:00:54,670 --> 00:00:55,900
+rendering something.
+
+16
+00:00:55,900 --> 00:01:00,040
+So we're going to say render Oh sorry not render return.
+
+17
+00:01:00,610 --> 00:01:06,850
+So this news item is going to receive the props that begin to be passing from the parent component which
+
+18
+00:01:06,850 --> 00:01:08,590
+is going to be on your list.
+
+19
+00:01:09,070 --> 00:01:11,790
+So this return for now is going to be just death.
+
+20
+00:01:11,950 --> 00:01:17,470
+And what I want to do I want to console log the prompts that we're going to pass just to check that
+
+21
+00:01:17,530 --> 00:01:19,600
+everything works OK.
+
+22
+00:01:19,740 --> 00:01:20,510
+OK.
+
+23
+00:01:20,950 --> 00:01:25,460
+So now we need to make this component available from other components.
+
+24
+00:01:25,660 --> 00:01:31,510
+So we're going to say export the font and then news item.
+
+25
+00:01:31,990 --> 00:01:34,030
+So this one it's kind of a rating right now.
+
+26
+00:01:34,180 --> 00:01:40,200
+So we need to import this useless item inside here inside US list.
+
+27
+00:01:40,260 --> 00:01:40,730
+OK.
+
+28
+00:01:40,900 --> 00:01:43,210
+So I'm going to bring it just like we did before.
+
+29
+00:01:43,240 --> 00:01:51,790
+I'm going to say import and the name was news news item and we're going to bring this one from from.
+
+30
+00:01:52,120 --> 00:01:54,360
+And then we're going to bring it from Dot.
+
+31
+00:01:54,370 --> 00:01:57,940
+Forward slash and use this item just like that.
+
+32
+00:01:58,420 --> 00:02:04,360
+So now instead of passing this I'm just going to cut this and paste it right here at the bottom and
+
+33
+00:02:04,360 --> 00:02:07,790
+common this out to be going to be using it later.
+
+34
+00:02:07,850 --> 00:02:14,290
+So instead of passing some data what I can do I can make a reference we can make a reference to this
+
+35
+00:02:14,290 --> 00:02:19,960
+new list item and we can pass on each iteration the actual item.
+
+36
+00:02:19,960 --> 00:02:26,060
+So are going to be returning one single element on each iteration.
+
+37
+00:02:26,260 --> 00:02:30,330
+So we're going to go right here and we're going to say news item.
+
+38
+00:02:30,850 --> 00:02:31,360
+Okay.
+
+39
+00:02:31,510 --> 00:02:34,300
+Let me close it like this.
+
+40
+00:02:34,300 --> 00:02:37,990
+So this news item is going to go to the news list.
+
+41
+00:02:37,990 --> 00:02:42,460
+It's going to for example read the first iteration.
+
+42
+00:02:42,700 --> 00:02:44,140
+It's going to go to a news item.
+
+43
+00:02:44,170 --> 00:02:48,130
+It's going to go to this file and it's going to pass it as props.
+
+44
+00:02:48,130 --> 00:02:56,260
+So if we look a lot of the props we can see that we have four different objects so we calling it four
+
+45
+00:02:56,260 --> 00:02:56,760
+times.
+
+46
+00:02:56,780 --> 00:03:02,290
+No we are constantly we are doing the console of Propst But of course Propst it's still empty.
+
+47
+00:03:02,320 --> 00:03:05,780
+So if we go back to the news this can pass the props.
+
+48
+00:03:05,950 --> 00:03:11,240
+Now we can choose whatever name we wish to say item makes sense.
+
+49
+00:03:11,380 --> 00:03:16,560
+The item is going to be equal to item just like this.
+
+50
+00:03:16,570 --> 00:03:20,420
+So now this news item this item is going to be inside props.
+
+51
+00:03:20,470 --> 00:03:27,610
+So we check props we have four different props on four different iterations and on each one we have
+
+52
+00:03:27,670 --> 00:03:28,340
+different data.
+
+53
+00:03:28,360 --> 00:03:32,220
+First one is going to be the ID number one two three and four.
+
+54
+00:03:32,420 --> 00:03:33,540
+Okay that's good.
+
+55
+00:03:33,820 --> 00:03:41,170
+So now what we can do we can grab this this inside Propst and we can make a reference to what we are
+
+56
+00:03:41,170 --> 00:03:43,060
+whenever we're doing great here at the bottom.
+
+57
+00:03:43,060 --> 00:03:50,170
+You know we are exporting we are rendering some templates so it can get cut and paste it inside the
+
+58
+00:03:50,170 --> 00:03:50,790
+return.
+
+59
+00:03:50,820 --> 00:03:53,790
+Make this a little bit nicer.
+
+60
+00:03:54,220 --> 00:03:59,430
+So now we're going to get an error message fades Kampar item it's not fine.
+
+61
+00:03:59,640 --> 00:04:03,530
+And it's because item it is not defined item.
+
+62
+00:04:03,610 --> 00:04:05,620
+It's not inside item.
+
+63
+00:04:05,640 --> 00:04:07,690
+We're not using a map right here.
+
+64
+00:04:07,780 --> 00:04:10,730
+You're just passing the data inside prompts.
+
+65
+00:04:10,990 --> 00:04:17,860
+So what we need to do we need to make first a reference to Propst and then item and then again prompts
+
+66
+00:04:18,190 --> 00:04:26,560
+that item and it's going to reload the page a few seconds on the Internet it's a little bit slow.
+
+67
+00:04:26,850 --> 00:04:28,740
+And OK we're getting it.
+
+68
+00:04:28,950 --> 00:04:30,060
+OK that's good.
+
+69
+00:04:30,310 --> 00:04:33,430
+So now we're going to get a different error message and begin I'm sorry.
+
+70
+00:04:33,460 --> 00:04:34,250
+Let's go back.
+
+71
+00:04:34,270 --> 00:04:36,110
+We can make this a little bit better.
+
+72
+00:04:36,250 --> 00:04:43,390
+Instead of using prompts when I can do I can bring the item and instead of doing prompts that item you
+
+73
+00:04:43,430 --> 00:04:49,350
+can say like before item and it's still going to work.
+
+74
+00:04:49,900 --> 00:04:53,010
+So what is happening right here what what I'm doing.
+
+75
+00:04:53,020 --> 00:04:55,360
+So this is going to be ESX is going to be called.
+
+76
+00:04:55,390 --> 00:04:56,930
+It's called destructuring.
+
+77
+00:04:57,070 --> 00:05:04,920
+It's the same idea that we're doing right here at the top beer we have access to a big object and we
+
+78
+00:05:04,920 --> 00:05:06,990
+are say OK I did from that big object.
+
+79
+00:05:07,000 --> 00:05:10,420
+We only need components so bring me components.
+
+80
+00:05:10,420 --> 00:05:15,420
+So we're doing the same thing right here from prop's which is the argument that we're getting.
+
+81
+00:05:15,580 --> 00:05:21,460
+I want to just get the item and right here we make a reference to that same idea.
+
+82
+00:05:21,780 --> 00:05:22,060
+OK.
+
+83
+00:05:22,090 --> 00:05:29,890
+So we got an error message is going to say each child in array or iterator should have a unique key
+
+84
+00:05:29,980 --> 00:05:31,320
+or Propp.
+
+85
+00:05:31,360 --> 00:05:33,700
+Now this is from re-act now.
+
+86
+00:05:33,730 --> 00:05:40,990
+Whenever you work with a map or maybe some iterator oil Luper or whatever you want to call it you need
+
+87
+00:05:41,230 --> 00:05:45,220
+to pass a key on each element on each iteration.
+
+88
+00:05:45,370 --> 00:05:49,560
+If you return this element this element needs to have a key.
+
+89
+00:05:49,660 --> 00:05:52,050
+Now a key is going to be an ID.
+
+90
+00:05:52,180 --> 00:05:53,740
+And this from react.
+
+91
+00:05:53,740 --> 00:05:59,410
+You can pass whatever key you wish as long as this is not repeated.
+
+92
+00:05:59,590 --> 00:06:06,880
+So I'm going to say key and it's going to be equal to and then curly braces if you remember inside to
+
+93
+00:06:06,880 --> 00:06:10,270
+give you the Jasen for each news each post.
+
+94
+00:06:10,270 --> 00:06:11,940
+We have a different ID.
+
+95
+00:06:11,950 --> 00:06:13,550
+One two three and four.
+
+96
+00:06:13,750 --> 00:06:16,670
+So what we can do we can pass the key of that.
+
+97
+00:06:16,900 --> 00:06:26,200
+So we are going to say item that ID and the error goes away a little bit slow today.
+
+98
+00:06:26,340 --> 00:06:27,650
+OK the error goes away.
+
+99
+00:06:27,700 --> 00:06:28,620
+Let's get.
+
+100
+00:06:28,700 --> 00:06:35,050
+So remember to always add the key if not react is going to is going to give you that error message.
+
+101
+00:06:35,160 --> 00:06:35,680
+OK.
+
+102
+00:06:36,040 --> 00:06:36,910
+So that's good.
+
+103
+00:06:37,090 --> 00:06:39,050
+So let's go to the next section.
+
+104
+00:06:39,100 --> 00:06:43,400
+I want to talk about something else that is kind of related to props.
+
+105
+00:06:43,690 --> 00:06:44,280
+Let's go.
+
+106
+00:06:44,470 --> 00:06:47,870
+Let's go to the next section and talk about the children of props.
+

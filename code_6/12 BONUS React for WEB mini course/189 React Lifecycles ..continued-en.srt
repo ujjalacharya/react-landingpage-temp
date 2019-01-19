@@ -1,0 +1,792 @@
+1
+00:00:01,280 --> 00:00:09,170
+OK so now we know that something happens before we render the end the day of sex and after we render
+
+2
+00:00:09,170 --> 00:00:16,790
+the GSX gut so we know this we have available we have this methods available but of course we have more.
+
+3
+00:00:17,030 --> 00:00:19,190
+I'm going to go over here inside the render.
+
+4
+00:00:19,190 --> 00:00:20,030
+I'm going to cancel.
+
+5
+00:00:20,060 --> 00:00:23,630
+I'm going to cancel law and then render just like that.
+
+6
+00:00:23,650 --> 00:00:26,140
+Make it Kappes render.
+
+7
+00:00:26,600 --> 00:00:27,590
+OK.
+
+8
+00:00:28,550 --> 00:00:33,910
+So going to reload the application and I'm going to I'm going to get three before render.
+
+9
+00:00:34,040 --> 00:00:36,150
+Then we get the render and then after render.
+
+10
+00:00:36,170 --> 00:00:36,990
+We know this.
+
+11
+00:00:37,220 --> 00:00:40,110
+I'm going to add a click and I'm going to be changing the state.
+
+12
+00:00:40,120 --> 00:00:46,700
+I have the code ready so we don't have to lose time doing this and we're going to make it just like
+
+13
+00:00:46,700 --> 00:00:49,480
+that and they begin to be setting the state.
+
+14
+00:00:49,490 --> 00:00:54,500
+So what is happening right here I just added a button that whenever we click it begin to be changing
+
+15
+00:00:54,500 --> 00:00:57,350
+the state of title to something else.
+
+16
+00:00:57,350 --> 00:01:00,070
+Real simple we just change the title right here.
+
+17
+00:01:00,260 --> 00:01:03,720
+So if I click it we change the title we know how to do this.
+
+18
+00:01:03,720 --> 00:01:07,210
+We're just sending the new state of something.
+
+19
+00:01:07,220 --> 00:01:14,660
+Now notice that we get rendered twice whenever we change the state of the component re-act is going
+
+20
+00:01:14,660 --> 00:01:16,150
+to be listening for that.
+
+21
+00:01:16,310 --> 00:01:22,700
+So he's going to detect a change on the state and it's going to really render whatever code you have
+
+22
+00:01:22,760 --> 00:01:23,570
+inside.
+
+23
+00:01:23,720 --> 00:01:27,450
+And that's why it's able to update the contents of this.
+
+24
+00:01:27,620 --> 00:01:31,300
+Right here we are rendering the title whenever we click change.
+
+25
+00:01:31,340 --> 00:01:35,090
+It's going to update the state is going to rerun under.
+
+26
+00:01:35,120 --> 00:01:41,240
+And now this state the title is going to be equal to whatever title we put right here.
+
+27
+00:01:41,300 --> 00:01:43,240
+So that's why we get the render twice.
+
+28
+00:01:43,310 --> 00:01:46,470
+And this is what single page applications do.
+
+29
+00:01:46,520 --> 00:01:51,320
+They re rendered the content the whole time whenever they detect an update.
+
+30
+00:01:51,350 --> 00:01:52,730
+This is what they do.
+
+31
+00:01:52,730 --> 00:01:54,400
+That's normal.
+
+32
+00:01:54,410 --> 00:02:00,230
+Now the thing is that right here we have two methods that are going to be listening before rendering
+
+33
+00:02:00,260 --> 00:02:01,750
+and after rendering.
+
+34
+00:02:01,750 --> 00:02:02,360
+That's good.
+
+35
+00:02:03,150 --> 00:02:06,790
+So we have some additional methods right here.
+
+36
+00:02:06,930 --> 00:02:13,440
+There are going to be checking that we can use to detect whenever something before something gets updated
+
+37
+00:02:13,530 --> 00:02:16,130
+or after something gets updated.
+
+38
+00:02:16,180 --> 00:02:21,830
+Notice that I click click changed changed state and I'm only getting the rendered so.
+
+39
+00:02:21,930 --> 00:02:25,020
+Before render and after rendering are not running.
+
+40
+00:02:25,320 --> 00:02:27,320
+This only happens once.
+
+41
+00:02:27,650 --> 00:02:28,270
+OK.
+
+42
+00:02:28,710 --> 00:02:29,670
+So what I'm going to do.
+
+43
+00:02:29,700 --> 00:02:32,420
+I'm going to call two different methods.
+
+44
+00:02:32,580 --> 00:02:36,080
+I'm going to do component just like that components.
+
+45
+00:02:36,240 --> 00:02:39,570
+And then we'll just like compound when.
+
+46
+00:02:39,690 --> 00:02:42,930
+But it's going to be compliant and we'll update.
+
+47
+00:02:43,290 --> 00:02:50,910
+So this method is going to it's going to run before we update something and then we have another one
+
+48
+00:02:50,910 --> 00:02:57,690
+that is going to be component and then that and then update just like that and this method is going
+
+49
+00:02:57,690 --> 00:03:01,460
+to be used after it gets updated.
+
+50
+00:03:01,800 --> 00:03:09,790
+So if I go right here and again to say console log and then before Before Update make sense before updates
+
+51
+00:03:10,970 --> 00:03:18,240
+and I do I'm going to do the same thing and this one is going to be after update of course I'm going
+
+52
+00:03:18,240 --> 00:03:20,870
+to rerun the whole application just from the start.
+
+53
+00:03:21,000 --> 00:03:26,820
+We get first the component will mount then the render and then component that mounth I'm going to click
+
+54
+00:03:26,820 --> 00:03:33,250
+and change and we get Before Update render again because we are rendering the application.
+
+55
+00:03:33,360 --> 00:03:35,370
+And then after the update.
+
+56
+00:03:35,610 --> 00:03:42,280
+So we have access to this so we can know when something whenever something is happening in our application
+
+57
+00:03:42,470 --> 00:03:42,870
+that's good.
+
+58
+00:03:42,870 --> 00:03:44,750
+You know it's good to have this once.
+
+59
+00:03:44,910 --> 00:03:47,060
+Of course we have more.
+
+60
+00:03:47,170 --> 00:03:54,030
+Let's let's we have the component should component update and then we have the component will we see
+
+61
+00:03:54,030 --> 00:03:54,860
+props.
+
+62
+00:03:54,930 --> 00:03:56,840
+This ones are not that easy.
+
+63
+00:03:57,090 --> 00:03:59,330
+So let's talk about this once.
+
+64
+00:03:59,580 --> 00:04:06,450
+So we have the shoot component up that we can use this one to check the changes of the props and the
+
+65
+00:04:06,450 --> 00:04:07,260
+state.
+
+66
+00:04:07,410 --> 00:04:10,820
+And this one it will return true or false.
+
+67
+00:04:10,830 --> 00:04:13,390
+Told you that this one is going to be a little bit confusing.
+
+68
+00:04:13,650 --> 00:04:20,080
+So let me I'm going to say should let me just show you the code and we will we will build from there.
+
+69
+00:04:20,130 --> 00:04:27,930
+I'm going to say should component and then update just like that opening close.
+
+70
+00:04:27,930 --> 00:04:32,200
+Now from the start this one is going to receive two arguments just going to put it.
+
+71
+00:04:32,220 --> 00:04:37,800
+And then we can add this because this is going to be next and then prompts and then the second argument
+
+72
+00:04:37,830 --> 00:04:40,200
+is going to be next.
+
+73
+00:04:40,380 --> 00:04:49,670
+And then at this function this method it should be returning true or it's going to return false.
+
+74
+00:04:49,680 --> 00:04:53,780
+So now whenever we received an update we make an update on our application.
+
+75
+00:04:53,940 --> 00:04:59,310
+It's going to go to it's going to fall to this one and it's going to be checking the next state of prop's
+
+76
+00:04:59,550 --> 00:05:02,400
+or the next State of the state.
+
+77
+00:05:02,430 --> 00:05:08,700
+So if we are changing the state is going to enter here and inside next date we can have whatever new
+
+78
+00:05:08,700 --> 00:05:11,550
+value we are passing not the previous one.
+
+79
+00:05:11,760 --> 00:05:17,730
+So if I say counsel law and then we counsel logged the next state.
+
+80
+00:05:17,730 --> 00:05:24,360
+Let me just copy this and remember that this function which this method meets to return true or false
+
+81
+00:05:24,510 --> 00:05:25,940
+are going to return true.
+
+82
+00:05:26,480 --> 00:05:29,940
+Just for now return true by default is going to return true.
+
+83
+00:05:29,940 --> 00:05:33,030
+But we're going to do this for just in case.
+
+84
+00:05:33,060 --> 00:05:33,440
+OK.
+
+85
+00:05:33,460 --> 00:05:37,140
+I'm going to click to change and it's going to change something else.
+
+86
+00:05:37,140 --> 00:05:41,270
+And notice that right here at the bottom you're getting title something else.
+
+87
+00:05:41,280 --> 00:05:44,670
+So we're getting the new body the one that we are passing.
+
+88
+00:05:44,670 --> 00:05:48,170
+You know the update one got here.
+
+89
+00:05:48,180 --> 00:05:52,410
+It's just doing the consulate and of course we are returning true.
+
+90
+00:05:52,410 --> 00:05:55,540
+So everything gets the normal behavior.
+
+91
+00:05:55,700 --> 00:05:58,160
+I've noticed what happens if I say false.
+
+92
+00:05:58,530 --> 00:06:01,940
+Going to reload the application I'm going to click to change.
+
+93
+00:06:02,100 --> 00:06:05,750
+And we're getting the title something else the next state of things.
+
+94
+00:06:05,940 --> 00:06:07,740
+But you know nothing's happening.
+
+95
+00:06:07,740 --> 00:06:09,650
+We are not getting an update.
+
+96
+00:06:09,870 --> 00:06:15,690
+So right here what we can do what we could do is to check the previous state and the next date.
+
+97
+00:06:15,840 --> 00:06:23,100
+And if if something happens that we don't want it to happen we can just return false and the application
+
+98
+00:06:23,100 --> 00:06:27,920
+will never update the render will never we render.
+
+99
+00:06:28,090 --> 00:06:29,810
+So let's do it right now.
+
+100
+00:06:29,820 --> 00:06:35,340
+Going to do the lead counsel law and of course are going to say the consulate.
+
+101
+00:06:35,340 --> 00:06:37,520
+First let me just show you.
+
+102
+00:06:38,120 --> 00:06:43,390
+So let's say that we can we can now put the consulate that we can do.
+
+103
+00:06:43,400 --> 00:06:44,800
+View the next date.
+
+104
+00:06:44,970 --> 00:06:50,910
+And of course if you wanted to see the previous state remember that we have it available inside this
+
+105
+00:06:51,300 --> 00:06:58,220
+state and that title and the next date is going to be title again and the will of the page if it clicked
+
+106
+00:06:58,260 --> 00:07:04,540
+change we have life cycles which is the current one and the next one so what we can do we can evaluate
+
+107
+00:07:04,600 --> 00:07:10,370
+right here with whatever code we wish to check the first pre-state and the next state.
+
+108
+00:07:10,480 --> 00:07:16,000
+And if it matches we let the user lead the component update or not.
+
+109
+00:07:16,200 --> 00:07:23,140
+Let's see in practice I'm going to say if you're going to be checking the next state title.
+
+110
+00:07:23,490 --> 00:07:24,610
+OK.
+
+111
+00:07:25,570 --> 00:07:31,980
+So if the next state title matches something I want to not move forward.
+
+112
+00:07:32,270 --> 00:07:37,260
+So I got to say it's going to be triple equal to something else.
+
+113
+00:07:38,080 --> 00:07:43,480
+And if it's of course if the next State of the title which is going to be true it passes.
+
+114
+00:07:43,480 --> 00:07:44,540
+I want to return false.
+
+115
+00:07:44,560 --> 00:07:46,900
+I don't want to update the components.
+
+116
+00:07:46,900 --> 00:07:49,860
+I'm going to say return and then false.
+
+117
+00:07:49,870 --> 00:07:52,620
+Now if it passes I'm going to return true.
+
+118
+00:07:52,930 --> 00:07:56,800
+Just like that they're going to reload the application.
+
+119
+00:07:56,830 --> 00:08:02,860
+I'm going to click the change and of course since we are passing something else the component will not
+
+120
+00:08:04,030 --> 00:08:06,880
+react is not going to really render the application.
+
+121
+00:08:07,060 --> 00:08:11,800
+If I change something right here of course this rule will not be met.
+
+122
+00:08:11,800 --> 00:08:13,990
+So it's going to do the update.
+
+123
+00:08:14,020 --> 00:08:15,090
+It clicked change.
+
+124
+00:08:15,370 --> 00:08:18,160
+And we are getting something else is doing the update.
+
+125
+00:08:18,160 --> 00:08:25,390
+So this way we can control what comes inside our application and decide if we want to move forward with
+
+126
+00:08:25,390 --> 00:08:27,370
+the update or not.
+
+127
+00:08:27,400 --> 00:08:28,990
+You know it's really useful.
+
+128
+00:08:28,990 --> 00:08:32,390
+And we're going to be using this a little bit in the future.
+
+129
+00:08:32,680 --> 00:08:34,740
+OK so we have one more to go.
+
+130
+00:08:34,780 --> 00:08:37,480
+Let's see that one and then just move forward.
+
+131
+00:08:38,550 --> 00:08:41,600
+So we have a couple or a couple more to go.
+
+132
+00:08:41,610 --> 00:08:49,830
+We have component will we see prop's says we know why the what the all the ones do we kind of know what
+
+133
+00:08:49,830 --> 00:08:51,050
+this one is going to do.
+
+134
+00:08:51,060 --> 00:09:00,140
+I'm going to say component's component and it's going to be well received and then props open and close
+
+135
+00:09:00,170 --> 00:09:01,360
+as a method.
+
+136
+00:09:01,950 --> 00:09:09,420
+So this one is going to be checking for new props because they cancel longer than opening close and
+
+137
+00:09:09,420 --> 00:09:19,220
+then before receive and then props and admitted typo receive props.
+
+138
+00:09:19,470 --> 00:09:22,480
+So this one is going a little bit hard to check.
+
+139
+00:09:22,500 --> 00:09:23,870
+So let me tell you what's going on.
+
+140
+00:09:23,980 --> 00:09:25,110
+We go to live.
+
+141
+00:09:25,110 --> 00:09:30,300
+We really the application is going to show was the components and of course we get the will mount the
+
+142
+00:09:30,300 --> 00:09:37,150
+render and the mouth and the only props that we are getting are from Briac router.
+
+143
+00:09:37,250 --> 00:09:37,590
+That's good.
+
+144
+00:09:37,590 --> 00:09:41,250
+We know that the only prompts we get are from re-act router.
+
+145
+00:09:41,440 --> 00:09:48,620
+OK of course if I go to profile nothing happens because we're not inside the life component.
+
+146
+00:09:48,900 --> 00:09:54,480
+And if you go back to live we get the will mount and then the render and then after render.
+
+147
+00:09:54,630 --> 00:09:57,970
+So this one is going to be listening for new props.
+
+148
+00:09:57,990 --> 00:10:05,850
+So if I go to profile and then alive this component is going to have some default props and this case
+
+149
+00:10:05,850 --> 00:10:08,630
+the default prompts are going to be from re-act router.
+
+150
+00:10:08,700 --> 00:10:10,710
+So we are not receiving new props.
+
+151
+00:10:10,710 --> 00:10:12,620
+They are the default one.
+
+152
+00:10:12,750 --> 00:10:17,370
+Now we are already inside the component life components.
+
+153
+00:10:17,670 --> 00:10:23,840
+So if I click on life again we are not going to reload the component component.
+
+154
+00:10:23,850 --> 00:10:25,230
+Its already mounted.
+
+155
+00:10:25,440 --> 00:10:29,230
+But what it what is going to do is going to be reloading some things.
+
+156
+00:10:29,400 --> 00:10:36,240
+So if I click on life again we are going to get before we see props the components it's already mounted
+
+157
+00:10:36,510 --> 00:10:42,420
+but whenever we click right here we are saying re-act Browder to reload this route and it's passing
+
+158
+00:10:42,600 --> 00:10:45,330
+the prompts again to this component.
+
+159
+00:10:45,480 --> 00:10:48,180
+And that's why we are getting before we see props.
+
+160
+00:10:48,290 --> 00:10:54,290
+So right here you can just you know maybe just check whenever whenever the apparent components it's
+
+161
+00:10:54,420 --> 00:11:00,750
+sending you props and this could be you know whatever could be a fetch from the urinal or maybe some
+
+162
+00:11:00,750 --> 00:11:04,290
+new data from a user or a socket or whatever.
+
+163
+00:11:04,700 --> 00:11:06,860
+Ok this one it's kind of a simple.
+
+164
+00:11:07,050 --> 00:11:08,850
+So then we have one more to go.
+
+165
+00:11:08,850 --> 00:11:12,870
+And again this one is going to be really simple.
+
+166
+00:11:12,900 --> 00:11:18,590
+We have the component will and mounts says we have the component will mount.
+
+167
+00:11:18,660 --> 00:11:25,530
+We have the opposite of this component that mount is going to be listening whenever the air component
+
+168
+00:11:25,530 --> 00:11:26,820
+gets unmounted.
+
+169
+00:11:26,880 --> 00:11:41,960
+So components component and then of course dead mounts knobs will amount just like that on Mount opening
+
+170
+00:11:41,970 --> 00:11:43,440
+close.
+
+171
+00:11:43,550 --> 00:11:48,600
+And again just like before I'm just typing this by hand I've disabled all the plug ins.
+
+172
+00:11:48,720 --> 00:11:50,260
+But you have tons of plug ins.
+
+173
+00:11:50,280 --> 00:11:55,460
+At least with the code to do the out of typing.
+
+174
+00:11:55,560 --> 00:12:01,770
+You can have some templates to use right here so you don't have to type it every time you need to use
+
+175
+00:12:01,770 --> 00:12:02,450
+it.
+
+176
+00:12:02,580 --> 00:12:06,240
+I'm just doing it right here by hand because I'm just showing you.
+
+177
+00:12:06,240 --> 00:12:11,740
+So I'm going to say cancel long and then on mnze.
+
+178
+00:12:12,270 --> 00:12:13,710
+Right.
+
+179
+00:12:13,740 --> 00:12:21,840
+So whenever we mount we do the reload and reactive scheme because this component which triggered the
+
+180
+00:12:21,840 --> 00:12:28,010
+component will mount that we have before render that we have the render and then the after render.
+
+181
+00:12:28,020 --> 00:12:32,760
+Now if I go out of this component we get the on Mount.
+
+182
+00:12:32,880 --> 00:12:38,330
+So it's unmounting the life component and it's mounting a different component of course.
+
+183
+00:12:38,490 --> 00:12:43,230
+But really we have access to know whenever a component gets unmounted.
+
+184
+00:12:43,290 --> 00:12:49,920
+So right here maybe maybe just maybe what you could do is maybe a netballer request to all to lock the
+
+185
+00:12:49,920 --> 00:12:57,090
+user out or to do whatever you need to do if the user goes out of that component if the user leaves
+
+186
+00:12:57,090 --> 00:12:58,200
+that component.
+
+187
+00:12:58,200 --> 00:13:01,570
+You can know when that happens and you can take some actions.
+
+188
+00:13:01,600 --> 00:13:04,370
+So this one could be really useful.
+
+189
+00:13:04,850 --> 00:13:05,150
+OK.
+
+190
+00:13:05,160 --> 00:13:09,380
+So that's the end of re-act life cycles don't worry.
+
+191
+00:13:09,390 --> 00:13:14,250
+We're going to be using them again to be using them on a real life scenario.
+
+192
+00:13:14,250 --> 00:13:16,410
+And we begin to be using them.
+
+193
+00:13:16,440 --> 00:13:16,830
+OK.
+
+194
+00:13:16,860 --> 00:13:19,360
+So you're going to get a lot of practice.
+
+195
+00:13:19,500 --> 00:13:21,450
+Let's keep moving forward.
+
+196
+00:13:21,480 --> 00:13:27,480
+I want to talk about some other things that we're going to be using maybe with the re-act life cycles
+
+197
+00:13:27,480 --> 00:13:28,530
+or something else.
+
+198
+00:13:28,530 --> 00:13:32,630
+Some other topics of react so let's keep moving forward.
+

@@ -1,0 +1,436 @@
+1
+00:00:00,710 --> 00:00:04,370
+Write so before using Mongo D-B we need to install it.
+
+2
+00:00:04,430 --> 00:00:09,530
+So I'm going to go to the browser and I'm going to say Mongo D-B just like that.
+
+3
+00:00:09,650 --> 00:00:12,420
+And of course it's going to be pretty much the same there.
+
+4
+00:00:12,430 --> 00:00:15,370
+The first result Maunganui to be for giant ideas.
+
+5
+00:00:15,380 --> 00:00:21,170
+We're going to go there and OK you're going to have a bunch of data right here a bunch of options.
+
+6
+00:00:21,190 --> 00:00:25,830
+We're going to go right here to the one that says download on top and we're going to go to download
+
+7
+00:00:26,210 --> 00:00:27,380
+and we need to select.
+
+8
+00:00:27,410 --> 00:00:31,630
+And again you can have a lot of options but begin to use the one that says community server.
+
+9
+00:00:31,730 --> 00:00:33,860
+Because of course it's free.
+
+10
+00:00:33,860 --> 00:00:37,820
+So if you're you need to select the person that you're going to use.
+
+11
+00:00:37,910 --> 00:00:43,560
+In this case we are a Mac so I'm going to use OSX 10 64 bits with S as well.
+
+12
+00:00:43,580 --> 00:00:45,130
+We're going to use that one.
+
+13
+00:00:45,140 --> 00:00:46,790
+And then of course we need to download.
+
+14
+00:00:46,800 --> 00:00:52,940
+So I'm going to click and download OK it's going to start downloading it just one second and I'm going
+
+15
+00:00:52,940 --> 00:00:54,840
+to save it into downloads.
+
+16
+00:00:55,060 --> 00:00:58,230
+So it's it's going to be like 90 megabytes.
+
+17
+00:00:58,300 --> 00:00:59,490
+It's going to take a few minutes.
+
+18
+00:00:59,560 --> 00:01:03,770
+So I'm going to parse the BDO and be right back.
+
+19
+00:01:03,830 --> 00:01:06,410
+OK so now everything is downloaded.
+
+20
+00:01:06,500 --> 00:01:11,540
+So what we need to do we need to go to downloads and we need to extract the the folder.
+
+21
+00:01:11,750 --> 00:01:13,830
+Gays can take a few seconds.
+
+22
+00:01:14,250 --> 00:01:14,650
+OK.
+
+23
+00:01:14,660 --> 00:01:19,590
+It's going to give you a folder you know this folder Mongul divi OSX and then the version.
+
+24
+00:01:19,640 --> 00:01:26,750
+And what we do now is to grab this folder and drop it inside the boot directory or your user directory.
+
+25
+00:01:26,830 --> 00:01:28,510
+In my case it's going to be Apple.
+
+26
+00:01:28,580 --> 00:01:33,950
+OK I'm just going to drop it here and it's going to get it's going to be right here if you don't have
+
+27
+00:01:33,950 --> 00:01:35,690
+this option on the favorites.
+
+28
+00:01:35,810 --> 00:01:41,300
+What you can do on the finder right here you can go to go and you can have an option that's going to
+
+29
+00:01:41,300 --> 00:01:42,570
+say home.
+
+30
+00:01:42,950 --> 00:01:45,630
+So you know same directory.
+
+31
+00:01:46,280 --> 00:01:48,340
+So now what we need to do this folder.
+
+32
+00:01:48,380 --> 00:01:49,780
+We need to change the name.
+
+33
+00:01:49,790 --> 00:01:51,030
+We need to rename it.
+
+34
+00:01:51,200 --> 00:01:53,500
+So we're going to rename it to Monga.
+
+35
+00:01:53,720 --> 00:01:56,830
+Now the next thing is going to be to create a new folder.
+
+36
+00:01:56,840 --> 00:02:00,140
+It's going to be Mongo hyphen data.
+
+37
+00:02:00,140 --> 00:02:05,960
+So this Mongul data folder is going to host all the information about the database that you're going
+
+38
+00:02:05,960 --> 00:02:08,000
+to create inside this folder.
+
+39
+00:02:08,000 --> 00:02:12,470
+So this one is going to be the one that is going to host all that data.
+
+40
+00:02:12,620 --> 00:02:17,560
+So now what we need to do we need to start the server and connect to Mongo.
+
+41
+00:02:17,600 --> 00:02:22,280
+So I'm going to go right here and we need to navigate to this Mongo folder.
+
+42
+00:02:22,280 --> 00:02:24,130
+I am at home root.
+
+43
+00:02:24,260 --> 00:02:32,400
+So what we can do is say CD Mungo for Slash and we can go to the bin folder to the bin directory.
+
+44
+00:02:32,630 --> 00:02:39,110
+Now if I do is going to get a lot of directories and there is two that begin to use begin to use the
+
+45
+00:02:39,110 --> 00:02:41,510
+Mongo and the Mongo D.
+
+46
+00:02:41,570 --> 00:02:48,410
+So Mongo D is the one that is going is going to start to server so we can make no rescue operations
+
+47
+00:02:48,770 --> 00:02:53,290
+and Mogo is going to be the one that is going to connect with Mongul D.
+
+48
+00:02:53,330 --> 00:02:57,220
+So these two are the ones that we're going to use.
+
+49
+00:02:57,550 --> 00:02:58,080
+OK.
+
+50
+00:02:58,220 --> 00:03:04,910
+So now before doing anything we need to start to server and to let Mongo d what is going to be the location
+
+51
+00:03:05,240 --> 00:03:10,210
+of the database which in this case is going to be Mongo data right here.
+
+52
+00:03:10,310 --> 00:03:19,130
+So first we're going to do that for I-Slash and we're going to use Mongo D then we do minus minus D.B
+
+53
+00:03:19,310 --> 00:03:25,900
+and then path and then we need to make a space and we need to specify the location for Mongo data.
+
+54
+00:03:26,010 --> 00:03:33,910
+We're going to use the tiller and then for Slash and then Mongo hyphen data.
+
+55
+00:03:34,550 --> 00:03:38,790
+Now if you press enter it's going to start doing some weird thing
+
+56
+00:03:42,150 --> 00:03:47,780
+OK almost on an alley and you're going to get a message that's going to say waiting for connections
+
+57
+00:03:47,870 --> 00:03:51,230
+on port 2 7 0 1 7.
+
+58
+00:03:51,230 --> 00:03:55,760
+This means that the server is running and it's ready to go.
+
+59
+00:03:55,970 --> 00:04:01,680
+So now the right side on the terminal going to make a right click and I'm going to open a new tab.
+
+60
+00:04:02,120 --> 00:04:11,030
+So this new tab notice that I am I am already the Ben location inside Mungo So this tap with this tab
+
+61
+00:04:11,100 --> 00:04:16,130
+we you're going to connect to this server that we have running right here.
+
+62
+00:04:16,130 --> 00:04:18,570
+So we're beginning to do it's really really simple.
+
+63
+00:04:18,590 --> 00:04:23,020
+We need to do that for flash and then Mongo.
+
+64
+00:04:23,960 --> 00:04:28,910
+So he's going to give you a lot of information and notice that you don't have the command.
+
+65
+00:04:28,940 --> 00:04:31,830
+You have just the ride ponding pointing arrow.
+
+66
+00:04:31,910 --> 00:04:33,190
+So this is just like note.
+
+67
+00:04:33,200 --> 00:04:38,860
+This means that you are running and then you can run Mongo divi commands right here.
+
+68
+00:04:38,870 --> 00:04:44,450
+You can use the database and if you go to the Mongo the right here you can have some information that's
+
+69
+00:04:44,450 --> 00:04:48,620
+going to say received climate data from localhost.
+
+70
+00:04:48,890 --> 00:04:54,320
+And you know who's going to give you some bunch of information Mongo shell and then the type of computer
+
+71
+00:04:54,410 --> 00:04:59,250
+that received this connection which is going to be Darwin and Mac OS which is my computer you know local
+
+72
+00:04:59,250 --> 00:05:00,080
+host.
+
+73
+00:05:00,160 --> 00:05:00,780
+That's good.
+
+74
+00:05:00,790 --> 00:05:02,490
+You know so your ready to go.
+
+75
+00:05:02,620 --> 00:05:09,200
+So I'm going to go to right here to Mungo and I'm going to just run some tests I'm going to say D.B
+
+76
+00:05:09,280 --> 00:05:15,940
+and this is the way we connect with the database going to create a dummy record inside Mongo DB.
+
+77
+00:05:16,130 --> 00:05:23,000
+So I got to say D-B they're going to say test and this is going to be the name of our database.
+
+78
+00:05:23,030 --> 00:05:24,460
+We don't have a database right here.
+
+79
+00:05:24,470 --> 00:05:27,510
+But since it's not there is going to create it.
+
+80
+00:05:27,590 --> 00:05:29,120
+I believe that by default.
+
+81
+00:05:29,160 --> 00:05:35,040
+Not really sure that by default with Mongo D-B you get a test D-B by default.
+
+82
+00:05:35,050 --> 00:05:41,570
+Now it doesn't matter if it's not there it's going to create us it's going to create this database for
+
+83
+00:05:41,570 --> 00:05:42,410
+us.
+
+84
+00:05:42,410 --> 00:05:46,830
+So we're going to say insert and with this we will insert new data.
+
+85
+00:05:47,000 --> 00:05:54,500
+And I'm just going to do curly braces and just going to add name and of course Francis.
+
+86
+00:05:54,740 --> 00:05:56,680
+Now I'm going to press enter.
+
+87
+00:05:56,920 --> 00:05:57,710
+I was going to say.
+
+88
+00:05:57,710 --> 00:05:58,200
+Right.
+
+89
+00:05:58,220 --> 00:06:00,470
+We sold and inserted one.
+
+90
+00:06:00,470 --> 00:06:02,900
+So this means that it's good you know.
+
+91
+00:06:02,920 --> 00:06:09,470
+We have one record when went day two month old baby went to the database and inserted one record.
+
+92
+00:06:09,650 --> 00:06:12,980
+So how can we check if this record exist.
+
+93
+00:06:12,980 --> 00:06:20,750
+So we're going to say again same thing D.B than we do test and we do find now the find method is going
+
+94
+00:06:20,750 --> 00:06:24,210
+to show you all the records in that database.
+
+95
+00:06:24,260 --> 00:06:27,720
+So going to press enter and it's going to give me this as a return.
+
+96
+00:06:27,740 --> 00:06:31,370
+We have an ID and we're going to talk about this I.D. later.
+
+97
+00:06:31,460 --> 00:06:35,330
+And then name and Francis this I.D. It's unique.
+
+98
+00:06:35,330 --> 00:06:41,570
+It's something that Mungo TV it's doing by default is going to provide you with the default I.D. but
+
+99
+00:06:41,570 --> 00:06:45,280
+this is this comes from Mongo D-B you know everything is working.
+
+100
+00:06:45,290 --> 00:06:52,990
+We are running the show the database you're connecting and we are just adding some records.
+
+101
+00:06:53,440 --> 00:06:54,730
+OK that's good.
+
+102
+00:06:54,830 --> 00:07:00,860
+But you know if you if we need to create a project and we need to do a lot of operations with the databases
+
+103
+00:07:01,460 --> 00:07:06,080
+you know just checking everything from the terminal it's just like a pain in the butt.
+
+104
+00:07:06,080 --> 00:07:08,910
+You know we can be typing the whole time.
+
+105
+00:07:09,010 --> 00:07:10,460
+It's going to be really really long.
+
+106
+00:07:10,580 --> 00:07:18,230
+So we have some tools that can help us to inspect the information you know in a little bit more Rafic
+
+107
+00:07:18,350 --> 00:07:18,980
+way.
+
+108
+00:07:18,980 --> 00:07:22,060
+We have something that is going to be called rubber Mongo.
+
+109
+00:07:22,190 --> 00:07:26,830
+So just get ready to install rebloom on go in just one second.
+

@@ -1,0 +1,1096 @@
+1
+00:00:00,770 --> 00:00:02,780
+OK so let's keep going with this.
+
+2
+00:00:02,800 --> 00:00:07,090
+Of course now we have the we have the ability to log in.
+
+3
+00:00:07,270 --> 00:00:09,730
+So now we need to register new customers.
+
+4
+00:00:09,880 --> 00:00:14,130
+So if I go to create an account we're going to go to the register route.
+
+5
+00:00:14,290 --> 00:00:16,080
+We don't have this route.
+
+6
+00:00:16,210 --> 00:00:17,340
+So we need to create it.
+
+7
+00:00:17,350 --> 00:00:23,690
+So I'm going to go to register or log in I'm going to create a new file and call register ride that
+
+8
+00:00:23,890 --> 00:00:28,060
+yes of course we need to add this route to routes.
+
+9
+00:00:28,180 --> 00:00:36,910
+So I'm going to go two routes and of course import register from and then opening close.
+
+10
+00:00:36,910 --> 00:00:45,100
+We're going to get components for Slash and register Lagann no register sorry for that for Slash or
+
+11
+00:00:45,160 --> 00:00:49,210
+just log in sorry and then register again.
+
+12
+00:00:50,340 --> 00:00:50,540
+Right.
+
+13
+00:00:50,590 --> 00:00:52,300
+So now of course we need to include the route.
+
+14
+00:00:52,300 --> 00:00:56,680
+So I'm going to copy this one I'm going to pace that down here at the bottom.
+
+15
+00:00:56,680 --> 00:00:59,380
+And of course the route will be just register.
+
+16
+00:00:59,460 --> 00:00:59,940
+OK.
+
+17
+00:01:00,440 --> 00:01:03,570
+So paste you know the usual stuff.
+
+18
+00:01:03,790 --> 00:01:04,960
+So register.
+
+19
+00:01:04,970 --> 00:01:05,520
+OK.
+
+20
+00:01:05,950 --> 00:01:12,760
+So now of course if we go to register I'm going to close it close everything else because you can and
+
+21
+00:01:12,850 --> 00:01:16,150
+of course use some of this but not right now.
+
+22
+00:01:16,720 --> 00:01:20,590
+I'm going to leave the log in open because a lot of things will be the same.
+
+23
+00:01:20,590 --> 00:01:24,280
+And instead of typing everything again I'm just going to copy from here.
+
+24
+00:01:24,310 --> 00:01:25,980
+I'm going to go to the register and this one.
+
+25
+00:01:26,020 --> 00:01:29,020
+It's going to be a re-act class based component.
+
+26
+00:01:29,140 --> 00:01:34,220
+So opening close going to change the capital are to register.
+
+27
+00:01:34,450 --> 00:01:40,830
+And if I do register right here and reload the application we should be getting register Burguet.
+
+28
+00:01:40,900 --> 00:01:41,190
+OK.
+
+29
+00:01:41,200 --> 00:01:43,140
+So we're kind of a good to go.
+
+30
+00:01:43,330 --> 00:01:47,140
+So just like we did with the log in we will need a few things from here.
+
+31
+00:01:47,260 --> 00:01:54,730
+So I'm going to import the form fields just like with the log in going to copy this just form fill we
+
+32
+00:01:54,730 --> 00:01:58,810
+will need the update to generate data and is formatted from auctions.
+
+33
+00:01:58,990 --> 00:02:03,570
+So I'm going to copy this to first first copy paste.
+
+34
+00:02:03,700 --> 00:02:04,860
+Now we will use connect.
+
+35
+00:02:04,870 --> 00:02:12,190
+So to port connect and of course then we will need to import something from user actions just like this.
+
+36
+00:02:12,400 --> 00:02:17,410
+So for now I'm just going to copy paste this one we're going to delete this one because we don't need
+
+37
+00:02:17,410 --> 00:02:18,010
+this one.
+
+38
+00:02:18,100 --> 00:02:19,710
+Now I'm going to leave it now.
+
+39
+00:02:19,720 --> 00:02:21,850
+Just like the Lagann at the bottom.
+
+40
+00:02:21,850 --> 00:02:23,680
+We are doing the can connect.
+
+41
+00:02:23,800 --> 00:02:30,300
+And since this route will be you know like the main component inside routes we didn't need to bring
+
+42
+00:02:30,520 --> 00:02:36,660
+with router so it is going to go to register what happened.
+
+43
+00:02:39,260 --> 00:02:39,920
+There we go.
+
+44
+00:02:39,920 --> 00:02:42,230
+Let me just close this right.
+
+45
+00:02:42,260 --> 00:02:43,090
+Doesn't matter.
+
+46
+00:02:43,550 --> 00:02:47,210
+So I have a cable right here which is a cable of the microphone.
+
+47
+00:02:47,420 --> 00:02:50,270
+And you know it's in the middle of the mouse.
+
+48
+00:02:50,590 --> 00:02:50,810
+OK.
+
+49
+00:02:50,820 --> 00:02:55,210
+So I'm going to copy and just put the register right here.
+
+50
+00:02:55,490 --> 00:02:56,000
+OK.
+
+51
+00:02:56,150 --> 00:02:58,620
+So now we have pretty much all the things we need.
+
+52
+00:02:58,670 --> 00:02:59,620
+We have redux.
+
+53
+00:02:59,660 --> 00:03:05,630
+We have the form fields and everything else just like we did with the log in we need to state with all
+
+54
+00:03:05,630 --> 00:03:06,200
+of this.
+
+55
+00:03:06,320 --> 00:03:12,390
+So I'm going to go right here at the top and create a state of equal to something.
+
+56
+00:03:12,650 --> 00:03:15,690
+So we need form error and we need to form data.
+
+57
+00:03:15,710 --> 00:03:19,040
+So for now just going to copy and do this.
+
+58
+00:03:19,120 --> 00:03:19,810
+All right.
+
+59
+00:03:19,850 --> 00:03:26,810
+Now if I go to the final one and I go to this one and we go to the register we have this tiny box with
+
+60
+00:03:26,810 --> 00:03:34,200
+a name last name email and then we need to confirm password I'm sorry password and confirm confirm password.
+
+61
+00:03:34,400 --> 00:03:37,880
+So we need to create different fields for this one.
+
+62
+00:03:37,880 --> 00:03:42,710
+So first it's going to be the name I'm going to copy this one going to copy the mail that we have inside
+
+63
+00:03:42,710 --> 00:03:46,170
+log in and I'm going to paste it in of course changed values.
+
+64
+00:03:46,310 --> 00:03:52,790
+So this one will be name and the input still an input instead of email is going to be name.
+
+65
+00:03:52,790 --> 00:03:55,460
+Same thing right here.
+
+66
+00:03:55,570 --> 00:03:55,990
+All right.
+
+67
+00:03:56,000 --> 00:03:58,910
+So enter your name.
+
+68
+00:03:58,940 --> 00:03:59,550
+All right.
+
+69
+00:03:59,780 --> 00:04:04,490
+So validation we need to remove the e-mail and it's just going to be required.
+
+70
+00:04:04,630 --> 00:04:07,460
+Valid false touch false and validation message.
+
+71
+00:04:07,460 --> 00:04:13,370
+All right so everything it's just like we need to be then I get a copy of this one I'm going to paste
+
+72
+00:04:13,370 --> 00:04:14,250
+it at the bottom.
+
+73
+00:04:14,360 --> 00:04:16,390
+And this one will be last name.
+
+74
+00:04:16,520 --> 00:04:19,580
+And then of course I will change all of your other inputs.
+
+75
+00:04:19,580 --> 00:04:20,080
+Last name.
+
+76
+00:04:20,100 --> 00:04:24,660
+Input type of actually name actually here.
+
+77
+00:04:24,740 --> 00:04:26,530
+The type should be text.
+
+78
+00:04:26,540 --> 00:04:28,590
+Sorry for this text.
+
+79
+00:04:28,790 --> 00:04:31,010
+And there's one text as well.
+
+80
+00:04:31,550 --> 00:04:36,620
+And then enter your last name still required and everything else.
+
+81
+00:04:36,710 --> 00:04:38,990
+Then we have the email going to save it.
+
+82
+00:04:38,990 --> 00:04:43,240
+And again the e-mails same configuration so I'm going to copy the one from the log in and they're going
+
+83
+00:04:43,230 --> 00:04:45,030
+to paste it down here.
+
+84
+00:04:45,410 --> 00:04:51,200
+Then we need a passport to go to log and copy the passport and paste it because it's going to be the
+
+85
+00:04:51,200 --> 00:04:52,490
+same code.
+
+86
+00:04:52,700 --> 00:04:54,070
+So paste.
+
+87
+00:04:54,170 --> 00:04:54,930
+Very good.
+
+88
+00:04:55,160 --> 00:04:59,570
+Now when we the last field is going to be the confirmed password and this one is going to be a little
+
+89
+00:04:59,570 --> 00:05:05,270
+bit a little bit weird because whenever we send this to the database to the server we just need to add
+
+90
+00:05:05,360 --> 00:05:09,200
+a new user with this name last name email and one password.
+
+91
+00:05:09,200 --> 00:05:11,570
+So this one will not pass.
+
+92
+00:05:11,570 --> 00:05:13,790
+This one is just for validation.
+
+93
+00:05:13,790 --> 00:05:19,430
+So when we need to do is we need to create a field and then when we send everything to the server we're
+
+94
+00:05:19,430 --> 00:05:21,550
+going to remove that field.
+
+95
+00:05:21,710 --> 00:05:29,070
+Now this confirmed passport needs to match or try to match whatever we have inside passport.
+
+96
+00:05:29,230 --> 00:05:36,920
+So going to go I'm going to copy the passport and say confirm and then with a capital P passport still
+
+97
+00:05:36,920 --> 00:05:41,200
+going to be any input it's going to be a password input going to say confirm.
+
+98
+00:05:41,420 --> 00:05:50,080
+Confirm underscore equal to you know again type passport and then on this one confirm your passport
+
+99
+00:05:52,000 --> 00:05:57,360
+all right now the validation is what it's going to be weird because it's still required.
+
+100
+00:05:57,520 --> 00:05:58,950
+But we need to add a new rule.
+
+101
+00:05:58,950 --> 00:06:04,660
+We need to tell the validation that this field needs to be equal to this one.
+
+102
+00:06:04,660 --> 00:06:05,200
+All right.
+
+103
+00:06:05,350 --> 00:06:12,750
+So I'm going to go right here and say coma and then confirm and then passport you're going to say this.
+
+104
+00:06:12,870 --> 00:06:17,380
+So by doing this whenever we reach validation and we will need to added Of course you're going to say
+
+105
+00:06:17,410 --> 00:06:24,000
+OK this field that begin to be band aiding the value of this one needs to be exactly the same password
+
+106
+00:06:24,010 --> 00:06:25,620
+is the same as passport.
+
+107
+00:06:25,620 --> 00:06:27,040
+Is this field.
+
+108
+00:06:27,040 --> 00:06:29,850
+This is why I'm making reference to password.
+
+109
+00:06:29,890 --> 00:06:33,880
+So then when we reached a validation we're going to check ok with it what is the value for this one
+
+110
+00:06:34,210 --> 00:06:37,420
+and what is the value for the other one we have the top they match.
+
+111
+00:06:37,450 --> 00:06:37,860
+No.
+
+112
+00:06:37,900 --> 00:06:38,400
+Yes.
+
+113
+00:06:38,470 --> 00:06:39,490
+What are we going to do.
+
+114
+00:06:39,490 --> 00:06:43,170
+So that's the the main idea of this.
+
+115
+00:06:43,180 --> 00:06:45,870
+Now of course we need to start creating all of this.
+
+116
+00:06:45,910 --> 00:06:47,840
+So I'm going to delete this.
+
+117
+00:06:48,080 --> 00:06:54,150
+I'm going to go to class name opening close and Page underscore wrapper.
+
+118
+00:06:54,160 --> 00:07:00,130
+All right then we have a container so I'm going to add a container.
+
+119
+00:07:00,130 --> 00:07:00,780
+There we go.
+
+120
+00:07:00,780 --> 00:07:03,860
+Dev of class container.
+
+121
+00:07:05,910 --> 00:07:08,630
+All right container.
+
+122
+00:07:09,320 --> 00:07:10,370
+What else.
+
+123
+00:07:10,460 --> 00:07:10,990
+Right here.
+
+124
+00:07:11,000 --> 00:07:18,440
+Going to create a new wrapper div opening close and this div are going to add a class name of register
+
+125
+00:07:19,190 --> 00:07:23,570
+underscore in underscore container.
+
+126
+00:07:23,570 --> 00:07:24,460
+All right.
+
+127
+00:07:24,500 --> 00:07:32,470
+Now if we check what we get right here on the final one we have kind of again a left side and an M a
+
+128
+00:07:32,580 --> 00:07:34,850
+downside Ryan on a bright side.
+
+129
+00:07:35,090 --> 00:07:35,520
+OK.
+
+130
+00:07:35,720 --> 00:07:38,140
+So it could be a left side or it could be just one div.
+
+131
+00:07:38,150 --> 00:07:39,440
+Does it matter.
+
+132
+00:07:39,540 --> 00:07:41,290
+I'll come up with the following.
+
+133
+00:07:41,690 --> 00:07:46,350
+Because I'm out in the class and maybe I did this in a different way just like this.
+
+134
+00:07:46,460 --> 00:07:51,200
+And then I change it back and I forgot to change the name of the class because right now it makes no
+
+135
+00:07:51,200 --> 00:07:53,860
+sense because I going to say class name again.
+
+136
+00:07:53,990 --> 00:07:55,880
+I'm going to put the left.
+
+137
+00:07:56,090 --> 00:07:59,440
+This is proved very much because they've made a mistake when I was creating this.
+
+138
+00:07:59,450 --> 00:08:00,680
+But doesn't matter.
+
+139
+00:08:00,680 --> 00:08:01,700
+Just one tip.
+
+140
+00:08:01,760 --> 00:08:02,460
+All right.
+
+141
+00:08:02,840 --> 00:08:04,390
+So I'm going to create a form.
+
+142
+00:08:04,790 --> 00:08:12,630
+Open and close and just like with it before this form will get an on sieve met.
+
+143
+00:08:12,710 --> 00:08:19,090
+All right open and close and just like with that before we need to be passing the function that we're
+
+144
+00:08:19,090 --> 00:08:22,360
+going to be doing with the actual event.
+
+145
+00:08:22,360 --> 00:08:22,840
+All right.
+
+146
+00:08:23,120 --> 00:08:30,660
+And then this that serve mid form opening close and we pass that event.
+
+147
+00:08:30,680 --> 00:08:36,130
+So I'm going to say some form opening close and we just you know do a function.
+
+148
+00:08:36,540 --> 00:08:37,220
+OK.
+
+149
+00:08:37,790 --> 00:08:39,930
+So now at the top we have a title.
+
+150
+00:08:39,950 --> 00:08:46,760
+So I'm going to add an H to tack which is says personal information.
+
+151
+00:08:47,080 --> 00:08:48,200
+All right.
+
+152
+00:08:48,650 --> 00:08:50,620
+Now we have two blocks.
+
+153
+00:08:50,630 --> 00:08:53,330
+The one at the top and the one at the bottom.
+
+154
+00:08:53,390 --> 00:08:59,350
+So I'm going to wrap the first block inside of a div just like here.
+
+155
+00:09:00,260 --> 00:09:02,360
+Let me do it like this.
+
+156
+00:09:03,030 --> 00:09:03,520
+OK.
+
+157
+00:09:03,860 --> 00:09:06,510
+So I'm going to say div and there's declasse Oh sorry.
+
+158
+00:09:06,530 --> 00:09:15,000
+The class name I gave to this container which is going to be a form underscore block and then to that
+
+159
+00:09:15,320 --> 00:09:17,750
+some of the clauses make no sense but that's OK.
+
+160
+00:09:17,930 --> 00:09:22,060
+Then Dave and I are going to add a class name again of Block.
+
+161
+00:09:22,520 --> 00:09:23,480
+All right.
+
+162
+00:09:23,480 --> 00:09:27,330
+And this is what we care we need to add the form field right here.
+
+163
+00:09:27,470 --> 00:09:30,020
+Now of course we have two blocks which is this one.
+
+164
+00:09:30,020 --> 00:09:31,280
+And it's this one.
+
+165
+00:09:31,310 --> 00:09:33,810
+So the first one we need to add the form filled.
+
+166
+00:09:33,830 --> 00:09:40,480
+I'm going to copy the one we have right here which is the one for name and then the one for last name.
+
+167
+00:09:40,700 --> 00:09:46,450
+So I'm going to paste it and this one will be name and this one as well.
+
+168
+00:09:46,730 --> 00:09:48,230
+All right.
+
+169
+00:09:48,230 --> 00:09:52,870
+So in theory at least we should be getting something just going to keep going forward.
+
+170
+00:09:52,910 --> 00:09:56,440
+I'm going to copy with the block with the div and class block.
+
+171
+00:09:56,460 --> 00:09:58,930
+And then going to paste it down here at the bottom.
+
+172
+00:09:59,240 --> 00:10:01,430
+And this one will be last name.
+
+173
+00:10:01,460 --> 00:10:04,320
+So last name.
+
+174
+00:10:04,700 --> 00:10:06,540
+Copy paste.
+
+175
+00:10:06,560 --> 00:10:09,150
+All right let's see what we get.
+
+176
+00:10:09,300 --> 00:10:11,150
+And I got a can I get it.
+
+177
+00:10:11,150 --> 00:10:17,640
+Then we have a different feel which is going to be a complete block a width of 100 percent kind of thing.
+
+178
+00:10:17,900 --> 00:10:21,580
+So this one is going to go outside of the form block.
+
+179
+00:10:21,720 --> 00:10:22,790
+Just going to be a div.
+
+180
+00:10:22,970 --> 00:10:26,390
+So outside of the form block two are going to create a div.
+
+181
+00:10:26,560 --> 00:10:31,850
+Open and close and this one will be an e-mail and I'm going to just copy the one we have right here
+
+182
+00:10:31,910 --> 00:10:36,060
+from Lagann and paste it real simple.
+
+183
+00:10:36,710 --> 00:10:37,280
+OK.
+
+184
+00:10:37,490 --> 00:10:38,550
+Let's see what to get.
+
+185
+00:10:39,310 --> 00:10:43,850
+And there we go OK let's get now we have the accounting formation.
+
+186
+00:10:44,050 --> 00:10:46,600
+So it's pretty much just like the form block too.
+
+187
+00:10:46,690 --> 00:10:48,130
+It's pretty much the same thing.
+
+188
+00:10:48,160 --> 00:10:55,190
+So just outside of the email field I'm going to create an age to tack.
+
+189
+00:10:55,330 --> 00:10:59,970
+And there's one account could be instead of account information.
+
+190
+00:10:59,990 --> 00:11:05,150
+Oh and I will remember because of the personal information I was getting at the field for last name
+
+191
+00:11:05,170 --> 00:11:09,910
+e-mail and everything else in a county formation is going to be the address the phone and that kind
+
+192
+00:11:09,910 --> 00:11:10,660
+of things.
+
+193
+00:11:10,750 --> 00:11:15,140
+But we're going to do that after we are logged in we're going to do that later.
+
+194
+00:11:15,160 --> 00:11:17,260
+Maybe I didn't just I didn't change this.
+
+195
+00:11:17,260 --> 00:11:18,460
+Forgot to change it.
+
+196
+00:11:18,460 --> 00:11:20,700
+So this one should be verified passport
+
+197
+00:11:25,170 --> 00:11:27,810
+very fine passport.
+
+198
+00:11:28,510 --> 00:11:29,930
+Kind of makes sense.
+
+199
+00:11:29,960 --> 00:11:33,080
+And on this one just like before going to copy the tag.
+
+200
+00:11:33,300 --> 00:11:35,700
+It's a form block too.
+
+201
+00:11:36,660 --> 00:11:37,400
+All right.
+
+202
+00:11:37,430 --> 00:11:38,650
+They're opening close.
+
+203
+00:11:38,850 --> 00:11:44,400
+And again we will have two different blocks so I'm going to copy this ones from here and I'm going to
+
+204
+00:11:44,400 --> 00:11:46,730
+paste them right here.
+
+205
+00:11:46,740 --> 00:11:47,990
+All right.
+
+206
+00:11:48,750 --> 00:11:52,790
+So now this form field instead of name is going to be password.
+
+207
+00:11:53,020 --> 00:11:54,860
+This one passport.
+
+208
+00:11:55,330 --> 00:12:02,200
+And remember that we have a confirmed passport so confirm passport and confirm passport on the.
+
+209
+00:12:02,210 --> 00:12:03,690
+On the other one.
+
+210
+00:12:03,690 --> 00:12:04,990
+Very good.
+
+211
+00:12:05,800 --> 00:12:06,100
+OK.
+
+212
+00:12:06,150 --> 00:12:09,910
+So we are kind of not going to go but we are much much closer.
+
+213
+00:12:09,930 --> 00:12:12,700
+So I'm going to go back and check how this goes.
+
+214
+00:12:12,760 --> 00:12:14,980
+So Burguet we have everything we need.
+
+215
+00:12:15,090 --> 00:12:18,150
+Of course if I type something the application fails.
+
+216
+00:12:18,240 --> 00:12:18,990
+Right.
+
+217
+00:12:18,990 --> 00:12:21,840
+So we need to add the update form function.
+
+218
+00:12:22,080 --> 00:12:25,560
+So we're going to go right here at the top and say update form.
+
+219
+00:12:25,560 --> 00:12:28,720
+Just like we did before date form.
+
+220
+00:12:29,150 --> 00:12:32,290
+Now this time is going to be much much easier.
+
+221
+00:12:32,310 --> 00:12:33,860
+Why is going to be much easier.
+
+222
+00:12:34,080 --> 00:12:39,540
+Because we've already have all the functions and the helpers that we created on the privy section.
+
+223
+00:12:39,540 --> 00:12:42,960
+General data this for Balad and the update form.
+
+224
+00:12:42,960 --> 00:12:46,820
+So now the update form is going to be pretty much the same on this one.
+
+225
+00:12:46,890 --> 00:12:48,120
+We just use the same thing.
+
+226
+00:12:48,120 --> 00:12:52,040
+The only thing we change is the keyboard of what we are actually doing.
+
+227
+00:12:52,200 --> 00:12:56,450
+So I'm going to copy this and I'm going to go to update form and paste it.
+
+228
+00:12:56,460 --> 00:12:58,070
+All right let's try again.
+
+229
+00:12:58,550 --> 00:12:59,640
+So I'm going to type something.
+
+230
+00:12:59,670 --> 00:13:02,470
+And now it updates.
+
+231
+00:13:02,720 --> 00:13:04,270
+All right very good.
+
+232
+00:13:04,370 --> 00:13:06,770
+So that is get now on the submit form.
+
+233
+00:13:06,770 --> 00:13:08,540
+We need to do pretty much the same thing.
+
+234
+00:13:08,570 --> 00:13:15,290
+And now right here are going to say this one is register going to go back to log in copy what we have
+
+235
+00:13:15,290 --> 00:13:16,420
+from submit form.
+
+236
+00:13:16,430 --> 00:13:20,700
+Let me make this Nizer copy what we get from submit form.
+
+237
+00:13:21,110 --> 00:13:22,490
+I can paste it right here.
+
+238
+00:13:22,490 --> 00:13:25,400
+And of course everything else is going to be the same.
+
+239
+00:13:25,400 --> 00:13:29,250
+The only thing we're going to change is the keyword keyword.
+
+240
+00:13:29,540 --> 00:13:31,120
+And inside of the form ballot.
+
+241
+00:13:31,130 --> 00:13:37,790
+The only thing we can output right now it's a console log for the data to submit just so we can make
+
+242
+00:13:37,790 --> 00:13:40,840
+sure that everything is going as planned.
+
+243
+00:13:41,000 --> 00:13:41,400
+All right.
+
+244
+00:13:41,420 --> 00:13:43,930
+So you know pretty much pretty much ready.
+
+245
+00:13:44,360 --> 00:13:44,900
+So OK.
+
+246
+00:13:44,930 --> 00:13:46,250
+I'm going to be adding some.
+
+247
+00:13:46,250 --> 00:13:49,890
+The button the buttons at the bottom because we didn't have them.
+
+248
+00:13:50,030 --> 00:13:56,060
+So let's go right here at the bottom and right here we have the last block which is the close of the
+
+249
+00:13:56,060 --> 00:13:56,910
+last block.
+
+250
+00:13:57,080 --> 00:13:59,650
+We have the div and then we have the form.
+
+251
+00:13:59,660 --> 00:14:04,930
+So what I'm going to do is before the close of the form I'm going to add the buttons.
+
+252
+00:14:05,180 --> 00:14:07,410
+So I'm going to go right here for you to decide.
+
+253
+00:14:07,540 --> 00:14:09,930
+We are almost done now on this one.
+
+254
+00:14:09,950 --> 00:14:12,430
+We need to pretty much do the same thing than before.
+
+255
+00:14:12,590 --> 00:14:17,110
+Again we're going to go to the log in and I'm going to copy this.
+
+256
+00:14:17,120 --> 00:14:21,740
+I'm going to go right here and paste it and make it a little bit nicer.
+
+257
+00:14:21,740 --> 00:14:22,680
+All right man.
+
+258
+00:14:22,820 --> 00:14:24,590
+So please check your data.
+
+259
+00:14:24,590 --> 00:14:28,280
+If we do get an error could be something went wrong.
+
+260
+00:14:28,280 --> 00:14:29,170
+Try again.
+
+261
+00:14:29,170 --> 00:14:30,100
+Does it matter.
+
+262
+00:14:30,380 --> 00:14:36,530
+And then of course instead of log in is going to be create an account.
+
+263
+00:14:36,530 --> 00:14:37,140
+All right.
+
+264
+00:14:37,580 --> 00:14:39,280
+Everything is the same.
+
+265
+00:14:39,410 --> 00:14:41,780
+So right there we go.
+
+266
+00:14:41,780 --> 00:14:47,350
+So now what we need to do and what we're going to be doing is to of course submit the form.
+
+267
+00:14:47,390 --> 00:14:50,630
+Make sure that everything is OK and we need to fix this.
+
+268
+00:14:50,690 --> 00:14:56,960
+You know we add this rule to the validation to confirm password thing because of course we need to validate
+
+269
+00:14:57,320 --> 00:15:00,790
+they have the entering the same passwords right here.
+
+270
+00:15:00,930 --> 00:15:05,900
+And then of course when we log again we are not going to work when we were just or we are not going
+
+271
+00:15:05,900 --> 00:15:08,480
+to log in the user directly.
+
+272
+00:15:08,600 --> 00:15:13,050
+We're going to say OK everything went OK go to the log and we're going to take you to the log in.
+
+273
+00:15:13,160 --> 00:15:17,380
+And you know enter your information your user and password and log in.
+
+274
+00:15:17,390 --> 00:15:18,410
+So we're going to do that.
+

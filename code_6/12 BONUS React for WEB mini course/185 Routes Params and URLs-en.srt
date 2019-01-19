@@ -1,0 +1,760 @@
+1
+00:00:00,980 --> 00:00:01,320
+Right.
+
+2
+00:00:01,320 --> 00:00:06,160
+So what happens if I'm inside posts and right here inside post.
+
+3
+00:00:06,180 --> 00:00:08,790
+I'm going to get just a list of posts.
+
+4
+00:00:08,790 --> 00:00:11,270
+Let's pretend that we want to build it.
+
+5
+00:00:11,280 --> 00:00:12,250
+Why not.
+
+6
+00:00:12,270 --> 00:00:14,610
+So I'm going to have the post number one.
+
+7
+00:00:14,640 --> 00:00:19,280
+You're going to have the opposed number two for example and then maybe post number three.
+
+8
+00:00:19,320 --> 00:00:22,280
+Just three simple posts.
+
+9
+00:00:22,530 --> 00:00:27,140
+So whenever we load the supplication I'm going to have this list I'm going to bring the link Madill
+
+10
+00:00:27,170 --> 00:00:29,580
+right here just like we are doing it right here.
+
+11
+00:00:29,700 --> 00:00:35,790
+Just get a copy of this go to posts and paste it down here.
+
+12
+00:00:36,150 --> 00:00:36,890
+I'm going somewhere.
+
+13
+00:00:36,900 --> 00:00:37,620
+Don't worry.
+
+14
+00:00:37,860 --> 00:00:41,240
+And then what we need to do we need to link to this specific post.
+
+15
+00:00:41,280 --> 00:00:46,440
+So this post list is going to come from a database lets say whatever database.
+
+16
+00:00:46,440 --> 00:00:49,890
+And this of course is going to do the linkage to the actual post.
+
+17
+00:00:50,100 --> 00:00:54,690
+So are we going to use a link We're going to rappel ink just right here.
+
+18
+00:00:55,130 --> 00:00:58,900
+We're going to say Lenk and then just you know link link.
+
+19
+00:00:59,430 --> 00:01:00,930
+Let me finish.
+
+20
+00:01:01,030 --> 00:01:05,220
+But this of course is going to be it's going to have to property and this is going to be two forward
+
+21
+00:01:05,220 --> 00:01:12,660
+slash posts and we already have that that path which is going to be posts right here posts and it's
+
+22
+00:01:12,660 --> 00:01:18,960
+going to be post for Slash and then maybe number one and they're going to have the two and the three.
+
+23
+00:01:18,990 --> 00:01:21,070
+So I'm going to go and paste it.
+
+24
+00:01:21,100 --> 00:01:23,300
+It's going to be two and three.
+
+25
+00:01:23,370 --> 00:01:23,890
+OK.
+
+26
+00:01:24,240 --> 00:01:26,040
+So let's go to home.
+
+27
+00:01:26,070 --> 00:01:26,700
+Going to go home.
+
+28
+00:01:26,700 --> 00:01:32,790
+I want to go to posts so I'm going to get my post-box number one post number two and post number three.
+
+29
+00:01:32,790 --> 00:01:37,210
+Of course we need to add a break just to make it a little bit better.
+
+30
+00:01:37,550 --> 00:01:38,570
+And there we go.
+
+31
+00:01:38,830 --> 00:01:44,040
+So OK we have this list so I'm going to click and post number one and it's going to go to local host
+
+32
+00:01:44,070 --> 00:01:47,490
+for I-Slash posts for Slash and number one.
+
+33
+00:01:47,490 --> 00:01:50,380
+This is going to be the idea of our post.
+
+34
+00:01:50,400 --> 00:01:56,100
+Now the thing is that whenever you go to this route I want to fetch the data that belongs to this post
+
+35
+00:01:56,190 --> 00:01:57,890
+to the ID number one.
+
+36
+00:01:58,290 --> 00:02:02,830
+And if we go right here we are only getting whatever it's inside post.
+
+37
+00:02:02,860 --> 00:02:04,290
+We're getting the on the route.
+
+38
+00:02:04,320 --> 00:02:05,250
+This route.
+
+39
+00:02:05,580 --> 00:02:08,140
+So what we need to do we need a way to create.
+
+40
+00:02:08,250 --> 00:02:13,750
+We need to create a model that it's going to be listening for this route and then it's going to render
+
+41
+00:02:13,750 --> 00:02:16,490
+the data that we have for post number one.
+
+42
+00:02:16,540 --> 00:02:16,870
+OK.
+
+43
+00:02:16,920 --> 00:02:18,410
+So I'm going to create that route.
+
+44
+00:02:18,550 --> 00:02:20,240
+And again I'm going somewhere.
+
+45
+00:02:20,250 --> 00:02:26,250
+Don't worry we're going to create a new file and this one is going to be on no post item makes sense.
+
+46
+00:02:26,250 --> 00:02:32,460
+Most of that has got so inside post item pretty much we're going to have the same thing than this going
+
+47
+00:02:32,460 --> 00:02:33,270
+to go to post.
+
+48
+00:02:33,320 --> 00:02:40,360
+Item the lead and right here and going to say post detail.
+
+49
+00:02:40,590 --> 00:02:45,170
+We don't need the link right here and we need to pass to create this to put a different name.
+
+50
+00:02:45,180 --> 00:02:46,430
+So let's put.
+
+51
+00:02:46,430 --> 00:02:49,500
+Post item.
+
+52
+00:02:50,250 --> 00:02:56,340
+Of course we need to export it and we need to require this file from the index so we can require the
+
+53
+00:02:56,340 --> 00:02:56,930
+path.
+
+54
+00:02:57,120 --> 00:03:02,350
+So I'm going to say import and then post post item.
+
+55
+00:03:02,370 --> 00:03:03,330
+Very good.
+
+56
+00:03:03,330 --> 00:03:09,680
+It's going to be from and then dash components and then for Slash and then post item.
+
+57
+00:03:09,680 --> 00:03:10,020
+Okay.
+
+58
+00:03:10,050 --> 00:03:12,400
+So this route is ready.
+
+59
+00:03:12,780 --> 00:03:16,680
+So now I'm going to create a post I'm sorry I'm going to carry it around for this.
+
+60
+00:03:16,680 --> 00:03:22,950
+I got a copy of this pasted at the bottom and we're going to say whenever we get a post with ID and
+
+61
+00:03:22,950 --> 00:03:29,610
+in this case let's pretend that we won the one the number one begin to be using the route for post.
+
+62
+00:03:29,640 --> 00:03:34,290
+And we're going to be using this component but it's just an out.
+
+63
+00:03:34,320 --> 00:03:39,690
+So if we go to post one you're getting posts and we're getting one but you know we are getting the PPOs
+
+64
+00:03:39,710 --> 00:03:41,620
+detail we are getting that component.
+
+65
+00:03:41,640 --> 00:03:48,870
+We are getting that text but we're still getting the post the main parent component.
+
+66
+00:03:48,870 --> 00:03:52,780
+And the thing is that both routes have posts.
+
+67
+00:03:52,920 --> 00:03:58,180
+So what we need to do to this one we need to say exact.
+
+68
+00:03:58,800 --> 00:04:01,530
+So now we are getting the post detail.
+
+69
+00:04:01,530 --> 00:04:09,990
+Now the thing is that right now this ID it's hard coded in and realized this ID is going to be dynamic
+
+70
+00:04:10,000 --> 00:04:16,890
+you could be receiving a request for a post number one post number to post 56 or whatever.
+
+71
+00:04:16,890 --> 00:04:24,420
+And notice that right here I'm doing 56 but this is not working because I'm the we have the number one
+
+72
+00:04:24,420 --> 00:04:25,260
+hardcoded.
+
+73
+00:04:25,470 --> 00:04:33,660
+So we need to find a way to make this field dynamic and this are called Perhaps we need to be use of
+
+74
+00:04:33,720 --> 00:04:36,200
+feature from react to use perhaps.
+
+75
+00:04:36,240 --> 00:04:42,760
+Now to past dynamic data to listen for dynamic data right here we're going to use the common currency
+
+76
+00:04:42,890 --> 00:04:45,680
+con and then whatever we want to listen.
+
+77
+00:04:45,720 --> 00:04:53,820
+In this case we are passing an ID so I'm going to say Id Now if I do id I have 6:56 56 right here but
+
+78
+00:04:53,810 --> 00:04:55,920
+I'm still getting the post detail.
+
+79
+00:04:55,920 --> 00:05:01,540
+If you go to post detail you know we just have a text it's a loading this.
+
+80
+00:05:01,540 --> 00:05:03,160
+So you know it's working.
+
+81
+00:05:03,280 --> 00:05:09,250
+Whenever used con you're meaning you're saying that you want to use that dynamic value right here and
+
+82
+00:05:09,250 --> 00:05:10,930
+this could be whatever you want.
+
+83
+00:05:10,990 --> 00:05:17,600
+Let me say that first we wanted the I.D. and then for example a user name something like that.
+
+84
+00:05:18,130 --> 00:05:20,840
+Of course nothing is going to happen because we need a user name.
+
+85
+00:05:20,850 --> 00:05:26,230
+I'm going to say the username of this guy is going to be Francis and it's going to load that data is
+
+86
+00:05:26,230 --> 00:05:30,200
+going to load that component because we have a match right here.
+
+87
+00:05:30,220 --> 00:05:33,990
+So another thing is that OK we are passing dynamic data.
+
+88
+00:05:34,120 --> 00:05:36,420
+How can we catch it inside here.
+
+89
+00:05:36,430 --> 00:05:38,330
+How can we get that data.
+
+90
+00:05:38,350 --> 00:05:43,960
+Because whenever you get a request for this you're going to enter this component this view and you need
+
+91
+00:05:43,960 --> 00:05:48,910
+to grab the fifth the sixth the Francis and then you need to go to the database do whatever you need
+
+92
+00:05:48,910 --> 00:05:51,620
+to do and render that post.
+
+93
+00:05:51,910 --> 00:05:58,540
+Well remember that we talked about the browser router and everything else that whenever we use re-act
+
+94
+00:05:58,540 --> 00:06:01,520
+router is going to pass all the options inside prompts.
+
+95
+00:06:01,630 --> 00:06:10,660
+Well same idea are going to go right here and say props and of course if I do console log and then prompts
+
+96
+00:06:11,650 --> 00:06:12,940
+me bring the console.
+
+97
+00:06:12,940 --> 00:06:14,980
+Make this a little bit bigger.
+
+98
+00:06:15,040 --> 00:06:16,040
+No that's fine.
+
+99
+00:06:16,260 --> 00:06:23,620
+So I'm going to be doing log the prompts an inside match right here just like before we have all the
+
+100
+00:06:23,620 --> 00:06:28,990
+data for this and right here you have perhaps you have the ID and the username.
+
+101
+00:06:28,990 --> 00:06:40,630
+So right here what we could say OK to do just render the prop's dot match dot programs dot ID in this
+
+102
+00:06:40,630 --> 00:06:44,250
+case and I I to do the same thing for the username.
+
+103
+00:06:44,390 --> 00:06:46,760
+Let's put it right here.
+
+104
+00:06:46,770 --> 00:06:52,850
+It is a DOS and then perhaps and then username.
+
+105
+00:06:53,100 --> 00:06:58,630
+So in our time we load around with dynamic data we are catching that data and then you can do whatever
+
+106
+00:06:58,630 --> 00:06:59,950
+you wish right here.
+
+107
+00:06:59,950 --> 00:07:06,320
+Let's put something else let's say 8 8 8 and then Janice whatever.
+
+108
+00:07:06,520 --> 00:07:10,120
+So we get the data you always get the information you're getting.
+
+109
+00:07:10,240 --> 00:07:14,680
+You said we are router is going to pass the information inside prompts.
+
+110
+00:07:14,710 --> 00:07:21,090
+So you know prompts are really really important for us to pass information between components.
+
+111
+00:07:21,100 --> 00:07:22,780
+So you're going to be using this the whole time.
+
+112
+00:07:22,790 --> 00:07:25,360
+We're going to be using this the whole time.
+
+113
+00:07:25,540 --> 00:07:28,480
+So let's go to a different topic right now.
+
+114
+00:07:28,540 --> 00:07:33,130
+OK so now I'm going to show you some additional features of re-act router.
+
+115
+00:07:33,160 --> 00:07:39,250
+Now instead of using browser router just like you're using right here we could use an alternative wave
+
+116
+00:07:39,520 --> 00:07:41,210
+to manipulate the L.
+
+117
+00:07:41,230 --> 00:07:48,310
+We get on top for example instead of bringing the browser router I'm going to say hash router just like
+
+118
+00:07:48,310 --> 00:07:49,990
+that hash Roder.
+
+119
+00:07:50,080 --> 00:07:55,030
+So this one is going to make the URL a little bit different and notice that you're getting an error
+
+120
+00:07:55,030 --> 00:07:56,550
+message browser router.
+
+121
+00:07:56,560 --> 00:07:58,060
+It's not defined.
+
+122
+00:07:58,240 --> 00:08:02,910
+And the thing is that if we use this one we cannot use browser router right here.
+
+123
+00:08:02,920 --> 00:08:06,210
+We need to replace this for hash router.
+
+124
+00:08:06,970 --> 00:08:12,280
+And if it were the page you're getting it and notice that at the end of the year you're all the domain
+
+125
+00:08:12,280 --> 00:08:13,360
+domain domain.
+
+126
+00:08:13,630 --> 00:08:16,700
+So we are getting a hash stack and then for Slash.
+
+127
+00:08:16,750 --> 00:08:20,890
+So whenever we use this the u r l is going to be built just like this.
+
+128
+00:08:20,890 --> 00:08:25,170
+If I go to posts after the hash tag then you get the Euro.
+
+129
+00:08:25,180 --> 00:08:30,040
+If I go to profile you know we get profile hash tag and then profile.
+
+130
+00:08:30,040 --> 00:08:32,240
+So this is the way it works with this.
+
+131
+00:08:32,560 --> 00:08:38,110
+So you know again it depends on what you're building and what you want to do if you want to use the
+
+132
+00:08:38,200 --> 00:08:41,700
+normal your L or then hash tag for Shlash of L.
+
+133
+00:08:41,710 --> 00:08:46,430
+This was very common with the first versions of angular I use this lot.
+
+134
+00:08:46,710 --> 00:08:47,200
+So OK.
+
+135
+00:08:47,230 --> 00:08:54,880
+We have another one that is going to be called Memory router and by the keyboard memory you can guess
+
+136
+00:08:55,070 --> 00:08:56,680
+what this is going to do.
+
+137
+00:08:57,010 --> 00:09:03,470
+So whenever we use memory router instead of getting a urinal you're not going to get anything.
+
+138
+00:09:03,490 --> 00:09:05,330
+Everything is going to be stored in memory.
+
+139
+00:09:05,350 --> 00:09:10,330
+You know it's not going to change the L or is not going to show you what you're getting.
+
+140
+00:09:10,330 --> 00:09:16,870
+If I go home we get home if I go to posts we are getting the posts new posts but nothing is going to
+
+141
+00:09:16,870 --> 00:09:18,380
+happen to the euro.
+
+142
+00:09:18,720 --> 00:09:20,340
+When got it just like I told before.
+
+143
+00:09:20,360 --> 00:09:24,250
+This depends on what you're building.
+
+144
+00:09:24,250 --> 00:09:33,030
+In my opinion the the browser router is the best because now everyone it's familiar with this with the
+
+145
+00:09:33,200 --> 00:09:38,560
+L and is certain that most people whenever they use change something or do something.
+
+146
+00:09:38,710 --> 00:09:42,640
+They look at the out and having the Ural with the directories and everything else.
+
+147
+00:09:42,640 --> 00:09:44,470
+It's really really useful.
+
+148
+00:09:44,580 --> 00:09:50,230
+So most of the times you going to be using browser Roder But it's it's good to know that we have different
+
+149
+00:09:50,680 --> 00:09:52,040
+choices right here.
+
+150
+00:09:52,330 --> 00:10:00,180
+OK so moving on instead of just using rgle links for the header to right here we have a different option.
+
+151
+00:10:00,250 --> 00:10:05,390
+We have Browder's gonna give us something that is going to be called nav link if you want to.
+
+152
+00:10:05,440 --> 00:10:08,920
+We want to use a navigation bar just like this.
+
+153
+00:10:08,980 --> 00:10:15,820
+We can bring something that is going to be called Knobloch so Napp link is going to create a navigation
+
+154
+00:10:16,480 --> 00:10:16,920
+for you.
+
+155
+00:10:16,920 --> 00:10:18,430
+Just as with the link.
+
+156
+00:10:18,490 --> 00:10:20,690
+The option to use links with that link.
+
+157
+00:10:20,920 --> 00:10:28,240
+But you have some additional options I'm going to change all of this to now blank and then same thing
+
+158
+00:10:28,240 --> 00:10:29,550
+right here.
+
+159
+00:10:29,870 --> 00:10:30,600
+OK.
+
+160
+00:10:30,830 --> 00:10:33,990
+And of course if I were the page nothing happens.
+
+161
+00:10:34,000 --> 00:10:36,140
+Everything stays the same.
+
+162
+00:10:36,280 --> 00:10:40,060
+But for example with nobbling you get some additional options.
+
+163
+00:10:40,120 --> 00:10:43,450
+Let me just break it down so instead of.
+
+164
+00:10:43,460 --> 00:10:51,370
+Well besides the two you have one option that is going to be active style so you can choose which color
+
+165
+00:10:51,460 --> 00:10:54,870
+this link is going to show whenever it's active.
+
+166
+00:10:55,060 --> 00:10:57,060
+In this case I'm going to say color.
+
+167
+00:10:57,360 --> 00:11:00,470
+Sorry I meant a mistake inside the double curly braces.
+
+168
+00:11:00,520 --> 00:11:01,720
+I'm going to say color.
+
+169
+00:11:01,780 --> 00:11:03,850
+I'm going to say read it of course.
+
+170
+00:11:03,850 --> 00:11:06,480
+Notice that this is just a.
+
+171
+00:11:06,850 --> 00:11:10,600
+So if I go to home get nothing if I go to posts.
+
+172
+00:11:10,600 --> 00:11:14,770
+Notice that the posts it's highlighted so is changing the color.
+
+173
+00:11:14,770 --> 00:11:16,770
+Lets me inspect this.
+
+174
+00:11:17,160 --> 00:11:22,430
+We get the color color red and if we go right here we have style and color red.
+
+175
+00:11:22,480 --> 00:11:24,490
+So this is just the styling for this.
+
+176
+00:11:24,490 --> 00:11:31,510
+But you know it's a nice option that we can use that we can use the styles we can use classes instead
+
+177
+00:11:31,510 --> 00:11:32,440
+of active style.
+
+178
+00:11:32,470 --> 00:11:41,650
+Going to say active was active class name I believe active and then class name so same thing.
+
+179
+00:11:42,100 --> 00:11:44,740
+We can pass a class the name of class.
+
+180
+00:11:44,830 --> 00:11:50,030
+So in this case I'm going to say select it just like that selected.
+
+181
+00:11:50,530 --> 00:11:57,490
+Of course if we were little the page and I inspect posts link are going to get the class of selected
+
+182
+00:11:57,490 --> 00:11:58,870
+whenever it's selected.
+
+183
+00:11:58,870 --> 00:12:02,770
+And if I go home of course we don't have that class so that's good.
+
+184
+00:12:02,770 --> 00:12:03,520
+This is good.
+
+185
+00:12:03,550 --> 00:12:08,800
+To use nice to use and nice to know that we have this feature.
+
+186
+00:12:08,940 --> 00:12:10,250
+Would react router.
+
+187
+00:12:10,580 --> 00:12:12,980
+OK so let's move to the next topic.
+
+188
+00:12:13,020 --> 00:12:17,730
+We're going to be talking about Riak routers switch is going to be short a short one.
+
+189
+00:12:17,860 --> 00:12:19,080
+It's really useful.
+
+190
+00:12:19,090 --> 00:12:25,090
+So if you know about Riak routers switch just go to the next section.
+

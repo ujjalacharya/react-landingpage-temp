@@ -1,0 +1,700 @@
+1
+00:00:00,480 --> 00:00:01,930
+OK so let's begin doing this.
+
+2
+00:00:01,950 --> 00:00:07,680
+So I've created this you know I've changed the color of the terminal you know a little bit better.
+
+3
+00:00:07,800 --> 00:00:13,590
+So we have this screen and then on another tab I have the other you know the finished project so this
+
+4
+00:00:13,590 --> 00:00:15,550
+is what we're going to be doing right now.
+
+5
+00:00:16,170 --> 00:00:23,730
+Of course before I buy record this course this practice course I have all the projects finished so you
+
+6
+00:00:23,730 --> 00:00:25,060
+know I could have a reference.
+
+7
+00:00:25,280 --> 00:00:25,670
+So OK.
+
+8
+00:00:25,680 --> 00:00:28,400
+So this is what we're going to do and we're going to start with Hetter.
+
+9
+00:00:28,540 --> 00:00:32,770
+So whenever the pitch loads we get Hetter and it's transparent.
+
+10
+00:00:32,790 --> 00:00:34,790
+And whenever we scroll down we get a caller.
+
+11
+00:00:34,830 --> 00:00:37,530
+And of course it disappears when we reach the top.
+
+12
+00:00:37,530 --> 00:00:40,440
+And then of course we have the side drawer.
+
+13
+00:00:40,440 --> 00:00:45,260
+And if we click on an item going to go to a new section so we're going to start with Hetter OK.
+
+14
+00:00:45,330 --> 00:00:47,810
+So let's go back to our project.
+
+15
+00:00:47,820 --> 00:00:52,150
+So first the index which is the first to file and we're going to leave it just like it is.
+
+16
+00:00:52,170 --> 00:00:57,000
+We don't need to change anything here but we're going to change the app that jazz which is the other
+
+17
+00:00:57,030 --> 00:01:00,820
+entry point the main entry point of our application in this case.
+
+18
+00:01:00,970 --> 00:01:05,550
+We're going to be using the CSSA we have in we sources and we get it injected right here.
+
+19
+00:01:05,640 --> 00:01:12,520
+So I'm going to say import open and close that force slash resources for Slash and then styles.
+
+20
+00:01:12,750 --> 00:01:19,630
+So the styles will be injected in our application so whenever we use a class name we will get it right.
+
+21
+00:01:19,890 --> 00:01:21,690
+So right now we didn't have Hetter.
+
+22
+00:01:21,720 --> 00:01:28,610
+So we can create a directory inside the source which is going to be called components components and
+
+23
+00:01:28,620 --> 00:01:29,960
+inside components.
+
+24
+00:01:30,090 --> 00:01:32,880
+Of course we need to create the header.
+
+25
+00:01:33,120 --> 00:01:33,890
+So okay.
+
+26
+00:01:33,930 --> 00:01:41,610
+So I'm going to go to component's new folder and I'm going to store the header header dash and then
+
+27
+00:01:41,640 --> 00:01:42,210
+footer.
+
+28
+00:01:42,210 --> 00:01:45,880
+So I'm going to store the header and footer on the same place.
+
+29
+00:01:46,260 --> 00:01:54,590
+So for the header I'm just going to create a new file call called header dodginess and the header dodgiest
+
+30
+00:01:54,770 --> 00:01:57,270
+is going to be a class based component.
+
+31
+00:01:57,420 --> 00:02:04,500
+Now and this is I will tell you this and if you're using VBA code it's going to be really helpful helpful
+
+32
+00:02:04,560 --> 00:02:05,490
+for you.
+
+33
+00:02:05,490 --> 00:02:12,510
+I'm going to be using some snippets for example I'm going to say re-act class based component and if
+
+34
+00:02:12,510 --> 00:02:16,030
+I press enter it will give me all the lay out for this.
+
+35
+00:02:16,140 --> 00:02:17,390
+So this is a plug in.
+
+36
+00:02:17,400 --> 00:02:22,260
+I have installed and he will recommend for you to install it.
+
+37
+00:02:22,470 --> 00:02:26,780
+It's going to be called re-acclimate search for this re-act native.
+
+38
+00:02:26,800 --> 00:02:28,170
+No not this one.
+
+39
+00:02:28,280 --> 00:02:29,730
+Let me find it.
+
+40
+00:02:29,730 --> 00:02:35,460
+Because they have a lot of you know installed plug ins so all me find it.
+
+41
+00:02:35,580 --> 00:02:43,390
+You have the material team which is which is the one I'm using right here with all the icons on me see
+
+42
+00:02:43,420 --> 00:02:46,750
+reac native No react to you as coach snippet.
+
+43
+00:02:46,750 --> 00:02:53,380
+So this is the one so whenever we type something R-S.C. we get a class based component and same thing
+
+44
+00:02:53,380 --> 00:02:54,830
+with statelets component.
+
+45
+00:02:55,000 --> 00:02:58,360
+So if you're not using this you know this there's when it's really really great.
+
+46
+00:02:58,390 --> 00:02:59,820
+That's the first thing.
+
+47
+00:02:59,830 --> 00:03:00,300
+OK.
+
+48
+00:03:00,460 --> 00:03:05,450
+So first we create a class based component and this one is going to be called header.
+
+49
+00:03:05,500 --> 00:03:07,030
+And let me change this header.
+
+50
+00:03:08,670 --> 00:03:13,330
+Come and I'm going to change the name of the file with a capital H.
+
+51
+00:03:13,500 --> 00:03:14,020
+OK.
+
+52
+00:03:15,030 --> 00:03:16,820
+So OK so we have the header.
+
+53
+00:03:16,860 --> 00:03:18,480
+We have a class based component.
+
+54
+00:03:18,570 --> 00:03:21,000
+And for now I'm going to just return Hetter.
+
+55
+00:03:21,120 --> 00:03:26,090
+So we need to import Hetter from from the app dodginess.
+
+56
+00:03:26,090 --> 00:03:31,480
+So I going to go right here and say import Hetter then it's going to be from.
+
+57
+00:03:31,580 --> 00:03:38,110
+And that for Slash components for Slash header and footer and it's going to be header.
+
+58
+00:03:38,300 --> 00:03:39,100
+OK.
+
+59
+00:03:39,480 --> 00:03:42,860
+I'm going to make a reference and that's it.
+
+60
+00:03:42,900 --> 00:03:48,000
+If the page is going to reload and we get Hetter which is the text we have right here really really
+
+61
+00:03:48,000 --> 00:03:48,800
+simple.
+
+62
+00:03:49,140 --> 00:03:54,910
+So to start we need to bring things from material UI.
+
+63
+00:03:55,090 --> 00:04:02,100
+So I'm going to go right here and say import and then app bar just like this app bar end with a capital
+
+64
+00:04:02,130 --> 00:04:11,460
+B and then from and then it's going to be at and then material you eye core and then for Slash and then
+
+65
+00:04:11,580 --> 00:04:17,310
+app bar we need to bring a few things we are going to go right now to mature UI and show you what this
+
+66
+00:04:17,310 --> 00:04:18,220
+is all about.
+
+67
+00:04:18,470 --> 00:04:27,620
+That import and then toolbar just like this toolbar and toolbar There we go from.
+
+68
+00:04:27,830 --> 00:04:29,540
+And same thing add material.
+
+69
+00:04:29,590 --> 00:04:35,800
+Core and same tack toolbar when we copy and paste.
+
+70
+00:04:35,830 --> 00:04:36,460
+All right.
+
+71
+00:04:36,640 --> 00:04:39,350
+So then we have to import menu icon.
+
+72
+00:04:39,470 --> 00:04:44,390
+So import menu icon.
+
+73
+00:04:44,590 --> 00:04:48,910
+There we go from at mature UI core for Slash.
+
+74
+00:04:49,060 --> 00:04:52,090
+And this one instead of menu icons is going to be menu.
+
+75
+00:04:52,090 --> 00:04:54,140
+So it's like a dependency.
+
+76
+00:04:54,250 --> 00:05:04,790
+And the last one is going to be I combine an import icon button from opening close at Mattioli or ice
+
+77
+00:05:04,810 --> 00:05:09,600
+core for Slash and same name.
+
+78
+00:05:09,620 --> 00:05:12,480
+All right so this is what we're going to be using at first.
+
+79
+00:05:12,520 --> 00:05:17,300
+Solutio you first something about virtual UI OK.
+
+80
+00:05:17,320 --> 00:05:25,550
+So if I go to the if I go to Google and Google material you I can get this really the world most popular
+
+81
+00:05:25,770 --> 00:05:27,670
+re-act UI framework.
+
+82
+00:05:27,730 --> 00:05:33,400
+So we get to go and enter there and mature you I would it this is pretty much like I don't know Jake
+
+83
+00:05:33,460 --> 00:05:38,950
+Querrey but for react so we're going to get a lot of components right from the you know from the start
+
+84
+00:05:39,110 --> 00:05:41,450
+and we can use them in our applications.
+
+85
+00:05:41,500 --> 00:05:46,870
+So I'm sure you're right here if we go to the the options you can have you can get the components demos
+
+86
+00:05:47,170 --> 00:05:52,180
+go to component demo and go to a bar which is the one we're importing right here at the top.
+
+87
+00:05:52,180 --> 00:05:54,790
+I'm going to go to a bar and this is what you get.
+
+88
+00:05:54,790 --> 00:06:00,180
+You get some examples of what you can do with this bar and this is what actually are going to be doing
+
+89
+00:06:00,190 --> 00:06:01,960
+if we go to the final project.
+
+90
+00:06:02,080 --> 00:06:03,050
+We have an icon.
+
+91
+00:06:03,190 --> 00:06:07,940
+We have a button and then you know we have the app bar so we can use it as a header.
+
+92
+00:06:08,110 --> 00:06:13,290
+So if I open the show resource showed a show source of this right.
+
+93
+00:06:13,450 --> 00:06:17,740
+We're importing the same things on bar then the toolbar button.
+
+94
+00:06:17,740 --> 00:06:23,190
+So I'm sorry I can button so we can click on this on this button.
+
+95
+00:06:23,470 --> 00:06:29,450
+And of course menu icon so we need to install this as you know bring it on the on the on our component
+
+96
+00:06:29,450 --> 00:06:31,300
+so we can use it.
+
+97
+00:06:31,330 --> 00:06:35,680
+So again Marjorie until you die it's really really cool.
+
+98
+00:06:35,680 --> 00:06:39,040
+And we can be using it a lot for a lot of things.
+
+99
+00:06:39,040 --> 00:06:39,410
+All right.
+
+100
+00:06:39,460 --> 00:06:42,940
+So can it cause us and we're going to go back to our application.
+
+101
+00:06:43,180 --> 00:06:44,910
+So right now we're not doing anything.
+
+102
+00:06:44,920 --> 00:06:48,560
+First we need to create an app bar so I'm going to delete this.
+
+103
+00:06:48,650 --> 00:06:49,470
+I'm going to do.
+
+104
+00:06:49,470 --> 00:06:54,460
+Up up and then bar open it close.
+
+105
+00:06:54,460 --> 00:06:59,970
+Now this bar meets some specifications and this is actually comes from Riyadh UI.
+
+106
+00:07:00,060 --> 00:07:07,390
+I'm sorry from material UI and the bar which is the header we can set it you know in the relative position
+
+107
+00:07:07,540 --> 00:07:09,630
+where we can use it as a position fixed.
+
+108
+00:07:09,640 --> 00:07:15,630
+So if I say position equal to fixed and then let me put something right here.
+
+109
+00:07:15,640 --> 00:07:20,050
+Header is going to start as a position fixed right.
+
+110
+00:07:20,080 --> 00:07:21,610
+Right from start to get the background.
+
+111
+00:07:21,700 --> 00:07:27,640
+And of course right now I cannot test it because the height of the web page it's not long enough so.
+
+112
+00:07:27,690 --> 00:07:30,950
+But you know don't worry we can begin to simulate this later.
+
+113
+00:07:31,000 --> 00:07:31,750
+So what else.
+
+114
+00:07:31,870 --> 00:07:36,010
+I want to change the background color because that's when it's really really ugly.
+
+115
+00:07:36,010 --> 00:07:40,980
+And if you remember we have kind of a transparent or black kind of color.
+
+116
+00:07:41,200 --> 00:07:43,320
+So for now how can we change the styles.
+
+117
+00:07:43,330 --> 00:07:44,490
+I'm going to go right here.
+
+118
+00:07:44,560 --> 00:07:48,760
+Say style opening close and we can get past the styles right here.
+
+119
+00:07:48,760 --> 00:07:54,070
+First we need a background color so background and then color just like this.
+
+120
+00:07:54,190 --> 00:07:56,880
+And I'm going to use that grayish color.
+
+121
+00:07:56,920 --> 00:08:04,940
+So it's to f f f then coma I'm going to change the box shadow.
+
+122
+00:08:05,620 --> 00:08:12,380
+And then going to change it to none because I don't like the box shadows shadows then panning and 10
+
+123
+00:08:12,410 --> 00:08:17,660
+pixels some pixels from the top and nothing from the side.
+
+124
+00:08:17,920 --> 00:08:18,430
+OK.
+
+125
+00:08:18,880 --> 00:08:23,570
+So of course we just can't see the color and the padding.
+
+126
+00:08:23,590 --> 00:08:24,590
+But that is OK.
+
+127
+00:08:24,910 --> 00:08:29,830
+Now inside of this so we can put things inside we need to use this toolbar.
+
+128
+00:08:29,830 --> 00:08:34,560
+So inside of the toolbar we can put buttons icons and other things.
+
+129
+00:08:34,660 --> 00:08:37,140
+So we need to make a reference to toolbar.
+
+130
+00:08:37,300 --> 00:08:40,660
+So again toolbar open and close.
+
+131
+00:08:40,660 --> 00:08:47,200
+Now inside of toolbar we will get to thinks the header I'm sorry the logo and then of course later we
+
+132
+00:08:47,200 --> 00:08:48,360
+can add the button.
+
+133
+00:08:48,550 --> 00:08:51,480
+So the first thing is going to be adding the logo.
+
+134
+00:08:51,760 --> 00:08:55,880
+And remember that I gave you the CSSA and we are not going to do CSSA.
+
+135
+00:08:56,020 --> 00:09:01,270
+So I'm just going to write a component in this case is going to be just a div and I'm going to be adding
+
+136
+00:09:01,270 --> 00:09:05,930
+just a class name and make sure you're typing the same name the class name is me.
+
+137
+00:09:06,070 --> 00:09:12,050
+Because if you're not type in the same class as me of course the application will not find that class
+
+138
+00:09:12,340 --> 00:09:15,090
+on the resources and styles around.
+
+139
+00:09:15,250 --> 00:09:17,640
+So in this case you can do whatever you want.
+
+140
+00:09:17,690 --> 00:09:22,030
+If you make you change it right here you want it to go and change it on the styles.
+
+141
+00:09:22,040 --> 00:09:23,320
+That's the essence.
+
+142
+00:09:23,350 --> 00:09:23,660
+All right.
+
+143
+00:09:23,710 --> 00:09:24,760
+So head on Logo.
+
+144
+00:09:24,760 --> 00:09:25,780
+That's it.
+
+145
+00:09:25,810 --> 00:09:30,990
+Now I'm going to go right here and say Dave and I are going to be adding the venue.
+
+146
+00:09:31,000 --> 00:09:32,530
+We have two lines right here.
+
+147
+00:09:32,530 --> 00:09:38,680
+The venue with a different kind of font and then musical events with a different you know type of font
+
+148
+00:09:38,680 --> 00:09:40,570
+or you know different size and everything else.
+
+149
+00:09:40,590 --> 00:09:45,200
+So going to create two dips first one with a class name.
+
+150
+00:09:45,280 --> 00:09:49,420
+Going to leave it empty and then are going to create in pretty much the same thing.
+
+151
+00:09:49,430 --> 00:09:53,830
+So I'm going to copy this one and paste it at the bottom.
+
+152
+00:09:54,250 --> 00:10:00,720
+So the class name we're going to use something that calls font and righteous something like this.
+
+153
+00:10:00,730 --> 00:10:03,940
+And this is a font that we need to install from.
+
+154
+00:10:04,060 --> 00:10:07,630
+From Google fonts so it's all right.
+
+155
+00:10:07,930 --> 00:10:16,950
+And then just like this and then hetter logo Benue and then the text for this one is going to be the
+
+156
+00:10:16,950 --> 00:10:17,690
+venue.
+
+157
+00:10:17,820 --> 00:10:18,450
+All right.
+
+158
+00:10:18,540 --> 00:10:21,810
+And with a capital B There you go.
+
+159
+00:10:21,810 --> 00:10:30,810
+Now the other one is going to be Hetter logo and then title and musical events when they make it on
+
+160
+00:10:30,810 --> 00:10:32,200
+the right spot.
+
+161
+00:10:32,300 --> 00:10:34,030
+The call.
+
+162
+00:10:34,050 --> 00:10:34,710
+There we go.
+
+163
+00:10:34,710 --> 00:10:35,620
+Sorry for that.
+
+164
+00:10:35,850 --> 00:10:39,770
+Musical events.
+
+165
+00:10:40,430 --> 00:10:40,960
+OK.
+
+166
+00:10:41,460 --> 00:10:48,180
+So if I of course really love this we kind of get something but the font it's you know something else.
+
+167
+00:10:48,180 --> 00:10:54,100
+And this is because we don't have the font on our project so I'm going to go open a new tab.
+
+168
+00:10:54,180 --> 00:11:01,680
+I'm going to say Google fonts and inside Google fonts We will search the font that we eat in this case
+
+169
+00:11:02,040 --> 00:11:08,710
+it's going to be righteous and I'm going to click the plus button and we're going to use another one.
+
+170
+00:11:08,730 --> 00:11:10,220
+It's called robo dough.
+
+171
+00:11:10,310 --> 00:11:18,140
+You know very very popular so on the font family are going to go to customize light for Roboto and then
+
+172
+00:11:18,140 --> 00:11:23,780
+medium and the other one is the only one we get which is regular and then are just going to copy this
+
+173
+00:11:24,920 --> 00:11:30,580
+go to the public directory index and paste it just like a regular font.
+
+174
+00:11:30,690 --> 00:11:36,370
+And of course the app will reload and we get you know the venue and musical events.
+
+175
+00:11:36,620 --> 00:11:41,460
+So the next step would be adding the combine and said let's go to the next section and add the button.
+

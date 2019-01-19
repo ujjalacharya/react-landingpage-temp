@@ -1,0 +1,928 @@
+1
+00:00:00,770 --> 00:00:02,650
+OK so now we get to create the edit match.
+
+2
+00:00:02,650 --> 00:00:09,340
+This is the final one so we will grab the ID from the route from the right here the L and we going to
+
+3
+00:00:09,460 --> 00:00:12,360
+bring this from the server and populate everything.
+
+4
+00:00:12,560 --> 00:00:15,300
+Now we're going to spend some time because we have a lot of inputs.
+
+5
+00:00:15,300 --> 00:00:21,250
+You have a lot of fields and of course we need to do a lot of checking and you know it's going to take
+
+6
+00:00:21,250 --> 00:00:21,640
+some time.
+
+7
+00:00:21,640 --> 00:00:26,780
+So if you want to get a coffee go and get a coffee maybe some cookies too.
+
+8
+00:00:26,830 --> 00:00:33,120
+The cool thing about this is after we create the edit batch we can it create we can use the same disks
+
+9
+00:00:33,130 --> 00:00:38,390
+same exact exact components same file to add a match or to edit a match.
+
+10
+00:00:38,470 --> 00:00:39,660
+It's going to be the same file.
+
+11
+00:00:39,670 --> 00:00:43,650
+So again we are just doing two components on one.
+
+12
+00:00:43,660 --> 00:00:44,080
+All right.
+
+13
+00:00:44,170 --> 00:00:49,510
+So first thing first if I click on this we don't really have a route for this so we need to create a
+
+14
+00:00:49,510 --> 00:00:50,710
+file and then a route.
+
+15
+00:00:50,710 --> 00:00:53,770
+So I'm going to go to matches and first I'm going to create the file.
+
+16
+00:00:53,760 --> 00:00:58,760
+So I'm going to call it at edit and then match something like that.
+
+17
+00:00:58,780 --> 00:01:00,620
+You can use whatever you want.
+
+18
+00:01:00,940 --> 00:01:04,650
+And of course it's going to be re-act class based component.
+
+19
+00:01:04,930 --> 00:01:06,080
+Oops sorry.
+
+20
+00:01:06,100 --> 00:01:07,330
+There we go.
+
+21
+00:01:07,690 --> 00:01:14,050
+And I'm going to change the capital a to a very good so at it.
+
+22
+00:01:14,090 --> 00:01:15,620
+Matt For now doesn't matter.
+
+23
+00:01:15,750 --> 00:01:16,270
+OK.
+
+24
+00:01:16,670 --> 00:01:21,260
+So I'm going to go two routes and of course we need to put around for this.
+
+25
+00:01:21,370 --> 00:01:28,130
+So import and edit match.
+
+26
+00:01:28,420 --> 00:01:28,850
+And it's.
+
+27
+00:01:28,900 --> 00:01:35,570
+It's going to be from opening closed that for Slash components for Slash.
+
+28
+00:01:35,690 --> 00:01:41,570
+We get the atman for large matches for Slash and add and match.
+
+29
+00:01:42,080 --> 00:01:49,660
+And the route pretty much what we did right here just going to copy admen matches and of course we need
+
+30
+00:01:49,660 --> 00:01:51,310
+to add more things.
+
+31
+00:01:51,490 --> 00:01:53,250
+So we have two different routes.
+
+32
+00:01:53,260 --> 00:01:59,800
+In theory we have the added patch and then we have the edit match by id the edit match is just going
+
+33
+00:01:59,800 --> 00:02:02,000
+to be the at match and you match.
+
+34
+00:02:02,260 --> 00:02:05,050
+So we are still entering edit match of matches.
+
+35
+00:02:05,230 --> 00:02:09,740
+But this time it's going to be forced let me do it right here for Slash.
+
+36
+00:02:09,940 --> 00:02:13,010
+Then we access edit then match.
+
+37
+00:02:13,030 --> 00:02:16,890
+And if you check the your L after edit match we get the ID.
+
+38
+00:02:16,900 --> 00:02:24,610
+So to pass dynamic IDs to to the to the re-act router we do for Slash and we need to use the colon and
+
+39
+00:02:24,610 --> 00:02:27,250
+then keyboard which is going to be the ID.
+
+40
+00:02:27,430 --> 00:02:27,780
+Right.
+
+41
+00:02:27,790 --> 00:02:33,340
+This is the way we catch you know dynamic values on the you are allied with reac router and of course
+
+42
+00:02:33,340 --> 00:02:36,190
+we need to pass the correct component added match.
+
+43
+00:02:36,350 --> 00:02:39,950
+So at the closes at match.
+
+44
+00:02:39,970 --> 00:02:40,660
+All right.
+
+45
+00:02:40,660 --> 00:02:45,930
+So in theory if I go right here you can enter this round and of course we get nothing because right
+
+46
+00:02:45,940 --> 00:02:46,840
+here we have nothing.
+
+47
+00:02:46,870 --> 00:02:49,480
+So we are loading the correct route.
+
+48
+00:02:49,810 --> 00:02:50,370
+OK.
+
+49
+00:02:50,470 --> 00:03:00,250
+So on a match we need to bring some things first we need to import the admin then lay out just like
+
+50
+00:03:00,250 --> 00:03:00,590
+this.
+
+51
+00:03:00,620 --> 00:03:05,920
+Been been layout from DOD for the DOD for Slash one more and one more.
+
+52
+00:03:06,010 --> 00:03:09,280
+And HBO sees an admin layout.
+
+53
+00:03:09,360 --> 00:03:16,970
+Of course we need to wrap pretty much everything on admin layout and if it were load we get the bar
+
+54
+00:03:17,070 --> 00:03:18,090
+and at match.
+
+55
+00:03:18,140 --> 00:03:19,700
+Very good really easy.
+
+56
+00:03:19,700 --> 00:03:21,980
+Now of course we going to be working with forms.
+
+57
+00:03:21,980 --> 00:03:30,320
+So it's import and we will will bring for form just like this and then field I believe I call it fields
+
+58
+00:03:30,380 --> 00:03:31,510
+or fields.
+
+59
+00:03:31,520 --> 00:03:32,420
+I'm not really sure.
+
+60
+00:03:32,420 --> 00:03:38,680
+Let me just double check form fields and we bring form field Singler form field.
+
+61
+00:03:39,560 --> 00:03:42,500
+From that that force lasht that out for Slash.
+
+62
+00:03:42,500 --> 00:03:46,750
+And I believe it was you I for Slash and then form fields.
+
+63
+00:03:47,000 --> 00:03:47,450
+What else.
+
+64
+00:03:47,450 --> 00:03:49,110
+Remember we use to validate.
+
+65
+00:03:49,430 --> 00:04:00,410
+So we bring Baali date from DOT for Slashdot dot for Slash you I for Slash misc.
+
+66
+00:04:00,680 --> 00:04:04,820
+And then of course we need to bring firebase but begin to do that much much later.
+
+67
+00:04:04,850 --> 00:04:06,430
+So far so good.
+
+68
+00:04:06,520 --> 00:04:07,180
+Okay.
+
+69
+00:04:07,880 --> 00:04:14,890
+So now of course we need to handle the form through state and we can get a lot of things.
+
+70
+00:04:15,050 --> 00:04:17,500
+And I can explain you as we go.
+
+71
+00:04:17,830 --> 00:04:23,050
+So first whenever the application loads we need to check if we do have an ID it right.
+
+72
+00:04:23,060 --> 00:04:30,100
+If this is an edit or match so we could get a match ID so I'm going to create a state of match ID.
+
+73
+00:04:30,110 --> 00:04:35,180
+Of course this is going to start empty then we're going to get this much much later.
+
+74
+00:04:35,210 --> 00:04:37,950
+Now this form could be add or edit.
+
+75
+00:04:38,000 --> 00:04:40,430
+So we need to know what form type.
+
+76
+00:04:40,640 --> 00:04:45,710
+So after we know the form type we can store it inside the state just like this.
+
+77
+00:04:45,830 --> 00:04:49,110
+And of course then we get the form error.
+
+78
+00:04:49,130 --> 00:04:55,910
+Just like before which is going to be false and then we're going to get a form success just like before.
+
+79
+00:04:55,910 --> 00:04:58,630
+Same thing we did before which is going to be empty.
+
+80
+00:04:58,790 --> 00:05:01,670
+And I got to add one more teams.
+
+81
+00:05:01,670 --> 00:05:03,850
+Why am I am adding adding teams.
+
+82
+00:05:03,960 --> 00:05:04,530
+OK.
+
+83
+00:05:04,880 --> 00:05:11,510
+If I go to the final one on the EDID match whenever we have to select a local in a way we have a list
+
+84
+00:05:11,540 --> 00:05:14,080
+of all the teams in the league.
+
+85
+00:05:14,150 --> 00:05:14,770
+Right.
+
+86
+00:05:14,960 --> 00:05:16,740
+So we didn't have that.
+
+87
+00:05:16,820 --> 00:05:20,330
+We didn't have that and we're not going to manually at this.
+
+88
+00:05:20,330 --> 00:05:25,490
+So what we're going to be doing we're going to be fetching this from the server because we have it right
+
+89
+00:05:25,490 --> 00:05:26,460
+here.
+
+90
+00:05:26,630 --> 00:05:32,030
+So teams and begin to fetch all the teams with thumbnail the short name and everything else.
+
+91
+00:05:32,030 --> 00:05:37,280
+So of course beginning whenever we fetched a list of teams we're going to store them right here because
+
+92
+00:05:37,310 --> 00:05:38,590
+we are going to need them.
+
+93
+00:05:38,880 --> 00:05:39,480
+OK.
+
+94
+00:05:39,650 --> 00:05:40,120
+They're going to do.
+
+95
+00:05:40,130 --> 00:05:41,310
+Oh sorry.
+
+96
+00:05:41,330 --> 00:05:42,320
+I'm going to do coma.
+
+97
+00:05:42,350 --> 00:05:48,630
+And the next thing is to form data just like this and no capital formed data.
+
+98
+00:05:48,850 --> 00:05:53,250
+This is going to be an object with many many objects inside.
+
+99
+00:05:53,440 --> 00:05:53,970
+All right.
+
+100
+00:05:54,090 --> 00:05:54,590
+That's good.
+
+101
+00:05:54,680 --> 00:05:55,870
+I'm going to say.
+
+102
+00:05:56,180 --> 00:06:01,550
+So the first thing we need is the event date and we're going to do it step by step no input by input
+
+103
+00:06:01,580 --> 00:06:06,990
+because they are kind of different so the first one is the date.
+
+104
+00:06:07,060 --> 00:06:09,650
+So first we say don't open and close.
+
+105
+00:06:09,660 --> 00:06:17,460
+We pass an object if you remember we use the element just like this element open and close and other
+
+106
+00:06:17,460 --> 00:06:23,480
+other think about it while typing all of this over again are going to go to a place maybe the sign in
+
+107
+00:06:23,500 --> 00:06:27,820
+where we have this logic inside the state that's called sign index.
+
+108
+00:06:27,950 --> 00:06:30,310
+I'm going to copy this one.
+
+109
+00:06:30,610 --> 00:06:34,210
+Now there's no need to type everything we just need to change some things.
+
+110
+00:06:34,240 --> 00:06:36,240
+So this is going to be date.
+
+111
+00:06:36,400 --> 00:06:42,660
+The element is an input the value is empty and the config of course is going to be different.
+
+112
+00:06:42,670 --> 00:06:46,420
+The name is going to be date input.
+
+113
+00:06:46,510 --> 00:06:53,410
+That type is not an email is going to be a type of date and I'm not going to use a placeholder right
+
+114
+00:06:53,410 --> 00:06:53,920
+here.
+
+115
+00:06:53,920 --> 00:06:55,890
+It's not going to use it.
+
+116
+00:06:56,410 --> 00:06:56,930
+OK.
+
+117
+00:06:57,010 --> 00:06:58,680
+Now there's one more thing.
+
+118
+00:06:59,050 --> 00:07:03,900
+If we check the final one we can see that we have event date right here.
+
+119
+00:07:03,910 --> 00:07:04,510
+Right.
+
+120
+00:07:04,750 --> 00:07:12,370
+And I don't want to add that tag this event 8 whenever I declare the form field right now because we
+
+121
+00:07:12,370 --> 00:07:13,910
+need to do everything manually.
+
+122
+00:07:14,020 --> 00:07:21,940
+What I can do I can add a label property just like this and say that the label for this one event date
+
+123
+00:07:22,210 --> 00:07:29,290
+just like that this is a title Elater I could add to this a property called Show level.
+
+124
+00:07:29,350 --> 00:07:34,840
+So then we can evaluate if this show labels true or false so if this is true we're going to create a
+
+125
+00:07:34,840 --> 00:07:37,530
+label and add it to the form fill with it.
+
+126
+00:07:37,530 --> 00:07:42,020
+With this we don't have this behavior right now that's at.
+
+127
+00:07:42,070 --> 00:07:42,660
+Why not.
+
+128
+00:07:42,670 --> 00:07:44,700
+So we can actually see it.
+
+129
+00:07:44,710 --> 00:07:52,540
+So inside form fields of course right here we could check we could ask if we do have a form a show label
+
+130
+00:07:52,540 --> 00:07:53,130
+of two.
+
+131
+00:07:53,240 --> 00:08:03,400
+So are going to go and say OK do I have a form or form data form data that show level just like this.
+
+132
+00:08:03,440 --> 00:08:04,380
+And let me double check.
+
+133
+00:08:04,420 --> 00:08:08,310
+I will leave show label capital L..
+
+134
+00:08:08,830 --> 00:08:13,470
+I'm going to change his show label a show label of true.
+
+135
+00:08:13,510 --> 00:08:13,860
+Yeah.
+
+136
+00:08:13,870 --> 00:08:14,170
+OK.
+
+137
+00:08:14,170 --> 00:08:16,820
+So if we do please show a label.
+
+138
+00:08:16,900 --> 00:08:17,930
+If not.
+
+139
+00:08:18,370 --> 00:08:18,890
+No.
+
+140
+00:08:19,060 --> 00:08:19,770
+All right.
+
+141
+00:08:20,050 --> 00:08:28,840
+So what I'm going to do I'm going to just put a div with a class name off label input that exists label
+
+142
+00:08:28,960 --> 00:08:32,950
+input and he sort of hear whatever I have.
+
+143
+00:08:32,950 --> 00:08:36,430
+I get inside a conflict that level.
+
+144
+00:08:36,430 --> 00:08:45,300
+So I'm going to say open in close form data dot config dot levell.
+
+145
+00:08:45,570 --> 00:08:49,040
+All right of course we need to add this form field.
+
+146
+00:08:49,120 --> 00:08:57,110
+So I'm going to go back again to look in design and Im going to copy that impaired form field.
+
+147
+00:08:57,740 --> 00:08:59,780
+And we don't need any anymore for now.
+
+148
+00:09:00,140 --> 00:09:05,610
+So I'm going to go to an edit match and of course we need to do something a little bit better with this.
+
+149
+00:09:05,720 --> 00:09:10,420
+We need to add the title and everything else so for now we're just going to put it right here.
+
+150
+00:09:10,430 --> 00:09:13,110
+And then of course we can modify it.
+
+151
+00:09:13,460 --> 00:09:17,390
+So it's going to be date and this one date.
+
+152
+00:09:17,390 --> 00:09:18,310
+All right.
+
+153
+00:09:18,680 --> 00:09:28,850
+So if we check our code we get cannot read probably elements of undefined for data that elements AK
+
+154
+00:09:30,240 --> 00:09:33,770
+I may have made a mistake on this one.
+
+155
+00:09:33,790 --> 00:09:34,850
+All right sort of for that.
+
+156
+00:09:34,880 --> 00:09:36,240
+Actually everything was OK.
+
+157
+00:09:36,390 --> 00:09:37,420
+It was kind of weird.
+
+158
+00:09:37,640 --> 00:09:40,490
+I just removed that copy and paste it again.
+
+159
+00:09:40,500 --> 00:09:41,450
+It was working.
+
+160
+00:09:41,450 --> 00:09:47,900
+Sometimes the editor they add some strange characters and sometimes it doesn't works it doesn't work.
+
+161
+00:09:47,900 --> 00:09:52,030
+So you know that's kind of shitty behavior but it happens.
+
+162
+00:09:52,160 --> 00:09:54,060
+So it was OK.
+
+163
+00:09:54,080 --> 00:09:58,600
+So instead of Leavell input right here it's legal in it's script for that.
+
+164
+00:09:58,650 --> 00:10:01,390
+I'm going to reload the application and we get to the end date.
+
+165
+00:10:01,460 --> 00:10:04,300
+And of course we can enter a date.
+
+166
+00:10:04,340 --> 00:10:09,530
+And of course if we select the dropdown and this is the default behavior of the browser we can select
+
+167
+00:10:09,530 --> 00:10:11,120
+the date Burguet.
+
+168
+00:10:11,420 --> 00:10:19,160
+Of course right here this form field needs to be inside inside of a form and everything else so we're
+
+169
+00:10:19,160 --> 00:10:20,560
+going to do that right now.
+
+170
+00:10:20,600 --> 00:10:23,170
+For now just going to copy and remove it.
+
+171
+00:10:23,210 --> 00:10:24,670
+Going to add in a minute.
+
+172
+00:10:24,950 --> 00:10:30,230
+So we're going to add a dev off class name opening close.
+
+173
+00:10:30,310 --> 00:10:31,450
+And I look at this.
+
+174
+00:10:31,450 --> 00:10:42,050
+This class is at it just like this match underscore dialog dialog and then wrapper right.
+
+175
+00:10:42,230 --> 00:10:48,180
+We have an H2 tag which is pretty much the title and this one is going to be that this state that form
+
+176
+00:10:48,180 --> 00:10:49,130
+type.
+
+177
+00:10:49,130 --> 00:10:49,730
+Right.
+
+178
+00:10:49,790 --> 00:10:54,180
+Because if we go to EDID match this one the title should be added.
+
+179
+00:10:54,380 --> 00:10:56,320
+But if we go to add should be at.
+
+180
+00:10:56,630 --> 00:10:58,970
+So right now I'm going to put it right here.
+
+181
+00:10:58,970 --> 00:11:03,140
+It's going to be this that state that form type.
+
+182
+00:11:03,140 --> 00:11:06,770
+We didn't have that form type but we will get it in a few minutes.
+
+183
+00:11:06,770 --> 00:11:08,120
+Don't worry.
+
+184
+00:11:08,120 --> 00:11:13,350
+So of course out of here we need to add a div with the form inside.
+
+185
+00:11:13,400 --> 00:11:18,160
+So we're going to go and say form open and close Burguet.
+
+186
+00:11:18,200 --> 00:11:23,500
+Now the form just like before we have an on board note on men.
+
+187
+00:11:24,110 --> 00:11:29,200
+So the answer met and we did this many times before we have an event.
+
+188
+00:11:29,460 --> 00:11:30,760
+Events right.
+
+189
+00:11:30,810 --> 00:11:31,100
+Right.
+
+190
+00:11:31,110 --> 00:11:32,400
+Correctly event.
+
+191
+00:11:32,510 --> 00:11:39,890
+And then of course we run a function which is called this dot I've met form you can call this whatever
+
+192
+00:11:39,890 --> 00:11:41,450
+you want.
+
+193
+00:11:41,450 --> 00:11:44,020
+And of course we pass the event right.
+
+194
+00:11:47,290 --> 00:11:48,110
+There we go.
+
+195
+00:11:48,520 --> 00:11:52,820
+So now we can add our date wrapper.
+
+196
+00:11:53,120 --> 00:11:56,230
+Now a date field so date.
+
+197
+00:11:56,350 --> 00:11:57,130
+Very good.
+
+198
+00:11:57,220 --> 00:11:58,800
+Going to reload it and.
+
+199
+00:11:58,810 --> 00:11:59,030
+OK.
+
+200
+00:11:59,050 --> 00:12:02,640
+We get the data and it's pretty much similar Burguet.
+
+201
+00:12:02,800 --> 00:12:10,330
+So what else then instead of a date we need a local with all the teams and we're going to populate the
+
+202
+00:12:10,330 --> 00:12:14,200
+teams at the end after we have it pretty much the whole form.
+
+203
+00:12:14,200 --> 00:12:18,010
+So OK so now let's do it let's do the teams right.
+
+204
+00:12:18,210 --> 00:12:18,550
+OK.
+
+205
+00:12:18,610 --> 00:12:26,180
+So I'm going to go at the top just here date and I'm going to bed all the teams are going to copy date.
+
+206
+00:12:26,180 --> 00:12:28,830
+I guess I don't want to write all over again.
+
+207
+00:12:28,840 --> 00:12:31,480
+Can I copy and pasted at the bottom.
+
+208
+00:12:31,480 --> 00:12:32,290
+All right.
+
+209
+00:12:32,290 --> 00:12:36,880
+So this one instead of teams which just not teams is the local team.
+
+210
+00:12:36,910 --> 00:12:42,940
+Now the local and then the result we need to add local the first input is going to be local so local
+
+211
+00:12:43,510 --> 00:12:46,680
+instead of a on an input is going to be a select.
+
+212
+00:12:46,780 --> 00:12:47,920
+We didn't have a select.
+
+213
+00:12:47,920 --> 00:12:49,330
+We're going to create it right now.
+
+214
+00:12:49,660 --> 00:12:58,270
+So the config on the label could be on a no select just like select a local team.
+
+215
+00:12:58,330 --> 00:13:00,490
+Anyways it doesn't it doesn't matter.
+
+216
+00:13:00,490 --> 00:13:04,470
+Not going to use a local team the name.
+
+217
+00:13:04,540 --> 00:13:08,200
+Select local or something like that.
+
+218
+00:13:08,200 --> 00:13:16,420
+I don't know local the type is going to be a select and much much later we will load the list of teams
+
+219
+00:13:16,420 --> 00:13:17,130
+right here.
+
+220
+00:13:17,260 --> 00:13:23,710
+So I'm going to be adding on options and of course now when we create in select dynamic input we will
+
+221
+00:13:23,710 --> 00:13:25,330
+feed the options.
+
+222
+00:13:25,570 --> 00:13:31,450
+All right then the validation is now going to be e-mail true is going to be required and forgot to remove
+
+223
+00:13:31,450 --> 00:13:32,620
+it from here.
+
+224
+00:13:33,220 --> 00:13:38,380
+And we have you know just required is going to be bad and falls by the nation and everything else chose
+
+225
+00:13:38,380 --> 00:13:39,020
+the same.
+
+226
+00:13:39,070 --> 00:13:41,920
+But the show labeled this time is going to be false.
+
+227
+00:13:41,920 --> 00:13:43,030
+All right.
+
+228
+00:13:43,120 --> 00:13:49,600
+Now of course if we make a reference to this and if I copy this and paste it at the bottom and put a
+
+229
+00:13:49,770 --> 00:13:59,110
+local just like this and then look hole at the bottom I reload the application and nothing really happens.
+
+230
+00:13:59,170 --> 00:14:04,720
+And it's because on the form fields on this component we didn't have a select type.
+
+231
+00:14:04,750 --> 00:14:06,410
+We need to create right now.
+
+232
+00:14:06,460 --> 00:14:09,830
+So let's go to the next section and add the select form field.
+

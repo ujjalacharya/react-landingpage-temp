@@ -1,0 +1,480 @@
+1
+00:00:04,190 --> 00:00:09,890
+OK so now we're going to be doing is adding S-sh keys to our computer.
+
+2
+00:00:10,030 --> 00:00:14,420
+So if you're asking yourself why we could we need to add a set of keys.
+
+3
+00:00:14,560 --> 00:00:19,030
+Well if you think about this you're sending files to the cloud.
+
+4
+00:00:19,030 --> 00:00:24,250
+So it's always a good idea to have kind of an indication or something in between that you know it's
+
+5
+00:00:24,250 --> 00:00:26,810
+a little bit more secure.
+
+6
+00:00:27,160 --> 00:00:27,820
+All right.
+
+7
+00:00:27,820 --> 00:00:29,440
+So this is what we're going to be doing now.
+
+8
+00:00:29,470 --> 00:00:36,430
+If you go to your profile I'm going to go to the profile and just let me show you right here instead
+
+9
+00:00:36,460 --> 00:00:39,470
+of the profile going to go to settings actually settings.
+
+10
+00:00:39,550 --> 00:00:41,070
+You get a bunch of options.
+
+11
+00:00:41,200 --> 00:00:47,530
+And if I go to S-sh keys right here to answer say and GBG you're going to get a list of a set of keys.
+
+12
+00:00:47,530 --> 00:00:52,720
+I get the Mac because I did the Mac Berio first and I've added the S-sh key right here.
+
+13
+00:00:52,720 --> 00:00:57,400
+But now of course we're going to do the windows and for this we need a bunch of stuff we need to do
+
+14
+00:00:57,400 --> 00:00:58,540
+a few stuff.
+
+15
+00:00:58,540 --> 00:01:05,100
+Now first I need you to go to the to the browser and type adding a new SH key to get have a count.
+
+16
+00:01:05,100 --> 00:01:06,080
+Actually not this one.
+
+17
+00:01:06,100 --> 00:01:08,180
+I'm going to go to the other one.
+
+18
+00:01:08,200 --> 00:01:09,650
+Let me go back.
+
+19
+00:01:09,730 --> 00:01:12,730
+Type checking for an existing S-sh key.
+
+20
+00:01:12,730 --> 00:01:18,470
+If you check that on the browser and you get to get HAVE result go to go to get help.
+
+21
+00:01:18,500 --> 00:01:19,700
+We're going to need this right.
+
+22
+00:01:19,710 --> 00:01:21,680
+This is the first STARTING POINT.
+
+23
+00:01:21,700 --> 00:01:28,570
+Now before we can move forward I'm going to tell you something after whenever you installed get by default
+
+24
+00:01:28,590 --> 00:01:35,120
+you get this option but whenever you can naggy says Windows Explorer integration get back here.
+
+25
+00:01:35,290 --> 00:01:37,420
+And we need to get Bash.
+
+26
+00:01:37,450 --> 00:01:38,470
+We need it.
+
+27
+00:01:38,590 --> 00:01:44,170
+If you unclick that when you install this you will need to click it because we will need the bash.
+
+28
+00:01:44,170 --> 00:01:45,870
+We cannot do it without the bash.
+
+29
+00:01:46,150 --> 00:01:54,520
+So this bash story is kind of a simulation of a terminal that actually works for Linux because it would
+
+30
+00:01:54,520 --> 00:01:59,940
+be really complicated for us to do it with the normal command prompt to close it.
+
+31
+00:02:00,100 --> 00:02:01,740
+And I'm going to say exit set up.
+
+32
+00:02:01,750 --> 00:02:04,080
+Yes and I have the right to it right here.
+
+33
+00:02:04,150 --> 00:02:06,220
+I get the the command prompt.
+
+34
+00:02:06,370 --> 00:02:09,410
+Let me see if I can make it bigger maybe a little bit.
+
+35
+00:02:11,230 --> 00:02:12,070
+There you go.
+
+36
+00:02:12,480 --> 00:02:12,970
+OK.
+
+37
+00:02:13,060 --> 00:02:14,950
+So we're going to be using this in a minute.
+
+38
+00:02:14,950 --> 00:02:16,870
+So there we go.
+
+39
+00:02:16,870 --> 00:02:18,090
+Sorry for this.
+
+40
+00:02:18,100 --> 00:02:18,810
+All right.
+
+41
+00:02:19,090 --> 00:02:24,240
+So if we go to the checking for existing SH keys right here we need to start.
+
+42
+00:02:24,430 --> 00:02:25,550
+So I'm going to copy this.
+
+43
+00:02:25,570 --> 00:02:30,000
+And again you cannot do copy paste because again is a simulation of a terminal.
+
+44
+00:02:30,100 --> 00:02:34,120
+So I got a copy going to go back here and they're going to paste it.
+
+45
+00:02:34,120 --> 00:02:39,790
+So by doing this you can go to the default place where we store S.H. keys and we're going to check if
+
+46
+00:02:39,790 --> 00:02:41,540
+we do have a case.
+
+47
+00:02:41,560 --> 00:02:46,260
+So I'm going to press enter and you going to get something like this.
+
+48
+00:02:46,360 --> 00:02:52,530
+If you get something saying have an ID RSA or something like that is because you already have keys.
+
+49
+00:02:52,570 --> 00:02:58,400
+So if that is the case you want need to go to this one and your sh key to the SH agent.
+
+50
+00:02:58,480 --> 00:03:01,930
+If not you just move forward to generate a new S-sh key.
+
+51
+00:03:02,080 --> 00:03:03,920
+And this is what we are going to be doing.
+
+52
+00:03:03,960 --> 00:03:04,560
+OK.
+
+53
+00:03:05,020 --> 00:03:06,490
+So this is the first step.
+
+54
+00:03:06,610 --> 00:03:08,920
+I'm going to copy this just like we did before.
+
+55
+00:03:08,930 --> 00:03:16,770
+Can it command copy are going to go here and I'm going to I'm going to paste it with paste so we are
+
+56
+00:03:16,770 --> 00:03:22,440
+going to be you know adding creating an SH key and you need to put the password or your email and this
+
+57
+00:03:22,530 --> 00:03:24,510
+isn't going to be using of course the e-mail.
+
+58
+00:03:24,690 --> 00:03:27,270
+What I'm using for the Get Help account.
+
+59
+00:03:27,270 --> 00:03:32,330
+So it's just like this.
+
+60
+00:03:33,090 --> 00:03:35,960
+I was done that come.
+
+61
+00:03:35,980 --> 00:03:36,450
+All right.
+
+62
+00:03:36,610 --> 00:03:42,520
+So I'm going to press enter and the Keys are you know kind of already done but it's going to ask you
+
+63
+00:03:43,300 --> 00:03:45,440
+Do you want to save it in the default place.
+
+64
+00:03:45,460 --> 00:03:46,870
+Or maybe a different place.
+
+65
+00:03:47,120 --> 00:03:50,740
+Well default place so I'm going to press press enter and that's it.
+
+66
+00:03:50,740 --> 00:03:53,590
+You have the ability to enter passphrase for this.
+
+67
+00:03:53,590 --> 00:03:55,090
+I'm not going to carry the passphrase.
+
+68
+00:03:55,090 --> 00:03:58,840
+I'm just going to press enter and then it's going to go to default.
+
+69
+00:03:58,870 --> 00:04:02,900
+Now if you're getting this it's because the data key was generated.
+
+70
+00:04:02,920 --> 00:04:08,970
+Now if I go to the previous command and pressing the up arrow and do ls to check if I have keys can
+
+71
+00:04:08,990 --> 00:04:09,690
+press enter.
+
+72
+00:04:09,700 --> 00:04:13,900
+And now we get it we have to get the ID say an ID pup.
+
+73
+00:04:13,930 --> 00:04:16,380
+So you know this is this part it's kind of ready.
+
+74
+00:04:16,420 --> 00:04:17,980
+We have the keys right here.
+
+75
+00:04:18,250 --> 00:04:22,630
+Now what we need to do we need to add the SH key to the estate agent.
+
+76
+00:04:22,720 --> 00:04:26,120
+So I'm going to copy this in a copy.
+
+77
+00:04:26,120 --> 00:04:30,950
+I can go back to the bash and paste it right in a press center.
+
+78
+00:04:31,210 --> 00:04:35,360
+And if you're getting this done then we need to go to the other command.
+
+79
+00:04:35,380 --> 00:04:42,220
+This one I'm going to copy paste and enter an identity at it.
+
+80
+00:04:42,220 --> 00:04:45,960
+So it's kind of I'm making a link between the key and you know your computer.
+
+81
+00:04:45,960 --> 00:04:46,430
+All right.
+
+82
+00:04:46,630 --> 00:04:52,020
+So the next step and the key to your get have account and this one is pretty pretty simple.
+
+83
+00:04:52,390 --> 00:04:59,520
+So I'm going to copy this line and are going to paste it right here Paiste are going to press enter
+
+84
+00:04:59,700 --> 00:05:00,170
+it.
+
+85
+00:05:00,350 --> 00:05:02,660
+So whenever the press center seems like nothing happened.
+
+86
+00:05:02,660 --> 00:05:10,010
+So basically with clip and side windows you know we are just copying all the contents of this file right.
+
+87
+00:05:10,010 --> 00:05:11,620
+We are just copying all of this.
+
+88
+00:05:11,780 --> 00:05:14,120
+So now we need to go to get help.
+
+89
+00:05:14,270 --> 00:05:20,730
+So we're going to go new S-sh key just like this and I'm going to say Windows right here because I mean
+
+90
+00:05:20,830 --> 00:05:27,760
+my windows computer and I get to go here and I'm going to do a command and paste all the cum all the
+
+91
+00:05:27,790 --> 00:05:32,800
+contents which is copied from the command and it's pasting pretty much spacing all the contents we have
+
+92
+00:05:32,800 --> 00:05:33,510
+on that file.
+
+93
+00:05:33,550 --> 00:05:36,420
+And that is that I'm going to add as a search key.
+
+94
+00:05:36,940 --> 00:05:38,140
+And we're pretty much done.
+
+95
+00:05:56,930 --> 00:06:00,220
+Now I'm going to try to validate this so I'm going to do.
+
+96
+00:06:00,230 --> 00:06:01,250
+I'm going to go to the command.
+
+97
+00:06:01,250 --> 00:06:03,560
+There is no copying pasting right here.
+
+98
+00:06:03,610 --> 00:06:04,260
+So I'm going to do.
+
+99
+00:06:04,290 --> 00:06:09,080
+S S H that minus capital T space.
+
+100
+00:06:09,080 --> 00:06:15,260
+Get at get have that come just like that.
+
+101
+00:06:15,380 --> 00:06:16,530
+I'm going to press enter.
+
+102
+00:06:18,360 --> 00:06:22,170
+And is going to say hi your username you're successfully authenticated.
+
+103
+00:06:22,190 --> 00:06:28,750
+So pretty much of this command what it's doing is just validating all your your kids ride with get have.
+
+104
+00:06:28,880 --> 00:06:34,040
+So now if I go here and reload the application it's not in black anymore it's going to be in green.
+
+105
+00:06:34,070 --> 00:06:35,740
+It means that everything was validated.
+
+106
+00:06:35,750 --> 00:06:39,580
+So you're ready to use using SH keys.
+
+107
+00:06:39,590 --> 00:06:40,220
+All right.
+
+108
+00:06:40,220 --> 00:06:42,590
+So that is good if you are at this point.
+
+109
+00:06:42,590 --> 00:06:43,660
+Everything going OK.
+
+110
+00:06:43,760 --> 00:06:45,730
+So we can move forward to the next thing.
+
+111
+00:06:45,890 --> 00:06:51,160
+So the next thing it's going to be go into Heroku installing everything and kind of a link.
+
+112
+00:06:51,290 --> 00:06:52,920
+This is a key again.
+
+113
+00:06:52,940 --> 00:06:54,320
+But with Heroku.
+
+114
+00:06:54,620 --> 00:06:59,160
+And if you're maybe you are thinking oh we need to do all this commands again.
+
+115
+00:06:59,190 --> 00:07:00,180
+Well not really.
+
+116
+00:07:00,210 --> 00:07:01,600
+We're getting with the Heroku.
+
+117
+00:07:01,640 --> 00:07:02,950
+It's really real simple.
+
+118
+00:07:02,960 --> 00:07:04,220
+It's pretty much.
+
+119
+00:07:04,220 --> 00:07:06,140
+We just installed and that's it.
+
+120
+00:07:06,290 --> 00:07:08,700
+So let's go to the next one and go to Hiroko.
+

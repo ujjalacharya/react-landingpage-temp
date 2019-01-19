@@ -1,0 +1,604 @@
+1
+00:00:01,250 --> 00:00:03,680
+OK so now we could be talking about props.
+
+2
+00:00:03,740 --> 00:00:05,360
+But first I'm going to do a few things.
+
+3
+00:00:05,390 --> 00:00:11,240
+I'm going to go to the header dodgiest and I'm going to delete the title state because we don't need
+
+4
+00:00:11,240 --> 00:00:13,120
+it to delete the cancel log.
+
+5
+00:00:13,120 --> 00:00:14,300
+You're not going to eat it.
+
+6
+00:00:14,450 --> 00:00:17,720
+And then we are going to delete the dips right here.
+
+7
+00:00:17,720 --> 00:00:20,880
+And of course to cancel right here we're going to save it.
+
+8
+00:00:20,930 --> 00:00:24,750
+And if I check it now everything works that's good.
+
+9
+00:00:25,130 --> 00:00:31,220
+So now I'm going to go to index Yes and what I want to do I want to bring the news and went to bring
+
+10
+00:00:31,220 --> 00:00:35,170
+a file some Jason data that it's going to be the news.
+
+11
+00:00:35,180 --> 00:00:37,030
+Right here we're going to have the news.
+
+12
+00:00:37,220 --> 00:00:43,420
+So first US Prosit project resource is said this section resource I've added a DVD.
+
+13
+00:00:43,440 --> 00:00:47,990
+Jason so you can download it download the file and put it inside the source.
+
+14
+00:00:47,990 --> 00:00:49,810
+We're going to be using it right now.
+
+15
+00:00:50,000 --> 00:00:56,690
+So this DVD that Jason is going to contain just a few Jason data with and the title of which is going
+
+16
+00:00:56,690 --> 00:00:58,060
+to be the title of the news.
+
+17
+00:00:58,190 --> 00:01:02,310
+And then just to feed with some some larm Epsom.
+
+18
+00:01:02,570 --> 00:01:03,380
+So what are we going to do.
+
+19
+00:01:03,380 --> 00:01:09,260
+We're going to fetch this DVD that Jason and then we can pass it to a different place so we can render
+
+20
+00:01:09,260 --> 00:01:11,240
+the news first.
+
+21
+00:01:11,420 --> 00:01:12,980
+We need to fetch Jason.
+
+22
+00:01:13,190 --> 00:01:17,920
+So I'm going to go right here and I'm going to say import Jaison from.
+
+23
+00:01:18,080 --> 00:01:22,550
+And then we bring it from Dodd forward slash D-B the Jason.
+
+24
+00:01:22,570 --> 00:01:31,210
+And remember that we are inside the source but so now this DVD that Dasen is going to be converted to
+
+25
+00:01:31,650 --> 00:01:32,750
+to an object.
+
+26
+00:01:32,970 --> 00:01:34,230
+So what we can do.
+
+27
+00:01:34,260 --> 00:01:39,010
+I'm going to say console log and we're going to say Jaison.
+
+28
+00:01:39,440 --> 00:01:43,320
+And if we check it on the console we have the objects.
+
+29
+00:01:43,560 --> 00:01:50,190
+So now what we need to do we need to grab all this information and pass it to the different component
+
+30
+00:01:50,250 --> 00:01:51,960
+which is going to be the news list.
+
+31
+00:01:52,200 --> 00:01:59,380
+But first inside the up the app right here what I wanted to use is going to be a class based component.
+
+32
+00:01:59,580 --> 00:02:02,250
+So this one it's a stateless functional component.
+
+33
+00:02:02,250 --> 00:02:03,340
+I went to change that.
+
+34
+00:02:03,510 --> 00:02:05,370
+So first I'm going to delete this.
+
+35
+00:02:05,370 --> 00:02:12,120
+I'm going to say class and then it's going to have the same name and then extends just like we did before.
+
+36
+00:02:12,210 --> 00:02:17,520
+I'm doing this right now because now we know how a class based component works and that we can use state
+
+37
+00:02:17,550 --> 00:02:25,280
+so we can do it right now and extents and then components and open close are going to leave the console
+
+38
+00:02:25,360 --> 00:02:30,330
+to Jason and remember that whenever we use a class we can just return something.
+
+39
+00:02:30,330 --> 00:02:36,150
+We need to use the render method open close and then we put everything inside of this
+
+40
+00:02:39,380 --> 00:02:41,020
+OK I'm going to save it.
+
+41
+00:02:41,020 --> 00:02:43,600
+And of course nothing works component.
+
+42
+00:02:43,600 --> 00:02:49,780
+It's not to find we're calling component right here but we're not bringing bringing the component from
+
+43
+00:02:49,830 --> 00:02:51,910
+react just like we did before.
+
+44
+00:02:52,120 --> 00:02:57,980
+So you can just copy this and bring the component coma and then components.
+
+45
+00:02:58,080 --> 00:03:02,620
+And if we reload everything still works just fine right here.
+
+46
+00:03:02,650 --> 00:03:04,220
+Jason is defined but never used.
+
+47
+00:03:04,250 --> 00:03:05,590
+We're going to use it right now.
+
+48
+00:03:05,890 --> 00:03:11,830
+So what we need to do we need to pass this Jason data to a different component which is going to be
+
+49
+00:03:11,830 --> 00:03:13,140
+the news list.
+
+50
+00:03:13,150 --> 00:03:15,410
+We didn't have a component inside the news list.
+
+51
+00:03:15,460 --> 00:03:16,650
+So we're going to do it right now.
+
+52
+00:03:16,660 --> 00:03:22,520
+I'm going to say import re-act from and then react of course.
+
+53
+00:03:22,720 --> 00:03:26,230
+And this is always the same motion you need to port something.
+
+54
+00:03:26,440 --> 00:03:30,950
+So a good advice for me just I'm going to give you an advice right now.
+
+55
+00:03:31,150 --> 00:03:37,000
+It's going to be having a template or having some snippets because you're going to be typing this manually
+
+56
+00:03:37,060 --> 00:03:38,800
+every time you do a project.
+
+57
+00:03:38,800 --> 00:03:42,510
+I'm doing it right now because I'm giving you a course some explaining what to do.
+
+58
+00:03:42,520 --> 00:03:46,860
+So I need to type everything but in real life you can have snippets.
+
+59
+00:03:47,080 --> 00:03:47,710
+OK.
+
+60
+00:03:48,490 --> 00:03:53,800
+So we're going to create this component and this component for now is going to be a stateless component.
+
+61
+00:03:54,040 --> 00:03:57,300
+So I'm going to say Konst functional component and this.
+
+62
+00:03:57,390 --> 00:03:59,520
+This one is going to be called newsiest.
+
+63
+00:03:59,560 --> 00:04:03,300
+So I'm going to say use list just like that.
+
+64
+00:04:03,850 --> 00:04:05,380
+And this way it's going to be equal.
+
+65
+00:04:05,440 --> 00:04:08,870
+It's going to be equal to a function Burguet.
+
+66
+00:04:09,190 --> 00:04:16,240
+So this one whenever we call this one is going to return some GSX and this GSX for now is just going
+
+67
+00:04:16,240 --> 00:04:21,690
+to be a dev with news list whatever.
+
+68
+00:04:22,380 --> 00:04:27,240
+So now we need to make this component available inside other components.
+
+69
+00:04:27,280 --> 00:04:34,300
+So if you remember we need to say export than default and then use list just like that.
+
+70
+00:04:34,890 --> 00:04:35,180
+OK.
+
+71
+00:04:35,220 --> 00:04:41,270
+So this component it's ready to be included inside all their components but first we need to call them.
+
+72
+00:04:41,310 --> 00:04:48,600
+So we're going to put a right here to say import import and then we're going to be importing news list
+
+73
+00:04:49,410 --> 00:04:50,490
+just like that.
+
+74
+00:04:51,000 --> 00:04:57,830
+And then from and then we do DOD forward slash components for was slash and use list.
+
+75
+00:04:58,560 --> 00:05:06,970
+So now just like we did with Hetter if I include this news list right here use list and we close it.
+
+76
+00:05:06,990 --> 00:05:09,070
+In theory we should be getting useless.
+
+77
+00:05:09,090 --> 00:05:10,800
+And that's what we are getting.
+
+78
+00:05:10,800 --> 00:05:14,270
+So this works just fine.
+
+79
+00:05:14,280 --> 00:05:17,440
+Now the thing is that I'm fetching a Jason right here.
+
+80
+00:05:17,550 --> 00:05:23,980
+And what I want to do whenever a fetch does Jason I want to store it inside the state of app.
+
+81
+00:05:24,060 --> 00:05:25,960
+You know this app.
+
+82
+00:05:25,960 --> 00:05:31,980
+So OK so I'm going to go right here and I'm going to say state and the state is going to be equal to
+
+83
+00:05:32,040 --> 00:05:33,280
+an object.
+
+84
+00:05:33,300 --> 00:05:38,760
+So now I'm going to create a new property that is going to be news and use is going to be called to
+
+85
+00:05:38,850 --> 00:05:42,490
+day sign just like that Jay song.
+
+86
+00:05:42,920 --> 00:05:50,280
+Again if we do cancel the blog just to make sure that everything works council lock we have the Jason
+
+87
+00:05:50,310 --> 00:05:53,870
+and the news available inside the state of this app.
+
+88
+00:05:54,030 --> 00:06:03,060
+So we say does that state that new and in theory we should be getting the logs so we get it.
+
+89
+00:06:03,060 --> 00:06:03,570
+Let's get to.
+
+90
+00:06:03,570 --> 00:06:05,100
+Everything works fine.
+
+91
+00:06:05,100 --> 00:06:12,660
+Now the problem and it's the main point of this section is to pass the news to pass the Jasen to a different
+
+92
+00:06:12,660 --> 00:06:13,620
+component.
+
+93
+00:06:13,680 --> 00:06:15,670
+And in this case it's going to be useless.
+
+94
+00:06:15,840 --> 00:06:17,780
+So we need a way to pass this.
+
+95
+00:06:18,000 --> 00:06:24,780
+And this is going to be called prompts and it's very important just like the state we can pass data
+
+96
+00:06:24,840 --> 00:06:27,290
+between components using props.
+
+97
+00:06:27,300 --> 00:06:28,320
+How can we do it.
+
+98
+00:06:28,340 --> 00:06:35,730
+Well first inside this reference to the components I'm going to say news and this could be whatever
+
+99
+00:06:35,970 --> 00:06:37,770
+you want it doesn't matter.
+
+100
+00:06:37,770 --> 00:06:41,030
+Could be could be news could be donkey.
+
+101
+00:06:41,030 --> 00:06:43,290
+You can you can do it whenever you want.
+
+102
+00:06:43,290 --> 00:06:46,150
+So I'm going to call it news because of course it makes sense.
+
+103
+00:06:46,240 --> 00:06:49,650
+I'm going to say news and then opening close curly braces.
+
+104
+00:06:49,860 --> 00:06:54,460
+So right here we need to specify what we need to pass to this component.
+
+105
+00:06:54,720 --> 00:07:00,180
+So what we need to pass is going to be does that state that news.
+
+106
+00:07:00,480 --> 00:07:03,290
+And let me make this smaller.
+
+107
+00:07:03,390 --> 00:07:04,580
+There's the state that news.
+
+108
+00:07:04,620 --> 00:07:08,940
+So this is going to pass the decent data to the news list.
+
+109
+00:07:09,270 --> 00:07:13,380
+So now inside the news list how can we catch this information.
+
+110
+00:07:13,620 --> 00:07:20,130
+Well this information is going to be passed to this component which is it's just a function inside the
+
+111
+00:07:20,130 --> 00:07:21,120
+arguments.
+
+112
+00:07:21,150 --> 00:07:28,200
+So whenever you create a component you have some information available called prompts just like that.
+
+113
+00:07:28,620 --> 00:07:35,340
+And it's and you get this prompts by default whenever you use react with any component any type of component
+
+114
+00:07:35,400 --> 00:07:39,120
+if you use a stateless component a functional component just like this.
+
+115
+00:07:39,190 --> 00:07:43,330
+You can get some props if you're going to use a class based component.
+
+116
+00:07:43,410 --> 00:07:45,210
+You're going to get some props too.
+
+117
+00:07:45,360 --> 00:07:46,800
+You always get the props.
+
+118
+00:07:46,830 --> 00:07:50,730
+That's the one of the key features of react.
+
+119
+00:07:50,790 --> 00:07:57,690
+So in theory if I go right here at the bottom and say console log and then counsel log whatever information
+
+120
+00:07:57,780 --> 00:08:05,400
+I have inside prompts just prompts and go right here I'm going to get it and notice that this one this
+
+121
+00:08:05,400 --> 00:08:09,620
+one is kind of different is giving me an object with some news.
+
+122
+00:08:09,720 --> 00:08:12,210
+And inside the news they use property.
+
+123
+00:08:12,210 --> 00:08:14,540
+I have my news good.
+
+124
+00:08:14,880 --> 00:08:16,900
+So you know you get a lot of information.
+
+125
+00:08:16,950 --> 00:08:18,930
+What happens if I want to pass something else.
+
+126
+00:08:18,930 --> 00:08:25,790
+Not just news what I can pass is say donkey and donkey just like that donkey.
+
+127
+00:08:25,860 --> 00:08:28,860
+And it's going to be equal to me whatever.
+
+128
+00:08:29,280 --> 00:08:36,000
+And then I get to go to news list and of course we get a new object from the consulate prompts an inside
+
+129
+00:08:36,000 --> 00:08:43,690
+probably have news and we have dunky So in theory what we can do since we have that information inside.
+
+130
+00:08:43,690 --> 00:08:54,750
+Probst I can say console log and then prompts and then instead of a user you can say donkey donkey.
+
+131
+00:08:54,870 --> 00:08:58,760
+So we get me OK no that's good.
+
+132
+00:08:58,780 --> 00:09:01,380
+It's really really awesome if you think about it.
+
+133
+00:09:01,390 --> 00:09:02,820
+We can do a lot of thanks for this.
+
+134
+00:09:02,830 --> 00:09:09,820
+We are just passing a lot of data and we can catch that that data inside prompts and right here of course
+
+135
+00:09:09,850 --> 00:09:11,840
+we can use this prompts that Dunky.
+
+136
+00:09:11,890 --> 00:09:14,070
+Let me go right here.
+
+137
+00:09:14,110 --> 00:09:19,790
+We use the curly braces and we make a reference to props and Dunky.
+
+138
+00:09:20,230 --> 00:09:22,970
+So if we go below the page we get me.
+
+139
+00:09:23,170 --> 00:09:23,520
+OK.
+
+140
+00:09:23,560 --> 00:09:27,330
+So you know really really really easy to use.
+
+141
+00:09:27,330 --> 00:09:30,210
+We pass props and then we use it.
+
+142
+00:09:30,220 --> 00:09:35,380
+So now what we need to do and begin to go to the next section right now we need to create some markup
+
+143
+00:09:35,380 --> 00:09:36,340
+for this.
+
+144
+00:09:36,340 --> 00:09:42,870
+Grab the props bring the news of course it's not going to happen right here because we have an object.
+
+145
+00:09:42,880 --> 00:09:45,150
+So it's not going to display it.
+
+146
+00:09:45,190 --> 00:09:48,240
+Objects are not valid as a react child.
+
+147
+00:09:48,400 --> 00:09:57,460
+You cannot pass some object inside the return Sunia the Jason the I'm sorry the object data is not valid.
+
+148
+00:09:57,460 --> 00:10:02,050
+GSX so I was going to give you a fat error message.
+
+149
+00:10:02,140 --> 00:10:03,960
+So we need to do something else right here.
+
+150
+00:10:04,180 --> 00:10:11,470
+So let's go to the next section and check how can we render how we are going to be able to render this
+
+151
+00:10:11,470 --> 00:10:12,520
+news object.
+

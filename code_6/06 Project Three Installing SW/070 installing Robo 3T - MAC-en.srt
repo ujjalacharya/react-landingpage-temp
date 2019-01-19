@@ -1,0 +1,236 @@
+1
+00:00:00,870 --> 00:00:02,920
+OK so let's install Reber Mongo.
+
+2
+00:00:02,940 --> 00:00:04,680
+I'm going to go right here to the browser.
+
+3
+00:00:04,770 --> 00:00:06,470
+I'm going to say rather Mogo.
+
+4
+00:00:06,870 --> 00:00:12,430
+So you're going to have some results right here and you can have robo 3D formerly Rovell Mongo.
+
+5
+00:00:12,570 --> 00:00:18,580
+So back in the day when this project started started as Rovell Mongo not rubble.
+
+6
+00:00:18,640 --> 00:00:19,360
+380.
+
+7
+00:00:19,500 --> 00:00:25,380
+I believe they had some problems some license's problems problems because it was using the word Mongo
+
+8
+00:00:25,630 --> 00:00:27,280
+Mavie Mongo divi ass.
+
+9
+00:00:27,300 --> 00:00:32,690
+Ask them for money or maybe to change the name so they change it to robo 3.
+
+10
+00:00:32,900 --> 00:00:35,030
+I liked them more but that's fine.
+
+11
+00:00:35,060 --> 00:00:38,730
+I'm going to click and download is going to start to download of course.
+
+12
+00:00:38,850 --> 00:00:45,100
+So I'm going to say download and you know I have it for Mac so we download it.
+
+13
+00:00:45,240 --> 00:00:46,590
+So it's going to take a few minutes.
+
+14
+00:00:46,620 --> 00:00:48,700
+I'm going to save it and downloads.
+
+15
+00:00:49,240 --> 00:00:50,310
+OK so it's going to go.
+
+16
+00:00:50,320 --> 00:00:52,640
+I can possibly deal and be right back.
+
+17
+00:00:54,310 --> 00:00:58,740
+OK so now everything is ready so I'm going to go to documents and you can have the.
+
+18
+00:00:58,780 --> 00:00:59,720
+I'm sorry to download.
+
+19
+00:00:59,740 --> 00:01:03,340
+And you can have the file just right there are going to double click it.
+
+20
+00:01:03,430 --> 00:01:07,000
+If it's not old and you open it you need to do control click.
+
+21
+00:01:07,000 --> 00:01:11,920
+Of course we're going to go to devices and inside devices you can have it right there.
+
+22
+00:01:12,040 --> 00:01:14,440
+If not you're going to get it inside applications.
+
+23
+00:01:14,620 --> 00:01:22,390
+If it's not inside applications just like we were going to go to robo 380 and just drop it inside applications.
+
+24
+00:01:22,570 --> 00:01:25,960
+So if we search it right here we're going to have it right here.
+
+25
+00:01:26,050 --> 00:01:27,180
+Robo 380.
+
+26
+00:01:27,340 --> 00:01:29,590
+So I'm going to DoubleClick it.
+
+27
+00:01:29,590 --> 00:01:30,980
+It's going to take a few seconds.
+
+28
+00:01:31,130 --> 00:01:34,160
+As I say robo it's not an application downloaded.
+
+29
+00:01:34,180 --> 00:01:34,510
+Yeah.
+
+30
+00:01:34,550 --> 00:01:35,110
+That's.
+
+31
+00:01:35,200 --> 00:01:35,640
+We are.
+
+32
+00:01:35,660 --> 00:01:36,530
+Sure.
+
+33
+00:01:37,060 --> 00:01:39,030
+So that is going to open the application.
+
+34
+00:01:39,070 --> 00:01:40,650
+You might have some things right here.
+
+35
+00:01:40,660 --> 00:01:41,500
+I'm going to remove it.
+
+36
+00:01:41,500 --> 00:01:42,110
+Going to do it.
+
+37
+00:01:42,130 --> 00:01:43,560
+Everything from the start.
+
+38
+00:01:43,750 --> 00:01:44,890
+So you can have this panel.
+
+39
+00:01:44,920 --> 00:01:46,660
+Mongo DB connections.
+
+40
+00:01:46,720 --> 00:01:51,490
+So right here we need to go to create inside the create.
+
+41
+00:01:51,520 --> 00:01:54,390
+You can have some options and we're going to use the connection for now.
+
+42
+00:01:54,640 --> 00:01:57,890
+So we need to give a name to this connection.
+
+43
+00:01:58,090 --> 00:02:07,120
+So I'm going to call it local local and then MZB for Mongo divi you know local for this computer.
+
+44
+00:02:07,360 --> 00:02:12,930
+And the address is going to be again just local host and the default port 2:07 is your 1:07.
+
+45
+00:02:13,130 --> 00:02:14,230
+Then going to click save.
+
+46
+00:02:14,440 --> 00:02:17,190
+And with this highlighted we're going to do connect.
+
+47
+00:02:17,530 --> 00:02:22,990
+So in the left you're going to get this you know the system and the test and this is the actual database
+
+48
+00:02:22,990 --> 00:02:28,740
+that we were we were with did right here you know this record if I double click and test is going to
+
+49
+00:02:28,750 --> 00:02:34,420
+give you give us this panel with the actual information that we have on this database you know named
+
+50
+00:02:34,440 --> 00:02:36,340
+Francis and the ID.
+
+51
+00:02:36,400 --> 00:02:38,070
+This is really really great.
+
+52
+00:02:38,080 --> 00:02:44,050
+The other choice would be to do it right here from the terminal which is kind of a pain in the ass.
+
+53
+00:02:44,050 --> 00:02:47,850
+So right here we can do the information whenever we inserted.
+
+54
+00:02:47,890 --> 00:02:52,890
+It's going to just out magically appear right here and we can even inspect like this.
+
+55
+00:02:52,930 --> 00:02:58,300
+We have we have different types of abuse or we can just add data manually.
+
+56
+00:02:58,300 --> 00:03:00,160
+You know that's really really great.
+
+57
+00:03:00,470 --> 00:03:00,810
+OK.
+
+58
+00:03:00,820 --> 00:03:04,100
+So now we are ready to start with Mongo D-B.
+
+59
+00:03:04,210 --> 00:03:06,980
+So let's go to the next section and start with this.
+

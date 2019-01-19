@@ -1,0 +1,704 @@
+1
+00:00:00,610 --> 00:00:05,680
+All right so we can be doing our practice product for four redux.
+
+2
+00:00:05,680 --> 00:00:06,640
+It's going to be really small.
+
+3
+00:00:06,630 --> 00:00:08,580
+We are not going to spend a lot of time.
+
+4
+00:00:08,600 --> 00:00:14,080
+I'm going to give you the template of what we're going to be doing because then at the end of the course
+
+5
+00:00:14,370 --> 00:00:21,320
+we're going to do a real big project with the redux we react and we're going to be using a real server.
+
+6
+00:00:21,320 --> 00:00:23,280
+We're going to be using Mongo and mongoose.
+
+7
+00:00:23,380 --> 00:00:27,920
+So it's going to be is going to be long and I don't want to spend a lot of time on this.
+
+8
+00:00:27,920 --> 00:00:33,220
+Are we going to do this right now so you can practice redux a plane redux and react on a real kind of
+
+9
+00:00:33,220 --> 00:00:39,250
+a real live environment so you can have a little more practice and you can go to your project and apply
+
+10
+00:00:39,250 --> 00:00:40,940
+redux on your own.
+
+11
+00:00:40,960 --> 00:00:47,330
+So okay I'm going to give you a I'm going to give you downlow to go to resources and download this package.
+
+12
+00:00:47,440 --> 00:00:53,310
+And you only to of course navigate to this to that directory and do NPM install.
+
+13
+00:00:53,320 --> 00:00:59,110
+This is going to give you the node modules right after you do that do NPM start.
+
+14
+00:00:59,110 --> 00:01:04,490
+Just like always and if you go to the package to Jason we have Jason server right here.
+
+15
+00:01:04,600 --> 00:01:13,380
+So we're going to need to be running Jason's server so go right here and do NPM run Jason and then serve.
+
+16
+00:01:13,420 --> 00:01:15,920
+This is going to star Jason server right.
+
+17
+00:01:16,060 --> 00:01:19,230
+If I read the page you should be getting something like this.
+
+18
+00:01:19,240 --> 00:01:20,020
+All right.
+
+19
+00:01:20,080 --> 00:01:24,070
+So whenever we click on an artist it's going to take us to the main page of The Artist.
+
+20
+00:01:24,070 --> 00:01:25,820
+This comes from the database.
+
+21
+00:01:26,200 --> 00:01:30,320
+And of course if we type something this of course is not working yet.
+
+22
+00:01:30,580 --> 00:01:35,480
+If we type Hendrick's is going to filter all the results from the database and give his chest.
+
+23
+00:01:35,570 --> 00:01:40,390
+Hendricks that's the idea and everything of course is going through redux.
+
+24
+00:01:40,440 --> 00:01:40,940
+All right.
+
+25
+00:01:41,050 --> 00:01:42,460
+So this is what we're going to be doing.
+
+26
+00:01:42,460 --> 00:01:46,780
+Let me give you a recap of what we said inside source.
+
+27
+00:01:46,780 --> 00:01:50,690
+We have the index you know with the router and we are calling routes.
+
+28
+00:01:50,890 --> 00:01:56,740
+So routes we have two routes we have home and then we have the artist list which is going to be the
+
+29
+00:01:57,320 --> 00:01:59,410
+index page of each artist.
+
+30
+00:01:59,500 --> 00:02:05,710
+Now inside home if you go to home and we go here we have a class based component and we have we are
+
+31
+00:02:05,710 --> 00:02:07,160
+importing two components.
+
+32
+00:02:07,360 --> 00:02:12,770
+We have a state of artists and whatever the application this view gets mounted.
+
+33
+00:02:12,790 --> 00:02:15,880
+We're going to be doing a fetch for the artists.
+
+34
+00:02:16,090 --> 00:02:18,680
+So that list is going to go to the state.
+
+35
+00:02:18,940 --> 00:02:24,790
+So right here artists list this component is going to grab that list is going to map it and is going
+
+36
+00:02:24,790 --> 00:02:27,600
+to show this we can know it's real simple.
+
+37
+00:02:27,730 --> 00:02:30,790
+So then we have the search components the search component.
+
+38
+00:02:30,790 --> 00:02:35,360
+The only job of the search is going to be passing the On Change event.
+
+39
+00:02:35,380 --> 00:02:40,380
+You know the the actual keyboard tell me to go back and to go back home.
+
+40
+00:02:40,690 --> 00:02:45,320
+So this search has a function that calls this and key keywords.
+
+41
+00:02:45,520 --> 00:02:50,190
+So get keywords is going to be grabbing that event and then the event target value.
+
+42
+00:02:50,350 --> 00:02:59,990
+So if I do comes along by check the log there we go if I type something I'm I'm going to get that event
+
+43
+00:03:00,230 --> 00:03:00,550
+right.
+
+44
+00:03:00,560 --> 00:03:02,040
+So that is working.
+
+45
+00:03:02,480 --> 00:03:03,620
+So what else.
+
+46
+00:03:04,040 --> 00:03:06,470
+Well let's say we have the search nothing else.
+
+47
+00:03:06,470 --> 00:03:11,700
+So we can grab all of this and convert everything to to redux.
+
+48
+00:03:11,750 --> 00:03:12,090
+Right.
+
+49
+00:03:12,090 --> 00:03:13,230
+We're using redux.
+
+50
+00:03:13,250 --> 00:03:15,830
+So let's let's begin doing that right now.
+
+51
+00:03:16,700 --> 00:03:23,990
+OK so before we can start anything we need to install all the redux dependencies so we going to go to
+
+52
+00:03:23,990 --> 00:03:28,240
+the to the tabouli have the server reacts over running.
+
+53
+00:03:28,270 --> 00:03:30,560
+We could kill the process and we're going to do.
+
+54
+00:03:30,560 --> 00:03:33,400
+Clear right we're going to be installing a lot of things.
+
+55
+00:03:33,500 --> 00:03:40,430
+So we need to install three main things we need re-act redux we need redux and they begin to be using
+
+56
+00:03:40,430 --> 00:03:41,190
+something else.
+
+57
+00:03:41,360 --> 00:03:45,990
+Didn't show you we're going to learn it on this project that cause redux promise.
+
+58
+00:03:46,010 --> 00:03:48,880
+So first we need to do NPM install.
+
+59
+00:03:48,980 --> 00:03:56,860
+Let me make it right and PM install and then it's going to be called react just like we did before redux.
+
+60
+00:03:56,870 --> 00:04:02,560
+That's the first thing I'm going to be using a specific version which is the five that 0.6.
+
+61
+00:04:02,810 --> 00:04:03,340
+OK.
+
+62
+00:04:03,380 --> 00:04:07,900
+That's that's what they're going to do space and we to install readouts.
+
+63
+00:04:07,910 --> 00:04:13,880
+And again I'm going to use a version it's three that seven the two this is the latest version so far
+
+64
+00:04:13,880 --> 00:04:15,190
+for this course.
+
+65
+00:04:15,320 --> 00:04:18,930
+So going into space and we're going to be installing redux promise.
+
+66
+00:04:19,040 --> 00:04:20,190
+Make it bigger.
+
+67
+00:04:20,300 --> 00:04:31,630
+It's going to be redux and ops or dush and then promise and again 0 5 0 $0.5 3.
+
+68
+00:04:31,790 --> 00:04:34,200
+And of course we're going to do mine as mine is safe.
+
+69
+00:04:34,280 --> 00:04:39,410
+So is going to be installing all of this dependencies are going to present or possibly deal and be my
+
+70
+00:04:39,410 --> 00:04:40,380
+back.
+
+71
+00:04:41,060 --> 00:04:42,620
+Okay so everything was solved.
+
+72
+00:04:42,620 --> 00:04:45,650
+Remember to do NPM start back again.
+
+73
+00:04:45,650 --> 00:04:47,200
+So I'm going to close it.
+
+74
+00:04:47,270 --> 00:04:53,270
+And go back to the project since we have the Penzeys everything else what we need to do now is to start
+
+75
+00:04:53,270 --> 00:04:54,790
+connecting redux.
+
+76
+00:04:54,860 --> 00:04:55,310
+Okay.
+
+77
+00:04:55,520 --> 00:04:58,670
+So we need to we need to do a lot of things a lot of configuration.
+
+78
+00:04:58,670 --> 00:05:01,950
+So first from Briac redux I'm going to split it just like this.
+
+79
+00:05:02,070 --> 00:05:03,940
+You need something called provider.
+
+80
+00:05:03,950 --> 00:05:06,740
+The provider comes from Briac redux.
+
+81
+00:05:06,740 --> 00:05:08,360
+So it's provider.
+
+82
+00:05:08,720 --> 00:05:15,420
+And then of course is space and then from and then react and then redirects.
+
+83
+00:05:15,740 --> 00:05:21,320
+So what else we're going to need in a create store so I'm going to say import open and close and it's
+
+84
+00:05:21,320 --> 00:05:24,420
+going to be create and then store.
+
+85
+00:05:24,860 --> 00:05:29,750
+Now we're going to use something else because we can apply we're going to be applying middleware be
+
+86
+00:05:29,750 --> 00:05:31,070
+installed redux promised.
+
+87
+00:05:31,100 --> 00:05:32,300
+So we're going to be doing that.
+
+88
+00:05:32,300 --> 00:05:33,420
+Could we be using that.
+
+89
+00:05:33,590 --> 00:05:36,810
+So I'm going to say apply and then middleware.
+
+90
+00:05:37,540 --> 00:05:37,900
+Okay.
+
+91
+00:05:37,910 --> 00:05:41,350
+So this one is going to come from redux it's going to say from.
+
+92
+00:05:41,510 --> 00:05:43,550
+And then Rydex.
+
+93
+00:05:43,770 --> 00:05:44,410
+There we go.
+
+94
+00:05:45,440 --> 00:05:47,950
+What else are we going to use that promise.
+
+95
+00:05:47,990 --> 00:05:53,490
+So import and then it's called Promise and then middleware.
+
+96
+00:05:54,170 --> 00:05:57,500
+We're going to see why we are using this in a couple minutes.
+
+97
+00:05:57,770 --> 00:06:04,500
+So we're going to bring this one from redux and then promise but what else.
+
+98
+00:06:04,580 --> 00:06:05,190
+Nothing else.
+
+99
+00:06:05,210 --> 00:06:07,740
+This is for now the the only thing we need.
+
+100
+00:06:08,150 --> 00:06:15,060
+Okay so now I don't want to I don't want to that's that's a little bit better.
+
+101
+00:06:15,260 --> 00:06:17,150
+So I don't want to render an app.
+
+102
+00:06:17,210 --> 00:06:23,020
+I want to render everything inside the render whenever we redux we of of don't like to do this.
+
+103
+00:06:23,060 --> 00:06:28,460
+It depends on what we are doing so I'm going to just copy this browser rudder and again it just delete
+
+104
+00:06:28,460 --> 00:06:29,340
+it.
+
+105
+00:06:29,340 --> 00:06:33,440
+I'm going to go right here to the bottom and I'm going to put it right here.
+
+106
+00:06:33,440 --> 00:06:38,240
+So now if you remember we need to wrap everything inside the provider.
+
+107
+00:06:38,240 --> 00:06:40,260
+We need to wrap everything with the provider.
+
+108
+00:06:40,280 --> 00:06:43,920
+So first I'm going to be calling of creating a provider.
+
+109
+00:06:44,180 --> 00:06:46,590
+So it's going to be provider open and close.
+
+110
+00:06:46,730 --> 00:06:50,160
+And inside we're going to put the browser router.
+
+111
+00:06:50,990 --> 00:06:54,170
+So this provider needs a store.
+
+112
+00:06:54,200 --> 00:06:58,720
+So in say space store equal to something.
+
+113
+00:06:59,090 --> 00:07:05,590
+Now what we need to do we need to pass the connection between the create store and the API with middleware.
+
+114
+00:07:05,650 --> 00:07:15,800
+So going to go right here at the top I'm going to say Konst Konst Konst and then create then store then
+
+115
+00:07:15,920 --> 00:07:19,290
+with and then middleware.
+
+116
+00:07:19,580 --> 00:07:22,330
+This one is going to be equal to apply middleware.
+
+117
+00:07:22,370 --> 00:07:29,810
+Same thing with the Priem Priestley is going to be using this promise made aware and the create store
+
+118
+00:07:31,780 --> 00:07:32,540
+just like that.
+
+119
+00:07:32,540 --> 00:07:35,360
+Let me move it just like that.
+
+120
+00:07:35,360 --> 00:07:41,390
+So now this creates store with where is going to be used it is going to be used by the store inside
+
+121
+00:07:41,390 --> 00:07:44,410
+the provider now of the creature store with middleware.
+
+122
+00:07:44,420 --> 00:07:45,230
+Oh sorry.
+
+123
+00:07:45,380 --> 00:07:49,990
+It's going to be is going to be passing something which is the actual reduce.
+
+124
+00:07:50,210 --> 00:07:51,530
+We don't have it just yet.
+
+125
+00:07:51,530 --> 00:07:54,050
+That's why we get an error message so we can to fix it.
+
+126
+00:07:54,050 --> 00:07:59,410
+Let's go to source and create a new folder is going to be called reducers just like that.
+
+127
+00:07:59,450 --> 00:08:06,300
+Reducers and each producer folder is going to contain an index non-jazz.
+
+128
+00:08:06,420 --> 00:08:13,970
+Now if you remember we cannot pass a lot of reducers you know just all of the producers inside here
+
+129
+00:08:13,970 --> 00:08:15,620
+we cannot import all of them.
+
+130
+00:08:15,620 --> 00:08:22,940
+What we do we import an index that contains all the reducers to do that we need to combine reducers.
+
+131
+00:08:22,940 --> 00:08:32,180
+So we need to do import opening close and then combine and then reducers and this one comes from redux
+
+132
+00:08:32,330 --> 00:08:40,630
+from Redux I know this the setting up is boring but you know it's something that we need to do.
+
+133
+00:08:40,900 --> 00:08:42,450
+So what are we going to be exporting.
+
+134
+00:08:42,460 --> 00:08:44,560
+It's going to be the route we do sir.
+
+135
+00:08:44,950 --> 00:08:50,240
+And then we would reduce or he's going to use combined we do sers now combined with juicers of course
+
+136
+00:08:50,240 --> 00:08:50,700
+the method.
+
+137
+00:08:50,740 --> 00:08:57,460
+And it's going to need an object I'm going to go right here to the bottom and export it default and
+
+138
+00:08:57,460 --> 00:09:01,110
+then it's base and rude reducer.
+
+139
+00:09:01,120 --> 00:09:04,620
+Now this combined reducers is going to need a list of reducers.
+
+140
+00:09:04,630 --> 00:09:06,420
+We're going to have only one for now.
+
+141
+00:09:06,550 --> 00:09:12,460
+So I'm going to say artists because you know we're working with artists we didn't have this file just
+
+142
+00:09:12,460 --> 00:09:12,860
+yet.
+
+143
+00:09:12,880 --> 00:09:16,130
+I'm going to import it right now and we're going to create it in a minute.
+
+144
+00:09:16,420 --> 00:09:23,050
+So we're going to say artists from opening close and then Dopp for Slash and it's going to be on the
+
+145
+00:09:23,110 --> 00:09:24,820
+same directory.
+
+146
+00:09:24,910 --> 00:09:28,250
+So we say artist and then we do sir.
+
+147
+00:09:28,600 --> 00:09:30,910
+We don't have the file that's created right now.
+
+148
+00:09:30,910 --> 00:09:32,530
+I'm going to copy the name.
+
+149
+00:09:32,530 --> 00:09:37,780
+Go to reducers create a new file and then you put that non-jazz.
+
+150
+00:09:37,810 --> 00:09:44,260
+So this one the actual reducer is going to return just to function with an action right.
+
+151
+00:09:44,320 --> 00:09:51,010
+So we're going to say export default and then function open and close.
+
+152
+00:09:51,010 --> 00:09:59,060
+So this function has two default arguments the first one is the state and by default it's an empty object.
+
+153
+00:09:59,380 --> 00:10:03,070
+So then we do coma and this reducer is going and we see an action.
+
+154
+00:10:03,190 --> 00:10:10,100
+So we can do right here we can do a switch checking for the action type match the type and do something.
+
+155
+00:10:10,480 --> 00:10:21,210
+So we can do switch just like that open and close and begin to be checking the action dot and then type.
+
+156
+00:10:21,250 --> 00:10:25,110
+Now for now we didn't have a real action we don't have a type.
+
+157
+00:10:25,330 --> 00:10:33,760
+So we're going to say just by default default opening close and begin to return and then state and that's
+
+158
+00:10:33,760 --> 00:10:39,960
+it for now this is get we don't have anything we're going to created create this.
+
+159
+00:10:39,980 --> 00:10:42,230
+The the cases as we go.
+
+160
+00:10:42,370 --> 00:10:46,560
+So I'm going to save it and if we reload the application we're still going to get this.
+
+161
+00:10:46,690 --> 00:10:48,720
+And it's because we didn't import.
+
+162
+00:10:48,730 --> 00:10:50,990
+We are not passing a valid reducer.
+
+163
+00:10:51,130 --> 00:10:52,300
+So we need to do that.
+
+164
+00:10:52,440 --> 00:11:00,400
+So I'm going to go work here at the top and I'm going to say import reducers from and then dot for Slash
+
+165
+00:11:00,790 --> 00:11:04,450
+and then we do hers and say we want to bring the index.
+
+166
+00:11:04,490 --> 00:11:07,340
+There's no need to do for Slash and index.
+
+167
+00:11:07,540 --> 00:11:09,220
+So going to save it.
+
+168
+00:11:09,220 --> 00:11:11,030
+We're going to reload the application.
+
+169
+00:11:11,330 --> 00:11:13,250
+Oh sorry I forgot to do this.
+
+170
+00:11:13,270 --> 00:11:16,750
+We need to pass it to the create store with midways.
+
+171
+00:11:16,780 --> 00:11:19,320
+So we're going to reload it and everything works right.
+
+172
+00:11:19,360 --> 00:11:21,300
+So everything works fine.
+
+173
+00:11:22,110 --> 00:11:26,320
+Now of course we have the provider and we have a store we are using redux.
+
+174
+00:11:26,460 --> 00:11:31,600
+We are not using any actions in anything else but everything is connected.
+
+175
+00:11:31,710 --> 00:11:39,780
+So the next thing is going to be going to the actual components and start creating containers and creating
+
+176
+00:11:39,780 --> 00:11:42,700
+the actions and everything else so let's do that right now.
+

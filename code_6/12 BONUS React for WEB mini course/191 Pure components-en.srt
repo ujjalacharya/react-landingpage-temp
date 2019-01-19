@@ -1,0 +1,340 @@
+1
+00:00:01,060 --> 00:00:01,450
+Right.
+
+2
+00:00:01,460 --> 00:00:07,760
+So there's a lot of confusion around pure components and they are real simple to understand and I guess
+
+3
+00:00:07,790 --> 00:00:14,040
+the confusion it's because we need to understand which problems pure components solve.
+
+4
+00:00:14,240 --> 00:00:14,500
+OK.
+
+5
+00:00:14,570 --> 00:00:19,230
+So first we can discuss the problem and then I'm going to tell you how to solve it.
+
+6
+00:00:19,310 --> 00:00:24,130
+So I'm going to go back to life to this route to the life route right here.
+
+7
+00:00:24,440 --> 00:00:26,640
+And of course we have everything else.
+
+8
+00:00:26,750 --> 00:00:31,640
+And what I'm going to do I'm going to comment all the code we have right here and I'm just going to
+
+9
+00:00:31,640 --> 00:00:32,540
+leave the state.
+
+10
+00:00:32,570 --> 00:00:34,750
+That's the only thing I'm going to leave right here.
+
+11
+00:00:34,940 --> 00:00:40,820
+So we have a state with a title which is the text that it's getting rendered right here.
+
+12
+00:00:40,820 --> 00:00:47,030
+If you go at the bottom we have the H-3 with this state title and we have a button to change the title
+
+13
+00:00:47,030 --> 00:00:48,530
+to something else.
+
+14
+00:00:48,710 --> 00:00:49,780
+OK that's reasonable.
+
+15
+00:00:49,880 --> 00:00:56,230
+Every time that we load this component is going to cancel log or render message right here.
+
+16
+00:00:56,270 --> 00:00:59,040
+So we get rendered OK that's fine.
+
+17
+00:00:59,390 --> 00:01:06,040
+So now if I go to click the change begin to change the title for something else and re-act will render
+
+18
+00:01:06,040 --> 00:01:10,320
+this component and show the new title which is something else could.
+
+19
+00:01:10,340 --> 00:01:16,520
+So I'm going to go and do click to change me on Mark this click the change oh nothing happens.
+
+20
+00:01:16,520 --> 00:01:17,210
+There we go.
+
+21
+00:01:17,420 --> 00:01:22,640
+So we get something else that's good and right here we get the first render with the first title and
+
+22
+00:01:22,640 --> 00:01:24,280
+then it's going to be rendered.
+
+23
+00:01:24,290 --> 00:01:26,110
+So we get the second render.
+
+24
+00:01:26,210 --> 00:01:27,170
+So that's good.
+
+25
+00:01:27,170 --> 00:01:32,040
+Now what happens if I keep clicking this click change I'm going to go right here.
+
+26
+00:01:32,080 --> 00:01:38,180
+I'm going to click it and we get the render again if I click it again we get render we get render and
+
+27
+00:01:38,180 --> 00:01:41,230
+we get you know we just keep getting render.
+
+28
+00:01:41,360 --> 00:01:45,210
+Now if we think about is about this this is the actual problem.
+
+29
+00:01:45,620 --> 00:01:50,420
+We're not changing the title the title it's always the same it's something else.
+
+30
+00:01:50,540 --> 00:01:54,530
+Whenever we change it for the first time so why is react.
+
+31
+00:01:54,570 --> 00:01:59,170
+Rendering the application since we have the same value.
+
+32
+00:01:59,240 --> 00:02:00,470
+So this is the problem.
+
+33
+00:02:00,560 --> 00:02:05,930
+Sometimes you can have a larger application with a lot of data going around and some things are going
+
+34
+00:02:05,930 --> 00:02:12,800
+to be changing some other things are not going to change but Riak will always be rendered whenever we
+
+35
+00:02:13,010 --> 00:02:14,000
+trigger something.
+
+36
+00:02:14,270 --> 00:02:21,500
+So with pure components we can we can add we could detect if the state changes and if the state changes
+
+37
+00:02:21,560 --> 00:02:25,540
+then it's going to render if not it's not going to be rendered.
+
+38
+00:02:25,640 --> 00:02:31,960
+So if you remember with the chute component update we can do this logic manually going to go in and
+
+39
+00:02:31,970 --> 00:02:34,070
+comment should component update.
+
+40
+00:02:34,240 --> 00:02:36,180
+We're going to reload the page.
+
+41
+00:02:36,290 --> 00:02:42,020
+So right here we are going to say if the next state of title is something else which is what we have
+
+42
+00:02:42,110 --> 00:02:45,070
+right here the bottom of the return is false.
+
+43
+00:02:45,080 --> 00:02:47,940
+So the application will not render.
+
+44
+00:02:48,170 --> 00:02:53,220
+So going a click to change and you know it's change you get first and then.
+
+45
+00:02:53,300 --> 00:02:55,210
+Then they save it again.
+
+46
+00:02:55,220 --> 00:02:55,960
+Sorry.
+
+47
+00:02:56,500 --> 00:03:01,690
+I'm going to go and click the change and of course nothing happens because this rule is met.
+
+48
+00:03:01,760 --> 00:03:03,740
+So we return false.
+
+49
+00:03:03,740 --> 00:03:07,140
+Now the thing is that this information it's hard coded.
+
+50
+00:03:07,340 --> 00:03:10,150
+How can we check the previous state.
+
+51
+00:03:10,370 --> 00:03:16,610
+So what we can do we can say this that state and then of course title and we're going to be comparing
+
+52
+00:03:16,610 --> 00:03:22,250
+the next title which whatever thing that we have inside the state.
+
+53
+00:03:22,250 --> 00:03:25,190
+So right now we have life cycles and we are changing.
+
+54
+00:03:25,340 --> 00:03:27,540
+And of course we are changing to something else.
+
+55
+00:03:27,560 --> 00:03:33,290
+So the state will not be the same so this will not happen and it's going to go and change the state
+
+56
+00:03:33,350 --> 00:03:35,280
+and we've rendered the application.
+
+57
+00:03:35,300 --> 00:03:37,430
+Notice that right here we get the first render.
+
+58
+00:03:37,510 --> 00:03:39,350
+OK so going it could change.
+
+59
+00:03:39,530 --> 00:03:41,440
+We change it to something else that's good.
+
+60
+00:03:41,570 --> 00:03:43,440
+So it's rendered for the second time.
+
+61
+00:03:43,460 --> 00:03:48,270
+So if I click it again it's not going to render this condition is met.
+
+62
+00:03:48,380 --> 00:03:50,450
+So he's returning false.
+
+63
+00:03:50,600 --> 00:03:55,610
+Now again imagine you have a lot of data a lot of state going around here.
+
+64
+00:03:55,610 --> 00:03:56,740
+A lot of information.
+
+65
+00:03:56,900 --> 00:03:57,900
+So what are you going to.
+
+66
+00:03:57,920 --> 00:04:02,340
+How are you going to create one scenario for every piece of state that you have.
+
+67
+00:04:02,350 --> 00:04:04,560
+Well that's kind of crazy.
+
+68
+00:04:04,610 --> 00:04:10,400
+So re-act is going to give us a component that we can use and this are pure components.
+
+69
+00:04:10,430 --> 00:04:14,880
+So right here we are doing class lab class life expense component.
+
+70
+00:04:15,050 --> 00:04:18,330
+So what we can do we can bring pure components.
+
+71
+00:04:18,510 --> 00:04:22,080
+I'm going to copy and paste it down here.
+
+72
+00:04:22,160 --> 00:04:28,010
+I'm going to go at the bottom and again and just comment this out because we are not going to need it.
+
+73
+00:04:28,380 --> 00:04:28,630
+OK.
+
+74
+00:04:28,670 --> 00:04:33,770
+So I'm going to reload the page and click to change it of course the change is going to happen because
+
+75
+00:04:33,800 --> 00:04:35,780
+we have something else right here.
+
+76
+00:04:35,780 --> 00:04:38,910
+Of course we have a different title than it click it.
+
+77
+00:04:39,170 --> 00:04:41,170
+And of course it's a rendering.
+
+78
+00:04:41,210 --> 00:04:42,890
+So we get something else.
+
+79
+00:04:42,890 --> 00:04:48,570
+Now if I click that nothing happens the pure components it's checking the state.
+
+80
+00:04:48,590 --> 00:04:54,430
+And since we don't have a real change inside the state it's not going to do anything good.
+
+81
+00:04:54,440 --> 00:04:59,800
+You know this is really really useful and pure components are really popular today.
+
+82
+00:04:59,960 --> 00:05:05,570
+You know the sense why reloading the whole application if the state it's the same.
+
+83
+00:05:05,820 --> 00:05:06,790
+OK that's good.
+
+84
+00:05:06,940 --> 00:05:08,100
+Let's go to the next.
+
+85
+00:05:08,140 --> 00:05:08,880
+The next lecture.
+

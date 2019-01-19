@@ -1,0 +1,436 @@
+1
+00:00:00,830 --> 00:00:07,670
+OK so now let's connect with firebase to check if the user e-mail and the password are allowed to enter
+
+2
+00:00:07,710 --> 00:00:10,380
+so we can if we can indicate to user.
+
+3
+00:00:10,610 --> 00:00:16,970
+So first we're going to use firebase right here so we need to import firebase right here at the top.
+
+4
+00:00:17,030 --> 00:00:23,760
+So I'm going to put import opening close and firebase just like this.
+
+5
+00:00:23,900 --> 00:00:30,060
+And then from DOT DOT forest lashed out for Slash and then firebase.
+
+6
+00:00:30,070 --> 00:00:30,490
+All right.
+
+7
+00:00:30,560 --> 00:00:32,740
+So now we have firebase right here.
+
+8
+00:00:32,840 --> 00:00:38,600
+Now I'm going to go back to the firebase Julius dodgiest and we can see that we are actually exporting
+
+9
+00:00:38,600 --> 00:00:38,840
+this.
+
+10
+00:00:38,840 --> 00:00:41,340
+So you know that's why we can import it.
+
+11
+00:00:41,360 --> 00:00:47,090
+Now there's one more thing we can give you using a very specific method inside our base and it's going
+
+12
+00:00:47,090 --> 00:00:50,650
+to be called out just like we are using app and we are using databases.
+
+13
+00:00:50,780 --> 00:00:53,260
+We need to import this.
+
+14
+00:00:53,650 --> 00:00:55,530
+This package is part.
+
+15
+00:00:55,550 --> 00:00:56,750
+So it's going to be out.
+
+16
+00:00:57,060 --> 00:00:58,440
+That's that's the thing.
+
+17
+00:00:58,550 --> 00:01:02,000
+We just need to import firebase force lashed out.
+
+18
+00:01:02,060 --> 00:01:09,530
+So now right here inside of the index we can make a request to firebase to check if the user can't move
+
+19
+00:01:09,560 --> 00:01:10,340
+forward.
+
+20
+00:01:10,640 --> 00:01:14,090
+Now the first thing we need to use of course is we are importing firebase.
+
+21
+00:01:14,090 --> 00:01:15,540
+It's firebase right.
+
+22
+00:01:15,560 --> 00:01:20,510
+So firebase then we're going to use this method which calls auf.
+
+23
+00:01:20,780 --> 00:01:30,920
+And then since we are using a very specific type of indication we need to use sign in when we do it
+
+24
+00:01:30,920 --> 00:01:36,740
+like I guess everything is income OK sign in with email and passport just like that.
+
+25
+00:01:36,770 --> 00:01:41,470
+Sign in with email and password right here at this method again.
+
+26
+00:01:41,510 --> 00:01:44,150
+What it takes is going to be the user name.
+
+27
+00:01:44,150 --> 00:01:49,210
+These are e-mail and they use a password and we have everything inside data to submit.
+
+28
+00:01:49,220 --> 00:01:57,000
+So I'm going to say data to submit DOD e-mail coma and data to submitted and then passport.
+
+29
+00:01:57,410 --> 00:01:58,370
+And that is it.
+
+30
+00:01:58,370 --> 00:02:04,940
+So now this of course will return a promise then opening close and inside of here we will run a function.
+
+31
+00:02:04,950 --> 00:02:06,260
+The callback function.
+
+32
+00:02:06,260 --> 00:02:09,260
+Now if we get some erste we're going to do some catch.
+
+33
+00:02:09,410 --> 00:02:11,670
+And you know we could have that error.
+
+34
+00:02:11,750 --> 00:02:14,130
+And then of course we run a function.
+
+35
+00:02:14,150 --> 00:02:19,880
+Now if you get an error I get to do this that said state opening close and on the inside of the state
+
+36
+00:02:20,020 --> 00:02:25,160
+are going to change the form error we have on top on the state to true.
+
+37
+00:02:25,550 --> 00:02:28,460
+Remember on the enroll we pretty much did the same thing.
+
+38
+00:02:28,460 --> 00:02:33,320
+Now we need to add the the the label to our template.
+
+39
+00:02:33,330 --> 00:02:37,130
+It's going to go at the bottom and paste that one.
+
+40
+00:02:37,160 --> 00:02:40,070
+So if we do have an hour we're going to show the URL label.
+
+41
+00:02:40,280 --> 00:02:41,560
+You know something's wrong.
+
+42
+00:02:41,610 --> 00:02:43,270
+Just try again.
+
+43
+00:02:43,270 --> 00:02:44,090
+And that is it.
+
+44
+00:02:44,120 --> 00:02:47,770
+Now of course if the users or authenticated use begin to do something else.
+
+45
+00:02:47,900 --> 00:02:50,100
+But for now the only thing going to do.
+
+46
+00:02:50,130 --> 00:02:54,480
+Going to do cause a log you know user is out.
+
+47
+00:02:54,510 --> 00:02:55,470
+All right.
+
+48
+00:02:55,880 --> 00:02:57,590
+So the application will reload.
+
+49
+00:02:57,620 --> 00:03:03,680
+And I'm going to put the wrong e-mail right now the only user we have in the database on the other education
+
+50
+00:03:03,680 --> 00:03:09,750
+part it's Francis at gmail that come with a password of password 1 2 3.
+
+51
+00:03:10,220 --> 00:03:14,470
+So if I go here and put the wrong passport and put whatever it doesn't matter.
+
+52
+00:03:14,540 --> 00:03:17,820
+Going to log in and of course we get something is wrong.
+
+53
+00:03:17,840 --> 00:03:18,410
+Try again.
+
+54
+00:03:18,410 --> 00:03:25,360
+So we are entering this catch state because of course we get a not authenticated OK.
+
+55
+00:03:25,590 --> 00:03:27,430
+So what happens if I put the correct e-mail.
+
+56
+00:03:27,450 --> 00:03:35,310
+So I'm going to go right here and say that Francis at gmail dot com and password one two three are going
+
+57
+00:03:35,310 --> 00:03:38,210
+to log in and we get user is out.
+
+58
+00:03:38,290 --> 00:03:38,660
+All right.
+
+59
+00:03:38,670 --> 00:03:41,700
+So he's going to the console log users out.
+
+60
+00:03:41,940 --> 00:03:43,520
+So the user is it.
+
+61
+00:03:43,560 --> 00:03:46,380
+These are it's antiquated for sure.
+
+62
+00:03:46,380 --> 00:03:47,130
+All right.
+
+63
+00:03:47,130 --> 00:03:53,280
+So now if this happens what I want to do I want to push the user to the user dashboard.
+
+64
+00:03:53,280 --> 00:03:53,710
+Right.
+
+65
+00:03:53,820 --> 00:03:56,910
+We don't have that route but are going to do it anyways right here.
+
+66
+00:03:56,910 --> 00:04:01,470
+And then of course on the next section we will create delay out for the user dashboard.
+
+67
+00:04:01,470 --> 00:04:07,650
+So this that prompts that history this is how we push users to a different route.
+
+68
+00:04:07,680 --> 00:04:10,700
+And this is because we are using re-act router right.
+
+69
+00:04:10,890 --> 00:04:15,630
+If not we're not going to be able to do this inside the prompts whenever we render our route just like
+
+70
+00:04:15,630 --> 00:04:17,370
+this.
+
+71
+00:04:17,470 --> 00:04:18,740
+We can do this.
+
+72
+00:04:18,760 --> 00:04:24,220
+That prompts that history push and tell the application where we are going to go.
+
+73
+00:04:24,220 --> 00:04:28,500
+In this case I'm going to call it dashboard just like this.
+
+74
+00:04:28,570 --> 00:04:30,330
+You're going to read this in a minute.
+
+75
+00:04:30,340 --> 00:04:32,000
+Now there's one more thing with this.
+
+76
+00:04:32,200 --> 00:04:40,370
+If for example right here inside routes this is we are redirect directing the user within the index
+
+77
+00:04:40,510 --> 00:04:41,000
+yes.
+
+78
+00:04:41,140 --> 00:04:43,280
+Which is the sign in component.
+
+79
+00:04:43,300 --> 00:04:44,800
+We are importing at the top right.
+
+80
+00:04:44,800 --> 00:04:45,920
+It's the same one.
+
+81
+00:04:45,940 --> 00:04:51,250
+Now if you have a child component inside signing sign in inside this component you have a different
+
+82
+00:04:51,250 --> 00:04:53,850
+component and you just render it right here.
+
+83
+00:04:54,010 --> 00:05:00,370
+And instead of that component you're doing this that prompts patisseries that history that push it's
+
+84
+00:05:00,370 --> 00:05:05,520
+not going to work because you're not passing the props of their re-act router.
+
+85
+00:05:05,770 --> 00:05:07,650
+There's a different way to do it.
+
+86
+00:05:07,740 --> 00:05:08,650
+We're going to discuss.
+
+87
+00:05:08,650 --> 00:05:12,670
+And we're actually going to do it later or maybe on the next project but we're going to do it don't
+
+88
+00:05:12,670 --> 00:05:13,280
+worry.
+
+89
+00:05:13,540 --> 00:05:15,540
+But for now this is going to work.
+
+90
+00:05:15,540 --> 00:05:17,180
+We're going to push the user to that for it.
+
+91
+00:05:17,200 --> 00:05:18,770
+Let's see what happens.
+
+92
+00:05:18,940 --> 00:05:25,770
+Going to re load the application I got to do Frances and then passport one two three.
+
+93
+00:05:25,860 --> 00:05:32,430
+I got to log in and we go to dashboard of course on the next section we're going to do the dashboard
+
+94
+00:05:32,440 --> 00:05:33,670
+so we can have that ready.
+
+95
+00:05:33,790 --> 00:05:37,360
+But then we need to fix different problems right now.
+
+96
+00:05:37,360 --> 00:05:39,710
+In theory I am of antiquated.
+
+97
+00:05:39,820 --> 00:05:48,230
+If I go to application and check the local storage or session storage What's the local storage we have
+
+98
+00:05:48,230 --> 00:05:54,640
+you know something we're firebase of course we get a lot of cookies but we are pretty much a authenticated.
+
+99
+00:05:54,640 --> 00:06:00,570
+Now the thing is that if Phi of course if I am not authenticated I shouldn't be able to go to dashboard
+
+100
+00:06:01,240 --> 00:06:05,530
+and if I am I am authenticated for sure.
+
+101
+00:06:05,630 --> 00:06:11,200
+And if I go to sign in we shouldn't be able to go to sea to get the components signed in because we
+
+102
+00:06:11,200 --> 00:06:12,640
+are already authenticated.
+
+103
+00:06:12,640 --> 00:06:13,390
+Right.
+
+104
+00:06:13,420 --> 00:06:20,760
+So we need a way to prevent public routes the private routes and a way to prevent that if the user already
+
+105
+00:06:20,790 --> 00:06:22,160
+authenticate it.
+
+106
+00:06:22,320 --> 00:06:24,710
+Go to dashboard instead of instead of rendering.
+
+107
+00:06:24,760 --> 00:06:28,050
+Is Logan going to do this on the next few lectures.
+
+108
+00:06:28,230 --> 00:06:32,070
+Well let's go to the next one and we're going to create the dashboard component.
+
+109
+00:06:32,080 --> 00:06:33,620
+It's going to be really really simple.
+

@@ -1,0 +1,992 @@
+1
+00:00:00,770 --> 00:00:06,200
+OK so now we are going to be entering Brandt's And what we're going to move forward out of the users.
+
+2
+00:00:06,260 --> 00:00:06,950
+So.
+
+3
+00:00:07,130 --> 00:00:12,370
+And I'm locked in as a as an administrator and in the final project.
+
+4
+00:00:12,470 --> 00:00:17,430
+And we get to manage categories and we will be able to add categories things to different categories.
+
+5
+00:00:17,570 --> 00:00:22,700
+In this case we have the Brandts category and then what's now for each begin to create a new model.
+
+6
+00:00:22,880 --> 00:00:28,670
+Now in the future when this course is already out and everything else and I'm adding bonus sections
+
+7
+00:00:28,910 --> 00:00:34,130
+are going to add a different way to manage categories because you know we are going to create two different
+
+8
+00:00:34,130 --> 00:00:38,690
+models and maybe that is a lot of work if you have a 10000 category categories.
+
+9
+00:00:38,840 --> 00:00:41,060
+But right now again we are just practicing.
+
+10
+00:00:41,060 --> 00:00:44,400
+So we need to practice the model creation and everything else.
+
+11
+00:00:44,450 --> 00:00:46,260
+So we're going to create two different models.
+
+12
+00:00:46,390 --> 00:00:47,510
+The way it's going to be reasonable.
+
+13
+00:00:47,510 --> 00:00:48,150
+Don't worry.
+
+14
+00:00:48,380 --> 00:00:54,610
+So first to make the requests at least for brands we will need around.
+
+15
+00:00:54,650 --> 00:01:00,310
+So I'm going to create brand and I'm going to create two different routes.
+
+16
+00:01:00,380 --> 00:01:07,570
+Now of course the route needs to start with a different location so it's up just like this post open
+
+17
+00:01:07,580 --> 00:01:13,820
+and close and still we make a request to API for Slash and now I'm going to say product this is the
+
+18
+00:01:13,820 --> 00:01:16,840
+key word for the products related things.
+
+19
+00:01:17,210 --> 00:01:26,210
+And there's one brand now of course since we are posting things the only people can upload things to
+
+20
+00:01:26,210 --> 00:01:28,730
+our database need to be authenticated.
+
+21
+00:01:28,730 --> 00:01:29,520
+So I'm going to use that.
+
+22
+00:01:29,540 --> 00:01:34,220
+Our middleware and after that happens we're going to run a function.
+
+23
+00:01:34,280 --> 00:01:38,010
+Now we're going to do one more thing in a couple of minutes right here.
+
+24
+00:01:38,300 --> 00:01:42,020
+So request coma and a response.
+
+25
+00:01:42,070 --> 00:01:46,910
+Now we need to create a new brand new brand inside of the database.
+
+26
+00:01:46,910 --> 00:01:48,560
+The thing is that we don't have a model.
+
+27
+00:01:48,560 --> 00:01:50,210
+We have only a model for users.
+
+28
+00:01:50,240 --> 00:01:52,550
+So we need to create a model for this.
+
+29
+00:01:52,580 --> 00:01:58,730
+So we're going to go to models and file and then brand that jazz.
+
+30
+00:01:58,760 --> 00:02:03,720
+Now a lot of things if they just look like user so I'm going to go right here.
+
+31
+00:02:03,890 --> 00:02:09,450
+Copy mongoose and paste mongoose right now we need to create a schema.
+
+32
+00:02:10,010 --> 00:02:11,090
+So we're going to go right here.
+
+33
+00:02:11,090 --> 00:02:20,330
+The bottom Konst brand the key word of what we want to use and then schema equals to mongoose and always
+
+34
+00:02:20,440 --> 00:02:21,010
+schema.
+
+35
+00:02:21,020 --> 00:02:23,740
+In this case because we need to pass an object.
+
+36
+00:02:23,900 --> 00:02:27,520
+Now the brands are going to be real simple we just get a name.
+
+37
+00:02:27,610 --> 00:02:35,990
+So I'm going to say name the name needs to be required so we're going to say required equals to coma.
+
+38
+00:02:36,320 --> 00:02:37,660
+What type of this.
+
+39
+00:02:37,910 --> 00:02:40,750
+So it's going to be a type of a string not a number.
+
+40
+00:02:41,270 --> 00:02:43,970
+Then a coma you're going to use unique.
+
+41
+00:02:44,240 --> 00:02:52,310
+So all the brands are unique so unique one coma and are going to add a max length just like this of
+
+42
+00:02:52,570 --> 00:02:56,840
+100 max length.
+
+43
+00:02:56,840 --> 00:02:57,460
+All right.
+
+44
+00:02:57,480 --> 00:02:59,600
+And this is it resample.
+
+45
+00:02:59,660 --> 00:03:05,870
+So first I need to create a brand and this is what it's going to be equal to a mongoose and we create
+
+46
+00:03:05,870 --> 00:03:06,860
+the model.
+
+47
+00:03:06,860 --> 00:03:13,070
+The model is going to be based in what we do as a brand schema and we need to assign a new name so it's
+
+48
+00:03:13,070 --> 00:03:16,720
+going to be brand coma and brand schema.
+
+49
+00:03:16,720 --> 00:03:18,430
+All right.
+
+50
+00:03:18,440 --> 00:03:28,510
+So now I'm going to go right here and say module module loops module that exports and we export brand
+
+51
+00:03:28,850 --> 00:03:31,770
+with a capital B.
+
+52
+00:03:32,050 --> 00:03:32,470
+All right.
+
+53
+00:03:32,550 --> 00:03:36,520
+So now the brand it's ready to be used.
+
+54
+00:03:36,540 --> 00:03:37,080
+All right.
+
+55
+00:03:37,410 --> 00:03:43,170
+So I'm going to go to server and of course we need to put this on the server so we can use it.
+
+56
+00:03:43,170 --> 00:03:54,750
+So again we're going to go right here and say Konst brand brand equal re-acquire And you know brands
+
+57
+00:03:54,780 --> 00:03:59,320
+are going to copy this models and then brand.
+
+58
+00:03:59,580 --> 00:04:00,040
+All right.
+
+59
+00:04:00,120 --> 00:04:02,080
+So now we have the brand right here.
+
+60
+00:04:03,400 --> 00:04:07,920
+So inside of brand what we need to do we need to create a new brand.
+
+61
+00:04:07,990 --> 00:04:13,030
+So Konst brand equals new and then brand
+
+62
+00:04:16,820 --> 00:04:22,640
+OK to open and close and what are you going to be getting is the request and whatever we are passing
+
+63
+00:04:22,790 --> 00:04:24,320
+inside the body.
+
+64
+00:04:24,320 --> 00:04:25,120
+All right.
+
+65
+00:04:25,730 --> 00:04:28,420
+So next we entered that brand.
+
+66
+00:04:28,460 --> 00:04:38,000
+We do save opening close and we will be getting an error and a document back from mongoose or Mongo
+
+67
+00:04:38,000 --> 00:04:38,730
+D-B.
+
+68
+00:04:38,780 --> 00:04:48,530
+So if we do get an error what I want to do I want to return our response with Jaison response and success
+
+69
+00:04:49,310 --> 00:04:50,950
+just like this falls.
+
+70
+00:04:50,990 --> 00:04:55,630
+And if not of course we will attach the error is simple.
+
+71
+00:04:55,670 --> 00:05:04,830
+Now if everything goes OK I went to send that response with a status of two hundred a coma Jaison and
+
+72
+00:05:04,850 --> 00:05:06,840
+adjacent response success.
+
+73
+00:05:06,950 --> 00:05:08,470
+Just the same thing we did right here.
+
+74
+00:05:08,480 --> 00:05:10,390
+But the opposite success.
+
+75
+00:05:10,490 --> 00:05:16,910
+True and I got to be sending back the actual brand we just enter which is going to be dark again by
+
+76
+00:05:16,910 --> 00:05:17,660
+default.
+
+77
+00:05:17,670 --> 00:05:23,020
+The safe returns whenever we just enter to the database and that is it.
+
+78
+00:05:23,090 --> 00:05:25,150
+So let's test the route.
+
+79
+00:05:25,150 --> 00:05:26,490
+Can it copy this.
+
+80
+00:05:26,570 --> 00:05:32,800
+And first are going to do the following going to go to waifs are going to add a new folder.
+
+81
+00:05:32,810 --> 00:05:41,200
+And since this is going to be related to users I'm going to store inside directory users.
+
+82
+00:05:41,210 --> 00:05:41,710
+All right.
+
+83
+00:05:41,860 --> 00:05:50,210
+And I'm going to close this because we don't need it don't save whatever close it close it.
+
+84
+00:05:50,210 --> 00:05:51,320
+All right.
+
+85
+00:05:51,320 --> 00:05:59,690
+So again it's going to be a post request and we are using the environment virals So you are l and then
+
+86
+00:05:59,690 --> 00:06:01,820
+we paste the location.
+
+87
+00:06:01,820 --> 00:06:10,310
+Of course we need to set the headers of content type content type and then application that Jason and
+
+88
+00:06:10,400 --> 00:06:11,680
+I did it again.
+
+89
+00:06:11,730 --> 00:06:14,130
+Whoops sorry.
+
+90
+00:06:14,390 --> 00:06:23,330
+Content-Type then body Rawle and then Jason The only thing we are accepting accepting on the brand model
+
+91
+00:06:23,330 --> 00:06:25,230
+and schema is the name.
+
+92
+00:06:25,250 --> 00:06:32,180
+So we just pass an object which has to name some going to say name it calls and again it put my favorite
+
+93
+00:06:32,690 --> 00:06:33,160
+brand.
+
+94
+00:06:33,170 --> 00:06:35,060
+I have many favorites.
+
+95
+00:06:35,060 --> 00:06:36,970
+So this one it's my favorite.
+
+96
+00:06:37,240 --> 00:06:37,560
+OK.
+
+97
+00:06:37,640 --> 00:06:43,210
+So I'm going to click consent and we get is all false and are true.
+
+98
+00:06:43,400 --> 00:06:44,970
+So why is this happening.
+
+99
+00:06:45,080 --> 00:06:47,850
+And it's because the cookie we do have a cookie.
+
+100
+00:06:47,990 --> 00:06:53,680
+But since I locked out the cookie it's not good anymore right.
+
+101
+00:06:53,750 --> 00:06:58,060
+So we need to log in again how we can do it are going to go right here.
+
+102
+00:06:58,370 --> 00:07:01,170
+I'm going to go to log in and we can log in again.
+
+103
+00:07:01,190 --> 00:07:03,710
+Remember we can we store all of this.
+
+104
+00:07:03,740 --> 00:07:06,480
+So there's one it's not France is 4 5.
+
+105
+00:07:06,500 --> 00:07:08,830
+France is for our consent.
+
+106
+00:07:08,870 --> 00:07:10,020
+And I'm logged in.
+
+107
+00:07:10,160 --> 00:07:14,920
+So I'm going to go back again and again to send the same request again and we get success true.
+
+108
+00:07:15,110 --> 00:07:16,900
+The brand name it's Ivan S..
+
+109
+00:07:16,940 --> 00:07:18,360
+And the idea is this.
+
+110
+00:07:18,380 --> 00:07:23,730
+So if you go to Wake's right here with me do a refresh.
+
+111
+00:07:23,900 --> 00:07:26,880
+We get a new brand of evenness.
+
+112
+00:07:26,930 --> 00:07:27,410
+Very good.
+
+113
+00:07:27,410 --> 00:07:28,990
+So this is working.
+
+114
+00:07:29,060 --> 00:07:34,820
+So maybe you noticed a tiny tiny tiny tiny problem.
+
+115
+00:07:34,820 --> 00:07:36,380
+So I am a user.
+
+116
+00:07:36,570 --> 00:07:40,780
+This Francis 4 is a user right here.
+
+117
+00:07:41,120 --> 00:07:44,600
+And of course the token now it's OK and everything is OK.
+
+118
+00:07:44,750 --> 00:07:47,410
+But the role it's zero.
+
+119
+00:07:47,430 --> 00:07:50,920
+So this actually is incorrect.
+
+120
+00:07:51,120 --> 00:07:57,450
+Any user that the normal users they are not allowed to store brands you know they shouldn't be allowed
+
+121
+00:07:57,450 --> 00:08:00,340
+to store whatever they want into our server.
+
+122
+00:08:00,630 --> 00:08:05,880
+So what we need to do we need to create a new middleware that is going to be checking not only if they
+
+123
+00:08:05,880 --> 00:08:09,360
+are antiquated but they're going to be checking.
+
+124
+00:08:09,390 --> 00:08:11,630
+It's going to be checking if they're an admin.
+
+125
+00:08:11,790 --> 00:08:13,150
+So you can do it on out.
+
+126
+00:08:13,230 --> 00:08:15,320
+You could really do it on the same out.
+
+127
+00:08:15,570 --> 00:08:21,940
+But again just to show you that we can chain middleware is going to create an admin matter where it's
+
+128
+00:08:21,950 --> 00:08:22,640
+going to go to.
+
+129
+00:08:22,660 --> 00:08:25,890
+We're going to be real simple and I'm going to call it admin.
+
+130
+00:08:26,070 --> 00:08:27,680
+Yes.
+
+131
+00:08:27,810 --> 00:08:32,980
+So this mean that GST thing is going to do is going to check the role really simple.
+
+132
+00:08:33,210 --> 00:08:36,280
+So let admen equals.
+
+133
+00:08:36,510 --> 00:08:39,820
+We still get that a request response and the next.
+
+134
+00:08:39,900 --> 00:08:45,730
+Just like with with the with request response and next.
+
+135
+00:08:45,750 --> 00:08:50,520
+And then of course we get NF and we're going to do some checking if everything goes OK.
+
+136
+00:08:50,520 --> 00:08:52,320
+We're going to do next.
+
+137
+00:08:52,320 --> 00:08:53,020
+All right.
+
+138
+00:08:53,450 --> 00:08:55,640
+So sorry next.
+
+139
+00:08:56,250 --> 00:09:04,740
+So if the request that user that roll it's triple equal to zero it's not allowed.
+
+140
+00:09:04,830 --> 00:09:06,970
+Ron let me do three equals.
+
+141
+00:09:07,110 --> 00:09:07,990
+It's not an out.
+
+142
+00:09:08,070 --> 00:09:10,130
+So I'm going to return.
+
+143
+00:09:10,810 --> 00:09:13,620
+I'm going to send a response and the response I'm going to send.
+
+144
+00:09:13,620 --> 00:09:14,800
+It's going to be very silly.
+
+145
+00:09:15,090 --> 00:09:18,870
+So you are not allowed.
+
+146
+00:09:19,080 --> 00:09:21,110
+Get out now.
+
+147
+00:09:21,120 --> 00:09:22,450
+Something like that whatever.
+
+148
+00:09:22,770 --> 00:09:23,960
+So again right here.
+
+149
+00:09:23,970 --> 00:09:27,470
+You made might have different roles maybe a zero.
+
+150
+00:09:27,480 --> 00:09:28,830
+It's common users.
+
+151
+00:09:28,860 --> 00:09:33,250
+The next one it's administrators but they cannot post right because that could happen.
+
+152
+00:09:33,480 --> 00:09:35,000
+And of course what you're going to do.
+
+153
+00:09:35,010 --> 00:09:36,320
+You can do just several things.
+
+154
+00:09:36,330 --> 00:09:40,490
+You know several levels of of Abyan check.
+
+155
+00:09:40,860 --> 00:09:47,250
+And what you can do you can also check that request because maybe what they are trying to do is maybe
+
+156
+00:09:47,250 --> 00:09:52,000
+a post or maybe they can update it when they can they can update things but not post.
+
+157
+00:09:52,230 --> 00:09:58,850
+So inside of the request you can check if the user is doing what is the nature of this route.
+
+158
+00:09:58,980 --> 00:10:01,880
+If it's a post it has an update or does it get.
+
+159
+00:10:02,120 --> 00:10:09,240
+So right here for example you could say OK if the user eats one it means that it's allowed to update
+
+160
+00:10:09,570 --> 00:10:13,280
+and it's not allowed but it's not allowed to you know to post.
+
+161
+00:10:13,290 --> 00:10:19,920
+So I hear you could check if the request for example it's update or post and let the user move forward
+
+162
+00:10:20,040 --> 00:10:20,970
+or not.
+
+163
+00:10:20,970 --> 00:10:22,600
+Real simple right here.
+
+164
+00:10:22,650 --> 00:10:23,970
+We just have two levels.
+
+165
+00:10:24,210 --> 00:10:28,550
+Come users in a ministry years the administrators can do whatever they want.
+
+166
+00:10:28,740 --> 00:10:29,430
+All right.
+
+167
+00:10:29,640 --> 00:10:36,600
+So if the user is trying to post something to this route and it's not an illustrator we're going to
+
+168
+00:10:36,660 --> 00:10:37,420
+send this message.
+
+169
+00:10:37,440 --> 00:10:42,450
+If not they are allowed to move forward so we can get called next.
+
+170
+00:10:42,450 --> 00:10:49,090
+Then of course module that exports calls and we need to make this available from other components.
+
+171
+00:10:49,290 --> 00:10:53,130
+So I'm going to go back here and we need to import middleware.
+
+172
+00:10:53,130 --> 00:10:53,620
+Right.
+
+173
+00:10:53,700 --> 00:11:02,680
+Just like with it without going to copy and paste so outman and the require It's going to be admin.
+
+174
+00:11:02,730 --> 00:11:04,660
+So now we are making a reference to our.
+
+175
+00:11:04,680 --> 00:11:09,530
+Which is the first level check and then they were going to check it can check if it's been going to
+
+176
+00:11:09,540 --> 00:11:10,490
+save it.
+
+177
+00:11:10,620 --> 00:11:12,710
+They're going to try to add a different name.
+
+178
+00:11:12,780 --> 00:11:16,580
+Maybe Fender are not going to do it again.
+
+179
+00:11:16,590 --> 00:11:20,570
+And remember that this Franz's for it's not an administrator.
+
+180
+00:11:20,700 --> 00:11:23,070
+So I'm going to send that and we get you're not allowed.
+
+181
+00:11:23,070 --> 00:11:23,960
+Get out now.
+
+182
+00:11:24,070 --> 00:11:26,290
+So it's get it's not passing.
+
+183
+00:11:26,460 --> 00:11:33,290
+Of course if I go back and manually change this to roll of one I'm going to save it.
+
+184
+00:11:33,720 --> 00:11:34,940
+I'm going to try it again.
+
+185
+00:11:35,190 --> 00:11:36,350
+And it's passing.
+
+186
+00:11:36,600 --> 00:11:37,380
+Right.
+
+187
+00:11:37,380 --> 00:11:38,280
+So that is good.
+
+188
+00:11:38,550 --> 00:11:43,550
+So now we need to get to France and this is when he's going to be really simple.
+
+189
+00:11:43,650 --> 00:11:54,210
+So app that get and it's going to be forward slash API product and instead of brand it's going to be
+
+190
+00:11:54,210 --> 00:12:01,210
+Brant's what you can do YOU CAN DO get Brant's whatever doesn't matter just whatever name you want.
+
+191
+00:12:01,260 --> 00:12:11,010
+So from this route we will be receiving of course our request our response and what we do we enter brand
+
+192
+00:12:11,110 --> 00:12:15,930
+this brand because we've imported right here the top and what we're going to do.
+
+193
+00:12:15,930 --> 00:12:22,140
+We're going to find all brands that this is the only thing we're going to do with Brant's why we are
+
+194
+00:12:22,180 --> 00:12:25,350
+fetching all the brands because we need all the brands.
+
+195
+00:12:25,350 --> 00:12:31,560
+The only place where we can be making this request is from the admin side of things when we enter a
+
+196
+00:12:31,560 --> 00:12:35,970
+new product and we want to get all the brands right.
+
+197
+00:12:36,240 --> 00:12:36,660
+Okay.
+
+198
+00:12:36,810 --> 00:12:37,510
+So that is good.
+
+199
+00:12:37,620 --> 00:12:41,970
+So we say find and we say Bring everything that you have on the database.
+
+200
+00:12:42,000 --> 00:12:48,550
+Inside these documents so our brands model actually.
+
+201
+00:12:48,690 --> 00:12:56,910
+So brands and of course if we get an error we can send error and churn down.
+
+202
+00:12:57,170 --> 00:13:01,300
+So we return responds with a status of 400.
+
+203
+00:13:01,440 --> 00:13:02,270
+The usual stuff.
+
+204
+00:13:02,280 --> 00:13:07,360
+After a while you get bored doing this just like the way it is then response.
+
+205
+00:13:07,380 --> 00:13:12,730
+And we said in a status of 200 everything goes OK.
+
+206
+00:13:12,990 --> 00:13:20,400
+And what you sent is you get an object back from a mongoose or Mungo you sent the Brandt's which is
+
+207
+00:13:20,400 --> 00:13:21,540
+this brand and right.
+
+208
+00:13:21,550 --> 00:13:26,430
+What we get from the Find that is that we make a request from here.
+
+209
+00:13:26,470 --> 00:13:33,330
+Does it matter if we are of authenticated or not they're going to go here are going to save this and
+
+210
+00:13:33,460 --> 00:13:39,930
+Kloser users are going to save it inside of brands.
+
+211
+00:13:40,630 --> 00:13:42,870
+I could save it inside a product that doesn't matter.
+
+212
+00:13:43,080 --> 00:13:47,140
+So brand going out of course create a new one.
+
+213
+00:13:47,190 --> 00:13:50,040
+This one is going to be a good mustache.
+
+214
+00:13:50,130 --> 00:14:00,300
+You r l groups u r l I paste and of course I sent and that is that we get Ivan as an offender the only
+
+215
+00:14:00,300 --> 00:14:08,520
+two things we get on the database now one more thing before you move forward later when we are done
+
+216
+00:14:08,520 --> 00:14:15,790
+with the server we need to have several brands just like we get right here.
+
+217
+00:14:16,710 --> 00:14:20,460
+And we're going to we're going to get several words and everything else.
+
+218
+00:14:20,550 --> 00:14:27,810
+So I don't want you to know start going to postman an ad and adding several brands manually so far on
+
+219
+00:14:27,810 --> 00:14:28,530
+the server.
+
+220
+00:14:28,650 --> 00:14:31,890
+So I'm going to give you I'm going to put it right here.
+
+221
+00:14:31,890 --> 00:14:38,510
+A directory called Jason's And you can get a Jason with our adjacent file.
+
+222
+00:14:38,550 --> 00:14:42,440
+It's going it looks like it is file with all the brands and the IDs.
+
+223
+00:14:42,540 --> 00:14:48,030
+So what you can do you can grab that file delete what we have inside Brandt's so far this and you can
+
+224
+00:14:48,030 --> 00:14:52,120
+import that Jason File and you will get all of the list of brands.
+
+225
+00:14:52,170 --> 00:14:57,320
+I already did the job of entering all the brand so there's no need for you to manually enter everything.
+
+226
+00:14:57,510 --> 00:14:58,230
+All right.
+
+227
+00:14:58,440 --> 00:14:59,310
+I'm going to do it right now.
+
+228
+00:14:59,310 --> 00:15:02,650
+I'm going to bring the file and then I'm going to import it right here with you.
+
+229
+00:15:03,240 --> 00:15:03,540
+OK.
+
+230
+00:15:03,540 --> 00:15:05,790
+So it's a directory called Jason's.
+
+231
+00:15:05,900 --> 00:15:07,540
+And I'm going to give you several Jasons.
+
+232
+00:15:07,710 --> 00:15:10,990
+And this one called Brandt's and we get all the brands.
+
+233
+00:15:11,120 --> 00:15:14,020
+So I'm going to pretty much copy all of this.
+
+234
+00:15:14,070 --> 00:15:16,410
+I'm going to go to robo three.
+
+235
+00:15:16,570 --> 00:15:20,530
+I'm going to select pretty much everything and I'm going to delete documents.
+
+236
+00:15:20,970 --> 00:15:21,720
+Yes.
+
+237
+00:15:21,900 --> 00:15:24,530
+I'm going to close all of this because we really need this.
+
+238
+00:15:25,750 --> 00:15:29,800
+Now instead of Brandt's are going to do a right click and insert documents.
+
+239
+00:15:29,950 --> 00:15:37,920
+So what we need to do we just need to paste all the brands right there and then do save and open Brandt's.
+
+240
+00:15:37,940 --> 00:15:38,720
+And there we go.
+
+241
+00:15:38,750 --> 00:15:40,530
+We get all the brands.
+
+242
+00:15:40,730 --> 00:15:41,220
+All right.
+
+243
+00:15:41,300 --> 00:15:41,530
+OK.
+
+244
+00:15:41,540 --> 00:15:46,280
+So the next thing is going to be adding the types type of words.
+
+245
+00:15:46,460 --> 00:15:48,350
+So let's go to the next section and do that.
+
+246
+00:15:48,360 --> 00:15:52,430
+But now it's going to be much much easier because we've already have the admin and everything else we
+
+247
+00:15:52,430 --> 00:15:54,620
+just need to create a route and that's it.
+
+248
+00:15:54,620 --> 00:15:56,790
+So let's go to the next one and do that real quick.
+

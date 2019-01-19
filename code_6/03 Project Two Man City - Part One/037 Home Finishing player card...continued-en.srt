@@ -1,0 +1,472 @@
+1
+00:00:00,410 --> 00:00:02,800
+Write so let's create the player cart.
+
+2
+00:00:02,970 --> 00:00:07,890
+So again we are going to use it I'm going to use the play cards inside of the team.
+
+3
+00:00:07,890 --> 00:00:09,920
+Same same same components.
+
+4
+00:00:10,260 --> 00:00:13,700
+So we're going to make it reusable component.
+
+5
+00:00:13,710 --> 00:00:14,200
+All right.
+
+6
+00:00:14,450 --> 00:00:17,200
+So I going to go here and go to you.
+
+7
+00:00:17,220 --> 00:00:20,850
+I create a new file player.
+
+8
+00:00:21,000 --> 00:00:22,320
+And then the card.
+
+9
+00:00:22,540 --> 00:00:23,400
+Yes.
+
+10
+00:00:23,520 --> 00:00:26,550
+This one is going to be a re-act stateless component.
+
+11
+00:00:26,900 --> 00:00:27,580
+Did it work.
+
+12
+00:00:27,600 --> 00:00:33,660
+Reacts the last component and it was like going to change the capital player card.
+
+13
+00:00:33,990 --> 00:00:34,570
+All right.
+
+14
+00:00:35,010 --> 00:00:41,070
+So this play your card and right now we're going to make a prefixed information is going to be always
+
+15
+00:00:41,070 --> 00:00:48,690
+this player on the 4 on four images if you want later you can fetch the players from the database and
+
+16
+00:00:48,690 --> 00:00:52,170
+just bring four and loop through the four players.
+
+17
+00:00:52,170 --> 00:00:55,500
+But for now I'm just going to have you know hard code the information.
+
+18
+00:00:55,800 --> 00:01:01,140
+So this player will be receiving this card will be receiving always some props with the name of the
+
+19
+00:01:01,140 --> 00:01:03,330
+player the number and everything else.
+
+20
+00:01:03,330 --> 00:01:03,600
+Right.
+
+21
+00:01:03,600 --> 00:01:04,900
+Makes sense.
+
+22
+00:01:04,920 --> 00:01:14,180
+So what it will be returning is going to be a class name with play your card and then wrapper.
+
+23
+00:01:14,670 --> 00:01:15,490
+All right.
+
+24
+00:01:15,870 --> 00:01:21,570
+So now we're going to look at that just like that's going to go to carts and from here I'm going to
+
+25
+00:01:21,570 --> 00:01:31,500
+import you know these components so import and it's going to be play your card from and then that for
+
+26
+00:01:31,500 --> 00:01:32,340
+Slash.
+
+27
+00:01:32,730 --> 00:01:33,070
+Oops.
+
+28
+00:01:33,120 --> 00:01:35,800
+Not that not three dots for us.
+
+29
+00:01:36,020 --> 00:01:40,970
+And it's you I for Slash play your cart right.
+
+30
+00:01:41,040 --> 00:01:47,630
+So since we have the player card we're going to go right here at the bottom and include it by the components.
+
+31
+00:01:47,730 --> 00:01:49,220
+That's what the thing to do.
+
+32
+00:01:49,380 --> 00:01:52,300
+Now of course we need to pass the props maybe later.
+
+33
+00:01:52,320 --> 00:01:54,650
+And actually we're going to do it on the team.
+
+34
+00:01:54,700 --> 00:01:56,620
+We're going to be rendering that card.
+
+35
+00:01:56,640 --> 00:02:00,160
+And from the server we will fetch a list of all the players.
+
+36
+00:02:00,180 --> 00:02:05,430
+So it's always the same component rendering different name different images and different number.
+
+37
+00:02:05,550 --> 00:02:10,070
+And of course we have the you know the position of the player but that comes from the database I can't
+
+38
+00:02:10,080 --> 00:02:11,760
+worry about that later.
+
+39
+00:02:11,940 --> 00:02:17,480
+So the player card receives a number which is in this case 30 whatever.
+
+40
+00:02:17,490 --> 00:02:24,870
+Doesn't matter the name which is going to be Nickolas and then the last name of the player.
+
+41
+00:02:24,870 --> 00:02:26,320
+And in this case.
+
+42
+00:02:26,690 --> 00:02:27,150
+Yeah.
+
+43
+00:02:28,110 --> 00:02:29,270
+There we go.
+
+44
+00:02:29,370 --> 00:02:33,030
+Then we have a background which is a background image that we're going to be using.
+
+45
+00:02:33,090 --> 00:02:36,900
+And if you remember we've imported that at the top right here.
+
+46
+00:02:37,110 --> 00:02:41,010
+So I'm going to put it right here.
+
+47
+00:02:41,050 --> 00:02:46,880
+So now this player card this component is reusable components will be getting all the props right here.
+
+48
+00:02:46,920 --> 00:02:50,200
+So now the only thing we need to do is just finish the template.
+
+49
+00:02:50,520 --> 00:02:55,410
+So I've got Dave opening close and am going to remove this.
+
+50
+00:02:55,710 --> 00:03:00,620
+We get to get a class name off and it's player card.
+
+51
+00:03:00,850 --> 00:03:06,460
+T t h him B for you know short thumbnail.
+
+52
+00:03:06,750 --> 00:03:08,300
+I got to put it right here.
+
+53
+00:03:08,340 --> 00:03:10,100
+So now a little bit prettier.
+
+54
+00:03:11,070 --> 00:03:18,000
+All right then we need to set the style for this with the background so background just like this is
+
+55
+00:03:18,050 --> 00:03:24,900
+going to be equal to we will use template strings and I'm going to use that you know a kind of a grayish
+
+56
+00:03:24,900 --> 00:03:25,570
+color.
+
+57
+00:03:25,680 --> 00:03:26,770
+It's not white.
+
+58
+00:03:26,840 --> 00:03:29,130
+You see it.
+
+59
+00:03:29,130 --> 00:03:37,630
+So the color it's a hash then EF 2 EF 9 and then f f.
+
+60
+00:03:37,950 --> 00:03:38,640
+All right.
+
+61
+00:03:38,640 --> 00:03:42,200
+And then of course we need to pass a u r l opening close.
+
+62
+00:03:42,230 --> 00:03:53,590
+We pass that Propst b c k we are passing from the parent component B C K opes b c k that will go.
+
+63
+00:03:53,770 --> 00:03:55,970
+So now at least we get the thumbnail.
+
+64
+00:03:55,980 --> 00:03:56,610
+All right.
+
+65
+00:03:56,770 --> 00:03:58,970
+It looks weird but you know it works.
+
+66
+00:03:58,970 --> 00:04:00,870
+It really works.
+
+67
+00:04:00,910 --> 00:04:01,920
+It is alive.
+
+68
+00:04:01,930 --> 00:04:02,950
+All right.
+
+69
+00:04:02,950 --> 00:04:11,160
+So at the bottom they've open it closed and we pass a class name of player card info.
+
+70
+00:04:11,170 --> 00:04:11,560
+Right.
+
+71
+00:04:11,560 --> 00:04:14,070
+Makes sense to cart the player info.
+
+72
+00:04:14,380 --> 00:04:17,850
+And on top we have the number of the player and at the bottom floating.
+
+73
+00:04:18,010 --> 00:04:19,520
+We have the player name.
+
+74
+00:04:19,630 --> 00:04:31,740
+So Dave opening close the class name its player card number and the number it's of course from prompts
+
+75
+00:04:31,750 --> 00:04:35,100
+we get from prompts Propst that number.
+
+76
+00:04:35,300 --> 00:04:37,460
+Next Dave open it close.
+
+77
+00:04:37,480 --> 00:04:42,220
+The class is now going to copy this class name.
+
+78
+00:04:42,460 --> 00:04:44,350
+It's going to be player card.
+
+79
+00:04:44,380 --> 00:04:46,550
+And then of course names just a name.
+
+80
+00:04:46,760 --> 00:04:48,910
+And we'll have have the name and the last name.
+
+81
+00:04:48,910 --> 00:04:52,270
+So we have two different props one with the name and one with the last name.
+
+82
+00:04:52,420 --> 00:04:56,610
+So we'll use two pants props that name.
+
+83
+00:04:56,710 --> 00:04:59,780
+And at the bottom we will use the last name.
+
+84
+00:04:59,800 --> 00:05:01,610
+So it's props.
+
+85
+00:05:01,660 --> 00:05:06,790
+That last name and that is when we are done with a player card.
+
+86
+00:05:07,150 --> 00:05:09,190
+So if I reloaded.
+
+87
+00:05:09,610 --> 00:05:10,870
+We are not getting it.
+
+88
+00:05:10,870 --> 00:05:12,460
+Maybe I made a mistake right here.
+
+89
+00:05:12,490 --> 00:05:13,890
+Let me just all check.
+
+90
+00:05:14,290 --> 00:05:19,090
+All right so for this it's name or no number.
+
+91
+00:05:19,220 --> 00:05:21,830
+You saw this and you say dude your mistake.
+
+92
+00:05:22,270 --> 00:05:23,110
+Well yeah I did.
+
+93
+00:05:23,230 --> 00:05:23,610
+All right.
+
+94
+00:05:23,620 --> 00:05:26,900
+So we got the name and the number.
+
+95
+00:05:26,920 --> 00:05:27,970
+Very good.
+
+96
+00:05:27,970 --> 00:05:30,380
+Of course it's always the same player.
+
+97
+00:05:30,400 --> 00:05:35,720
+But again just like I told before from this one you could make a network request functionalist up by
+
+98
+00:05:35,860 --> 00:05:38,350
+at least four different players random players.
+
+99
+00:05:38,530 --> 00:05:45,370
+And then you go fetch it from here just do a loop and look for different players or you can pass the
+
+100
+00:05:45,370 --> 00:05:46,420
+whole list of players.
+
+101
+00:05:46,480 --> 00:05:48,910
+You can do whatever you want right here.
+
+102
+00:05:48,910 --> 00:05:54,190
+I'm not going to spend a lot of time because this is not too important for this application.
+
+103
+00:05:54,190 --> 00:05:57,490
+We still need to do a lot of things on this app.
+
+104
+00:05:57,560 --> 00:06:05,640
+So but this one it's pretty much done on the next one we're going to start with this with a jersey.
+
+105
+00:06:05,650 --> 00:06:06,300
+So this is fun.
+
+106
+00:06:06,310 --> 00:06:10,120
+Again we have a transition really simple but then we have this.
+
+107
+00:06:10,180 --> 00:06:16,560
+So right here we will start using forms we will need to create a template for forms for form fields.
+
+108
+00:06:16,690 --> 00:06:23,430
+We will add symbolic Deshaun and we just show you for example if I type whatever at gmail dot com.
+
+109
+00:06:23,570 --> 00:06:29,170
+Does a matter I'm going to say and roll and we get a confirmation and then it goes away.
+
+110
+00:06:29,230 --> 00:06:34,930
+If I use a mail I've already already on the database you're going to say already on the database because
+
+111
+00:06:35,140 --> 00:06:42,070
+the database right here and promotions we have a list of all the users that you know registered for
+
+112
+00:06:42,070 --> 00:06:43,620
+the mailing list.
+
+113
+00:06:44,050 --> 00:06:47,650
+So again there's one looks simple but it's not that simple.
+
+114
+00:06:47,650 --> 00:06:49,310
+We need to do all that logic.
+
+115
+00:06:49,510 --> 00:06:55,480
+But after we do all the form fields all the logic and the reusable code for forms and everything else
+
+116
+00:06:55,730 --> 00:06:59,460
+we are going to be using them on the admin side of the page.
+
+117
+00:06:59,560 --> 00:07:03,630
+So this section it's really important for us.
+
+118
+00:07:03,670 --> 00:07:06,570
+So let's go let's go to the next one and do this.
+

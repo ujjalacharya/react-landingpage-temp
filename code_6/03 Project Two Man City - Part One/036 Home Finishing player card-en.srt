@@ -1,0 +1,756 @@
+1
+00:00:01,090 --> 00:00:07,600
+All right so like we use book before we need for re-act reveal to tell us or to communicate to the cartes
+
+2
+00:00:07,600 --> 00:00:13,570
+component that you know this section was revealed and we need to trigger the animation if you remember
+
+3
+00:00:13,570 --> 00:00:14,820
+with React move.
+
+4
+00:00:14,890 --> 00:00:17,990
+We have the state of show which is true or false.
+
+5
+00:00:18,160 --> 00:00:23,230
+So pretty much when the animation starts all with the page loads that show under-react move is going
+
+6
+00:00:23,230 --> 00:00:24,120
+to be false.
+
+7
+00:00:24,190 --> 00:00:30,000
+But when we reach here re-act reveal will change the state to true and the animation will trigger.
+
+8
+00:00:30,000 --> 00:00:31,300
+That's the logic.
+
+9
+00:00:31,300 --> 00:00:33,090
+So first I'm going to do this first.
+
+10
+00:00:33,540 --> 00:00:33,890
+OK.
+
+11
+00:00:33,970 --> 00:00:38,280
+I'm going to go right here and say import reveal right.
+
+12
+00:00:38,290 --> 00:00:41,800
+We need to use re-act reveal right here reveal.
+
+13
+00:00:41,800 --> 00:00:42,990
+And it's from.
+
+14
+00:00:43,180 --> 00:00:45,620
+And react react.
+
+15
+00:00:45,700 --> 00:00:48,160
+Dash reveal reveal.
+
+16
+00:00:48,190 --> 00:00:49,210
+Very good.
+
+17
+00:00:49,210 --> 00:00:52,210
+Now I'm going to reveal from Briac reveal.
+
+18
+00:00:52,210 --> 00:00:53,760
+So can I do this.
+
+19
+00:00:53,920 --> 00:00:55,220
+All right.
+
+20
+00:00:55,220 --> 00:00:56,860
+And now what do we need to do.
+
+21
+00:00:56,950 --> 00:00:58,870
+We need to wrap everything.
+
+22
+00:00:58,880 --> 00:00:59,240
+No.
+
+23
+00:00:59,260 --> 00:01:02,570
+This whole section inside this re-act reveal.
+
+24
+00:01:02,680 --> 00:01:09,350
+So I'm going to go right here and say reveal open and close ups open and close.
+
+25
+00:01:09,370 --> 00:01:17,030
+They're going to copy child this cut zcode we're going to remove it and put it inside of re-act real.
+
+26
+00:01:17,030 --> 00:01:22,160
+If I select everything right click for my selection it's going to make it a little bit better.
+
+27
+00:01:22,160 --> 00:01:29,160
+So now this reveal contains this on reveal property whenever this is happening we can trigger a function.
+
+28
+00:01:29,180 --> 00:01:38,480
+So I'm going to say on reveal just like this reveal equals to a function opening close and we will trigger
+
+29
+00:01:38,810 --> 00:01:41,690
+a different function you know kind of a callback.
+
+30
+00:01:41,900 --> 00:01:51,960
+So for now I'm going to say console log revealed so we can actually see it on the browser right here.
+
+31
+00:01:52,500 --> 00:01:57,750
+So let me go right here on the top and I'm going to go to cons. Now it is that we are not getting you
+
+32
+00:01:57,750 --> 00:01:58,820
+know this comes from blogs.
+
+33
+00:01:58,830 --> 00:02:00,270
+Maybe you can delete it later.
+
+34
+00:02:00,330 --> 00:02:03,380
+And if I scroll down as girl down there we go we get revealed.
+
+35
+00:02:03,470 --> 00:02:10,200
+Now the rebill appears whenever this part of the code you know the first part of the component rebuilds
+
+36
+00:02:10,340 --> 00:02:11,170
+to the screen.
+
+37
+00:02:11,400 --> 00:02:18,190
+So in addition of Henri reveal we have a different property that calls for action.
+
+38
+00:02:18,330 --> 00:02:21,240
+So this fraction it's from zero to 1.
+
+39
+00:02:21,420 --> 00:02:22,970
+So we can pass to a fraction.
+
+40
+00:02:23,040 --> 00:02:28,730
+How much of this component should be revealed on the screen in order for the you know re-act reveal
+
+41
+00:02:28,740 --> 00:02:31,420
+to trigger that on rebill callback.
+
+42
+00:02:31,650 --> 00:02:37,500
+So in this case I'm going to use 0.7 of course all of this is on the documentation so I'm going to try
+
+43
+00:02:37,500 --> 00:02:38,030
+again.
+
+44
+00:02:38,030 --> 00:02:45,130
+Going to go right here the top reload the application going to go below and you know it gave us the
+
+45
+00:02:45,330 --> 00:02:52,450
+bill pretty much after we have the whole component on the you are right on the screen.
+
+46
+00:02:52,860 --> 00:02:56,680
+So instead of doing a cons like what we will do will change the state.
+
+47
+00:02:56,820 --> 00:03:01,080
+So I got to say right now show equals false.
+
+48
+00:03:01,080 --> 00:03:07,200
+So whenever the application state is start starts show it's equal to false and right here what we do
+
+49
+00:03:07,210 --> 00:03:08,040
+we change that.
+
+50
+00:03:08,040 --> 00:03:13,780
+This data set stayed open close and then show it's equal to true.
+
+51
+00:03:14,460 --> 00:03:19,950
+So now whenever we called the to the component that it's going to be ruling this animation we will pass
+
+52
+00:03:19,950 --> 00:03:21,770
+the state of show which is false.
+
+53
+00:03:21,780 --> 00:03:26,310
+But when we get on reveal we will get the true and the animation will we'll run.
+
+54
+00:03:26,430 --> 00:03:27,890
+Makes sense right.
+
+55
+00:03:27,900 --> 00:03:29,180
+Perfect sense.
+
+56
+00:03:29,190 --> 00:03:31,520
+So now we don't have a component to rule this.
+
+57
+00:03:31,530 --> 00:03:32,870
+We don't really have it.
+
+58
+00:03:32,970 --> 00:03:37,830
+We have the file but we don't have anything else so let's create that one are going to create a react
+
+59
+00:03:37,980 --> 00:03:39,340
+class based component.
+
+60
+00:03:39,600 --> 00:03:41,790
+And this one open mistake.
+
+61
+00:03:42,050 --> 00:03:43,710
+Our classmates component.
+
+62
+00:03:44,190 --> 00:03:49,870
+And this one will be called home cards something like that.
+
+63
+00:03:49,980 --> 00:03:54,510
+Now in-home carts we will use will be using different things.
+
+64
+00:03:54,510 --> 00:03:59,190
+For example the money made from re-act move and that the D-3 ease.
+
+65
+00:03:59,220 --> 00:04:08,730
+So just because I'm lazy I'm going to go to Strypes inside feature and copy from here shortcut.
+
+66
+00:04:09,000 --> 00:04:13,350
+So easy pull out same thing and animate from re-act animate.
+
+67
+00:04:13,350 --> 00:04:16,650
+Now if you notice on the original we are using this thumbnail.
+
+68
+00:04:16,650 --> 00:04:20,550
+So we need to bring that player image.
+
+69
+00:04:20,610 --> 00:04:30,390
+So import and that player calls are to mehndi is a Argentinian player from the that for Slashdot that
+
+70
+00:04:30,480 --> 00:04:35,660
+for Slashdot or for Slash resources images just like this.
+
+71
+00:04:35,760 --> 00:04:40,600
+Then players for Slash and they believe it's the name of the player.
+
+72
+00:04:40,860 --> 00:04:48,390
+And then we got we get the image on this component for now this is good of course to create the animation.
+
+73
+00:04:48,540 --> 00:04:49,800
+We will need a state.
+
+74
+00:04:50,250 --> 00:04:55,620
+So I'm going at it right here and this show and this is one way to do it.
+
+75
+00:04:55,650 --> 00:05:01,110
+So this is going to be this that props because this component will be receiving some props and are going
+
+76
+00:05:01,110 --> 00:05:05,080
+to say there's the props that show now right here.
+
+77
+00:05:05,150 --> 00:05:06,890
+I didn't change the name of the class.
+
+78
+00:05:06,900 --> 00:05:07,750
+Sorry for that.
+
+79
+00:05:07,980 --> 00:05:12,720
+For now I'm going to return you know card whatever.
+
+80
+00:05:12,750 --> 00:05:17,000
+So this component is going to get a props which show which is true or false.
+
+81
+00:05:17,000 --> 00:05:20,750
+So this show will change to true or false.
+
+82
+00:05:21,540 --> 00:05:23,520
+And from misc No.
+
+83
+00:05:23,540 --> 00:05:26,990
+From meet the players we need to make a reference to this card.
+
+84
+00:05:27,000 --> 00:05:31,240
+We didn't include it on this component so I'm going to go right here.
+
+85
+00:05:31,290 --> 00:05:41,880
+Import and home cards from that forward slash and then cards home cards the name of the component.
+
+86
+00:05:42,270 --> 00:05:42,500
+OK.
+
+87
+00:05:42,510 --> 00:05:46,210
+So now we are including this so we need to make a reference on the actual code.
+
+88
+00:05:46,410 --> 00:05:50,030
+So we're going to go and say home cards and then close it.
+
+89
+00:05:50,130 --> 00:05:53,590
+If you remember we are we need to pass this show property.
+
+90
+00:05:53,610 --> 00:06:01,110
+You know we need to pass this props and it's this that state that show initially will be false but when
+
+91
+00:06:01,110 --> 00:06:04,190
+it changes we'll be receiving a prompt change.
+
+92
+00:06:04,440 --> 00:06:04,860
+OK.
+
+93
+00:06:04,890 --> 00:06:06,930
+Let's get we are we are on the good track.
+
+94
+00:06:07,320 --> 00:06:11,180
+So now what we need to do we need to return the actual animation.
+
+95
+00:06:11,220 --> 00:06:13,260
+If I go right here we get just card.
+
+96
+00:06:13,540 --> 00:06:19,030
+So I'm going to go at the bottom and create a function this that show.
+
+97
+00:06:19,470 --> 00:06:22,580
+You could put this with whatever name doesn't matter.
+
+98
+00:06:22,680 --> 00:06:29,920
+And he made cartes Kratz no cards right.
+
+99
+00:06:29,940 --> 00:06:36,120
+So now we'll create a function that will loop through all the cards or maybe through loop three times
+
+100
+00:06:36,420 --> 00:06:44,700
+because we need three or four cards and it will you know render some some component some elements.
+
+101
+00:06:44,940 --> 00:06:53,950
+So I'm using again parenthesis not curly braces and what we'll do we will loop through this that state
+
+102
+00:06:54,250 --> 00:06:55,490
+that cartes.
+
+103
+00:06:55,930 --> 00:06:56,480
+Right.
+
+104
+00:06:56,590 --> 00:06:58,820
+So how many cards do we need.
+
+105
+00:06:58,960 --> 00:07:00,450
+Let's check the fine one.
+
+106
+00:07:00,460 --> 00:07:02,830
+We have one two three and four.
+
+107
+00:07:03,040 --> 00:07:04,750
+So what do we need to do.
+
+108
+00:07:04,780 --> 00:07:11,860
+We will need to create a state with carts right here with an array of elements with four different elements
+
+109
+00:07:11,950 --> 00:07:17,780
+with different properties so I will create just four because we need four cards.
+
+110
+00:07:17,880 --> 00:07:24,620
+Now the animation the only thing we need to animate is still left at the bottom right.
+
+111
+00:07:24,660 --> 00:07:30,070
+This one is to you know bottom zero bottom 20 bottom know 40 and then 60.
+
+112
+00:07:30,070 --> 00:07:31,330
+So that's what we need to do.
+
+113
+00:07:31,510 --> 00:07:41,180
+So just from start we need a property with Bonham and then a property with a left right.
+
+114
+00:07:41,560 --> 00:07:44,220
+So the bottom for the first one in are going to do this right now.
+
+115
+00:07:44,220 --> 00:07:47,770
+Point out the bottom for the first one is going to be 90.
+
+116
+00:07:47,770 --> 00:07:56,200
+The second one is going to be three on the left 300 are going at the other ones Bunim 60 and bottom
+
+117
+00:07:57,190 --> 00:08:00,880
+left 200 something for the other ones.
+
+118
+00:08:00,910 --> 00:08:05,790
+So bottom 30 and then 100.
+
+119
+00:08:07,030 --> 00:08:10,670
+And then bottom zero and this is the first the first one.
+
+120
+00:08:10,810 --> 00:08:13,020
+Bottom zero and left zero.
+
+121
+00:08:13,240 --> 00:08:13,960
+Now what you can do.
+
+122
+00:08:13,960 --> 00:08:21,030
+You can create a function maybe a loop and just change the numbers dynamically you know plus 30 or minus
+
+123
+00:08:21,310 --> 00:08:23,560
+30 or something like that doesn't matter.
+
+124
+00:08:23,560 --> 00:08:25,780
+This is just one way to do it.
+
+125
+00:08:25,810 --> 00:08:27,940
+So right now I'm going to do.
+
+126
+00:08:27,950 --> 00:08:30,910
+I'm going to loop the cards not.
+
+127
+00:08:30,940 --> 00:08:35,140
+Cards and generally the animation with the with this property.
+
+128
+00:08:35,140 --> 00:08:39,470
+We kind of already did this with the animate move with the react.
+
+129
+00:08:40,000 --> 00:08:42,020
+So I'm going to enter this.
+
+130
+00:08:42,100 --> 00:08:52,930
+That state DOT carts just like this that map and this map will be returning just one card and the iteration
+
+131
+00:08:52,930 --> 00:08:53,460
+number.
+
+132
+00:08:53,560 --> 00:08:59,370
+And then of course we will run a function and return some GSX just like this.
+
+133
+00:08:59,380 --> 00:09:00,510
+All right.
+
+134
+00:09:00,700 --> 00:09:06,040
+Now this one will return an animate tag from from re-act move.
+
+135
+00:09:06,220 --> 00:09:08,460
+Animate opening close.
+
+136
+00:09:08,590 --> 00:09:11,890
+If you remember what we need to do is return a function.
+
+137
+00:09:11,890 --> 00:09:13,570
+So we open it close.
+
+138
+00:09:13,630 --> 00:09:19,150
+We will use some destructuring inside and then we will just returned the function with the actual elements
+
+139
+00:09:19,160 --> 00:09:21,700
+always do return open and close.
+
+140
+00:09:21,820 --> 00:09:27,310
+And this one will be just a def and we will come back to this later.
+
+141
+00:09:27,330 --> 00:09:29,360
+I'm going to say just dip for now.
+
+142
+00:09:29,580 --> 00:09:32,550
+Now the animate going to go right here at the top.
+
+143
+00:09:32,550 --> 00:09:38,630
+The Man-Made it's using a left and a Bunim And of course since we are looping something we need to add
+
+144
+00:09:38,660 --> 00:09:39,120
+key.
+
+145
+00:09:39,150 --> 00:09:42,490
+So we add key with the iteration with the index.
+
+146
+00:09:42,570 --> 00:09:43,340
+Right.
+
+147
+00:09:43,860 --> 00:09:45,920
+If you remember we are using show.
+
+148
+00:09:46,380 --> 00:09:49,770
+So we use this that props that show.
+
+149
+00:09:50,580 --> 00:09:54,080
+And this that prompts that show let's get in now.
+
+150
+00:09:54,120 --> 00:09:54,770
+Think about it.
+
+151
+00:09:54,810 --> 00:09:56,570
+There's no two uses.
+
+152
+00:09:57,280 --> 00:09:58,120
+OK.
+
+153
+00:09:58,290 --> 00:10:00,890
+So there's the props that show very good.
+
+154
+00:10:01,140 --> 00:10:06,540
+So now I'm going to go to start equals and we need to pass a prop..
+
+155
+00:10:06,540 --> 00:10:08,930
+The first one is left starts at zero.
+
+156
+00:10:09,030 --> 00:10:12,390
+The next one it's but him and it starts at zero.
+
+157
+00:10:12,600 --> 00:10:12,910
+Right.
+
+158
+00:10:12,960 --> 00:10:13,620
+OK.
+
+159
+00:10:13,830 --> 00:10:19,080
+And then we have an enter and the Enter would be where are going to go.
+
+160
+00:10:19,080 --> 00:10:21,350
+On this one we do have a left.
+
+161
+00:10:21,420 --> 00:10:27,750
+We do have a button on the left one is going to be whatever we get from the state on each iteration.
+
+162
+00:10:27,900 --> 00:10:36,020
+So it's going to be card that left the other one is going to be card dot right.
+
+163
+00:10:36,570 --> 00:10:39,300
+Oh sorry bought them.
+
+164
+00:10:39,480 --> 00:10:45,450
+And then since this one is the one that it's going to be doing the animation we need to add the timing
+
+165
+00:10:45,450 --> 00:10:48,110
+property so timing.
+
+166
+00:10:49,000 --> 00:10:49,820
+All right.
+
+167
+00:10:49,980 --> 00:10:53,040
+So we will need to add to duration and duration.
+
+168
+00:10:53,040 --> 00:10:54,070
+Half a second.
+
+169
+00:10:54,210 --> 00:10:57,930
+And the ease it's going to be Pawley.
+
+170
+00:10:57,990 --> 00:10:59,420
+Let me find it right here.
+
+171
+00:10:59,430 --> 00:11:01,340
+East Point out forget.
+
+172
+00:11:01,360 --> 00:11:02,900
+We're almost done.
+
+173
+00:11:03,240 --> 00:11:06,450
+Now we need to pass the left just like this.
+
+174
+00:11:06,540 --> 00:11:12,270
+And the bottom because these are the properties we are using for this element and right here we need
+
+175
+00:11:12,270 --> 00:11:19,830
+to pass this style opening close and the need to use the position we are going to change this to position
+
+176
+00:11:19,830 --> 00:11:20,250
+absolute.
+
+177
+00:11:20,250 --> 00:11:29,160
+That's why we're using the top and left and bottom left and bottom and absolute and we're going to use
+
+178
+00:11:29,160 --> 00:11:37,610
+the left coma and then the bottom and then said I'm going to go to our application and we can get it
+
+179
+00:11:37,640 --> 00:11:39,590
+you know I'm going to reload it.
+
+180
+00:11:40,460 --> 00:11:41,220
+And there we go.
+
+181
+00:11:41,270 --> 00:11:43,280
+So OK let me go back.
+
+182
+00:11:45,690 --> 00:11:46,460
+Oh goodness.
+
+183
+00:11:46,690 --> 00:11:47,030
+All right.
+
+184
+00:11:47,080 --> 00:11:49,340
+So we started very low.
+
+185
+00:11:49,360 --> 00:11:50,780
+There we go again.
+
+186
+00:11:50,800 --> 00:11:54,830
+Girls girls girls grow and then you can see the transmission right here.
+
+187
+00:11:54,940 --> 00:11:56,190
+Of course we didn't have a card.
+
+188
+00:11:56,230 --> 00:12:02,440
+That's going to be the next step creating a component of reusable components where we can you know create
+
+189
+00:12:02,440 --> 00:12:03,690
+a player cart.
+

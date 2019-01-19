@@ -1,0 +1,700 @@
+1
+00:00:00,660 --> 00:00:03,940
+All right so let's do the calculate total block.
+
+2
+00:00:03,960 --> 00:00:05,220
+It's actually very simple.
+
+3
+00:00:05,220 --> 00:00:09,870
+We just need to catch all the elements we have when we get it from the server.
+
+4
+00:00:09,870 --> 00:00:16,710
+Ryan can have a list of things so we can go and multiply the amount of items they get for each product
+
+5
+00:00:16,770 --> 00:00:18,980
+and multiply the price.
+
+6
+00:00:19,020 --> 00:00:22,180
+So I'm going to go to the dispatch of get cart items going to do.
+
+7
+00:00:22,230 --> 00:00:25,440
+I'm going to put it here and I'm going to do some logic.
+
+8
+00:00:25,470 --> 00:00:34,110
+I'm going to open it close and say OK if this dot prompts dot user then card detail can enter the card
+
+9
+00:00:34,110 --> 00:00:40,500
+details because after we dispatched this we will have a card detail but I'm going to check if we do
+
+10
+00:00:40,500 --> 00:00:42,840
+have items inside of the card detail.
+
+11
+00:00:42,900 --> 00:00:47,690
+So if we do begin a trigger function that you know does all the math for this.
+
+12
+00:00:47,820 --> 00:00:55,980
+So I'm going to call it this calculate total calculate then maybe total or total items or you know total
+
+13
+00:00:55,980 --> 00:00:57,220
+price or whatever.
+
+14
+00:00:57,390 --> 00:01:02,970
+And I'm going to pass that this prompts that user that card details so we can you know get it from there.
+
+15
+00:01:02,970 --> 00:01:05,630
+So there's a problem user card detail.
+
+16
+00:01:05,640 --> 00:01:06,340
+All right.
+
+17
+00:01:06,690 --> 00:01:10,980
+We don't have this function again to add it right now and then we get it passed to of course the year
+
+18
+00:01:11,100 --> 00:01:13,350
+from cult removed from cart.
+
+19
+00:01:13,920 --> 00:01:15,710
+But first we're going to do this.
+
+20
+00:01:16,140 --> 00:01:22,230
+So whenever we calculate the total we're going to get the card detail.
+
+21
+00:01:22,340 --> 00:01:25,650
+So just like this card detail.
+
+22
+00:01:25,670 --> 00:01:26,610
+All right.
+
+23
+00:01:27,080 --> 00:01:33,180
+So first of course everything starts at zero so I'm going to say let total equals zero.
+
+24
+00:01:33,320 --> 00:01:42,170
+Then of course we need to look this card details I'm going to do card detail for each just like this
+
+25
+00:01:42,380 --> 00:01:47,390
+and on each iteration we're going to pass the item and we can run a function.
+
+26
+00:01:47,390 --> 00:01:48,300
+So what I do.
+
+27
+00:01:48,320 --> 00:01:54,530
+I just enter the total and I'm going to do plus equal and what I need to grab from the item it's the
+
+28
+00:01:54,530 --> 00:01:59,090
+price and then multiply the same price by the quantity right.
+
+29
+00:01:59,120 --> 00:02:00,140
+Makes sense.
+
+30
+00:02:00,140 --> 00:02:04,530
+Now sometimes the price or you know maybe the price could be an integer.
+
+31
+00:02:04,520 --> 00:02:12,770
+So just to be sure are going to do parse and parse and there we go and are going to say that I want
+
+32
+00:02:12,770 --> 00:02:16,550
+to grab the item that price then we need to pass the prefix.
+
+33
+00:02:16,550 --> 00:02:18,200
+If not you're going to get a warning.
+
+34
+00:02:18,380 --> 00:02:22,550
+And then of course we do times and the item that quantity
+
+35
+00:02:25,170 --> 00:02:28,580
+the item that Fontane that's good.
+
+36
+00:02:29,820 --> 00:02:30,500
+So that is it.
+
+37
+00:02:30,520 --> 00:02:36,300
+This is the only thing we need to do which is grab the value we some and then we just multiply.
+
+38
+00:02:36,460 --> 00:02:38,910
+And of course at the top you're using the state for this.
+
+39
+00:02:38,980 --> 00:02:44,250
+So we can host the total right here and we want to change the show total to false.
+
+40
+00:02:44,260 --> 00:02:47,290
+True because let me just give you the example.
+
+41
+00:02:47,350 --> 00:02:52,900
+Whenever the application loads we don't have a total of nothing until we go to the server and we get
+
+42
+00:02:52,900 --> 00:02:53,510
+back.
+
+43
+00:02:53,650 --> 00:02:59,020
+So until that point we shouldn't be just playing a show total right here because you don't really have
+
+44
+00:02:59,020 --> 00:03:05,980
+items at that point and maybe if you go to the server and you come back maybe you don't have anything
+
+45
+00:03:06,010 --> 00:03:07,000
+in your cart.
+
+46
+00:03:07,000 --> 00:03:11,590
+So again we can skip that show total by using true or false.
+
+47
+00:03:11,650 --> 00:03:14,160
+So I'm going to go and say this.
+
+48
+00:03:14,200 --> 00:03:22,930
+That said state and begin to change the state of total total to you know the same key value and then
+
+49
+00:03:22,990 --> 00:03:26,910
+show total to true.
+
+50
+00:03:27,760 --> 00:03:33,490
+So the dysfunction the only thing it does it grabs the database or whatever we pass it to the from to
+
+51
+00:03:33,490 --> 00:03:35,530
+the arch as an argument.
+
+52
+00:03:35,720 --> 00:03:36,880
+We some.
+
+53
+00:03:37,000 --> 00:03:41,560
+And then of course we multiply and then we just set the state again and we're going to use this cockily
+
+54
+00:03:41,560 --> 00:03:45,150
+total several times on this obligation from different places.
+
+55
+00:03:45,250 --> 00:03:49,360
+This one works whenever we are ready to play something right.
+
+56
+00:03:49,420 --> 00:03:53,740
+Of course we need to go below the use of product.
+
+57
+00:03:54,040 --> 00:03:56,430
+And you know decide when to show this.
+
+58
+00:03:56,530 --> 00:03:59,890
+So I'm going to go here and say open it close.
+
+59
+00:04:00,040 --> 00:04:06,120
+So if this that state that show total it's equal to true then I want to show something.
+
+60
+00:04:06,160 --> 00:04:06,740
+Right.
+
+61
+00:04:06,760 --> 00:04:09,240
+If not I'm not going to return anything.
+
+62
+00:04:09,240 --> 00:04:10,310
+So I'm going to say no.
+
+63
+00:04:10,570 --> 00:04:13,010
+And we're going to change the interval for something else later.
+
+64
+00:04:13,030 --> 00:04:14,270
+Going to tell you why.
+
+65
+00:04:14,320 --> 00:04:18,060
+So I got to say Dave and I'm going to add a new wrapper.
+
+66
+00:04:18,070 --> 00:04:22,760
+This one will get a class name of user card.
+
+67
+00:04:23,080 --> 00:04:25,630
+Some could be total or whatever.
+
+68
+00:04:25,870 --> 00:04:35,200
+And then of course inside I'm going to put a new dev and say total just total and then amount dollar
+
+69
+00:04:35,200 --> 00:04:35,640
+sign.
+
+70
+00:04:35,650 --> 00:04:41,010
+Open and close and then we get it from this state a total time.
+
+71
+00:04:41,560 --> 00:04:44,070
+So in theory we should be getting something at least.
+
+72
+00:04:44,530 --> 00:04:51,450
+So we get total amount for and if you want to do the math it's of course correct.
+
+73
+00:04:51,450 --> 00:04:51,870
+All right.
+
+74
+00:04:51,900 --> 00:04:58,750
+So it's got now the problem is that what happens if you don't have items in your cart instead of just
+
+75
+00:04:58,750 --> 00:05:01,300
+showing nothing maybe an empty space.
+
+76
+00:05:01,410 --> 00:05:07,140
+You could show right here the opposite of that which is you know you don't have items.
+
+77
+00:05:07,290 --> 00:05:08,880
+So I'm going to delete the No.
+
+78
+00:05:08,920 --> 00:05:16,110
+Going to go at the bottom and say that I want to display a function that says show no item message or
+
+79
+00:05:16,110 --> 00:05:18,440
+something like that and I'm going to host it.
+
+80
+00:05:18,440 --> 00:05:24,370
+Could the code inside of a function because you know you get it up.
+
+81
+00:05:24,490 --> 00:05:26,590
+We get to add more code in a minute.
+
+82
+00:05:26,720 --> 00:05:27,310
+That's OK.
+
+83
+00:05:27,540 --> 00:05:29,580
+So just do it do it function.
+
+84
+00:05:29,880 --> 00:05:31,080
+So I'm going to return.
+
+85
+00:05:31,110 --> 00:05:33,070
+We could just return some GSX right here.
+
+86
+00:05:33,090 --> 00:05:34,830
+So I'm going to do it the other way.
+
+87
+00:05:34,860 --> 00:05:36,560
+Just return some GSX.
+
+88
+00:05:36,770 --> 00:05:45,840
+So open it close and we return just a div with a class name of card no items.
+
+89
+00:05:45,840 --> 00:05:48,960
+And this is the class and we will add that font.
+
+90
+00:05:48,960 --> 00:05:49,950
+Awesome icon.
+
+91
+00:05:49,980 --> 00:05:55,930
+We've included at the top the frown saying you have no items with a sad face.
+
+92
+00:05:56,370 --> 00:06:02,150
+So sad icon than the icon it's equal to FAA and then frown.
+
+93
+00:06:02,350 --> 00:06:03,390
+Going close the font.
+
+94
+00:06:03,390 --> 00:06:03,950
+Awesome.
+
+95
+00:06:04,110 --> 00:06:12,720
+And then a dev saying no know you just you have no items.
+
+96
+00:06:12,900 --> 00:06:15,790
+Now of course I want to see if this works.
+
+97
+00:06:16,260 --> 00:06:22,680
+But we cannot be actually Google can be because we didn't have the ability to complete the purchase
+
+98
+00:06:22,860 --> 00:06:24,100
+or remove items.
+
+99
+00:06:24,120 --> 00:06:30,570
+So the only way we can check this is by going to the server and trying to the user and deleting whatever
+
+100
+00:06:30,570 --> 00:06:32,460
+we get inside of the card.
+
+101
+00:06:32,490 --> 00:06:34,370
+So I'm going to try to delete it.
+
+102
+00:06:35,890 --> 00:06:40,920
+And I believe I just made a mistake and deleted the whole user.
+
+103
+00:06:41,030 --> 00:06:47,050
+Of course I knew to edited guys and sorry and they create the account again I'm going to put a pause.
+
+104
+00:06:47,120 --> 00:06:49,300
+And created the user again.
+
+105
+00:06:50,210 --> 00:06:54,390
+Ok I'm logged in again as Frances same user same same as always.
+
+106
+00:06:54,410 --> 00:06:55,610
+I'm going to go to my card.
+
+107
+00:06:55,770 --> 00:07:00,630
+And of course since I've create a new account an account I don't have any card elements.
+
+108
+00:07:00,680 --> 00:07:01,210
+So we get.
+
+109
+00:07:01,220 --> 00:07:02,390
+You have no items.
+
+110
+00:07:02,510 --> 00:07:04,190
+You know that works.
+
+111
+00:07:04,190 --> 00:07:05,690
+Is it real simple code.
+
+112
+00:07:06,080 --> 00:07:06,690
+OK.
+
+113
+00:07:06,800 --> 00:07:10,870
+Now I'm going to give you a different scenario.
+
+114
+00:07:11,000 --> 00:07:16,060
+What happens whenever you click can complete the purchase you make the pay and everything else.
+
+115
+00:07:16,140 --> 00:07:18,340
+And you know we complete that circuit.
+
+116
+00:07:18,350 --> 00:07:23,210
+You are not going to get any items because we can delete them from the database because you've already
+
+117
+00:07:23,210 --> 00:07:24,070
+made the purchase.
+
+118
+00:07:24,140 --> 00:07:26,290
+So you don't have those card items anymore.
+
+119
+00:07:26,570 --> 00:07:33,620
+But again we shouldn't be displaying You have no items again because this is going to go to what you
+
+120
+00:07:33,620 --> 00:07:39,330
+need to do is to show thank you maybe your order is complete or something like that.
+
+121
+00:07:39,500 --> 00:07:42,020
+So I'm going to go right here to the No.
+
+122
+00:07:42,030 --> 00:07:43,630
+I'm going to do one more check.
+
+123
+00:07:43,670 --> 00:07:51,020
+Remember that we get show success so whenever we complete a purchase a shit change does show success
+
+124
+00:07:51,300 --> 00:07:51,990
+to true.
+
+125
+00:07:52,160 --> 00:07:59,140
+So I'm going to do one more check this dot state that shows success opening close.
+
+126
+00:07:59,270 --> 00:08:02,210
+And of course if this is true or false.
+
+127
+00:08:02,270 --> 00:08:05,650
+True we're going to show something if not we're going to show this one.
+
+128
+00:08:05,660 --> 00:08:06,590
+So what are we going to do.
+
+129
+00:08:06,590 --> 00:08:15,410
+I mean at a diff just here and this one class name of card success and it's you know pretty much the
+
+130
+00:08:15,410 --> 00:08:17,380
+same thing with it right here.
+
+131
+00:08:17,810 --> 00:08:19,740
+So I'm going to copy this.
+
+132
+00:08:19,740 --> 00:08:25,490
+I'm going to paste it and this one it's a smile.
+
+133
+00:08:25,840 --> 00:08:27,240
+You know the opposite.
+
+134
+00:08:27,510 --> 00:08:32,090
+And this one should be saying no thank you.
+
+135
+00:08:32,200 --> 00:08:33,920
+Some like that maybe.
+
+136
+00:08:34,530 --> 00:08:36,320
+Thank you capitals.
+
+137
+00:08:36,390 --> 00:08:37,190
+Thank.
+
+138
+00:08:37,410 --> 00:08:37,880
+There you go.
+
+139
+00:08:37,890 --> 00:08:40,140
+Thank you.
+
+140
+00:08:40,470 --> 00:08:43,840
+And I know you are there it is complete now.
+
+141
+00:08:44,220 --> 00:08:51,570
+Here you go to your account profile and get the order number or you know someone will contact you soon
+
+142
+00:08:51,630 --> 00:08:53,520
+or you know whatever that you want to do.
+
+143
+00:08:53,510 --> 00:08:57,210
+Your order is now complete.
+
+144
+00:08:57,210 --> 00:09:02,180
+Of course we cannot really see this until we finished the Pay-Pal section.
+
+145
+00:09:02,220 --> 00:09:06,570
+So when we finished a paypal section you're going to see this kick in.
+
+146
+00:09:06,630 --> 00:09:10,260
+All right for now we're going to leave it at that.
+
+147
+00:09:10,300 --> 00:09:17,240
+Now what else of course we need the PayPal the Paypal logic so I can to go here at the bottom I'm going
+
+148
+00:09:17,250 --> 00:09:18,500
+at it right now.
+
+149
+00:09:18,950 --> 00:09:20,220
+I'm going to do this.
+
+150
+00:09:20,700 --> 00:09:21,660
+And why am I doing this.
+
+151
+00:09:21,660 --> 00:09:27,690
+Because we are not done to do the people going to do the remove it's because we can we should only show
+
+152
+00:09:27,690 --> 00:09:33,950
+the paypal button whenever the total or and whenever we have some carte items.
+
+153
+00:09:34,020 --> 00:09:39,860
+So I'm going to say this that state DOT show total.
+
+154
+00:09:39,870 --> 00:09:40,710
+It's true.
+
+155
+00:09:40,710 --> 00:09:42,170
+Then we can show the Bunin.
+
+156
+00:09:42,240 --> 00:09:44,290
+If not are not going to do anything.
+
+157
+00:09:44,320 --> 00:09:46,360
+They're going to put the button inside of a container.
+
+158
+00:09:46,500 --> 00:09:49,140
+So class name opening close.
+
+159
+00:09:49,310 --> 00:09:55,970
+Pay Pal pay pal underscore button and then container.
+
+160
+00:09:56,520 --> 00:09:58,380
+And this one you know pay Paypal whatever
+
+161
+00:10:01,200 --> 00:10:05,440
+all right let's see if it renders and you have no items.
+
+162
+00:10:05,440 --> 00:10:06,700
+I'm going to go to guitars.
+
+163
+00:10:06,880 --> 00:10:10,280
+I'm going to add one at two in at two.
+
+164
+00:10:10,390 --> 00:10:12,710
+You know one and two of the r.g.
+
+165
+00:10:12,770 --> 00:10:16,790
+And if I go to my cart we get the amount of the Pay-Pal and everything else.
+
+166
+00:10:16,810 --> 00:10:20,410
+So now we're going to do the remove of course if you click and nothing happens.
+
+167
+00:10:20,410 --> 00:10:25,960
+Now the problem is that we don't have a route on the server where we can listen for you know remove
+
+168
+00:10:26,170 --> 00:10:27,970
+items from a cart.
+
+169
+00:10:27,970 --> 00:10:38,960
+We have a get cart items you know at the cart and get cart items that me see if I can find it.
+
+170
+00:10:40,040 --> 00:10:42,720
+Of course cart items is the ID of products.
+
+171
+00:10:42,740 --> 00:10:43,250
+That's OK.
+
+172
+00:10:43,250 --> 00:10:43,810
+That's OK.
+
+173
+00:10:44,090 --> 00:10:49,320
+So just like add to cart you're going to do the move from cart.
+
+174
+00:10:49,370 --> 00:10:53,000
+It's not just like this is a lot smaller.
+
+175
+00:10:53,430 --> 00:10:54,990
+So we're going to do it right now.
+

@@ -1,0 +1,912 @@
+1
+00:00:01,190 --> 00:00:06,830
+So one of the most important things when we work with applications just like re-act are going to be
+
+2
+00:00:06,830 --> 00:00:12,800
+events you know when the user clicks on something or maybe they enter some text inside an input or maybe
+
+3
+00:00:12,800 --> 00:00:14,730
+when they are on something.
+
+4
+00:00:14,960 --> 00:00:21,020
+So let's say that whenever the user clicks on the logo I want to get something I want to get that event.
+
+5
+00:00:21,020 --> 00:00:22,940
+And you know do a console log.
+
+6
+00:00:23,210 --> 00:00:28,300
+So OK first we need to be taught we need to talk about handlers or the events you know just like we
+
+7
+00:00:28,300 --> 00:00:29,720
+did with vanilla jacks.
+
+8
+00:00:29,720 --> 00:00:31,690
+We have events that we can listen.
+
+9
+00:00:31,760 --> 00:00:36,030
+In this case with vanilla it's going to be on and then click just like that.
+
+10
+00:00:36,200 --> 00:00:39,050
+But with that react it's a little bit different.
+
+11
+00:00:39,080 --> 00:00:43,910
+It's going to be on an income case click just like that.
+
+12
+00:00:43,930 --> 00:00:48,470
+This one it's not going to work because it's vanilla jazz but this one is going to work because it's
+
+13
+00:00:48,530 --> 00:00:49,950
+react now.
+
+14
+00:00:49,970 --> 00:00:55,190
+If you don't know what vanilla jazz is it's going to be the raw javascript not the ESX but the previous
+
+15
+00:00:55,190 --> 00:00:56,380
+version.
+
+16
+00:00:56,570 --> 00:00:57,540
+That's good.
+
+17
+00:00:57,560 --> 00:01:01,700
+So now I want to add this event to the logo whenever they click the logo.
+
+18
+00:01:01,700 --> 00:01:02,830
+I went to get something.
+
+19
+00:01:02,970 --> 00:01:08,380
+So I'm going to go right here make some space so we can read it a little bit better and get it started
+
+20
+00:01:08,390 --> 00:01:11,720
+with the on camera case because we act and click.
+
+21
+00:01:11,930 --> 00:01:13,040
+Now this one.
+
+22
+00:01:13,040 --> 00:01:14,180
+What I want to do.
+
+23
+00:01:14,180 --> 00:01:15,600
+I want to trigger something.
+
+24
+00:01:15,710 --> 00:01:18,050
+So I'm going to use the curly braces.
+
+25
+00:01:18,050 --> 00:01:20,270
+Now I'm going to make use of a fat arrow function.
+
+26
+00:01:20,270 --> 00:01:21,740
+This is just a function.
+
+27
+00:01:21,740 --> 00:01:22,450
+That's what it is.
+
+28
+00:01:22,460 --> 00:01:23,770
+Just a function.
+
+29
+00:01:23,890 --> 00:01:29,930
+And when the user clicks on something I want to do a console log of I was clicked.
+
+30
+00:01:29,990 --> 00:01:32,050
+Simple as that.
+
+31
+00:01:32,060 --> 00:01:36,060
+Now if I go to the browser and click the logo I get I was clicked.
+
+32
+00:01:36,080 --> 00:01:39,830
+And if I click it again of course I'm going to get it several times.
+
+33
+00:01:39,830 --> 00:01:41,790
+So ok that works.
+
+34
+00:01:41,960 --> 00:01:47,200
+So this fat Aro function is just like a reference to the same function we have inside.
+
+35
+00:01:47,360 --> 00:01:50,210
+It's like writing a function that calls click.
+
+36
+00:01:50,420 --> 00:01:56,630
+And then of course if we call it we call it in one one point of the application it's going to get triggered
+
+37
+00:01:56,750 --> 00:01:58,470
+with the consul lock inside.
+
+38
+00:01:58,550 --> 00:02:01,600
+Now same thing let me go back.
+
+39
+00:02:02,150 --> 00:02:06,460
+So now what I want to do instead of us just triggering the function right here.
+
+40
+00:02:06,650 --> 00:02:09,270
+I want to go first I want to show you some magic.
+
+41
+00:02:09,290 --> 00:02:11,070
+Is this ESX magic.
+
+42
+00:02:11,240 --> 00:02:17,170
+If you have a fat Aro function and we have only a single expression just like here with one log.
+
+43
+00:02:17,180 --> 00:02:22,740
+In this case we can get rid of the curly braces and this is still going to work.
+
+44
+00:02:22,760 --> 00:02:24,460
+He has six magic power.
+
+45
+00:02:24,580 --> 00:02:24,920
+OK.
+
+46
+00:02:24,920 --> 00:02:25,750
+So that's fine.
+
+47
+00:02:25,820 --> 00:02:32,870
+Let's go to the next part what I want to do instead of just triggering this function right here.
+
+48
+00:02:32,930 --> 00:02:35,680
+I want to pass a reference to a function.
+
+49
+00:02:35,900 --> 00:02:37,630
+I don't want to trigger it here.
+
+50
+00:02:37,940 --> 00:02:42,550
+I want to have a different function inside of the class and trigger that function.
+
+51
+00:02:42,650 --> 00:02:44,390
+Whenever we do the unclick.
+
+52
+00:02:44,650 --> 00:02:45,140
+OK.
+
+53
+00:02:45,440 --> 00:02:46,640
+So I'm going to delete all of this.
+
+54
+00:02:46,640 --> 00:02:47,870
+We're not going to need it.
+
+55
+00:02:48,170 --> 00:02:51,710
+So what I want to do I want to pass a reference to a function.
+
+56
+00:02:51,740 --> 00:02:57,290
+So first I'm going to create my function I'm going to say input and then change.
+
+57
+00:02:57,310 --> 00:02:59,050
+Now then this is a convention.
+
+58
+00:02:59,090 --> 00:03:06,280
+A lot of people use handler for this whenever they use an event they use handler as a keyword.
+
+59
+00:03:06,380 --> 00:03:08,520
+And again it's a convention if you want to skip this.
+
+60
+00:03:08,540 --> 00:03:09,050
+That's good.
+
+61
+00:03:09,060 --> 00:03:10,990
+I'm just going to leave it.
+
+62
+00:03:11,180 --> 00:03:17,280
+So whenever we call this function we want to console log console clock and we do.
+
+63
+00:03:17,300 --> 00:03:19,240
+I was correct.
+
+64
+00:03:19,370 --> 00:03:20,500
+Simple as that.
+
+65
+00:03:21,020 --> 00:03:26,700
+So now what we need to do we need to pass a reference inside the unclick to this outside function.
+
+66
+00:03:26,840 --> 00:03:30,400
+And notice that this function it's inside of the class.
+
+67
+00:03:30,410 --> 00:03:37,200
+So if I do input handler just like that it's not going to work.
+
+68
+00:03:37,220 --> 00:03:39,280
+It says impot change handler.
+
+69
+00:03:39,350 --> 00:03:40,670
+It's not mine.
+
+70
+00:03:40,910 --> 00:03:44,830
+So the thing is that whenever we use a function we need to invoke a function.
+
+71
+00:03:44,960 --> 00:03:51,120
+We need to pass the where this function is going to be inside the component inside the class.
+
+72
+00:03:51,200 --> 00:03:55,430
+So to make a reference to it we need to say this.
+
+73
+00:03:55,640 --> 00:03:57,650
+This means declasse.
+
+74
+00:03:57,710 --> 00:03:58,980
+So it's going to say this.
+
+75
+00:03:58,980 --> 00:04:04,790
+The class and it's going to enter class and try to find the function that calls input and input change
+
+76
+00:04:04,820 --> 00:04:05,300
+handler.
+
+77
+00:04:05,300 --> 00:04:07,300
+That's what's what's happening right here.
+
+78
+00:04:07,700 --> 00:04:09,700
+So I'm going to save it and I'm going to test it.
+
+79
+00:04:09,800 --> 00:04:12,400
+Now if I click we get I was click.
+
+80
+00:04:12,620 --> 00:04:13,280
+That's very good.
+
+81
+00:04:13,400 --> 00:04:16,380
+You know same thing same result.
+
+82
+00:04:16,400 --> 00:04:23,990
+So now the thing is that we need to do this inside of the of the input not the logo.
+
+83
+00:04:23,990 --> 00:04:30,800
+So I'm going to delete the on click on the logo and I'm going to just go back what we want to do.
+
+84
+00:04:30,800 --> 00:04:35,950
+Our goal is to get whatever the user types inside the input.
+
+85
+00:04:35,990 --> 00:04:41,300
+So OK I'm going to go right here and I'm going to call the imp in the onchange.
+
+86
+00:04:41,360 --> 00:04:43,340
+It's going to be on change.
+
+87
+00:04:43,340 --> 00:04:44,690
+It's going to be a different event.
+
+88
+00:04:44,720 --> 00:04:46,710
+Not unclick but on change.
+
+89
+00:04:47,150 --> 00:04:50,680
+So now we need a function that is going to be catching the values.
+
+90
+00:04:50,760 --> 00:04:51,260
+OK.
+
+91
+00:04:51,440 --> 00:04:56,580
+So instead of input a click could be interchanged just like here.
+
+92
+00:04:56,630 --> 00:04:58,700
+So we're going to make a reference to this function.
+
+93
+00:04:58,730 --> 00:05:02,940
+It's going to be this dot and imprint input change handler.
+
+94
+00:05:03,080 --> 00:05:03,890
+That's good.
+
+95
+00:05:04,290 --> 00:05:08,010
+And if I say I was changed that makes more sense.
+
+96
+00:05:09,220 --> 00:05:12,100
+It type something and we get I was changed.
+
+97
+00:05:12,110 --> 00:05:18,420
+And if I keep typing things every time we enter or we change the input we get the event that's good.
+
+98
+00:05:18,740 --> 00:05:25,550
+So now what we need to do we need to pass the actual events so we can get the value just like vanilla
+
+99
+00:05:25,550 --> 00:05:26,420
+jazz.
+
+100
+00:05:26,600 --> 00:05:31,110
+So whenever we use an event by default we have the event right here.
+
+101
+00:05:31,250 --> 00:05:38,610
+So if I go around here and say event the first argument it's going to be the actual events event.
+
+102
+00:05:38,630 --> 00:05:42,580
+Now if I do cancel logged in the event we're going to get a lot of things.
+
+103
+00:05:42,750 --> 00:05:46,750
+So all of this does an event.
+
+104
+00:05:47,270 --> 00:05:53,360
+So I'm going to type Panay and we can get an object and this are all the events that we have available
+
+105
+00:05:53,840 --> 00:05:55,210
+for us to use.
+
+106
+00:05:55,220 --> 00:06:00,420
+Now the thing is that whenever we type something we need to get the value of what the user is typing.
+
+107
+00:06:00,590 --> 00:06:04,740
+And this is going to be inside event and target.
+
+108
+00:06:05,500 --> 00:06:06,810
+You can go right here.
+
+109
+00:06:06,820 --> 00:06:16,230
+So we have the event and we're going to say Dot target dot and then value just like Nilgiris and I get
+
+110
+00:06:16,250 --> 00:06:19,590
+to say and we get a f. we get F..
+
+111
+00:06:19,610 --> 00:06:28,090
+Let me type Francis and you know for each each word each character you're getting a council.
+
+112
+00:06:28,100 --> 00:06:30,530
+So you know that's working.
+
+113
+00:06:30,530 --> 00:06:32,200
+That works really nice.
+
+114
+00:06:32,210 --> 00:06:36,380
+So this aren't events but this are not the usual events.
+
+115
+00:06:36,380 --> 00:06:44,720
+We know this art called synthetic synthetic events and they are from react Mikko's right here and again
+
+116
+00:06:44,780 --> 00:06:53,720
+to say re-act than darks and then events and we get it right here synthetic event.
+
+117
+00:06:53,870 --> 00:06:56,040
+So this events are from react.
+
+118
+00:06:56,050 --> 00:07:01,590
+React is handling the events for us and not the actual browser just like we did in the past.
+
+119
+00:07:01,640 --> 00:07:08,510
+So if we go we scroll a little bit down we can have supported events and right here you can have a list
+
+120
+00:07:08,600 --> 00:07:14,010
+of all the events in this case keyboard events form events whatever events you can think of.
+
+121
+00:07:14,180 --> 00:07:20,660
+They just have it so you can check the docs and inspect a little bit of this documentation and know
+
+122
+00:07:20,660 --> 00:07:25,890
+which events you can get and maybe you can play a little bit with these events on the document.
+
+123
+00:07:25,910 --> 00:07:26,910
+You can do that.
+
+124
+00:07:27,190 --> 00:07:27,620
+OK.
+
+125
+00:07:27,740 --> 00:07:30,190
+So I'm going to just possibly DIOSA.
+
+126
+00:07:30,470 --> 00:07:32,090
+I'm going to go get a coffee.
+
+127
+00:07:32,250 --> 00:07:37,510
+Come right back and I will I will suggest you do the same thing.
+
+128
+00:07:38,090 --> 00:07:46,550
+I'm going to be talking about two three or four minutes about something that most people get complicated
+
+129
+00:07:46,550 --> 00:07:50,110
+with this most of the people get confused with this.
+
+130
+00:07:50,150 --> 00:07:53,700
+So what possibly deal and be right back.
+
+131
+00:07:53,870 --> 00:07:54,100
+Right.
+
+132
+00:07:54,100 --> 00:07:56,110
+So I want to talk about a few things.
+
+133
+00:07:56,240 --> 00:08:02,450
+I've made some courses not just to you to me but in my country and other places and pretty much all
+
+134
+00:08:02,450 --> 00:08:04,760
+students have the same question.
+
+135
+00:08:05,060 --> 00:08:11,990
+And this has got to do with the usage of this right here this so I'm going to start explaining some
+
+136
+00:08:12,010 --> 00:08:18,510
+Thanks and this are not related to react to this more as five or six related.
+
+137
+00:08:18,530 --> 00:08:21,600
+So if you're a master of javascript you can move along.
+
+138
+00:08:21,620 --> 00:08:22,460
+No problem.
+
+139
+00:08:22,580 --> 00:08:27,190
+If not just please please stay and watch this if not later.
+
+140
+00:08:27,210 --> 00:08:28,660
+You're going to have some problems.
+
+141
+00:08:28,660 --> 00:08:32,000
+I'm going to get confused with some things because of course it is.
+
+142
+00:08:32,050 --> 00:08:34,030
+It is really confusing.
+
+143
+00:08:34,040 --> 00:08:37,130
+So first I'm going to change the input change handler.
+
+144
+00:08:37,160 --> 00:08:38,610
+I'm going to give you an example.
+
+145
+00:08:38,630 --> 00:08:44,420
+Just going to come in the console lock and we're going to say cancel that log and then I went to get
+
+146
+00:08:44,480 --> 00:08:47,000
+a hey whenever I type something.
+
+147
+00:08:47,270 --> 00:08:52,770
+So if I go right here to our application I'm going to type something and we get hey several times that
+
+148
+00:08:52,850 --> 00:08:54,830
+you know that that works.
+
+149
+00:08:54,830 --> 00:09:01,610
+Now instead of doing that I'm going to go to the project right now and I'm going to add this I to add
+
+150
+00:09:01,610 --> 00:09:02,450
+parentheses.
+
+151
+00:09:02,540 --> 00:09:04,000
+So this is pretty much the same thing.
+
+152
+00:09:04,000 --> 00:09:07,090
+We are just invoking the function Simpang.
+
+153
+00:09:07,430 --> 00:09:10,710
+So if I go right here let me reload the page.
+
+154
+00:09:10,880 --> 00:09:16,020
+You know we are not typing anything but we're still getting Hey whenever the page loads.
+
+155
+00:09:16,280 --> 00:09:21,990
+So a lot is happening now whenever we use it like this we add the parentheses.
+
+156
+00:09:22,160 --> 00:09:29,450
+We are practically saying to react that whenever you render this this section this piece of code I want
+
+157
+00:09:29,450 --> 00:09:33,040
+you to immediately run this function.
+
+158
+00:09:33,230 --> 00:09:39,590
+So that's why whenever we remove this we are just making a reference to this function and not triggering
+
+159
+00:09:39,950 --> 00:09:43,450
+the onchange it's calling the function for us.
+
+160
+00:09:43,780 --> 00:09:44,360
+OK.
+
+161
+00:09:44,360 --> 00:09:48,820
+Now let me go right here and put the parenthesis.
+
+162
+00:09:49,220 --> 00:09:56,360
+So in theory if we just trigger the function I'm going to say cancel log on come in this one and we
+
+163
+00:09:56,360 --> 00:09:57,910
+need to cancel the event.
+
+164
+00:09:57,920 --> 00:09:59,310
+The target that Bhante.
+
+165
+00:09:59,660 --> 00:10:03,070
+And you know if it's empty we are not passing anything it's empty.
+
+166
+00:10:03,110 --> 00:10:09,300
+The target the value should be empty but now we're going to get cannot read properly target undefined
+
+167
+00:10:09,860 --> 00:10:18,960
+The thing is that whenever we don't have the parenthesis the on change it's binding the event to this
+
+168
+00:10:18,960 --> 00:10:19,540
+function.
+
+169
+00:10:19,590 --> 00:10:23,810
+So we have the event available because the onchange is doing this for us.
+
+170
+00:10:24,000 --> 00:10:28,070
+But whenever we trigger the function manually We didn't have any events.
+
+171
+00:10:28,110 --> 00:10:30,790
+It's the the arguments right here are empty.
+
+172
+00:10:30,810 --> 00:10:33,000
+So this event doesn't exist.
+
+173
+00:10:33,000 --> 00:10:39,540
+So you're calling to write here to a property that doesn't exist so we can be get can we property target
+
+174
+00:10:39,570 --> 00:10:40,410
+of undefined.
+
+175
+00:10:40,440 --> 00:10:42,420
+You know Diwan use undefined.
+
+176
+00:10:42,810 --> 00:10:44,880
+So how can we fix this.
+
+177
+00:10:45,300 --> 00:10:50,520
+So this is going to look really really weird going to put it right here because it's a little bit long
+
+178
+00:10:51,370 --> 00:10:53,650
+one second ago.
+
+179
+00:10:53,940 --> 00:10:55,400
+So how can we fix this.
+
+180
+00:10:55,420 --> 00:10:59,550
+I'm going to put a space and I'm going to pass a fat R-OH function.
+
+181
+00:10:59,550 --> 00:11:04,980
+This fact our function is going to have the arguments of the event and then when I call the function
+
+182
+00:11:05,130 --> 00:11:07,210
+I'm going to pass the event right here.
+
+183
+00:11:07,570 --> 00:11:11,810
+OK so let me come with the console OK let's try again.
+
+184
+00:11:11,990 --> 00:11:15,320
+I'm going to type Francis and you know it works.
+
+185
+00:11:15,360 --> 00:11:16,680
+It's still working.
+
+186
+00:11:16,680 --> 00:11:18,380
+So how can this work.
+
+187
+00:11:18,480 --> 00:11:20,120
+And the other thing too.
+
+188
+00:11:20,400 --> 00:11:26,030
+Well this is got to do with with nested functions it's more.
+
+189
+00:11:26,050 --> 00:11:26,270
+Yes.
+
+190
+00:11:26,280 --> 00:11:27,120
+Five or six.
+
+191
+00:11:27,120 --> 00:11:29,120
+Let me give you an example with the S-5.
+
+192
+00:11:29,260 --> 00:11:31,140
+You can get a real really quick.
+
+193
+00:11:31,170 --> 00:11:35,940
+First I'm going to have a function that is going to be one function one whatever.
+
+194
+00:11:36,420 --> 00:11:42,280
+So the one is going to take the argument of a name going to be passing a name to this function then
+
+195
+00:11:42,280 --> 00:11:47,390
+you're going to have function to add this function to it's going to have the same arguments.
+
+196
+00:11:47,760 --> 00:11:53,480
+And then what I want to do I want to trigger the function to pass a name.
+
+197
+00:11:54,150 --> 00:12:00,210
+So this function instead of doing the console log isn't going to call the function one and it's going
+
+198
+00:12:00,210 --> 00:12:00,750
+to pass.
+
+199
+00:12:00,750 --> 00:12:07,020
+The name argument which is going to be Frances and now of the function one it's in charge of doing the
+
+200
+00:12:07,020 --> 00:12:08,090
+console log.
+
+201
+00:12:08,250 --> 00:12:11,570
+So I'm going to say cancel a log and then just name.
+
+202
+00:12:12,030 --> 00:12:15,530
+If I reload the page we get Francis so that it's working.
+
+203
+00:12:15,530 --> 00:12:17,020
+You know real simple this is.
+
+204
+00:12:17,140 --> 00:12:17,630
+Yes fine.
+
+205
+00:12:17,700 --> 00:12:18,420
+Very good.
+
+206
+00:12:18,720 --> 00:12:21,180
+So the same thing is happening right here.
+
+207
+00:12:21,360 --> 00:12:25,530
+Whenever we call the unchanged disk on change it's calling to a function.
+
+208
+00:12:25,560 --> 00:12:31,770
+The first function right here and it's passing the event as an argument and this function it's calling
+
+209
+00:12:31,770 --> 00:12:35,630
+a different function and it's passing the event right here.
+
+210
+00:12:35,670 --> 00:12:37,200
+You know this is the.
+
+211
+00:12:37,440 --> 00:12:43,180
+Right here the two it's the this one outside and this one is the function one.
+
+212
+00:12:43,500 --> 00:12:48,630
+So whenever we call this we pass the end with that we have on the on the function to that we get from
+
+213
+00:12:48,630 --> 00:12:49,370
+the change.
+
+214
+00:12:49,380 --> 00:12:52,100
+And this of course works now.
+
+215
+00:12:52,470 --> 00:12:53,310
+Same thing.
+
+216
+00:12:53,310 --> 00:12:54,980
+It works really good.
+
+217
+00:12:55,330 --> 00:12:57,740
+So OK that's the problem.
+
+218
+00:12:57,740 --> 00:13:03,450
+You know it it's not that hard when you see it like this with the S-5 But just like this.
+
+219
+00:13:03,570 --> 00:13:04,570
+All trimmed.
+
+220
+00:13:04,860 --> 00:13:07,240
+It's get a little bit hard to understand.
+
+221
+00:13:07,350 --> 00:13:13,210
+Let's get up let's get we have a few more weird things with this.
+
+222
+00:13:13,410 --> 00:13:20,100
+At some point of course you can see something that says bind this but we're not there yet.
+
+223
+00:13:20,100 --> 00:13:22,750
+We're going to begin to do something else with buying this.
+
+224
+00:13:22,800 --> 00:13:23,320
+OK.
+
+225
+00:13:23,400 --> 00:13:30,690
+Whenever we get to that problem I would explain why we're doing by buying this and why we are not doing
+
+226
+00:13:30,690 --> 00:13:32,160
+bind this.
+
+227
+00:13:32,160 --> 00:13:34,730
+So let's keep moving forward on the next section.
+
+228
+00:13:34,730 --> 00:13:37,410
+We're going to be talking about the six constructor.
+

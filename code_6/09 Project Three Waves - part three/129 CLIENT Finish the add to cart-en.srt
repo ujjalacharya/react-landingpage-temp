@@ -1,0 +1,876 @@
+1
+00:00:00,750 --> 00:00:03,860
+OK so let's do a tiny recap of the cart.
+
+2
+00:00:04,060 --> 00:00:10,060
+So from the cart component which is this one right here we are clicking that button and we are dispatching
+
+3
+00:00:10,060 --> 00:00:11,510
+an action to the cart.
+
+4
+00:00:11,620 --> 00:00:12,370
+Right.
+
+5
+00:00:12,370 --> 00:00:17,050
+So that action goes to the server and the server of course listens for this.
+
+6
+00:00:17,050 --> 00:00:23,260
+Now we have a now with middleware that is retrieving all the data checking of the user south and Decatur
+
+7
+00:00:23,300 --> 00:00:25,480
+not checking tokens and everything else.
+
+8
+00:00:25,690 --> 00:00:29,270
+And at the end it will turn all the data we have inside of the user.
+
+9
+00:00:29,530 --> 00:00:31,230
+Then what do we do.
+
+10
+00:00:31,480 --> 00:00:32,650
+We find the user.
+
+11
+00:00:32,650 --> 00:00:38,860
+Now if we stop for one second and think about this the we are using the Find one right we are finding
+
+12
+00:00:38,860 --> 00:00:40,930
+all the data instead of the user.
+
+13
+00:00:41,020 --> 00:00:43,080
+And we've already have an inside out.
+
+14
+00:00:43,450 --> 00:00:44,710
+We already get it.
+
+15
+00:00:44,770 --> 00:00:49,360
+But the thing is that in your application maybe in your application you are not going to be returning
+
+16
+00:00:49,360 --> 00:00:53,210
+the user because there is kind of a pointless returning all the information.
+
+17
+00:00:53,300 --> 00:00:58,810
+I did this of course because I'm teaching but maybe you want to just return the ID because that's the
+
+18
+00:00:58,810 --> 00:01:00,010
+only relevant thing.
+
+19
+00:01:00,070 --> 00:01:04,010
+Just returning the ID of the user if the user self-educate it.
+
+20
+00:01:04,140 --> 00:01:04,520
+So.
+
+21
+00:01:04,570 --> 00:01:05,290
+Right.
+
+22
+00:01:05,380 --> 00:01:11,410
+So again of course if this is the case if you're just returning the ID on the server of course you need
+
+23
+00:01:11,410 --> 00:01:12,570
+to do find one.
+
+24
+00:01:12,610 --> 00:01:16,740
+In this case we could have skipped define one and just do that duplicated.
+
+25
+00:01:17,050 --> 00:01:19,330
+But in this case we are just entering a user.
+
+26
+00:01:19,420 --> 00:01:24,910
+We are finding that user by the user id we get from the south and we are entering all the data of the
+
+27
+00:01:24,910 --> 00:01:25,830
+user.
+
+28
+00:01:26,120 --> 00:01:26,830
+Right.
+
+29
+00:01:27,250 --> 00:01:35,850
+So if we take this as an end and is an example I go to two users when we go to users and this one this
+
+30
+00:01:35,850 --> 00:01:38,600
+one and we go to card and we have two elements.
+
+31
+00:01:38,700 --> 00:01:40,410
+So we get all this information.
+
+32
+00:01:40,410 --> 00:01:47,340
+What we do we do a loop and check if we have a duplicate it Id remember that from user actions we are
+
+33
+00:01:47,340 --> 00:01:48,960
+passing the ID of the product.
+
+34
+00:01:48,960 --> 00:01:55,530
+We want to add to the cart if we do have a duplicated inside of the this instance of the user you know
+
+35
+00:01:55,530 --> 00:01:59,560
+inside cart we will just change the Bible to duplicated or false.
+
+36
+00:01:59,730 --> 00:02:03,530
+So if the if it's duplicated we do some code that we actually we don't get.
+
+37
+00:02:03,540 --> 00:02:04,520
+We don't have right now.
+
+38
+00:02:04,800 --> 00:02:08,480
+But if it's not duplicated we add a new documents.
+
+39
+00:02:08,550 --> 00:02:11,320
+So I'm going to go to that user or I'm going to enter to that user.
+
+40
+00:02:11,340 --> 00:02:17,970
+And again we could have used user find a use it again and again to push everything to the cart write
+
+41
+00:02:18,000 --> 00:02:19,770
+whatever data we get on the card.
+
+42
+00:02:20,130 --> 00:02:21,630
+So we are entry card.
+
+43
+00:02:21,660 --> 00:02:28,590
+You're adding an ID and we are making the ID of the element that we want to add as a mongoose types.
+
+44
+00:02:28,590 --> 00:02:28,880
+Right.
+
+45
+00:02:28,890 --> 00:02:37,410
+An object ID because later we need to loop all these cards and get the object at this as an object id
+
+46
+00:02:37,450 --> 00:02:41,480
+and this object d equals to the object id we have inside products.
+
+47
+00:02:41,670 --> 00:02:42,420
+Right.
+
+48
+00:02:42,450 --> 00:02:43,060
+All right.
+
+49
+00:02:43,260 --> 00:02:45,930
+Then we add the quantity of 1 because this is a new element.
+
+50
+00:02:46,050 --> 00:02:52,110
+And then we do that now right to Abda date just in case you can do whatever you want right here if we
+
+51
+00:02:52,110 --> 00:02:53,730
+want to get the document back.
+
+52
+00:02:53,730 --> 00:02:55,300
+The one we just enter.
+
+53
+00:02:55,500 --> 00:02:57,660
+We just do new and true.
+
+54
+00:02:57,900 --> 00:03:00,210
+I'm sorry now we enter the whole document.
+
+55
+00:03:00,660 --> 00:03:05,380
+So what we do we of course then we run a function if we get an error we return an error.
+
+56
+00:03:05,580 --> 00:03:10,690
+And at the very end we send a status of 200 and we send the Jason back.
+
+57
+00:03:10,740 --> 00:03:15,040
+Now instead of sending the whole document of the user because this is what we get back.
+
+58
+00:03:15,090 --> 00:03:19,560
+The whole user we just send what the user gets inside the card.
+
+59
+00:03:19,740 --> 00:03:20,760
+After we push it.
+
+60
+00:03:20,760 --> 00:03:23,130
+Of course that's why we used to.
+
+61
+00:03:23,310 --> 00:03:28,100
+If we don't use this and we use something else it's going to return to the previous.
+
+62
+00:03:28,150 --> 00:03:28,540
+So OK.
+
+63
+00:03:28,590 --> 00:03:32,710
+Now we inside Jason we have the new state of the card.
+
+64
+00:03:32,850 --> 00:03:35,100
+So the reducer is going to get that.
+
+65
+00:03:35,100 --> 00:03:39,450
+And instead of updating all the user data because we don't have it from the response we just get the
+
+66
+00:03:39,450 --> 00:03:44,330
+card information we are grabbing the previous state of the user data ride.
+
+67
+00:03:44,460 --> 00:03:48,280
+And we are merging it with the response we get from the server.
+
+68
+00:03:48,300 --> 00:03:54,660
+So we are just updating the cart inside the previous user data and we updated with the new values.
+
+69
+00:03:54,660 --> 00:03:57,080
+So that's what what happens in a nutshell.
+
+70
+00:03:57,120 --> 00:04:02,240
+Remember that you could have used the user we get from our right that user.
+
+71
+00:04:02,430 --> 00:04:05,800
+And maybe instead of doing find one use the same user.
+
+72
+00:04:06,060 --> 00:04:09,840
+All right let's get another do the duplicated.
+
+73
+00:04:09,870 --> 00:04:10,350
+This is fun.
+
+74
+00:04:10,350 --> 00:04:11,630
+This is going to be fun.
+
+75
+00:04:11,650 --> 00:04:18,080
+Going to go here and start this is we have a duplicated again we are going to do the same thing.
+
+76
+00:04:18,090 --> 00:04:21,900
+I'm going to go and find one an update.
+
+77
+00:04:21,900 --> 00:04:23,590
+So what do we need to find.
+
+78
+00:04:23,820 --> 00:04:33,300
+All right I'm going to go here and I need to find the user right and I need to find the ID of the element
+
+79
+00:04:33,390 --> 00:04:34,440
+that it's duplicated.
+
+80
+00:04:34,440 --> 00:04:35,970
+Maybe this one is duplicated.
+
+81
+00:04:36,030 --> 00:04:36,440
+All right.
+
+82
+00:04:36,510 --> 00:04:37,720
+So going to find the user.
+
+83
+00:04:37,860 --> 00:04:42,780
+And I'm going to go to the card and find the ID that it's duplicated and that's the one that we are
+
+84
+00:04:42,780 --> 00:04:44,900
+going to be changing or modifying.
+
+85
+00:04:45,020 --> 00:04:45,550
+All right.
+
+86
+00:04:45,930 --> 00:04:47,940
+So find user.
+
+87
+00:04:47,940 --> 00:04:51,120
+Let me do it like this.
+
+88
+00:04:51,120 --> 00:04:52,460
+That's a little bit better.
+
+89
+00:04:52,650 --> 00:04:54,390
+So first I do find the ID.
+
+90
+00:04:54,430 --> 00:04:56,990
+I'm going to go and find the ID of the user right.
+
+91
+00:04:57,090 --> 00:04:57,670
+OK.
+
+92
+00:04:57,840 --> 00:05:02,960
+So request that user dot underscore ID.
+
+93
+00:05:02,970 --> 00:05:08,270
+Now we are inside the user but I also need to find the record.
+
+94
+00:05:08,460 --> 00:05:14,540
+And if you remember whenever we add something new elements on the array we are doing this as an ID.
+
+95
+00:05:14,940 --> 00:05:16,900
+And it's inside of cart.
+
+96
+00:05:17,160 --> 00:05:24,770
+So I'm going to be passing this and a cart that ID and I need to find and we need to use the same thing.
+
+97
+00:05:24,810 --> 00:05:26,400
+This is an object ID.
+
+98
+00:05:26,580 --> 00:05:33,960
+So I need to find whatever object id that it's equal to the request query query and product ID that
+
+99
+00:05:33,960 --> 00:05:35,270
+they are trying to add.
+
+100
+00:05:35,550 --> 00:05:42,170
+So this is going to go and find let me do it like this are going to close this or go.
+
+101
+00:05:42,180 --> 00:05:48,870
+This is going to go and find the product we want to update inside of the card of the user.
+
+102
+00:05:48,900 --> 00:05:49,380
+Right.
+
+103
+00:05:49,380 --> 00:05:51,960
+It's not just entering the user so we're going to do.
+
+104
+00:05:51,960 --> 00:05:52,860
+Coma.
+
+105
+00:05:53,230 --> 00:05:53,580
+All right.
+
+106
+00:05:53,580 --> 00:05:54,840
+Going to go right here.
+
+107
+00:05:55,350 --> 00:05:57,820
+Now the next one is going to be what are we going to be doing.
+
+108
+00:05:58,020 --> 00:06:02,040
+So we don't really need to update anything.
+
+109
+00:06:02,320 --> 00:06:07,680
+We think about it we know it's going in kind of an update but what we want to do is just change the
+
+110
+00:06:07,680 --> 00:06:09,030
+number and quantity.
+
+111
+00:06:09,030 --> 00:06:10,230
+And this is an integer.
+
+112
+00:06:10,440 --> 00:06:15,120
+So if we have one it's too if you have three it's going to be four.
+
+113
+00:06:15,450 --> 00:06:16,170
+And so on.
+
+114
+00:06:16,170 --> 00:06:16,860
+Of course.
+
+115
+00:06:16,890 --> 00:06:25,180
+So what we need to do it's increment and for this with magos we have an increment so open and close.
+
+116
+00:06:25,200 --> 00:06:25,720
+Right.
+
+117
+00:06:26,010 --> 00:06:32,010
+So what we increment is whatever we have inside the card going to say cart and the way we increment
+
+118
+00:06:32,040 --> 00:06:37,960
+we need to do dot dollar sign dot and then the name of whatever we want to no change.
+
+119
+00:06:38,080 --> 00:06:43,510
+In this case is going to be quantity and how much are we going to increment this.
+
+120
+00:06:43,510 --> 00:06:50,370
+So by 1 that is that this is going to go to that record and increment the value by 1.
+
+121
+00:06:50,680 --> 00:06:51,260
+Okay.
+
+122
+00:06:51,660 --> 00:06:55,400
+So then of course coma and we when to go to the next thing.
+
+123
+00:06:55,610 --> 00:07:00,340
+Again we need to return to you.
+
+124
+00:07:00,440 --> 00:07:01,400
+True.
+
+125
+00:07:02,130 --> 00:07:07,270
+And this one will return all the card elements inside the user.
+
+126
+00:07:07,320 --> 00:07:10,500
+And that's one of the reasons of where we are doing this.
+
+127
+00:07:10,740 --> 00:07:15,630
+If not of course on the client or maybe right here at the end we will need to do something else.
+
+128
+00:07:15,630 --> 00:07:20,220
+But for now we are sending everything that is inside of the card of the user.
+
+129
+00:07:20,340 --> 00:07:23,350
+And then of course we just sent a response back.
+
+130
+00:07:23,380 --> 00:07:29,070
+Now what we can do is pretty much the same thing because it's pretty much the same function.
+
+131
+00:07:29,070 --> 00:07:30,000
+All right.
+
+132
+00:07:30,000 --> 00:07:33,860
+So this will of course increment by one that same article.
+
+133
+00:07:33,930 --> 00:07:34,530
+Okay.
+
+134
+00:07:35,160 --> 00:07:43,770
+So I'm going to save it and let's you know let's try it in a reload the application and I know that
+
+135
+00:07:43,830 --> 00:07:54,620
+I have an R G to 5 5 right click here and I'm going to go to robo 3 go to users and check this.
+
+136
+00:07:54,630 --> 00:07:55,820
+So the card now we have to.
+
+137
+00:07:55,830 --> 00:07:58,480
+Even though we just dispatched that action.
+
+138
+00:07:58,800 --> 00:08:04,640
+And if we go to the first one which is the R.G. 2 5 5 we get to if I just do it again.
+
+139
+00:08:04,680 --> 00:08:06,700
+Let me just do it again.
+
+140
+00:08:06,750 --> 00:08:07,930
+Now we're going to have three.
+
+141
+00:08:08,160 --> 00:08:12,440
+So if I go users open that card go.
+
+142
+00:08:12,480 --> 00:08:13,270
+Now we have three.
+
+143
+00:08:13,320 --> 00:08:15,180
+So the quality is very good.
+
+144
+00:08:15,210 --> 00:08:19,210
+So this works OK so now we need to do this.
+
+145
+00:08:19,450 --> 00:08:25,770
+So so far we can just add guitars from the actual card but not from the product so we can add this.
+
+146
+00:08:25,780 --> 00:08:29,770
+And of course this could be a lot more dynamic ride.
+
+147
+00:08:29,800 --> 00:08:34,780
+Again I'm teaching I need to be as clear as I can I can I can be.
+
+148
+00:08:34,900 --> 00:08:40,090
+So if you want to make it a little bit more dynamic you know maybe create an actual function right here
+
+149
+00:08:40,330 --> 00:08:41,620
+and pass arguments.
+
+150
+00:08:41,710 --> 00:08:45,660
+Yeah trust just try to do it to do it a little bit smaller.
+
+151
+00:08:45,790 --> 00:08:46,930
+Let's get.
+
+152
+00:08:46,960 --> 00:08:48,580
+So first we need to do this.
+
+153
+00:08:48,580 --> 00:08:52,540
+This is the last thing we're going to do for this section and then we're going to go to the actual user
+
+154
+00:08:52,540 --> 00:08:53,160
+account.
+
+155
+00:08:53,370 --> 00:08:53,840
+OK.
+
+156
+00:08:54,070 --> 00:08:57,810
+So whenever we need to add to cart we click and with dispatch and action.
+
+157
+00:08:57,820 --> 00:09:02,390
+So I'm going to go to that component which is the index of products.
+
+158
+00:09:02,710 --> 00:09:09,070
+And right now we have the card handler and this one goes to the product info.
+
+159
+00:09:09,070 --> 00:09:13,780
+So I'm going to go to product info just to make sure we are passing this.
+
+160
+00:09:14,140 --> 00:09:22,750
+So on the go here product info it's inside Pernik actions and whenever we go to product actions actually
+
+161
+00:09:22,750 --> 00:09:24,600
+we are not doing anything.
+
+162
+00:09:24,790 --> 00:09:27,810
+We are just saying at cart a consulate.
+
+163
+00:09:27,930 --> 00:09:34,360
+So of course we need to go back to the parent and trigger this function at the card function.
+
+164
+00:09:34,360 --> 00:09:39,160
+You know the property we are passing it's going to go to product info and I'm going to of course at
+
+165
+00:09:39,160 --> 00:09:39,550
+this.
+
+166
+00:09:39,610 --> 00:09:46,450
+So instead of the console lock it's props you know the problem we are getting from the parent and triggering
+
+167
+00:09:46,450 --> 00:09:48,040
+the function after cart.
+
+168
+00:09:48,280 --> 00:09:49,300
+Right.
+
+169
+00:09:49,300 --> 00:09:56,080
+So this function it's expecting the idea of the you know element that all the product we want to attach.
+
+170
+00:09:56,080 --> 00:10:02,860
+So this one is inside detail an idea all right now going to go back to the index.
+
+171
+00:10:02,860 --> 00:10:06,430
+We need to add this function to create it because we don't have it.
+
+172
+00:10:06,430 --> 00:10:11,530
+So anti-car car $10 you could do it like this or you could do it like this.
+
+173
+00:10:11,530 --> 00:10:12,010
+All right.
+
+174
+00:10:12,280 --> 00:10:16,300
+So now inside of here we'll be getting the ID right.
+
+175
+00:10:16,420 --> 00:10:17,940
+So far so good.
+
+176
+00:10:18,490 --> 00:10:24,050
+I'm going to cancel the ID just to make sure we are getting an ID.
+
+177
+00:10:24,340 --> 00:10:29,050
+I'm going to reload the application of course it's going to fail because the server needs to we start
+
+178
+00:10:29,290 --> 00:10:31,750
+at the cart and we get the idea.
+
+179
+00:10:32,500 --> 00:10:32,940
+Fine.
+
+180
+00:10:32,980 --> 00:10:33,570
+OK.
+
+181
+00:10:34,000 --> 00:10:36,590
+So now of course we need to dispatch an action right.
+
+182
+00:10:36,610 --> 00:10:38,540
+We need to bring readouts and everything else.
+
+183
+00:10:38,560 --> 00:10:39,950
+We've already have redux.
+
+184
+00:10:39,970 --> 00:10:46,250
+So what we need to do is we need to bring the user right the ATA card from user.
+
+185
+00:10:46,420 --> 00:10:53,340
+So import add to card and we call this this way from.
+
+186
+00:10:53,590 --> 00:10:59,130
+And then re-act redux just let me make sure the name of the function is correct.
+
+187
+00:10:59,200 --> 00:11:00,970
+Yeah that is correct.
+
+188
+00:11:00,970 --> 00:11:01,660
+Right.
+
+189
+00:11:01,690 --> 00:11:06,190
+So when you just need to dispatch the action we've already have redirects right here.
+
+190
+00:11:06,190 --> 00:11:17,410
+So again to go to the handler and of course this that's prob the props props that dispatch dispatch
+
+191
+00:11:19,710 --> 00:11:21,820
+and we say at cart.
+
+192
+00:11:22,320 --> 00:11:25,730
+And of course we need to pass the ID and that is it
+
+193
+00:11:28,440 --> 00:11:31,180
+react redux at cart we didn't have a next board.
+
+194
+00:11:31,210 --> 00:11:33,280
+Yes we do to cart.
+
+195
+00:11:33,300 --> 00:11:35,540
+Of course it's not.
+
+196
+00:11:35,730 --> 00:11:41,640
+This is not done for Slash dad for Slash one more.
+
+197
+00:11:41,820 --> 00:11:44,050
+Let me get the out to complete.
+
+198
+00:11:44,640 --> 00:11:45,690
+Maybe it's a little bit slow.
+
+199
+00:11:45,690 --> 00:11:46,110
+There we go.
+
+200
+00:11:46,140 --> 00:11:47,080
+Actions.
+
+201
+00:11:47,400 --> 00:11:51,550
+And then user actions sorry for this again
+
+202
+00:11:54,900 --> 00:11:55,360
+OK.
+
+203
+00:11:55,430 --> 00:11:59,320
+So we've already have this one and we have three of this one.
+
+204
+00:11:59,390 --> 00:12:01,540
+So I'm going to go to a different one.
+
+205
+00:12:01,590 --> 00:12:04,690
+I'm going to do the the rocket went out.
+
+206
+00:12:04,800 --> 00:12:06,340
+It's a rocket cart.
+
+207
+00:12:06,380 --> 00:12:07,540
+And now we have three.
+
+208
+00:12:07,880 --> 00:12:08,250
+All right.
+
+209
+00:12:08,270 --> 00:12:10,800
+So we're going to go and we have to.
+
+210
+00:12:10,830 --> 00:12:14,610
+If I open it again we have three.
+
+211
+00:12:14,750 --> 00:12:17,080
+And the third one it's the one.
+
+212
+00:12:17,300 --> 00:12:18,400
+Let's do it again.
+
+213
+00:12:20,450 --> 00:12:24,120
+Users won card three.
+
+214
+00:12:24,170 --> 00:12:24,740
+We have two.
+
+215
+00:12:24,770 --> 00:12:27,520
+So everything works.
+
+216
+00:12:27,710 --> 00:12:33,230
+So now what we need to do we need to go to the My Account that closes my account and whenever we go
+
+217
+00:12:33,230 --> 00:12:39,410
+to my cart we're going to fetch all the documents all the products right here show the quantity and
+
+218
+00:12:39,410 --> 00:12:40,200
+everything else.
+
+219
+00:12:40,400 --> 00:12:42,890
+Do the sum and later do the Pay-Pal.
+

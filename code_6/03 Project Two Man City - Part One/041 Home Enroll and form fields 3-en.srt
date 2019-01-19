@@ -1,0 +1,944 @@
+1
+00:00:01,060 --> 00:00:03,920
+All right so now we have the required validation.
+
+2
+00:00:04,060 --> 00:00:08,500
+But we have one more which is the email validation right.
+
+3
+00:00:08,560 --> 00:00:10,080
+So we need to add it to Misc..
+
+4
+00:00:10,180 --> 00:00:12,000
+And you know at the validation.
+
+5
+00:00:12,160 --> 00:00:16,660
+So I'm going to do this before because that requires connection can it can in global.
+
+6
+00:00:16,810 --> 00:00:19,290
+And the e-mail it's a little bit more specific.
+
+7
+00:00:19,330 --> 00:00:21,300
+So we're going to do that validation first.
+
+8
+00:00:21,370 --> 00:00:27,930
+So we do pretty much the same thing if we do have an NLM element that validation that email.
+
+9
+00:00:27,940 --> 00:00:29,040
+We will do something.
+
+10
+00:00:29,200 --> 00:00:35,080
+Now I will add as a resource just a javascript file with a regular expression a regular expression is
+
+11
+00:00:35,080 --> 00:00:41,020
+going to be using to check the email so you can get it from there or you can just go to the web and
+
+12
+00:00:41,020 --> 00:00:43,960
+find directx for a validation email.
+
+13
+00:00:43,960 --> 00:00:46,240
+This one is really really simple.
+
+14
+00:00:46,360 --> 00:00:51,750
+You have another and you have other publications with regular expressions.
+
+15
+00:00:51,850 --> 00:00:53,380
+They are much much longer.
+
+16
+00:00:53,380 --> 00:00:55,390
+This is one it's really simple.
+
+17
+00:00:55,390 --> 00:01:00,050
+So again we are just testing the element that value to check if we had we have a.
+
+18
+00:01:00,280 --> 00:01:01,380
+Real simple.
+
+19
+00:01:01,390 --> 00:01:09,340
+And then of course we will add a message so we can say Konst message equals and we use template strings.
+
+20
+00:01:09,370 --> 00:01:14,760
+Same thing with it right here so I get a copy of this and they're going to paste it right here.
+
+21
+00:01:14,770 --> 00:01:18,190
+So if the element of course is not valid we have an error.
+
+22
+00:01:18,370 --> 00:01:29,380
+This is going to be this or maybe MUST MUST be a valid email get the end of course just like the other
+
+23
+00:01:29,380 --> 00:01:32,640
+one I'm going to copy this and I'm going to paste them here.
+
+24
+00:01:32,710 --> 00:01:37,730
+If it's not valid Google returns about it and the error message if not error.
+
+25
+00:01:37,780 --> 00:01:38,460
+Very good.
+
+26
+00:01:38,650 --> 00:01:39,160
+Right.
+
+27
+00:01:39,250 --> 00:01:40,990
+So we are pretty much done.
+
+28
+00:01:40,990 --> 00:01:42,680
+Real simple real simple.
+
+29
+00:01:42,940 --> 00:01:45,340
+So now we can check right here.
+
+30
+00:01:45,340 --> 00:01:54,290
+If we do have an e-mail so I'm going to type something and we can to get the must be a valid email.
+
+31
+00:01:54,290 --> 00:01:59,590
+And of course about it false if I add an e-mail and say gmail dot com whatever.
+
+32
+00:01:59,720 --> 00:02:01,450
+And check the state of this.
+
+33
+00:02:01,850 --> 00:02:03,730
+Everything is going to be valid true.
+
+34
+00:02:03,740 --> 00:02:06,720
+And we have no validation message.
+
+35
+00:02:06,740 --> 00:02:08,350
+Very very simple.
+
+36
+00:02:08,360 --> 00:02:14,380
+Now of course what we need to do now is we need a way to render that error message.
+
+37
+00:02:14,420 --> 00:02:19,560
+Of course if the empire is not valid you know kind of makes sense why why are we doing all this.
+
+38
+00:02:19,670 --> 00:02:22,150
+So OK so we're going to go back to n roll.
+
+39
+00:02:22,250 --> 00:02:29,690
+So and roll will have a key you know form data e-mail each input will have a validation message and
+
+40
+00:02:29,690 --> 00:02:35,660
+we are passing all of this data whenever we render the form feel.
+
+41
+00:02:35,660 --> 00:02:38,240
+So this from will be receiving.
+
+42
+00:02:38,480 --> 00:02:45,170
+If the elements it's valid or not and it will be getting that error message if we do have an error message.
+
+43
+00:02:45,440 --> 00:02:50,880
+So what we can do we can catch it here and render the error message display the message below the input
+
+44
+00:02:51,260 --> 00:02:52,680
+or not of course.
+
+45
+00:02:52,910 --> 00:02:59,840
+So I'm going to go here at the bottom and it create a function called show error and it's just a function
+
+46
+00:02:59,960 --> 00:03:01,250
+just a function.
+
+47
+00:03:01,760 --> 00:03:05,580
+All right of course we don't have this function we need to create to write here.
+
+48
+00:03:05,750 --> 00:03:13,980
+So I'm going to go right here to the top before render a template and I'm going to say cons cons or
+
+49
+00:03:14,050 --> 00:03:18,270
+egos and show error.
+
+50
+00:03:18,740 --> 00:03:19,520
+All right.
+
+51
+00:03:19,520 --> 00:03:21,110
+Same same name of function.
+
+52
+00:03:21,760 --> 00:03:22,550
+Very good.
+
+53
+00:03:22,910 --> 00:03:24,740
+So no this is just going to be a function.
+
+54
+00:03:24,800 --> 00:03:31,670
+And at the end what we will be returning is same thing that is just a template with another message.
+
+55
+00:03:31,850 --> 00:03:36,120
+So I'm going to say let error and then message something like that.
+
+56
+00:03:36,140 --> 00:03:38,530
+You can choose whenever you want doesn't matter.
+
+57
+00:03:38,720 --> 00:03:45,260
+So this one is going to be a div just a div and I'm going to add a class name so class name and it will
+
+58
+00:03:45,260 --> 00:03:49,110
+be error level.
+
+59
+00:03:49,250 --> 00:03:52,460
+Now instead of here we need to return an error message.
+
+60
+00:03:52,520 --> 00:03:57,560
+If we do have an error message so I'm going to be attaching some code and some validation you know some
+
+61
+00:03:57,560 --> 00:04:00,170
+check before we add an actual message.
+
+62
+00:04:00,170 --> 00:04:04,850
+So I'm going to access form data dot and I'm going to access validation.
+
+63
+00:04:04,850 --> 00:04:11,820
+So if on this import this form data this element we have some validation then OK this is going to go
+
+64
+00:04:11,820 --> 00:04:12,170
+true.
+
+65
+00:04:12,170 --> 00:04:18,140
+So we move forward but I also want to check if the form data it's not valid.
+
+66
+00:04:18,140 --> 00:04:24,500
+So if form data is not valid then I want to you know display that error message.
+
+67
+00:04:24,590 --> 00:04:30,450
+Of course if we are the elements it is valid and it has validation doesn't matter.
+
+68
+00:04:30,800 --> 00:04:34,520
+We are not going to return anything very simple just logic.
+
+69
+00:04:34,520 --> 00:04:41,660
+So what we would do well we'll be returning is deformed data dot and whatever validation message we
+
+70
+00:04:41,660 --> 00:04:46,140
+get right here on the state of the actual elements right here.
+
+71
+00:04:46,190 --> 00:04:50,150
+So I'm going to copy the names so I don't have to type everything and that's it.
+
+72
+00:04:50,150 --> 00:04:56,690
+So at the end of the function the only thing we're going to be returning is return and then error message.
+
+73
+00:04:56,690 --> 00:04:57,160
+Right.
+
+74
+00:04:59,160 --> 00:04:59,450
+All right.
+
+75
+00:04:59,460 --> 00:05:01,640
+So let let's see how it goes.
+
+76
+00:05:01,770 --> 00:05:05,890
+So all right I'm going to type something and go away.
+
+77
+00:05:05,970 --> 00:05:07,890
+Maybe type it and delete it.
+
+78
+00:05:07,890 --> 00:05:09,210
+This field is required.
+
+79
+00:05:09,210 --> 00:05:12,920
+Of course we're going to do some things to clear if we hold out.
+
+80
+00:05:12,920 --> 00:05:16,870
+You know we go outside the input and everything else doesn't matter right now.
+
+81
+00:05:16,920 --> 00:05:20,230
+So the most important thing is that we are getting the error message.
+
+82
+00:05:20,310 --> 00:05:22,080
+We don't have a valid email.
+
+83
+00:05:22,100 --> 00:05:22,770
+All right.
+
+84
+00:05:22,770 --> 00:05:27,980
+And if I add a valid e-mail gmail dot com something like that doesn't matter.
+
+85
+00:05:27,980 --> 00:05:30,610
+Dot com the error goes away.
+
+86
+00:05:30,720 --> 00:05:32,680
+So we are on the good track right here.
+
+87
+00:05:32,690 --> 00:05:33,600
+All right.
+
+88
+00:05:33,990 --> 00:05:36,680
+So what else we still need to do a lot of things.
+
+89
+00:05:36,690 --> 00:05:40,400
+What happens if we try to submit the form.
+
+90
+00:05:40,500 --> 00:05:47,340
+We need a way to loop through all the unroll elements that make sure that they are valid and that we
+
+91
+00:05:47,340 --> 00:05:48,810
+do have a value.
+
+92
+00:05:48,950 --> 00:05:56,260
+And then of course we need to send the e-mail to the database store the e-mail to the database.
+
+93
+00:05:56,470 --> 00:06:01,770
+But for what it's going to be doing is going to be looping through all the elements we have right here
+
+94
+00:06:01,770 --> 00:06:02,690
+and form data.
+
+95
+00:06:02,880 --> 00:06:07,810
+We'll be rechecking if they are valid and they are good to go and if they good to go of course we can
+
+96
+00:06:07,840 --> 00:06:13,920
+create a new object with just a key value pair you know email and the name because we can not submit
+
+97
+00:06:14,010 --> 00:06:15,640
+all of this to the server.
+
+98
+00:06:15,660 --> 00:06:18,410
+We just need to submit the key value pair ride.
+
+99
+00:06:18,440 --> 00:06:20,130
+The usual way.
+
+100
+00:06:20,130 --> 00:06:21,260
+The normal way.
+
+101
+00:06:21,700 --> 00:06:22,280
+OK.
+
+102
+00:06:22,530 --> 00:06:28,050
+So of course I'm going to be adding a button right here at the bottom because we don't we have so far.
+
+103
+00:06:28,290 --> 00:06:36,400
+So I'm going to go and say button and of course this well this one B and roll or something like that.
+
+104
+00:06:36,600 --> 00:06:42,600
+And of course we need to attach a known click event listener so open and close.
+
+105
+00:06:42,960 --> 00:06:48,990
+And of course we pass the event and then we run a function which is the same function we have right
+
+106
+00:06:48,990 --> 00:06:50,710
+here pretty much the same thing.
+
+107
+00:06:51,120 --> 00:06:51,890
+All right.
+
+108
+00:06:52,080 --> 00:06:56,080
+So now whenever we click on the button we will try to submit the form.
+
+109
+00:06:56,180 --> 00:06:57,870
+Right so we got the roll.
+
+110
+00:06:58,100 --> 00:07:01,940
+So if I click on the button the page is going to reload.
+
+111
+00:07:01,970 --> 00:07:09,160
+And this is you know the usual how would the forms work and in h d m l b click it and we go to the server.
+
+112
+00:07:09,170 --> 00:07:14,660
+So make a request so the page loads but I don't want this I don't want this behavior I don't want this
+
+113
+00:07:14,660 --> 00:07:15,610
+to happen.
+
+114
+00:07:15,680 --> 00:07:18,250
+Of course since we have the event we can block it.
+
+115
+00:07:18,280 --> 00:07:19,920
+Usual HDMI out.
+
+116
+00:07:20,430 --> 00:07:20,930
+OK.
+
+117
+00:07:21,110 --> 00:07:26,810
+So on the submit form of course we will be receiving an event just like this.
+
+118
+00:07:27,410 --> 00:07:34,570
+And I'm going to say event and I'm going to do the famous prevent default just like this.
+
+119
+00:07:34,700 --> 00:07:36,010
+We all know this.
+
+120
+00:07:36,350 --> 00:07:44,250
+Of course we will be doing at the end is just submitting an object with a key and a value right.
+
+121
+00:07:44,390 --> 00:07:50,540
+So I'm going to create a function I'm sorry a barbel that is going to be hosting this data to submit.
+
+122
+00:07:50,570 --> 00:07:51,660
+Pretty clear.
+
+123
+00:07:51,660 --> 00:07:59,850
+And this is going to start as an empty object then I'm going to create a new Marvel called form is valid.
+
+124
+00:07:59,900 --> 00:08:02,360
+So this one is going to be true or false.
+
+125
+00:08:02,390 --> 00:08:07,910
+So at the beginning before we start checking the Farmall it's going to be true so I will we will assume
+
+126
+00:08:07,910 --> 00:08:11,250
+that all the inputs are valid right now.
+
+127
+00:08:11,540 --> 00:08:12,750
+So now what I need to do.
+
+128
+00:08:12,980 --> 00:08:19,400
+I need to go through all of the elements inside form data and check if they have a value.
+
+129
+00:08:19,400 --> 00:08:21,170
+I'm sorry if they are valid.
+
+130
+00:08:21,250 --> 00:08:21,920
+True.
+
+131
+00:08:22,190 --> 00:08:26,120
+That's the one thing we need to do because if they are valid true they are good to go.
+
+132
+00:08:26,120 --> 00:08:32,570
+They are good to be part of data to submit if not of course everything fails.
+
+133
+00:08:32,570 --> 00:08:35,530
+So I going to create a 4 because right now we have one.
+
+134
+00:08:35,630 --> 00:08:38,070
+But in the future we will have maybe more.
+
+135
+00:08:38,150 --> 00:08:40,590
+So it's a good idea to create a 4.
+
+136
+00:08:40,670 --> 00:08:50,780
+They're going to say let key in and we want to loop the state does not state that form data.
+
+137
+00:08:50,810 --> 00:08:51,720
+All right.
+
+138
+00:08:52,310 --> 00:08:58,480
+So instead of here what I want to do on every loop inside of data to submit.
+
+139
+00:08:58,660 --> 00:09:00,020
+I'm going to add this.
+
+140
+00:09:00,040 --> 00:09:03,560
+I'm going to say data to submit equals.
+
+141
+00:09:03,860 --> 00:09:06,940
+Sorry date of mid and the name of the key.
+
+142
+00:09:07,010 --> 00:09:13,190
+So on each loop of this data form data I'm going to grab the key in this case it's email and I'm going
+
+143
+00:09:13,190 --> 00:09:17,020
+to push a new value to the data to submit chess with the key.
+
+144
+00:09:17,240 --> 00:09:24,560
+And then of course that key has a value and the value is going to be this that state that form data
+
+145
+00:09:25,250 --> 00:09:27,250
+whatever key we are looping.
+
+146
+00:09:27,740 --> 00:09:29,980
+And then of course the value.
+
+147
+00:09:30,260 --> 00:09:30,870
+Right.
+
+148
+00:09:31,220 --> 00:09:31,950
+So at the end.
+
+149
+00:09:31,970 --> 00:09:40,400
+And let me again show you console log data to see if I made this because maybe you're not used to do
+
+150
+00:09:40,400 --> 00:09:45,620
+it do something like this even if you have more experience you know what can happen right here.
+
+151
+00:09:45,920 --> 00:09:46,850
+So I'm going to type.
+
+152
+00:09:46,850 --> 00:09:49,210
+I don't know just an email whatever.
+
+153
+00:09:49,340 --> 00:09:56,390
+And if I click it and roll we are looping to the state of data we are creating a key with the same name
+
+154
+00:09:56,390 --> 00:09:57,870
+of the key we have right here.
+
+155
+00:09:57,890 --> 00:10:03,710
+This one e-mail and we are pushing the value of whatever we have inside to that key as way out and we
+
+156
+00:10:03,710 --> 00:10:09,650
+get e-mail and Francis we had a name is going to be name and whatever value we have a name a last name
+
+157
+00:10:09,710 --> 00:10:15,350
+whatever value we have on last name and this ultimately is going to it's going to be what it's going
+
+158
+00:10:15,350 --> 00:10:16,530
+to go to the server.
+
+159
+00:10:16,850 --> 00:10:22,670
+Now if I delete this and I click it we get an empty space so this one should be false.
+
+160
+00:10:22,700 --> 00:10:25,970
+So we need an additional check right here right now.
+
+161
+00:10:25,970 --> 00:10:30,150
+The only thing we are doing is you know putting the value inside data.
+
+162
+00:10:30,190 --> 00:10:33,300
+I the key data it's the key and the value part.
+
+163
+00:10:33,530 --> 00:10:35,100
+But we need to do one more check.
+
+164
+00:10:35,150 --> 00:10:40,780
+We need to check if the form is valid because later we're going to check if this is true or false.
+
+165
+00:10:40,820 --> 00:10:42,490
+So I'm going to say form is valid.
+
+166
+00:10:42,530 --> 00:10:49,220
+Going to make a reference to this to this viral and are going to change it to False.
+
+167
+00:10:49,320 --> 00:10:51,660
+If the element it's not true.
+
+168
+00:10:51,680 --> 00:10:59,420
+So this that state that formed data that key to access to key and are going to check if that element
+
+169
+00:10:59,450 --> 00:11:00,760
+is valid.
+
+170
+00:11:01,400 --> 00:11:02,390
+All right.
+
+171
+00:11:02,450 --> 00:11:05,690
+This one you know we're going to get an error maybe later.
+
+172
+00:11:05,810 --> 00:11:12,530
+What if we have more inputs more elements right here because if we just check for this maybe on the
+
+173
+00:11:12,530 --> 00:11:14,380
+next iteration it's going to change.
+
+174
+00:11:14,390 --> 00:11:19,220
+But this one is not going to change it's going to be true and we could have the previous one could be
+
+175
+00:11:19,220 --> 00:11:19,990
+false.
+
+176
+00:11:20,000 --> 00:11:26,970
+So it's always a good idea to check if this element is valid and if the form is still valid.
+
+177
+00:11:27,050 --> 00:11:30,670
+So I'm going to say and form is valid.
+
+178
+00:11:30,680 --> 00:11:32,640
+All right.
+
+179
+00:11:32,780 --> 00:11:35,700
+So either way we are going to still get data to submit.
+
+180
+00:11:35,810 --> 00:11:42,380
+But before we submit anything we're going to be asking the application and I'm going to do a Nel's right
+
+181
+00:11:42,380 --> 00:11:43,520
+here.
+
+182
+00:11:44,080 --> 00:11:46,170
+Let's open and close.
+
+183
+00:11:46,280 --> 00:11:48,540
+We're going to check if the form is valid.
+
+184
+00:11:48,620 --> 00:11:53,740
+So if the form is valid we want to cancel log data to submit.
+
+185
+00:11:53,870 --> 00:11:59,530
+If not I'm going to do console log no error or something like that.
+
+186
+00:11:59,630 --> 00:12:09,300
+So let's try again it go at the bottom go can we go at the bottom and go you know put a valid email
+
+187
+00:12:09,510 --> 00:12:13,180
+going to enroll and we get the e-mail and the key value pairs.
+
+188
+00:12:13,200 --> 00:12:14,760
+So we are good to go.
+
+189
+00:12:14,820 --> 00:12:20,280
+What happens if I delete everything I can to enroll again and we get our set you know that works.
+
+190
+00:12:20,520 --> 00:12:21,220
+All right.
+
+191
+00:12:21,240 --> 00:12:22,540
+No we're good.
+
+192
+00:12:22,860 --> 00:12:28,980
+So now at the top if I go back to the state we have two elements right here the form error and then
+
+193
+00:12:29,010 --> 00:12:31,040
+of course begin to do for success.
+
+194
+00:12:31,050 --> 00:12:34,210
+So if we do have a form error we have a form error.
+
+195
+00:12:34,480 --> 00:12:36,310
+We're going to change it to true.
+
+196
+00:12:36,450 --> 00:12:39,260
+And at the bottom we will display an error message.
+
+197
+00:12:39,300 --> 00:12:44,370
+So we're right here if we have an error going to say this is this.
+
+198
+00:12:44,400 --> 00:12:51,610
+That said state opening close just like this and then form error.
+
+199
+00:12:51,990 --> 00:12:58,660
+And there's one going to be changing this to true and at the Bunim before before the button are going
+
+200
+00:12:58,660 --> 00:13:01,190
+to add some you know some error message.
+
+201
+00:13:01,200 --> 00:13:12,180
+So if we do have a does that state DOT form error ups or in error that form error and this is true what
+
+202
+00:13:12,180 --> 00:13:16,620
+we want to do we want to display a div with an error message.
+
+203
+00:13:16,650 --> 00:13:19,530
+If not we are not going to do anything.
+
+204
+00:13:19,560 --> 00:13:20,550
+Not at all.
+
+205
+00:13:20,660 --> 00:13:22,320
+You're not going to buy anything.
+
+206
+00:13:22,800 --> 00:13:32,370
+So this and then make this a little bit prettier div will have a class name of pro-level just like before.
+
+207
+00:13:32,370 --> 00:13:34,310
+Error level.
+
+208
+00:13:34,590 --> 00:13:42,600
+And I'm going to say something is some thing is wrong.
+
+209
+00:13:42,690 --> 00:13:43,930
+Try again.
+
+210
+00:13:45,700 --> 00:13:46,980
+Right.
+
+211
+00:13:47,110 --> 00:13:47,740
+All right.
+
+212
+00:13:47,950 --> 00:13:48,870
+That's right.
+
+213
+00:13:51,520 --> 00:13:54,490
+Now of course have submit we get something is wrong.
+
+214
+00:13:54,490 --> 00:13:55,040
+Try it.
+
+215
+00:13:55,070 --> 00:13:57,250
+Now it's time to start typing.
+
+216
+00:13:57,250 --> 00:13:58,860
+We're going to get to our message.
+
+217
+00:13:58,870 --> 00:13:59,530
+Something's wrong.
+
+218
+00:13:59,530 --> 00:14:00,370
+Try again.
+
+219
+00:14:00,370 --> 00:14:02,130
+It must be an e-mail e-mail.
+
+220
+00:14:02,130 --> 00:14:03,880
+So this comes from the validation.
+
+221
+00:14:04,030 --> 00:14:06,340
+And this one is the error form.
+
+222
+00:14:06,460 --> 00:14:13,840
+So we need a way to clear that form error to clear this whenever we start typing again.
+
+223
+00:14:13,840 --> 00:14:14,880
+So this is really simple.
+
+224
+00:14:14,890 --> 00:14:20,500
+I'm going to delete the form data right here and the only thing we need to do is to set state form error
+
+225
+00:14:21,220 --> 00:14:22,200
+back to false.
+
+226
+00:14:22,210 --> 00:14:26,650
+Whenever we turn new values false that is it.
+
+227
+00:14:27,010 --> 00:14:31,480
+Well let's try again and go with it and roll.
+
+228
+00:14:31,540 --> 00:14:32,480
+Something is wrong.
+
+229
+00:14:32,500 --> 00:14:36,360
+And if I type something we just get the validation error message.
+
+230
+00:14:36,460 --> 00:14:36,930
+All right.
+
+231
+00:14:36,970 --> 00:14:38,340
+So that is good.
+
+232
+00:14:38,650 --> 00:14:45,050
+Now what happens if we put no valid email name roll we submit the form.
+
+233
+00:14:45,070 --> 00:14:47,360
+What happens after we submit the form.
+
+234
+00:14:47,440 --> 00:14:50,210
+We should be getting a success or a message.
+
+235
+00:14:50,230 --> 00:14:55,180
+And of course we should be clearing this impot you know this email impot.
+
+236
+00:14:55,210 --> 00:14:56,820
+So let's do that right now.
+

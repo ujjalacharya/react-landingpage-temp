@@ -1,0 +1,1060 @@
+1
+00:00:01,110 --> 00:00:01,530
+Right.
+
+2
+00:00:01,530 --> 00:00:05,280
+So at the end this is how the dashboard should look.
+
+3
+00:00:05,280 --> 00:00:13,110
+We have in the left a bar that it should be only displayed the site admin routes whenever the user goes
+
+4
+00:00:13,110 --> 00:00:13,700
+to the dashboard.
+
+5
+00:00:13,700 --> 00:00:19,160
+You know in and route that it's only for administrators that we can show this the same navigation bar.
+
+6
+00:00:19,320 --> 00:00:24,230
+So just like the header and footer we will create a high or there component for this one.
+
+7
+00:00:24,270 --> 00:00:28,170
+And of course right now the dashboard is empty and on the matches or at match.
+
+8
+00:00:28,170 --> 00:00:30,310
+We can add the logic on that once for now.
+
+9
+00:00:30,310 --> 00:00:31,080
+This is what we get.
+
+10
+00:00:31,080 --> 00:00:32,400
+This is what we have so far.
+
+11
+00:00:32,430 --> 00:00:37,340
+So let's go to our or obligation or project and start creating this.
+
+12
+00:00:37,350 --> 00:00:43,020
+I'm going to close and roll and get close index and get close to the fire base that is just going to
+
+13
+00:00:43,020 --> 00:00:44,490
+leave routes.
+
+14
+00:00:44,710 --> 00:00:50,000
+Now all the admin routes I went to store them inside of a directory called admin.
+
+15
+00:00:50,130 --> 00:00:57,540
+So I'm going to go to component's create a new directory sorry new directory and this one will be called
+
+16
+00:00:57,650 --> 00:00:58,160
+admin.
+
+17
+00:00:58,200 --> 00:00:58,590
+Right.
+
+18
+00:00:58,610 --> 00:00:59,670
+Kind of a make sense.
+
+19
+00:00:59,700 --> 00:01:01,200
+You call this whatever you want.
+
+20
+00:01:01,200 --> 00:01:02,310
+Doesn't matter.
+
+21
+00:01:02,490 --> 00:01:10,080
+Now the first component inside admin will be dashboard because is the component where you go after you
+
+22
+00:01:10,080 --> 00:01:10,510
+log in.
+
+23
+00:01:10,500 --> 00:01:11,460
+Of course.
+
+24
+00:01:11,460 --> 00:01:15,780
+So I'm going to call it dashboard with a capital D dash board.
+
+25
+00:01:15,930 --> 00:01:17,390
+Yes.
+
+26
+00:01:17,740 --> 00:01:24,270
+Now dashboard dodgiest will be our re-act stateless component because the only thing we are doing right
+
+27
+00:01:24,270 --> 00:01:28,490
+here is just showing the layout and kind of redirect.
+
+28
+00:01:28,530 --> 00:01:30,010
+So that's the diff.
+
+29
+00:01:30,030 --> 00:01:39,760
+The main div will be called class name and add a class name of user dashboard user or underscore dashboard.
+
+30
+00:01:39,930 --> 00:01:49,380
+And inside here just the device going to do something very simple saying this is your dashboard whenever
+
+31
+00:01:49,380 --> 00:01:49,910
+it doesn't matter.
+
+32
+00:01:49,920 --> 00:01:51,630
+Just something very simple.
+
+33
+00:01:51,940 --> 00:01:52,310
+OK.
+
+34
+00:01:52,350 --> 00:01:58,070
+So of course if I reload the application nothing really happens because we need to add everything to
+
+35
+00:01:58,080 --> 00:01:58,750
+routes.
+
+36
+00:01:58,980 --> 00:02:02,820
+So I'm going to make a space in all the other routes are going to be right here.
+
+37
+00:02:02,850 --> 00:02:03,580
+Right.
+
+38
+00:02:03,690 --> 00:02:16,020
+So I'm going to import then dashboard from DOT for Slash components for Slash at men forward slash dashboard.
+
+39
+00:02:16,020 --> 00:02:16,950
+Right.
+
+40
+00:02:17,220 --> 00:02:18,930
+And I'm going to copy dashboard.
+
+41
+00:02:18,930 --> 00:02:24,450
+I'm going to copy this one right here to duplicate us and I'm going to say route.
+
+42
+00:02:24,480 --> 00:02:27,570
+It's dashboard whenever we want to go to.
+
+43
+00:02:27,780 --> 00:02:31,140
+You guessed it dashboard just like this.
+
+44
+00:02:31,470 --> 00:02:32,020
+All right.
+
+45
+00:02:32,160 --> 00:02:34,670
+So if I reload it you know we get this dashboard.
+
+46
+00:02:34,860 --> 00:02:37,100
+So now we need to create this now.
+
+47
+00:02:37,240 --> 00:02:39,460
+And this is going to be high or other component.
+
+48
+00:02:39,600 --> 00:02:44,340
+So I'm going to go back to dashboard and right now of course we don't have this we need to create it.
+
+49
+00:02:44,340 --> 00:02:52,320
+So inside a Choe see we're going to create a new file called admin and then layout just like this.
+
+50
+00:02:52,410 --> 00:02:54,270
+I've been laid down yes.
+
+51
+00:02:54,330 --> 00:03:00,840
+So the only purpose of admin lay down dodgiest is going to be returning the container of this coat you
+
+52
+00:03:00,840 --> 00:03:02,650
+know the admin routes.
+
+53
+00:03:02,700 --> 00:03:07,710
+So it is going to be a reacts the Blitz component just like this and it will be called I've been lay
+
+54
+00:03:07,710 --> 00:03:12,320
+out that has get in some some part of the application will be receiving some prompts.
+
+55
+00:03:12,360 --> 00:03:14,660
+I'm just going to put props right here.
+
+56
+00:03:14,880 --> 00:03:24,510
+Now the the wrapper for this are going to add a class name that calls up men underscore container.
+
+57
+00:03:24,850 --> 00:03:27,850
+And now we will have two two main parts.
+
+58
+00:03:27,990 --> 00:03:32,010
+The one in the left which is the now and then all the contents in the right.
+
+59
+00:03:32,010 --> 00:03:38,220
+So I need to create two deps one for the nav and another one for the of course the right side of the
+
+60
+00:03:38,220 --> 00:03:38,740
+screen.
+
+61
+00:03:38,790 --> 00:03:44,370
+So the main one which is the nav section are going to call it admin.
+
+62
+00:03:44,640 --> 00:03:47,570
+Underscore left now.
+
+63
+00:03:48,070 --> 00:03:53,700
+Now right here of course we're going to put the now navigation.
+
+64
+00:03:53,700 --> 00:03:59,830
+Now of course the other one will be class name mean underscore.
+
+65
+00:04:00,030 --> 00:04:06,020
+Right and right here we need to to enter to put whatever content we get from here.
+
+66
+00:04:06,030 --> 00:04:07,180
+You know the children.
+
+67
+00:04:07,260 --> 00:04:09,050
+So that's why we get props.
+
+68
+00:04:09,210 --> 00:04:18,830
+So I'm going to say props that children of course if I recall the application we get nothing because
+
+69
+00:04:19,100 --> 00:04:24,380
+we are we do we do have this and been lay out but we're not really using it on the dashboard.
+
+70
+00:04:24,660 --> 00:04:24,980
+OK.
+
+71
+00:04:25,040 --> 00:04:30,870
+So I'm going to go right here at the top and we need to import this to the actual dashboard.
+
+72
+00:04:30,890 --> 00:04:31,250
+Right.
+
+73
+00:04:31,250 --> 00:04:32,140
+Makes sense.
+
+74
+00:04:32,360 --> 00:04:42,630
+So of course import import or go import men then lay out then from and make it right.
+
+75
+00:04:42,740 --> 00:04:50,190
+I've been lay out from that that for Slashdot that for Slash a chose C for Slash and layout.
+
+76
+00:04:50,210 --> 00:04:53,810
+So every time when we have a we have an amazing route.
+
+77
+00:04:53,960 --> 00:04:54,900
+We need to wrap it.
+
+78
+00:04:54,920 --> 00:04:57,170
+We need to wrap the components inside.
+
+79
+00:04:57,300 --> 00:04:59,960
+I mean lay out components.
+
+80
+00:04:59,960 --> 00:05:05,410
+And of course all of this will create what we are actually doing right now with a choke seat.
+
+81
+00:05:05,750 --> 00:05:10,060
+So if I reload the application you know we get this block.
+
+82
+00:05:10,070 --> 00:05:14,180
+Now of course we need to create this right now and everything in the ride is going to be the actual
+
+83
+00:05:14,180 --> 00:05:16,320
+content of the components.
+
+84
+00:05:16,790 --> 00:05:21,950
+Now we need to create that now and then going to store it not on HBO series are going to start an admin
+
+85
+00:05:21,980 --> 00:05:26,330
+because that NAV that navigation bar belongs to admin routes.
+
+86
+00:05:26,360 --> 00:05:31,480
+So I'm going to say now now inside of the app of course we need the admin now.
+
+87
+00:05:31,520 --> 00:05:35,250
+So I'm going to create a file called admin.
+
+88
+00:05:35,270 --> 00:05:37,160
+Now could be could be next.
+
+89
+00:05:37,150 --> 00:05:38,040
+If you want.
+
+90
+00:05:38,370 --> 00:05:42,590
+OK so I am now going to do several things.
+
+91
+00:05:42,680 --> 00:05:44,260
+We don't need a class based component.
+
+92
+00:05:44,420 --> 00:05:47,460
+So I'm going to say re-act stateless components.
+
+93
+00:05:47,530 --> 00:05:48,950
+Been very good.
+
+94
+00:05:49,250 --> 00:05:52,120
+Now we're going to be using LINQ because they are just links.
+
+95
+00:05:52,280 --> 00:06:00,090
+So import opening close link from re-act router.
+
+96
+00:06:00,540 --> 00:06:01,520
+Dom very good.
+
+97
+00:06:01,520 --> 00:06:06,770
+That's the first thing we're going to be using a maybe list items we're going to do later.
+
+98
+00:06:06,920 --> 00:06:09,460
+Maybe firebase But again we're going to do it later.
+
+99
+00:06:09,740 --> 00:06:14,620
+So for now the only thing we need to do we need to just render some items.
+
+100
+00:06:14,970 --> 00:06:23,150
+Ok so I'm going to go right here and I'm going to create a function called render and then items just
+
+101
+00:06:23,150 --> 00:06:27,260
+like this just turned right it's just a function and I get to go right here at the top.
+
+102
+00:06:27,350 --> 00:06:30,930
+And of course create dysfunction called render items.
+
+103
+00:06:30,950 --> 00:06:34,430
+So Konst render items.
+
+104
+00:06:34,430 --> 00:06:41,430
+Now since we're going to get several links in this case we have matches at match players or players.
+
+105
+00:06:41,450 --> 00:06:45,720
+And then logout we need a place where we're going to be rendering all the sites.
+
+106
+00:06:45,740 --> 00:06:48,640
+So I want to put them on a list right.
+
+107
+00:06:48,770 --> 00:06:53,180
+And they begin to loop them with render items and begin to show the actual item.
+
+108
+00:06:53,330 --> 00:06:53,540
+Right.
+
+109
+00:06:53,540 --> 00:06:54,820
+Makes sense.
+
+110
+00:06:54,830 --> 00:06:58,710
+So first we need to a place where we going to be hosting this links.
+
+111
+00:06:58,790 --> 00:07:05,510
+So I got to say Konst that links cole just an array of objects and right here we're going to be registering
+
+112
+00:07:05,510 --> 00:07:11,540
+the links so they have a title and they have a link to you know where are we going to go after we click
+
+113
+00:07:11,540 --> 00:07:12,370
+on this one.
+
+114
+00:07:12,410 --> 00:07:15,250
+So this one is going to be matches which is the first one.
+
+115
+00:07:15,560 --> 00:07:22,030
+And then of course the route where we going to be going so I'm going to call it outman matches.
+
+116
+00:07:22,040 --> 00:07:28,000
+All right going into coma you're going to copy this one do one more.
+
+117
+00:07:28,130 --> 00:07:34,130
+This one is going to be at match and I know that this is boring right now at match and I'm going to
+
+118
+00:07:34,130 --> 00:07:35,650
+host this one inside.
+
+119
+00:07:35,780 --> 00:07:42,360
+I've been matches and added match just like this could be added or outmatch or something like that doesn't
+
+120
+00:07:42,390 --> 00:07:42,870
+matter.
+
+121
+00:07:42,880 --> 00:07:44,540
+We're going to go back to this round later.
+
+122
+00:07:44,540 --> 00:07:46,970
+Don't worry I'm going to copy this one.
+
+123
+00:07:46,970 --> 00:07:47,920
+I'm going to go right here.
+
+124
+00:07:47,930 --> 00:07:49,430
+And then we can have an end point.
+
+125
+00:07:49,490 --> 00:07:51,960
+An important to administer players.
+
+126
+00:07:52,100 --> 00:07:58,170
+So I'm going to call it players and just like I've been matches this one will be I mean players.
+
+127
+00:07:58,190 --> 00:07:58,670
+Right.
+
+128
+00:07:58,720 --> 00:08:02,100
+Of main players.
+
+129
+00:08:02,720 --> 00:08:08,840
+And just like this one we will need to create an end point to admin the players to our players.
+
+130
+00:08:09,110 --> 00:08:14,620
+So this one I'm going to call it I don't know at players doesn't matter right now.
+
+131
+00:08:14,850 --> 00:08:15,610
+OK.
+
+132
+00:08:16,250 --> 00:08:23,300
+So what do we need to do now is to render all this content all this links in the in a linked form.
+
+133
+00:08:23,300 --> 00:08:23,630
+Right.
+
+134
+00:08:23,630 --> 00:08:25,820
+Because right now we have an object.
+
+135
+00:08:26,120 --> 00:08:33,320
+So you're going to say links that map over the course now every each iteration we will be receiving
+
+136
+00:08:33,350 --> 00:08:34,150
+a link.
+
+137
+00:08:34,220 --> 00:08:37,810
+And of course then we will run an up function.
+
+138
+00:08:37,820 --> 00:08:41,650
+Now if you noticed I'm using and this is actually my mistake.
+
+139
+00:08:41,750 --> 00:08:43,180
+I'm I went to render.
+
+140
+00:08:43,180 --> 00:08:48,470
+I went to return some GSX but I'm using not princesses.
+
+141
+00:08:48,490 --> 00:08:49,600
+Nothing is going to work.
+
+142
+00:08:49,600 --> 00:08:50,320
+All right.
+
+143
+00:08:50,330 --> 00:08:56,360
+So on each iteration we get a link and what we will do we will return a link from Briac granddaughter
+
+144
+00:08:56,360 --> 00:08:58,530
+of course open and close.
+
+145
+00:08:58,540 --> 00:09:00,990
+I know what I'm not getting the complete for link.
+
+146
+00:09:01,220 --> 00:09:02,160
+I don't know why.
+
+147
+00:09:02,360 --> 00:09:03,040
+And.
+
+148
+00:09:03,090 --> 00:09:10,750
+So of course with each link we have two and we two we need to pass the where we're going to go.
+
+149
+00:09:10,790 --> 00:09:15,580
+So we have an inside link just like this dot link to.
+
+150
+00:09:15,980 --> 00:09:18,020
+Of course we are looping something.
+
+151
+00:09:18,350 --> 00:09:25,540
+We need to add a key so key opening close link dot and are going to use the title as a key.
+
+152
+00:09:25,610 --> 00:09:29,870
+You can pass the torsion number and pass the Teuscher number.
+
+153
+00:09:29,870 --> 00:09:35,890
+Now just a little before if we check the or find one we get to use the material.
+
+154
+00:09:35,950 --> 00:09:37,860
+I list items.
+
+155
+00:09:38,060 --> 00:09:47,510
+So I'm going to go right here at the top an important list item for material you eyes so import list
+
+156
+00:09:47,640 --> 00:09:52,400
+I mean make it ride list item.
+
+157
+00:09:52,490 --> 00:09:53,330
+All right.
+
+158
+00:09:53,330 --> 00:10:01,850
+From opening close at material the ice core for Slash and the name of whatever we are importing from
+
+159
+00:10:02,000 --> 00:10:02,950
+the court.
+
+160
+00:10:03,110 --> 00:10:03,920
+All right.
+
+161
+00:10:04,640 --> 00:10:08,970
+So now I'm going to copy this name list item I'm going to go inside the link.
+
+162
+00:10:08,990 --> 00:10:13,910
+And of course we need to pass this link items up link list item sorry.
+
+163
+00:10:13,920 --> 00:10:15,450
+So open close.
+
+164
+00:10:15,470 --> 00:10:22,590
+Now instead of the last item we need to put the name of the link which is inside link that title.
+
+165
+00:10:22,910 --> 00:10:26,980
+And of course we need to specify what kind of item we want from material.
+
+166
+00:10:27,170 --> 00:10:33,470
+In this case we want a button and it can add Bassam stylings are going to modify the default stylings.
+
+167
+00:10:33,650 --> 00:10:37,070
+So going to create a viable when are going to be hosting this style.
+
+168
+00:10:37,070 --> 00:10:40,460
+So Kansas style and this is actually very common.
+
+169
+00:10:40,460 --> 00:10:45,990
+So color is going to be white which is three four five six.
+
+170
+00:10:46,250 --> 00:10:50,010
+Then I want to make it make the phones a little bit bigger.
+
+171
+00:10:50,090 --> 00:11:00,830
+So Fonte that wait and I'm going to use oh sorry Lider 300 then I'm going to add a border bottom so
+
+172
+00:11:00,830 --> 00:11:08,770
+border and then Boneham are not getting more their bottom.
+
+173
+00:11:08,800 --> 00:11:09,240
+All right.
+
+174
+00:11:09,400 --> 00:11:15,610
+And we'll add one pixel solid solid color.
+
+175
+00:11:15,640 --> 00:11:19,810
+It's 3 5 3 5 3 5.
+
+176
+00:11:19,810 --> 00:11:23,150
+And of course I will just pass these tiles to this.
+
+177
+00:11:23,400 --> 00:11:25,350
+So Style style style.
+
+178
+00:11:25,480 --> 00:11:26,270
+Right.
+
+179
+00:11:26,290 --> 00:11:26,760
+All right.
+
+180
+00:11:26,840 --> 00:11:29,230
+Let's see what we get.
+
+181
+00:11:29,230 --> 00:11:35,320
+So the application should be reloading and we are not getting anything because I forgot to do something.
+
+182
+00:11:35,330 --> 00:11:37,490
+Maybe you got it right.
+
+183
+00:11:37,690 --> 00:11:44,170
+So I've created the nav component but I'm not including this inside the H O C right.
+
+184
+00:11:44,410 --> 00:11:47,160
+So I'm going to do import just like this.
+
+185
+00:11:47,440 --> 00:11:50,130
+And I believe we call this at bin now.
+
+186
+00:11:50,680 --> 00:11:58,810
+So I've been Napp from that that forward slash and components and abdomen and then Nav. and then admen
+
+187
+00:11:58,810 --> 00:11:59,820
+now.
+
+188
+00:12:00,440 --> 00:12:04,770
+Now of course make reference to this really simple at this point.
+
+189
+00:12:04,780 --> 00:12:06,830
+This should be really easy for you.
+
+190
+00:12:07,210 --> 00:12:11,450
+So we get matches we get match players and players I made a mistake and that's why I'm going to change
+
+191
+00:12:11,450 --> 00:12:12,140
+you right now.
+
+192
+00:12:12,340 --> 00:12:16,860
+So if I go to Majerus we go to the matches at at least the link works.
+
+193
+00:12:16,880 --> 00:12:19,120
+So let me fix this.
+
+194
+00:12:19,220 --> 00:12:20,860
+I've added players.
+
+195
+00:12:20,950 --> 00:12:23,440
+So what we want to do we want to add players
+
+196
+00:12:26,860 --> 00:12:30,900
+that is get now in theory we are locked in.
+
+197
+00:12:30,990 --> 00:12:38,040
+Right we are locked in because we did the log in and we got the information so we get some some some
+
+198
+00:12:38,040 --> 00:12:42,110
+logic inside the application right here.
+
+199
+00:12:42,120 --> 00:12:51,340
+Let me just show you inspect inside the application begin to get the storage the local stores.
+
+200
+00:12:51,360 --> 00:12:52,630
+Maybe the session source.
+
+201
+00:12:54,550 --> 00:12:55,110
+There we go.
+
+202
+00:12:55,120 --> 00:12:56,730
+So we get this.
+
+203
+00:12:56,770 --> 00:13:00,110
+So in theory we are kind of authenticated.
+
+204
+00:13:00,130 --> 00:13:03,070
+So we need to log out button right here.
+
+205
+00:13:03,070 --> 00:13:10,390
+And for this one of course we need to use firebase and it's the signing out method a fire base is just
+
+206
+00:13:10,390 --> 00:13:13,450
+like the other indication it's really really simple.
+
+207
+00:13:13,780 --> 00:13:21,310
+So what I'm going to do I going to add just right here and I'm going to add it manually list item I
+
+208
+00:13:21,310 --> 00:13:24,910
+could do it you know from a different place but I want to add an unclick handler.
+
+209
+00:13:24,940 --> 00:13:27,460
+That's why I'm adding this manually.
+
+210
+00:13:27,460 --> 00:13:32,730
+So let me do open close and this one is going to be log out.
+
+211
+00:13:33,550 --> 00:13:39,790
+So but then of course the style is going to be the same style we are using at the top.
+
+212
+00:13:39,790 --> 00:13:41,200
+We are almost done with this.
+
+213
+00:13:41,200 --> 00:13:47,490
+I know that this is simple and a little bit boring but we are almost done that unclick equals two and
+
+214
+00:13:47,520 --> 00:13:54,250
+I'm going to create a function which is going to be the log out log out and then handler just like this
+
+215
+00:13:55,230 --> 00:13:56,160
+handler.
+
+216
+00:13:56,230 --> 00:13:56,980
+All right.
+
+217
+00:13:57,350 --> 00:14:02,640
+And now this function of course is going to do all the locking out when have this function get created
+
+218
+00:14:02,650 --> 00:14:03,540
+right now.
+
+219
+00:14:03,610 --> 00:14:06,340
+Konst logout handler.
+
+220
+00:14:06,490 --> 00:14:08,370
+And this one is going to be equal to a function.
+
+221
+00:14:08,380 --> 00:14:10,540
+And of course we can do something.
+
+222
+00:14:10,540 --> 00:14:11,880
+So what are we going to do.
+
+223
+00:14:11,890 --> 00:14:16,940
+It's real simple just going to show you first we need to include firebase at the top.
+
+224
+00:14:16,990 --> 00:14:30,250
+So import than firebase firebase then from that for Slash that dot for Slash and dot dot for Slash and
+
+225
+00:14:30,250 --> 00:14:31,020
+firebase.
+
+226
+00:14:31,030 --> 00:14:31,850
+Right.
+
+227
+00:14:32,200 --> 00:14:33,670
+So just like we did with the owls.
+
+228
+00:14:33,760 --> 00:14:34,890
+This is the same thing.
+
+229
+00:14:35,080 --> 00:14:42,610
+I need to use firebase and use our opening close and I'm going to use sign out this is the method they
+
+230
+00:14:42,610 --> 00:14:45,000
+provide us to sign out users.
+
+231
+00:14:45,160 --> 00:14:49,360
+And then of course after they are signed out you get you get a promise.
+
+232
+00:14:49,360 --> 00:14:53,060
+So whenever you get the promise back you just do whatever you want.
+
+233
+00:14:53,140 --> 00:14:57,490
+In this case I'm going to do a log and then log out.
+
+234
+00:14:57,610 --> 00:15:00,280
+So successful just something like that.
+
+235
+00:15:00,280 --> 00:15:02,220
+Really simple right.
+
+236
+00:15:02,230 --> 00:15:02,860
+That is it.
+
+237
+00:15:02,920 --> 00:15:04,910
+And this is the first the first one.
+
+238
+00:15:04,930 --> 00:15:05,680
+All right.
+
+239
+00:15:05,710 --> 00:15:11,350
+Now of course on the second right here what we could do we could add a different function.
+
+240
+00:15:11,530 --> 00:15:13,440
+And of course this one is going to be error.
+
+241
+00:15:13,540 --> 00:15:19,150
+So if we do have an error we're going to do a console log and error logging out
+
+242
+00:15:21,890 --> 00:15:26,090
+so this way this way of doing things.
+
+243
+00:15:26,180 --> 00:15:32,510
+It's just like the documentation for all this this this is the actual the condition just like this.
+
+244
+00:15:32,510 --> 00:15:35,440
+So if you go there you can find the same example.
+
+245
+00:15:35,460 --> 00:15:39,960
+So right here where you could do you could push the user back home or you know whatever you want.
+
+246
+00:15:39,980 --> 00:15:43,600
+Right now I'm just I'm just going to add a con..
+
+247
+00:15:44,330 --> 00:15:49,490
+So OK so we get export default imported firebase now found in firebase.
+
+248
+00:15:49,490 --> 00:15:50,760
+Let me see why.
+
+249
+00:15:50,780 --> 00:15:51,880
+What did I do.
+
+250
+00:15:51,920 --> 00:15:57,470
+I know I'm important in putting a default and it's not a default.
+
+251
+00:15:57,680 --> 00:15:58,240
+All right.
+
+252
+00:15:58,460 --> 00:16:05,690
+So dashboard if I go to inspect log out log out successful.
+
+253
+00:16:05,700 --> 00:16:09,320
+If I do it again you know it's just going to log out.
+
+254
+00:16:09,330 --> 00:16:10,830
+But nothing really happens.
+
+255
+00:16:11,120 --> 00:16:11,620
+OK.
+
+256
+00:16:11,760 --> 00:16:17,580
+So everything good so now we have a problem if the users log in.
+
+257
+00:16:17,640 --> 00:16:19,140
+I just lock down the user.
+
+258
+00:16:19,230 --> 00:16:24,920
+And if I reload the application we're still able to enter dashboard so you know this is a big big mistake.
+
+259
+00:16:25,260 --> 00:16:26,670
+So what do we need to do.
+
+260
+00:16:26,760 --> 00:16:33,970
+We need to go to routes and prevent users create some function or create some logic to prevent users
+
+261
+00:16:34,310 --> 00:16:41,690
+by going going from a to dashboard or sign in if the are authenticated or not and dictated so we can
+
+262
+00:16:41,690 --> 00:16:44,620
+create a function to prevent routes.
+
+263
+00:16:44,640 --> 00:16:45,280
+Right.
+
+264
+00:16:45,450 --> 00:16:45,670
+OK.
+
+265
+00:16:45,690 --> 00:16:48,120
+So let's go to the next one and do this.
+

@@ -1,0 +1,912 @@
+1
+00:00:01,390 --> 00:00:03,790
+OK so now we're going to create the carts Ryan.
+
+2
+00:00:03,850 --> 00:00:04,340
+OK.
+
+3
+00:00:04,480 --> 00:00:07,790
+Now again if you're asking yourself dude can we do this on the server.
+
+4
+00:00:07,870 --> 00:00:09,680
+Well yes you totally can.
+
+5
+00:00:09,700 --> 00:00:13,270
+That is the one of the benefits of you know creating your own server.
+
+6
+00:00:13,300 --> 00:00:17,020
+You can go to the routes and do whatever logic you want to do.
+
+7
+00:00:17,170 --> 00:00:24,700
+Sometimes that it's not possible sometimes someone will hire you to create the application or the web
+
+8
+00:00:24,700 --> 00:00:30,120
+page or whatever it is that you want you're you're getting hired to do and they will tell you.
+
+9
+00:00:30,130 --> 00:00:30,510
+OK.
+
+10
+00:00:30,550 --> 00:00:31,920
+So I have a server guy.
+
+11
+00:00:32,200 --> 00:00:33,720
+So you need to work with him.
+
+12
+00:00:33,730 --> 00:00:34,420
+All right.
+
+13
+00:00:34,720 --> 00:00:40,610
+So that is a problem because if you get a crazy idea or you have a crazy idea or you know maybe an idea
+
+14
+00:00:40,610 --> 00:00:45,560
+of doing something you can not just really go to the server and touch it yourself.
+
+15
+00:00:45,580 --> 00:00:52,990
+You need to send the mail to the guy and say Dude I need this and maybe a is going to pass maybe a week
+
+16
+00:00:53,410 --> 00:01:00,220
+maybe a month or maybe more until they give you just this line of code instead of a route.
+
+17
+00:01:00,320 --> 00:01:04,850
+So yeah this is one of the benefits of what we're creating yourself.
+
+18
+00:01:04,960 --> 00:01:07,680
+Creating server yourself.
+
+19
+00:01:07,930 --> 00:01:12,760
+Most of the times you're going to work the other way you're going to do the front end and someone else
+
+20
+00:01:12,760 --> 00:01:14,170
+is going to do the backend.
+
+21
+00:01:14,500 --> 00:01:15,640
+That's the way it works.
+
+22
+00:01:15,640 --> 00:01:21,310
+So this would be the best the best approach because you have pretty much the whole control.
+
+23
+00:01:21,340 --> 00:01:24,230
+This one is just returning something very simple.
+
+24
+00:01:24,310 --> 00:01:26,350
+So you do all the logic right here.
+
+25
+00:01:26,350 --> 00:01:26,910
+Right.
+
+26
+00:01:27,140 --> 00:01:27,350
+OK.
+
+27
+00:01:27,370 --> 00:01:29,460
+So let's create the cart.
+
+28
+00:01:29,740 --> 00:01:32,460
+So right then so far we don't have anything.
+
+29
+00:01:32,560 --> 00:01:34,190
+And later are we going to use this then.
+
+30
+00:01:34,210 --> 00:01:37,720
+Right now we're going to leave it empty but begin to do something else much much later.
+
+31
+00:01:37,720 --> 00:01:40,390
+First we need at least some cartes.
+
+32
+00:01:40,570 --> 00:01:45,590
+So I'm going to create a really usable component because we might be using it later.
+
+33
+00:01:45,820 --> 00:01:54,700
+So I'm going to create a new folder inside tells that cause user just like this user and right here
+
+34
+00:01:54,700 --> 00:01:59,420
+are going to create a new component called I don't know product.
+
+35
+00:01:59,500 --> 00:02:01,660
+BLOCK Yeah.
+
+36
+00:02:01,660 --> 00:02:02,280
+Why not.
+
+37
+00:02:02,320 --> 00:02:03,210
+Product block.
+
+38
+00:02:04,060 --> 00:02:08,540
+So it's a re-act react stimulus component.
+
+39
+00:02:09,940 --> 00:02:11,090
+All right.
+
+40
+00:02:11,090 --> 00:02:15,140
+So user product and then block.
+
+41
+00:02:15,550 --> 00:02:16,150
+Right.
+
+42
+00:02:16,150 --> 00:02:18,580
+So this one just going to say block.
+
+43
+00:02:19,100 --> 00:02:21,650
+So of course we need to do some something here.
+
+44
+00:02:21,700 --> 00:02:23,580
+We need to import at least this.
+
+45
+00:02:23,620 --> 00:02:25,480
+So it's going to be use our product.
+
+46
+00:02:25,480 --> 00:02:33,950
+Block from that that forward slash you tels for Slash user for Slash and then product block.
+
+47
+00:02:34,150 --> 00:02:34,720
+All right.
+
+48
+00:02:34,850 --> 00:02:40,240
+Now before we can include the component we need to do some more lay out right here.
+
+49
+00:02:40,240 --> 00:02:42,990
+First we need to title Ryan pretty simple.
+
+50
+00:02:43,180 --> 00:02:51,240
+So where we get card going to say H1 and then my cart cart just like this.
+
+51
+00:02:51,280 --> 00:02:54,420
+And then of course I'm going to rub everything inside of a depth.
+
+52
+00:02:54,440 --> 00:03:04,760
+So class name of user underscore carked and I'm going to include all the cards right here top so open
+
+53
+00:03:04,780 --> 00:03:05,800
+and close.
+
+54
+00:03:05,950 --> 00:03:09,070
+Now we need to pass some props right here.
+
+55
+00:03:09,220 --> 00:03:13,900
+First is the products so I'm going to say products and what you can do.
+
+56
+00:03:13,900 --> 00:03:20,350
+You can just pass the card detail with all the products or you can pass the user pass a user because
+
+57
+00:03:20,350 --> 00:03:22,720
+we might be using more things later.
+
+58
+00:03:22,750 --> 00:03:28,180
+So I'm going to pass whatever I get inside that this that prompts that user and instead of here we get
+
+59
+00:03:28,180 --> 00:03:29,010
+the card details.
+
+60
+00:03:29,020 --> 00:03:32,750
+Well again if we might we might be using this later.
+
+61
+00:03:32,920 --> 00:03:37,520
+So I'm going to name this component that all the blocks right here are from the cart.
+
+62
+00:03:37,810 --> 00:03:39,930
+Maybe we're going to use it later.
+
+63
+00:03:40,630 --> 00:03:47,230
+So of course whenever we click an item we need the ability to remove the item so I'm going to say remove
+
+64
+00:03:47,290 --> 00:03:51,000
+item and of course we're going to catch the I.D..
+
+65
+00:03:51,010 --> 00:03:53,850
+So going to see I.D. and then we will run a function.
+
+66
+00:03:53,860 --> 00:04:02,480
+So does that remove from cart that we didn't have this function right here on our component.
+
+67
+00:04:02,680 --> 00:04:04,260
+And we don't have it on the server.
+
+68
+00:04:04,300 --> 00:04:07,480
+We don't have a router for deleting card items.
+
+69
+00:04:07,510 --> 00:04:10,680
+Of course we can it created much later.
+
+70
+00:04:10,680 --> 00:04:11,380
+Right.
+
+71
+00:04:11,710 --> 00:04:13,250
+So let's go to user product block.
+
+72
+00:04:13,250 --> 00:04:13,950
+Now we're going to get it.
+
+73
+00:04:13,970 --> 00:04:16,920
+We're going to get the products type and remove item.
+
+74
+00:04:16,960 --> 00:04:22,960
+So instead of doing prompts right here I could use some destructuring and say that I just want to get
+
+75
+00:04:23,050 --> 00:04:28,630
+the products I just want to get the removed item and I'm going to keep the time because we are not going
+
+76
+00:04:28,630 --> 00:04:32,820
+to use it from here just now later if we do use it.
+
+77
+00:04:32,890 --> 00:04:34,680
+We know that we have a type.
+
+78
+00:04:34,780 --> 00:04:37,720
+So we can include it maybe later.
+
+79
+00:04:37,720 --> 00:04:38,470
+All right.
+
+80
+00:04:38,860 --> 00:04:45,240
+So the first thing is catching whatever we get inside products card detail and show it on screen.
+
+81
+00:04:45,370 --> 00:04:51,810
+So I'm going to go here and say render items it's a function.
+
+82
+00:04:51,910 --> 00:04:54,250
+So I'm going to create a function.
+
+83
+00:04:55,210 --> 00:04:58,570
+So it's Konst name of the function.
+
+84
+00:04:58,630 --> 00:05:03,020
+Then of course we run something and we want to return some GSX.
+
+85
+00:05:03,130 --> 00:05:03,530
+Right.
+
+86
+00:05:03,530 --> 00:05:04,130
+OK.
+
+87
+00:05:04,600 --> 00:05:08,980
+So instead of here we need to make sure that we have about detail so I'm going to answer that products
+
+88
+00:05:09,400 --> 00:05:15,800
+and I got to say if we do cart cart with T and then Details.
+
+89
+00:05:16,240 --> 00:05:21,330
+Details then we want to do something if not again which is return NULL.
+
+90
+00:05:21,340 --> 00:05:22,610
+Pretty basic.
+
+91
+00:05:22,710 --> 00:05:29,080
+Now if we do have card details when it enter and I want to loop it because we might have many or maybe
+
+92
+00:05:29,080 --> 00:05:29,900
+just one.
+
+93
+00:05:30,220 --> 00:05:36,730
+So it's going to be we're going to catch the products just like this and then we will return GSX again
+
+94
+00:05:37,360 --> 00:05:45,430
+now I'm going to get just a div with your class name and this the class to me is going to be user underscore
+
+95
+00:05:45,730 --> 00:05:48,170
+product underscore and then Block.
+
+96
+00:05:48,310 --> 00:05:51,660
+And then of course we need to add a key as a key.
+
+97
+00:05:51,700 --> 00:06:00,610
+I'm going to use the product actually it's Singler product just like this and then dot underscore ID.
+
+98
+00:06:01,000 --> 00:06:06,690
+So we should be getting at least three when they're reloader again.
+
+99
+00:06:08,390 --> 00:06:10,120
+Three maybe we are not getting it.
+
+100
+00:06:10,160 --> 00:06:18,920
+Just let me double check why products products card detail leave its detail.
+
+101
+00:06:19,350 --> 00:06:22,000
+I'm just flipping a coin right here.
+
+102
+00:06:22,150 --> 00:06:23,230
+OK I was right.
+
+103
+00:06:23,400 --> 00:06:27,830
+So now we get three card because you know three items because we have three card.
+
+104
+00:06:27,990 --> 00:06:30,260
+And now let me just double check something right here.
+
+105
+00:06:30,420 --> 00:06:36,280
+It's on this one I forgot to change his card instead of card items item is card items.
+
+106
+00:06:36,720 --> 00:06:39,570
+So I'm going to make it right because we might have many
+
+107
+00:06:43,650 --> 00:06:44,610
+everything still works.
+
+108
+00:06:44,610 --> 00:06:46,620
+So I'm going to go back to punt block.
+
+109
+00:06:46,770 --> 00:06:53,220
+Now on this block you'll have several items like the image the name the quantity the price and then
+
+110
+00:06:53,220 --> 00:06:55,130
+the button to remove.
+
+111
+00:06:55,290 --> 00:06:59,720
+So on the on each item I'm going to create a container for this.
+
+112
+00:06:59,820 --> 00:07:03,140
+So class name and item.
+
+113
+00:07:03,210 --> 00:07:05,620
+Now the first thing it's the image.
+
+114
+00:07:05,880 --> 00:07:13,830
+So Dave opening close and I'm going to add a class name opening close and then this one it's going to
+
+115
+00:07:13,830 --> 00:07:14,910
+be image.
+
+116
+00:07:14,910 --> 00:07:18,410
+Now image of course has a style of background.
+
+117
+00:07:18,420 --> 00:07:26,140
+So let me close this so we can see the whole route style opening close background just seems always.
+
+118
+00:07:26,160 --> 00:07:27,010
+You are l.
+
+119
+00:07:27,030 --> 00:07:29,750
+We open it close and we could say no repeat.
+
+120
+00:07:29,760 --> 00:07:30,370
+Why not.
+
+121
+00:07:30,370 --> 00:07:30,690
+No.
+
+122
+00:07:30,690 --> 00:07:33,500
+Repeat.
+
+123
+00:07:33,680 --> 00:07:34,520
+All right.
+
+124
+00:07:34,520 --> 00:07:40,260
+So just like before this image you know the array of images might be empty.
+
+125
+00:07:40,310 --> 00:07:47,930
+So we need a function or something that decides if we're going to see the first image on the array or
+
+126
+00:07:48,220 --> 00:07:57,990
+an image not available so render card can be card or maybe cart image makes more sense.
+
+127
+00:07:58,070 --> 00:08:04,450
+Card image and of course is a function AAPS a munged function or ago.
+
+128
+00:08:04,550 --> 00:08:10,610
+Now if you're maybe you're asking yourself dude we could use this in the past shouldn't we use as a
+
+129
+00:08:10,670 --> 00:08:11,680
+reusable component.
+
+130
+00:08:11,720 --> 00:08:18,940
+Yeah you should just get to do it this way just here again.
+
+131
+00:08:19,260 --> 00:08:24,310
+But I'm using a reusable component would be a good idea.
+
+132
+00:08:24,350 --> 00:08:31,040
+So Alce and of course if we get the images that length and you can go if you wish to the component and
+
+133
+00:08:31,220 --> 00:08:33,630
+copy the same logic.
+
+134
+00:08:33,650 --> 00:08:39,260
+It's pretty much the same snippet so return images.
+
+135
+00:08:39,520 --> 00:08:48,110
+We return the first position then the u r l and of course if we if we don't have it return dot for Slash
+
+136
+00:08:48,200 --> 00:08:53,020
+images for Slash and then we get the image just not available.
+
+137
+00:08:53,390 --> 00:08:54,130
+There we go.
+
+138
+00:08:54,290 --> 00:08:57,500
+I'm going to copy the name because remember I made a mistake with the name.
+
+139
+00:08:57,510 --> 00:09:05,300
+So I'm going to copy all that close it and return images not a baseball.
+
+140
+00:09:05,300 --> 00:09:05,720
+All right.
+
+141
+00:09:05,810 --> 00:09:06,740
+Looks good.
+
+142
+00:09:06,980 --> 00:09:08,600
+So that's what happens.
+
+143
+00:09:09,970 --> 00:09:10,290
+OK.
+
+144
+00:09:10,340 --> 00:09:11,390
+We get an error.
+
+145
+00:09:11,990 --> 00:09:14,440
+So length of undefined.
+
+146
+00:09:14,510 --> 00:09:18,100
+So let me just double check why should be ok.
+
+147
+00:09:20,340 --> 00:09:23,800
+Images of course you're not passing the images.
+
+148
+00:09:23,910 --> 00:09:27,560
+So it's product dot images.
+
+149
+00:09:28,050 --> 00:09:29,910
+Let's see if we get images at least.
+
+150
+00:09:33,320 --> 00:09:35,730
+Got we get something we are not getting the image.
+
+151
+00:09:35,730 --> 00:09:39,010
+Let me see why declasse image.
+
+152
+00:09:39,060 --> 00:09:39,410
+All right.
+
+153
+00:09:39,420 --> 00:09:41,120
+So it was very very dumb.
+
+154
+00:09:41,130 --> 00:09:42,600
+I forgot to close.
+
+155
+00:09:42,690 --> 00:09:46,030
+Right here I'm making the call to a function.
+
+156
+00:09:46,140 --> 00:09:48,270
+And of course I need to close it.
+
+157
+00:09:48,330 --> 00:09:51,660
+And what I need to do I need to close this.
+
+158
+00:09:51,670 --> 00:09:53,330
+So this was my mistake.
+
+159
+00:09:53,600 --> 00:10:00,750
+It was kinda weird Of course not attaching the style property and reload again so we can wait for the
+
+160
+00:10:00,750 --> 00:10:01,320
+server.
+
+161
+00:10:01,430 --> 00:10:01,960
+We can get it.
+
+162
+00:10:01,980 --> 00:10:02,920
+We get that sorry.
+
+163
+00:10:02,950 --> 00:10:04,450
+It's not available and everything else.
+
+164
+00:10:04,530 --> 00:10:06,570
+Of course we're going to attach more things to the right.
+
+165
+00:10:06,570 --> 00:10:09,390
+So this one is going to be pushed to the left.
+
+166
+00:10:09,390 --> 00:10:09,810
+All right.
+
+167
+00:10:10,020 --> 00:10:12,120
+Let's get to let's go back over this.
+
+168
+00:10:12,480 --> 00:10:15,360
+So we need to create more items.
+
+169
+00:10:15,380 --> 00:10:20,970
+This one is are going to be a little bit easy for us right now.
+
+170
+00:10:20,970 --> 00:10:30,960
+We need to act as the product name so ate it for then product the name and what we will be attaching
+
+171
+00:10:30,960 --> 00:10:32,250
+is the product name.
+
+172
+00:10:32,280 --> 00:10:39,960
+So I'm going to say product that name I'm sorry the brand product brand name and then of course the
+
+173
+00:10:39,960 --> 00:10:40,610
+product name.
+
+174
+00:10:40,610 --> 00:10:46,650
+So opening close and product that name lets you forget.
+
+175
+00:10:46,770 --> 00:10:47,080
+All right.
+
+176
+00:10:47,100 --> 00:10:48,330
+So we get it.
+
+177
+00:10:48,330 --> 00:10:52,010
+Next it's going to be the quantity I don't want to retype all of this.
+
+178
+00:10:52,080 --> 00:10:55,600
+I'm going to copy and paste and say quantity.
+
+179
+00:10:57,330 --> 00:10:58,170
+All right.
+
+180
+00:10:58,170 --> 00:11:03,740
+So again we remember that we attached this property quantity.
+
+181
+00:11:04,050 --> 00:11:06,940
+So we just get it right.
+
+182
+00:11:06,960 --> 00:11:08,430
+So on the
+
+183
+00:11:12,180 --> 00:11:14,760
+or it's going to delete does.
+
+184
+00:11:15,190 --> 00:11:16,500
+Let's see if we get it.
+
+185
+00:11:19,170 --> 00:11:22,600
+Quantity 2 rocket mental math.
+
+186
+00:11:22,610 --> 00:11:22,960
+OK.
+
+187
+00:11:23,030 --> 00:11:25,390
+It's reloading without my change.
+
+188
+00:11:25,390 --> 00:11:26,460
+That is good.
+
+189
+00:11:27,110 --> 00:11:28,110
+So.
+
+190
+00:11:28,220 --> 00:11:28,550
+All right.
+
+191
+00:11:28,550 --> 00:11:30,250
+So we are done with the quantity.
+
+192
+00:11:30,350 --> 00:11:31,080
+What else.
+
+193
+00:11:31,130 --> 00:11:32,240
+We have the price.
+
+194
+00:11:32,360 --> 00:11:37,370
+So I'm going to delete this one more and this one is going to be the prize.
+
+195
+00:11:37,370 --> 00:11:38,570
+I know this is boring.
+
+196
+00:11:38,660 --> 00:11:39,690
+We are almost done.
+
+197
+00:11:39,830 --> 00:11:42,760
+So I'm going to say price and I'm going to do.
+
+198
+00:11:42,770 --> 00:11:46,210
+I'm going to do the next one which is actually the Bunin.
+
+199
+00:11:46,220 --> 00:11:50,010
+So this one will be a little bit special.
+
+200
+00:11:50,020 --> 00:11:55,550
+I'm going to attached a class of BDM and I'm going to remove this one I'm going to say price right here
+
+201
+00:11:55,810 --> 00:12:01,500
+horse and I'm going to put the dollar sign right here or whatever currency.
+
+202
+00:12:01,700 --> 00:12:03,710
+So Def open it close.
+
+203
+00:12:03,740 --> 00:12:05,760
+And this is going to be the Remove button.
+
+204
+00:12:05,930 --> 00:12:12,270
+So class name and then cart underscore remove underscore.
+
+205
+00:12:12,350 --> 00:12:18,080
+And now we need to attach a non-collector to this because whenever we click that we want to trigger
+
+206
+00:12:18,080 --> 00:12:22,320
+the function that we are passing this prompts this one remember remove item.
+
+207
+00:12:22,370 --> 00:12:22,830
+All right.
+
+208
+00:12:22,880 --> 00:12:29,630
+So whenever we click it and I'm going to do it here we are going to trigger a function called remove
+
+209
+00:12:29,810 --> 00:12:36,120
+item and remember that we are doing the structuring so we don't need to do props.
+
+210
+00:12:36,170 --> 00:12:43,370
+Remove item we are already kind of doing this now we need to tell this function which is DJT that we
+
+211
+00:12:43,370 --> 00:12:46,410
+want to delete if we go here we are passing an ID.
+
+212
+00:12:46,550 --> 00:12:48,420
+So we need to pass it.
+
+213
+00:12:48,470 --> 00:12:57,350
+So it's product dot underscore ID and right here we're going to say remove or something like that.
+
+214
+00:12:57,350 --> 00:12:57,950
+All right.
+
+215
+00:12:58,990 --> 00:13:02,070
+OK let's see what we get.
+
+216
+00:13:02,280 --> 00:13:05,550
+Now it's not that nice could be much much better.
+
+217
+00:13:05,640 --> 00:13:09,430
+Like it's old for the styles we get.
+
+218
+00:13:09,470 --> 00:13:11,060
+We are not going to do a lot of styles.
+
+219
+00:13:11,070 --> 00:13:13,420
+It's a pretty simple layout.
+
+220
+00:13:13,800 --> 00:13:16,230
+So now there are a couple things we need to do.
+
+221
+00:13:16,350 --> 00:13:22,590
+First we need to create a kind of a function or something that loops all the items we get right here
+
+222
+00:13:22,830 --> 00:13:31,500
+and we get a total amount you know one half five times three of course than 400 And then one hundred
+
+223
+00:13:31,500 --> 00:13:32,160
+times two.
+
+224
+00:13:32,160 --> 00:13:38,350
+And then we sum everything and we show the total amount of what the user needs to pay.
+
+225
+00:13:38,400 --> 00:13:43,950
+And of course later we're going to add the ability to remove and then we're going to go to Pay-Pal right.
+
+226
+00:13:44,010 --> 00:13:44,420
+OK.
+
+227
+00:13:44,700 --> 00:13:48,640
+So let's go let's go to the next one and start doing the same.
+
+228
+00:13:48,690 --> 00:13:49,620
+And then we move.
+

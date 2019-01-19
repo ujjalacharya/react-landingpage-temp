@@ -1,0 +1,504 @@
+1
+00:00:00,570 --> 00:00:02,010
+OK so let's continue this.
+
+2
+00:00:02,100 --> 00:00:08,070
+Whenever we get this we pass a set of instructions we're going to get an error and we're going to get
+
+3
+00:00:08,130 --> 00:00:09,960
+the actual articles right.
+
+4
+00:00:10,020 --> 00:00:10,580
+OK.
+
+5
+00:00:11,010 --> 00:00:20,790
+If we do get an error we're going to return return a response of status opening close of 400 because
+
+6
+00:00:20,790 --> 00:00:23,760
+we get an error and going to send error.
+
+7
+00:00:23,820 --> 00:00:26,980
+Of course if everything goes OK we're going to rent We're going to rest.
+
+8
+00:00:27,060 --> 00:00:32,990
+And the response of status opening close of 200 which means that everything goes OK.
+
+9
+00:00:33,180 --> 00:00:39,690
+And the response is going to be a Jason and instead of the Jason if you remember the reducer it's expecting
+
+10
+00:00:40,200 --> 00:00:42,140
+an article and a size.
+
+11
+00:00:42,240 --> 00:00:44,090
+So I'm going to go right here I'm going to say OK.
+
+12
+00:00:44,100 --> 00:00:51,220
+So the size of this it's equal to articles Dot and I going to get that length of this.
+
+13
+00:00:51,270 --> 00:00:53,190
+And again we will get back to this later.
+
+14
+00:00:53,190 --> 00:00:54,090
+We will need it.
+
+15
+00:00:54,090 --> 00:01:00,450
+The only thing we do is to tell the send the response and tell how many articles are actually returning.
+
+16
+00:01:00,570 --> 00:01:02,740
+If it's a 6 or it's less.
+
+17
+00:01:02,790 --> 00:01:04,560
+And right now it could you a tip.
+
+18
+00:01:04,920 --> 00:01:09,350
+So articles are going to say articles articles is going to be equal to articles.
+
+19
+00:01:09,360 --> 00:01:09,630
+Right.
+
+20
+00:01:09,630 --> 00:01:11,030
+We are just sending the articles.
+
+21
+00:01:11,070 --> 00:01:11,690
+Right.
+
+22
+00:01:11,720 --> 00:01:15,410
+So now the producer will be getting this response.
+
+23
+00:01:15,540 --> 00:01:20,250
+So we should be getting something at least from the server on an unload.
+
+24
+00:01:20,490 --> 00:01:26,970
+So I'm going to go right here to the state and we go to products and we have to shop with the first
+
+25
+00:01:27,000 --> 00:01:28,280
+six articles.
+
+26
+00:01:28,410 --> 00:01:29,070
+Right.
+
+27
+00:01:29,130 --> 00:01:33,680
+And then we have the two shop size which is equal to sex Burgman.
+
+28
+00:01:33,690 --> 00:01:36,750
+So we are kind of getting this right.
+
+29
+00:01:36,960 --> 00:01:42,600
+Of course we just get the first six on the database.
+
+30
+00:01:42,600 --> 00:01:43,120
+All right.
+
+31
+00:01:43,290 --> 00:01:47,160
+And it's by default again it's descending.
+
+32
+00:01:47,160 --> 00:01:49,820
+So it's bringing the first the new ones.
+
+33
+00:01:49,820 --> 00:01:50,440
+All right.
+
+34
+00:01:50,940 --> 00:01:53,060
+So now what happens if we apply a filter.
+
+35
+00:01:53,230 --> 00:01:57,400
+I'm going to go to this and we don't have that logic so far.
+
+36
+00:01:57,660 --> 00:02:03,590
+So when this is going to happen and I'm going to delete the console log right here because it's bothering.
+
+37
+00:02:03,870 --> 00:02:04,420
+OK.
+
+38
+00:02:04,740 --> 00:02:08,820
+So of course we need to trigger this whenever we make change on the filters.
+
+39
+00:02:08,910 --> 00:02:14,730
+So they handle filters will be a place to you know trigger this idea.
+
+40
+00:02:14,730 --> 00:02:15,240
+All right.
+
+41
+00:02:15,420 --> 00:02:23,490
+So whenever we make a change to filters and of course we set the filters are going to do does not show
+
+42
+00:02:24,330 --> 00:02:32,160
+filter red or something like that results and are going to be passing the new set of filters because
+
+43
+00:02:32,160 --> 00:02:36,340
+at this point whenever we make a change we have new filters inside of the state.
+
+44
+00:02:36,390 --> 00:02:37,250
+Right.
+
+45
+00:02:37,290 --> 00:02:42,510
+So when it copy the name of the function and I'm going to go right here at the bottom and I'm going
+
+46
+00:02:42,510 --> 00:02:45,850
+to say that this one is just a function opening close.
+
+47
+00:02:45,870 --> 00:02:46,750
+And of course.
+
+48
+00:02:46,950 --> 00:02:47,600
+All right.
+
+49
+00:02:48,060 --> 00:02:54,510
+So the only thing we need to do here is to dispatch the same action we have right here but with different
+
+50
+00:02:54,510 --> 00:02:59,240
+data ride with different state because now the state of philtres is going to be different.
+
+51
+00:02:59,250 --> 00:03:02,610
+So pretty much we just need to trigger the same action.
+
+52
+00:03:02,610 --> 00:03:07,650
+So I'm going to copy this because I want to type it again and I'm going to go right here now.
+
+53
+00:03:07,650 --> 00:03:13,710
+We need to change a few things because whenever we filter something it means that are starting again
+
+54
+00:03:13,710 --> 00:03:17,530
+from scratch maybe the user clicked the offender.
+
+55
+00:03:17,600 --> 00:03:18,220
+Right.
+
+56
+00:03:18,390 --> 00:03:25,230
+And so the server goes and Frank brings all the articles with Fender and maybe they have I don't know
+
+57
+00:03:25,910 --> 00:03:27,500
+200 articles with Fender.
+
+58
+00:03:27,540 --> 00:03:28,090
+Right.
+
+59
+00:03:28,320 --> 00:03:31,720
+And then OK when they say I want to get fender and I have a..
+
+60
+00:03:31,800 --> 00:03:35,290
+So the server needs to start from scratch.
+
+61
+00:03:35,340 --> 00:03:42,750
+It cannot skip any values because we need to bring again from the zero the first six from the zero of
+
+62
+00:03:42,750 --> 00:03:43,520
+the pen there.
+
+63
+00:03:43,530 --> 00:03:45,170
+And Ivan its results.
+
+64
+00:03:45,300 --> 00:03:49,100
+So we need to reset the skip back to zero.
+
+65
+00:03:49,200 --> 00:03:50,670
+It's going to start from the scratch.
+
+66
+00:03:50,850 --> 00:03:55,830
+The limit is going to be the same and the filters are going to be whatever filters we are passing right
+
+67
+00:03:55,830 --> 00:03:56,420
+here.
+
+68
+00:03:56,460 --> 00:04:02,300
+So we're going to pass this as an argument filters and that this that state that filters not anymore
+
+69
+00:04:02,400 --> 00:04:04,960
+is going to be filters.
+
+70
+00:04:04,980 --> 00:04:05,670
+All right.
+
+71
+00:04:05,800 --> 00:04:06,930
+We'll be sorry.
+
+72
+00:04:07,470 --> 00:04:14,630
+And then of course since we are resetting skip maybe maybe later again maybe the user had its cause
+
+73
+00:04:14,640 --> 00:04:15,540
+has to skip off.
+
+74
+00:04:15,540 --> 00:04:16,250
+I don't know.
+
+75
+00:04:16,350 --> 00:04:17,130
+Twenty.
+
+76
+00:04:17,230 --> 00:04:20,790
+So after we dispatched this we are kind of resetting that state.
+
+77
+00:04:20,970 --> 00:04:22,260
+So we're going to do.
+
+78
+00:04:22,320 --> 00:04:28,470
+Then and only then after we of course we get the new articles we are going to graph this state this
+
+79
+00:04:28,490 --> 00:04:33,760
+that said state opening close and we're going to set that cap back to zero.
+
+80
+00:04:35,230 --> 00:04:36,000
+All right.
+
+81
+00:04:36,400 --> 00:04:41,870
+So in theory sorry we should be getting something are going to save it.
+
+82
+00:04:42,170 --> 00:04:43,420
+I'm going to reload it.
+
+83
+00:04:45,930 --> 00:04:52,670
+And of course we are getting inside of the state the articles right.
+
+84
+00:04:52,780 --> 00:04:55,280
+Usually the default articles.
+
+85
+00:04:55,380 --> 00:04:59,790
+Now I'm going to click on fender and we're going to check the state again.
+
+86
+00:05:00,030 --> 00:05:01,980
+So right here we have something else.
+
+87
+00:05:01,980 --> 00:05:04,760
+It says that the shape size now it's two.
+
+88
+00:05:04,860 --> 00:05:06,440
+So the server is just ringing.
+
+89
+00:05:06,450 --> 00:05:09,090
+It's just bringing two different results.
+
+90
+00:05:09,180 --> 00:05:09,840
+Right.
+
+91
+00:05:09,840 --> 00:05:15,150
+So I go to shop and we removed all of this and now the state it's something else.
+
+92
+00:05:15,150 --> 00:05:15,430
+Right.
+
+93
+00:05:15,450 --> 00:05:16,920
+It's something different.
+
+94
+00:05:16,950 --> 00:05:18,870
+It's difficult to state.
+
+95
+00:05:18,870 --> 00:05:21,140
+We have to shop and we get two articles.
+
+96
+00:05:21,150 --> 00:05:25,510
+And this one's our funder of course we don't see that.
+
+97
+00:05:25,530 --> 00:05:28,940
+We see the the the idea of the brand.
+
+98
+00:05:28,950 --> 00:05:34,910
+Right here we have a DVD out there we got we get fender and the next one of course is going to be fender
+
+99
+00:05:34,910 --> 00:05:37,660
+as well so brand fender.
+
+100
+00:05:37,920 --> 00:05:38,580
+All right.
+
+101
+00:05:38,580 --> 00:05:40,510
+What happens if we select buy wood.
+
+102
+00:05:40,680 --> 00:05:43,280
+I know that this would for example it's Basswood.
+
+103
+00:05:43,320 --> 00:05:45,150
+Let me check the other one.
+
+104
+00:05:45,150 --> 00:05:47,590
+The other one the other wood it's mass whatso.
+
+105
+00:05:47,610 --> 00:05:47,880
+Yeah.
+
+106
+00:05:47,890 --> 00:05:49,650
+Well it's not going to work.
+
+107
+00:05:49,680 --> 00:05:54,440
+This one has 22 frets this went 22.
+
+108
+00:05:54,580 --> 00:05:58,820
+OK just let me try to find something unique on this one.
+
+109
+00:05:58,830 --> 00:06:00,520
+This one is the price of 600.
+
+110
+00:06:00,540 --> 00:06:06,210
+And the other one is the price of let me find it.
+
+111
+00:06:06,300 --> 00:06:07,550
+The price of one.
+
+112
+00:06:07,740 --> 00:06:08,400
+All right.
+
+113
+00:06:08,550 --> 00:06:12,060
+So what we can do we can go to Price and try to filter that.
+
+114
+00:06:12,060 --> 00:06:17,940
+So if I do tune only to zero from zero to 99 we're going to get one result right.
+
+115
+00:06:17,940 --> 00:06:18,990
+That's the logic.
+
+116
+00:06:18,990 --> 00:06:24,350
+So we get one we solved on the difference and if I go here we get only one result.
+
+117
+00:06:24,360 --> 00:06:29,280
+So from the server we're getting that correct response a price point we get only one result.
+
+118
+00:06:29,300 --> 00:06:32,940
+So from the server again we are getting the correct response.
+
+119
+00:06:32,940 --> 00:06:35,730
+So the filters are really working.
+
+120
+00:06:35,730 --> 00:06:39,170
+Now the next thing is going to be catching this results.
+
+121
+00:06:39,210 --> 00:06:42,820
+We get from redux and this playing the cards right here.
+
+122
+00:06:42,990 --> 00:06:48,930
+And later we're going to go back of course to all this logic on the reducers and everything else to
+
+123
+00:06:48,960 --> 00:06:55,350
+create the load more because of the load more we're going to need to use that cap and that limit so
+
+124
+00:06:55,350 --> 00:06:59,290
+we need to modify some bad news and do some a little bit of logic.
+
+125
+00:06:59,340 --> 00:07:02,250
+It's not going to be really hard to get.
+
+126
+00:07:02,410 --> 00:07:05,670
+Let's go to the next section and start with the carts right here.
+

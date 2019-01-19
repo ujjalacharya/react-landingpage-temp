@@ -1,0 +1,508 @@
+1
+00:00:01,280 --> 00:00:07,480
+OK so now we will create the wind and Jersey and the jersey animation and then we will create the n
+
+2
+00:00:07,550 --> 00:00:10,100
+roll impact with you know with a form.
+
+3
+00:00:10,220 --> 00:00:10,720
+OK.
+
+4
+00:00:10,820 --> 00:00:17,600
+So we're going to go back to our project and go back right here to our goat code and instead of home
+
+5
+00:00:17,600 --> 00:00:25,550
+of course we need new components in U.S. and then we call this promotion because of course it's to receive
+
+6
+00:00:25,580 --> 00:00:27,640
+promotional emails.
+
+7
+00:00:27,740 --> 00:00:28,730
+Kind of makes sense.
+
+8
+00:00:28,730 --> 00:00:32,990
+So inside promotion we will have pretty much two different components.
+
+9
+00:00:32,990 --> 00:00:38,720
+First it's going to be the index that we're going to have the animation container which contains the
+
+10
+00:00:38,720 --> 00:00:40,020
+top animation.
+
+11
+00:00:40,220 --> 00:00:48,740
+So just going to call it any mention of capital and a animation could be promotion animation makes a
+
+12
+00:00:48,740 --> 00:00:49,450
+little bit more sense.
+
+13
+00:00:49,470 --> 00:00:50,400
+But that's one.
+
+14
+00:00:50,720 --> 00:00:52,220
+And then of course we get the end roll.
+
+15
+00:00:52,210 --> 00:00:58,080
+So I'm going to say and roll that is first we will start from index.
+
+16
+00:00:58,190 --> 00:01:04,340
+So this one could be Chester react stateless component because you know the only thing we get into right
+
+17
+00:01:04,340 --> 00:01:10,850
+here is just make reference to the animation and the role so react statelets component are going to
+
+18
+00:01:10,850 --> 00:01:15,290
+change just to promotion and then promotion.
+
+19
+00:01:15,290 --> 00:01:16,220
+All right.
+
+20
+00:01:16,220 --> 00:01:23,380
+So the wrapper of this are going to wrap everything into a class promotion and then wrapper.
+
+21
+00:01:23,840 --> 00:01:27,740
+And I'm going to add some stylings and we're going to do it on the CSSA I'm going to do it just from
+
+22
+00:01:27,740 --> 00:01:35,010
+here style open and close and a background.
+
+23
+00:01:35,050 --> 00:01:36,630
+Monique Fix's style.
+
+24
+00:01:36,650 --> 00:01:37,510
+There we go.
+
+25
+00:01:37,880 --> 00:01:43,850
+It's a background of white just a black and white Nothing really special.
+
+26
+00:01:43,910 --> 00:01:45,800
+So one two three one two three.
+
+27
+00:01:46,550 --> 00:01:54,680
+Now everything is kind of centered so I will create a class name of container's same thing we did before
+
+28
+00:01:55,010 --> 00:02:03,150
+and it's sort of here of course we need to put the both components in a Jersey Jersey and the unrolls
+
+29
+00:02:03,170 --> 00:02:08,520
+so I going to go to the roll and the and roll which is just an animation.
+
+30
+00:02:08,570 --> 00:02:10,200
+We are not going to use react.
+
+31
+00:02:10,250 --> 00:02:10,660
+React.
+
+32
+00:02:10,660 --> 00:02:11,000
+Move.
+
+33
+00:02:10,990 --> 00:02:13,820
+I'm going to use just react reveals a very simple animation.
+
+34
+00:02:14,030 --> 00:02:19,540
+So we could do we had we could create a re-act stateless components.
+
+35
+00:02:19,560 --> 00:02:27,920
+I don't know just name two promotion animation not just animation because you know anything could be
+
+36
+00:02:27,920 --> 00:02:28,990
+an animation.
+
+37
+00:02:29,150 --> 00:02:32,860
+So we just return some you know some constants.
+
+38
+00:02:32,900 --> 00:02:36,990
+So we're now going to say animation as matter.
+
+39
+00:02:37,090 --> 00:02:41,560
+And of course this component this index the index of promotion.
+
+40
+00:02:41,830 --> 00:02:43,110
+It's not being included.
+
+41
+00:02:43,110 --> 00:02:44,130
+We're not including that.
+
+42
+00:02:44,130 --> 00:02:52,020
+So first I'm going to import this promotion animation from.
+
+43
+00:02:52,070 --> 00:02:58,690
+And of course animation and I make reference to this right here and there we go.
+
+44
+00:02:58,730 --> 00:03:04,320
+And now of course from the index of home we need to call this index of promotion.
+
+45
+00:03:04,520 --> 00:03:06,160
+So I'm going to go right here.
+
+46
+00:03:06,320 --> 00:03:11,080
+Import promotion from that forward slash.
+
+47
+00:03:11,240 --> 00:03:13,490
+And then we go to promotion.
+
+48
+00:03:13,490 --> 00:03:14,140
+All right.
+
+49
+00:03:14,300 --> 00:03:16,960
+Going to make reference to this.
+
+50
+00:03:16,970 --> 00:03:17,540
+There you go.
+
+51
+00:03:17,540 --> 00:03:18,840
+Promotion.
+
+52
+00:03:19,020 --> 00:03:24,610
+That and are going to go back to our application and we should be getting at least a minimum stake right
+
+53
+00:03:24,620 --> 00:03:30,310
+here when we don't check why import promotion from promotion.
+
+54
+00:03:30,740 --> 00:03:33,380
+Well this actually looks nice.
+
+55
+00:03:33,570 --> 00:03:35,360
+It's because I did it on the roll.
+
+56
+00:03:35,360 --> 00:03:36,530
+Sorry for that guys.
+
+57
+00:03:36,590 --> 00:03:37,590
+Got to close it.
+
+58
+00:03:37,640 --> 00:03:42,860
+You know we're getting calls all the old ones I've been mistaken that place all the code of the code
+
+59
+00:03:42,890 --> 00:03:44,150
+inside and roll.
+
+60
+00:03:44,170 --> 00:03:46,190
+So we get information that is good.
+
+61
+00:03:46,320 --> 00:03:46,810
+Get.
+
+62
+00:03:46,910 --> 00:03:47,370
+All right.
+
+63
+00:03:47,690 --> 00:03:51,560
+So now we need to start creating the animation and this one is going to be real simple.
+
+64
+00:03:51,560 --> 00:03:56,730
+We're going to use re-act reveal and I'm going to import soome from re-act reveal.
+
+65
+00:03:56,750 --> 00:04:03,520
+So re-act reveal and slash and then the name of what we're going to be using which is soome.
+
+66
+00:04:03,550 --> 00:04:04,330
+All right.
+
+67
+00:04:04,350 --> 00:04:10,800
+Now we will use an image of a jersey and everything isn't resourced so we have that image in resources.
+
+68
+00:04:10,850 --> 00:04:20,360
+So import levels like that and I get a call in jersey from that that force last one more time one more
+
+69
+00:04:20,360 --> 00:04:26,850
+time and then resources forward slash images for Slash and the jersey just like that.
+
+70
+00:04:26,870 --> 00:04:27,750
+OK.
+
+71
+00:04:28,250 --> 00:04:34,500
+So I'm going to read everything into a class name of promotion animation.
+
+72
+00:04:34,820 --> 00:04:35,310
+All right.
+
+73
+00:04:35,540 --> 00:04:37,850
+So we have two sides in this animation.
+
+74
+00:04:37,850 --> 00:04:45,020
+We have the left and we have the right so we have to get a container for both first one class name left
+
+75
+00:04:45,130 --> 00:04:46,850
+made this very simple.
+
+76
+00:04:47,330 --> 00:04:51,140
+And then of course the other one is going to be you guessed it the right one.
+
+77
+00:04:51,260 --> 00:04:52,560
+So right.
+
+78
+00:04:52,880 --> 00:04:58,660
+So in the left we will get some text you know when a jersey just like this.
+
+79
+00:04:58,700 --> 00:05:02,000
+So I gave the class and left.
+
+80
+00:05:02,000 --> 00:05:07,280
+Whenever we get a div and it's pen just like this of course we're going to get all the styling everything
+
+81
+00:05:07,290 --> 00:05:09,910
+it's on the CSSA So when a.
+
+82
+00:05:10,070 --> 00:05:14,210
+And below this we will put Jersey just like that me.
+
+83
+00:05:14,240 --> 00:05:15,170
+There you go.
+
+84
+00:05:17,290 --> 00:05:19,510
+Jersey.
+
+85
+00:05:19,740 --> 00:05:20,400
+All right.
+
+86
+00:05:20,410 --> 00:05:22,280
+They are very expensive so you know.
+
+87
+00:05:22,730 --> 00:05:24,470
+So can we get it with Jersey.
+
+88
+00:05:24,480 --> 00:05:25,430
+That's very good.
+
+89
+00:05:25,570 --> 00:05:26,260
+All right.
+
+90
+00:05:26,700 --> 00:05:30,570
+So what else I want to animate this with assumed fact.
+
+91
+00:05:30,730 --> 00:05:34,280
+So I'm going to go right here and we're just going to do this right now.
+
+92
+00:05:34,300 --> 00:05:37,030
+We will put some end in sight of the soome.
+
+93
+00:05:37,150 --> 00:05:40,520
+We will you know put everything else.
+
+94
+00:05:40,690 --> 00:05:42,330
+Let me go here.
+
+95
+00:05:42,580 --> 00:05:45,190
+Ryan going to go up.
+
+96
+00:05:45,340 --> 00:05:45,750
+OK.
+
+97
+00:05:45,760 --> 00:05:46,240
+There you go.
+
+98
+00:05:46,240 --> 00:05:48,330
+We get it when we go up again.
+
+99
+00:05:48,580 --> 00:05:53,000
+Scroll down and we get it you know really or the symbol of this moment.
+
+100
+00:05:53,020 --> 00:05:54,990
+Next is going to be the year right.
+
+101
+00:05:55,000 --> 00:05:58,530
+So they make this nice and again we will use assume.
+
+102
+00:05:58,540 --> 00:06:01,360
+So I'm just going to bring it right now.
+
+103
+00:06:01,420 --> 00:06:05,440
+So soome and instead of here we get that image.
+
+104
+00:06:05,440 --> 00:06:10,540
+So we will pass a div just a div with a style and a background.
+
+105
+00:06:10,540 --> 00:06:14,950
+Ryan real simple so open it close and we will say background.
+
+106
+00:06:15,310 --> 00:06:16,990
+It's going to be equal to.
+
+107
+00:06:17,110 --> 00:06:19,040
+And again template strings.
+
+108
+00:06:19,200 --> 00:06:20,120
+R l.
+
+109
+00:06:20,200 --> 00:06:29,600
+We use that jersey we imported the top Jersey and of course at no repeat.
+
+110
+00:06:29,650 --> 00:06:30,200
+Right.
+
+111
+00:06:30,250 --> 00:06:36,040
+And of course I made this already too gravidarum and make it at a position back you know just to get
+
+112
+00:06:36,040 --> 00:06:36,940
+the image right here.
+
+113
+00:06:36,940 --> 00:06:39,130
+You know the right size and everything else.
+
+114
+00:06:39,130 --> 00:06:40,150
+So let's try again.
+
+115
+00:06:40,190 --> 00:06:46,020
+If we lower the application and you know we get the same animation start again.
+
+116
+00:06:46,300 --> 00:06:46,850
+All right.
+
+117
+00:06:46,860 --> 00:06:48,270
+You know that's nice.
+
+118
+00:06:48,270 --> 00:06:48,650
+All right.
+
+119
+00:06:48,720 --> 00:06:52,830
+So now we're going to go to the next section and we will start doing all of this.
+
+120
+00:06:52,950 --> 00:06:54,080
+And this is not that simple.
+
+121
+00:06:54,080 --> 00:06:56,190
+It's not just an impact right.
+
+122
+00:06:56,190 --> 00:06:59,170
+We can it create a template for the inputs.
+
+123
+00:06:59,400 --> 00:07:06,990
+So we will add utility to you to the UI elements we will add a file that will rule all the inputs we
+
+124
+00:07:06,990 --> 00:07:12,990
+will need to add validation we will need to connect to the server check if the user is already on the
+
+125
+00:07:12,990 --> 00:07:18,300
+mailing list and to give a message if they are already already on the mailing list.
+
+126
+00:07:18,300 --> 00:07:20,050
+So again we need to do a lot of stuff.
+
+127
+00:07:20,070 --> 00:07:21,870
+So let's go to the next one and start this.
+

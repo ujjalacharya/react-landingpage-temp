@@ -1,0 +1,1120 @@
+1
+00:00:01,030 --> 00:00:03,730
+Write so now you'll learn about transitions.
+
+2
+00:00:03,800 --> 00:00:10,070
+I've made a tiny template so we can start with this and not to lose any time in building a simple template.
+
+3
+00:00:10,190 --> 00:00:15,830
+So we still have a lot of things to learn so we're going to do a lot of coding in this section and it's
+
+4
+00:00:15,830 --> 00:00:17,980
+going to look weird at the beginning.
+
+5
+00:00:17,990 --> 00:00:20,420
+So first you will need to download this template.
+
+6
+00:00:20,420 --> 00:00:26,140
+This project I'm going to be adding this project as a download source inside the course inside this
+
+7
+00:00:26,140 --> 00:00:27,790
+section so download it.
+
+8
+00:00:27,800 --> 00:00:34,480
+Put it on a folder and then of course you need to go to the terminal navigate and do NPM start.
+
+9
+00:00:34,730 --> 00:00:35,210
+OK.
+
+10
+00:00:35,330 --> 00:00:37,850
+You just download that and do that.
+
+11
+00:00:37,850 --> 00:00:41,450
+So first let me show you what we get on this template.
+
+12
+00:00:41,450 --> 00:00:46,780
+We have three different routes one transitions CSSA incisions and transitions group.
+
+13
+00:00:46,910 --> 00:00:52,610
+If I go to transition's which is this one you know you're not getting anything just a div with the text.
+
+14
+00:00:52,610 --> 00:00:56,280
+Same thing with CSSA rescissions and inside incisions group.
+
+15
+00:00:56,390 --> 00:01:01,320
+We have kind of a function that it's going to be adding an element with a random number.
+
+16
+00:01:01,340 --> 00:01:03,880
+Every time we add elements that that's it.
+
+17
+00:01:03,880 --> 00:01:07,530
+And if Of course I add more I get more random numbers.
+
+18
+00:01:07,640 --> 00:01:09,750
+If I do we move is going to be we moving.
+
+19
+00:01:09,770 --> 00:01:10,760
+Real simple.
+
+20
+00:01:10,760 --> 00:01:17,640
+Now the main point of this is going to be to animate each and each enter on each dip.
+
+21
+00:01:17,890 --> 00:01:19,330
+No that's the idea.
+
+22
+00:01:19,340 --> 00:01:24,500
+So first we need to start with transitions is going to be the hardest one.
+
+23
+00:01:24,530 --> 00:01:26,690
+You know it's going to be the hardest one to do.
+
+24
+00:01:26,690 --> 00:01:32,330
+So we're going to start with that one because we know how to do transition we will know how to do all
+
+25
+00:01:32,330 --> 00:01:33,270
+the other ones.
+
+26
+00:01:33,500 --> 00:01:39,530
+OK so first the first thing we need to do is to add a div and then a button that is going to be adding
+
+27
+00:01:39,530 --> 00:01:41,220
+a div right here.
+
+28
+00:01:41,220 --> 00:01:47,170
+So OK I'm going to go to transition's and inside here going to delete transmission's and inside I'm
+
+29
+00:01:47,180 --> 00:01:49,650
+going to create new div just like that.
+
+30
+00:01:49,740 --> 00:01:51,440
+They're going to be adding some style.
+
+31
+00:01:51,440 --> 00:01:53,090
+Real simple.
+
+32
+00:01:53,090 --> 00:01:58,500
+Open and close and then open and close again to add a background so we can see good background.
+
+33
+00:01:58,610 --> 00:02:00,440
+And it's going to be read just like that.
+
+34
+00:02:00,460 --> 00:02:01,910
+Oh read.
+
+35
+00:02:02,300 --> 00:02:09,420
+And then of course I can add height just like that hide and it's going to be I don't know 100 pixels
+
+36
+00:02:09,570 --> 00:02:11,160
+sounds right.
+
+37
+00:02:11,490 --> 00:02:12,320
+That's fine.
+
+38
+00:02:12,630 --> 00:02:14,840
+Now there's not going to be anything inside.
+
+39
+00:02:14,850 --> 00:02:16,490
+At least we get the read.
+
+40
+00:02:16,560 --> 00:02:18,090
+That's what we want to do.
+
+41
+00:02:18,330 --> 00:02:25,800
+So to show or hide this element we need to state that it's going to be deciding if we want to show this
+
+42
+00:02:25,860 --> 00:02:26,690
+or not.
+
+43
+00:02:26,700 --> 00:02:31,510
+So I need to go right here at the top at the top and I'm going to say state it's going to be equal to.
+
+44
+00:02:31,710 --> 00:02:37,000
+And of course we add state and the state is going to be a show make sense.
+
+45
+00:02:37,150 --> 00:02:40,740
+And first it's going to be a boolean and it's going to be good.
+
+46
+00:02:40,980 --> 00:02:48,960
+So now to use the state to show the stev or not what we could do we can wrap everything in curly braces
+
+47
+00:02:49,260 --> 00:02:51,840
+and we can use a turn or operator to do this.
+
+48
+00:02:51,960 --> 00:02:56,620
+So that's going to be this that state that Schu just something like that.
+
+49
+00:02:56,700 --> 00:03:03,250
+And if states true this is going to be rendered and if not of course we will return.
+
+50
+00:03:03,270 --> 00:03:05,750
+No something like that makes sense.
+
+51
+00:03:06,750 --> 00:03:07,260
+OK.
+
+52
+00:03:07,450 --> 00:03:08,790
+So of course we have to.
+
+53
+00:03:08,830 --> 00:03:10,260
+It's going to be showing this.
+
+54
+00:03:10,360 --> 00:03:13,210
+But if we change it to false.
+
+55
+00:03:13,290 --> 00:03:15,640
+No it's not going to show it.
+
+56
+00:03:15,670 --> 00:03:15,970
+OK.
+
+57
+00:03:16,030 --> 00:03:16,730
+That's good.
+
+58
+00:03:16,880 --> 00:03:18,810
+So now let's keep moving forward.
+
+59
+00:03:18,880 --> 00:03:25,200
+The next thing that we will need to do have to get is going to be a button that it's going to be displaying
+
+60
+00:03:25,210 --> 00:03:25,960
+this.
+
+61
+00:03:26,080 --> 00:03:30,860
+So I'm going to go right here at the bottom and go right here.
+
+62
+00:03:30,880 --> 00:03:35,080
+Up first I'm going to tweet the function that is going to be tackling this state.
+
+63
+00:03:35,080 --> 00:03:39,280
+So if we click a button it's going to change this state to false or true.
+
+64
+00:03:39,370 --> 00:03:42,630
+And this is going to be rendered or not make sense.
+
+65
+00:03:42,710 --> 00:03:45,010
+It's not going to create mine is going to be show deaf.
+
+66
+00:03:45,040 --> 00:03:47,300
+You can call your function whatever you want.
+
+67
+00:03:47,380 --> 00:03:48,290
+Doesn't matter.
+
+68
+00:03:48,550 --> 00:03:50,540
+And then of course we're going to open and close.
+
+69
+00:03:50,680 --> 00:03:56,590
+So whenever I click it I invoke this function I'm going to be going to be changing the state is going
+
+70
+00:03:56,590 --> 00:03:58,310
+to be set state.
+
+71
+00:03:58,440 --> 00:04:03,870
+So it like that resemble and inside of course we want to change the state of show.
+
+72
+00:04:04,090 --> 00:04:08,340
+And of course if we click it and the state is false We're going to change it to true.
+
+73
+00:04:08,410 --> 00:04:10,730
+And if it's true we want to change it to false.
+
+74
+00:04:10,870 --> 00:04:16,120
+So what we do again is going to be a turnaround OPERATOR We're going to use ternary a lot.
+
+75
+00:04:16,120 --> 00:04:25,170
+So it's going to be if not this does that state that show we went to true and if not of course we Wonderfalls
+
+76
+00:04:25,760 --> 00:04:28,680
+get you go.
+
+77
+00:04:28,990 --> 00:04:33,510
+So now we need to add the button that is going to be the bottom for this.
+
+78
+00:04:33,550 --> 00:04:37,610
+It's going to go right here at the bottom and I'm going to say Dave just just a.
+
+79
+00:04:37,780 --> 00:04:42,680
+And this is going to say show or hide whatever doesn't matter.
+
+80
+00:04:43,170 --> 00:04:43,400
+OK.
+
+81
+00:04:43,420 --> 00:04:43,870
+I'm going to say.
+
+82
+00:04:43,870 --> 00:04:52,830
+Class name can add a class name or show of show something like that.
+
+83
+00:04:53,380 --> 00:04:53,810
+OK.
+
+84
+00:04:53,920 --> 00:04:57,730
+I'm going to add an unclick just like we did before.
+
+85
+00:04:57,730 --> 00:04:59,780
+You know with the with the events.
+
+86
+00:04:59,890 --> 00:05:03,090
+Same idea and this one is going to be this.
+
+87
+00:05:03,160 --> 00:05:04,970
+That show did something like that.
+
+88
+00:05:04,990 --> 00:05:06,910
+We're going to invoke that function.
+
+89
+00:05:06,950 --> 00:05:08,610
+So it's going to be show live.
+
+90
+00:05:08,820 --> 00:05:09,420
+OK.
+
+91
+00:05:09,730 --> 00:05:11,100
+So we don't have this class.
+
+92
+00:05:11,110 --> 00:05:15,250
+But inside the abseil says it's going to be right here right here.
+
+93
+00:05:15,280 --> 00:05:17,880
+I've added that just previous Kersley.
+
+94
+00:05:18,170 --> 00:05:18,590
+OK.
+
+95
+00:05:18,640 --> 00:05:23,040
+So if I save it and go to the project we have the button show or hide.
+
+96
+00:05:23,230 --> 00:05:26,380
+And if I click it it's going to be showing the red death.
+
+97
+00:05:26,410 --> 00:05:30,250
+And if I click it is going to hide it just changed it to states.
+
+98
+00:05:30,310 --> 00:05:36,100
+And when the application renders is going to be displaying the death or not so it is working.
+
+99
+00:05:36,130 --> 00:05:36,850
+That's good.
+
+100
+00:05:37,060 --> 00:05:43,610
+So now would we want to do we want to add a nice transmission to this maybe a slide or a fade or whatever.
+
+101
+00:05:43,810 --> 00:05:47,230
+So first we're going to need to install a dependency for this.
+
+102
+00:05:47,290 --> 00:05:51,450
+It's going to be called react transmission's reactive decisions.
+
+103
+00:05:51,760 --> 00:05:56,610
+So are going to do Control-C to clear the terminal.
+
+104
+00:05:56,680 --> 00:05:58,420
+They're going to be installing this.
+
+105
+00:05:58,420 --> 00:06:02,570
+So it's going to be NPM install and then react.
+
+106
+00:06:02,650 --> 00:06:07,870
+Dash transmission let me make this bigger just like that.
+
+107
+00:06:08,860 --> 00:06:15,690
+Write react transmission's and then group and of course don't forget to do the minus minus say I've
+
+108
+00:06:15,720 --> 00:06:19,100
+got to stand and are going to pause and be right back.
+
+109
+00:06:19,830 --> 00:06:21,700
+OK so everything is installed.
+
+110
+00:06:21,720 --> 00:06:28,720
+So since we install then component a dispensing what we need to do is we need to invoke that dependency.
+
+111
+00:06:28,920 --> 00:06:34,560
+So first we're going to say import and then this import is going to look a little bit weird.
+
+112
+00:06:34,590 --> 00:06:36,670
+You know it's going to be a little long.
+
+113
+00:06:36,780 --> 00:06:43,290
+So we're going to say import and then it's going to be transmission just like that.
+
+114
+00:06:43,520 --> 00:06:49,310
+And it's going to be from and then it's going to be a little bit long it's going to be re-act transmission
+
+115
+00:06:49,490 --> 00:06:58,610
+dash group just like that and then forward slash and then transmission and know you should have a snippet
+
+116
+00:06:58,610 --> 00:06:59,630
+for this.
+
+117
+00:06:59,630 --> 00:06:59,890
+OK.
+
+118
+00:06:59,960 --> 00:07:00,790
+That's good.
+
+119
+00:07:00,950 --> 00:07:03,330
+So we are importing transmission right here.
+
+120
+00:07:03,350 --> 00:07:06,420
+What we need to do we need to use it inside the return.
+
+121
+00:07:06,420 --> 00:07:07,890
+So I'm going to delete all of those.
+
+122
+00:07:07,890 --> 00:07:09,030
+You're not going to use it.
+
+123
+00:07:09,230 --> 00:07:12,430
+And of course I'm going to say transmission just like that.
+
+124
+00:07:12,890 --> 00:07:18,070
+And then I'm going to create a task we need to wrap everything inside the transmission tag.
+
+125
+00:07:18,470 --> 00:07:22,640
+No this transition is going to be using two main props.
+
+126
+00:07:22,820 --> 00:07:24,420
+The first one is going to be called.
+
+127
+00:07:24,450 --> 00:07:25,990
+And just like that.
+
+128
+00:07:26,060 --> 00:07:31,630
+And the second one is going to be called timeout equal to something.
+
+129
+00:07:31,790 --> 00:07:37,020
+So that in is going to be kind of the state of this transition component.
+
+130
+00:07:37,210 --> 00:07:43,640
+So we have a state right here that it's deciding if we want to show or hide it to change it to true
+
+131
+00:07:43,870 --> 00:07:44,710
+what we can do.
+
+132
+00:07:44,710 --> 00:07:46,270
+We can use this state.
+
+133
+00:07:46,430 --> 00:07:51,380
+So this one could be true could be false could be whatever it is we have it on the state.
+
+134
+00:07:51,390 --> 00:07:54,340
+I got to say this that stayed that show.
+
+135
+00:07:54,580 --> 00:07:55,210
+OK.
+
+136
+00:07:55,870 --> 00:08:01,880
+So this since this transition is going to be of course a transition we need a timeout we need to decide
+
+137
+00:08:01,880 --> 00:08:04,670
+how long the transition is going to take.
+
+138
+00:08:04,670 --> 00:08:07,130
+So I'm going to say two seconds.
+
+139
+00:08:07,250 --> 00:08:10,690
+You know so we can we can see the difference.
+
+140
+00:08:10,910 --> 00:08:15,310
+So we have the state of this Ellen decision and the timeout.
+
+141
+00:08:15,320 --> 00:08:22,180
+So I'm going to go right here and if I do something like that may be a tag that is going to say hello
+
+142
+00:08:22,970 --> 00:08:23,720
+just like that.
+
+143
+00:08:23,720 --> 00:08:25,180
+Going to reload.
+
+144
+00:08:25,520 --> 00:08:28,580
+And of course you know we get this do we get the halo.
+
+145
+00:08:28,670 --> 00:08:30,550
+But this one with transition.
+
+146
+00:08:30,650 --> 00:08:33,050
+It's not going to work this transition.
+
+147
+00:08:33,080 --> 00:08:36,560
+What it will return is going to be a function.
+
+148
+00:08:36,560 --> 00:08:44,330
+So are going to wrap everything inside curly braces and this function that transition is going to return
+
+149
+00:08:44,600 --> 00:08:48,360
+is going to have a state and that this is really important for us.
+
+150
+00:08:48,740 --> 00:08:54,110
+Now after we get the state is going to return whatever element we want to return in this case is going
+
+151
+00:08:54,110 --> 00:08:56,460
+to be a p tag if I go right here.
+
+152
+00:08:56,480 --> 00:09:00,080
+You're still getting halo so you know it's still working.
+
+153
+00:09:00,080 --> 00:09:02,340
+Now the funny thing is the state.
+
+154
+00:09:02,540 --> 00:09:04,890
+Why do we get the state right here.
+
+155
+00:09:05,030 --> 00:09:09,890
+Going to just output whatever information we get on the state just like that.
+
+156
+00:09:10,100 --> 00:09:13,690
+We're just printing this state and I go right here.
+
+157
+00:09:13,730 --> 00:09:14,830
+You know we get entered.
+
+158
+00:09:14,840 --> 00:09:21,900
+Let me make this a little bit bigger when we go right here and there we go.
+
+159
+00:09:22,250 --> 00:09:26,060
+So we get enter and when we load the application we get entered.
+
+160
+00:09:26,270 --> 00:09:26,680
+OK.
+
+161
+00:09:26,720 --> 00:09:27,780
+So I'm going to click.
+
+162
+00:09:27,800 --> 00:09:30,500
+It's going to say exiting and then exit.
+
+163
+00:09:30,620 --> 00:09:36,860
+And if I click again is going to be showing the data again in theory and is going to say entering and
+
+164
+00:09:36,860 --> 00:09:37,810
+then entered.
+
+165
+00:09:37,880 --> 00:09:40,030
+So what is happening right here.
+
+166
+00:09:40,280 --> 00:09:46,190
+So what we get with transmission and with the with this module which we acquisitions group it's not
+
+167
+00:09:46,220 --> 00:09:48,420
+DIAK The animation itself.
+
+168
+00:09:48,420 --> 00:09:55,070
+We're going to get a state so we can do the animations with CSSA or with whatever you want.
+
+169
+00:09:55,070 --> 00:10:00,300
+So in this case we get the state of what is happening with this dev or what should happen with this.
+
+170
+00:10:00,620 --> 00:10:01,260
+So we have.
+
+171
+00:10:01,270 --> 00:10:05,700
+And so when we click again it's going to say a thing and then exit.
+
+172
+00:10:05,840 --> 00:10:11,840
+So exit thing is going to be the Whenever the div is doing the transition and whenever it's done it's
+
+173
+00:10:11,840 --> 00:10:18,450
+going to be after two seconds we get a different class which is going to be at a different state.
+
+174
+00:10:18,450 --> 00:10:25,250
+And if I click again you know if it is this the state of this is going to be exit the div it's not it's
+
+175
+00:10:25,250 --> 00:10:26,240
+not there anymore.
+
+176
+00:10:26,320 --> 00:10:27,750
+It's going to it's not visible.
+
+177
+00:10:27,820 --> 00:10:33,550
+I click show is going to be doing the animation and then the animation complete.
+
+178
+00:10:33,650 --> 00:10:39,860
+Since we are getting the state what we can do we create we can create four or maybe two different CSSA
+
+179
+00:10:39,860 --> 00:10:46,430
+classes and you know just give it a class of or with the passively or with whatever we want with the
+
+180
+00:10:46,430 --> 00:10:47,660
+animation.
+
+181
+00:10:47,660 --> 00:10:48,590
+So OK let's go.
+
+182
+00:10:48,650 --> 00:10:50,410
+You know we're going to do it right now.
+
+183
+00:10:50,630 --> 00:10:52,060
+I know that it's kind of confusing.
+
+184
+00:10:52,070 --> 00:10:53,870
+It's not going to make sense.
+
+185
+00:10:53,990 --> 00:10:59,660
+But right now we're going to show you a practical example with a with a div and it's going to make sense.
+
+186
+00:10:59,660 --> 00:11:00,940
+So I'm going to delete this.
+
+187
+00:11:01,040 --> 00:11:06,280
+I'm going to delete that P-TECH and instead of returning a P are going to return a.
+
+188
+00:11:06,320 --> 00:11:11,690
+So I'm going to say div open and close resample are going to add style right here.
+
+189
+00:11:11,720 --> 00:11:17,390
+I'm going to add an inline style so we can see what's going on with this and open and close and then
+
+190
+00:11:17,420 --> 00:11:18,140
+open and close.
+
+191
+00:11:18,140 --> 00:11:24,590
+You remember that for inline styling we need two curly braces right here at the bottom and first are
+
+192
+00:11:24,590 --> 00:11:31,580
+going to be adding the same background with it before the read that Acoma are going to add height and
+
+193
+00:11:31,580 --> 00:11:35,070
+the height is going to be 100 pixels than coma.
+
+194
+00:11:35,180 --> 00:11:43,780
+And this one is kind of important going to say transition and begin to add the East for all all it's
+
+195
+00:11:43,780 --> 00:11:49,420
+going to be two seconds because we have the time out and this is going to be important if you're using
+
+196
+00:11:49,420 --> 00:11:51,180
+CSSA for the transitions.
+
+197
+00:11:51,220 --> 00:11:56,440
+If you put two seconds this one needs to match with whatever timeout you have right here.
+
+198
+00:11:56,550 --> 00:12:02,260
+If they are different you know you can have a tiny crawl is going to still do the animation but they're
+
+199
+00:12:02,260 --> 00:12:03,770
+not going to be synchronized.
+
+200
+00:12:04,000 --> 00:12:04,280
+OK.
+
+201
+00:12:04,300 --> 00:12:07,380
+So we are going to be animating whatever whatever we want.
+
+202
+00:12:08,230 --> 00:12:09,380
+So I'm going to say coma.
+
+203
+00:12:09,610 --> 00:12:13,780
+And what I'm going to be animating it's going to be the passing is something simple.
+
+204
+00:12:13,960 --> 00:12:15,770
+It's going to be state and.
+
+205
+00:12:15,780 --> 00:12:16,140
+OK.
+
+206
+00:12:16,210 --> 00:12:17,370
+Let me get started.
+
+207
+00:12:17,410 --> 00:12:18,630
+I'm going to say opacity.
+
+208
+00:12:18,850 --> 00:12:22,120
+What I want to do I want to hide.
+
+209
+00:12:22,120 --> 00:12:25,810
+Whenever we get a state of exit or thing.
+
+210
+00:12:26,020 --> 00:12:32,240
+So the opacity is going to be equal to zero if we have the state exiting or exit exit.
+
+211
+00:12:32,560 --> 00:12:36,240
+And if we have entering or entered we want to change it to 1.
+
+212
+00:12:36,490 --> 00:12:44,520
+So again we're going to be using turnaround and it's going to be state triple equal to exit it good.
+
+213
+00:12:44,710 --> 00:12:46,390
+And then I'm going to be adding the.
+
+214
+00:12:46,420 --> 00:12:48,050
+Or Oh sorry.
+
+215
+00:12:48,170 --> 00:12:50,410
+It would be adding the or 0.
+
+216
+00:12:50,470 --> 00:12:53,450
+Let me one second I just changed the key words.
+
+217
+00:12:53,770 --> 00:13:01,480
+So it going to be when you see if I can figure out because it changed keywords and right here have British
+
+218
+00:13:01,690 --> 00:13:08,040
+because I have a keyboard and you know it's going to be using possibly the R and find the or her source
+
+219
+00:13:08,050 --> 00:13:08,440
+for that.
+
+220
+00:13:08,440 --> 00:13:09,110
+I got it.
+
+221
+00:13:09,250 --> 00:13:11,430
+So it's going to be or.
+
+222
+00:13:11,500 --> 00:13:17,740
+And of course we're going to do the same thing is going to be state and 3PL equals to the all the other
+
+223
+00:13:17,740 --> 00:13:22,220
+state which is going to be exiting so exiting Burguet.
+
+224
+00:13:22,540 --> 00:13:25,700
+So of course we get this to states.
+
+225
+00:13:26,290 --> 00:13:27,800
+It's going to be equal to zero.
+
+226
+00:13:27,820 --> 00:13:32,650
+And if not it's going to be equal to what is going to be showing the dev.
+
+227
+00:13:32,890 --> 00:13:36,510
+So whenever the application starts of course it's going to be showing to true.
+
+228
+00:13:36,520 --> 00:13:42,340
+So this one is going to have the class of entered the state of Intrade and you know just let me put
+
+229
+00:13:42,340 --> 00:13:45,290
+this to the state right here.
+
+230
+00:13:45,340 --> 00:13:46,040
+All right.
+
+231
+00:13:46,630 --> 00:13:49,470
+So we're going to reload and you know the application starts.
+
+232
+00:13:49,470 --> 00:13:54,740
+There is no transition but we get the the state of this debate which is going to be entered.
+
+233
+00:13:54,820 --> 00:13:56,380
+They've already entered.
+
+234
+00:13:56,470 --> 00:14:01,270
+So it's like click hide or show it's going to do exiting the animation stops.
+
+235
+00:14:01,330 --> 00:14:03,190
+And the element is not there anymore.
+
+236
+00:14:03,310 --> 00:14:09,220
+And if I click it's going to change the state to entering and when it's done it's going to change it
+
+237
+00:14:09,220 --> 00:14:10,050
+to enter.
+
+238
+00:14:10,270 --> 00:14:10,620
+Good.
+
+239
+00:14:10,660 --> 00:14:14,100
+You know so this is how we use transition's group.
+
+240
+00:14:14,380 --> 00:14:16,170
+We're not going to do the animation.
+
+241
+00:14:16,180 --> 00:14:21,970
+The transition's group is going to just give you a state or a class something like that so you can do
+
+242
+00:14:21,970 --> 00:14:24,050
+the animation using CSSA.
+
+243
+00:14:24,190 --> 00:14:28,180
+That's how trance react transitions group works.
+
+244
+00:14:28,210 --> 00:14:31,610
+Of course we can do a lot of things with this not just this.
+
+245
+00:14:31,660 --> 00:14:37,030
+And you know this writing all of this to do a simple animation.
+
+246
+00:14:37,090 --> 00:14:39,470
+It's a real pain in the ass.
+
+247
+00:14:39,560 --> 00:14:39,860
+I know.
+
+248
+00:14:39,880 --> 00:14:40,890
+I know what you're thinking.
+
+249
+00:14:41,110 --> 00:14:46,180
+So we're going to be doing all the things and this is one is going to get a little bit simpler.
+
+250
+00:14:46,480 --> 00:14:52,090
+So with this transitions and pretty much with all the other ones you're going to get two different choices
+
+251
+00:14:52,230 --> 00:14:53,860
+begin to get options of course.
+
+252
+00:14:54,070 --> 00:14:57,890
+And one of the options is going to be mount on enter.
+
+253
+00:14:58,090 --> 00:15:00,800
+Let me delete it right now and let me show you.
+
+254
+00:15:00,820 --> 00:15:03,250
+So when does the application start.
+
+255
+00:15:03,490 --> 00:15:04,930
+You know we get the dip.
+
+256
+00:15:04,930 --> 00:15:07,210
+So if I hide everything.
+
+257
+00:15:07,570 --> 00:15:10,600
+So the state of this is going to be non-visible.
+
+258
+00:15:10,600 --> 00:15:15,490
+But if you take a look right here we have a big space so Divx.
+
+259
+00:15:15,580 --> 00:15:16,800
+It's hidden.
+
+260
+00:15:16,950 --> 00:15:20,610
+But of course it's occupying space right here.
+
+261
+00:15:20,620 --> 00:15:21,280
+The div..
+
+262
+00:15:21,310 --> 00:15:22,520
+It's inside the door.
+
+263
+00:15:22,630 --> 00:15:23,290
+OK.
+
+264
+00:15:23,530 --> 00:15:33,220
+So if I do this just like that me add there the the amount on enter or go.
+
+265
+00:15:33,430 --> 00:15:38,330
+And of course we have a different options which is going to be the opposite of Mount on enter.
+
+266
+00:15:38,400 --> 00:15:41,580
+Are going to be unmount on exit.
+
+267
+00:15:42,520 --> 00:15:46,890
+So we have the mount on guns or if I click show or hide.
+
+268
+00:15:46,970 --> 00:15:51,260
+It's going to be hiding this and when it's exiting it's going to be done.
+
+269
+00:15:51,280 --> 00:15:53,540
+But the div. it's not there anymore.
+
+270
+00:15:53,710 --> 00:16:00,460
+So if we have an unmount on X exit transition is going to know because it knows that the div it's not
+
+271
+00:16:00,460 --> 00:16:02,430
+there anymore it's exit it.
+
+272
+00:16:02,530 --> 00:16:08,000
+So it's going to be grabbing that element from the DOM and you know just remove the item from the DOM.
+
+273
+00:16:08,050 --> 00:16:10,880
+And if we click it is going to be mounting again.
+
+274
+00:16:11,380 --> 00:16:11,820
+OK.
+
+275
+00:16:11,950 --> 00:16:12,500
+That's it.
+
+276
+00:16:12,520 --> 00:16:17,930
+You know it's not that hard but you need to do a lot of coding just to get this simple thing.
+
+277
+00:16:18,080 --> 00:16:20,200
+But you know it's going to get a little bit better.
+
+278
+00:16:20,260 --> 00:16:20,650
+OK.
+
+279
+00:16:20,680 --> 00:16:23,900
+Let's go to the next section and see the other.
+
+280
+00:16:23,910 --> 00:16:24,550
+The other one.
+

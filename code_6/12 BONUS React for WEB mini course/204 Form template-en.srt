@@ -1,0 +1,1124 @@
+1
+00:00:00,690 --> 00:00:06,510
+OK so now would be going to be doing is going to be creating a template that it's going to be adding
+
+2
+00:00:06,510 --> 00:00:11,760
+the all the inputs of a form for us is going to be using a different component and we're going to do
+
+3
+00:00:11,760 --> 00:00:12,660
+better.
+
+4
+00:00:12,690 --> 00:00:17,340
+We're going to do everything else but we're going to be doing everything kind of in a different way
+
+5
+00:00:17,760 --> 00:00:19,230
+with control and control.
+
+6
+00:00:19,230 --> 00:00:23,790
+We're going to do something else and we're going to do this is going to be a little bit hard to understand
+
+7
+00:00:23,790 --> 00:00:24,060
+if you can.
+
+8
+00:00:24,090 --> 00:00:25,820
+It's going to be a little bit confusing.
+
+9
+00:00:25,980 --> 00:00:30,110
+But this is going to be an approach a more realistic approach.
+
+10
+00:00:30,210 --> 00:00:30,860
+OK.
+
+11
+00:00:31,280 --> 00:00:31,720
+So OK.
+
+12
+00:00:31,740 --> 00:00:37,160
+So let's begin build on this are going to go to the user buse and go to user.
+
+13
+00:00:37,190 --> 00:00:42,060
+I get just nothing you know as user are going to do this and I'm going to be starting doing this.
+
+14
+00:00:42,070 --> 00:00:47,610
+I can see a class name and I'm going to give it a class name a container just like the all the ones
+
+15
+00:00:47,670 --> 00:00:48,620
+container.
+
+16
+00:00:48,800 --> 00:00:53,790
+And inside here we're going to have a form and this form will have an on submit.
+
+17
+00:00:53,790 --> 00:00:57,740
+Of course we didn't have that function but we will create it in a few seconds.
+
+18
+00:00:57,810 --> 00:01:03,060
+So it is going to be calling whenever we submit the form we're going to use a function that calls on.
+
+19
+00:01:03,120 --> 00:01:06,550
+So sorry is going to be called Mid form.
+
+20
+00:01:06,590 --> 00:01:08,210
+That's good.
+
+21
+00:01:08,370 --> 00:01:08,940
+What else.
+
+22
+00:01:08,940 --> 00:01:10,700
+We need a button right here.
+
+23
+00:01:10,980 --> 00:01:17,010
+So we're going to say Bunin and this one is going to be saying have met and right here we can have the
+
+24
+00:01:17,010 --> 00:01:19,880
+type off the bottom which is going to be met.
+
+25
+00:01:19,890 --> 00:01:20,980
+Right.
+
+26
+00:01:21,240 --> 00:01:24,430
+So now in the middle we should be getting all the inputs.
+
+27
+00:01:24,450 --> 00:01:28,370
+If I check this we get nothing but we're going to be doing something different right now.
+
+28
+00:01:28,530 --> 00:01:34,140
+The main idea of doing all of this is to call to a component to include components that is going to
+
+29
+00:01:34,140 --> 00:01:36,050
+be receiving some state.
+
+30
+00:01:36,270 --> 00:01:44,270
+Now inside the state we can have all the inputs that this component needs to create and to go to state.
+
+31
+00:01:44,310 --> 00:01:49,890
+And I'm going to create a new key that is going to be called Forum data just like that.
+
+32
+00:01:50,160 --> 00:01:53,680
+And this form data is going to have a bunch of information.
+
+33
+00:01:53,850 --> 00:01:58,850
+So let's say we want to add a name and a last name just like with did before.
+
+34
+00:01:58,980 --> 00:01:59,400
+OK.
+
+35
+00:01:59,580 --> 00:02:03,740
+So going to say name and then I'm going to pass a lot of values.
+
+36
+00:02:03,960 --> 00:02:09,180
+So this name first I need to specify which type of input we want to add.
+
+37
+00:02:09,390 --> 00:02:14,310
+So we are going to say elements and this is going to be kind of the name of what we want to add.
+
+38
+00:02:14,520 --> 00:02:16,620
+So it's going to be input.
+
+39
+00:02:17,520 --> 00:02:20,160
+And of course don't worry this is going to make sense in a minute.
+
+40
+00:02:20,250 --> 00:02:23,740
+This input is going to have a value of nothing.
+
+41
+00:02:23,820 --> 00:02:26,270
+Whenever the application renders.
+
+42
+00:02:26,340 --> 00:02:27,860
+Now we can have each input.
+
+43
+00:02:27,870 --> 00:02:28,990
+It can have a label.
+
+44
+00:02:29,130 --> 00:02:33,660
+So I'm going to specify if we want a label for this one so I'm going to say label true.
+
+45
+00:02:34,130 --> 00:02:35,150
+We're going to do koma.
+
+46
+00:02:35,370 --> 00:02:36,150
+What else do we need.
+
+47
+00:02:36,150 --> 00:02:39,990
+Even if the label is true we need to have a Leavell text.
+
+48
+00:02:39,990 --> 00:02:45,860
+So I'm going to say label and text and the text for this one is going to be name right.
+
+49
+00:02:46,160 --> 00:02:46,860
+OK.
+
+50
+00:02:47,010 --> 00:02:56,210
+So now impled contains a configuration just like a name the imperative type and maybe a placeholder.
+
+51
+00:02:56,340 --> 00:03:01,440
+So I'm going to create a new value that is going to it's going to be called config and this config is
+
+52
+00:03:01,440 --> 00:03:03,800
+going to contain all the options of what we need.
+
+53
+00:03:03,930 --> 00:03:07,750
+So this input is going to have a name and I get to give it a name of name.
+
+54
+00:03:07,810 --> 00:03:10,420
+Input makes sense in a coma.
+
+55
+00:03:10,470 --> 00:03:15,200
+This input is going to be of type and it's going to be of typed text.
+
+56
+00:03:15,200 --> 00:03:17,600
+What else are we going to be adding a placeholder.
+
+57
+00:03:17,640 --> 00:03:23,490
+So it's going to be place holder and this placeholder is going to have a placeholder.
+
+58
+00:03:23,550 --> 00:03:26,120
+Enter your name.
+
+59
+00:03:26,370 --> 00:03:32,340
+So pretty much all of this information is what we need to create an input right from a template.
+
+60
+00:03:32,340 --> 00:03:32,570
+Right.
+
+61
+00:03:32,570 --> 00:03:38,330
+We have the name the tax the placeholder the value the label and you know the type of the element.
+
+62
+00:03:38,340 --> 00:03:41,380
+This cases in input are going to be creating a new one.
+
+63
+00:03:41,400 --> 00:03:42,770
+Right here we have a name.
+
+64
+00:03:42,840 --> 00:03:48,150
+So I'm going to go right here at the bottom get a copy of this I'm going to paste it at the bottom.
+
+65
+00:03:48,150 --> 00:03:50,430
+Remember to put a coma because it's an object.
+
+66
+00:03:50,550 --> 00:03:54,000
+And this one is going to be called last name.
+
+67
+00:03:54,000 --> 00:03:54,760
+OK.
+
+68
+00:03:55,410 --> 00:03:59,490
+Now we need to change things here just change it a little bit.
+
+69
+00:03:59,520 --> 00:04:06,990
+This one is going to be last name last name and the name of the input is going to be called last name
+
+70
+00:04:07,370 --> 00:04:11,360
+and then enter your last name right.
+
+71
+00:04:11,970 --> 00:04:13,010
+So now what do we do.
+
+72
+00:04:13,020 --> 00:04:15,020
+What why are we doing this.
+
+73
+00:04:15,020 --> 00:04:19,470
+So now the main idea of doing this is that we can create a function or a component that is going to
+
+74
+00:04:19,470 --> 00:04:22,710
+be grabbing this form data is going to be looping.
+
+75
+00:04:22,710 --> 00:04:28,260
+Whatever we have in the form data is going to create a template for each input out magically.
+
+76
+00:04:28,260 --> 00:04:33,360
+So if we have 100 inputs at the end we can have 100 inputs right here.
+
+77
+00:04:33,510 --> 00:04:39,250
+And the only thing that we need to add is going to be just a new element inside for data.
+
+78
+00:04:39,360 --> 00:04:45,080
+You know it is kind of different because the all the way we have to enter each input manually.
+
+79
+00:04:45,090 --> 00:04:46,820
+Right here inside the render.
+
+80
+00:04:46,830 --> 00:04:53,280
+So the advantage of using this is that you know we have a more controlled way to enter inputs to create
+
+81
+00:04:53,340 --> 00:04:53,760
+inputs.
+
+82
+00:04:53,760 --> 00:05:01,540
+So you're kind of creating a template function to create the the form elements so now we don't have
+
+83
+00:05:01,540 --> 00:05:02,600
+that function.
+
+84
+00:05:02,830 --> 00:05:04,430
+So we can be created right now.
+
+85
+00:05:04,570 --> 00:05:10,240
+I'm going to go to source and inside source just like with did before going to create a new component
+
+86
+00:05:10,240 --> 00:05:18,250
+that is going to be called with widgets but inside these widgets are going to have you know a new folder
+
+87
+00:05:18,610 --> 00:05:21,730
+that is going to say forms just to make it a little bit more correct.
+
+88
+00:05:21,820 --> 00:05:27,050
+And inside forms I'm going to have a new file that is going to be called form fields.
+
+89
+00:05:27,080 --> 00:05:28,990
+You know you can call them whatever you want.
+
+90
+00:05:29,470 --> 00:05:35,680
+So form fields of course is going to be just a function that is going to be receiving whatever we passed
+
+91
+00:05:36,040 --> 00:05:39,800
+right here inside form data is going to create the inputs.
+
+92
+00:05:39,820 --> 00:05:50,480
+So I'm going to say import react when you make it right react from and then react good we need to created
+
+93
+00:05:50,620 --> 00:05:59,440
+you know the actual function is going to be called form fields form fields and this form fields is going
+
+94
+00:05:59,440 --> 00:06:05,230
+to be receiving prompts you know the state of whatever we want to create and then are going to do export
+
+95
+00:06:05,740 --> 00:06:07,410
+default.
+
+96
+00:06:07,420 --> 00:06:11,910
+And then of course you know form fields.
+
+97
+00:06:12,270 --> 00:06:18,880
+It can be form very low form fields.
+
+98
+00:06:19,180 --> 00:06:23,120
+So now this form fields it's going to be rendering something of course.
+
+99
+00:06:23,140 --> 00:06:27,930
+So I'm going to be doing this space and I do return opening close.
+
+100
+00:06:28,030 --> 00:06:32,590
+And what we do on this return we want to return you know a div with something inside.
+
+101
+00:06:32,830 --> 00:06:38,410
+Now we need to create a function that is going to be having this form data and it's going to be creating
+
+102
+00:06:38,620 --> 00:06:42,420
+the inputs I'm going to say render and then.
+
+103
+00:06:42,420 --> 00:06:45,690
+Fields that say the name of function.
+
+104
+00:06:45,820 --> 00:06:46,680
+We don't have this function.
+
+105
+00:06:46,690 --> 00:06:48,680
+We get it created in a minute.
+
+106
+00:06:48,820 --> 00:06:53,240
+Now you know for now we're going to read right now so we can skip that error.
+
+107
+00:06:53,440 --> 00:07:01,300
+So I got to say Konst render feels it's going to be equal for now nothing opening close and begin not
+
+108
+00:07:01,300 --> 00:07:02,550
+going to do anything.
+
+109
+00:07:02,560 --> 00:07:08,920
+Now we have this component so we need to include it inside users so we can use that component so I'm
+
+110
+00:07:08,920 --> 00:07:10,600
+going to go right here at the top.
+
+111
+00:07:10,600 --> 00:07:15,820
+I'm going to say import and then form fields.
+
+112
+00:07:17,260 --> 00:07:18,450
+From.
+
+113
+00:07:19,140 --> 00:07:21,490
+And then of course we have dot dot for Slash.
+
+114
+00:07:21,640 --> 00:07:25,750
+We enter widgets and we enter forms and we enter from tails.
+
+115
+00:07:25,750 --> 00:07:29,590
+So now this components it's available for us to use.
+
+116
+00:07:29,780 --> 00:07:30,800
+OK.
+
+117
+00:07:31,030 --> 00:07:37,750
+So now the next step would be to use this component and start passing all the props that we need.
+
+118
+00:07:37,810 --> 00:07:38,670
+We're going to go right here.
+
+119
+00:07:38,750 --> 00:07:44,310
+I'm going to be you know just creating this is going to be form fields opening close.
+
+120
+00:07:44,320 --> 00:07:47,360
+You know self-closing tag that.
+
+121
+00:07:47,620 --> 00:07:51,670
+So what do we need for this form fields to work.
+
+122
+00:07:51,670 --> 00:07:56,930
+We're going to need all the information about our form our inputs are going to go right here and are
+
+123
+00:07:56,920 --> 00:07:58,380
+going to be passing a prompt.
+
+124
+00:07:58,660 --> 00:08:02,470
+So it's going to be form and I'm to call form data.
+
+125
+00:08:02,470 --> 00:08:06,160
+We shouldn't skip this but you know whatever we're going to see later.
+
+126
+00:08:06,250 --> 00:08:11,770
+So I'm going to say that the form data the information that we have inside this group is going to be
+
+127
+00:08:11,920 --> 00:08:20,590
+this DOD State DOD and then form data which is equal to all of this.
+
+128
+00:08:21,310 --> 00:08:21,700
+Right.
+
+129
+00:08:21,700 --> 00:08:24,340
+Where are we going to be adding more more stuff right here.
+
+130
+00:08:24,340 --> 00:08:26,860
+But for now this is all we need.
+
+131
+00:08:27,100 --> 00:08:30,950
+So this one feels is going to receive a prop called forms data.
+
+132
+00:08:31,060 --> 00:08:37,620
+So let's go to form fields and let's start creating this render fields because it's really important.
+
+133
+00:08:37,940 --> 00:08:38,420
+So okay.
+
+134
+00:08:38,470 --> 00:08:40,000
+So let me tell you what I'm going to do.
+
+135
+00:08:40,030 --> 00:08:45,340
+I'm going to create a function I'm going to create a viable that is going to be storing all the information
+
+136
+00:08:45,340 --> 00:08:47,320
+that we have inside here.
+
+137
+00:08:47,320 --> 00:08:50,830
+Now if you notice this one it's not an array of objects object.
+
+138
+00:08:50,950 --> 00:08:54,010
+So what are we going to be doing is going to get that Propst.
+
+139
+00:08:54,130 --> 00:08:58,750
+And there's this form data and you know structure the information in the way we need.
+
+140
+00:08:58,960 --> 00:09:05,620
+So I'm going to go right here at the bottom and going to a concert and then form and then array is going
+
+141
+00:09:05,620 --> 00:09:08,150
+to be equal to an array.
+
+142
+00:09:08,890 --> 00:09:16,030
+So now what we need to do we need to kind of create a way you know we need to run a function that is
+
+143
+00:09:16,030 --> 00:09:21,610
+going to be grabbing whatever we have inside form data and it's going to be putting the information
+
+144
+00:09:21,640 --> 00:09:23,370
+inside the form array.
+
+145
+00:09:23,710 --> 00:09:28,770
+So going to use of for now for its ESX they're really really good.
+
+146
+00:09:28,810 --> 00:09:32,940
+You know they are really good to use is really useful for us.
+
+147
+00:09:32,950 --> 00:09:39,850
+So first I'm going to create a viable that is going to be called element and then name just like that
+
+148
+00:09:39,880 --> 00:09:40,930
+element name.
+
+149
+00:09:41,180 --> 00:09:42,590
+And what are you going to be looping.
+
+150
+00:09:42,610 --> 00:09:47,190
+It's going to be the information that we have inside form data that we're in.
+
+151
+00:09:47,240 --> 00:09:55,590
+Can it be you can see this and it is going to be prop's that is going to be looping form and then data.
+
+152
+00:09:56,000 --> 00:10:03,340
+So now we're pretty much doing we're looping this prop's form data and in each iteration we're going
+
+153
+00:10:03,340 --> 00:10:07,440
+to be storing that particular item inside element that name.
+
+154
+00:10:07,750 --> 00:10:13,120
+So what I want to do I want to grab the item and store it inside form array.
+
+155
+00:10:13,180 --> 00:10:19,180
+So I'm going to say form array dot push open it close.
+
+156
+00:10:19,450 --> 00:10:25,720
+And what I want to do first I want to know the id of the elements I'm going to put name of ID which
+
+157
+00:10:25,720 --> 00:10:27,540
+is going to be the element name.
+
+158
+00:10:27,550 --> 00:10:30,930
+So I'm going to copy and paste it right here.
+
+159
+00:10:31,200 --> 00:10:32,290
+Now I'm going to do coma.
+
+160
+00:10:32,290 --> 00:10:37,450
+I'm going to do settings just like that settings and settings.
+
+161
+00:10:37,450 --> 00:10:46,090
+It's going to be equal to props that form data from data and are going to be putting the element name
+
+162
+00:10:48,680 --> 00:10:50,230
+I know that this doesn't make sense.
+
+163
+00:10:50,230 --> 00:10:51,390
+I could explain it in a minute.
+
+164
+00:10:51,390 --> 00:10:52,470
+Don't worry.
+
+165
+00:10:52,470 --> 00:10:59,520
+And then what I'm going to do I'm going to do console log the form array you know just to see what we
+
+166
+00:10:59,520 --> 00:11:00,490
+get.
+
+167
+00:11:01,080 --> 00:11:01,610
+OK.
+
+168
+00:11:01,680 --> 00:11:03,860
+So let me tell you what is happening right here.
+
+169
+00:11:03,870 --> 00:11:09,770
+We are calling this form fields and we are passing forward form data.
+
+170
+00:11:09,810 --> 00:11:13,070
+So it's going to be this is when is non-array.
+
+171
+00:11:13,230 --> 00:11:15,480
+So we have to have two different inputs.
+
+172
+00:11:15,480 --> 00:11:17,740
+You know that name and the last name.
+
+173
+00:11:17,820 --> 00:11:23,110
+So then of course we render feels is going to go to this function is going to create an empty form array
+
+174
+00:11:23,130 --> 00:11:24,270
+viable.
+
+175
+00:11:24,320 --> 00:11:27,330
+Now there we're going to be a looping this form data.
+
+176
+00:11:27,600 --> 00:11:33,600
+Now on each iteration of course we have the data that we have inside each element and then we have the
+
+177
+00:11:33,600 --> 00:11:36,390
+name of the element you know the key.
+
+178
+00:11:36,390 --> 00:11:43,260
+So the main idea of doing this is that we want to create one specific item just one item for each input
+
+179
+00:11:43,590 --> 00:11:50,600
+that contains an ID which is going to be you know the name of each input and then inside settings we
+
+180
+00:11:50,610 --> 00:11:54,550
+can have the rest of the information which is going to be this one.
+
+181
+00:11:54,660 --> 00:11:55,540
+All right.
+
+182
+00:11:55,890 --> 00:12:01,890
+So let's go right here and you know just below the page and right here since we're doing consul lawk
+
+183
+00:12:01,890 --> 00:12:06,860
+form array we got an array of objects and each arrays can to each area.
+
+184
+00:12:06,950 --> 00:12:11,630
+Each object contains an ID of the name of the input and then the settings.
+
+185
+00:12:11,640 --> 00:12:16,800
+Which is all the configuration that we need to create this element.
+
+186
+00:12:16,800 --> 00:12:22,620
+So now the the the next thing is going to be running a function to doing something that is going to
+
+187
+00:12:22,620 --> 00:12:28,500
+be looping this form array and it's going to create one input for each ID.
+
+188
+00:12:28,600 --> 00:12:32,590
+Right one with ID of name and then another one with the last name.
+
+189
+00:12:32,690 --> 00:12:33,120
+OK.
+
+190
+00:12:33,600 --> 00:12:36,360
+So I'm going to do this and delete this.
+
+191
+00:12:36,600 --> 00:12:41,250
+And this one is going to be it's going to be returning the information that we need to render right
+
+192
+00:12:41,250 --> 00:12:46,470
+here of course they're going to say return again to be accessing this form array.
+
+193
+00:12:46,590 --> 00:12:50,420
+We're going to be looping in a loop over it.
+
+194
+00:12:50,730 --> 00:12:57,720
+Now each iteration contains an item you know and then the iteration number going to run a function right
+
+195
+00:12:57,720 --> 00:12:58,860
+now.
+
+196
+00:12:58,860 --> 00:13:04,740
+So this function is going to be returning something and what we are going to be returning is going to
+
+197
+00:13:04,740 --> 00:13:07,590
+be the actual template you know the actual input.
+
+198
+00:13:07,610 --> 00:13:13,350
+So I'm going to say dev open it close and remember that when we iterate over something we need to pass
+
+199
+00:13:13,350 --> 00:13:21,420
+a key and the key is going to be the iteration number are going to be adding a class name of form underscore
+
+200
+00:13:21,740 --> 00:13:22,920
+element.
+
+201
+00:13:23,040 --> 00:13:23,930
+Good.
+
+202
+00:13:24,270 --> 00:13:30,330
+And now inside here what we need to do we need to pass the information we need to create the actual
+
+203
+00:13:30,390 --> 00:13:30,780
+input.
+
+204
+00:13:30,810 --> 00:13:35,490
+We're going to be doing this in a minute but for now we can decide to make sure that we are looping
+
+205
+00:13:35,550 --> 00:13:36,840
+everything correctly.
+
+206
+00:13:36,840 --> 00:13:46,010
+So if I say input input and we are passing two different inputs we should be getting input twice so
+
+207
+00:13:46,020 --> 00:13:48,420
+you know it is kind of working.
+
+208
+00:13:48,780 --> 00:13:51,470
+So now OK let's go back to form fields.
+
+209
+00:13:51,510 --> 00:13:55,670
+Now this whenever we look we need to create the input.
+
+210
+00:13:55,680 --> 00:13:57,110
+Now what are we going to be doing.
+
+211
+00:13:57,160 --> 00:14:02,970
+Are going to be creating a function that is going to be entering the data that we have the configuration
+
+212
+00:14:03,690 --> 00:14:06,320
+and is going to check for each element.
+
+213
+00:14:06,330 --> 00:14:10,180
+What type of element we have in this case we have an input.
+
+214
+00:14:10,260 --> 00:14:15,570
+So is going to access a switch just like that before is going to access that template.
+
+215
+00:14:15,570 --> 00:14:20,770
+It's going to be returning a configuration that we have for a type of input.
+
+216
+00:14:20,790 --> 00:14:22,610
+Now for now we just have two inputs.
+
+217
+00:14:22,620 --> 00:14:28,310
+It's going to be the same template but then we're going to be adding a text area and the select.
+
+218
+00:14:28,410 --> 00:14:32,090
+So we can have a different type of elements if we have a select.
+
+219
+00:14:32,180 --> 00:14:33,840
+The element is going to be select.
+
+220
+00:14:33,930 --> 00:14:37,240
+So it's going to be entering a different template.
+
+221
+00:14:37,560 --> 00:14:41,030
+So OK so let's you know start creating this.
+
+222
+00:14:41,370 --> 00:14:45,840
+So now I'm going to be creating a function of course the video is going to it's going to be going to
+
+223
+00:14:45,840 --> 00:14:46,150
+long.
+
+224
+00:14:46,150 --> 00:14:47,920
+How are be going to be going to the next section.
+
+225
+00:14:47,940 --> 00:14:50,680
+But you know I'm just going to start creating it right now.
+
+226
+00:14:50,940 --> 00:14:56,220
+So this function is going to be called render templates make sense.
+
+227
+00:14:56,330 --> 00:14:59,760
+And on each iteration I'm going to be passing the item.
+
+228
+00:14:59,760 --> 00:15:05,650
+You know this item equals to whatever information we have right here on each iteration.
+
+229
+00:15:06,300 --> 00:15:10,680
+So I'm going to go right here at the bottom and I'll be going to be calling this rendered templates
+
+230
+00:15:10,680 --> 00:15:13,530
+that is going to be equal to you know a function.
+
+231
+00:15:13,740 --> 00:15:15,610
+And you just open and close it.
+
+232
+00:15:15,630 --> 00:15:22,110
+So this render templates is going to be receiving some data which is the actual item.
+
+233
+00:15:22,110 --> 00:15:27,120
+Now whenever we do this and we find that we create a search and switch and we find the template that
+
+234
+00:15:27,150 --> 00:15:34,700
+we want to render we need to access the information that we have inside you know inside config.
+
+235
+00:15:34,950 --> 00:15:43,690
+And if you remember the item contains the information about item dot setting's dot and then config.
+
+236
+00:15:43,740 --> 00:15:50,560
+So just to make make everything less full I'm going to create a viable that is going to be called values
+
+237
+00:15:51,340 --> 00:15:56,250
+and it's values it's going to be equal to data that settings.
+
+238
+00:15:56,740 --> 00:16:02,560
+So now instead of doing inside the template data that settings that config and then whatever we're just
+
+239
+00:16:02,560 --> 00:16:03,670
+going to say.
+
+240
+00:16:03,830 --> 00:16:04,210
+Right.
+
+241
+00:16:04,260 --> 00:16:07,150
+Just creating an alias for this.
+
+242
+00:16:07,150 --> 00:16:13,650
+Now we need a template so I'm going to say let and then form a template that is going to be null at
+
+243
+00:16:13,660 --> 00:16:14,770
+the beginning.
+
+244
+00:16:14,940 --> 00:16:15,670
+OK.
+
+245
+00:16:15,890 --> 00:16:16,910
+It could be empty.
+
+246
+00:16:16,940 --> 00:16:20,030
+Doesn't matter we are going to say this does matter.
+
+247
+00:16:20,520 --> 00:16:26,470
+And now right here we need to create a switch that is going to be checking the data that setting that
+
+248
+00:16:26,620 --> 00:16:32,470
+element and it's going to be deciding if you want to render an input or select or whatever we want to
+
+249
+00:16:32,470 --> 00:16:32,820
+render.
+
+250
+00:16:32,820 --> 00:16:40,270
+So if we were going to create a switch that is going to be accessing values dot and then the element
+
+251
+00:16:41,770 --> 00:16:44,290
+now the elements remember is the time of the.
+
+252
+00:16:44,310 --> 00:16:46,150
+So it's going access input.
+
+253
+00:16:46,340 --> 00:16:53,870
+OK so I'm going to say OK if the case is that we want to render an input we can enter this scenario
+
+254
+00:16:53,890 --> 00:16:54,530
+scenario.
+
+255
+00:16:54,550 --> 00:16:59,410
+Of course we need to do a break open and close and now after this.
+
+256
+00:16:59,410 --> 00:17:02,800
+Of course we don't need a default case.
+
+257
+00:17:02,850 --> 00:17:08,240
+I'm going to go right here at the bottom again to say the fault.
+
+258
+00:17:08,440 --> 00:17:12,430
+Now whenever we have a default we need to return or at least something.
+
+259
+00:17:12,430 --> 00:17:17,330
+So I'm going to say form template is going to be equal to normal.
+
+260
+00:17:17,380 --> 00:17:22,120
+So you know same thing we could use right here at the top and a the.
+
+261
+00:17:22,150 --> 00:17:28,070
+And whenever we are done with a switch we want to return the form template.
+
+262
+00:17:28,720 --> 00:17:29,650
+Right.
+
+263
+00:17:30,330 --> 00:17:30,580
+OK.
+
+264
+00:17:30,610 --> 00:17:34,850
+So now what we need to do we need to create a template for inputs.
+
+265
+00:17:34,870 --> 00:17:39,850
+So for now just going to say there and this one is going to be an input.
+
+266
+00:17:39,850 --> 00:17:45,400
+So if I save it and we go right here we have rendered templates OK.
+
+267
+00:17:45,470 --> 00:17:46,480
+So it's not defined.
+
+268
+00:17:46,490 --> 00:17:47,830
+I made a mistake with the names.
+
+269
+00:17:47,840 --> 00:17:52,280
+I'm pretty sure about that rendered templates won second.
+
+270
+00:17:52,670 --> 00:17:56,420
+Oh because you know it's a Stigler's component.
+
+271
+00:17:56,420 --> 00:17:59,070
+So in concert sorry for that.
+
+272
+00:17:59,670 --> 00:18:00,720
+So OK.
+
+273
+00:18:01,790 --> 00:18:04,790
+Switch values and that template.
+
+274
+00:18:04,790 --> 00:18:08,410
+So we have data that settings values and element.
+
+275
+00:18:08,450 --> 00:18:10,130
+Let me just change it right here.
+
+276
+00:18:10,130 --> 00:18:16,780
+We have data that's setting and it's plural of course remember that we say settings right here.
+
+277
+00:18:17,230 --> 00:18:17,690
+OK.
+
+278
+00:18:17,760 --> 00:18:20,490
+Let's get you know we have nothing so far.
+
+279
+00:18:20,510 --> 00:18:23,510
+But don't worry we're going to be getting something right here.
+
+280
+00:18:23,540 --> 00:18:24,950
+So let's go to the next section.
+
+281
+00:18:25,010 --> 00:18:28,030
+And you know start building the actual template.
+

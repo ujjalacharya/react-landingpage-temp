@@ -1,0 +1,388 @@
+1
+00:00:01,460 --> 00:00:08,300
+So whenever reacts reactor starts the application and starts building a component or updating or receiving
+
+2
+00:00:08,300 --> 00:00:13,570
+prompts or whatever re-act is going to do everything in steps inside a component.
+
+3
+00:00:13,850 --> 00:00:18,480
+So this steps are going to be called re-act life cycles.
+
+4
+00:00:18,560 --> 00:00:27,050
+So OK I have I've created a class based component just rendering just some GSX you know just a normal
+
+5
+00:00:27,080 --> 00:00:30,530
+class based component nothing magical right here.
+
+6
+00:00:30,710 --> 00:00:32,360
+And I've created a route for this.
+
+7
+00:00:32,360 --> 00:00:38,660
+So since now you can use you know how to use routes you can create one in your own you know right here
+
+8
+00:00:38,720 --> 00:00:42,160
+and go to live and I get lifecycle is really simple.
+
+9
+00:00:42,170 --> 00:00:43,890
+We know how to do this.
+
+10
+00:00:43,940 --> 00:00:49,580
+So now I'm going to go right here and look at I've created the class re-act is going to be using this
+
+11
+00:00:49,580 --> 00:00:52,340
+component and then just rendering some.
+
+12
+00:00:52,640 --> 00:01:01,190
+So of course we are just rendering this but a lot of things happened before we render something so re-act
+
+13
+00:01:01,220 --> 00:01:03,110
+is going to do everything in steps.
+
+14
+00:01:03,200 --> 00:01:09,990
+The first the first step is going to be get default prompts just like that.
+
+15
+00:01:10,110 --> 00:01:13,530
+When a reactor starts that component is going to get the default prompts.
+
+16
+00:01:13,730 --> 00:01:18,850
+That's why whenever we go right here and we say cancel log there's the props.
+
+17
+00:01:19,040 --> 00:01:23,090
+The props are available for us to use inside the render.
+
+18
+00:01:23,090 --> 00:01:26,060
+Because this is the first thing that we act it's doing.
+
+19
+00:01:26,060 --> 00:01:29,600
+It's the setting that default prompts inside the components.
+
+20
+00:01:29,600 --> 00:01:35,820
+So if I go right here we have the prompts that we have router it's passing remember that we react router
+
+21
+00:01:36,200 --> 00:01:37,980
+we get the prompts.
+
+22
+00:01:37,980 --> 00:01:38,840
+OK so that's good.
+
+23
+00:01:38,870 --> 00:01:42,710
+That's the first thing that it's going to do going to come in this.
+
+24
+00:01:42,770 --> 00:01:47,580
+The second thing that re-act is going to do is going to set the default state.
+
+25
+00:01:47,690 --> 00:01:49,170
+Right now we don't have a state.
+
+26
+00:01:49,220 --> 00:01:55,580
+So we're going to do it right now said default and then state this is the second thing that re-act is
+
+27
+00:01:55,580 --> 00:01:56,170
+going to do.
+
+28
+00:01:56,180 --> 00:02:01,030
+We're going to say state equals to something and then it's going to be equal to title.
+
+29
+00:02:01,130 --> 00:02:04,680
+And I get to do this get a copy and paste it.
+
+30
+00:02:05,120 --> 00:02:06,620
+So this is the second step.
+
+31
+00:02:06,770 --> 00:02:14,450
+And that's why whenever we go to render and we say this that state that title is going to be available
+
+32
+00:02:14,450 --> 00:02:17,900
+for us inside this state OK.
+
+33
+00:02:17,970 --> 00:02:22,580
+So I'm going to say this that state that title just like that.
+
+34
+00:02:22,890 --> 00:02:24,680
+And of course you're getting.
+
+35
+00:02:24,730 --> 00:02:29,760
+We get we are getting the title and this is the second thing that re-act is going to do.
+
+36
+00:02:29,760 --> 00:02:35,860
+Then we have a third step that is going to be before render just like that.
+
+37
+00:02:35,970 --> 00:02:38,490
+And I'm going to go back in a minute.
+
+38
+00:02:38,640 --> 00:02:42,160
+So the fourth step is going to be the actual render.
+
+39
+00:02:42,440 --> 00:02:44,480
+You know just renders Jim.
+
+40
+00:02:44,520 --> 00:02:49,290
+Sex sex and make this right.
+
+41
+00:02:49,350 --> 00:02:57,390
+This is the fourth step and that we have an additional step that is going to be five after GSX we have
+
+42
+00:02:57,450 --> 00:03:01,360
+access to before and after the render method.
+
+43
+00:03:01,780 --> 00:03:02,290
+OK.
+
+44
+00:03:02,460 --> 00:03:09,900
+So that before render we can have access to some default some built in methods just like render if we
+
+45
+00:03:09,900 --> 00:03:10,620
+think about it.
+
+46
+00:03:10,770 --> 00:03:18,360
+Render is a default method method from react inside here we have one that is going to be called component
+
+47
+00:03:18,660 --> 00:03:28,900
+will mount going to say components just like that component and then well and then mount open it close.
+
+48
+00:03:28,920 --> 00:03:35,520
+So this component this code this method is going to always render before something gets rendered is
+
+49
+00:03:35,520 --> 00:03:38,120
+going to get called before we were under something.
+
+50
+00:03:38,310 --> 00:03:43,920
+So right here is going to say cancel log opening close and just going to pass this tax so we can view
+
+51
+00:03:43,920 --> 00:03:45,360
+it on the screen.
+
+52
+00:03:46,200 --> 00:03:52,320
+And after re-act is going to render this re-act is going to run this first is going to render this and
+
+53
+00:03:52,320 --> 00:03:57,490
+that it's going to run a different method that is going to be called instead of component will amount
+
+54
+00:03:57,570 --> 00:04:05,550
+it's going to be components components did mount open and close.
+
+55
+00:04:05,600 --> 00:04:11,490
+Now I'm going to do the same thing after GSX after render let's call it after render makes more sense
+
+56
+00:04:12,300 --> 00:04:15,120
+to say console log opening close.
+
+57
+00:04:15,150 --> 00:04:16,820
+And then after render.
+
+58
+00:04:16,860 --> 00:04:17,610
+Right.
+
+59
+00:04:17,700 --> 00:04:23,730
+So if we go right here we are getting the life cycles and then we get three before render and five after
+
+60
+00:04:23,730 --> 00:04:24,480
+render.
+
+61
+00:04:24,570 --> 00:04:28,240
+So re-act is going to start the component is going to set the default.
+
+62
+00:04:28,440 --> 00:04:35,010
+So the state is going to run this code and notice that I'm not running this code and I'm calling this
+
+63
+00:04:35,010 --> 00:04:39,630
+method is running by default is going to be executed by react.
+
+64
+00:04:39,870 --> 00:04:44,180
+So we get three before rendering then is going to render the GSX.
+
+65
+00:04:44,220 --> 00:04:46,150
+That's why we get life cycles.
+
+66
+00:04:46,320 --> 00:04:49,020
+And then of course we get five after render.
+
+67
+00:04:49,020 --> 00:04:53,900
+It's going to go and by default run this component it mouth.
+
+68
+00:04:54,120 --> 00:04:55,300
+OK that's good.
+
+69
+00:04:55,590 --> 00:04:56,500
+So no.
+
+70
+00:04:56,520 --> 00:05:01,960
+Notice what happens if I'm going to copy and it's just going to chomp it and put it before the component.
+
+71
+00:05:01,970 --> 00:05:08,590
+Well now we know that javascript executes executes everything in a single order.
+
+72
+00:05:08,760 --> 00:05:12,030
+So if I put it before the computer it will mount.
+
+73
+00:05:12,040 --> 00:05:17,650
+This is still going to be executed after that component will mount still working.
+
+74
+00:05:18,000 --> 00:05:20,500
+So let me let me do something else.
+
+75
+00:05:20,610 --> 00:05:22,200
+I'm going to go right here.
+
+76
+00:05:23,040 --> 00:05:30,920
+I going to say on the component will amount I'm going to say documents just like that document dot then
+
+77
+00:05:30,930 --> 00:05:39,000
+query selector and I get to select the three TAC right from the Dom can say age 3 and they are going
+
+78
+00:05:39,000 --> 00:05:44,550
+to change the style is going to change the color to something else style that color.
+
+79
+00:05:45,030 --> 00:05:49,200
+And then it's going to say that it's going to be equal to red.
+
+80
+00:05:49,200 --> 00:05:50,710
+So let me come this.
+
+81
+00:05:51,090 --> 00:05:56,380
+Now if I copy this let me just read the application.
+
+82
+00:05:56,430 --> 00:05:57,320
+I'm going to mistake.
+
+83
+00:05:57,510 --> 00:06:02,440
+I meant to type a get one second let me copy this.
+
+84
+00:06:02,440 --> 00:06:03,990
+Just gonna delete it.
+
+85
+00:06:05,540 --> 00:06:05,890
+OK.
+
+86
+00:06:05,940 --> 00:06:13,770
+So if I paste this on the browser we are changing the color of the three tag right directly from the
+
+87
+00:06:13,770 --> 00:06:14,640
+DOM.
+
+88
+00:06:14,640 --> 00:06:21,390
+Now if I run this code on the component will mounth we're going to get an error just like we were getting
+
+89
+00:06:21,570 --> 00:06:26,310
+before and reloaded and cannot read properly style of no.
+
+90
+00:06:26,400 --> 00:06:32,150
+So we are trying to change something the color of something and H-3 task that doesn't exist.
+
+91
+00:06:32,280 --> 00:06:34,310
+Remember that component will mount.
+
+92
+00:06:34,440 --> 00:06:40,110
+We'll run before the render so we don't have this inside the Dom just yet.
+
+93
+00:06:40,380 --> 00:06:43,440
+And of course we get the error and nothing gets rendered.
+
+94
+00:06:43,440 --> 00:06:50,340
+Now if I do the same thing just going to copy and paste on the component did mounth we are doing it
+
+95
+00:06:50,370 --> 00:06:55,260
+because this code was rendered and then this method was executed.
+
+96
+00:06:55,380 --> 00:07:02,060
+That's why we're able to change the color so we have a lot more of this we can do a lot more thanks.
+
+97
+00:07:02,070 --> 00:07:05,190
+Let's go to the next section and just move forward this.
+

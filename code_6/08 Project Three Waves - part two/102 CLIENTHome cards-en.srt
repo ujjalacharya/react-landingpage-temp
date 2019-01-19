@@ -1,0 +1,880 @@
+1
+00:00:01,960 --> 00:00:04,890
+All right so now we're going to do this because it fetched the new arrivals.
+
+2
+00:00:05,050 --> 00:00:09,230
+And again we're going to go and get the best selling guitars we've already have.
+
+3
+00:00:09,360 --> 00:00:14,190
+Have a route that can handle this kind of request so you know that is covered.
+
+4
+00:00:14,410 --> 00:00:21,380
+So the only thing we need to do is to go to the index which is home create connect redux right here.
+
+5
+00:00:21,460 --> 00:00:27,280
+We need to go to read x set up the products action created types and then they create the reduce or
+
+6
+00:00:27,280 --> 00:00:31,640
+so we need to do a lot of setup first before we can you know make the request.
+
+7
+00:00:31,840 --> 00:00:33,450
+So let's start with redux.
+
+8
+00:00:33,460 --> 00:00:43,500
+I'm going to go to actions and create a new new file called products actions that jackass.
+
+9
+00:00:44,200 --> 00:00:47,700
+So inside of a person's actions first we need to import axially.
+
+10
+00:00:47,710 --> 00:00:49,510
+And I don't want to type it.
+
+11
+00:00:49,560 --> 00:00:51,370
+I'm going to copy right here.
+
+12
+00:00:51,370 --> 00:00:53,740
+I'm going to paste it right here.
+
+13
+00:00:53,740 --> 00:00:55,550
+I copied it from user actions.
+
+14
+00:00:55,600 --> 00:00:57,950
+Of course these types are not really right.
+
+15
+00:00:57,980 --> 00:00:59,800
+Begin to use other types.
+
+16
+00:00:59,830 --> 00:01:06,610
+Now if you remember we are importing the route from the from Maersk so I'm going to copy that as well.
+
+17
+00:01:06,610 --> 00:01:10,580
+And I'm going to go back to Misc. because the Barville it's different.
+
+18
+00:01:10,600 --> 00:01:14,810
+We need things from the product server which is API and the product.
+
+19
+00:01:15,050 --> 00:01:15,540
+OK.
+
+20
+00:01:15,730 --> 00:01:17,330
+So product server.
+
+21
+00:01:17,330 --> 00:01:17,890
+All right.
+
+22
+00:01:17,910 --> 00:01:18,840
+That is good.
+
+23
+00:01:18,880 --> 00:01:22,610
+Now we will create two different functions begin to make two request.
+
+24
+00:01:22,720 --> 00:01:30,660
+We could create just one options one on one function right here and get all the things byte ID arguments.
+
+25
+00:01:30,910 --> 00:01:32,650
+But uncreate I'm going to create two.
+
+26
+00:01:32,650 --> 00:01:38,560
+So because this project again is going to go to you at the end maybe in a few months you will not remember
+
+27
+00:01:38,800 --> 00:01:40,450
+what this function is all about.
+
+28
+00:01:40,450 --> 00:01:47,340
+So by creating a function that says get product by a rival and then get products by sell.
+
+29
+00:01:47,560 --> 00:01:48,770
+It's kind of obvious.
+
+30
+00:01:48,790 --> 00:01:51,460
+So that's why I'm reading this like this.
+
+31
+00:01:51,460 --> 00:01:52,170
+All right.
+
+32
+00:01:52,420 --> 00:02:02,260
+So I'm going to export a function get called Get products by and then a rival.
+
+33
+00:02:02,260 --> 00:02:04,420
+This is the first one just a function.
+
+34
+00:02:04,570 --> 00:02:14,280
+Then we have export function and then get and I get a copy the one at the bottom get products buy sell.
+
+35
+00:02:14,350 --> 00:02:14,810
+All right.
+
+36
+00:02:14,830 --> 00:02:16,630
+Open and Close.
+
+37
+00:02:16,630 --> 00:02:19,710
+Of course this ones will be using two different types.
+
+38
+00:02:19,810 --> 00:02:22,780
+So I'm going to go here and change the type.
+
+39
+00:02:22,780 --> 00:02:32,440
+So get products buy sell and same thing with this one but this one is going to be arrival's So now we
+
+40
+00:02:32,440 --> 00:02:38,230
+have the import for the types of course we need to go to types and at them there.
+
+41
+00:02:38,290 --> 00:02:40,510
+So I'm going to pace them both.
+
+42
+00:02:40,800 --> 00:02:44,350
+I'm going to copy the export Konst and do them both.
+
+43
+00:02:44,380 --> 00:02:56,920
+All right of course on this one we need to type we can at present so get get them products buy and then
+
+44
+00:02:56,920 --> 00:02:57,920
+sell.
+
+45
+00:02:57,970 --> 00:02:59,110
+Right.
+
+46
+00:02:59,140 --> 00:03:00,270
+This is done.
+
+47
+00:03:00,280 --> 00:03:08,670
+Next one equals and then get products by a rival.
+
+48
+00:03:08,780 --> 00:03:09,480
+Right.
+
+49
+00:03:09,510 --> 00:03:12,030
+One last thing to do.
+
+50
+00:03:12,410 --> 00:03:12,640
+OK.
+
+51
+00:03:12,660 --> 00:03:14,200
+So now we need to create a reducer.
+
+52
+00:03:14,220 --> 00:03:16,370
+We don't have a we do so for products.
+
+53
+00:03:16,410 --> 00:03:18,780
+So I'm going to go to reducers.
+
+54
+00:03:18,800 --> 00:03:28,380
+I'm going to create a new file and say products could be product but you know and then reducer that
+
+55
+00:03:28,440 --> 00:03:35,340
+Japs are going to go to use a reducer copy everything pretty much and then I'm going to close it and
+
+56
+00:03:35,340 --> 00:03:40,650
+go to the product reduce or going to delete the types we need to import this types.
+
+57
+00:03:40,650 --> 00:03:42,630
+You know these are the product types.
+
+58
+00:03:42,900 --> 00:03:45,730
+And then of course I'm going to delete everything right here.
+
+59
+00:03:45,840 --> 00:03:49,550
+The first one that we're going to be creating is the get products buy sell.
+
+60
+00:03:49,560 --> 00:03:54,580
+So if the case is that we get products buy sell we can return.
+
+61
+00:03:54,780 --> 00:04:00,360
+And for now we can just return dot dot dot and the state and they're going to do the same thing for
+
+62
+00:04:00,360 --> 00:04:00,840
+the other one.
+
+63
+00:04:00,840 --> 00:04:07,200
+So pretty much we are leaving everything ready to perform the request you know from that action.
+
+64
+00:04:07,200 --> 00:04:07,680
+All right.
+
+65
+00:04:07,770 --> 00:04:09,830
+So now we have the products reducer.
+
+66
+00:04:10,080 --> 00:04:13,280
+We have the types and we have the products auction.
+
+67
+00:04:13,380 --> 00:04:14,190
+So now auction.
+
+68
+00:04:14,190 --> 00:04:21,850
+So now the only thing we need to do is to go to next right go to index and include redux right here.
+
+69
+00:04:22,110 --> 00:04:39,900
+So first I'm going to import then connect connect and all right connect from re-act redux react redux.
+
+70
+00:04:39,900 --> 00:04:41,010
+All right.
+
+71
+00:04:41,020 --> 00:04:41,560
+What's next.
+
+72
+00:04:41,560 --> 00:04:46,210
+Next thing we need to import the functions you know the functions where we're going to be dispatching
+
+73
+00:04:46,210 --> 00:04:46,930
+things.
+
+74
+00:04:46,960 --> 00:04:52,990
+So it's going to get products by cell coma and the other one gets products by a rival.
+
+75
+00:04:52,990 --> 00:04:54,750
+So our rival.
+
+76
+00:04:55,150 --> 00:04:59,590
+So in real life of course right now I'm creating the project with ubat in real life.
+
+77
+00:04:59,590 --> 00:05:07,540
+I just do this do multiple things before I need to use them and then I use it.
+
+78
+00:05:07,540 --> 00:05:13,600
+I believe you know most of us we we pretty much all up all we've got the developers they do the same
+
+79
+00:05:13,600 --> 00:05:14,820
+thing right.
+
+80
+00:05:14,830 --> 00:05:20,050
+So we need to go to connect connect open and close and then we wrap home.
+
+81
+00:05:20,380 --> 00:05:21,250
+All right.
+
+82
+00:05:21,670 --> 00:05:28,090
+So after we get the products we're going to do a component amount after we get the Prada products we're
+
+83
+00:05:28,090 --> 00:05:31,770
+going to inject the products inside of here with the props.
+
+84
+00:05:31,810 --> 00:05:36,730
+So we will make a reference to a new component and we will pass the product the Propst with all the
+
+85
+00:05:36,730 --> 00:05:37,490
+products.
+
+86
+00:05:37,570 --> 00:05:38,390
+All right.
+
+87
+00:05:38,800 --> 00:05:40,370
+So we need map state to.
+
+88
+00:05:40,750 --> 00:05:42,590
+Now on the previous lectures.
+
+89
+00:05:42,610 --> 00:05:45,080
+I was doing function substate to Propst.
+
+90
+00:05:45,190 --> 00:05:47,630
+You can still do Kunst.
+
+91
+00:05:47,650 --> 00:05:54,770
+You know let me do we have a complete map state of prop's you can do it like this cons upstate to prompts.
+
+92
+00:05:54,770 --> 00:05:57,750
+So it's pretty much same thing but just with iOS 6.
+
+93
+00:05:58,030 --> 00:06:04,070
+So now on the Propp we do have a user I'm sorry a product reducer right.
+
+94
+00:06:04,120 --> 00:06:06,170
+We have the file help fight right here.
+
+95
+00:06:06,190 --> 00:06:10,800
+The only thing that we don't have is import inside of the producer.
+
+96
+00:06:10,800 --> 00:06:12,610
+We are not combining that reducer.
+
+97
+00:06:13,040 --> 00:06:19,820
+So import products from that forward slash products reducer.
+
+98
+00:06:19,960 --> 00:06:20,560
+All right.
+
+99
+00:06:20,830 --> 00:06:25,660
+We're going to put a coma and I'm going to bring it and close it because we don't need it anymore.
+
+100
+00:06:25,930 --> 00:06:27,670
+So it's going to be products.
+
+101
+00:06:28,020 --> 00:06:29,750
+It will be called products.
+
+102
+00:06:30,340 --> 00:06:31,760
+Sorry I closed it.
+
+103
+00:06:31,780 --> 00:06:37,310
+They closed this and I actually needed it because they don't remember.
+
+104
+00:06:37,330 --> 00:06:39,000
+Sometimes they have bad memory.
+
+105
+00:06:39,220 --> 00:06:40,860
+So products.
+
+106
+00:06:40,900 --> 00:06:46,120
+I was right there and then we of course passed the state products and we need to make a reference to
+
+107
+00:06:46,120 --> 00:06:49,870
+the maps with the maps the props inside of that connect.
+
+108
+00:06:49,870 --> 00:06:50,760
+All right.
+
+109
+00:06:51,100 --> 00:06:52,770
+So far so good.
+
+110
+00:06:52,870 --> 00:06:57,370
+So let's let's try to make a request you know dispatch does get products by cell.
+
+111
+00:06:57,550 --> 00:07:00,540
+And of course we need to add the request right here.
+
+112
+00:07:00,640 --> 00:07:04,500
+But let's first try to dispatch this component at Mt..
+
+113
+00:07:04,570 --> 00:07:12,060
+Open opening close and we go to this that props that this patch opening close and we get the products
+
+114
+00:07:12,070 --> 00:07:13,390
+by cell.
+
+115
+00:07:13,420 --> 00:07:14,560
+All right.
+
+116
+00:07:14,680 --> 00:07:18,850
+So of course we are not doing anything inside of our components.
+
+117
+00:07:19,240 --> 00:07:23,680
+That's why we get an error because we are not returning anything right here.
+
+118
+00:07:24,080 --> 00:07:24,610
+OK.
+
+119
+00:07:24,790 --> 00:07:26,440
+If you remember.
+
+120
+00:07:26,620 --> 00:07:31,700
+We need to get this from the server and right here we do have all the information.
+
+121
+00:07:31,720 --> 00:07:37,450
+So first we're going to get the buy sell right buy sell so buy sell.
+
+122
+00:07:37,450 --> 00:07:44,450
+It's this it's sold by something or they're descending or ascending depending on what we want to do.
+
+123
+00:07:44,590 --> 00:07:49,930
+And then we go in and do this the limit I'm going to skip are going to copy this one from here.
+
+124
+00:07:50,350 --> 00:07:54,970
+And remember that the request to forward slash and then articles.
+
+125
+00:07:55,290 --> 00:08:01,300
+So going to go right here at the bottom and I'm going to paste this just to have a reference.
+
+126
+00:08:01,840 --> 00:08:10,840
+So products buy sell at cost request equals CEOs that get opening close.
+
+127
+00:08:10,900 --> 00:08:16,390
+And then when we need to make a reference to the server so template strings and we make a reference
+
+128
+00:08:16,390 --> 00:08:19,880
+to the server and it's inside articles.
+
+129
+00:08:19,960 --> 00:08:22,940
+So what we want to do we need to do this sort by.
+
+130
+00:08:23,680 --> 00:08:28,060
+So we do the question and let me close this so we can see pretty much all that's just going to paste
+
+131
+00:08:28,060 --> 00:08:28,150
+it.
+
+132
+00:08:28,150 --> 00:08:29,290
+Copy and paste it.
+
+133
+00:08:30,700 --> 00:08:31,460
+It's OK.
+
+134
+00:08:31,710 --> 00:08:38,550
+So on the buy sell we get to sort by everything sort everything by sold then the or there descending
+
+135
+00:08:38,550 --> 00:08:39,700
+just like we did before.
+
+136
+00:08:39,840 --> 00:08:41,550
+And we're going to limit 100.
+
+137
+00:08:41,550 --> 00:08:42,190
+Not really.
+
+138
+00:08:42,210 --> 00:08:43,540
+We just want to get four.
+
+139
+00:08:43,770 --> 00:08:46,520
+So I'm going to say four right.
+
+140
+00:08:46,560 --> 00:08:54,350
+So after this Zygons request we're going to get the proneness so open and close we will get a response.
+
+141
+00:08:54,390 --> 00:08:58,480
+And from the response we get the response that data.
+
+142
+00:08:58,830 --> 00:08:59,900
+All right.
+
+143
+00:09:00,150 --> 00:09:02,910
+And of course and this is why we're getting an error message.
+
+144
+00:09:02,930 --> 00:09:06,120
+It's because we are not returning anything from redux.
+
+145
+00:09:06,120 --> 00:09:08,020
+We need to return something.
+
+146
+00:09:08,160 --> 00:09:17,370
+So type at it's get products sell coma than payload and it's whatever we get back from the request and
+
+147
+00:09:17,390 --> 00:09:19,160
+then go to request.
+
+148
+00:09:19,170 --> 00:09:19,940
+All right.
+
+149
+00:09:20,160 --> 00:09:22,070
+I made a change to the server.
+
+150
+00:09:22,270 --> 00:09:23,990
+They are going to say so.
+
+151
+00:09:24,000 --> 00:09:25,890
+OK so now get products buy sell.
+
+152
+00:09:25,890 --> 00:09:27,140
+We are doing the request.
+
+153
+00:09:27,150 --> 00:09:29,910
+So now we need to go to the actual reducer.
+
+154
+00:09:29,970 --> 00:09:32,090
+So let's go to products we.
+
+155
+00:09:32,540 --> 00:09:40,830
+So in products reduce or we to get the elements so we can store them buy sell open opening close and
+
+156
+00:09:40,830 --> 00:09:49,960
+then action that payload not open and close is just Conn's com PELAYO.
+
+157
+00:09:50,130 --> 00:09:51,850
+There we go.
+
+158
+00:09:51,870 --> 00:09:53,430
+All right.
+
+159
+00:09:53,430 --> 00:09:57,450
+So then it's not defined.
+
+160
+00:09:57,450 --> 00:09:58,830
+All right this is my mistake.
+
+161
+00:09:58,830 --> 00:10:01,120
+Forgot to put that thought.
+
+162
+00:10:01,270 --> 00:10:01,810
+All right.
+
+163
+00:10:02,950 --> 00:10:03,380
+OK.
+
+164
+00:10:03,570 --> 00:10:07,770
+So at least of these is not you know breaking.
+
+165
+00:10:07,770 --> 00:10:11,900
+So if we go to the stake right here let's see what happens.
+
+166
+00:10:11,910 --> 00:10:12,110
+Right.
+
+167
+00:10:12,120 --> 00:10:14,400
+So we go to state and we get the users of course.
+
+168
+00:10:14,550 --> 00:10:20,490
+And then we get products and we get buy sell and I'm getting a 404.
+
+169
+00:10:20,490 --> 00:10:23,720
+All right let's see we see the actual message.
+
+170
+00:10:24,090 --> 00:10:29,510
+So product not found secret policy.
+
+171
+00:10:30,150 --> 00:10:32,990
+I'm pretty sure I made a mistake with the actual route.
+
+172
+00:10:33,390 --> 00:10:36,640
+So it's articles articles.
+
+173
+00:10:36,690 --> 00:10:37,810
+There we go.
+
+174
+00:10:37,870 --> 00:10:42,940
+Sorry all right state and to get it get it.
+
+175
+00:10:43,050 --> 00:10:46,220
+So pro-CPS buy sell and we get four different elements.
+
+176
+00:10:46,210 --> 00:10:49,190
+So Goodman your work is really good.
+
+177
+00:10:49,410 --> 00:10:57,340
+So let's do the VI arrival since it's so easy so easy going to go and set said the get parts my arrival.
+
+178
+00:10:57,510 --> 00:11:03,170
+Then inside actions we pretty much need to do the same exact thing.
+
+179
+00:11:03,300 --> 00:11:11,730
+So like a all before it makes a little bit more sense to create one one only one dispatches one where
+
+180
+00:11:11,730 --> 00:11:16,190
+we can pass all the options disruptions inside in inside of arguments.
+
+181
+00:11:16,200 --> 00:11:22,020
+You know we pass them by using arguments and right here we just make two different requests with different
+
+182
+00:11:22,110 --> 00:11:23,100
+arguments.
+
+183
+00:11:23,100 --> 00:11:23,800
+Right.
+
+184
+00:11:24,260 --> 00:11:25,080
+OK.
+
+185
+00:11:25,830 --> 00:11:28,070
+So I'm going to copy this.
+
+186
+00:11:28,080 --> 00:11:29,590
+I don't want to type it again.
+
+187
+00:11:29,700 --> 00:11:31,590
+I'm going to copy and I'm going to paste.
+
+188
+00:11:31,770 --> 00:11:35,380
+Of course we need to change some things that make us right.
+
+189
+00:11:35,430 --> 00:11:36,060
+All right.
+
+190
+00:11:36,360 --> 00:11:41,280
+So we're still going to articles now this sort by is going to be bye.
+
+191
+00:11:41,460 --> 00:11:44,260
+And let's go to the server and check it out.
+
+192
+00:11:44,280 --> 00:11:50,670
+My arrival is going to be created at the time stamp that Mongo it's creating for us.
+
+193
+00:11:50,930 --> 00:11:56,680
+Then the order is going to be still the sending and the limit for the only changes they created.
+
+194
+00:11:57,060 --> 00:11:58,230
+All right.
+
+195
+00:11:58,230 --> 00:12:04,500
+So we are getting the arrival so we need to go to the product for douceur and it will that we will really
+
+196
+00:12:04,500 --> 00:12:05,910
+have the type there.
+
+197
+00:12:06,000 --> 00:12:06,510
+OK.
+
+198
+00:12:06,990 --> 00:12:16,200
+So now of course instead of by cell we get by a rival by our rival and this one will be getting the
+
+199
+00:12:16,200 --> 00:12:18,520
+action that payload.
+
+200
+00:12:18,520 --> 00:12:22,850
+All right let's reload the application and see what we get.
+
+201
+00:12:23,130 --> 00:12:29,650
+So actions state we go to products and we have a buy sell and we don't have a bio rival.
+
+202
+00:12:29,710 --> 00:12:31,010
+That's kind of weird.
+
+203
+00:12:31,790 --> 00:12:34,960
+Products by cell I made a mistake with this.
+
+204
+00:12:35,000 --> 00:12:37,020
+No my arrival.
+
+205
+00:12:37,230 --> 00:12:38,160
+Fine.
+
+206
+00:12:38,290 --> 00:12:42,670
+Oh it's because I'm using the same type of course of course.
+
+207
+00:12:42,680 --> 00:12:44,120
+All right let's try again.
+
+208
+00:12:46,450 --> 00:12:51,580
+State opening close and we get buy sell and buy a rival get.
+
+209
+00:12:51,800 --> 00:12:52,300
+OK.
+
+210
+00:12:52,420 --> 00:12:57,190
+So now what we need to do and we're going to do it of course in the Knesset next section we have a buy
+
+211
+00:12:57,190 --> 00:13:04,150
+sell and buy a rival so we will need to create right here a component that will take the four elements
+
+212
+00:13:04,150 --> 00:13:10,140
+in device cell and another one right here the bottom that takes the four elements of the by arrival
+
+213
+00:13:10,480 --> 00:13:16,630
+and of course we need to create a different component that it's going to be rendering carts why a different
+
+214
+00:13:16,630 --> 00:13:17,440
+component.
+
+215
+00:13:17,560 --> 00:13:22,910
+And it's because right here we have a cart that we have to begin to get one component rendering the
+
+216
+00:13:22,920 --> 00:13:25,860
+four carts and then for each we have a cart.
+
+217
+00:13:25,960 --> 00:13:28,820
+If we go to guitars we pretty much have the same cart.
+
+218
+00:13:28,840 --> 00:13:32,170
+So this one should be reusable components right.
+
+219
+00:13:32,350 --> 00:13:32,900
+All right.
+
+220
+00:13:32,950 --> 00:13:35,490
+So let's go to the next section and create the carts.
+

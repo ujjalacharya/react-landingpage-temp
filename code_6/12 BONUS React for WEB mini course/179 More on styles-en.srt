@@ -1,0 +1,992 @@
+1
+00:00:01,090 --> 00:00:05,950
+OK so we are going to talk a little bit more about stylings and if you're going to use styles as an
+
+2
+00:00:05,950 --> 00:00:12,420
+import just like the head or digests or with a link inside the HD L that is cool.
+
+3
+00:00:12,430 --> 00:00:13,780
+That's good anyways.
+
+4
+00:00:14,170 --> 00:00:19,180
+But sometimes we can use the SS and we need to fall back to some javascript logic.
+
+5
+00:00:19,320 --> 00:00:25,840
+So I'm going to show you some different ways and this is not react this is just javascript logic programming
+
+6
+00:00:25,840 --> 00:00:27,210
+Gloc logic.
+
+7
+00:00:27,220 --> 00:00:31,510
+So OK so what I want to do I went to add a background to the header right here.
+
+8
+00:00:31,710 --> 00:00:34,040
+I went to change it to no read.
+
+9
+00:00:34,060 --> 00:00:36,460
+I going to say Konst style.
+
+10
+00:00:36,640 --> 00:00:40,410
+And then I just create an object with the style of the background.
+
+11
+00:00:40,450 --> 00:00:45,000
+It's going to say background and then this one is going to be equal to red.
+
+12
+00:00:45,400 --> 00:00:53,590
+So now we want to pass the style we say style equal to style just like that.
+
+13
+00:00:53,690 --> 00:00:54,250
+So that's good.
+
+14
+00:00:54,290 --> 00:00:55,140
+You know it's working.
+
+15
+00:00:55,150 --> 00:00:55,970
+We know this.
+
+16
+00:00:56,100 --> 00:01:00,750
+Well what happens if what I want to do I went to check if the keywords are empty.
+
+17
+00:01:00,770 --> 00:01:04,010
+If this impot it's empty and leave it at one color.
+
+18
+00:01:04,010 --> 00:01:08,850
+But as soon as I start typing something I went to change the color to something else.
+
+19
+00:01:08,870 --> 00:01:15,320
+So then we need to go and fall back to some javascript logic we could say if the keywords are empty
+
+20
+00:01:15,560 --> 00:01:21,680
+remember that the keywords we have them on state when whenever we change them so we could change the
+
+21
+00:01:21,680 --> 00:01:22,570
+state of that.
+
+22
+00:01:22,610 --> 00:01:24,590
+And if they are empty We're going to do something.
+
+23
+00:01:24,620 --> 00:01:26,750
+If not begin to do something else.
+
+24
+00:01:26,840 --> 00:01:28,470
+So I could do something like this.
+
+25
+00:01:28,550 --> 00:01:30,180
+State that keywords.
+
+26
+00:01:30,320 --> 00:01:33,070
+It's different than this than empty.
+
+27
+00:01:33,140 --> 00:01:39,060
+And we're going to say style that my background just like that it's going to be called to do.
+
+28
+00:01:39,280 --> 00:01:39,670
+OK.
+
+29
+00:01:39,830 --> 00:01:46,440
+Let me match it and then if not we're going to do else we're going to do the opposite of this.
+
+30
+00:01:46,550 --> 00:01:52,160
+So I'm going to say read whenever there's a matter.
+
+31
+00:01:52,340 --> 00:01:57,720
+So if I type something is going to change to blue if I go back to empty it stays as read.
+
+32
+00:01:57,720 --> 00:02:02,420
+So we could use some logic like this using the state of physics.
+
+33
+00:02:02,640 --> 00:02:06,120
+OK so we're OK we can do something else.
+
+34
+00:02:06,320 --> 00:02:09,090
+Let's do something different.
+
+35
+00:02:09,110 --> 00:02:15,000
+I'm going to just comment this for now just for now and what I want to do I want to say that the style
+
+36
+00:02:15,180 --> 00:02:17,360
+of the header is going to be read.
+
+37
+00:02:17,550 --> 00:02:22,810
+So right here inside styles what we can do we can pass styles directly.
+
+38
+00:02:22,980 --> 00:02:26,970
+And what we can we need to do we need to use double curly braces.
+
+39
+00:02:27,300 --> 00:02:35,400
+So now right here what I could do I could say background and it's equal to read something like that.
+
+40
+00:02:35,400 --> 00:02:37,820
+And of course we can get the background read.
+
+41
+00:02:38,010 --> 00:02:42,840
+So most of the time you're going to be using this whenever you have some dynamic data and you need to
+
+42
+00:02:42,840 --> 00:02:47,840
+put the background image and then you are l where you can do something like this.
+
+43
+00:02:47,850 --> 00:02:55,820
+Now again if I type something this is not dynamic so I need to change this this value dynamically.
+
+44
+00:02:55,890 --> 00:02:57,330
+So how can you do that.
+
+45
+00:02:57,570 --> 00:02:59,430
+Well we can use the state for example.
+
+46
+00:02:59,430 --> 00:03:05,520
+I'm going to go to state again to say active and whenever the application starts this active it's going
+
+47
+00:03:05,520 --> 00:03:07,010
+to be false.
+
+48
+00:03:07,020 --> 00:03:13,830
+So now what I can do right here I can check if the state that active it's true and show red and if it's
+
+49
+00:03:13,830 --> 00:03:18,790
+false show Blue they're going to delete this and they're going to be using template strings.
+
+50
+00:03:18,840 --> 00:03:21,050
+Simple strings are really really cool.
+
+51
+00:03:21,060 --> 00:03:22,970
+We can do operations inside.
+
+52
+00:03:23,310 --> 00:03:27,090
+So I'm going to do door sign open in close curly braces.
+
+53
+00:03:27,210 --> 00:03:28,770
+So now read here what we can do.
+
+54
+00:03:28,770 --> 00:03:31,080
+We can do some ternary operation.
+
+55
+00:03:31,090 --> 00:03:34,710
+Does that state that active stuff like that.
+
+56
+00:03:34,800 --> 00:03:41,420
+And if it's false We're going to set it to read and if it's not begin to set it to do
+
+57
+00:03:44,760 --> 00:03:46,260
+something like that.
+
+58
+00:03:46,430 --> 00:03:46,760
+OK.
+
+59
+00:03:46,860 --> 00:03:48,820
+So let's see if it's working.
+
+60
+00:03:48,960 --> 00:03:53,820
+I'm going to do this and type something and delete and nothing happens.
+
+61
+00:03:53,820 --> 00:03:56,970
+And this is because we are not changing the state of active.
+
+62
+00:03:57,120 --> 00:03:59,990
+Remember that we are doing it right here.
+
+63
+00:04:00,090 --> 00:04:06,780
+So to do this we'll have to go to the input change handler and create a viable that is going to be checking
+
+64
+00:04:06,780 --> 00:04:09,840
+if it's empty or not and said the new state.
+
+65
+00:04:10,020 --> 00:04:14,290
+So I'm going to say Konst style makes sense.
+
+66
+00:04:14,300 --> 00:04:17,850
+Now let's change it to value something different.
+
+67
+00:04:17,850 --> 00:04:23,120
+So we're going to catch that event or target that value and begin to check if it's empty or not.
+
+68
+00:04:23,310 --> 00:04:28,820
+So if it's 3PL equal to empty We're going to say that the state is going to be false.
+
+69
+00:04:28,980 --> 00:04:32,010
+If not it's going to be true.
+
+70
+00:04:32,610 --> 00:04:35,440
+So now we have the True or False inside of a marvel.
+
+71
+00:04:35,460 --> 00:04:40,080
+Whenever we type something and we pass the event to change handler.
+
+72
+00:04:40,290 --> 00:04:47,620
+So now we need to change the state of active to whatever value we are getting out of this.
+
+73
+00:04:47,860 --> 00:04:49,880
+And they're going to do coma.
+
+74
+00:04:50,400 --> 00:04:53,920
+And of course the state is going to change if I type something it's changed.
+
+75
+00:04:54,180 --> 00:04:57,230
+And if it's not if it's empty we go back to blue.
+
+76
+00:04:57,240 --> 00:05:02,730
+So you can use some logic like this using the state and changing state.
+
+77
+00:05:03,270 --> 00:05:03,580
+OK.
+
+78
+00:05:03,600 --> 00:05:07,350
+So let me let me give you one more one more.
+
+79
+00:05:07,350 --> 00:05:13,350
+Let's say that instead of just passing the inline styling just like this what I want to do I want to
+
+80
+00:05:13,350 --> 00:05:14,530
+change.
+
+81
+00:05:14,820 --> 00:05:16,480
+You know just a class.
+
+82
+00:05:16,580 --> 00:05:17,070
+OK.
+
+83
+00:05:17,340 --> 00:05:19,130
+So I'm going to delete all of this.
+
+84
+00:05:19,170 --> 00:05:25,800
+I'm sorry for the deleting and not deleting so I could say this that state that active.
+
+85
+00:05:25,890 --> 00:05:30,560
+So this in fact is going to be a class and not some styles.
+
+86
+00:05:30,720 --> 00:05:35,900
+So I'm going to go to active right here at the bottom of the top sorry and I can say that this act if
+
+87
+00:05:35,960 --> 00:05:43,640
+it is is going to be equal to active just like that active the default state it's going to be active.
+
+88
+00:05:43,680 --> 00:05:48,390
+So now right here instead of changing to true from true or false.
+
+89
+00:05:48,480 --> 00:05:50,600
+What we can do we can swap classes.
+
+90
+00:05:50,610 --> 00:05:57,480
+We can say that the new state of active is going to be active or non active is going to say active and
+
+91
+00:05:57,480 --> 00:06:06,100
+then we change it to non active makes sense not to.
+
+92
+00:06:06,330 --> 00:06:06,960
+OK.
+
+93
+00:06:07,650 --> 00:06:09,520
+So now it's going to reload up.
+
+94
+00:06:09,570 --> 00:06:10,810
+We get the message.
+
+95
+00:06:10,830 --> 00:06:11,880
+I a mistake right here.
+
+96
+00:06:11,880 --> 00:06:13,270
+The bottom.
+
+97
+00:06:13,460 --> 00:06:16,700
+What am I doing this state active.
+
+98
+00:06:16,850 --> 00:06:21,030
+Of course it's not a style it is going to be the class name for that.
+
+99
+00:06:22,020 --> 00:06:22,360
+OK.
+
+100
+00:06:22,440 --> 00:06:24,300
+So everything works if you type something.
+
+101
+00:06:24,300 --> 00:06:25,750
+Of course it's not working.
+
+102
+00:06:25,830 --> 00:06:33,000
+But if I changed if I check the console let me check the class name of this for now whenever we start
+
+103
+00:06:33,040 --> 00:06:33,890
+is going to be active.
+
+104
+00:06:33,900 --> 00:06:36,950
+But if I type something is going to change to not active.
+
+105
+00:06:37,200 --> 00:06:40,150
+And if I go back to zero we get back active.
+
+106
+00:06:40,170 --> 00:06:44,030
+So we're going to be swapping classes right here and we can do the same thing.
+
+107
+00:06:44,030 --> 00:06:50,890
+We can add the CSA as we can add that active and not active class to this time elsea says.
+
+108
+00:06:50,950 --> 00:06:53,540
+And it's going to work its a different way of doing things.
+
+109
+00:06:53,550 --> 00:06:57,290
+You know you have three different methods to do this.
+
+110
+00:06:57,390 --> 00:07:04,680
+Of course we have a lot more methods and that's the main point of this section and the next in the next
+
+111
+00:07:04,700 --> 00:07:09,410
+century in the next section so we can change all of this just like this.
+
+112
+00:07:09,510 --> 00:07:17,440
+Again it's up to you but we have tons of libraries for stylings and they are really really cool.
+
+113
+00:07:17,460 --> 00:07:19,330
+So let's check them out.
+
+114
+00:07:20,410 --> 00:07:23,140
+OK so I'm going to show you how to use applying for this.
+
+115
+00:07:23,140 --> 00:07:26,880
+We have tons of plug ins to work with CSX.
+
+116
+00:07:26,900 --> 00:07:32,230
+So yes that's the first I'm going to delete all of this because we're not going to need it at all.
+
+117
+00:07:32,230 --> 00:07:34,030
+Let me just delete this.
+
+118
+00:07:34,030 --> 00:07:36,090
+Just go back to lead.
+
+119
+00:07:36,100 --> 00:07:39,550
+Or I was done and to this state.
+
+120
+00:07:40,120 --> 00:07:45,820
+So now I'm going to go to the useless item and begin to test this library from you list item.
+
+121
+00:07:45,820 --> 00:07:51,530
+So I get to go right here and I'm going to say react and the library is going to call glam or not when
+
+122
+00:07:51,550 --> 00:07:54,290
+you just glam or something like that.
+
+123
+00:07:54,820 --> 00:07:58,510
+And we're going to get it right here 3.1 clamor.
+
+124
+00:07:58,870 --> 00:08:04,660
+So with this with this dependency with this module what we can do we can use CSSA inline Lycia says
+
+125
+00:08:04,670 --> 00:08:05,700
+just like this.
+
+126
+00:08:05,830 --> 00:08:11,440
+And then clamors is going to work it's going to do its job and we can pass the rules we can pass holders
+
+127
+00:08:12,040 --> 00:08:15,120
+we can we can use we can even use media equerries.
+
+128
+00:08:15,370 --> 00:08:19,230
+And then it's going to pass that as a rule or as a class name or whatever.
+
+129
+00:08:19,270 --> 00:08:20,860
+It's really cool.
+
+130
+00:08:20,860 --> 00:08:25,420
+So let's install this first and we're going to show you how it's going to work on the kill the server
+
+131
+00:08:25,480 --> 00:08:33,370
+of course and we need to do NPM install and then it's going to be called glam or Glam or so just like
+
+132
+00:08:33,370 --> 00:08:33,790
+that.
+
+133
+00:08:33,790 --> 00:08:37,550
+And then minus minus safe.
+
+134
+00:08:37,600 --> 00:08:39,280
+So this one is a little bit slow.
+
+135
+00:08:39,360 --> 00:08:42,690
+It's going to take a little while to install it.
+
+136
+00:08:43,830 --> 00:08:47,710
+When was done OK it's done.
+
+137
+00:08:47,720 --> 00:08:52,220
+So I'm going to do clear and I'm going to do NPM start again.
+
+138
+00:08:52,370 --> 00:08:53,210
+So no to use it.
+
+139
+00:08:53,210 --> 00:08:55,570
+First we need to require the library.
+
+140
+00:08:55,670 --> 00:09:01,310
+So I'm going to go back to the project and in say in say import any curly braces.
+
+141
+00:09:01,670 --> 00:09:03,370
+Say yes yes.
+
+142
+00:09:03,560 --> 00:09:08,650
+So this is actually the instructions from glummer I'm not making this up right here.
+
+143
+00:09:08,870 --> 00:09:10,360
+So it is going to be CSSA.
+
+144
+00:09:10,490 --> 00:09:11,750
+And then from.
+
+145
+00:09:11,750 --> 00:09:16,300
+And then glam or.
+
+146
+00:09:16,590 --> 00:09:22,250
+So now what we need to do we need to create a rule to pass it right here to this news item.
+
+147
+00:09:22,290 --> 00:09:23,640
+This one right here.
+
+148
+00:09:23,820 --> 00:09:30,350
+So I'm going to go before the return and get a career viable that is going to be called news underscore
+
+149
+00:09:30,450 --> 00:09:32,480
+item something real simple.
+
+150
+00:09:32,520 --> 00:09:38,280
+First we need to invoke the method that we are requiring on top and this method is going to take an
+
+151
+00:09:38,280 --> 00:09:39,800
+object right here.
+
+152
+00:09:39,810 --> 00:09:41,980
+We can pass whatever class we want.
+
+153
+00:09:42,180 --> 00:09:46,760
+So what I want to do going to make this a little bit better just a little bit better.
+
+154
+00:09:46,860 --> 00:09:51,720
+I to add padding and the padding is going to be pixel's something like that.
+
+155
+00:09:51,720 --> 00:09:57,160
+Of course it's an object so we need to do coma that we need to use box sizing.
+
+156
+00:09:57,380 --> 00:09:59,560
+So I sing good.
+
+157
+00:09:59,790 --> 00:10:07,860
+And the sizing is going to be border you know the box in a coma and I'm going to add a board there and
+
+158
+00:10:07,860 --> 00:10:15,210
+then bottom of one pixel pixels solid gray that makes sense.
+
+159
+00:10:15,660 --> 00:10:17,320
+So now we have this now.
+
+160
+00:10:17,370 --> 00:10:19,200
+We are not getting any errors you know.
+
+161
+00:10:19,200 --> 00:10:20,150
+Looks good.
+
+162
+00:10:20,150 --> 00:10:23,360
+It says that we have this Vrable and it's not being used.
+
+163
+00:10:23,360 --> 00:10:24,840
+We're going to use it in a minute.
+
+164
+00:10:24,870 --> 00:10:30,240
+So now to pass to you to use this class because we're pretty much creating the class what we can do.
+
+165
+00:10:30,240 --> 00:10:37,680
+We go to the actual elements where we need that class and we can say in curly braces that oh sorry dot
+
+166
+00:10:37,680 --> 00:10:38,510
+dot dot.
+
+167
+00:10:38,580 --> 00:10:42,650
+And then the name of the class which is going to be news item.
+
+168
+00:10:42,870 --> 00:10:45,490
+So I'm going to do that and if a reload.
+
+169
+00:10:45,570 --> 00:10:50,400
+You know we get it it's working it seems like a mistake right here.
+
+170
+00:10:50,520 --> 00:10:54,080
+The bottom should be working now.
+
+171
+00:10:54,150 --> 00:10:54,770
+There you go.
+
+172
+00:10:54,780 --> 00:10:58,300
+You know it works really really really cool.
+
+173
+00:10:58,650 --> 00:11:04,190
+So OK what happens if I want to add two different styles to different classes right here.
+
+174
+00:11:04,470 --> 00:11:10,850
+Well again we could create a new variable that is going to be item and grey or something like that.
+
+175
+00:11:10,950 --> 00:11:16,200
+And then of course we need to use the CSSA open the method and pass an object.
+
+176
+00:11:16,200 --> 00:11:24,050
+And I could say background something like that of gray lets use light gray.
+
+177
+00:11:24,200 --> 00:11:28,430
+I believe it's like a light gray Burguet.
+
+178
+00:11:28,470 --> 00:11:39,210
+So now if I went to pass a second class what we can do is the same process dot dot and then am gray.
+
+179
+00:11:39,400 --> 00:11:44,830
+And we get it it's using both classes this dot dot dot that we're using right here.
+
+180
+00:11:44,890 --> 00:11:45,850
+It's ESX.
+
+181
+00:11:45,850 --> 00:11:49,290
+It's not you know from the from Glenmore it's.
+
+182
+00:11:49,410 --> 00:11:54,920
+It's saying grab all the properties that we have inside that element and put them inside of here.
+
+183
+00:11:55,030 --> 00:11:57,490
+That's what pretty much it's doing.
+
+184
+00:11:57,620 --> 00:11:59,860
+So we can use a we can use more things.
+
+185
+00:11:59,860 --> 00:12:05,160
+What happens if I went to add a homer you know just a Hoover right here on each element.
+
+186
+00:12:05,420 --> 00:12:07,890
+Well I'm going to do comb I'm going to go below here.
+
+187
+00:12:07,990 --> 00:12:12,390
+And what we say is corn and then Hoover just like that.
+
+188
+00:12:12,730 --> 00:12:15,740
+And then of course this is going to be something else.
+
+189
+00:12:15,940 --> 00:12:17,080
+And then color.
+
+190
+00:12:17,140 --> 00:12:19,270
+And we're going to change it to read make sense.
+
+191
+00:12:19,270 --> 00:12:19,950
+Good.
+
+192
+00:12:20,410 --> 00:12:24,400
+So whenever we do however we are going to change it to red.
+
+193
+00:12:24,700 --> 00:12:26,460
+And you know it's working.
+
+194
+00:12:27,470 --> 00:12:29,460
+It's really really nice.
+
+195
+00:12:29,480 --> 00:12:33,020
+So what else we can do we have a few more things and what happens if we want to check.
+
+196
+00:12:33,020 --> 00:12:37,940
+We went to work with media queries again just like the Hoeber right here.
+
+197
+00:12:37,940 --> 00:12:40,390
+We can add a media query for this element.
+
+198
+00:12:40,400 --> 00:12:43,160
+So we are going to say and then media.
+
+199
+00:12:43,280 --> 00:12:50,150
+Then of course we need to open it close and I'm going to say Max what you can do with it's up to you.
+
+200
+00:12:50,150 --> 00:12:55,220
+This is just yes and they're going to save 500 pixels whatever.
+
+201
+00:12:55,430 --> 00:12:58,430
+And then of course we say calm and we pass the tiles.
+
+202
+00:12:58,460 --> 00:13:05,960
+And this chair in this case I can change the whole color to blue whatever but it's going to reload the
+
+203
+00:13:05,960 --> 00:13:09,210
+page of course going to make it.
+
+204
+00:13:09,340 --> 00:13:10,050
+And there we go.
+
+205
+00:13:10,160 --> 00:13:12,950
+You know it's catching that media Querrey.
+
+206
+00:13:13,410 --> 00:13:15,090
+So OK we can do a lot of thanks.
+
+207
+00:13:15,090 --> 00:13:17,150
+You can check the condition.
+
+208
+00:13:17,970 --> 00:13:20,150
+We have it all right here we have the docs.
+
+209
+00:13:20,190 --> 00:13:21,510
+It has some demos.
+
+210
+00:13:21,690 --> 00:13:23,640
+So you can you can check this out.
+
+211
+00:13:23,760 --> 00:13:25,080
+But don't do it just now.
+
+212
+00:13:25,080 --> 00:13:27,190
+We're going to be doing some all this stuff.
+
+213
+00:13:27,390 --> 00:13:30,530
+Let's say that for example right here we are creating an instance.
+
+214
+00:13:30,540 --> 00:13:37,320
+So this is going to be kind of a kind of a class name and right here we're kind of injecting a data
+
+215
+00:13:37,320 --> 00:13:38,010
+attribute.
+
+216
+00:13:38,010 --> 00:13:40,520
+Let me just do an inspection and show you.
+
+217
+00:13:40,980 --> 00:13:43,000
+Let's go and make it bigger.
+
+218
+00:13:43,510 --> 00:13:46,710
+It's going to go to elements and select each elements.
+
+219
+00:13:47,040 --> 00:13:51,140
+So you know right here we didn't have the class in the name of this.
+
+220
+00:13:51,330 --> 00:13:58,540
+We have a data attribute and if we go to Hetter we can see that it's a pending Goldstein's right here.
+
+221
+00:13:58,560 --> 00:14:00,710
+But this is a data attribute.
+
+222
+00:14:00,990 --> 00:14:06,760
+So again this library is going to give us the ability to use classes.
+
+223
+00:14:06,870 --> 00:14:11,210
+They're going to read all of this and I can add a class name.
+
+224
+00:14:11,220 --> 00:14:17,100
+So instead of a data attribute what we can do we can pass a template strings with the value of whatever
+
+225
+00:14:17,100 --> 00:14:20,250
+class you're creating right here at the top.
+
+226
+00:14:20,250 --> 00:14:21,840
+So I'm going to say this.
+
+227
+00:14:22,290 --> 00:14:24,630
+And then of course I'm going to be adding the item gray.
+
+228
+00:14:24,660 --> 00:14:30,380
+So we do the same dollar sign open close and then I'd say this is template strings.
+
+229
+00:14:30,390 --> 00:14:35,850
+OK guys if you are you're getting confused with this because you need to learn a little bit more about
+
+230
+00:14:35,850 --> 00:14:36,480
+ESX.
+
+231
+00:14:36,510 --> 00:14:43,910
+Remember that the last module of this discourse is going to be a whole course with ESX.
+
+232
+00:14:44,220 --> 00:14:48,480
+OK you know we are still getting it and now we are getting a class of this.
+
+233
+00:14:48,480 --> 00:14:54,400
+And if you check the head right here we are getting you know the classes.
+
+234
+00:14:54,720 --> 00:14:57,860
+So you know this works right.
+
+235
+00:14:57,870 --> 00:14:59,390
+So what else.
+
+236
+00:14:59,520 --> 00:15:00,760
+You know what you can do.
+
+237
+00:15:00,780 --> 00:15:03,960
+You can use this approach if you like this one you can use it.
+
+238
+00:15:03,960 --> 00:15:05,520
+It's not bad.
+
+239
+00:15:05,520 --> 00:15:08,570
+You know this methods are not bad.
+
+240
+00:15:08,580 --> 00:15:10,000
+They work really good.
+
+241
+00:15:10,410 --> 00:15:15,090
+So we are going to be talking about something else we're going to be going to the next action because
+
+242
+00:15:15,090 --> 00:15:20,090
+this video went too long and we'll be talking about S as modules.
+
+243
+00:15:20,100 --> 00:15:21,860
+That's kind of a new concept.
+
+244
+00:15:21,990 --> 00:15:24,440
+Can you show you how to how to use it.
+
+245
+00:15:24,450 --> 00:15:28,890
+It's going to get a little bit confusing but don't worry we're going to begin to do it right.
+
+246
+00:15:28,890 --> 00:15:33,240
+Practically do it on the project and begin going to be using that one.
+
+247
+00:15:33,350 --> 00:15:33,620
+OK.
+
+248
+00:15:33,660 --> 00:15:35,260
+So let's go to the next section.
+

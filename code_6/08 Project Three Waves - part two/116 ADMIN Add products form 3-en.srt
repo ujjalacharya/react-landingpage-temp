@@ -1,0 +1,1156 @@
+1
+00:00:00,890 --> 00:00:06,560
+So what we need to do now is to add the textarea and the selects and I get to go off course to form
+
+2
+00:00:06,560 --> 00:00:08,560
+fields and we need to do it right here.
+
+3
+00:00:08,710 --> 00:00:13,550
+And I'm going to do both right now the text area and they select because of course we're going to use
+
+4
+00:00:13,550 --> 00:00:14,960
+them right now.
+
+5
+00:00:14,960 --> 00:00:23,880
+So first I'm going to create a case of text and then area opening close and never forget to do the break.
+
+6
+00:00:23,900 --> 00:00:28,730
+So of course we pretty much need the same thing so I'm going to copy the form take the form template
+
+7
+00:00:29,280 --> 00:00:30,730
+and paste it right here.
+
+8
+00:00:30,740 --> 00:00:32,950
+So the show label stays the same.
+
+9
+00:00:32,990 --> 00:00:38,620
+Then of course when it's going change it's going to be the input to delete everything inside of here.
+
+10
+00:00:38,660 --> 00:00:43,430
+I will do text area and then of course it could be a self-closing tag.
+
+11
+00:00:43,670 --> 00:00:48,450
+And then just like with did before right here we need to pass the form data and config.
+
+12
+00:00:48,500 --> 00:00:51,740
+We do have a value and we do have a number and a change.
+
+13
+00:00:51,790 --> 00:00:56,480
+So I'm going to copy and paste and that is it you know really really simple.
+
+14
+00:00:56,520 --> 00:01:00,450
+I just got to love your reusable components.
+
+15
+00:01:00,470 --> 00:01:01,610
+We don't need to do anything else.
+
+16
+00:01:01,680 --> 00:01:02,060
+Yeah.
+
+17
+00:01:02,210 --> 00:01:03,060
+Let's get.
+
+18
+00:01:03,110 --> 00:01:07,700
+So now we need the select when it's going to be a little bit different in the case right here at the
+
+19
+00:01:07,700 --> 00:01:08,090
+top.
+
+20
+00:01:08,090 --> 00:01:17,840
+So if we have a case of select on we do it correctly select opening close and never forget the break
+
+21
+00:01:18,230 --> 00:01:22,950
+never if not of course nothing is going to really work.
+
+22
+00:01:23,750 --> 00:01:28,400
+Maybe the impact is going to work but not now and if anything else is just not going to work I'm sorry
+
+23
+00:01:28,400 --> 00:01:31,480
+the text area because it's the last break.
+
+24
+00:01:31,830 --> 00:01:32,260
+OK.
+
+25
+00:01:32,330 --> 00:01:38,300
+So instead of here we just do pretty much the same thing right now just going to copy the form template
+
+26
+00:01:38,660 --> 00:01:39,810
+and I'm going to paste.
+
+27
+00:01:39,830 --> 00:01:41,540
+Of course we need to change something.
+
+28
+00:01:41,750 --> 00:01:46,220
+So we still have the form block and we still have the label right.
+
+29
+00:01:46,250 --> 00:01:48,490
+So I'm going to delete the text area.
+
+30
+00:01:48,530 --> 00:01:55,760
+So what we need right here is to select a right opening close with the select just like we do have with
+
+31
+00:01:55,770 --> 00:01:56,980
+the beginning at the top.
+
+32
+00:01:57,020 --> 00:02:02,370
+We still have value on Bloor and a change and we don't get to form data to fit into form data config.
+
+33
+00:02:02,510 --> 00:02:07,410
+We don't use that on the Select because we don't need to inject everything inside of the tag.
+
+34
+00:02:07,520 --> 00:02:10,120
+All right what we do get it's options.
+
+35
+00:02:10,280 --> 00:02:13,460
+So the first option is going to be select and an empty value.
+
+36
+00:02:13,590 --> 00:02:15,860
+And right here you could choose to do whatever you want.
+
+37
+00:02:15,860 --> 00:02:19,330
+Maybe select the disabled value or something like that.
+
+38
+00:02:19,340 --> 00:02:20,830
+Or maybe a default one.
+
+39
+00:02:21,260 --> 00:02:27,140
+So the first leg is going to be a value of nothing.
+
+40
+00:02:27,200 --> 00:02:32,330
+Then of course we need to loop the options that begin to be getting from the server or from the array
+
+41
+00:02:32,340 --> 00:02:34,290
+with keys and values.
+
+42
+00:02:34,340 --> 00:02:41,540
+So we enter to form data and I'm going to close this so we can see all that and get a do config DOD
+
+43
+00:02:41,630 --> 00:02:48,050
+options dart map and I'm doing this a little bit faster because we did this a few times already.
+
+44
+00:02:48,230 --> 00:02:54,440
+So I'm going to open and of course we need to return some GSX so parenthesis then of course we have
+
+45
+00:02:54,440 --> 00:02:56,340
+option opening close.
+
+46
+00:02:56,360 --> 00:02:57,560
+We have a key now.
+
+47
+00:02:57,620 --> 00:03:01,260
+So it's key of item dot.
+
+48
+00:03:01,270 --> 00:03:03,870
+And remember we are using a key and that's key.
+
+49
+00:03:03,890 --> 00:03:06,150
+It's not the key is the key of the of the loop.
+
+50
+00:03:06,170 --> 00:03:06,530
+Right.
+
+51
+00:03:06,530 --> 00:03:10,630
+Remember we have an object right here we key in value.
+
+52
+00:03:10,700 --> 00:03:15,050
+So then of course we have the value I'm going to drop this.
+
+53
+00:03:15,050 --> 00:03:19,640
+So it's a little bit more organized.
+
+54
+00:03:19,720 --> 00:03:26,190
+So value and the value is equal to the same item and the send key.
+
+55
+00:03:26,230 --> 00:03:27,160
+All right.
+
+56
+00:03:27,160 --> 00:03:32,200
+And that of course inside of here instead of the option we just have the value right.
+
+57
+00:03:32,260 --> 00:03:32,540
+OK.
+
+58
+00:03:32,540 --> 00:03:36,800
+So item that value and that is it.
+
+59
+00:03:36,910 --> 00:03:38,160
+We don't need anything else.
+
+60
+00:03:38,980 --> 00:03:42,080
+Hopefully I didn't make any mistakes.
+
+61
+00:03:42,220 --> 00:03:49,460
+So we're going to go back to our product and now we can start adding the rest of the form fields.
+
+62
+00:03:49,510 --> 00:03:53,960
+So the first one was the name the second one was the description and that is the text area.
+
+63
+00:03:54,070 --> 00:04:01,070
+So I'm going to go here and say description can to copy and paste it.
+
+64
+00:04:01,090 --> 00:04:02,080
+Let's see what we get.
+
+65
+00:04:03,970 --> 00:04:06,840
+And we get product description and you know it is a text area.
+
+66
+00:04:06,850 --> 00:04:09,930
+Of course you can change this to whatever you want.
+
+67
+00:04:10,020 --> 00:04:13,840
+Now I'm just going to leave it the next one is going to be the price.
+
+68
+00:04:13,840 --> 00:04:22,670
+So copy paste and price price and then price.
+
+69
+00:04:23,200 --> 00:04:24,100
+Do we get it.
+
+70
+00:04:24,210 --> 00:04:24,880
+Yeah we get it.
+
+71
+00:04:24,880 --> 00:04:28,160
+We were getting an error message because we didn't have the added form so far.
+
+72
+00:04:28,240 --> 00:04:30,120
+And it is a type of number.
+
+73
+00:04:30,190 --> 00:04:30,800
+Very good.
+
+74
+00:04:30,910 --> 00:04:35,120
+So I'm going to go back here and say that I want a ruler.
+
+75
+00:04:35,140 --> 00:04:39,530
+Now the thing is that the ruler looked a little bit weird for me.
+
+76
+00:04:39,580 --> 00:04:46,320
+D'Harmental ruler so I'm going to add a class name of a form divider just like this.
+
+77
+00:04:46,330 --> 00:04:51,950
+Now I just realized that I have a couple of stakes you need to fix them right now of course.
+
+78
+00:04:51,970 --> 00:04:54,120
+If not the application will fail.
+
+79
+00:04:54,160 --> 00:04:58,290
+So the next ones are pretty much all selects right.
+
+80
+00:04:58,330 --> 00:05:01,760
+We need the Bran's the shipping the available and everything else.
+
+81
+00:05:01,930 --> 00:05:06,110
+So I'm going to copy one of the top just maybe the first one doesn't matter.
+
+82
+00:05:06,320 --> 00:05:07,780
+They're all the same.
+
+83
+00:05:07,780 --> 00:05:12,740
+And then we need to add the brand and then the brand.
+
+84
+00:05:12,820 --> 00:05:13,360
+All right.
+
+85
+00:05:13,420 --> 00:05:14,220
+They're all the same.
+
+86
+00:05:14,220 --> 00:05:19,210
+Again just like with it before you could create just a function to render all at once you can do that.
+
+87
+00:05:19,230 --> 00:05:20,180
+Yeah no problem.
+
+88
+00:05:20,440 --> 00:05:24,250
+So rant and brand now of course we get this.
+
+89
+00:05:24,280 --> 00:05:29,550
+And this is actually my mistake if we go back to the form fields and we go right here.
+
+90
+00:05:29,560 --> 00:05:31,790
+It's not option it's options.
+
+91
+00:05:31,960 --> 00:05:34,710
+And then it's not option Upton.
+
+92
+00:05:34,750 --> 00:05:35,990
+It's option.
+
+93
+00:05:36,070 --> 00:05:37,150
+Sorry.
+
+94
+00:05:37,150 --> 00:05:38,330
+All right let's try again.
+
+95
+00:05:39,130 --> 00:05:42,730
+So Adelies we get to get no armis of course the information is empty.
+
+96
+00:05:42,730 --> 00:05:45,100
+And he of course tried to do something.
+
+97
+00:05:45,170 --> 00:05:46,300
+Nothing really happens.
+
+98
+00:05:46,340 --> 00:05:49,680
+And we my getting we might be getting an error message but that is OK.
+
+99
+00:05:49,950 --> 00:05:50,290
+OK.
+
+100
+00:05:50,360 --> 00:05:55,540
+So I'm going to go to back to our products and the next one are the shipping and the available.
+
+101
+00:05:55,550 --> 00:05:57,690
+So going to copy paste.
+
+102
+00:05:57,740 --> 00:06:03,600
+I'm going to say shipping and I'm going to say shipping the next one.
+
+103
+00:06:03,680 --> 00:06:05,010
+It's available.
+
+104
+00:06:05,240 --> 00:06:10,350
+So go right here available and then available.
+
+105
+00:06:10,670 --> 00:06:11,250
+Right.
+
+106
+00:06:11,570 --> 00:06:17,480
+I will add a new form divider horn when Varner point form divider.
+
+107
+00:06:17,510 --> 00:06:19,060
+Then I'm going to copy the brand.
+
+108
+00:06:19,130 --> 00:06:20,460
+And now we need the words.
+
+109
+00:06:20,600 --> 00:06:26,070
+So for the word is just what similar to what I believe on the avi.
+
+110
+00:06:26,090 --> 00:06:30,790
+But you know pretty much it's really really close.
+
+111
+00:06:30,830 --> 00:06:34,180
+So I'm going to go to after.
+
+112
+00:06:34,220 --> 00:06:35,700
+We have Fretz.
+
+113
+00:06:36,560 --> 00:06:40,280
+And remember that the word we will get the data from the server.
+
+114
+00:06:40,280 --> 00:06:42,890
+So that's the next thing we're going to do.
+
+115
+00:06:42,890 --> 00:06:48,290
+So after Fretz are going to copy a new form divider are going to go right here at the bottom and we
+
+116
+00:06:48,290 --> 00:06:54,930
+need to put the publish notice tell if the product it's public or not.
+
+117
+00:06:55,130 --> 00:06:58,930
+So we're going to say publish right now at the bottom.
+
+118
+00:06:59,060 --> 00:07:00,960
+And this was the last one.
+
+119
+00:07:01,130 --> 00:07:06,010
+We need to enter it when you get the button and the forms access messages and everything else.
+
+120
+00:07:06,020 --> 00:07:09,650
+So I'm going to go to register and I'm going to copy them from here.
+
+121
+00:07:09,710 --> 00:07:14,070
+So we're going to paste them when I get them trying to make this a little bit nicer.
+
+122
+00:07:15,120 --> 00:07:16,800
+Kind of a failing but that's OK.
+
+123
+00:07:17,010 --> 00:07:24,740
+So instead of creating an account we will have product the form error stays the same but now we have
+
+124
+00:07:24,750 --> 00:07:25,960
+form success.
+
+125
+00:07:26,070 --> 00:07:30,340
+So I'm going to copy the I'm going to put a the big curly braces.
+
+126
+00:07:30,360 --> 00:07:38,760
+There's the state that forms success and of course if we don't get a success we will not do anything.
+
+127
+00:07:38,820 --> 00:07:44,830
+And of course of course name and then form success.
+
+128
+00:07:45,570 --> 00:07:52,140
+And of course if we are getting a success we just displayed success you could do whatever you want right
+
+129
+00:07:52,140 --> 00:07:52,590
+here.
+
+130
+00:07:52,600 --> 00:07:58,220
+Now remember that after we post the product to the database we will get the product back.
+
+131
+00:07:58,230 --> 00:07:59,540
+We could do that.
+
+132
+00:07:59,610 --> 00:08:04,660
+So when we get that we will get it back we can store it in a magical place inside redux.
+
+133
+00:08:04,830 --> 00:08:07,730
+And then of course access through prompts.
+
+134
+00:08:07,870 --> 00:08:12,110
+And once you access through prompts you get the idea of the article you just entered.
+
+135
+00:08:12,360 --> 00:08:12,840
+Right.
+
+136
+00:08:12,900 --> 00:08:16,550
+And you put the ID or the link to the article right there.
+
+137
+00:08:16,860 --> 00:08:17,890
+And that is it.
+
+138
+00:08:18,230 --> 00:08:19,110
+OK.
+
+139
+00:08:19,890 --> 00:08:22,480
+So everything looks nice.
+
+140
+00:08:22,530 --> 00:08:27,070
+If I save it of course we got we can it get it.
+
+141
+00:08:27,220 --> 00:08:27,860
+All right.
+
+142
+00:08:28,160 --> 00:08:31,210
+So the next thing will be populating the brands.
+
+143
+00:08:31,280 --> 00:08:36,380
+And for this we need to do a fat should the server to get the brands and the words and we need to create
+
+144
+00:08:36,380 --> 00:08:45,140
+a function that takes this values and it will go inside brands ride and enter the fields out pneumatically
+
+145
+00:08:45,380 --> 00:08:46,810
+can update the fields.
+
+146
+00:08:46,820 --> 00:08:47,920
+Let's do that right now.
+
+147
+00:08:49,420 --> 00:08:53,390
+All right so where are we going to be fetching the brands and the woods.
+
+148
+00:08:53,560 --> 00:08:56,280
+So from the component about right.
+
+149
+00:08:56,280 --> 00:08:56,920
+All right.
+
+150
+00:08:57,220 --> 00:09:01,970
+So a component that MT open opening close.
+
+151
+00:09:01,990 --> 00:09:10,870
+So first I'm going to do a get a copy of the form form data just like this because whenever we reach
+
+152
+00:09:10,870 --> 00:09:16,410
+to the component amount I'll just copy whatever we have in the state right now whenever it enters here.
+
+153
+00:09:16,450 --> 00:09:21,510
+So State Farm data you could just pass this state the form data layer.
+
+154
+00:09:21,550 --> 00:09:22,870
+You could do that.
+
+155
+00:09:22,960 --> 00:09:23,550
+So OK.
+
+156
+00:09:23,590 --> 00:09:31,600
+So first we need to dispatch to get the Prince so this that prompts that this patch just like this.
+
+157
+00:09:32,020 --> 00:09:35,520
+And we say get brands.
+
+158
+00:09:36,300 --> 00:09:45,100
+All right of course then something happens when we get a response which is you know do something now
+
+159
+00:09:45,430 --> 00:09:46,630
+we're going to do something of course.
+
+160
+00:09:46,630 --> 00:09:51,290
+But first I want to check went to make sure that we get the prance.
+
+161
+00:09:51,310 --> 00:09:55,150
+So I'm going to just console log this that prompts.
+
+162
+00:09:55,150 --> 00:10:03,680
+Remember we are inside products products products dot and then Brant's.
+
+163
+00:10:03,920 --> 00:10:05,980
+Ryan Okay let's see what we get.
+
+164
+00:10:05,980 --> 00:10:08,350
+I'm not using the readouts right here.
+
+165
+00:10:08,380 --> 00:10:12,040
+Just going to go to the Gudel console so we get an array of nine.
+
+166
+00:10:12,070 --> 00:10:13,420
+We are getting the brands.
+
+167
+00:10:13,660 --> 00:10:20,980
+So now what we need to do is to this can convert everything go to the state and store it on the right
+
+168
+00:10:20,980 --> 00:10:24,200
+place because this is going to go chest in brands.
+
+169
+00:10:24,460 --> 00:10:30,130
+So I'm going to delete and copy this one because I'm going to use it in a minute and I'm lazy.
+
+170
+00:10:30,250 --> 00:10:32,970
+So Konst form data.
+
+171
+00:10:33,100 --> 00:10:33,520
+I'm sorry.
+
+172
+00:10:33,520 --> 00:10:44,130
+New form data new form data equals and we will create a function that calls populate option.
+
+173
+00:10:44,410 --> 00:10:53,320
+Or it could be options yes but played option and then fields all right and this function will take a
+
+174
+00:10:53,320 --> 00:10:57,250
+few arguments it's going to take that form data we have at the top.
+
+175
+00:10:57,280 --> 00:11:01,530
+So I'm going to say form data and this form data is viable.
+
+176
+00:11:01,870 --> 00:11:06,870
+And then again we're going to pass this that props that product the Brandts that contains all the brands
+
+177
+00:11:07,180 --> 00:11:11,650
+and then we get past the idea of where we going to be hosting this insight form data.
+
+178
+00:11:11,650 --> 00:11:12,650
+What is the key.
+
+179
+00:11:12,820 --> 00:11:20,730
+In this case is just brand remember it's just a single not Brandt's just brand run to sprint.
+
+180
+00:11:20,920 --> 00:11:21,500
+All right.
+
+181
+00:11:21,760 --> 00:11:27,790
+So after we process all of this this new form data will contain the new state with the brand and all
+
+182
+00:11:27,790 --> 00:11:29,160
+the options inside.
+
+183
+00:11:29,290 --> 00:11:32,420
+So after we do this we just need to update the fields.
+
+184
+00:11:32,470 --> 00:11:35,040
+But for now we are just going to leave it like here.
+
+185
+00:11:35,050 --> 00:11:39,490
+We're going to get we're going to check in a minute what we get from new form data so we need to create
+
+186
+00:11:39,490 --> 00:11:42,040
+this populate option fields.
+
+187
+00:11:42,040 --> 00:11:49,960
+We don't have this and we will do this in side form actions are going to go to form actions cobby Popul
+
+188
+00:11:50,010 --> 00:11:54,030
+late let me make it ride populate.
+
+189
+00:11:54,130 --> 00:11:55,340
+There we go.
+
+190
+00:11:55,870 --> 00:12:03,680
+I'm going to go to form actions remember we have it inside your tills and we're going to add the function
+
+191
+00:12:03,680 --> 00:12:04,850
+just here.
+
+192
+00:12:05,000 --> 00:12:08,600
+Export Konst populate Opt-In fields.
+
+193
+00:12:08,630 --> 00:12:13,170
+We will get some Arkes and then we will do something or I'm okay.
+
+194
+00:12:13,400 --> 00:12:19,180
+So this public option feels will receive that form data that coma.
+
+195
+00:12:19,310 --> 00:12:24,560
+We will get an array of data which at the beginning could be just empty if we don't get it.
+
+196
+00:12:24,560 --> 00:12:25,500
+Just in case.
+
+197
+00:12:25,700 --> 00:12:30,420
+And then you know the field the field where are going to be modifying this saga.
+
+198
+00:12:30,530 --> 00:12:39,020
+So first I'm going to create a new array Konst array or it could be in your array and it's going to
+
+199
+00:12:39,020 --> 00:12:40,500
+be equal to nothing.
+
+200
+00:12:40,560 --> 00:12:44,010
+Ryan then I'm going to grab that new form data.
+
+201
+00:12:44,540 --> 00:12:51,590
+You form data I'm going to create a new form data sorry just like this and this new form data is going
+
+202
+00:12:51,590 --> 00:12:57,710
+to be equal to whatever we have inside form data that is going to happen in this case right.
+
+203
+00:12:57,760 --> 00:13:00,770
+We could just use the form data we get back here.
+
+204
+00:13:01,210 --> 00:13:01,700
+All right.
+
+205
+00:13:01,880 --> 00:13:08,210
+So what do we need to do is very simple which just push the values inside the key inside the new form
+
+206
+00:13:08,210 --> 00:13:08,850
+data.
+
+207
+00:13:09,080 --> 00:13:16,790
+So OK so I'm going to go right here and I call I'm going to call this array data and I'm going to grab
+
+208
+00:13:16,790 --> 00:13:22,850
+that array data that we get going to do dot and I'm going to do a for each on the top.
+
+209
+00:13:22,850 --> 00:13:28,280
+So for each value we have and the array of data which is all the the Brandt's we were getting right
+
+210
+00:13:28,280 --> 00:13:36,330
+here we're going to loop them and in each iteration we will convert and attach them to the new array.
+
+211
+00:13:36,380 --> 00:13:38,870
+Ryan kind of makes sense.
+
+212
+00:13:38,880 --> 00:13:40,370
+So we're going to enter the new array.
+
+213
+00:13:40,580 --> 00:13:42,890
+I'm going to push a new value.
+
+214
+00:13:43,130 --> 00:13:48,540
+But the new value in this time is going to be an object with a key and a value.
+
+215
+00:13:48,550 --> 00:13:51,860
+We are just converting this with we can A did this previously.
+
+216
+00:13:51,860 --> 00:13:59,070
+So the key is going to be the item item dot underscore ID.
+
+217
+00:13:59,090 --> 00:13:59,600
+All right.
+
+218
+00:13:59,600 --> 00:14:07,020
+Then we put a coma and going to pass the value and the value is the item that dot and the name.
+
+219
+00:14:07,070 --> 00:14:09,450
+And this is what comes from the server.
+
+220
+00:14:09,590 --> 00:14:12,070
+If you remember whenever we get the.
+
+221
+00:14:12,440 --> 00:14:13,820
+And then go back to our product.
+
+222
+00:14:13,970 --> 00:14:19,990
+Whenever we get the new form that new form data I'm sorry the the this that props the products and brands.
+
+223
+00:14:20,000 --> 00:14:25,090
+Let me just show you again because maybe you don't remember console that log.
+
+224
+00:14:25,830 --> 00:14:27,690
+This prompts that product the brand.
+
+225
+00:14:27,720 --> 00:14:28,890
+It's a long string.
+
+226
+00:14:30,890 --> 00:14:37,820
+We get nine and we get the ID underscore ID and this one has a name it's not you know maybe value or
+
+227
+00:14:37,820 --> 00:14:38,920
+something like that.
+
+228
+00:14:38,960 --> 00:14:43,060
+That's why on the form actions we are making a reference to item that name.
+
+229
+00:14:43,100 --> 00:14:47,800
+So we are just pushing the object pretty much the same information on a different way.
+
+230
+00:14:48,260 --> 00:14:49,730
+So all right.
+
+231
+00:14:49,760 --> 00:14:54,660
+So we have the new foreign data the copy we made right here at the top.
+
+232
+00:14:54,830 --> 00:15:01,850
+I want to enter the key and the key is inside field and then I'm going to say that I'm going to enter
+
+233
+00:15:01,850 --> 00:15:04,790
+the config dot.
+
+234
+00:15:04,880 --> 00:15:06,710
+I'm going to enter the options.
+
+235
+00:15:06,730 --> 00:15:11,230
+I'm going to say that the new array is now the new value of that one.
+
+236
+00:15:11,240 --> 00:15:13,770
+Now of course this function needs to return something.
+
+237
+00:15:13,880 --> 00:15:19,540
+So we can return new form data right.
+
+238
+00:15:20,200 --> 00:15:21,230
+And that is it.
+
+239
+00:15:21,230 --> 00:15:23,040
+Now populate option fields.
+
+240
+00:15:23,090 --> 00:15:30,530
+If you go back to our product and I do the new form data we're going to get that new you know the new
+
+241
+00:15:30,530 --> 00:15:41,080
+array so we get it let's go to Brant's and we go to config and then inside options we have key and value
+
+242
+00:15:41,440 --> 00:15:42,000
+right.
+
+243
+00:15:42,130 --> 00:15:48,490
+So the only thing left right now is to update update the state but we can run a function that actually
+
+244
+00:15:48,490 --> 00:15:52,380
+does this and it's going to be called update fields.
+
+245
+00:15:52,510 --> 00:15:53,050
+Right.
+
+246
+00:15:53,050 --> 00:15:55,020
+All right let's try to do it right now.
+
+247
+00:15:55,270 --> 00:15:57,590
+So I got to create a function that calls update fields.
+
+248
+00:15:57,850 --> 00:16:08,150
+So this dot update fields opening close and begin to be passing this new form data.
+
+249
+00:16:08,170 --> 00:16:08,820
+All right.
+
+250
+00:16:09,040 --> 00:16:11,520
+So let's create the function right now.
+
+251
+00:16:11,630 --> 00:16:18,100
+You're going to say update fields equals to something and after something we will get you know just
+
+252
+00:16:18,100 --> 00:16:19,580
+an argument right here.
+
+253
+00:16:19,870 --> 00:16:23,470
+So the object fields is going to be really really easy.
+
+254
+00:16:23,470 --> 00:16:25,700
+We just set the state.
+
+255
+00:16:25,720 --> 00:16:31,890
+The thing is that I'm making a function of this because we can do several dispatches maybe to make later
+
+256
+00:16:31,900 --> 00:16:32,840
+we can do more.
+
+257
+00:16:33,040 --> 00:16:35,040
+And you know creating a does that said state.
+
+258
+00:16:35,050 --> 00:16:39,570
+And then this that said state and then again kind of makes no sense.
+
+259
+00:16:39,580 --> 00:16:43,240
+So right inside of that feels the only thing we do right now is this.
+
+260
+00:16:43,240 --> 00:16:49,910
+That said state of form data equals whatever we get.
+
+261
+00:16:49,990 --> 00:16:51,120
+Right here is an argument.
+
+262
+00:16:51,140 --> 00:16:56,200
+New form data data.
+
+263
+00:16:56,240 --> 00:16:57,820
+All right.
+
+264
+00:16:58,210 --> 00:16:59,650
+That is that we should be getting this
+
+265
+00:17:02,580 --> 00:17:04,270
+when we go to France and we get.
+
+266
+00:17:04,270 --> 00:17:06,110
+That's right.
+
+267
+00:17:06,450 --> 00:17:14,220
+And of course it fails because we don't have the update form whenever we do it and change that is OK.
+
+268
+00:17:14,230 --> 00:17:19,770
+OK so let's do the brand and then just move onto the next section so we can complete this.
+
+269
+00:17:19,810 --> 00:17:27,550
+Now this one pretty much the same instead of get Brandt's we have the other dispatch we just get words
+
+270
+00:17:28,160 --> 00:17:29,190
+on the function.
+
+271
+00:17:29,200 --> 00:17:32,820
+So get what's published feels pretty much the same.
+
+272
+00:17:32,830 --> 00:17:38,170
+But on this one it's what if I save it and not notice again.
+
+273
+00:17:38,380 --> 00:17:44,590
+Sometimes it's always good to take the you know take a look a little bit more and instead of doing everything
+
+274
+00:17:44,590 --> 00:17:48,030
+here just create a different function to do this.
+
+275
+00:17:48,150 --> 00:17:50,620
+And it just closes on the way.
+
+276
+00:17:51,340 --> 00:17:51,810
+All right.
+
+277
+00:17:51,850 --> 00:18:00,190
+So we have the brands that is get Let's go to the wood and see if I can find a word with material of
+
+278
+00:18:00,190 --> 00:18:02,690
+course material.
+
+279
+00:18:03,160 --> 00:18:14,470
+And I get an incorrect of course get words when we just change this race Pond's response DNA changed
+
+280
+00:18:14,480 --> 00:18:16,400
+us to of course.
+
+281
+00:18:16,480 --> 00:18:22,900
+Is this a practice that would What's sorry for that.
+
+282
+00:18:23,830 --> 00:18:26,040
+So let's see if this works best.
+
+283
+00:18:26,060 --> 00:18:29,380
+Good mahogany in our right.
+
+284
+00:18:29,500 --> 00:18:35,080
+My favorite is either if you're wondering OK so everything looks good.
+
+285
+00:18:35,230 --> 00:18:37,370
+All the selects are pretty much none.
+
+286
+00:18:37,450 --> 00:18:40,910
+Of course if we select something we get the update form.
+
+287
+00:18:40,960 --> 00:18:45,180
+Now everything went too long so let's go to the next one and complete the form.
+
+288
+00:18:45,190 --> 00:18:45,560
+Right.
+
+289
+00:18:45,610 --> 00:18:48,550
+And we will try to post everything to the server.
+

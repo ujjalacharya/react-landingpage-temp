@@ -1,0 +1,388 @@
+1
+00:00:01,140 --> 00:00:04,050
+All right so now our project is finished.
+
+2
+00:00:04,050 --> 00:00:11,490
+So we need to put it inside of production or host the project some place so we can to use search for
+
+3
+00:00:11,490 --> 00:00:12,200
+the yes.
+
+4
+00:00:12,270 --> 00:00:18,210
+For the first proper project because this is you know a static web project.
+
+5
+00:00:18,270 --> 00:00:22,770
+You know we don't have a no day as going in the background we didn't have a server we didn't have anything
+
+6
+00:00:23,010 --> 00:00:24,210
+after we create a building.
+
+7
+00:00:24,210 --> 00:00:31,280
+This is just some L with some J.S. so search it's really really simple simple to use.
+
+8
+00:00:31,350 --> 00:00:35,180
+And if of course you want to use greater features the prising.
+
+9
+00:00:35,250 --> 00:00:36,700
+It's really small.
+
+10
+00:00:36,780 --> 00:00:43,660
+So if you're a front end developer there's no need to go to Heroku or go to Amazon do you.
+
+11
+00:00:43,680 --> 00:00:45,140
+The only thing you need to do is search.
+
+12
+00:00:45,140 --> 00:00:49,320
+You just push and it's really simple to push the project into production.
+
+13
+00:00:49,560 --> 00:00:50,380
+Really really simple.
+
+14
+00:00:50,400 --> 00:00:51,930
+I can assure you right now.
+
+15
+00:00:51,940 --> 00:01:00,090
+So I going to go to the terminal our terminal you know and I'm going to come and this are going to clear
+
+16
+00:01:00,600 --> 00:01:02,690
+now the venue is inside the venue.
+
+17
+00:01:02,710 --> 00:01:08,520
+Inside our project now what we push to search is search is going to be our build.
+
+18
+00:01:08,550 --> 00:01:14,660
+You know the build of this project not all the directories with sores and everything else.
+
+19
+00:01:14,790 --> 00:01:18,120
+So we push a modified version of our project.
+
+20
+00:01:18,240 --> 00:01:26,010
+So if you go to Pakistan Jason and we go to scripts we have right here the built so we can run NPM run
+
+21
+00:01:26,010 --> 00:01:31,410
+build or Yorn run build and it will create a bundle for production.
+
+22
+00:01:31,500 --> 00:01:35,340
+So I'm going to go right here and I'm using yarned remember.
+
+23
+00:01:35,440 --> 00:01:43,040
+So I'm going to say yarn run built and of course if you're using NPM it's an end run built.
+
+24
+00:01:43,050 --> 00:01:44,140
+So I'm going to press Enter.
+
+25
+00:01:44,160 --> 00:01:46,590
+This is going to take a couple minutes and I'll be right back.
+
+26
+00:01:48,320 --> 00:01:48,740
+OK.
+
+27
+00:01:48,750 --> 00:01:49,760
+Everything was done.
+
+28
+00:01:49,830 --> 00:01:56,600
+So now what we need to do is to install search so we can you know upload the project to build directory
+
+29
+00:01:56,610 --> 00:01:58,010
+we need to upload this one.
+
+30
+00:01:58,080 --> 00:02:00,930
+Not everything else just built into Sorge.
+
+31
+00:02:01,020 --> 00:02:06,480
+So if we go to help Of course we get all the instructions of how to do it and it's real simple.
+
+32
+00:02:06,480 --> 00:02:07,640
+I'm going to show you right now.
+
+33
+00:02:07,890 --> 00:02:14,070
+First we need to install first which you installed search in our computer we install it globally.
+
+34
+00:02:14,070 --> 00:02:17,600
+So I'm going to say clear right now and I'm going to do.
+
+35
+00:02:17,610 --> 00:02:24,890
+And of course if you're using NPM you need to do and PM install mine is because we installed globally
+
+36
+00:02:25,140 --> 00:02:26,280
+and then search.
+
+37
+00:02:26,280 --> 00:02:28,370
+This is what you need to do in my case.
+
+38
+00:02:28,380 --> 00:02:29,270
+I'm using Joern.
+
+39
+00:02:29,340 --> 00:02:33,400
+So it's yarn global.
+
+40
+00:02:33,420 --> 00:02:37,370
+And then of course search just like this.
+
+41
+00:02:37,800 --> 00:02:39,910
+So I'm going to present or will already have it.
+
+42
+00:02:39,910 --> 00:02:42,240
+So I'm going to Precentor of course is going to do it.
+
+43
+00:02:42,420 --> 00:02:43,840
+I'm going to pause and be right back.
+
+44
+00:02:43,870 --> 00:02:47,340
+Maybe it's going to be done let's give it a minute.
+
+45
+00:02:47,750 --> 00:02:48,010
+OK.
+
+46
+00:02:48,020 --> 00:02:49,430
+Everything was installed.
+
+47
+00:02:49,460 --> 00:02:54,020
+So now I have surge in my computer so I can use the search command.
+
+48
+00:02:54,020 --> 00:02:55,380
+First I'm going to clear.
+
+49
+00:02:55,520 --> 00:02:57,440
+So now how to upload it.
+
+50
+00:02:57,440 --> 00:02:58,670
+Really simple.
+
+51
+00:02:58,670 --> 00:03:00,720
+We'd say search just like this.
+
+52
+00:03:00,770 --> 00:03:08,660
+We said mine is P and we are using minus P because I want to put inside of search I when to upload a
+
+53
+00:03:09,110 --> 00:03:13,670
+very specific directory which is the build directory to build we have right here.
+
+54
+00:03:13,670 --> 00:03:20,060
+If I remove the P and I press Enter it's going to try to upload the whole directory all the contents
+
+55
+00:03:20,120 --> 00:03:23,300
+inside the venue directory and we don't want that.
+
+56
+00:03:23,300 --> 00:03:25,310
+We just want to upload to build.
+
+57
+00:03:25,370 --> 00:03:30,940
+So by doing mynahs P I can specify which directory I want to upload.
+
+58
+00:03:30,980 --> 00:03:32,870
+In our case it's going to be built.
+
+59
+00:03:33,050 --> 00:03:38,600
+So I'm going to say minus the build going to press center and it's going to do something in the background
+
+60
+00:03:38,660 --> 00:03:40,410
+and you're going to get something like this.
+
+61
+00:03:40,430 --> 00:03:45,190
+Now I'm getting the e-mail and the token because I'm already registered.
+
+62
+00:03:45,200 --> 00:03:50,060
+I've pushed a few projects into search in the past so it's already my computer.
+
+63
+00:03:50,060 --> 00:03:53,490
+If it's your first time it's going to ask you for your e-mail.
+
+64
+00:03:53,570 --> 00:03:58,960
+And you know to add a passport and after that it's going to give you some information how many files.
+
+65
+00:03:59,090 --> 00:04:04,790
+No the main buy in the first time because it is going to give you kind of a dummy domain and right here
+
+66
+00:04:04,790 --> 00:04:10,810
+you're going to get this square this you know this rectangle and it looks like frozen but it's not it's
+
+67
+00:04:10,810 --> 00:04:12,600
+a waiting for you to press enter.
+
+68
+00:04:12,620 --> 00:04:16,650
+So I'm going to press enter is going to do something is going to start uploading.
+
+69
+00:04:16,650 --> 00:04:17,770
+It's going to take seconds.
+
+70
+00:04:18,600 --> 00:04:19,280
+And that is it.
+
+71
+00:04:19,290 --> 00:04:21,990
+So after it's done it's been a success project.
+
+72
+00:04:21,990 --> 00:04:25,300
+It's published and running at and this domain.
+
+73
+00:04:25,320 --> 00:04:31,340
+So if I copied the domain and I go right here and paste it there you go.
+
+74
+00:04:31,350 --> 00:04:37,530
+We get our re-act app of course we didn't modify this and we get everything else so everything works
+
+75
+00:04:38,310 --> 00:04:38,960
+very very good.
+
+76
+00:04:38,970 --> 00:04:46,800
+You know it's really really really simple to use this is kind of my favorite for chest front and applications.
+
+77
+00:04:46,890 --> 00:04:48,700
+And of course you can do a lot more.
+
+78
+00:04:48,720 --> 00:04:55,440
+You can add a custom domain Maybe your client has already owns a domain so you can of course add that
+
+79
+00:04:55,440 --> 00:04:58,460
+domain and you have kind of a free service.
+
+80
+00:04:58,560 --> 00:05:01,200
+Of course we're not a lot of features.
+
+81
+00:05:01,290 --> 00:05:07,710
+And of course if you pay $3000 a month which is not a lot you get all of the other you know the more
+
+82
+00:05:07,710 --> 00:05:09,750
+professional features.
+
+83
+00:05:09,780 --> 00:05:11,920
+So again everything is on help.
+
+84
+00:05:12,170 --> 00:05:18,280
+All the topics you will need to find you know adding a 4 or 4 or maybe testing or whatever you have
+
+85
+00:05:18,280 --> 00:05:19,860
+it right here.
+
+86
+00:05:19,860 --> 00:05:21,750
+So it's very very cool.
+
+87
+00:05:21,990 --> 00:05:22,830
+And that is it.
+
+88
+00:05:22,830 --> 00:05:27,200
+So remember to go to get help you have the project inside get have you can get the link.
+
+89
+00:05:27,210 --> 00:05:33,510
+So now we're going to move forward to the next project and it's not going to be this easy.
+
+90
+00:05:33,510 --> 00:05:35,610
+This is really easy for us.
+
+91
+00:05:35,610 --> 00:05:41,370
+It took us a few hours maybe two or three hours really really simple but of course this is kind of a
+
+92
+00:05:41,530 --> 00:05:43,430
+warm up project we're going to do.
+
+93
+00:05:43,440 --> 00:05:44,310
+The first one.
+
+94
+00:05:44,460 --> 00:05:50,670
+The next one we will be doing with indication we will using Abebe we will be using a little bit more
+
+95
+00:05:50,670 --> 00:05:52,100
+complex animations.
+
+96
+00:05:52,290 --> 00:05:53,600
+And of course a lot more.
+
+97
+00:05:53,600 --> 00:05:55,110
+So let's go to the next one.
+

@@ -1,0 +1,204 @@
+1
+00:00:00,950 --> 00:00:02,900
+OK so let's insolvable Mungo.
+
+2
+00:00:02,900 --> 00:00:04,150
+I'm going to go right here.
+
+3
+00:00:04,280 --> 00:00:06,340
+I'm going to say rubber Mongo.
+
+4
+00:00:07,070 --> 00:00:14,450
+OK so now right here you can have the rubber Mungo dot org which is Robo 330 formerly of Mongo.
+
+5
+00:00:14,480 --> 00:00:16,480
+That's the one we need.
+
+6
+00:00:16,760 --> 00:00:19,130
+So right here we can have two choices.
+
+7
+00:00:19,310 --> 00:00:26,390
+This is the one we want to download robo 3-G so we can click and download and of course we want it for
+
+8
+00:00:26,390 --> 00:00:30,590
+Mac and my case is going to be the installer 64 bit.
+
+9
+00:00:30,710 --> 00:00:32,940
+You have the option for a portable version.
+
+10
+00:00:33,090 --> 00:00:35,720
+Now just going to go in to install it.
+
+11
+00:00:35,720 --> 00:00:41,330
+So I'm going to put it in downloads and it's going to take just a few seconds.
+
+12
+00:00:41,330 --> 00:00:42,600
+It's 11 megabytes.
+
+13
+00:00:42,610 --> 00:00:46,600
+It's really small so it should be done in a second.
+
+14
+00:00:46,610 --> 00:00:47,510
+Everything done.
+
+15
+00:00:47,510 --> 00:00:54,770
+So I'm just going to click on it and open it and you get a click yes.
+
+16
+00:00:55,060 --> 00:01:01,640
+And then just next then I agree then next and then then install.
+
+17
+00:01:01,990 --> 00:01:05,290
+We just need to keep clicking next.
+
+18
+00:01:05,290 --> 00:01:07,850
+So OK I'm going to run the reboot 3 T.
+
+19
+00:01:07,910 --> 00:01:09,140
+Just real simple.
+
+20
+00:01:10,730 --> 00:01:16,250
+So of you will do and we and then just next we don't want to do this.
+
+21
+00:01:16,270 --> 00:01:19,690
+So I'm going to click and finish and.
+
+22
+00:01:19,690 --> 00:01:20,030
+OK.
+
+23
+00:01:20,050 --> 00:01:27,010
+So the main screen you can have this tiny window and we can have just two choices are going to delete
+
+24
+00:01:27,070 --> 00:01:31,360
+and remove all of them maybe because I have them from a previous version.
+
+25
+00:01:31,450 --> 00:01:32,980
+So I'm just going to delete them.
+
+26
+00:01:33,040 --> 00:01:35,650
+Now what do we need to do with it to click uncreate.
+
+27
+00:01:35,660 --> 00:01:41,950
+Right here we have four choices create edit remove and done and clone and then click and create.
+
+28
+00:01:41,950 --> 00:01:44,390
+Right here we going to create a new connection.
+
+29
+00:01:44,560 --> 00:01:47,220
+You can assign whatever name I'm going to put mine.
+
+30
+00:01:47,260 --> 00:01:49,550
+Local then Robo.
+
+31
+00:01:49,560 --> 00:01:52,440
+I'm sorry for Mongo.
+
+32
+00:01:52,540 --> 00:01:55,260
+And then we get.
+
+33
+00:01:55,330 --> 00:01:58,940
+So again it's going to be local host and 27 0 1 7.
+
+34
+00:01:58,960 --> 00:02:05,880
+Remember that we have right here Domingo the running on the 2 7 0 1 7.
+
+35
+00:02:06,040 --> 00:02:09,420
+So I'm going to do save right here.
+
+36
+00:02:09,490 --> 00:02:12,390
+We're going to have this instance the local MTV.
+
+37
+00:02:12,550 --> 00:02:14,470
+Again you could use whatever name you want.
+
+38
+00:02:14,490 --> 00:02:15,970
+Going to connect.
+
+39
+00:02:15,970 --> 00:02:21,460
+It's going to take one second and right here on the top left you're going to have local MTV system and
+
+40
+00:02:21,460 --> 00:02:22,350
+then test.
+
+41
+00:02:22,370 --> 00:02:26,740
+Now if we open this test and if we go to collections and we will talk.
+
+42
+00:02:26,770 --> 00:02:31,110
+What collections is and document are you going can have the test.
+
+43
+00:02:31,210 --> 00:02:37,190
+Now if I double click on the on the test you can get right here the information that we've entered previously.
+
+44
+00:02:37,350 --> 00:02:40,400
+You have the D and the name Francis.
+
+45
+00:02:40,510 --> 00:02:46,300
+So right here you could have whatever view you can have the table view you can have the Jason view and
+
+46
+00:02:46,300 --> 00:02:53,270
+we can edit or add some documents some data and modified Vihear directly from this interface.
+
+47
+00:02:53,380 --> 00:02:58,100
+So this is much much much much easier than doing it from here.
+
+48
+00:02:58,250 --> 00:02:58,590
+Right.
+
+49
+00:02:58,630 --> 00:03:01,690
+So everything went OK that's good.
+
+50
+00:03:01,690 --> 00:03:04,740
+This is just a simple application just a simple interface.
+
+51
+00:03:04,870 --> 00:03:09,880
+So let's move forward and go to the next section and start using Mongo D-B.
+

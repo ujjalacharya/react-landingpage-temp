@@ -1,0 +1,952 @@
+1
+00:00:00,420 --> 00:00:03,410
+OK so let's create the edit play or logic.
+
+2
+00:00:03,490 --> 00:00:05,050
+It's going to be very very simple.
+
+3
+00:00:05,070 --> 00:00:07,230
+Because we kind of already did this.
+
+4
+00:00:07,230 --> 00:00:08,550
+So we're going to use this.
+
+5
+00:00:08,580 --> 00:00:12,110
+Robert Penney the one I've just entered.
+
+6
+00:00:12,120 --> 00:00:13,170
+Why.
+
+7
+00:00:13,170 --> 00:00:20,760
+Because the other ones if you go to the database we can have a reference to you know the image of that
+
+8
+00:00:20,760 --> 00:00:23,780
+player and the image in your database.
+
+9
+00:00:23,850 --> 00:00:26,720
+And in my database as well doesn't exist.
+
+10
+00:00:26,760 --> 00:00:29,330
+No it's on a different Feinberg's project.
+
+11
+00:00:29,330 --> 00:00:29,850
+All right.
+
+12
+00:00:30,150 --> 00:00:34,440
+So we're going to use just the first one the Roberd penny whatever.
+
+13
+00:00:34,440 --> 00:00:40,010
+So if I go to from a penny we do enter the edit player logic but nothing happens.
+
+14
+00:00:40,020 --> 00:00:40,590
+OK.
+
+15
+00:00:40,860 --> 00:00:44,340
+So on the component that mount this is where we start this one.
+
+16
+00:00:44,400 --> 00:00:47,380
+If we don't have an ID goes to a player.
+
+17
+00:00:47,400 --> 00:00:52,430
+But if we do have an ID because this is the case we're going to do something else.
+
+18
+00:00:52,590 --> 00:00:57,040
+So first we need to fetch the player data with this ID.
+
+19
+00:00:57,180 --> 00:01:06,390
+So first we make a reference to firebase and D-B that we use the ref opening close and we entered again
+
+20
+00:01:06,520 --> 00:01:07,750
+to use tempera strings.
+
+21
+00:01:07,890 --> 00:01:10,500
+We entered the players section.
+
+22
+00:01:10,500 --> 00:01:12,790
+Then of course we need to pass the player id.
+
+23
+00:01:12,840 --> 00:01:19,980
+So player id after this we use ones we use value just like before.
+
+24
+00:01:20,100 --> 00:01:28,260
+And then of course we go to then what we get back is going to be a snapshot after we get the snapshot
+
+25
+00:01:28,290 --> 00:01:29,920
+we can run a function.
+
+26
+00:01:30,000 --> 00:01:35,020
+Now again inside the snapshot we don't have anything we need to access vowel.
+
+27
+00:01:35,040 --> 00:01:42,100
+So first I'm going to create a viable called player and then data and inside of here I'm going to store
+
+28
+00:01:42,330 --> 00:01:46,800
+whatever we have inside snapshot dot and then bow.
+
+29
+00:01:47,100 --> 00:01:51,840
+Right now there is one thing we at this point we do have.
+
+30
+00:01:51,840 --> 00:01:58,730
+We get the player information you know the player data but we just have the image the image name we
+
+31
+00:01:58,730 --> 00:01:59,770
+don't have the download.
+
+32
+00:01:59,770 --> 00:02:00,310
+You're out.
+
+33
+00:02:00,320 --> 00:02:02,030
+You know the actual image.
+
+34
+00:02:02,220 --> 00:02:03,560
+And we will need it.
+
+35
+00:02:03,600 --> 00:02:10,410
+So I'm going to enter firebase again dot and your storage Dot are going to enter the ref.
+
+36
+00:02:10,410 --> 00:02:14,210
+Remember we are using the players directory players.
+
+37
+00:02:14,520 --> 00:02:21,870
+And then just like we did before we access the child and we have this information inside player that
+
+38
+00:02:22,110 --> 00:02:22,620
+image.
+
+39
+00:02:22,650 --> 00:02:26,660
+And this of course is on the database player image.
+
+40
+00:02:26,690 --> 00:02:27,270
+All right.
+
+41
+00:02:27,450 --> 00:02:33,920
+Once we pass that the child information the data is going to come back with the get download you are
+
+42
+00:02:33,950 --> 00:02:40,390
+l and of course then we get a promise after we get a promise we will get a u r l back.
+
+43
+00:02:40,590 --> 00:02:43,170
+And then of course we can do whatever we want.
+
+44
+00:02:43,440 --> 00:02:46,920
+So what are we going to do we going to create a function to update fields.
+
+45
+00:02:47,280 --> 00:02:49,900
+So we don't have this function we can create it right now.
+
+46
+00:02:50,280 --> 00:02:57,440
+So we're going to do this update just like this and then fields just like we did with Update matches.
+
+47
+00:02:57,840 --> 00:02:59,490
+So we need a few things.
+
+48
+00:02:59,490 --> 00:03:04,850
+First we need to play your data something copy player data and put it as an argument.
+
+49
+00:03:04,860 --> 00:03:09,340
+The second argument is going to be the player IDs are going to put Player D.
+
+50
+00:03:09,500 --> 00:03:16,250
+That's the third thing is going to be what kind of form we are using and which type which form type.
+
+51
+00:03:16,380 --> 00:03:18,750
+In this case it's not going to be a player.
+
+52
+00:03:18,750 --> 00:03:21,800
+It's going to be added and then player.
+
+53
+00:03:21,990 --> 00:03:28,020
+And again this is going to be the title of the form and then going to do coma are going to be passing
+
+54
+00:03:28,020 --> 00:03:30,780
+the u r l for that image.
+
+55
+00:03:30,810 --> 00:03:32,740
+Now we didn't have this update fields.
+
+56
+00:03:32,940 --> 00:03:38,860
+If you go to our application could break you know and of course is breaking right.
+
+57
+00:03:38,910 --> 00:03:43,360
+So I'm going to go to our big fields right here on top of the component at Mt..
+
+58
+00:03:43,650 --> 00:03:47,070
+And you know create the function real simple.
+
+59
+00:03:47,330 --> 00:03:51,260
+So because of something open it close that's good.
+
+60
+00:03:51,600 --> 00:04:01,200
+So we get the player as the first argument the second one is the player id player id the third one is
+
+61
+00:04:01,200 --> 00:04:10,170
+the type of the form type and the fourth one is the default M G and notice that this default EMG is
+
+62
+00:04:10,170 --> 00:04:11,080
+the same.
+
+63
+00:04:11,160 --> 00:04:17,160
+We are using on the this is not the same model just the same name but this is where we are going to
+
+64
+00:04:17,160 --> 00:04:20,340
+be storing that value inside of default EMG.
+
+65
+00:04:20,360 --> 00:04:21,000
+All right.
+
+66
+00:04:22,190 --> 00:04:22,530
+OK.
+
+67
+00:04:22,650 --> 00:04:24,960
+I could use a different name but you know.
+
+68
+00:04:25,410 --> 00:04:27,310
+OK so what do we need to do first.
+
+69
+00:04:27,420 --> 00:04:36,600
+Just like always we need a copy of new of the form data so form and then data equals open and close
+
+70
+00:04:36,810 --> 00:04:37,620
+added.
+
+71
+00:04:38,040 --> 00:04:43,100
+This that state that form that data right.
+
+72
+00:04:43,170 --> 00:04:44,770
+So now we have a copy.
+
+73
+00:04:44,790 --> 00:04:50,580
+Now what we need to do we need to call the new form data and you know change the values change to valid
+
+74
+00:04:50,610 --> 00:04:56,820
+to true and change the value to whatever we get from player which is all the player information.
+
+75
+00:04:56,850 --> 00:05:07,530
+So for opening close and let key in New form data I'm going to call this one right.
+
+76
+00:05:07,860 --> 00:05:17,160
+And going by what we do is we enter form data we enter that key and we assign a new value and the value
+
+77
+00:05:17,160 --> 00:05:22,750
+is going to be whatever value we get inside player with the same key.
+
+78
+00:05:22,770 --> 00:05:30,480
+All right we need to change the balance so you form data they're going to copy this one because I'm
+
+79
+00:05:30,480 --> 00:05:35,130
+lazy and then valid and this one will be ballot too.
+
+80
+00:05:35,130 --> 00:05:37,320
+True because now we do have a value.
+
+81
+00:05:37,740 --> 00:05:45,930
+And at the end what we do is we set a new state with a lot of properties the player I.D. We change at
+
+82
+00:05:46,170 --> 00:05:47,880
+the top we have a player I.D..
+
+83
+00:05:48,000 --> 00:05:51,630
+So now we will have it a form type and the default image.
+
+84
+00:05:51,640 --> 00:05:51,910
+Right.
+
+85
+00:05:51,940 --> 00:05:56,500
+So can we go back here for Pori ID equals two player id.
+
+86
+00:05:56,670 --> 00:05:58,910
+And remember I am using is 6.
+
+87
+00:05:59,010 --> 00:06:02,050
+This could be if we are not using a 6 something like this.
+
+88
+00:06:02,160 --> 00:06:04,720
+But since the key and the value are the same.
+
+89
+00:06:04,890 --> 00:06:08,350
+I can do this and each will do it for us.
+
+90
+00:06:08,490 --> 00:06:12,810
+Then we have the default image and that's why I'm using the same name.
+
+91
+00:06:12,990 --> 00:06:17,960
+Then we have the form type so form type it's equal to.
+
+92
+00:06:18,030 --> 00:06:22,250
+And you know I could do the same thing form type form type.
+
+93
+00:06:22,260 --> 00:06:23,270
+There we go.
+
+94
+00:06:23,440 --> 00:06:25,480
+Magic of ESX.
+
+95
+00:06:25,500 --> 00:06:26,750
+So then we have the form data.
+
+96
+00:06:26,790 --> 00:06:32,170
+So form data is going to be equal to new form data.
+
+97
+00:06:32,820 --> 00:06:34,400
+All right.
+
+98
+00:06:34,410 --> 00:06:35,310
+That is it.
+
+99
+00:06:35,310 --> 00:06:37,930
+If I reload the application we are already on that player.
+
+100
+00:06:37,980 --> 00:06:45,890
+It's going to take a second and we get the image we get the name and everything else so everything works
+
+101
+00:06:46,430 --> 00:06:47,260
+very good.
+
+102
+00:06:47,540 --> 00:06:52,720
+So now the next step would be going to submit form.
+
+103
+00:06:52,730 --> 00:06:56,860
+Right now we are adding a new player but we are not editing a new player.
+
+104
+00:06:56,990 --> 00:07:04,100
+So this could work if we push some data with the same ID and same everything on firebase is going to
+
+105
+00:07:04,100 --> 00:07:04,820
+get updated.
+
+106
+00:07:04,820 --> 00:07:10,810
+But you know I would like to run you know a proper update on the under-fire base.
+
+107
+00:07:10,950 --> 00:07:11,310
+OK.
+
+108
+00:07:11,660 --> 00:07:18,200
+So inside form time are going to go right here and I'm going to say OK I want to access firebase to
+
+109
+00:07:18,200 --> 00:07:18,780
+be.
+
+110
+00:07:19,010 --> 00:07:21,330
+I want to enter the ref.
+
+111
+00:07:21,470 --> 00:07:23,780
+I want to use a template strings.
+
+112
+00:07:23,890 --> 00:07:31,340
+Going to enter players for Slash and I'm going to be using whatever I have inside this state that player
+
+113
+00:07:31,340 --> 00:07:31,720
+id.
+
+114
+00:07:31,730 --> 00:07:34,940
+That's why we stored the ID there.
+
+115
+00:07:34,940 --> 00:07:41,000
+And then I got to go and perform an update opening close and would what we are going to be updating
+
+116
+00:07:41,000 --> 00:07:43,240
+it with data to submit.
+
+117
+00:07:43,250 --> 00:07:44,270
+All right.
+
+118
+00:07:44,270 --> 00:07:49,580
+Then of course we get a problem is back and we run something something very simple and they're going
+
+119
+00:07:49,580 --> 00:07:56,380
+to run a function called this success form or from success not going are going to call it success form
+
+120
+00:07:56,930 --> 00:07:59,890
+success and form.
+
+121
+00:08:00,170 --> 00:08:01,090
+Right.
+
+122
+00:08:01,160 --> 00:08:04,510
+And the success form and going to be passing on a message.
+
+123
+00:08:04,550 --> 00:08:06,230
+So it's pretty much the same thing with it.
+
+124
+00:08:06,230 --> 00:08:13,010
+With the update match same same idea and of course if we get a catch we catch the error.
+
+125
+00:08:13,040 --> 00:08:22,850
+We run a function and then this that said state and we pass that form error for error equals to true.
+
+126
+00:08:22,850 --> 00:08:27,340
+So we are pretty much doing the same thing with that with APNIC matches.
+
+127
+00:08:27,350 --> 00:08:29,260
+This is the same same logic.
+
+128
+00:08:29,350 --> 00:08:29,850
+Right.
+
+129
+00:08:30,140 --> 00:08:35,390
+So we didn't have this function this access form so I'm going to copy success for to go right here the
+
+130
+00:08:35,390 --> 00:08:43,590
+top opening close and it was successful and it's really really simple.
+
+131
+00:08:43,590 --> 00:08:50,760
+I'm going to say message right here because we are passing a message and on this which is this that
+
+132
+00:08:50,870 --> 00:08:55,770
+said state opening closed and we say that they form success.
+
+133
+00:08:55,940 --> 00:08:59,280
+It's equal to whenever we get from the message.
+
+134
+00:08:59,330 --> 00:09:05,220
+We will see the you know that display the message because we have it right here on the right here.
+
+135
+00:09:05,410 --> 00:09:06,820
+Something is wrong.
+
+136
+00:09:07,190 --> 00:09:12,910
+Success label this state from success so we're going to get that message there.
+
+137
+00:09:12,920 --> 00:09:16,010
+Now of course after two seconds I want to clear this out.
+
+138
+00:09:16,190 --> 00:09:20,100
+So set time out open it close.
+
+139
+00:09:20,270 --> 00:09:24,320
+We run a function and this function will run after.
+
+140
+00:09:24,350 --> 00:09:25,670
+I don't know two seconds.
+
+141
+00:09:25,670 --> 00:09:26,760
+Sounds good.
+
+142
+00:09:27,420 --> 00:09:28,230
+I'm going to say this.
+
+143
+00:09:28,230 --> 00:09:32,630
+That said State Farm success back to nothing.
+
+144
+00:09:33,360 --> 00:09:34,980
+And that is it.
+
+145
+00:09:35,010 --> 00:09:37,210
+So I'm going to reload the application.
+
+146
+00:09:37,510 --> 00:09:41,060
+We're still inside the penny won the rubber penny.
+
+147
+00:09:41,310 --> 00:09:50,160
+So Penny Wise just like the like the clown they're going to edit player updated correctly and then it
+
+148
+00:09:50,160 --> 00:09:50,950
+goes away.
+
+149
+00:09:51,060 --> 00:09:58,530
+Now if I go out to a different route and we go to the index we have an updated Pennywise if of course
+
+150
+00:09:58,530 --> 00:10:01,790
+if we enter again we can do.
+
+151
+00:10:01,800 --> 00:10:07,150
+I don't know 69 because it's funny added player.
+
+152
+00:10:07,620 --> 00:10:11,720
+And we go to players and everything works.
+
+153
+00:10:11,820 --> 00:10:15,260
+Now if you ask me now I'm taking a look at this.
+
+154
+00:10:15,360 --> 00:10:22,740
+I could add is downloading maybe a state saying that it's downloading and not show anything until we
+
+155
+00:10:22,740 --> 00:10:25,880
+have everything from the component that mound right here.
+
+156
+00:10:25,890 --> 00:10:29,270
+After all the server and everything it's done so we can do this.
+
+157
+00:10:29,270 --> 00:10:34,350
+I'm not good at it right now because it's something very simple you can do it on your own time no problem.
+
+158
+00:10:34,770 --> 00:10:37,050
+OK so now what's going to happen next.
+
+159
+00:10:37,110 --> 00:10:43,230
+We need to create the team and the matches end point because now we have a database for teams you know
+
+160
+00:10:43,230 --> 00:10:45,700
+database with matches and with players.
+
+161
+00:10:45,870 --> 00:10:46,780
+So we're going to go.
+
+162
+00:10:46,780 --> 00:10:47,870
+Let me just show you.
+
+163
+00:10:47,970 --> 00:10:53,670
+If you go to the team we get the animation with all the teams going to get the images of the players
+
+164
+00:10:53,940 --> 00:10:56,700
+and we review remember every ball already have this card.
+
+165
+00:10:56,700 --> 00:10:59,790
+So this is going to be pretty pretty simple.
+
+166
+00:10:59,880 --> 00:11:01,220
+Now then we have the mattress.
+
+167
+00:11:01,270 --> 00:11:07,560
+So inside of the mattress we will load the matches and of course we're going to apply some filtering
+
+168
+00:11:07,740 --> 00:11:09,790
+right here we have the plate.
+
+169
+00:11:09,930 --> 00:11:13,080
+We're going to show the play or maybe all of the games.
+
+170
+00:11:13,130 --> 00:11:14,590
+What do they actually won.
+
+171
+00:11:14,640 --> 00:11:15,860
+Lose draw.
+
+172
+00:11:16,110 --> 00:11:20,530
+And this table is kind of a hardcoded table.
+
+173
+00:11:20,940 --> 00:11:23,560
+Did this just to complete lay out.
+
+174
+00:11:23,600 --> 00:11:24,910
+You're not going to really do it.
+
+175
+00:11:25,170 --> 00:11:28,990
+But I'm going to explain you why we are not doing league table.
+
+176
+00:11:29,190 --> 00:11:31,060
+When we reached this section.
+
+177
+00:11:31,210 --> 00:11:36,870
+Now if we go back to our application we have one tiny problem.
+
+178
+00:11:36,960 --> 00:11:44,580
+All of this works this you know the final project I did works because on a different instance of a database
+
+179
+00:11:44,810 --> 00:11:51,310
+of firebase I've uploaded each images I created you know an entry for each player.
+
+180
+00:11:51,330 --> 00:11:55,300
+I did all that work you know the data entry job.
+
+181
+00:11:55,650 --> 00:11:58,020
+But on our project we didn't do that.
+
+182
+00:11:58,350 --> 00:12:04,710
+So if I go for example to one of the players that were already on the database when I give you this
+
+183
+00:12:04,750 --> 00:12:10,050
+all ready on the Jason if I go for example this one it's going to fail.
+
+184
+00:12:10,080 --> 00:12:16,290
+We're going to get an error message because on the database we do have an image for this guy you know
+
+185
+00:12:16,290 --> 00:12:19,910
+for a Whero we do have an image an image name.
+
+186
+00:12:19,920 --> 00:12:22,740
+Let me see if I can find it.
+
+187
+00:12:23,310 --> 00:12:23,700
+There we go.
+
+188
+00:12:23,700 --> 00:12:30,070
+We do have a name for the image but this one of course in our firebase doesn't exist.
+
+189
+00:12:30,210 --> 00:12:31,640
+So it's not finding it.
+
+190
+00:12:31,680 --> 00:12:33,870
+And of course it breaks.
+
+191
+00:12:33,870 --> 00:12:36,670
+Now how to fix it.
+
+192
+00:12:36,690 --> 00:12:42,570
+I'm going to show you just a quick quick fix and then I'm going to go I'm going to give you two different
+
+193
+00:12:42,630 --> 00:12:44,500
+options of what you can do.
+
+194
+00:12:44,760 --> 00:12:46,700
+And this is completely up to you.
+
+195
+00:12:46,800 --> 00:12:50,550
+So I'm going to open it close and can it just open it close to catch.
+
+196
+00:12:50,550 --> 00:12:52,800
+So if you get an error begin to catch it.
+
+197
+00:12:52,980 --> 00:12:58,710
+Now instead of doing this it feels and all of this when I'm going to do I get to say this uptick feels.
+
+198
+00:12:58,860 --> 00:13:05,080
+But instead of passing the player data just like it is I can use some destructuring.
+
+199
+00:13:05,530 --> 00:13:10,230
+I'm going to toss inside of that object whatever we have inside player data.
+
+200
+00:13:10,350 --> 00:13:15,900
+But at the end I'm going to grab the image property and I'm going to set it back to nothing.
+
+201
+00:13:15,900 --> 00:13:19,460
+So this is not going to fill our application is not going to fail.
+
+202
+00:13:19,530 --> 00:13:21,410
+We are still unable to find the image.
+
+203
+00:13:21,420 --> 00:13:25,740
+We are going to get the message but not this will not break.
+
+204
+00:13:25,740 --> 00:13:30,070
+And this your elf course doesn't exist so we can you know pass nothing.
+
+205
+00:13:30,420 --> 00:13:37,470
+And if I reload the application the app loads all the rest of the information Sakyo the name and everything
+
+206
+00:13:37,470 --> 00:13:39,030
+else but not the image.
+
+207
+00:13:39,030 --> 00:13:43,760
+So we are right to add an image if we want it to sell and we just tried.
+
+208
+00:13:43,770 --> 00:13:45,050
+I don't know.
+
+209
+00:13:45,120 --> 00:13:47,790
+So we add the image and we get it.
+
+210
+00:13:47,790 --> 00:13:52,820
+So maybe later we could you know edit player and add this.
+
+211
+00:13:52,820 --> 00:13:54,220
+So what you can do.
+
+212
+00:13:54,510 --> 00:13:56,560
+There are two things right.
+
+213
+00:13:56,940 --> 00:14:03,420
+You can go to each player on the list because we need them to go to each player and say OK on this one
+
+214
+00:14:03,510 --> 00:14:05,520
+I know that I don't have an image.
+
+215
+00:14:05,730 --> 00:14:12,660
+So you can go select Choose file and if you noticed inside resources of the file this folder I gave
+
+216
+00:14:12,660 --> 00:14:20,150
+you inside images you have players players to upload and you have the strikers midfielder's keep and
+
+217
+00:14:20,160 --> 00:14:20,960
+everything else.
+
+218
+00:14:21,090 --> 00:14:29,350
+So you can load this Sergio Aguero image from there and of course you will be floating this from here
+
+219
+00:14:29,410 --> 00:14:40,080
+players to upload striker Sergio Aguero I do it just like this we added the player and you know you're
+
+220
+00:14:40,080 --> 00:14:43,910
+ready to go because now this image is in your database.
+
+221
+00:14:43,920 --> 00:14:46,610
+So if I enter again everything is cool.
+
+222
+00:14:46,620 --> 00:14:47,600
+So what you can do is this.
+
+223
+00:14:47,610 --> 00:14:52,680
+You can go on each player and you notice that right here you have the position and the name.
+
+224
+00:14:52,860 --> 00:14:56,910
+And of course upload the image from this end point to your database.
+
+225
+00:14:56,910 --> 00:14:58,030
+That's one thing.
+
+226
+00:14:58,050 --> 00:15:03,930
+Now if you don't want to do this because of course it's some data entry job and it takes a while you
+
+227
+00:15:03,930 --> 00:15:04,340
+can.
+
+228
+00:15:04,380 --> 00:15:08,460
+Whenever we reach to the section you can load a fake image.
+
+229
+00:15:08,610 --> 00:15:14,680
+We can load a fake image on the component and load the same image for all the carts for all the players.
+
+230
+00:15:14,730 --> 00:15:16,410
+We could do that right.
+
+231
+00:15:16,680 --> 00:15:16,900
+OK.
+
+232
+00:15:16,950 --> 00:15:18,240
+That's a quick fix.
+
+233
+00:15:18,240 --> 00:15:24,530
+If you don't want to do the data entry job you can do that no problem Okay so what going to have now
+
+234
+00:15:24,860 --> 00:15:31,050
+on the next section I'm going to give you of course a sip of everything we did right here for the players
+
+235
+00:15:31,670 --> 00:15:36,340
+and we're going to move forward and we can start with with a team.
+
+236
+00:15:36,350 --> 00:15:38,480
+Why not going to go to the team section.
+
+237
+00:15:38,480 --> 00:15:38,690
+Right.
+
+238
+00:15:38,690 --> 00:15:39,990
+Let's go to the next one.
+

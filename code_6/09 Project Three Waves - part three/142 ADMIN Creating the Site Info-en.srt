@@ -1,0 +1,1060 @@
+1
+00:00:00,750 --> 00:00:02,980
+All right so now we are going to do the site info.
+
+2
+00:00:03,090 --> 00:00:07,680
+So inside of the site info it's going to be pretty much different components.
+
+3
+00:00:07,710 --> 00:00:12,840
+For now we're going to get only one later I'm going to do as a bonus one more component but pretty much
+
+4
+00:00:12,840 --> 00:00:18,660
+in this place we can we can update the site information just like the footer with the address and the
+
+5
+00:00:18,660 --> 00:00:22,780
+phone and everything else and maybe you are thinking why doing this.
+
+6
+00:00:22,800 --> 00:00:29,150
+Well imagine that you're the owner of the other shop needs to change the phone and you can have a common
+
+7
+00:00:29,220 --> 00:00:30,300
+place to do that.
+
+8
+00:00:30,330 --> 00:00:37,980
+So they will need to contact you and you will need to go make the changes you know deploying the application
+
+9
+00:00:37,980 --> 00:00:38,500
+again.
+
+10
+00:00:38,580 --> 00:00:40,570
+So you know not a good idea.
+
+11
+00:00:40,880 --> 00:00:41,380
+OK.
+
+12
+00:00:41,610 --> 00:00:45,680
+So first we need to come place to it so we can render this site info.
+
+13
+00:00:45,870 --> 00:00:50,760
+So I'm going to go to user are going to go to admin because he's an admin route and I'm going to create
+
+14
+00:00:50,760 --> 00:00:56,200
+a new file called manage and then site that jackass.
+
+15
+00:00:56,250 --> 00:01:01,620
+Now this managed site is going to be kind of like the index because remember I told you I'm going to
+
+16
+00:01:01,620 --> 00:01:03,430
+do a bonus section with a feature.
+
+17
+00:01:03,660 --> 00:01:08,220
+So this one is just going to render a component that contains a form.
+
+18
+00:01:08,400 --> 00:01:11,550
+So we can you know make the request to make the update.
+
+19
+00:01:11,590 --> 00:01:12,220
+Right.
+
+20
+00:01:12,260 --> 00:01:19,470
+So Match site is going to be a re-act stateless component and I'm going to call it manage and then site
+
+21
+00:01:20,370 --> 00:01:23,530
+right to that and then manage site.
+
+22
+00:01:23,810 --> 00:01:33,170
+It's going to create insight Atman a new file called Update site and then info whenever you know something
+
+23
+00:01:33,210 --> 00:01:34,400
+like a good name.
+
+24
+00:01:34,440 --> 00:01:39,300
+So this one is going to be react class-B component because we need to dispatch actions.
+
+25
+00:01:39,300 --> 00:01:47,160
+Use forms and everything else so update a model within the company will you update then site and then
+
+26
+00:01:47,460 --> 00:01:50,870
+info and then side info.
+
+27
+00:01:50,880 --> 00:01:56,810
+Or could be formed you know form that's get a copy of course from within mench side.
+
+28
+00:01:56,970 --> 00:02:05,700
+We need to import it so Update site info from that forward slash and then update site info.
+
+29
+00:02:06,210 --> 00:02:10,620
+And of course I'm going to make a reference to this component inside of your second open.
+
+30
+00:02:10,680 --> 00:02:12,000
+Make the reference and that's it.
+
+31
+00:02:12,000 --> 00:02:15,480
+That is the only thing that this component is going to do.
+
+32
+00:02:15,510 --> 00:02:17,200
+Now of course we need to create the route.
+
+33
+00:02:17,220 --> 00:02:19,900
+Oh and of course we need to include the user layout.
+
+34
+00:02:20,160 --> 00:02:30,150
+So import then user and then lay out from that for Slashdot for Slash that one more time then I believe
+
+35
+00:02:30,150 --> 00:02:31,780
+it's a chose C..
+
+36
+00:02:34,260 --> 00:02:36,810
+And then for Slash and.
+
+37
+00:02:36,870 --> 00:02:39,730
+Oh no sorry it's one more up three.
+
+38
+00:02:40,080 --> 00:02:44,690
+So H.O. C and then use lay out right.
+
+39
+00:02:44,880 --> 00:02:49,200
+And we need to wrap pretty much the whole component inside of here.
+
+40
+00:02:49,230 --> 00:02:52,440
+Of course we need to we need to add this as a route.
+
+41
+00:02:52,650 --> 00:02:53,210
+No.
+
+42
+00:02:53,400 --> 00:02:54,910
+So let's go to routes.
+
+43
+00:02:55,140 --> 00:03:00,210
+First I'm going to import it so import and we call this managed site.
+
+44
+00:03:02,330 --> 00:03:08,990
+From dobbed forward slash components for Slash user or slash.
+
+45
+00:03:09,260 --> 00:03:12,030
+And then the update.
+
+46
+00:03:12,070 --> 00:03:16,520
+Now been of course then for Slash and then manage site.
+
+47
+00:03:16,860 --> 00:03:22,260
+So since this is anatman I'm going to copy and paste it at the bottom and this one.
+
+48
+00:03:22,280 --> 00:03:29,780
+The route for this site info could be you know something else but that's OK.
+
+49
+00:03:30,270 --> 00:03:34,240
+So going to paste it and of course every year load the application.
+
+50
+00:03:34,280 --> 00:03:40,290
+We get the nav and then the form which is the component inside this one.
+
+51
+00:03:40,340 --> 00:03:40,890
+All right.
+
+52
+00:03:41,090 --> 00:03:43,020
+So we need to do a lot of things first.
+
+53
+00:03:43,220 --> 00:03:47,100
+First let's start to get something out of this.
+
+54
+00:03:47,240 --> 00:03:49,190
+Maybe the form or a title or something.
+
+55
+00:03:49,190 --> 00:03:52,100
+You know the start to create the form up.
+
+56
+00:03:52,120 --> 00:03:55,790
+Going to close this one close and pretty much everything.
+
+57
+00:03:56,420 --> 00:04:02,250
+And just like with that before because we are going to be working with forms are going to go to the
+
+58
+00:04:02,250 --> 00:04:07,180
+ER just to log in and bring the register components because we need to import things at the top and
+
+59
+00:04:07,370 --> 00:04:10,080
+you know this ones are pretty much the same thing.
+
+60
+00:04:10,310 --> 00:04:12,310
+So update site info.
+
+61
+00:04:12,350 --> 00:04:18,710
+I'm going to paste it right here so we have a form fill up update generated data is form valid and if
+
+62
+00:04:18,710 --> 00:04:22,880
+you remember with that function you know to populate fields.
+
+63
+00:04:23,060 --> 00:04:24,350
+So this one is the same.
+
+64
+00:04:24,350 --> 00:04:25,130
+Same thing.
+
+65
+00:04:25,280 --> 00:04:28,870
+So I'm going to go to update personal info where we actually it.
+
+66
+00:04:28,910 --> 00:04:34,800
+I did this and copied it populate field right comma and paste it.
+
+67
+00:04:34,850 --> 00:04:38,310
+Now the rowdiest is going to be a little bit different so that forward slash.
+
+68
+00:04:38,420 --> 00:04:46,310
+One more one directory up and the same thing for you tells all right going to save it and see if we
+
+69
+00:04:46,310 --> 00:04:47,070
+can get the error.
+
+70
+00:04:47,090 --> 00:04:48,760
+Now let's get it works.
+
+71
+00:04:48,890 --> 00:04:50,050
+Now we need to connect.
+
+72
+00:04:50,080 --> 00:04:58,230
+So import then connect and then from Riak redux.
+
+73
+00:04:58,230 --> 00:04:59,450
+All right.
+
+74
+00:04:59,810 --> 00:05:02,060
+And of course then later we can import the action.
+
+75
+00:05:02,060 --> 00:05:08,470
+For now everything is get so going to bring connect and then update site info.
+
+76
+00:05:08,470 --> 00:05:09,420
+All right.
+
+77
+00:05:09,560 --> 00:05:17,510
+Now of course a pre-populated we need to bring props and we can't import the prompts from a new reducer
+
+78
+00:05:17,510 --> 00:05:18,940
+in a new auction.
+
+79
+00:05:18,990 --> 00:05:24,800
+Right because now we have the site and they are now decide it's not products and it's not user.
+
+80
+00:05:24,860 --> 00:05:30,050
+So we will need to create a news pod for this so I'm going to do it right now and of course later we
+
+81
+00:05:30,050 --> 00:05:30,900
+can to use it.
+
+82
+00:05:30,920 --> 00:05:37,720
+So going to match state to prompts just like this going to lead the own prompts and the keyboard for
+
+83
+00:05:37,730 --> 00:05:39,280
+this is going to be site.
+
+84
+00:05:39,410 --> 00:05:42,180
+Then state that site.
+
+85
+00:05:42,530 --> 00:05:47,310
+All right so we don't have a file for this actions and we don't have them pretty much.
+
+86
+00:05:47,390 --> 00:05:50,300
+We don't have anything so let's created right now.
+
+87
+00:05:50,450 --> 00:05:53,540
+I'm going to go to auctions and inside actions.
+
+88
+00:05:53,750 --> 00:05:56,710
+And you filed called side actions right.
+
+89
+00:05:57,000 --> 00:06:04,660
+Or go when you file side actions that Jap's what's good.
+
+90
+00:06:05,170 --> 00:06:11,390
+So now just like the other ones going to bring the all the ones we need to import ASIO's just like this.
+
+91
+00:06:11,450 --> 00:06:12,740
+We need to import types.
+
+92
+00:06:12,770 --> 00:06:18,790
+For now I'm just going to import it and do this and later of course we're going to use it now.
+
+93
+00:06:18,830 --> 00:06:22,070
+Of course for now it's going to be empty so I'm going to comment.
+
+94
+00:06:22,250 --> 00:06:28,000
+And now we need to import the route where the site requests are going to go.
+
+95
+00:06:28,190 --> 00:06:32,910
+So if you remember we have this one inside components and then Minsk.
+
+96
+00:06:33,130 --> 00:06:39,260
+I'm going to go here to create a new Marvel called site server so we are pretty much doing the same
+
+97
+00:06:39,260 --> 00:06:40,950
+work we did with the other ones.
+
+98
+00:06:40,950 --> 00:06:44,610
+That's the only thing we are doing so we need to go to Eutelsat and misc.
+
+99
+00:06:44,870 --> 00:06:48,490
+So tells me go ask.
+
+100
+00:06:49,010 --> 00:06:51,670
+And of course I'm going to create a new place for this one.
+
+101
+00:06:51,930 --> 00:07:02,390
+So export export then it Konst and then side server equals and we are going to go to.
+
+102
+00:07:02,420 --> 00:07:03,490
+Same thing than before.
+
+103
+00:07:03,530 --> 00:07:07,600
+API for Slash and for Slash and that site.
+
+104
+00:07:08,210 --> 00:07:10,270
+So we don't have this route and server.
+
+105
+00:07:10,310 --> 00:07:11,500
+We will need to create it.
+
+106
+00:07:11,690 --> 00:07:14,850
+But there are going to be the route it's really really simple.
+
+107
+00:07:15,170 --> 00:07:21,000
+All right so now we have the we have a site server so site server and that is going to work.
+
+108
+00:07:21,060 --> 00:07:22,090
+All right.
+
+109
+00:07:22,190 --> 00:07:24,680
+Now of course in a minute we're going to create the action.
+
+110
+00:07:24,690 --> 00:07:28,040
+But first we need to bring the we douceur to this.
+
+111
+00:07:28,030 --> 00:07:35,120
+So we're going to go to reducers when it opened the index of reducers and create a new file called side
+
+112
+00:07:35,510 --> 00:07:36,490
+reducer.
+
+113
+00:07:36,650 --> 00:07:39,110
+Yes.
+
+114
+00:07:39,110 --> 00:07:45,120
+So on this one on this section we're doing all the boring boring stuff.
+
+115
+00:07:45,380 --> 00:07:46,660
+But we need to do it.
+
+116
+00:07:46,700 --> 00:07:48,460
+There is no way around this.
+
+117
+00:07:48,470 --> 00:07:52,730
+So just like with the index I'm sorry with the actions we need to import types.
+
+118
+00:07:52,790 --> 00:07:57,400
+So I'm going to copy paste and from now empty.
+
+119
+00:07:57,530 --> 00:07:59,850
+Then of course we need to export a function.
+
+120
+00:07:59,940 --> 00:08:03,440
+It's going to go to a reducer I can accomplish pretty much everything.
+
+121
+00:08:03,450 --> 00:08:12,240
+And then of course delete it and maybe if you're on if you're saying Dude why are you not typing what
+
+122
+00:08:12,490 --> 00:08:13,450
+you can do.
+
+123
+00:08:13,530 --> 00:08:16,530
+You type everything that you build your application.
+
+124
+00:08:16,550 --> 00:08:18,970
+No not really OK.
+
+125
+00:08:19,490 --> 00:08:21,200
+So it looks looks OK.
+
+126
+00:08:21,270 --> 00:08:22,480
+Correct.
+
+127
+00:08:22,490 --> 00:08:29,830
+Now of course before we can begin we need at least maybe something that looks like a form right here
+
+128
+00:08:30,200 --> 00:08:35,360
+and we pretty much have everything we need inside register because we kind of already did this.
+
+129
+00:08:35,450 --> 00:08:39,390
+So we need the form state and the form data inside the state.
+
+130
+00:08:39,580 --> 00:08:45,380
+So I'm going to go right here and say state equals and then we get the form data with the form error
+
+131
+00:08:45,650 --> 00:08:46,940
+and everything else.
+
+132
+00:08:47,000 --> 00:08:50,510
+And of course we will need to do a lot more right here.
+
+133
+00:08:50,510 --> 00:08:54,100
+So OK so what are we going to be using.
+
+134
+00:08:54,230 --> 00:09:01,610
+We're going to create a pod right here inside of our our server that it's going to be it's going to
+
+135
+00:09:01,610 --> 00:09:02,270
+be site.
+
+136
+00:09:02,300 --> 00:09:07,670
+And in this case is going to be sites and the site sites begin to have a different piece of information
+
+137
+00:09:07,680 --> 00:09:12,810
+just like the address the working hours the phone and the info always.
+
+138
+00:09:12,890 --> 00:09:13,500
+Right.
+
+139
+00:09:13,700 --> 00:09:14,210
+OK.
+
+140
+00:09:14,450 --> 00:09:22,110
+So what we're going to be pretty much using is again address hours phone and e-mail.
+
+141
+00:09:22,130 --> 00:09:27,470
+So we need to create a valid you know a valid form data that we can use.
+
+142
+00:09:27,640 --> 00:09:32,630
+So I'm going to go to the register and I'm going to copy this one.
+
+143
+00:09:32,630 --> 00:09:34,060
+And of course we're going to change it.
+
+144
+00:09:34,340 --> 00:09:35,870
+So this one is going to be address.
+
+145
+00:09:35,870 --> 00:09:38,330
+So address it is still an input.
+
+146
+00:09:38,390 --> 00:09:42,880
+It's not named Iput is going to be address input address.
+
+147
+00:09:43,400 --> 00:09:49,030
+And please enter the site address.
+
+148
+00:09:49,030 --> 00:09:49,880
+That's OK.
+
+149
+00:09:50,170 --> 00:09:53,720
+And again this is going to be valid false touched false.
+
+150
+00:09:53,840 --> 00:09:57,840
+And we can add that show label property show Leavell.
+
+151
+00:09:58,250 --> 00:10:00,180
+And this one is going to be true.
+
+152
+00:10:00,470 --> 00:10:03,340
+I'm not sure if we are really using the show label.
+
+153
+00:10:03,380 --> 00:10:04,300
+We're going to check it later.
+
+154
+00:10:04,340 --> 00:10:05,210
+That's OK.
+
+155
+00:10:05,660 --> 00:10:06,030
+OK.
+
+156
+00:10:06,050 --> 00:10:07,820
+I'm going to add a label right here.
+
+157
+00:10:07,850 --> 00:10:12,140
+We're going to use it and this one is going to be address.
+
+158
+00:10:12,200 --> 00:10:12,870
+All right.
+
+159
+00:10:12,920 --> 00:10:14,950
+Next one is the working hours.
+
+160
+00:10:15,080 --> 00:10:19,630
+So get a copy of this one pasted at the bottom and then I'm going to say.
+
+161
+00:10:19,880 --> 00:10:21,340
+Hours.
+
+162
+00:10:22,520 --> 00:10:23,230
+Hours.
+
+163
+00:10:23,360 --> 00:10:23,790
+OK.
+
+164
+00:10:24,020 --> 00:10:33,260
+So input address you know working hours and right here hours you know that this is boring but we need
+
+165
+00:10:33,260 --> 00:10:33,880
+to do it.
+
+166
+00:10:33,980 --> 00:10:39,830
+And inside hours or maybe working hours.
+
+167
+00:10:39,840 --> 00:10:40,730
+All right.
+
+168
+00:10:40,890 --> 00:10:43,210
+Next one is going to be the phone.
+
+169
+00:10:43,240 --> 00:10:53,740
+So phone copy paste is when it's going to be phone than working actually phone number.
+
+170
+00:10:54,240 --> 00:10:58,640
+And this one with the phone and enter the phone number
+
+171
+00:11:02,280 --> 00:11:03,130
+all right.
+
+172
+00:11:03,160 --> 00:11:08,650
+So we have one more to go which is the email of the website and everything is going to be true right
+
+173
+00:11:08,650 --> 00:11:10,930
+here with show Leavell going to show all.
+
+174
+00:11:11,020 --> 00:11:14,750
+So I'm going to cubbing phone are going to go here and say e-mail.
+
+175
+00:11:15,040 --> 00:11:17,790
+And now think about this instead of the register.
+
+176
+00:11:17,920 --> 00:11:20,890
+We do have an e-mail Sanch is going to copy that one.
+
+177
+00:11:20,950 --> 00:11:22,840
+Go to update site info.
+
+178
+00:11:22,870 --> 00:11:24,130
+Replace this one.
+
+179
+00:11:24,130 --> 00:11:28,890
+And the only thing we need to add right here is the show Leavell of true.
+
+180
+00:11:29,350 --> 00:11:37,740
+And then we just passed a label that says label open close and then shop e-mail or something like that.
+
+181
+00:11:37,780 --> 00:11:38,800
+Doesn't matter right now.
+
+182
+00:11:39,070 --> 00:11:39,900
+OK.
+
+183
+00:11:40,480 --> 00:11:42,510
+Get Burguet.
+
+184
+00:11:42,520 --> 00:11:49,860
+So now we have all the form data we need more thanks right here including the update form function.
+
+185
+00:11:49,990 --> 00:11:52,520
+So update form update form.
+
+186
+00:11:52,600 --> 00:11:59,350
+One thing less to do than we need to submit forms so submit form just get a copy go right here submit
+
+187
+00:11:59,350 --> 00:12:05,700
+form right inside if you're going to say console log and then data to submit.
+
+188
+00:12:05,900 --> 00:12:06,900
+Right.
+
+189
+00:12:07,030 --> 00:12:09,530
+You know we did this many many times.
+
+190
+00:12:09,670 --> 00:12:14,730
+So this one is going to be site info.
+
+191
+00:12:14,740 --> 00:12:16,520
+Same thing with the old ones.
+
+192
+00:12:16,840 --> 00:12:19,600
+We are going to need that populate but we're going to do it later.
+
+193
+00:12:19,620 --> 00:12:25,600
+Because first we need a server or maybe a place where we can you know fetch the information about the
+
+194
+00:12:25,600 --> 00:12:26,410
+site.
+
+195
+00:12:26,560 --> 00:12:27,140
+Right.
+
+196
+00:12:27,340 --> 00:12:27,890
+All right.
+
+197
+00:12:28,010 --> 00:12:28,360
+OK.
+
+198
+00:12:28,450 --> 00:12:29,090
+That is good.
+
+199
+00:12:29,350 --> 00:12:32,200
+So let's create a form for this.
+
+200
+00:12:32,200 --> 00:12:37,030
+So we were going to use a div of course just like they were just for.
+
+201
+00:12:37,060 --> 00:12:41,260
+We need to copy the form and create a form.
+
+202
+00:12:41,500 --> 00:12:42,180
+Right.
+
+203
+00:12:42,220 --> 00:12:43,720
+So form.
+
+204
+00:12:44,620 --> 00:12:48,500
+So we will need four different form fields.
+
+205
+00:12:48,720 --> 00:12:50,140
+I'm going to copy the first one.
+
+206
+00:12:50,140 --> 00:12:52,910
+I'm going to copy the e-mail so I don't do it again.
+
+207
+00:12:53,320 --> 00:12:54,100
+And we can have four.
+
+208
+00:12:54,100 --> 00:13:00,820
+So the first one the second one the third one and the fourth one and I'm going to rearrange this so
+
+209
+00:13:00,840 --> 00:13:04,630
+you can look a little bit nicer for my selection.
+
+210
+00:13:04,840 --> 00:13:05,470
+Right.
+
+211
+00:13:05,500 --> 00:13:07,100
+So the first one it's the address.
+
+212
+00:13:07,120 --> 00:13:16,810
+So address just like this and address right here just like we have at the top address Burguet.
+
+213
+00:13:16,810 --> 00:13:19,860
+And I'm going to maybe close this ones.
+
+214
+00:13:20,160 --> 00:13:21,340
+Yeah that's it.
+
+215
+00:13:21,820 --> 00:13:22,560
+OK.
+
+216
+00:13:22,860 --> 00:13:28,760
+So the next one is going to be the hours so hours and same thing right here.
+
+217
+00:13:29,040 --> 00:13:36,650
+Now the phone and then phone what else we need e-mail we've already have it.
+
+218
+00:13:36,680 --> 00:13:37,450
+All right.
+
+219
+00:13:37,470 --> 00:13:39,380
+Get some going to go back to register.
+
+220
+00:13:39,410 --> 00:13:45,330
+And now we need the Budenz you know the Confirm error and form success and everything else.
+
+221
+00:13:45,350 --> 00:13:52,460
+So I'm going to go to this def and it copy the div and go back right here and I'm going to paste it
+
+222
+00:13:52,880 --> 00:13:53,570
+right.
+
+223
+00:13:54,000 --> 00:13:56,310
+And it's a dead format.
+
+224
+00:13:56,600 --> 00:13:57,510
+And then arrow label.
+
+225
+00:13:57,520 --> 00:13:58,600
+OK forget it.
+
+226
+00:13:58,640 --> 00:14:01,040
+You can show it in this instead of this one.
+
+227
+00:14:01,040 --> 00:14:01,950
+Create an account.
+
+228
+00:14:02,000 --> 00:14:03,030
+Well not really.
+
+229
+00:14:03,180 --> 00:14:09,560
+No it's going to be modify or update update it's a good word update.
+
+230
+00:14:09,650 --> 00:14:12,580
+And then we need the does that state that success.
+
+231
+00:14:12,590 --> 00:14:21,440
+So we don't have it on the register so that state that form success may find success if we do have something
+
+232
+00:14:21,690 --> 00:14:24,140
+that we do something if not we don't do anything.
+
+233
+00:14:24,440 --> 00:14:30,180
+And what we're going to do we just render a div just like this one and this one is going to be form
+
+234
+00:14:30,180 --> 00:14:36,830
+success form success and we're going to say chess success.
+
+235
+00:14:36,900 --> 00:14:38,610
+We are almost done the pain.
+
+236
+00:14:38,630 --> 00:14:39,910
+It's almost over.
+
+237
+00:14:42,450 --> 00:14:44,640
+All right.
+
+238
+00:14:44,800 --> 00:14:45,000
+OK.
+
+239
+00:14:45,020 --> 00:14:47,340
+We are done with you know the boring stuff.
+
+240
+00:14:47,370 --> 00:14:51,480
+Let me add a title because it looks weird to me without a title.
+
+241
+00:14:51,480 --> 00:14:57,470
+So let me go here and say one side info.
+
+242
+00:14:58,310 --> 00:14:58,820
+Right.
+
+243
+00:15:00,350 --> 00:15:00,680
+OK.
+
+244
+00:15:00,720 --> 00:15:02,090
+Looks a little bit better.
+
+245
+00:15:02,280 --> 00:15:02,770
+OK.
+
+246
+00:15:03,090 --> 00:15:08,690
+So we pretty much have everything we need right at least to show something right here.
+
+247
+00:15:08,720 --> 00:15:16,590
+Now when I enter to this modified site info I want to go to the server fetch whatever we have on the
+
+248
+00:15:16,590 --> 00:15:19,160
+on the database for site info.
+
+249
+00:15:19,170 --> 00:15:19,860
+Right.
+
+250
+00:15:19,920 --> 00:15:21,700
+And pre-populated right here.
+
+251
+00:15:21,720 --> 00:15:26,730
+Now the problem is that we don't have anything on our database.
+
+252
+00:15:26,730 --> 00:15:27,810
+We don't have anything.
+
+253
+00:15:28,050 --> 00:15:33,730
+And if we go to the models we don't have anything that says that talking about site info.
+
+254
+00:15:33,900 --> 00:15:35,210
+So this is what we need to do.
+
+255
+00:15:35,280 --> 00:15:37,460
+We need to create a model for the site.
+
+256
+00:15:37,680 --> 00:15:38,080
+Right.
+
+257
+00:15:38,100 --> 00:15:40,960
+So we can update modify values.
+
+258
+00:15:40,980 --> 00:15:48,240
+We need a route on the server where we can make the request to update or to you know get the site information
+
+259
+00:15:48,630 --> 00:15:53,700
+and we will need to add some dummy information at the least the first information on our application
+
+260
+00:15:53,910 --> 00:15:55,930
+that talks about about site.
+
+261
+00:15:56,040 --> 00:16:01,270
+So whenever we load the screen we're going to get the values and populate right here.
+
+262
+00:16:01,530 --> 00:16:06,100
+So let's go to the next section and we can go to the server and do all of this.
+
+263
+00:16:06,110 --> 00:16:07,400
+It's going to be very very simple.
+
+264
+00:16:07,440 --> 00:16:07,710
+Right.
+
+265
+00:16:07,710 --> 00:16:09,460
+Not that complicated.
+

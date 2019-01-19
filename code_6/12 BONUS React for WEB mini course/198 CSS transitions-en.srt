@@ -1,0 +1,492 @@
+1
+00:00:00,780 --> 00:00:06,960
+Read so now we know that transmission uses a state to do the transitions says your sister incisions
+
+2
+00:00:07,210 --> 00:00:08,820
+follows the same idea.
+
+3
+00:00:08,820 --> 00:00:14,850
+So I'm going to go to see our sister stations right here we get just a text so we're going to be needing
+
+4
+00:00:14,850 --> 00:00:19,590
+the same thing that with before the state and this show did function.
+
+5
+00:00:19,620 --> 00:00:21,130
+So I'm going to copy all of this.
+
+6
+00:00:21,150 --> 00:00:24,910
+Get a copy and then paste it right here.
+
+7
+00:00:25,200 --> 00:00:25,710
+OK.
+
+8
+00:00:25,950 --> 00:00:27,980
+I want to stay with the name but that's fine.
+
+9
+00:00:27,990 --> 00:00:29,380
+Just leave it fade.
+
+10
+00:00:29,660 --> 00:00:30,000
+OK.
+
+11
+00:00:30,030 --> 00:00:32,590
+So what else do we do we need.
+
+12
+00:00:32,640 --> 00:00:33,740
+We have to function.
+
+13
+00:00:33,930 --> 00:00:37,360
+And we're going to need the button that is going to be changing state.
+
+14
+00:00:37,440 --> 00:00:43,250
+So I'm going to copy and delete CSSA decisions and pays the bottom of the bottom.
+
+15
+00:00:43,350 --> 00:00:45,680
+So you know we get it.
+
+16
+00:00:45,960 --> 00:00:50,130
+So now we need to import and we going to import something else.
+
+17
+00:00:50,160 --> 00:00:56,740
+It's going to be import and the name is going to be CSSA just like that Sia says all in caps.
+
+18
+00:00:56,940 --> 00:00:58,710
+And then transmission.
+
+19
+00:00:58,780 --> 00:00:59,830
+No it's different.
+
+20
+00:00:59,840 --> 00:01:02,210
+And the other one the other one is called transition.
+
+21
+00:01:02,420 --> 00:01:02,940
+OK.
+
+22
+00:01:03,330 --> 00:01:12,050
+So this one is going to be it's going to be from and then react dosh transmission and then group Burguet.
+
+23
+00:01:12,900 --> 00:01:18,220
+Remember notice that right here we didn't have a forced slash just react rescissions group.
+
+24
+00:01:18,330 --> 00:01:23,190
+So now just like with it before we need to wrap everything inside these elements.
+
+25
+00:01:23,210 --> 00:01:25,780
+So CSSA transmission opening close.
+
+26
+00:01:25,950 --> 00:01:30,750
+And for now I'm going to I'm going to just show a dip print a dip.
+
+27
+00:01:31,320 --> 00:01:31,610
+OK.
+
+28
+00:01:31,650 --> 00:01:33,800
+So we get hello and of course nothing else.
+
+29
+00:01:33,810 --> 00:01:34,990
+It's not working.
+
+30
+00:01:35,340 --> 00:01:42,120
+So with transmission's what we get we get a function that has this state and then we use this date to
+
+31
+00:01:42,150 --> 00:01:43,600
+change the class names.
+
+32
+00:01:43,830 --> 00:01:45,660
+Now with the assistance missions.
+
+33
+00:01:45,840 --> 00:01:49,990
+This one is going to be it's going to work kind of a different way there.
+
+34
+00:01:50,040 --> 00:01:55,830
+First we get the same options then before we have the end which is going to be equal to this state and
+
+35
+00:01:55,830 --> 00:01:56,780
+then show.
+
+36
+00:01:56,880 --> 00:02:00,910
+And then of course we have the time out which is going to be five seconds.
+
+37
+00:02:00,930 --> 00:02:04,230
+I know it's a long time but it's going to make sense in a minute.
+
+38
+00:02:04,390 --> 00:02:07,540
+To put five seconds so the next option.
+
+39
+00:02:07,560 --> 00:02:13,440
+And of course with this rescissions is going to be required is going to be called class names in asset
+
+40
+00:02:13,440 --> 00:02:14,450
+class names.
+
+41
+00:02:14,640 --> 00:02:17,040
+And notice that this one it's plural.
+
+42
+00:02:17,370 --> 00:02:21,340
+So with this one I'm going to be using a class that's going to I'm going to give it a class.
+
+43
+00:02:21,600 --> 00:02:28,920
+So what your system is going to do is going to use this class to append the classes inside our dip and
+
+44
+00:02:28,920 --> 00:02:30,640
+it's going to do it for us.
+
+45
+00:02:30,690 --> 00:02:35,350
+There's no need to grab the state and do the class ourselves.
+
+46
+00:02:35,370 --> 00:02:37,450
+It's going to do it out medically.
+
+47
+00:02:37,470 --> 00:02:42,960
+So OK so this one is done I'm going to save and I'm going to go right here going to make a bigger of
+
+48
+00:02:42,960 --> 00:02:44,670
+course nothing is going to happen.
+
+49
+00:02:44,670 --> 00:02:50,620
+Going to do the inspect going to reload the page again and select that Hello.
+
+50
+00:02:50,730 --> 00:02:52,220
+So for now we don't have anything.
+
+51
+00:02:52,230 --> 00:02:56,970
+If I click it notice that we get square exit and it's quite exit active.
+
+52
+00:02:57,180 --> 00:02:59,820
+And then it's going to be deleting that.
+
+53
+00:02:59,940 --> 00:03:03,020
+So it's appending the classes for us.
+
+54
+00:03:03,090 --> 00:03:08,640
+And if I do show or click kind is going to do square enter and a square enter active.
+
+55
+00:03:08,640 --> 00:03:11,150
+So this is the class that you're getting.
+
+56
+00:03:11,190 --> 00:03:17,220
+So the assistance sessions is grabbing this square class that we passed inside class names and it's
+
+57
+00:03:17,220 --> 00:03:23,960
+going to pan the square and it's going to add and the dash enter and the active as well.
+
+58
+00:03:24,030 --> 00:03:27,740
+You know it kind of makes sense can be confusing but it makes sense.
+
+59
+00:03:27,990 --> 00:03:35,000
+So now we have the state of when the element is entering or it's active while it's entering.
+
+60
+00:03:35,010 --> 00:03:39,960
+Now the thing is that we have a tiny problem whenever the we have the debt you want to reproduce the
+
+61
+00:03:39,960 --> 00:03:41,940
+same example right here.
+
+62
+00:03:41,940 --> 00:03:48,810
+We didn't have a class that is going to be saying that the dev it's red you know we get no class at
+
+63
+00:03:48,810 --> 00:03:49,400
+all.
+
+64
+00:03:49,560 --> 00:03:52,670
+So what we can do we can add a class name manually.
+
+65
+00:03:52,680 --> 00:03:54,590
+It's going to be it's going to say class name.
+
+66
+00:03:54,810 --> 00:03:57,320
+It's going to be equal to something.
+
+67
+00:03:57,330 --> 00:04:04,140
+So first I'm going to be adding the class square and then I need to know when the element it's visible
+
+68
+00:04:04,170 --> 00:04:05,020
+or not.
+
+69
+00:04:05,040 --> 00:04:10,830
+If you notice right here after the transition is done it's going to be deleting the classes.
+
+70
+00:04:10,830 --> 00:04:13,080
+The state we didn't get anything.
+
+71
+00:04:13,110 --> 00:04:16,600
+So what I'm going to do we're going to make a reference of this text you know.
+
+72
+00:04:16,620 --> 00:04:20,900
+True or false is going to be this state that show.
+
+73
+00:04:21,360 --> 00:04:26,760
+So now when we reload the page the element is going to be right here and note notice that it's grabbing
+
+74
+00:04:26,760 --> 00:04:29,910
+the classes from this one from Square.
+
+75
+00:04:30,270 --> 00:04:32,430
+I'm going to go right here is going to say is square.
+
+76
+00:04:32,430 --> 00:04:32,670
+True.
+
+77
+00:04:32,670 --> 00:04:37,230
+So we have the classic square and we have true because the element is it's possible.
+
+78
+00:04:37,230 --> 00:04:43,700
+So if I click it is going to be adding the false and the square exit and the square exit active.
+
+79
+00:04:43,950 --> 00:04:46,930
+And then of course it goes back to square false.
+
+80
+00:04:46,940 --> 00:04:48,760
+So you know it's to working.
+
+81
+00:04:48,780 --> 00:04:51,490
+So of course right now nothing is happening.
+
+82
+00:04:51,750 --> 00:04:56,630
+You know you don't get a transition's because we will need to add the C Ss for this.
+
+83
+00:04:56,850 --> 00:05:02,650
+So let's go to AB That's the assess and start adding the transitions right here.
+
+84
+00:05:02,650 --> 00:05:08,940
+You know we have the square already so there's no need to add it so we can say Square and then I'm going
+
+85
+00:05:08,940 --> 00:05:18,030
+to be adding the false false and it's going to be a background of I don't know whatever color.
+
+86
+00:05:18,120 --> 00:05:21,650
+Let me do one two three and then three.
+
+87
+00:05:21,750 --> 00:05:28,230
+You know a nice orange and they're going to be adding the transform and the transform is going to be
+
+88
+00:05:28,230 --> 00:05:33,840
+translate X and then minus 100 percent just like that.
+
+89
+00:05:33,960 --> 00:05:35,230
+Then we have the square.
+
+90
+00:05:35,230 --> 00:05:45,750
+True it's going to be Doud square and then that true opening close and begin to be moving the dif to
+
+91
+00:05:45,750 --> 00:05:47,170
+the original decision.
+
+92
+00:05:47,340 --> 00:05:50,910
+So it's going to be translate X and then 0 percent.
+
+93
+00:05:51,060 --> 00:05:51,660
+And what else.
+
+94
+00:05:51,660 --> 00:05:56,730
+You know we are getting the state of square enter and then square are active.
+
+95
+00:05:56,970 --> 00:06:00,260
+So we can use these states to do something else.
+
+96
+00:06:00,300 --> 00:06:12,420
+So I'm going to say Square and then dash and tour and the dot and square dash enter dosh active and
+
+97
+00:06:12,420 --> 00:06:18,100
+this one going to be change the background to blue get the next one.
+
+98
+00:06:18,120 --> 00:06:25,460
+Again is the same idea is going to be the square that does exit dot and then square.
+
+99
+00:06:25,470 --> 00:06:26,010
+Same thing.
+
+100
+00:06:26,050 --> 00:06:30,370
+Everything is very repetitive except and then active.
+
+101
+00:06:30,840 --> 00:06:33,720
+And this one is going to be background over a..
+
+102
+00:06:33,750 --> 00:06:35,830
+Green good.
+
+103
+00:06:36,560 --> 00:06:39,600
+So in theory this again should be working.
+
+104
+00:06:39,660 --> 00:06:42,310
+Going to reload the page we get the rodef.
+
+105
+00:06:42,360 --> 00:06:48,380
+If I click at an exit and notice that is using the exit and it's quite active and is changing to green
+
+106
+00:06:48,600 --> 00:06:50,740
+and then it's going to change the state falls.
+
+107
+00:06:50,880 --> 00:06:56,610
+If I click it again we get the green and it's changing to blue because we have the enter and the enter
+
+108
+00:06:56,610 --> 00:07:01,230
+active and when it's done it's going to be going to the original state.
+
+109
+00:07:01,390 --> 00:07:07,690
+Remember that we are using five seconds for all and are going to be changing this to two seconds.
+
+110
+00:07:09,420 --> 00:07:12,140
+It's going to be a little bit faster just a little bit faster.
+
+111
+00:07:12,270 --> 00:07:15,140
+Wait two seconds it's a lot of time.
+
+112
+00:07:15,340 --> 00:07:16,610
+So I'm going to show hide.
+
+113
+00:07:16,710 --> 00:07:17,720
+It's going to do it.
+
+114
+00:07:18,470 --> 00:07:20,250
+And if I click it again.
+
+115
+00:07:20,430 --> 00:07:22,280
+No it works.
+
+116
+00:07:22,280 --> 00:07:22,650
+All right.
+
+117
+00:07:22,650 --> 00:07:26,390
+So you know it's it's real simple since we know how this one works.
+
+118
+00:07:26,720 --> 00:07:29,240
+We know how this one is going to work as well.
+
+119
+00:07:29,240 --> 00:07:30,600
+I mean save it again.
+
+120
+00:07:31,060 --> 00:07:31,500
+OK.
+
+121
+00:07:31,530 --> 00:07:32,440
+So let's.
+
+122
+00:07:32,510 --> 00:07:37,460
+Let's move to the next video we're going to be talking about the transition's group and we're going
+
+123
+00:07:37,460 --> 00:07:40,040
+to be using this tiny little function.
+

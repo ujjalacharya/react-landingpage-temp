@@ -1,0 +1,268 @@
+1
+00:00:01,100 --> 00:00:01,450
+All right.
+
+2
+00:00:01,460 --> 00:00:07,480
+So now we have the data inside props and that news and this is going to be an array of objects.
+
+3
+00:00:07,490 --> 00:00:14,960
+So now we need a way to loop this array of objects coming from props and display data right here.
+
+4
+00:00:14,960 --> 00:00:18,080
+So first I'm going to just remove this from here.
+
+5
+00:00:18,230 --> 00:00:20,720
+I'm just going to say items for now.
+
+6
+00:00:21,070 --> 00:00:27,510
+And OK I'm going to go right here at the top and it can create a viable that is going to be called items.
+
+7
+00:00:27,980 --> 00:00:34,200
+So this verbal is going to be looping whatever information we get from prop's the news.
+
+8
+00:00:34,460 --> 00:00:41,720
+So I'm going to first begin to be X accessing prop's then we're going to say Dot and I'm going to access
+
+9
+00:00:41,720 --> 00:00:45,380
+news because you know the data it's inside there.
+
+10
+00:00:45,530 --> 00:00:50,810
+And then since we have an array of objects are going to be using map and you're going to be using map
+
+11
+00:00:50,840 --> 00:00:52,410
+the whole time.
+
+12
+00:00:52,630 --> 00:00:55,040
+This could be your best friend.
+
+13
+00:00:55,240 --> 00:00:55,920
+So OK.
+
+14
+00:00:56,180 --> 00:01:02,240
+So now what we need to do we need to pass whatever we want to loop which is this.
+
+15
+00:01:02,270 --> 00:01:06,050
+And in each iteration we're going to pass an item.
+
+16
+00:01:06,050 --> 00:01:07,590
+Now I'm going to say item.
+
+17
+00:01:07,620 --> 00:01:14,690
+Now if you have a news pleural where you can say is new or whatever but you know there's no Singler
+
+18
+00:01:14,720 --> 00:01:15,430
+of news.
+
+19
+00:01:15,560 --> 00:01:21,860
+So for now I'm going to say item and this this is going to be an anonymous function.
+
+20
+00:01:21,860 --> 00:01:29,990
+Now on each iteration that on each key that we find inside prop's news each object begin to run an iteration.
+
+21
+00:01:30,200 --> 00:01:36,120
+If we check the Jason Jason that we have right here we have four different news.
+
+22
+00:01:36,170 --> 00:01:41,930
+So this loop is going to loop four times and in each iteration is get it past the item.
+
+23
+00:01:41,990 --> 00:01:45,010
+The first iteration is going to pass the first one.
+
+24
+00:01:45,020 --> 00:01:50,030
+The second one the third two is one and the other one this one and this going to this is going to be
+
+25
+00:01:50,030 --> 00:01:50,580
+ESX.
+
+26
+00:01:50,580 --> 00:01:52,190
+This is not react.
+
+27
+00:01:52,820 --> 00:01:55,440
+So now on each direction we pass the item.
+
+28
+00:01:55,460 --> 00:02:02,170
+So what we can do we can return some GSX going to say return opening close just like that.
+
+29
+00:02:02,570 --> 00:02:08,730
+So now inside the return remember that whenever we use data sets we need to pass a single element.
+
+30
+00:02:08,930 --> 00:02:11,570
+And this one is going to be each item of news.
+
+31
+00:02:11,570 --> 00:02:15,650
+So first thing going to add a title the title it needs a title.
+
+32
+00:02:15,650 --> 00:02:19,410
+If we go to the DVD that Jason we have the title right here.
+
+33
+00:02:19,610 --> 00:02:20,110
+OK.
+
+34
+00:02:20,390 --> 00:02:23,530
+I'm going to go right here and bring the title now.
+
+35
+00:02:23,530 --> 00:02:28,750
+On each iteration we have each element inside item.
+
+36
+00:02:28,790 --> 00:02:34,400
+So what we can do we can say item dot and then title just like that.
+
+37
+00:02:34,550 --> 00:02:38,260
+And if we go right here of course we're not getting anything.
+
+38
+00:02:38,450 --> 00:02:40,610
+So now what do we need to do is to pass the feed.
+
+39
+00:02:40,610 --> 00:02:45,890
+So I'm going to create a viable that is going to be I'm sorry a div that is going to pass the actual
+
+40
+00:02:45,890 --> 00:02:46,480
+feed.
+
+41
+00:02:46,760 --> 00:02:49,840
+So I'm going to say item and then feed.
+
+42
+00:02:50,470 --> 00:02:51,110
+OK.
+
+43
+00:02:51,290 --> 00:02:53,020
+Of course nothing is going to happen.
+
+44
+00:02:53,270 --> 00:03:00,480
+So now this Barville is doing all the logic rendering some markup with the title and the feed.
+
+45
+00:03:00,480 --> 00:03:02,070
+This is what we need.
+
+46
+00:03:02,090 --> 00:03:07,530
+So now what we can do inside the return we can make a reference to this Vrable.
+
+47
+00:03:07,790 --> 00:03:12,400
+So we're going to go right here and enclose everything inside curly braces.
+
+48
+00:03:13,030 --> 00:03:13,450
+OK.
+
+49
+00:03:13,460 --> 00:03:20,180
+And re-act is going to do the job for us is going to notice that we have something that calls items
+
+50
+00:03:20,390 --> 00:03:27,140
+is going to find the items and this item it's items this verbal it's returning some GSX So it's going
+
+51
+00:03:27,140 --> 00:03:31,680
+to go and paste and put the GSX inside here.
+
+52
+00:03:31,710 --> 00:03:33,080
+You know it works.
+
+53
+00:03:33,080 --> 00:03:34,960
+Everything works really nice.
+
+54
+00:03:34,970 --> 00:03:41,680
+So this map again it's C-s ESX and it's kind of doing kind of a for loop.
+
+55
+00:03:41,840 --> 00:03:48,590
+It's actually a loop of course but it's kind of a doing I equals zero if you come from the yes world
+
+56
+00:03:48,920 --> 00:03:51,920
+than I is less than our array that lang.
+
+57
+00:03:51,940 --> 00:03:59,450
+You know all the logic that we used to do back in the day plus plus And then inside begin to access
+
+58
+00:03:59,510 --> 00:04:00,820
+each array.
+
+59
+00:04:01,070 --> 00:04:05,310
+And then of course we passed the iteration and then we passed the item.
+
+60
+00:04:05,330 --> 00:04:08,500
+And in this case we wanted to get the title we say title.
+
+61
+00:04:08,510 --> 00:04:12,260
+So this is the same logic than this one.
+
+62
+00:04:12,260 --> 00:04:17,120
+You're not going to use that you're going to be using iOS 6 because iOS 6 is awesome and begin to be
+
+63
+00:04:17,180 --> 00:04:18,790
+using it the whole time.
+
+64
+00:04:19,210 --> 00:04:23,930
+OK so this works we still need to do a few things.
+
+65
+00:04:23,930 --> 00:04:32,090
+If you remember we are using news list item so this should be rendered inside use list item on each
+
+66
+00:04:32,150 --> 00:04:33,160
+item.
+
+67
+00:04:33,170 --> 00:04:39,860
+So let's go to the next section and see how to include that include this code inside news list item.
+

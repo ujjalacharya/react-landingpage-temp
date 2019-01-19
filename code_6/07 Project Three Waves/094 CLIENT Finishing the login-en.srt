@@ -1,0 +1,912 @@
+1
+00:00:00,900 --> 00:00:06,800
+OK so now we need to submit with dispatch an action to redux and read is going to go to the server and
+
+2
+00:00:06,800 --> 00:00:08,630
+at the end we're going to get a response back.
+
+3
+00:00:08,640 --> 00:00:10,010
+Whenever we log in.
+
+4
+00:00:10,320 --> 00:00:10,820
+OK.
+
+5
+00:00:10,890 --> 00:00:12,420
+So we don't have an action.
+
+6
+00:00:12,440 --> 00:00:17,290
+We're going to go right here the top and created right now of course we will need to create it later.
+
+7
+00:00:17,340 --> 00:00:24,540
+So I'm going to import import opening close and I'm going to call it logging user so there's logging
+
+8
+00:00:24,540 --> 00:00:33,180
+user will be coming from dot dot for Slashdot that force lasht actions just like this and user actions
+
+9
+00:00:33,570 --> 00:00:39,190
+all right now instead of user actions we will need to create dysfunction.
+
+10
+00:00:39,390 --> 00:00:43,700
+So right oh components there we go.
+
+11
+00:00:44,220 --> 00:00:47,050
+So we need to create the function inside user actions.
+
+12
+00:00:47,100 --> 00:00:53,530
+So export function opening close and there we go.
+
+13
+00:00:53,640 --> 00:00:58,880
+Now we will be receiving a data to serve meant right here.
+
+14
+00:00:59,160 --> 00:01:01,440
+Now what we need to do right here is just a request.
+
+15
+00:01:01,440 --> 00:01:06,210
+We've already have a server working and it's expecting for this location for this rumped.
+
+16
+00:01:06,390 --> 00:01:09,920
+So I'm going to say Konst request is equal to accedes.
+
+17
+00:01:09,930 --> 00:01:16,140
+And remember we are importing axially at the top and it's going to be a post request and the post is
+
+18
+00:01:16,140 --> 00:01:21,550
+going to be to the server to the user server route and with the logon.
+
+19
+00:01:21,570 --> 00:01:25,690
+Now the second argument it's the data we are actually minute.
+
+20
+00:01:25,830 --> 00:01:33,660
+Then of course the problem is that then we are going to get a promise back so we can say then open and
+
+21
+00:01:33,660 --> 00:01:39,960
+close and we will be getting a response so we're going to say responds and we will we we want to return
+
+22
+00:01:40,290 --> 00:01:42,080
+the response that data.
+
+23
+00:01:42,300 --> 00:01:48,350
+So at the end inside of this marvel there request we will get this response that data now would redux.
+
+24
+00:01:48,360 --> 00:01:50,370
+We need to return.
+
+25
+00:01:50,760 --> 00:01:52,050
+I mean do it here.
+
+26
+00:01:52,200 --> 00:02:00,230
+We need to return opening close a type and a payload now for type we can use the file types we created.
+
+27
+00:02:00,270 --> 00:02:05,460
+If you don't know why we are using types don't worry at the end of the section I can explain why I'm
+
+28
+00:02:05,470 --> 00:02:06,740
+going to show you why.
+
+29
+00:02:06,900 --> 00:02:10,090
+If you already know of course you don't need to do this.
+
+30
+00:02:10,170 --> 00:02:12,490
+So we are doing log in data method.
+
+31
+00:02:12,540 --> 00:02:14,480
+Everything looks correct.
+
+32
+00:02:14,730 --> 00:02:21,720
+So the time logging user we need to create the type but of course what we get at the end to begin to
+
+33
+00:02:21,720 --> 00:02:23,970
+send the request as a payload.
+
+34
+00:02:23,970 --> 00:02:31,340
+So let's create Dhia the type I'm going to go to copy the name going to go to types and create the type.
+
+35
+00:02:31,380 --> 00:02:37,970
+So we do export like it's only for you if you don't know what why are we doing this just do it.
+
+36
+00:02:37,980 --> 00:02:39,350
+And then again explain why.
+
+37
+00:02:39,720 --> 00:02:44,880
+So this one is going to be log in underscore user and I'm going to do it the other way.
+
+38
+00:02:44,880 --> 00:02:45,460
+Log in.
+
+39
+00:02:45,460 --> 00:02:48,310
+Underscore user right.
+
+40
+00:02:48,330 --> 00:02:54,030
+So now instead of just making a reference right here to the inside of the user actions so viral that
+
+41
+00:02:54,120 --> 00:02:54,910
+doesn't exist.
+
+42
+00:02:54,930 --> 00:02:55,540
+Here.
+
+43
+00:02:55,600 --> 00:02:57,240
+We can import it from types.
+
+44
+00:02:57,240 --> 00:03:01,300
+So import opening close logging user.
+
+45
+00:03:01,440 --> 00:03:05,400
+And we bring it from DOD forward slash and types.
+
+46
+00:03:05,910 --> 00:03:06,470
+OK.
+
+47
+00:03:06,990 --> 00:03:10,320
+So now we are going to dispatch the action from here.
+
+48
+00:03:10,320 --> 00:03:11,850
+The action is going to go here.
+
+49
+00:03:11,880 --> 00:03:17,460
+It's going to make the request will return something back and the server will be returning logging logging
+
+50
+00:03:17,460 --> 00:03:21,500
+success and then it's going to go to the reducer.
+
+51
+00:03:21,510 --> 00:03:26,340
+Now let's go to the user reducer and he said of the Jews or Jews or I'll read this.
+
+52
+00:03:26,460 --> 00:03:30,720
+I was just saying we need to import logging user from the types.
+
+53
+00:03:30,720 --> 00:03:31,120
+Right.
+
+54
+00:03:31,200 --> 00:03:31,810
+OK.
+
+55
+00:03:32,240 --> 00:03:34,900
+So I notice that it stands out for us.
+
+56
+00:03:35,010 --> 00:03:37,530
+We are entering auctions and then types.
+
+57
+00:03:37,530 --> 00:03:37,950
+All right.
+
+58
+00:03:38,040 --> 00:03:39,060
+Let's get over this.
+
+59
+00:03:39,060 --> 00:03:41,340
+I thought I did this.
+
+60
+00:03:41,690 --> 00:03:42,100
+OK.
+
+61
+00:03:42,120 --> 00:03:47,320
+So instead of here we need to listen for this logon user.
+
+62
+00:03:47,910 --> 00:03:49,590
+So case logging user.
+
+63
+00:03:49,650 --> 00:03:57,570
+And if we do have a case of that we want to return the dot dot dot the previous estate and we will be
+
+64
+00:03:57,570 --> 00:04:08,270
+returning a log in success and then action that payload.
+
+65
+00:04:08,280 --> 00:04:10,500
+So this is this should be working.
+
+66
+00:04:10,620 --> 00:04:16,420
+Now if we go here at least we get no errors we get that the luggin use a function right here the dispatcher
+
+67
+00:04:16,420 --> 00:04:21,240
+step will be fine but we are not using it and it's because we are not really using it.
+
+68
+00:04:21,240 --> 00:04:22,400
+So let's go back to log in.
+
+69
+00:04:22,450 --> 00:04:27,580
+Going to copy the name and I'm going to go to right here to there is formatted.
+
+70
+00:04:27,690 --> 00:04:32,550
+So the form is valid we want to you know dispatch this action.
+
+71
+00:04:32,550 --> 00:04:37,490
+So I going to say oh sorry are going to go right here.
+
+72
+00:04:37,910 --> 00:04:39,400
+Going to dilute this for now.
+
+73
+00:04:39,720 --> 00:04:42,460
+And what we want to do we want to dispatch the action.
+
+74
+00:04:42,460 --> 00:04:45,620
+Remember that we are using redux.
+
+75
+00:04:45,660 --> 00:04:52,890
+So whenever we import and we use connect and everything else we inside dispatch we have everything available
+
+76
+00:04:52,890 --> 00:04:54,450
+to dispatch in action.
+
+77
+00:04:54,750 --> 00:05:02,990
+So I'm going to say this that prompts that this patch this patch just like this.
+
+78
+00:05:03,120 --> 00:05:06,120
+So the dispatch of course comes from Britax.
+
+79
+00:05:06,120 --> 00:05:11,820
+So of course we will dispatch the loving user action and we will be passing the data to submit.
+
+80
+00:05:12,030 --> 00:05:17,310
+Now after we do this we will get something on the state.
+
+81
+00:05:17,310 --> 00:05:19,110
+So let's try it right now.
+
+82
+00:05:19,110 --> 00:05:22,120
+Now on the database what I did.
+
+83
+00:05:22,290 --> 00:05:25,230
+I deleted all the users and just the left.
+
+84
+00:05:25,230 --> 00:05:29,220
+Francis Edgemont that come with the passport of one two three.
+
+85
+00:05:29,290 --> 00:05:32,180
+So I believe the password was once you three.
+
+86
+00:05:32,310 --> 00:05:36,870
+So I'm going to say passport one two are going to log in.
+
+87
+00:05:36,870 --> 00:05:38,310
+Of course we get nothing back.
+
+88
+00:05:38,460 --> 00:05:43,210
+But if we go to the state we get the log in success of true right.
+
+89
+00:05:43,230 --> 00:05:50,740
+So that works right leg and success and success true we could just return true from the server.
+
+90
+00:05:51,280 --> 00:05:57,540
+So instead of just adjacent what we could do that we're going to do it later.
+
+91
+00:05:58,390 --> 00:06:02,220
+So right now we are getting the on the stage.
+
+92
+00:06:02,230 --> 00:06:08,300
+We are getting back to redux the response from the server and we are storing it inside of the store.
+
+93
+00:06:08,340 --> 00:06:08,960
+OK.
+
+94
+00:06:09,250 --> 00:06:11,240
+Now there's two things you can do right here.
+
+95
+00:06:11,290 --> 00:06:14,450
+After you get the two that response you can get.
+
+96
+00:06:14,470 --> 00:06:15,270
+You can do.
+
+97
+00:06:15,310 --> 00:06:21,940
+You can do it then or you can go to the component at Mount or you can go to map what we see probs or
+
+98
+00:06:21,940 --> 00:06:26,460
+something like that and get the new probs and check if you have a success log in true.
+
+99
+00:06:26,560 --> 00:06:32,890
+And if you do then of course do something or you can take the shortcut which is actually we are kind
+
+100
+00:06:32,890 --> 00:06:36,020
+of overwriting the the behavior of redux.
+
+101
+00:06:36,160 --> 00:06:40,840
+And you can't just catch the promise that we get from this function.
+
+102
+00:06:40,840 --> 00:06:44,500
+You can do that you know we are using the den of the dispatch.
+
+103
+00:06:44,500 --> 00:06:49,840
+So whenever the dispatches on we can get the it went whenever that prompts gets resolved we can catch
+
+104
+00:06:49,840 --> 00:06:57,340
+that then and then we will get a response and the response is going to be equal to whatever we get inside
+
+105
+00:06:57,340 --> 00:06:59,050
+the response that payload.
+
+106
+00:06:59,160 --> 00:06:59,600
+Right.
+
+107
+00:06:59,670 --> 00:07:02,940
+The same thing that right here used yet redux is catching.
+
+108
+00:07:03,160 --> 00:07:11,110
+So in theory if I do response DOD payload DOD log in success we will of course get the message.
+
+109
+00:07:11,110 --> 00:07:17,410
+So if open and close and then going to say else and this is one way to do it begin to do it different
+
+110
+00:07:17,410 --> 00:07:19,630
+ways throughout the whole application.
+
+111
+00:07:19,660 --> 00:07:31,600
+So if response that payload DOD and then remember that we call that in success so log in Access.
+
+112
+00:07:32,450 --> 00:07:36,830
+Yes I believe was the same name Logan success.
+
+113
+00:07:36,890 --> 00:07:42,430
+I actually did with one single the luggin success.
+
+114
+00:07:42,640 --> 00:07:51,910
+What we will do we will console log responds that payload payload.
+
+115
+00:07:52,210 --> 00:07:57,850
+I want to see when we get back and at the end what I want to do I went to push the user to a different
+
+116
+00:07:57,850 --> 00:07:58,370
+route.
+
+117
+00:07:58,570 --> 00:08:01,330
+But before we do that I want to do something else and to say this.
+
+118
+00:08:01,330 --> 00:08:09,120
+That said state opening close opening close and I guess a form error equals truth.
+
+119
+00:08:09,220 --> 00:08:12,980
+Because if we are not getting this response the lag in success.
+
+120
+00:08:12,980 --> 00:08:14,950
+True it means that you know it failed.
+
+121
+00:08:14,950 --> 00:08:16,390
+So we are going to do something else.
+
+122
+00:08:16,400 --> 00:08:24,670
+All right I get to reload the application I'm going to go Francis Jamail passport one two three passport
+
+123
+00:08:24,700 --> 00:08:26,070
+one two three.
+
+124
+00:08:26,190 --> 00:08:28,060
+In we get the luggin success.
+
+125
+00:08:28,060 --> 00:08:29,010
+True.
+
+126
+00:08:29,230 --> 00:08:31,060
+So and then of course we get the state.
+
+127
+00:08:31,060 --> 00:08:32,970
+So we are entering this scenario.
+
+128
+00:08:33,220 --> 00:08:39,520
+Now what I want to do I want to send the user to the user for Slash dashboard route.
+
+129
+00:08:39,670 --> 00:08:41,180
+We dont have that route.
+
+130
+00:08:41,200 --> 00:08:47,350
+We will create it in a couple of minutes but I'm going to say this that prompts that history history
+
+131
+00:08:47,920 --> 00:08:55,330
+that push review remember this is how we push how we send the user to new routes use in re-act router.
+
+132
+00:08:55,470 --> 00:08:55,760
+OK.
+
+133
+00:08:55,810 --> 00:08:57,330
+So dashboard.
+
+134
+00:08:57,840 --> 00:08:58,580
+All right.
+
+135
+00:08:58,780 --> 00:09:00,220
+So this is not going to work.
+
+136
+00:09:00,220 --> 00:09:01,870
+Going to tell you why in a minute.
+
+137
+00:09:02,190 --> 00:09:11,320
+So Francis then password one two 3 we log in and we get Cannot we push of undefined and this is because
+
+138
+00:09:11,350 --> 00:09:18,880
+this loggin is a child of index an index is the one that its child of routes.
+
+139
+00:09:19,030 --> 00:09:25,360
+So inside of the index of register log in right here this is the one that is getting the props right
+
+140
+00:09:25,360 --> 00:09:27,910
+here with the route with the routes.
+
+141
+00:09:27,910 --> 00:09:30,120
+So with all the methods from Riak router.
+
+142
+00:09:30,280 --> 00:09:37,300
+So from within Lagann which is the child of this one we don't have access to you know the prompts that
+
+143
+00:09:37,300 --> 00:09:44,000
+push that history even though we catch the props inside the log in inside the main index of log in.
+
+144
+00:09:44,170 --> 00:09:47,520
+We catch the props right here and we pass it as props.
+
+145
+00:09:47,560 --> 00:09:49,350
+We still don't get it.
+
+146
+00:09:49,420 --> 00:09:57,400
+So there is a way to fix this re-act Roder they give you a module or actually a method that we can use
+
+147
+00:09:57,400 --> 00:10:02,550
+in our component that will inject all the properties of that particular route.
+
+148
+00:10:02,920 --> 00:10:04,670
+And its called with a router.
+
+149
+00:10:04,780 --> 00:10:06,580
+So I'm going to go right here.
+
+150
+00:10:06,760 --> 00:10:19,110
+Import open it close and call us with router and this one comes from re-act then router and then domm.
+
+151
+00:10:19,270 --> 00:10:21,740
+Now this router how can we use it.
+
+152
+00:10:21,790 --> 00:10:25,720
+We need to wrap our function right here our main component.
+
+153
+00:10:25,750 --> 00:10:28,150
+Sorry with this with router.
+
+154
+00:10:28,210 --> 00:10:32,920
+Now we are using we are still using connect so I'm going to go to log in with the router and I'm going
+
+155
+00:10:32,920 --> 00:10:34,170
+to wrap it.
+
+156
+00:10:34,180 --> 00:10:37,610
+So now all the props will be injected inside logon.
+
+157
+00:10:37,720 --> 00:10:40,580
+And then of course redux is going to do pretty much the same thing.
+
+158
+00:10:40,930 --> 00:10:45,040
+So now if we try again Francis G.M. that come past.
+
+159
+00:10:45,110 --> 00:10:46,740
+One two three.
+
+160
+00:10:47,260 --> 00:10:50,130
+We are going to use our dashboard so it works.
+
+161
+00:10:50,140 --> 00:10:57,040
+And of course we get long and success through on the console log and we are logging the user Burguet.
+
+162
+00:10:57,170 --> 00:10:57,580
+OK.
+
+163
+00:10:57,640 --> 00:11:02,290
+So we are pretty much done with this with the log in of course later we will create that dashboard and
+
+164
+00:11:02,290 --> 00:11:03,130
+everything else.
+
+165
+00:11:03,250 --> 00:11:07,720
+So on the next section what we are going to do is the Create an account.
+
+166
+00:11:07,900 --> 00:11:14,890
+Now since most of the logic for the forms and validations and everything else weve already did this
+
+167
+00:11:15,250 --> 00:11:17,040
+is going to be a piece of cake.
+
+168
+00:11:17,110 --> 00:11:23,740
+Now if you already know why we are using types right here the user actions go to the next section if
+
+169
+00:11:23,740 --> 00:11:32,640
+not state again to give you a tiny example of why we are using types OK why using types and not just
+
+170
+00:11:32,640 --> 00:11:33,570
+a string.
+
+171
+00:11:33,920 --> 00:11:40,940
+So let me just give you an as in Ario if I do that just like this the usual way I say log in I save
+
+172
+00:11:40,940 --> 00:11:47,440
+it and I go to the user reducer and I say that we are listening for a string called in user.
+
+173
+00:11:47,450 --> 00:11:52,910
+Of course this is going to work because they are the same string same value and everything else going
+
+174
+00:11:52,910 --> 00:11:53,950
+to say password.
+
+175
+00:11:53,960 --> 00:11:55,290
+Let me type it again.
+
+176
+00:11:55,360 --> 00:11:57,250
+Passport one two three.
+
+177
+00:11:57,300 --> 00:11:58,070
+Log in.
+
+178
+00:11:58,370 --> 00:11:58,720
+OK.
+
+179
+00:11:58,760 --> 00:12:00,310
+That is luggin success.
+
+180
+00:12:00,380 --> 00:12:01,880
+That works.
+
+181
+00:12:02,000 --> 00:12:05,240
+Now what happens if I make a mistake just like this.
+
+182
+00:12:05,390 --> 00:12:11,490
+The user actually is logging user and right here the type and this one is logging use.
+
+183
+00:12:11,550 --> 00:12:14,560
+I just make a mistake you know that could happen.
+
+184
+00:12:15,320 --> 00:12:20,150
+So I'm gonna do the same thing password one two three.
+
+185
+00:12:20,340 --> 00:12:21,490
+I'm going to log in.
+
+186
+00:12:21,620 --> 00:12:23,210
+We can get this.
+
+187
+00:12:23,240 --> 00:12:26,900
+It's kind of a going because we are dispatching and we are catching something else.
+
+188
+00:12:27,050 --> 00:12:29,910
+But if we go right here to the state nothing happens.
+
+189
+00:12:29,930 --> 00:12:31,870
+We are not updating the state.
+
+190
+00:12:31,910 --> 00:12:33,170
+This didn't happen.
+
+191
+00:12:33,230 --> 00:12:37,560
+It's not going through this because of course they don't match.
+
+192
+00:12:37,590 --> 00:12:39,730
+You know this logging use and this user action.
+
+193
+00:12:39,950 --> 00:12:44,360
+But notice that what that what's funny is that we are not getting an error message.
+
+194
+00:12:44,710 --> 00:12:48,860
+And of course this is from a different something else we are not getting a warning.
+
+195
+00:12:48,880 --> 00:12:50,530
+Not a single error message.
+
+196
+00:12:50,630 --> 00:12:54,150
+So we didn't know that there's something that is actually wrong.
+
+197
+00:12:54,630 --> 00:12:59,870
+The only way to know is it's you know to be make sure to keep them to know that actually we need to
+
+198
+00:12:59,870 --> 00:13:04,950
+store something here check on the store and check that we don't have value.
+
+199
+00:13:04,970 --> 00:13:07,810
+So there's no way for us to know that something is wrong.
+
+200
+00:13:08,090 --> 00:13:10,280
+So that's why we use types.
+
+201
+00:13:10,280 --> 00:13:12,030
+The types are not strings.
+
+202
+00:13:12,050 --> 00:13:13,180
+They are variables.
+
+203
+00:13:13,280 --> 00:13:19,250
+So if javascript they know the browser it's not finding the correct Marvel they will give us an error
+
+204
+00:13:19,250 --> 00:13:21,960
+message of where of what went wrong.
+
+205
+00:13:21,980 --> 00:13:28,710
+For example I'm going to do same things same example going can you know go back to the Bible and and
+
+206
+00:13:28,730 --> 00:13:33,620
+this one I'm going to say log in use and notice that this log in use doesn't exist.
+
+207
+00:13:33,620 --> 00:13:39,410
+So of course logging use is not defined instantly we get we are getting a message Eastham is saying
+
+208
+00:13:39,410 --> 00:13:43,130
+that there's something wrong with this logging use viable.
+
+209
+00:13:43,280 --> 00:13:48,770
+And if it's even giving you the name of the file in side use a reducer and then you go here and say
+
+210
+00:13:48,800 --> 00:13:51,300
+oh it's because it's the user.
+
+211
+00:13:51,410 --> 00:13:52,070
+So there we go.
+
+212
+00:13:52,080 --> 00:13:53,480
+Fixed.
+
+213
+00:13:53,480 --> 00:13:55,240
+So that's why we use types.
+
+214
+00:13:55,250 --> 00:13:59,800
+Now right now we just have one type but later.
+
+215
+00:13:59,800 --> 00:14:03,740
+And let me show you the final one.
+
+216
+00:14:03,740 --> 00:14:10,880
+If you're Yeah if you want to know why use the using marbles we use and types this is the final we can
+
+217
+00:14:10,880 --> 00:14:11,830
+have all these types.
+
+218
+00:14:11,900 --> 00:14:12,990
+Yeah.
+
+219
+00:14:13,070 --> 00:14:20,420
+So imagine that if you make a mistake and this once at least one inside the user reduce or all of this
+
+220
+00:14:21,020 --> 00:14:25,910
+well meant you can to do a lot of debugging.
+
+221
+00:14:26,000 --> 00:14:27,680
+Yeah that's why we use types.
+
+222
+00:14:27,680 --> 00:14:28,290
+All right.
+
+223
+00:14:28,490 --> 00:14:35,170
+If you're using a single very small application you can skip the types because you can have a few types
+
+224
+00:14:35,460 --> 00:14:37,400
+just not all of types.
+
+225
+00:14:37,440 --> 00:14:37,810
+OK.
+
+226
+00:14:37,930 --> 00:14:38,580
+That's good.
+
+227
+00:14:38,720 --> 00:14:42,690
+Let's go to the next section and create the register.
+
+228
+00:14:42,730 --> 00:14:43,070
+User.
+

@@ -1,0 +1,1212 @@
+1
+00:00:01,640 --> 00:00:04,730
+OK so now we get it create the route so we can remove.
+
+2
+00:00:04,880 --> 00:00:07,100
+So whenever we click we are going to remove it.
+
+3
+00:00:07,100 --> 00:00:09,040
+Of course we need a route to do this.
+
+4
+00:00:09,050 --> 00:00:10,760
+So first I'm going to create the route.
+
+5
+00:00:10,760 --> 00:00:20,390
+So it's going to be a get route open and close that for Slash API for Slash users and remove from cart
+
+6
+00:00:20,860 --> 00:00:25,740
+or else we're going to use that Southmead aware and then we will run a function.
+
+7
+00:00:25,970 --> 00:00:30,080
+And of course it's going to be request and response.
+
+8
+00:00:30,080 --> 00:00:30,830
+Right.
+
+9
+00:00:31,220 --> 00:00:32,630
+So what do we need to do.
+
+10
+00:00:32,630 --> 00:00:34,510
+Of course you could just get the user from here.
+
+11
+00:00:34,520 --> 00:00:39,080
+But again sometimes you don't get the users maybe you're just returning the idea of the user.
+
+12
+00:00:39,080 --> 00:00:43,440
+So we need to find the user and do some updates inside of that user.
+
+13
+00:00:43,520 --> 00:00:45,530
+So we entered the user model.
+
+14
+00:00:45,620 --> 00:00:51,790
+Then we find one an update open and close if you remember we need to pass a few things.
+
+15
+00:00:51,830 --> 00:00:54,760
+First is which user are we going to be updating.
+
+16
+00:00:54,950 --> 00:00:57,490
+So I'm going to say ID can.
+
+17
+00:00:57,650 --> 00:01:04,280
+And we past whenever we get back from the mouth malware which is a request that user underscore ID.
+
+18
+00:01:04,320 --> 00:01:04,760
+All right.
+
+19
+00:01:04,760 --> 00:01:06,160
+That's the first thing.
+
+20
+00:01:06,200 --> 00:01:13,670
+Then the action that you can take in this case we already to push what we need to do is to remove something.
+
+21
+00:01:13,700 --> 00:01:16,210
+So for this we use pull.
+
+22
+00:01:16,380 --> 00:01:21,070
+Now then of course can and what pool needs is an object.
+
+23
+00:01:21,170 --> 00:01:24,230
+So we're going to say this what are we going to be pulling.
+
+24
+00:01:24,260 --> 00:01:30,240
+So we're going to pull the full something from the cart so we say cart and then we pass an object.
+
+25
+00:01:30,440 --> 00:01:33,300
+What are we going to be deleting from the cart.
+
+26
+00:01:33,380 --> 00:01:42,200
+Well whenever whatever document or piece of code you know entry that has an ID of something.
+
+27
+00:01:42,260 --> 00:01:48,980
+So again we are using mongoose type IDs inside the carts remember I'm going to copy mongoose types right
+
+28
+00:01:48,980 --> 00:01:55,830
+here sign or have to type it again and begin to search for whatever type we get from the from the route
+
+29
+00:01:55,850 --> 00:01:57,110
+you know from the client.
+
+30
+00:01:57,110 --> 00:02:01,850
+And remember that this route is going to be something like underscore ID equals to and you know the
+
+31
+00:02:01,970 --> 00:02:05,670
+idea of whatever they want to delete inside of the card of the user.
+
+32
+00:02:06,110 --> 00:02:14,390
+So we can have a get an inside request that query query that underscore ID in this case I'm going to
+
+33
+00:02:14,390 --> 00:02:16,970
+use underscore instead of ID.
+
+34
+00:02:16,970 --> 00:02:17,380
+OK.
+
+35
+00:02:17,450 --> 00:02:24,630
+So that is that after we make the changes I want the new state of the card off the user as a response
+
+36
+00:02:24,980 --> 00:02:28,700
+I don't want the old the old state of this.
+
+37
+00:02:28,700 --> 00:02:31,920
+So if you want know do we need to do new and then true.
+
+38
+00:02:31,940 --> 00:02:36,440
+So we can get it and then come right at the end of this.
+
+39
+00:02:36,440 --> 00:02:39,700
+Of course we just run a callback function.
+
+40
+00:02:40,190 --> 00:02:44,590
+And I remember we told you before that you could do some logic on the server.
+
+41
+00:02:44,780 --> 00:02:51,080
+Well the thing is that whenever we get the doc back this is the card of the user and on the card of
+
+42
+00:02:51,080 --> 00:02:57,090
+the user We just have some information we have pieces of information and we go to the cart.
+
+43
+00:02:57,200 --> 00:03:01,090
+We have the we get the ID the quantity and the date.
+
+44
+00:03:01,430 --> 00:03:07,670
+So this is a problem because we cannot just return this if we return just this whenever we get it.
+
+45
+00:03:07,700 --> 00:03:11,450
+We need to dispatch a different action to get the articles date again.
+
+46
+00:03:11,460 --> 00:03:16,120
+You know we need to trigger again get carte items with the new state of the user.
+
+47
+00:03:16,280 --> 00:03:18,530
+And you know we are already on the server.
+
+48
+00:03:18,530 --> 00:03:24,290
+Why not doing all of this logic from here whenever we remove the cart because the only place where we
+
+49
+00:03:24,290 --> 00:03:26,430
+can remove a card it's from here.
+
+50
+00:03:26,690 --> 00:03:32,290
+So whenever we go to this cart and we get the dog bag we're going to do some logic if we're going to
+
+51
+00:03:32,300 --> 00:03:35,870
+get the new state of all of these elements so what are we going to do.
+
+52
+00:03:35,870 --> 00:03:42,170
+We're going to grab the cart if we can go to Mungo's again and fetch all the data all the data from
+
+53
+00:03:42,170 --> 00:03:42,640
+here.
+
+54
+00:03:42,770 --> 00:03:44,720
+And then of course we will merge it.
+
+55
+00:03:44,810 --> 00:03:45,350
+OK.
+
+56
+00:03:45,800 --> 00:03:50,650
+So just like we did here just like this this code we're going to do the same thing.
+
+57
+00:03:50,780 --> 00:03:56,220
+Not this code this code we are going to still do it right here on the actions.
+
+58
+00:03:56,330 --> 00:03:59,270
+But this one we can of course do it right here.
+
+59
+00:03:59,450 --> 00:04:00,060
+OK.
+
+60
+00:04:00,470 --> 00:04:06,710
+So first I'm going to create a virals called cart and I'm going to enter the document that we get back
+
+61
+00:04:06,710 --> 00:04:11,000
+from this usurp which is the card of the user and you enter the card.
+
+62
+00:04:11,000 --> 00:04:11,440
+Right.
+
+63
+00:04:11,450 --> 00:04:13,680
+So now I have a volatile card called card.
+
+64
+00:04:13,700 --> 00:04:20,260
+With that then I'm going to create in an array led array equals I can loop the card.
+
+65
+00:04:20,460 --> 00:04:26,700
+I'm going to say map opening close and for each one I'm going to get an item open and close.
+
+66
+00:04:27,020 --> 00:04:34,510
+So what I want back the same thing we did here we need the IDs ride just an RE with the IDs.
+
+67
+00:04:34,790 --> 00:04:40,760
+So I'm going to return and of course we need mongoose types.
+
+68
+00:04:41,090 --> 00:04:48,680
+So we're going to return whatever we get back when we get back from item that you know the card and
+
+69
+00:04:48,770 --> 00:04:52,250
+this I.D. It is going to be converted to object types.
+
+70
+00:04:52,460 --> 00:04:59,390
+So now what we can do we can grab this new array and pass it to mongoose so we can get all the data
+
+71
+00:04:59,450 --> 00:05:00,820
+we can need.
+
+72
+00:05:01,320 --> 00:05:07,700
+So product going to enter product that they're going to go right here at the bottom.
+
+73
+00:05:07,700 --> 00:05:08,950
+I mean just do it here.
+
+74
+00:05:09,150 --> 00:05:12,450
+I'm going to say find OK what do we want to find.
+
+75
+00:05:12,630 --> 00:05:20,880
+We want to find all the elements which underscore the inside products that matches the all the elements
+
+76
+00:05:20,940 --> 00:05:22,930
+we have inside the array.
+
+77
+00:05:23,400 --> 00:05:25,870
+So this is going to go to the server and kind of get it.
+
+78
+00:05:26,010 --> 00:05:34,680
+All right then remember that the rants and the woods are when we get on a deal with this elements so
+
+79
+00:05:34,680 --> 00:05:36,280
+we're going to do the same thing we did before.
+
+80
+00:05:36,300 --> 00:05:36,970
+Just get it.
+
+81
+00:05:37,470 --> 00:05:42,500
+Go and show you the coach that can really to this to populate and the brand.
+
+82
+00:05:42,510 --> 00:05:43,510
+So we're going to copy.
+
+83
+00:05:43,540 --> 00:05:49,200
+We're going to go and say I want to populate the brand and they would on this results as well.
+
+84
+00:05:49,200 --> 00:05:50,730
+And then of course we execute something.
+
+85
+00:05:50,730 --> 00:05:53,360
+So exec.
+
+86
+00:05:53,370 --> 00:05:54,370
+Right.
+
+87
+00:05:54,990 --> 00:06:02,940
+So whenever we get a response of course of course we run a callback now error and then Card we're going
+
+88
+00:06:02,940 --> 00:06:07,810
+to get a card detail detail.
+
+89
+00:06:07,850 --> 00:06:09,510
+All right.
+
+90
+00:06:09,510 --> 00:06:15,330
+And now like I told before inside of the card right here we're going to get all the card details right.
+
+91
+00:06:15,330 --> 00:06:22,980
+All the products for the elements we have in the card for user and we still have access to cart inside
+
+92
+00:06:22,980 --> 00:06:23,820
+of here.
+
+93
+00:06:23,820 --> 00:06:31,130
+So if you wish you could do all this logic all this logic inside of here and then just return and you
+
+94
+00:06:31,140 --> 00:06:35,190
+Jason with all the data ready to go you could do that.
+
+95
+00:06:35,220 --> 00:06:37,060
+So we are not going to do this.
+
+96
+00:06:37,070 --> 00:06:37,850
+I'm not going to do it.
+
+97
+00:06:37,870 --> 00:06:46,350
+So I'm going to say return response to the status of two hundred and then we just send this Jaison response
+
+98
+00:06:46,550 --> 00:06:47,320
+right.
+
+99
+00:06:47,840 --> 00:06:55,080
+So the Jason response will contain the card detail which is all the data you know all the products detailed
+
+100
+00:06:55,140 --> 00:06:59,760
+product and I'm going to pass the cart as well.
+
+101
+00:06:59,760 --> 00:07:05,760
+So now that the action will receive all the card details and the new state of the cart that's why I'm
+
+102
+00:07:05,850 --> 00:07:07,860
+not going to do the same thing here.
+
+103
+00:07:07,860 --> 00:07:08,640
+I'm not going to pass.
+
+104
+00:07:08,640 --> 00:07:12,270
+Do you use a card from the client you're going to get it from the server.
+
+105
+00:07:12,360 --> 00:07:18,620
+Because at this point the idea that they deleted it's not here or I'm.
+
+106
+00:07:18,660 --> 00:07:23,580
+So we're going to loop this match this with the card detail and you know return whatever we want to
+
+107
+00:07:23,580 --> 00:07:24,440
+return.
+
+108
+00:07:24,810 --> 00:07:26,660
+All right that's good.
+
+109
+00:07:26,790 --> 00:07:30,090
+So for now the sort of a route it's done.
+
+110
+00:07:30,090 --> 00:07:31,230
+We don't need to do anything else.
+
+111
+00:07:31,230 --> 00:07:32,070
+Looks good.
+
+112
+00:07:32,190 --> 00:07:34,430
+Hopefully everything is OK.
+
+113
+00:07:34,890 --> 00:07:39,720
+So let's create an action for this.
+
+114
+00:07:39,740 --> 00:07:44,600
+It's going to go to the card component where we dispatched the action.
+
+115
+00:07:44,930 --> 00:07:47,070
+So of course we need to include it.
+
+116
+00:07:47,100 --> 00:07:49,470
+We don't have the function but it created right now.
+
+117
+00:07:49,650 --> 00:07:54,580
+So remove card item same as usual.
+
+118
+00:07:54,580 --> 00:07:58,460
+I'm going to copy the name and I'm going to go to user actions.
+
+119
+00:07:58,660 --> 00:08:05,120
+Going to create a type which is going to I'm going to call it how we should call it remove card item
+
+120
+00:08:05,180 --> 00:08:12,010
+user name remove the card item and then user.
+
+121
+00:08:12,210 --> 00:08:15,600
+I'm using user because I'm using user and all the types.
+
+122
+00:08:15,620 --> 00:08:18,690
+So whenever it comes to user I attached user.
+
+123
+00:08:18,890 --> 00:08:21,510
+This is something I do if you wish.
+
+124
+00:08:21,560 --> 00:08:24,260
+Just doing remove card item.
+
+125
+00:08:24,320 --> 00:08:25,380
+That's OK.
+
+126
+00:08:25,820 --> 00:08:27,580
+So we have a new type.
+
+127
+00:08:27,620 --> 00:08:42,230
+We need to add it to the types so export Export Konst equals to remove card item user right.
+
+128
+00:08:42,670 --> 00:08:44,930
+OK that's good.
+
+129
+00:08:45,010 --> 00:08:47,910
+So now let me go to the user actions again.
+
+130
+00:08:48,070 --> 00:08:55,170
+So now we get this type we are going to copy the name of the function so we can create it at the bottom.
+
+131
+00:08:55,240 --> 00:08:59,760
+So export function export function.
+
+132
+00:08:59,760 --> 00:09:00,040
+Yep.
+
+133
+00:09:00,130 --> 00:09:01,240
+Card Room of card.
+
+134
+00:09:01,260 --> 00:09:05,210
+I'm opening clubs now from this one.
+
+135
+00:09:05,210 --> 00:09:11,590
+What we will be getting we will be passing is the idea of whatever we want to delete.
+
+136
+00:09:11,620 --> 00:09:17,600
+The server expects that information you know the id of whatever we want to delete.
+
+137
+00:09:17,740 --> 00:09:19,970
+So we need to pass the ID right.
+
+138
+00:09:20,320 --> 00:09:22,520
+So we say Id OK.
+
+139
+00:09:23,410 --> 00:09:24,660
+Now the request.
+
+140
+00:09:24,670 --> 00:09:32,080
+It's very simple to Konst request it calls X-post that get open and close and we are still going to
+
+141
+00:09:32,080 --> 00:09:36,060
+use the same user server we use either on the product server.
+
+142
+00:09:37,240 --> 00:09:44,190
+Then for Slash and the name of the route which is going to be removed from cart.
+
+143
+00:09:44,200 --> 00:09:44,830
+All right.
+
+144
+00:09:45,050 --> 00:09:49,910
+Oh sorry on this one it's user server because we are making a request to the user.
+
+145
+00:09:49,910 --> 00:09:50,140
+All right.
+
+146
+00:09:50,150 --> 00:09:53,330
+So it's user server or user route.
+
+147
+00:09:53,510 --> 00:09:55,940
+And then of course remove from cart.
+
+148
+00:09:56,600 --> 00:09:57,440
+OK.
+
+149
+00:09:57,680 --> 00:10:03,330
+So on this one we need to pass the ID and we are making a reference to this with underscore ID.
+
+150
+00:10:03,560 --> 00:10:10,280
+So we just pass the ID and that is it of course then we will get a new response so I'm going to do then
+
+151
+00:10:11,450 --> 00:10:14,790
+open and close and we get a response back from the server.
+
+152
+00:10:14,900 --> 00:10:17,050
+And when we do we just do something.
+
+153
+00:10:17,060 --> 00:10:22,580
+Now what we need to do looks pretty much just like that like this I'm going to still you know type it
+
+154
+00:10:22,580 --> 00:10:29,480
+all remember that from the server we get back the card detail and use date of card instead of the user.
+
+155
+00:10:29,600 --> 00:10:30,030
+Right.
+
+156
+00:10:30,080 --> 00:10:30,520
+OK.
+
+157
+00:10:30,710 --> 00:10:32,410
+So we need to do the same thing.
+
+158
+00:10:32,600 --> 00:10:41,420
+Rapid response that data entered the card and do a for each just like this and open and close on each
+
+159
+00:10:41,480 --> 00:10:42,150
+iteration.
+
+160
+00:10:42,170 --> 00:10:44,200
+We will be passing that item.
+
+161
+00:10:44,480 --> 00:10:46,630
+And then of course we run a function.
+
+162
+00:10:46,640 --> 00:10:49,520
+Now we're going to enter the child of card detail.
+
+163
+00:10:49,520 --> 00:10:58,640
+It's a response that data data then card detail just like this detail.
+
+164
+00:10:58,900 --> 00:11:02,070
+Open and close and Azari card detail.
+
+165
+00:11:02,090 --> 00:11:08,160
+And we do another for each so for each then open close and we just make sure I'm using card detail you
+
+166
+00:11:08,160 --> 00:11:13,140
+know same key word card it should be carte
+
+167
+00:11:16,360 --> 00:11:16,790
+cards.
+
+168
+00:11:16,800 --> 00:11:18,660
+The tail is going to fail.
+
+169
+00:11:18,750 --> 00:11:21,730
+And this one as well card detail.
+
+170
+00:11:21,750 --> 00:11:22,450
+All right.
+
+171
+00:11:22,550 --> 00:11:28,830
+So I'm going to go back and we're going to loop that card detail and for each and just like before we
+
+172
+00:11:28,830 --> 00:11:32,190
+need to catch the item and to iteration.
+
+173
+00:11:32,220 --> 00:11:33,450
+And I'm going to delete this one.
+
+174
+00:11:33,450 --> 00:11:34,210
+All right.
+
+175
+00:11:34,230 --> 00:11:40,470
+And then of course we run something where we need to check if the item of ID of the child equals the
+
+176
+00:11:40,470 --> 00:11:47,010
+item id of the parent or actually backwards if the item id of the parent matches the item id of the
+
+177
+00:11:47,010 --> 00:11:47,690
+child.
+
+178
+00:11:47,820 --> 00:12:00,180
+And if it does we want to attach the quantity so responds that data Dadds card detail and then we pass
+
+179
+00:12:00,180 --> 00:12:01,070
+the iteration.
+
+180
+00:12:01,140 --> 00:12:03,310
+Let me close this so we can see the whole code.
+
+181
+00:12:05,370 --> 00:12:06,930
+So it's quantity.
+
+182
+00:12:06,930 --> 00:12:08,180
+Just like with it at the top.
+
+183
+00:12:08,190 --> 00:12:11,180
+So I'm going to copy this and paste it right here.
+
+184
+00:12:11,340 --> 00:12:16,020
+So the quantity of the card detail instead of the response we can attach quantity.
+
+185
+00:12:16,060 --> 00:12:19,510
+And then at the value and at the end.
+
+186
+00:12:19,510 --> 00:12:26,720
+Of course we return the response that data right.
+
+187
+00:12:26,880 --> 00:12:27,170
+Right.
+
+188
+00:12:27,240 --> 00:12:34,230
+So then we're going to do a return and we returned a new type and a payload.
+
+189
+00:12:34,230 --> 00:12:34,830
+Right.
+
+190
+00:12:34,890 --> 00:12:40,450
+So the payload is equal it's equal to whenever we get back from the request and the type it's removed
+
+191
+00:12:40,470 --> 00:12:46,880
+card item user almost done with the whole circuit.
+
+192
+00:12:46,880 --> 00:12:47,810
+All right.
+
+193
+00:12:47,980 --> 00:12:48,450
+OK.
+
+194
+00:12:48,610 --> 00:12:50,870
+So now we need to go to the reducer right.
+
+195
+00:12:50,890 --> 00:12:53,050
+I'm going to copy the type again just in case.
+
+196
+00:12:53,170 --> 00:12:56,890
+Go to the reducer and then just the type.
+
+197
+00:12:56,890 --> 00:12:58,250
+So what we need to do here.
+
+198
+00:12:58,270 --> 00:13:00,600
+It's pretty much the same then.
+
+199
+00:13:00,640 --> 00:13:02,570
+You know get cart item user.
+
+200
+00:13:02,680 --> 00:13:08,430
+The thing is that from the server we are getting the card detail and a new cart.
+
+201
+00:13:08,500 --> 00:13:09,260
+Right.
+
+202
+00:13:09,520 --> 00:13:10,050
+OK.
+
+203
+00:13:10,360 --> 00:13:17,890
+And we need to from this card we need to go to the users store to the state and turn the user data and
+
+204
+00:13:17,890 --> 00:13:20,930
+turn that card and update this cart.
+
+205
+00:13:21,070 --> 00:13:23,760
+That's why we are also passing the cart.
+
+206
+00:13:23,800 --> 00:13:26,920
+We are updating several things with the same dispatch.
+
+207
+00:13:27,100 --> 00:13:32,840
+So use a reduced or remove card item and do coma.
+
+208
+00:13:32,980 --> 00:13:33,850
+And if the case.
+
+209
+00:13:33,880 --> 00:13:38,610
+Oh sorry not coma if the case is removed card item.
+
+210
+00:13:38,790 --> 00:13:42,640
+We're going to do something so we return just it's always dot dot dot.
+
+211
+00:13:42,790 --> 00:13:46,480
+And then the state and then coma and I'm going to do this just like this.
+
+212
+00:13:46,490 --> 00:13:50,210
+So it's a little bit easier to read.
+
+213
+00:13:50,260 --> 00:13:55,780
+So we're going to enter the cart and detail and begin going to say that the card didn't tell now it's
+
+214
+00:13:55,780 --> 00:14:02,390
+equal to action that payload that card detail.
+
+215
+00:14:02,440 --> 00:14:09,710
+All right looks good hopefully no mistakes that begin to use the Enter the user data.
+
+216
+00:14:09,830 --> 00:14:13,160
+Remember that we use the user data right here.
+
+217
+00:14:13,160 --> 00:14:18,410
+And let me make sure I'm using cart cart detail Yeah it's card detail.
+
+218
+00:14:18,410 --> 00:14:20,930
+Maybe I made a mistake in using card with a D.
+
+219
+00:14:21,010 --> 00:14:21,550
+That's OK.
+
+220
+00:14:21,620 --> 00:14:22,810
+It should be OK.
+
+221
+00:14:23,030 --> 00:14:25,250
+So I'm going to enter inside the user data.
+
+222
+00:14:25,400 --> 00:14:29,600
+I'm going to put inside of the user data whenever we get inside user data.
+
+223
+00:14:29,630 --> 00:14:35,170
+Rhydwen have all the information we get from user data but I want to modify the card.
+
+224
+00:14:35,210 --> 00:14:37,870
+So I do a coma and a change to cart.
+
+225
+00:14:37,970 --> 00:14:46,250
+So action that payload that cart that is that we're going to update the card details whenever we remove
+
+226
+00:14:46,580 --> 00:14:52,610
+one item with a new state of this and then we do the same thing with the user data and the card of the
+
+227
+00:14:52,610 --> 00:14:56,360
+user data should be OK.
+
+228
+00:14:57,510 --> 00:14:59,110
+Let's try out.
+
+229
+00:14:59,540 --> 00:15:00,920
+So we need to go to that function.
+
+230
+00:15:00,920 --> 00:15:04,990
+Remember when we click it right here and we go to this function.
+
+231
+00:15:05,150 --> 00:15:11,060
+So what we do is a device that prompts that dispatch to open it close.
+
+232
+00:15:11,150 --> 00:15:16,790
+And then of course the name of the function the action.
+
+233
+00:15:17,090 --> 00:15:21,000
+So remove card item remember that we need to pass the ID.
+
+234
+00:15:21,110 --> 00:15:27,950
+So we are going to be passing the ID so Id And then of course we get a response back.
+
+235
+00:15:28,080 --> 00:15:34,160
+I'm going to go right here and say then oops then open and close.
+
+236
+00:15:34,160 --> 00:15:35,690
+We're going to run a function.
+
+237
+00:15:35,690 --> 00:15:37,820
+Open it close and then we do something.
+
+238
+00:15:37,850 --> 00:15:39,740
+Now we have two scenarios.
+
+239
+00:15:39,740 --> 00:15:46,700
+The first one is what happens if the user id sort of the user just they have maybe just one item right
+
+240
+00:15:46,700 --> 00:15:47,250
+here.
+
+241
+00:15:47,450 --> 00:15:52,610
+If we remove that single item the card data is going to be empty.
+
+242
+00:15:52,670 --> 00:15:53,250
+Right.
+
+243
+00:15:53,420 --> 00:15:57,110
+So we changed the show Teutul back to false.
+
+244
+00:15:57,110 --> 00:16:00,800
+So we can you know remove the show total right here.
+
+245
+00:16:00,800 --> 00:16:06,860
+It's going to be total amount zero anyways but we need to remove this item so we can end it the way
+
+246
+00:16:06,920 --> 00:16:15,480
+we need a way to check if the user has zero card elements zero card products inside the card detail.
+
+247
+00:16:15,480 --> 00:16:17,340
+Or maybe one or more.
+
+248
+00:16:17,450 --> 00:16:19,320
+So if open it close.
+
+249
+00:16:19,730 --> 00:16:31,070
+So if this prompts that user that card detail that length is less or equal than zero then we're going
+
+250
+00:16:31,070 --> 00:16:33,530
+to do see said state this.
+
+251
+00:16:33,590 --> 00:16:45,500
+That said state and we changed the state to show total to false.
+
+252
+00:16:45,750 --> 00:16:49,520
+Now of course if they are deleting an item and they have more items.
+
+253
+00:16:49,560 --> 00:16:54,260
+Of course we will maybe just delete this item but they still have one.
+
+254
+00:16:54,330 --> 00:16:56,930
+So we need to recalculate the total amount.
+
+255
+00:16:57,000 --> 00:17:00,280
+Told you we are going to use this Kancheli total function.
+
+256
+00:17:00,300 --> 00:17:04,980
+So what we do we just do the same thing does that calculate total.
+
+257
+00:17:05,130 --> 00:17:10,110
+And we need to pass the card detail that we get in this that prompts a user.
+
+258
+00:17:10,290 --> 00:17:11,730
+This version of course.
+
+259
+00:17:11,820 --> 00:17:19,080
+So I'm going to go and since everything is updated again it passed a new state of card detail and it
+
+260
+00:17:19,080 --> 00:17:20,090
+should be working.
+
+261
+00:17:20,430 --> 00:17:22,730
+So let's check it out.
+
+262
+00:17:23,280 --> 00:17:23,610
+OK.
+
+263
+00:17:23,620 --> 00:17:27,550
+So I'm going to remove the first one and then we can have.
+
+264
+00:17:27,570 --> 00:17:28,970
+We are removing everything.
+
+265
+00:17:29,070 --> 00:17:30,860
+Let me just reload the application.
+
+266
+00:17:31,860 --> 00:17:34,090
+And we are actually not removing from the server.
+
+267
+00:17:34,110 --> 00:17:41,950
+So I'm going to go here and just make sure let me open it I'm going to go to council and see what we
+
+268
+00:17:41,950 --> 00:17:45,480
+get and we get local hosts removed from court not found.
+
+269
+00:17:45,550 --> 00:17:48,250
+And this is because of a mistake with the route.
+
+270
+00:17:48,250 --> 00:17:54,210
+I'm pretty sure if this remove from card for four.
+
+271
+00:17:54,340 --> 00:17:56,230
+So let's go back.
+
+272
+00:17:56,230 --> 00:17:59,780
+API user remove from card.
+
+273
+00:17:59,890 --> 00:18:06,800
+So user actions get removed from a cart user's server.
+
+274
+00:18:08,940 --> 00:18:13,050
+Or by this I'm pretty sure that this is just a silly mistake.
+
+275
+00:18:13,600 --> 00:18:15,080
+So remove.
+
+276
+00:18:15,470 --> 00:18:16,470
+And we can get it.
+
+277
+00:18:16,470 --> 00:18:19,630
+So let me just think for a minute and find a problem.
+
+278
+00:18:20,050 --> 00:18:27,330
+Of course it's users have made this mistake before.
+
+279
+00:18:27,340 --> 00:18:27,780
+All right.
+
+280
+00:18:27,780 --> 00:18:29,410
+You know a lot of code man.
+
+281
+00:18:29,500 --> 00:18:35,410
+So again talking and doing and watching not so easy it's like going to reload the application and try
+
+282
+00:18:35,410 --> 00:18:41,830
+again this time should work because the only thing that was wrong was the request.
+
+283
+00:18:41,950 --> 00:18:44,200
+So we get it we remove it and we get it.
+
+284
+00:18:44,320 --> 00:18:48,100
+If we load the application and notice that it's recalculating.
+
+285
+00:18:48,100 --> 00:18:51,870
+If I reload the application everything is good.
+
+286
+00:18:51,880 --> 00:18:53,630
+Now we have the new state of this.
+
+287
+00:18:53,800 --> 00:18:57,450
+So if I remove it we should be getting the face of.
+
+288
+00:18:57,460 --> 00:18:58,360
+You have no items.
+
+289
+00:18:58,360 --> 00:18:59,770
+You know the sad face.
+
+290
+00:18:59,780 --> 00:19:00,640
+So remove.
+
+291
+00:19:00,640 --> 00:19:03,220
+You have no items going to go back to guitars.
+
+292
+00:19:03,350 --> 00:19:07,120
+I'm going to add it again two at three at four.
+
+293
+00:19:07,160 --> 00:19:10,810
+Go to my car and we get it and we are recalculating.
+
+294
+00:19:10,810 --> 00:19:12,760
+Let me delete this one.
+
+295
+00:19:12,760 --> 00:19:13,590
+There we go.
+
+296
+00:19:13,750 --> 00:19:17,550
+I'm going to do this one and we just get one and do it again.
+
+297
+00:19:17,860 --> 00:19:18,310
+All right.
+
+298
+00:19:18,340 --> 00:19:19,350
+So everything works.
+
+299
+00:19:19,360 --> 00:19:20,840
+So far everything works.
+
+300
+00:19:21,760 --> 00:19:23,840
+So I'm going to add more of this.
+
+301
+00:19:24,520 --> 00:19:26,250
+So what do we need to do now.
+
+302
+00:19:26,410 --> 00:19:30,590
+What we need to do now is going to be the people you know the Pay-Pal connector.
+
+303
+00:19:30,790 --> 00:19:34,030
+So let's go to the next next one and start doing the paypal.
+

@@ -1,0 +1,504 @@
+1
+00:00:00,880 --> 00:00:03,860
+All right so let's create that re-useable button.
+
+2
+00:00:03,860 --> 00:00:09,170
+So from time to time you will need to use some code that of course you can if you're going to you're
+
+3
+00:00:09,170 --> 00:00:14,300
+going to be using the whole time in this case it's just a button because of course this is a single
+
+4
+00:00:14,450 --> 00:00:16,400
+simple simple application.
+
+5
+00:00:16,400 --> 00:00:23,070
+But on the next to the next project you begin to do a lot of reusable code because we have tons of sections.
+
+6
+00:00:23,240 --> 00:00:26,870
+So it kind of makes sense for us to reuse some code.
+
+7
+00:00:27,170 --> 00:00:35,090
+So OK so we added first going to go to components and create a directory folder werent going to be hosting
+
+8
+00:00:35,090 --> 00:00:36,780
+this reusable code.
+
+9
+00:00:36,840 --> 00:00:38,450
+I'm going to call it right now.
+
+10
+00:00:38,570 --> 00:00:40,040
+But sometimes I call it.
+
+11
+00:00:40,120 --> 00:00:43,200
+I know it's completely up to you.
+
+12
+00:00:43,220 --> 00:00:48,100
+So inside you tell us I will create a new component called my button.
+
+13
+00:00:48,230 --> 00:00:48,700
+Yes.
+
+14
+00:00:48,740 --> 00:00:53,040
+So this one is just a button we're going to do something very simple right here.
+
+15
+00:00:53,370 --> 00:00:53,870
+OK.
+
+16
+00:00:53,990 --> 00:00:59,220
+So this my button is going to be chose to react statelets component.
+
+17
+00:00:59,480 --> 00:01:01,420
+So it's going to be called my button.
+
+18
+00:01:01,460 --> 00:01:07,580
+So this component will be getting some props and pretty much what we need to do we need to use a button
+
+19
+00:01:07,880 --> 00:01:14,140
+from material real material UI material UI.
+
+20
+00:01:14,450 --> 00:01:16,930
+So let me just show you the button first.
+
+21
+00:01:17,390 --> 00:01:21,740
+So right here a component demos and then buttons.
+
+22
+00:01:21,770 --> 00:01:23,180
+So this is what we can be doing.
+
+23
+00:01:23,210 --> 00:01:28,960
+We're going to get a button and we will be adding an icon to the button just like this.
+
+24
+00:01:28,970 --> 00:01:29,520
+All right.
+
+25
+00:01:29,810 --> 00:01:38,810
+So we're going to go back to our project and he out of here I need to import than Bunin from AD material
+
+26
+00:01:39,480 --> 00:01:40,250
+core.
+
+27
+00:01:40,430 --> 00:01:41,730
+And then of course button.
+
+28
+00:01:41,800 --> 00:01:42,770
+OK.
+
+29
+00:01:43,220 --> 00:01:43,990
+Button up.
+
+30
+00:01:44,000 --> 00:01:44,960
+All right.
+
+31
+00:01:45,650 --> 00:01:46,640
+OK.
+
+32
+00:01:46,820 --> 00:01:53,510
+So now on the if you go to the original we have kind of an icon for a ticket and that this comes from
+
+33
+00:01:53,510 --> 00:01:54,740
+resources.
+
+34
+00:01:54,860 --> 00:01:56,680
+So we have right here at the ticket icon.
+
+35
+00:01:56,690 --> 00:02:05,950
+So we need to import it as well so import ticket icon from opening close that that forward slash that
+
+36
+00:02:06,110 --> 00:02:13,930
+that for Slash resources for Slash images lash and icons and ticket.
+
+37
+00:02:13,940 --> 00:02:14,610
+There we go.
+
+38
+00:02:14,840 --> 00:02:15,530
+OK.
+
+39
+00:02:15,920 --> 00:02:23,570
+So instead of here the only thing that this component will return is the material you buy button just
+
+40
+00:02:23,570 --> 00:02:29,590
+like this button open and close and this button will have the image and the text.
+
+41
+00:02:29,720 --> 00:02:31,850
+But we're going to be passing the text.
+
+42
+00:02:32,030 --> 00:02:38,260
+What we have inside the button through prompts and a lot of other properties properties through prompts.
+
+43
+00:02:38,270 --> 00:02:41,590
+So first we're going to just create the button EMG.
+
+44
+00:02:41,750 --> 00:02:47,460
+We have a source and the source is going to be ticket icon just like this.
+
+45
+00:02:47,610 --> 00:02:51,310
+Me make it like this so we can you know it's a little bit nicer.
+
+46
+00:02:51,470 --> 00:02:54,060
+And then I get to close the stack.
+
+47
+00:02:54,140 --> 00:03:05,080
+So instead it's going to be adding a class a class name of icon and then image and I will add an alt.
+
+48
+00:03:05,090 --> 00:03:06,750
+If not you're going to get a warning.
+
+49
+00:03:06,900 --> 00:03:10,240
+So icon buttons something very very simple.
+
+50
+00:03:10,340 --> 00:03:12,820
+So then we're going to have a text of button whatever.
+
+51
+00:03:12,830 --> 00:03:13,910
+Doesn't matter right now.
+
+52
+00:03:14,120 --> 00:03:16,370
+And this button needs some configuration.
+
+53
+00:03:16,370 --> 00:03:23,810
+This material component needs some configuration if you want to make the button a link just because
+
+54
+00:03:23,840 --> 00:03:25,030
+it is a link.
+
+55
+00:03:25,070 --> 00:03:27,710
+We need to add an H ref property.
+
+56
+00:03:27,710 --> 00:03:31,220
+So right now I'm just going to be adding Google that come.
+
+57
+00:03:31,280 --> 00:03:34,480
+But BKB passing the ref through prompts.
+
+58
+00:03:34,520 --> 00:03:36,070
+So then we need a variant.
+
+59
+00:03:36,260 --> 00:03:42,460
+And this is one of the props of you know of button and we have several options in this case.
+
+60
+00:03:42,470 --> 00:03:49,700
+I'm going to use contained the size the size is going to be small and we could pass all of this as props
+
+61
+00:03:49,730 --> 00:03:51,520
+but you're not really going to.
+
+62
+00:03:51,890 --> 00:03:58,280
+So then style open and close and then background going to change the background too.
+
+63
+00:03:58,400 --> 00:04:05,500
+And I'm going to be passing the background color through props so props that b c k.
+
+64
+00:04:05,600 --> 00:04:09,410
+Actually we didn't have it so far ascending it with just maybe red.
+
+65
+00:04:10,010 --> 00:04:18,160
+And then the caller is going to be I don't know what are we going to get kind of a template right now.
+
+66
+00:04:18,560 --> 00:04:24,250
+So now instead of discount we need to include this Bonnin and use it.
+
+67
+00:04:24,290 --> 00:04:29,670
+So I'm going to go to this account and we go at the top and import the Bunin from you Tilse.
+
+68
+00:04:29,810 --> 00:04:34,180
+So import my button.
+
+69
+00:04:34,370 --> 00:04:34,930
+There you go.
+
+70
+00:04:34,970 --> 00:04:45,080
+My button from that that forward slash utilities for slash my button and I get a copy in my bottom and
+
+71
+00:04:45,140 --> 00:04:53,240
+included of course we're going to get a dumb button but a dummy button but doesn't matter right now.
+
+72
+00:04:53,240 --> 00:04:53,510
+All right.
+
+73
+00:04:53,540 --> 00:04:54,400
+Let's see what we get.
+
+74
+00:04:54,530 --> 00:04:56,650
+So I'm going to go to the our product.
+
+75
+00:04:56,840 --> 00:05:02,180
+You know we get the button if I click it is going to take us to Google that come.
+
+76
+00:05:02,690 --> 00:05:02,990
+All right.
+
+77
+00:05:02,990 --> 00:05:04,520
+So you know we get the Bunim.
+
+78
+00:05:04,520 --> 00:05:10,790
+So no if you are maybe on a different component and we bring a button and then of course we put the
+
+79
+00:05:10,790 --> 00:05:16,340
+component my blood and right here you get to get the button doesn't matter if we are in highlights or
+
+80
+00:05:16,340 --> 00:05:17,870
+featured or whatever.
+
+81
+00:05:17,870 --> 00:05:20,120
+So this is a reusable component.
+
+82
+00:05:20,180 --> 00:05:20,430
+Now.
+
+83
+00:05:20,520 --> 00:05:27,020
+My button needs to be sending some props because maybe you want to change the color or maybe we went
+
+84
+00:05:27,020 --> 00:05:31,340
+into the link to be on a different to do different location.
+
+85
+00:05:31,460 --> 00:05:33,630
+So we need to pass the props as props.
+
+86
+00:05:33,650 --> 00:05:34,910
+We are getting it right here.
+
+87
+00:05:35,210 --> 00:05:40,620
+So I'm going to go right here and again to say that text is going to be equal to.
+
+88
+00:05:40,670 --> 00:05:50,130
+I don't know in this K purchased tickets let me do a capital P purchase and then tickets next the b
+
+89
+00:05:50,130 --> 00:06:00,130
+c k which is the background I'm going to use the yellow color f f 8 I'm sorry f f A then 8 0 0 0.
+
+90
+00:06:00,320 --> 00:06:05,990
+Then the color is going to be equal to white color.
+
+91
+00:06:06,070 --> 00:06:06,670
+One two three.
+
+92
+00:06:06,700 --> 00:06:08,150
+One two three.
+
+93
+00:06:08,390 --> 00:06:13,090
+And then the ref or I'm going to call it like better.
+
+94
+00:06:13,430 --> 00:06:14,270
+So I don't know.
+
+95
+00:06:14,390 --> 00:06:19,120
+And so this one is going to be maybe the same thing we were using right here.
+
+96
+00:06:19,380 --> 00:06:21,340
+Google's outcome doesn't matter.
+
+97
+00:06:21,930 --> 00:06:27,830
+OK so now this my but in this use of component will be receiving all these prompts so we can use the
+
+98
+00:06:27,830 --> 00:06:29,210
+props right here.
+
+99
+00:06:29,210 --> 00:06:37,070
+We can access prompts when say say Propst that text and we can get the purchase tickets so we are rendering
+
+100
+00:06:37,070 --> 00:06:42,250
+the reusable component with the props of whatever we are you know including my button.
+
+101
+00:06:42,440 --> 00:06:45,040
+Then we have the basic K which is the background.
+
+102
+00:06:45,080 --> 00:06:52,120
+So I'm going to say props that b c k we have the color I believe I called it.
+
+103
+00:06:52,130 --> 00:06:53,060
+Caller Yeah.
+
+104
+00:06:53,840 --> 00:06:58,340
+So props dot color I can to save it.
+
+105
+00:06:59,240 --> 00:07:04,730
+And we get the yellow and the white collar so next one it's going to be the link.
+
+106
+00:07:04,730 --> 00:07:12,020
+So on the property kind of opening close and we say props that link I believe I called that link.
+
+107
+00:07:12,120 --> 00:07:13,960
+Yes.
+
+108
+00:07:14,000 --> 00:07:14,250
+All right.
+
+109
+00:07:14,270 --> 00:07:19,310
+So if I look it we go to Google you know that works right.
+
+110
+00:07:19,310 --> 00:07:21,280
+So this reusable component.
+
+111
+00:07:21,530 --> 00:07:25,540
+This button we will be using the button right here.
+
+112
+00:07:25,550 --> 00:07:29,380
+So now there is no need to redo this code again.
+
+113
+00:07:29,420 --> 00:07:33,040
+We just import it call it pass the prompts.
+
+114
+00:07:33,230 --> 00:07:34,020
+And that is it.
+
+115
+00:07:34,100 --> 00:07:35,140
+Right.
+
+116
+00:07:35,180 --> 00:07:36,430
+How easy is that.
+
+117
+00:07:36,690 --> 00:07:37,120
+OK.
+
+118
+00:07:37,310 --> 00:07:40,210
+So I'm going to of course skip the project.
+
+119
+00:07:40,220 --> 00:07:43,000
+The code we have so far which is this one.
+
+120
+00:07:43,220 --> 00:07:48,710
+And you can download it and maybe inspect if something is not working in your project.
+
+121
+00:07:48,710 --> 00:07:53,810
+And of course we're going to be moving forward to prizing and then you know the location and the footer
+
+122
+00:07:53,810 --> 00:07:56,330
+which is they are going to be really really simple.
+
+123
+00:07:56,390 --> 00:08:01,540
+And then of course we're going to be passing to the next project which is going to be you know pretty
+
+124
+00:08:01,870 --> 00:08:04,740
+not pretty hard but you know hard enough.
+
+125
+00:08:04,740 --> 00:08:04,910
+OK.
+
+126
+00:08:04,940 --> 00:08:07,200
+So let's go to the next section and do the pricing.
+

@@ -1,0 +1,92 @@
+1
+00:00:00,700 --> 00:00:01,110
+Right.
+
+2
+00:00:01,110 --> 00:00:06,760
+So before we start with the actual coding are going to give you an overview of the three projects.
+
+3
+00:00:06,800 --> 00:00:10,210
+This this one this section it's for the first project.
+
+4
+00:00:10,230 --> 00:00:12,250
+So this is going to be a static web page.
+
+5
+00:00:12,310 --> 00:00:12,560
+Right.
+
+6
+00:00:12,570 --> 00:00:16,050
+No database no log in or dictation.
+
+7
+00:00:16,260 --> 00:00:23,280
+So whenever the application LOTES we get an animation with some javascript loading with the counter
+
+8
+00:00:23,320 --> 00:00:25,520
+a count down until the event starts.
+
+9
+00:00:25,530 --> 00:00:30,930
+And of course we get right here a carrousel right now at the top get a header.
+
+10
+00:00:30,990 --> 00:00:33,480
+And when we scroll down of course everything shows.
+
+11
+00:00:33,540 --> 00:00:40,050
+Now as we scroll down we get some transitions with the different sections of the web page and again
+
+12
+00:00:40,050 --> 00:00:43,180
+with apprising you know some kind of different kind of animations.
+
+13
+00:00:43,350 --> 00:00:47,250
+Then we get the map and the footer You know it's really really simple web page.
+
+14
+00:00:47,400 --> 00:00:54,030
+And we even get a side drawer and whenever we click it we go to a different section and we scroll to
+
+15
+00:00:54,030 --> 00:00:55,820
+a different section.
+
+16
+00:00:55,830 --> 00:00:59,970
+Right so this is what we're going to be building on a natural and at the end of project is going to
+
+17
+00:00:59,970 --> 00:01:01,270
+look something like this.
+
+18
+00:01:01,290 --> 00:01:04,930
+So we will create a you know a lot of components.
+
+19
+00:01:05,160 --> 00:01:11,810
+So again this is the first one and I'm showing you this because maybe this is maybe too easy for you.
+
+20
+00:01:11,940 --> 00:01:16,030
+So maybe you want to skip it and you just want to go to the second project.
+
+21
+00:01:16,040 --> 00:01:16,590
+All right.
+
+22
+00:01:16,680 --> 00:01:17,770
+So this is the first one.
+
+23
+00:01:17,820 --> 00:01:19,540
+Let's take a look at the second one.
+

@@ -1,0 +1,732 @@
+1
+00:00:01,210 --> 00:00:07,640
+OK so this is going to be the first bonus section of the third project and what are we going to do now.
+
+2
+00:00:07,690 --> 00:00:13,480
+We're going to send e-mail so whenever we can send an email whenever the user registers right here or
+
+3
+00:00:13,480 --> 00:00:19,780
+create an account we will send an email from within the server they're just saying you know welcome.
+
+4
+00:00:19,780 --> 00:00:20,780
+Or something like that.
+
+5
+00:00:20,860 --> 00:00:23,170
+That's what we need to do now.
+
+6
+00:00:23,620 --> 00:00:26,990
+We're doing this as the first bonus section because.
+
+7
+00:00:27,070 --> 00:00:31,760
+And of course this is a bonus section because maybe you don't care about e-mails.
+
+8
+00:00:31,800 --> 00:00:37,460
+You know we sent e-mails so there's no need to add it to the no original flow of the application.
+
+9
+00:00:37,540 --> 00:00:38,910
+But we're going to do it now.
+
+10
+00:00:38,920 --> 00:00:41,380
+Now we have many many ways of sending e-mails.
+
+11
+00:00:41,400 --> 00:00:46,270
+We're going to use the most default one which is not mailer this one.
+
+12
+00:00:46,390 --> 00:00:48,190
+So this one is a third party library.
+
+13
+00:00:48,250 --> 00:00:49,260
+We can install.
+
+14
+00:00:49,300 --> 00:00:56,740
+We can hook it up with our account our G-mail or maybe e-mail account works with any e-mail and this
+
+15
+00:00:56,740 --> 00:00:58,180
+one 3L is a testing.
+
+16
+00:00:58,180 --> 00:00:59,150
+I'm not going to use this one.
+
+17
+00:00:59,170 --> 00:01:05,850
+I just created two fake accounts for Gmail and just to get it a little bit more real.
+
+18
+00:01:06,250 --> 00:01:13,480
+And we're going to send an e-mail to you know the from the Francis I'm sorry Francis let me find it
+
+19
+00:01:13,480 --> 00:01:14,380
+here.
+
+20
+00:01:14,380 --> 00:01:17,020
+FRANCES JONES Oh it locked me out.
+
+21
+00:01:17,020 --> 00:01:18,740
+Let me just do the log in.
+
+22
+00:01:18,740 --> 00:01:22,070
+I create an account called waves that guitarist that Rabbe.
+
+23
+00:01:22,150 --> 00:01:28,740
+So this is the this is the shop and this one it's the user that's going to be registering.
+
+24
+00:01:28,920 --> 00:01:34,450
+So I'm going to log in I create of course a fake account.
+
+25
+00:01:35,070 --> 00:01:37,420
+I'm going to give you the passport everything else.
+
+26
+00:01:37,500 --> 00:01:39,620
+But of course you shouldn't use this one.
+
+27
+00:01:39,630 --> 00:01:40,050
+So
+
+28
+00:01:43,930 --> 00:01:47,570
+all right so what are we going to be doing.
+
+29
+00:01:47,570 --> 00:01:52,730
+Of course we're going to install this module and we're going to send an e-mail to something like this.
+
+30
+00:01:52,730 --> 00:01:56,900
+Of course you have and you get all the documentation you get a lot of configuration right here.
+
+31
+00:01:56,900 --> 00:02:01,640
+Ours is going to be real simple but you know right here you get all the examples and if you want to
+
+32
+00:02:01,640 --> 00:02:05,170
+use thermal is a testing environment for males.
+
+33
+00:02:05,270 --> 00:02:13,410
+Right now on the web for development you got a lot of ways of sending e-mails.
+
+34
+00:02:13,430 --> 00:02:15,860
+Now this is one one one way.
+
+35
+00:02:15,860 --> 00:02:16,400
+Right.
+
+36
+00:02:16,580 --> 00:02:19,470
+You have other ways like using Amerson services.
+
+37
+00:02:19,700 --> 00:02:21,960
+You can even use a sales force.
+
+38
+00:02:22,070 --> 00:02:27,730
+And you know and they work just like the cloud denarii they give you a service they give you the connector
+
+39
+00:02:27,740 --> 00:02:28,830
+the token everything else.
+
+40
+00:02:29,000 --> 00:02:33,770
+You set it up on the server and then you just you know send that to the to their servers.
+
+41
+00:02:33,770 --> 00:02:35,450
+For example when they bring this one.
+
+42
+00:02:35,450 --> 00:02:41,800
+This one called Melgen and this one is very very popular popular and works really really well.
+
+43
+00:02:41,810 --> 00:02:44,590
+So this one it's just like clock Kloeden Harry.
+
+44
+00:02:44,600 --> 00:02:46,410
+They give you an API.
+
+45
+00:02:46,700 --> 00:02:47,850
+They give you a token.
+
+46
+00:02:47,930 --> 00:02:52,940
+You just hook it up right here send email through them and they will send you our response and that
+
+47
+00:02:52,940 --> 00:02:55,320
+is that works really really great.
+
+48
+00:02:55,370 --> 00:02:59,780
+Use this one in the past never had a problem and has tons of support.
+
+49
+00:02:59,780 --> 00:03:03,950
+You can even send 10000 e-mails free every month.
+
+50
+00:03:03,950 --> 00:03:09,440
+And of course if you need to send more e-mails you can upgrade and the prices you know are really really
+
+51
+00:03:09,680 --> 00:03:10,260
+good.
+
+52
+00:03:10,400 --> 00:03:11,780
+Not bad prices.
+
+53
+00:03:11,900 --> 00:03:13,970
+So I'm going to close this because we're not going to use it.
+
+54
+00:03:13,970 --> 00:03:14,750
+We're going to use this one.
+
+55
+00:03:14,780 --> 00:03:16,530
+So first we need to install it.
+
+56
+00:03:16,570 --> 00:03:24,590
+It's going to go here and say I'm going to kill the server then do clear and we do your own install.
+
+57
+00:03:24,710 --> 00:03:28,890
+So you're sorry your odd and then node mailer.
+
+58
+00:03:28,940 --> 00:03:29,630
+Right.
+
+59
+00:03:29,710 --> 00:03:31,390
+I'm going to use a very specific version.
+
+60
+00:03:31,400 --> 00:03:32,500
+You should do the same.
+
+61
+00:03:32,720 --> 00:03:37,160
+So it's the four six seven going to presenter.
+
+62
+00:03:37,160 --> 00:03:42,280
+It's going to take one minutes very very fast and now it's done because i've already have it installed.
+
+63
+00:03:42,420 --> 00:03:43,290
+So I'm going to clear.
+
+64
+00:03:43,310 --> 00:03:50,280
+And then you run your own run dev to start everything again.
+
+65
+00:03:50,660 --> 00:03:57,590
+So like before we have we get the waves that guitarist that ref which is the main account the shop account
+
+66
+00:03:57,890 --> 00:03:59,240
+and then the user right.
+
+67
+00:03:59,240 --> 00:04:05,780
+This is the new user you could use the same one you know the same sender and the same receiver with
+
+68
+00:04:05,780 --> 00:04:06,850
+your Gmail account.
+
+69
+00:04:06,860 --> 00:04:07,430
+You can do that.
+
+70
+00:04:07,440 --> 00:04:08,800
+It's going to work.
+
+71
+00:04:08,910 --> 00:04:10,750
+Now there's one more thing.
+
+72
+00:04:10,850 --> 00:04:17,960
+For example this wave that Guitard that Rev we need to pass some passport and configuration so we need
+
+73
+00:04:17,980 --> 00:04:19,820
+to put the passport right here.
+
+74
+00:04:20,030 --> 00:04:25,380
+So we need to change the configurations on the on the one that it's going to be sending the e-mail.
+
+75
+00:04:25,410 --> 00:04:26,770
+Ride the shop.
+
+76
+00:04:26,810 --> 00:04:32,460
+So right here if you look at when you're logged in with your account if you give access to my account
+
+77
+00:04:32,460 --> 00:04:38,240
+that Google dot com less secure apps and if you look at this on the web it's going to give you the configuration
+
+78
+00:04:39,050 --> 00:04:46,520
+you need to allow less secure apps on to you know send emails with your account through third party
+
+79
+00:04:46,610 --> 00:04:47,230
+service.
+
+80
+00:04:47,240 --> 00:04:51,460
+In this case our application if you of course don't do this.
+
+81
+00:04:51,530 --> 00:04:55,940
+Nothing's going to be sent so you need to do this if you want to test with Gmail.
+
+82
+00:04:55,940 --> 00:04:57,660
+Maybe you want to test with something else.
+
+83
+00:04:57,770 --> 00:04:58,500
+And that is cool.
+
+84
+00:04:58,520 --> 00:05:00,050
+It's going to work anyways.
+
+85
+00:05:00,050 --> 00:05:01,130
+All right.
+
+86
+00:05:01,820 --> 00:05:02,540
+So let's begin.
+
+87
+00:05:02,540 --> 00:05:08,660
+We install everything everything is running so now we're going to go to the server and require of course
+
+88
+00:05:08,660 --> 00:05:09,680
+the node mailer.
+
+89
+00:05:09,680 --> 00:05:20,350
+So going to say Konst Konst node Aghan called Meilleur equals require opening close.
+
+90
+00:05:20,390 --> 00:05:25,290
+And we say node Meyler real simple right now.
+
+91
+00:05:25,400 --> 00:05:26,360
+What are we going to do.
+
+92
+00:05:26,420 --> 00:05:32,030
+So we can learn how node Meilleur works are going to do all the logic right here.
+
+93
+00:05:32,030 --> 00:05:35,520
+So whenever the service starts we will send an e-mail.
+
+94
+00:05:35,570 --> 00:05:36,020
+Right.
+
+95
+00:05:36,050 --> 00:05:38,330
+And then we're going to of course begin to grab this.
+
+96
+00:05:38,330 --> 00:05:43,170
+Put it on a different place and make a more elaborated call code for this.
+
+97
+00:05:43,210 --> 00:05:45,690
+We're going to create some templates and everything else.
+
+98
+00:05:46,140 --> 00:05:49,790
+But for now just going to give you an example of how this works.
+
+99
+00:05:49,790 --> 00:05:51,840
+So first just to send to e-mail.
+
+100
+00:05:51,920 --> 00:05:53,830
+You need to create a transport.
+
+101
+00:05:53,870 --> 00:06:00,770
+So I'm going to say Konst as MCP and then transport you know this is just the name of the Birol you
+
+102
+00:06:00,770 --> 00:06:02,190
+can call wherever you like.
+
+103
+00:06:02,300 --> 00:06:07,190
+Then we make a reference to that third party library which is no way Meyler sorry.
+
+104
+00:06:07,430 --> 00:06:13,440
+And then we bring the Create transport so they create transport.
+
+105
+00:06:13,670 --> 00:06:18,110
+It's the connector is the thing that it's going to connect with the shop account.
+
+106
+00:06:18,110 --> 00:06:20,990
+In this case wave's not guitars that Rev.
+
+107
+00:06:21,530 --> 00:06:26,270
+So of course we need to pass an object and the object is the configuration you know how are we going
+
+108
+00:06:26,270 --> 00:06:27,030
+to use it.
+
+109
+00:06:27,050 --> 00:06:28,790
+So we need to specify a service.
+
+110
+00:06:28,880 --> 00:06:33,460
+And in this case it's going to be G-mail right than coma.
+
+111
+00:06:33,530 --> 00:06:37,950
+And we need of course to pass the indication of this not nothing's going to work.
+
+112
+00:06:38,240 --> 00:06:48,870
+So I went to a user and a passport so the user in my case it's waves that that RAM so waves that get
+
+113
+00:06:49,020 --> 00:06:50,360
+tars.
+
+114
+00:06:51,240 --> 00:06:53,540
+I believe I did plural guitars.
+
+115
+00:06:53,610 --> 00:07:03,300
+Yes that waves waves and guitars that Rev at gmail dot com.
+
+116
+00:07:03,540 --> 00:07:07,440
+And then of course coma and we need to Pat we need to give the password to this.
+
+117
+00:07:07,530 --> 00:07:12,340
+So the password it's full tone 1985.
+
+118
+00:07:12,340 --> 00:07:15,800
+So Fulton is a brand for you know guitar pedals.
+
+119
+00:07:16,140 --> 00:07:18,760
+I'm a guitar fan.
+
+120
+00:07:18,780 --> 00:07:19,740
+What are we going to do.
+
+121
+00:07:19,850 --> 00:07:20,370
+OK.
+
+122
+00:07:20,610 --> 00:07:26,670
+So now we are whenever we send the email discreet transport will connect with this and send email at
+
+123
+00:07:26,670 --> 00:07:27,410
+the end.
+
+124
+00:07:27,420 --> 00:07:32,030
+Now the next thing is going to be setting everything that has to do with the receiver.
+
+125
+00:07:32,040 --> 00:07:34,940
+Someone is going to be receiving e-mails from this account.
+
+126
+00:07:34,980 --> 00:07:40,970
+So we need to create a viable where we can store this and call it email and everything is on the documentation.
+
+127
+00:07:40,980 --> 00:07:48,930
+I'm using pretty much the same example then we have from we have two we have a subject just like this.
+
+128
+00:07:49,110 --> 00:07:55,590
+We have a text you can skip text and then an h t m l which is you know the code it's going to go to
+
+129
+00:07:55,590 --> 00:07:56,420
+the e-mail.
+
+130
+00:07:56,520 --> 00:08:03,840
+So the from is going to be from where you know from which you know service or user or whatever.
+
+131
+00:08:03,840 --> 00:08:07,620
+In this case it's going to be the waits which is the shop.
+
+132
+00:08:07,620 --> 00:08:10,550
+So this is going to be waves or something like that.
+
+133
+00:08:10,710 --> 00:08:15,550
+And then we need to pass the e-mail just like this now too.
+
+134
+00:08:15,690 --> 00:08:20,690
+And the two it's going to be that Jones that rep.
+
+135
+00:08:21,640 --> 00:08:31,740
+FRANCES JONES That rev at gmail that come then we need to pass the subject what is the subject.
+
+136
+00:08:31,740 --> 00:08:36,640
+So I'm going to send send test e-mail right.
+
+137
+00:08:36,840 --> 00:08:38,700
+That Acoma the text.
+
+138
+00:08:38,700 --> 00:08:48,430
+And again it's just a text testing our waves mails whatever that is coma and we need to pass the mail
+
+139
+00:08:48,450 --> 00:08:51,660
+that it's going to be rendered on the on the actual mail.
+
+140
+00:08:51,780 --> 00:08:55,270
+So in this case I'm going to put a bold of.
+
+141
+00:08:55,440 --> 00:08:57,060
+Hello guys.
+
+142
+00:08:57,090 --> 00:08:59,270
+This works something like that.
+
+143
+00:08:59,880 --> 00:09:00,560
+And that is it.
+
+144
+00:09:00,570 --> 00:09:05,640
+So whenever we create the transport that's going to connect this account and it will send an e-mail
+
+145
+00:09:05,640 --> 00:09:08,850
+with all this data in this configuration.
+
+146
+00:09:08,850 --> 00:09:15,960
+Then at the end do you get a third thing which is the the S T S M A T P transport and a callback.
+
+147
+00:09:16,020 --> 00:09:24,830
+So we do m s r s m t p and transport than dot and we send the email.
+
+148
+00:09:24,960 --> 00:09:30,870
+So we are doing that action and this one of course will need the mail that we want to send just like
+
+149
+00:09:30,870 --> 00:09:34,450
+here and the S.M. GP transport it's survival.
+
+150
+00:09:34,480 --> 00:09:37,600
+So is connected to this sending this email.
+
+151
+00:09:37,680 --> 00:09:43,320
+And then of course Colma you get a function back you can use our functions.
+
+152
+00:09:43,710 --> 00:09:45,790
+I'm using pretty much same example.
+
+153
+00:09:45,810 --> 00:09:51,140
+They give us so of course you get an error and you get a response.
+
+154
+00:09:51,150 --> 00:09:57,900
+Now of course if you get an error or something like this I'm going to cancel on the console log the
+
+155
+00:09:57,990 --> 00:10:01,230
+error are very good.
+
+156
+00:10:01,490 --> 00:10:05,910
+And then else opening close and we do console log.
+
+157
+00:10:06,410 --> 00:10:10,750
+I don't know email sent now.
+
+158
+00:10:10,920 --> 00:10:14,180
+Every time you open this it's going to go and perform this action.
+
+159
+00:10:14,220 --> 00:10:16,120
+So you need to close it so.
+
+160
+00:10:16,230 --> 00:10:18,220
+And as transport.
+
+161
+00:10:18,360 --> 00:10:21,040
+And then we do close.
+
+162
+00:10:21,150 --> 00:10:21,740
+All right.
+
+163
+00:10:21,900 --> 00:10:23,200
+And that is it.
+
+164
+00:10:23,220 --> 00:10:30,270
+So in theory if I restart the server noticed I did a safe right here and not want it's restarting my
+
+165
+00:10:30,270 --> 00:10:30,960
+server.
+
+166
+00:10:31,110 --> 00:10:32,570
+And we get the e-mail sent.
+
+167
+00:10:32,610 --> 00:10:34,880
+So we get this callback everything worked.
+
+168
+00:10:34,880 --> 00:10:39,200
+So now if I go to Frances Jones again we get two e-mails.
+
+169
+00:10:39,210 --> 00:10:41,260
+You know really works really easy.
+
+170
+00:10:41,290 --> 00:10:46,650
+Waves sent us e-mail and hello guys this works and we are sending of course from this.
+
+171
+00:10:46,650 --> 00:10:52,650
+Now this is not working is because something of this is wrong but most likely is the less secure apps.
+
+172
+00:10:52,650 --> 00:10:56,860
+Make sure you set this on for the this account.
+
+173
+00:10:56,860 --> 00:11:00,930
+The way waves not guitar you know whatever account you're using.
+
+174
+00:11:00,930 --> 00:11:01,260
+All right.
+
+175
+00:11:01,290 --> 00:11:02,880
+So this works.
+
+176
+00:11:02,880 --> 00:11:08,010
+So what we're going to be doing now we're going to create a function actually you can create a place
+
+177
+00:11:08,340 --> 00:11:15,680
+where we can store our emails logic because we don't want to do this every time we send an e-mail.
+
+178
+00:11:15,870 --> 00:11:16,510
+Right.
+
+179
+00:11:16,530 --> 00:11:22,710
+So we're going to create a function and that function makes a reference to a file that hosts this function
+
+180
+00:11:23,060 --> 00:11:29,280
+and we will be passing the sender the name some extra data we will need later and which template we
+
+181
+00:11:29,280 --> 00:11:30,780
+can create templates.
+
+182
+00:11:30,780 --> 00:11:31,110
+Right.
+
+183
+00:11:31,230 --> 00:11:35,190
+Well let's go to the next one and create all the logic to create that function.
+

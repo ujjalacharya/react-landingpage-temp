@@ -1,0 +1,532 @@
+1
+00:00:01,020 --> 00:00:08,640
+OK so now we can start using POST man right here that B is the project I've already built my hear this
+
+2
+00:00:08,640 --> 00:00:13,630
+one and we're going to do pretty much the same thing with you right here.
+
+3
+00:00:13,650 --> 00:00:18,540
+So with postman you can create collections where you store all your requests.
+
+4
+00:00:18,540 --> 00:00:23,650
+Since we are using waves as the name of the product and then we use weights.
+
+5
+00:00:23,670 --> 00:00:24,930
+So create.
+
+6
+00:00:25,060 --> 00:00:28,710
+So every request is stored inside here now.
+
+7
+00:00:28,800 --> 00:00:34,310
+Right now we're going to make requests to the local host 3 0 0 2.
+
+8
+00:00:34,310 --> 00:00:42,900
+Now every time we make a request we will have to do age TTP Collen forward slash localhost 3 0 0 2 and
+
+9
+00:00:42,900 --> 00:00:45,040
+I don't really want to do that.
+
+10
+00:00:45,060 --> 00:00:49,200
+What we can do we can create firewalls right here and use them.
+
+11
+00:00:49,200 --> 00:00:57,120
+So right now I'm going to select no environment I'm going to go right here and to the settings and at.
+
+12
+00:00:57,150 --> 00:01:00,530
+So what we do we end bond with ADD an environment.
+
+13
+00:01:00,630 --> 00:01:02,730
+So I'm going to call it wipes.
+
+14
+00:01:02,760 --> 00:01:09,120
+Now we can add keys in this case the key of this is going to be named you are l So this is just like
+
+15
+00:01:09,150 --> 00:01:16,230
+creating a variable just a key value pair and right here you can pass what are we actually doing where
+
+16
+00:01:16,260 --> 00:01:18,200
+where what is the value of this key.
+
+17
+00:01:18,340 --> 00:01:23,440
+And this case is H TTP Kallen for Slash localhost.
+
+18
+00:01:23,490 --> 00:01:26,480
+And then I'm using 3 0 CO2.
+
+19
+00:01:26,520 --> 00:01:27,480
+All right.
+
+20
+00:01:27,480 --> 00:01:30,640
+So whenever we make a request I'm going to save it.
+
+21
+00:01:31,410 --> 00:01:31,700
+Right.
+
+22
+00:01:31,710 --> 00:01:38,390
+We have it inside waves and that rival We can select the environment right here which is waves and I'm
+
+23
+00:01:38,400 --> 00:01:42,210
+going to I'm going to do localhost Oh sorry I'm going to do this.
+
+24
+00:01:42,270 --> 00:01:43,510
+Got them Stosh Mars.
+
+25
+00:01:43,650 --> 00:01:50,180
+And then you are l and this will be equal to any PI over to local host 3 0 0 2.
+
+26
+00:01:50,310 --> 00:01:54,060
+So there's no need to type it which is doing well and that is it.
+
+27
+00:01:54,090 --> 00:01:54,590
+All right.
+
+28
+00:01:54,810 --> 00:01:58,950
+So backing our project we need to start creating all the logic for this.
+
+29
+00:01:58,950 --> 00:02:07,200
+Now whenever we register a user we are asking right here on the user schema and email because it's required
+
+30
+00:02:07,290 --> 00:02:11,130
+a passport name and a last name right.
+
+31
+00:02:11,160 --> 00:02:13,560
+This for fields are required.
+
+32
+00:02:13,560 --> 00:02:20,220
+So I'm going to go right here and whenever someone makes a request to delay this for now for a post
+
+33
+00:02:20,220 --> 00:02:27,980
+request for this route we need to create a new user schema wrap data from the body from that Jason we
+
+34
+00:02:27,980 --> 00:02:30,150
+we're going to be sending and then store it.
+
+35
+00:02:30,150 --> 00:02:37,950
+So first I create a new virus called user and this user is going to be equal to new and then user just
+
+36
+00:02:37,950 --> 00:02:40,620
+like this new user and this new user.
+
+37
+00:02:40,710 --> 00:02:44,050
+It's a new user right here this model.
+
+38
+00:02:44,430 --> 00:02:49,410
+And whenever I do this I want to get whatever I get from the request.
+
+39
+00:02:49,410 --> 00:02:56,700
+Remember that when we send we receive requests for this we are expecting some values from the body in
+
+40
+00:02:56,700 --> 00:02:58,320
+that Jason format.
+
+41
+00:02:58,320 --> 00:03:03,660
+So when we create a new model we're going to be passing us in arguments that data we get from that from
+
+42
+00:03:03,660 --> 00:03:05,650
+this request from this route.
+
+43
+00:03:05,670 --> 00:03:06,650
+Right.
+
+44
+00:03:06,660 --> 00:03:13,350
+So then since we have a new model and we have the data we need we need to create a new user you stored
+
+45
+00:03:13,410 --> 00:03:14,760
+inside the database.
+
+46
+00:03:14,790 --> 00:03:19,730
+So I'm going to say a user save this is the way we stored things in Mungo.
+
+47
+00:03:19,890 --> 00:03:24,110
+And of course after we save it we have an error.
+
+48
+00:03:24,960 --> 00:03:31,230
+And the actual document whenever we store something the server will return back that the user that was
+
+49
+00:03:31,230 --> 00:03:33,820
+stored inside of the Mongo DVH.
+
+50
+00:03:34,110 --> 00:03:41,600
+So if we get an error what we do we return responds with Jason.
+
+51
+00:03:41,610 --> 00:03:42,130
+All right.
+
+52
+00:03:42,330 --> 00:03:43,230
+So what we do.
+
+53
+00:03:43,250 --> 00:03:48,780
+Going to say success just like this and then falls and I get to attach the error.
+
+54
+00:03:49,110 --> 00:03:51,830
+So whatever we get from you are we going to show it on screen.
+
+55
+00:03:52,110 --> 00:03:59,170
+Now of course if everything goes goes OK and we are able to register a new user it will not go to this
+
+56
+00:03:59,220 --> 00:04:02,380
+this this return which is going to move forward.
+
+57
+00:04:02,460 --> 00:04:10,030
+So we know say we do arrest for response and we send a status of 200.
+
+58
+00:04:10,410 --> 00:04:14,650
+All right so now that the browser is going to get a status of 200 response.
+
+59
+00:04:14,970 --> 00:04:17,570
+And of course we need to send them some JSM back.
+
+60
+00:04:17,730 --> 00:04:22,440
+And what I'm going to do I'm going to send this same success but this time it's going to be true.
+
+61
+00:04:22,590 --> 00:04:26,040
+And then I'm going to be showing the user data.
+
+62
+00:04:26,310 --> 00:04:31,580
+Remember that when we whenever we store something Mongo divi they give us back what we stored.
+
+63
+00:04:31,590 --> 00:04:33,510
+So this is inside the dock.
+
+64
+00:04:33,630 --> 00:04:37,490
+So what I do I'm going to say dock later are we going to change this a little bit.
+
+65
+00:04:37,500 --> 00:04:39,140
+But for now it's OK.
+
+66
+00:04:39,510 --> 00:04:40,440
+And that is it.
+
+67
+00:04:40,470 --> 00:04:43,150
+So we should be able to store some user.
+
+68
+00:04:43,290 --> 00:04:46,390
+Now I'm going to go to postman and right here.
+
+69
+00:04:46,410 --> 00:04:49,300
+We need to pass the actual route.
+
+70
+00:04:49,340 --> 00:04:52,360
+So I'm going to copy the route and put it right here.
+
+71
+00:04:52,580 --> 00:04:56,470
+It's going to be a post request but we need to send some information.
+
+72
+00:04:56,600 --> 00:05:03,900
+So I'm going to go to the headers and I'm going to send the content type content type of application.
+
+73
+00:05:04,130 --> 00:05:07,470
+Jason and I did it incorrectly.
+
+74
+00:05:07,490 --> 00:05:09,340
+Sorry for this QAnd.
+
+75
+00:05:09,530 --> 00:05:10,970
+We need to press enter.
+
+76
+00:05:10,970 --> 00:05:11,810
+There we go.
+
+77
+00:05:12,080 --> 00:05:15,350
+And then application Jason.
+
+78
+00:05:15,370 --> 00:05:16,300
+All right.
+
+79
+00:05:16,310 --> 00:05:21,440
+Now of course we need to send some Jason data so we need to go to body.
+
+80
+00:05:21,470 --> 00:05:26,070
+We need to select Rawle and we need to select Jason application maybe you have text.
+
+81
+00:05:26,150 --> 00:05:27,540
+Make sure you have Jason.
+
+82
+00:05:27,620 --> 00:05:32,410
+So we open curly braces and inside of here we start adding things.
+
+83
+00:05:32,420 --> 00:05:33,420
+We need an e-mail.
+
+84
+00:05:33,440 --> 00:05:37,800
+So the e-mail is going to be Francis at gmail dot com.
+
+85
+00:05:37,810 --> 00:05:39,370
+All right then a coma.
+
+86
+00:05:39,480 --> 00:05:42,130
+And I'm going to add a password so password.
+
+87
+00:05:42,320 --> 00:05:45,850
+It's going to be equal to pass word.
+
+88
+00:05:45,950 --> 00:05:53,200
+One two three coma we need a name so name equal to Frances.
+
+89
+00:05:53,640 --> 00:05:54,310
+Right.
+
+90
+00:05:54,350 --> 00:05:54,940
+Coma.
+
+91
+00:05:54,980 --> 00:06:02,410
+And then a last name and last name and the last name Jones.
+
+92
+00:06:02,500 --> 00:06:03,430
+This is a nickname.
+
+93
+00:06:03,440 --> 00:06:05,610
+FRANCES JONES Doesn't Exist.
+
+94
+00:06:05,650 --> 00:06:08,740
+OK so now we are ready to make the request and see what happens.
+
+95
+00:06:08,870 --> 00:06:13,640
+I'm going to send a request and okay and we get a response back right here at the bottom.
+
+96
+00:06:13,640 --> 00:06:20,900
+So we made the request and our server it's returning whatever Mungo divi returning and what we do we
+
+97
+00:06:20,900 --> 00:06:25,720
+get the success true and then the user data with the card empty and everything else.
+
+98
+00:06:25,760 --> 00:06:31,820
+So we have the roll which is zero and now we have an ID and this ID it's our two generated by Mongo
+
+99
+00:06:31,820 --> 00:06:32,760
+DVH.
+
+100
+00:06:32,990 --> 00:06:38,540
+And of course we get the e-mail and the password and everything else so we are able to store a new user.
+
+101
+00:06:38,540 --> 00:06:45,970
+Now if I go to robo 3 I'm going to refresh this and we get the waves project.
+
+102
+00:06:46,060 --> 00:06:48,190
+It's going to go open users.
+
+103
+00:06:48,320 --> 00:06:49,540
+And we have a user.
+
+104
+00:06:49,580 --> 00:06:52,030
+So we are able to register a new user.
+
+105
+00:06:52,040 --> 00:06:53,030
+Very good.
+
+106
+00:06:53,030 --> 00:07:00,110
+Now of course we need to still do need to do a lot of things because when we just are a new user we
+
+107
+00:07:00,110 --> 00:07:02,840
+are adding a password which has some string.
+
+108
+00:07:03,020 --> 00:07:04,670
+So we shouldn't do this.
+
+109
+00:07:04,670 --> 00:07:05,970
+Never ever do this.
+
+110
+00:07:05,990 --> 00:07:08,620
+What we need to do is to hash out a password.
+
+111
+00:07:09,080 --> 00:07:15,170
+So we're going to do some logic inside of the user schema in the next few lectures into you know how
+
+112
+00:07:15,170 --> 00:07:21,180
+to hash a password how to generate it generate a token after they log in and everything else.
+
+113
+00:07:21,350 --> 00:07:25,370
+Now right now we are returning on the server all the user data.
+
+114
+00:07:25,370 --> 00:07:31,160
+What you can do if you want to do if you just want to return maybe the name or the ID.
+
+115
+00:07:31,160 --> 00:07:34,440
+Remember that this is Jason Jason File.
+
+116
+00:07:34,430 --> 00:07:37,360
+So Jason Jason value Bible.
+
+117
+00:07:37,400 --> 00:07:42,040
+So inside user data you can just pass name right.
+
+118
+00:07:42,050 --> 00:07:46,150
+So instead of doc you do name now.
+
+119
+00:07:46,340 --> 00:07:53,720
+Notice right now I'm going to do the same post request with the same information and I'm going to say
+
+120
+00:07:53,810 --> 00:08:01,100
+Send we get success false because key error collection user index duplicate key.
+
+121
+00:08:01,190 --> 00:08:06,290
+Remember that the email read Mark this is unique.
+
+122
+00:08:06,320 --> 00:08:07,520
+So this is not going to work.
+
+123
+00:08:07,550 --> 00:08:09,070
+I need to change the user.
+
+124
+00:08:09,320 --> 00:08:11,350
+I'm going to say Francis to whatever.
+
+125
+00:08:11,380 --> 00:08:12,600
+Doesn't matter right now.
+
+126
+00:08:12,770 --> 00:08:13,840
+I'm going to say send.
+
+127
+00:08:14,150 --> 00:08:15,520
+And now we get success true.
+
+128
+00:08:15,530 --> 00:08:19,110
+And we just get the name of the user instead of the whole document.
+
+129
+00:08:19,400 --> 00:08:20,250
+All right.
+
+130
+00:08:20,250 --> 00:08:24,590
+For now I'm going to get the whole document because we are just creating this.
+
+131
+00:08:24,710 --> 00:08:26,140
+Are developing.
+
+132
+00:08:26,150 --> 00:08:26,590
+All right.
+
+133
+00:08:26,630 --> 00:08:31,300
+OK so let's go to the next section and let's start with the hashing passport part of things.
+

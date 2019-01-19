@@ -1,0 +1,304 @@
+1
+00:00:01,190 --> 00:00:05,390
+So we react we can output inline dynamic content.
+
+2
+00:00:05,390 --> 00:00:10,370
+I know this sounds a little bit confusing but let me show you with some code.
+
+3
+00:00:10,370 --> 00:00:11,380
+It's real simple.
+
+4
+00:00:11,480 --> 00:00:16,750
+Let's say that instead of returning this is my new header I want to show the dates.
+
+5
+00:00:16,790 --> 00:00:20,090
+So I'm going to say the date is now right here.
+
+6
+00:00:20,090 --> 00:00:22,030
+I need to pass some dynamic content.
+
+7
+00:00:22,040 --> 00:00:27,830
+I'm going to get the date in milliseconds from javascript so I'm going to use curly braces and inside
+
+8
+00:00:27,830 --> 00:00:31,570
+the curly braces we can put some logic right here.
+
+9
+00:00:31,730 --> 00:00:35,090
+So I'm going to use vanilla Yes if sex is fine.
+
+10
+00:00:35,090 --> 00:00:40,670
+Sorry my little javascript I'm going to say now this is going to return to date in milliseconds.
+
+11
+00:00:40,670 --> 00:00:42,590
+So you finally reloaded and check it.
+
+12
+00:00:42,620 --> 00:00:44,680
+The date is in milliseconds.
+
+13
+00:00:44,930 --> 00:00:51,460
+So inside curly braces we can do pretty much whatever we want as long as we return a single statement
+
+14
+00:00:51,470 --> 00:00:53,420
+a single expression.
+
+15
+00:00:53,420 --> 00:00:56,900
+So let's say I want to print the ear.
+
+16
+00:00:56,900 --> 00:00:59,630
+So I'm going to just say this I'm going to make it just like this.
+
+17
+00:00:59,630 --> 00:01:03,730
+So it's a little bit more readable but it's the same idea.
+
+18
+00:01:03,920 --> 00:01:10,130
+So to return the date for the year first I need to create a variable that is going to be called new
+
+19
+00:01:10,420 --> 00:01:16,520
+date and this one is going to create an instance of date just like this date.
+
+20
+00:01:17,060 --> 00:01:23,330
+And then if you wanted to get the ear from from there you need to return the new date just like this
+
+21
+00:01:23,710 --> 00:01:27,870
+and Dot and get full year.
+
+22
+00:01:27,890 --> 00:01:30,020
+So this is again it's another Javascript.
+
+23
+00:01:30,140 --> 00:01:35,690
+So this is one is not going to work is going to give as an error message because you're using two different
+
+24
+00:01:35,690 --> 00:01:36,530
+expressions.
+
+25
+00:01:36,530 --> 00:01:39,910
+First we have the verbal and then we are doing the return.
+
+26
+00:01:39,920 --> 00:01:41,940
+So this one is not going to work.
+
+27
+00:01:42,110 --> 00:01:44,550
+But what we can do to solve this.
+
+28
+00:01:44,630 --> 00:01:47,900
+We can create a function that returns that data.
+
+29
+00:01:47,900 --> 00:01:51,890
+So I'm going to go over here and again to say Konst get your.
+
+30
+00:01:51,920 --> 00:01:52,860
+Something like that.
+
+31
+00:01:53,090 --> 00:01:58,910
+And then it's going to be just a fat Aro function and this fat function is going to do this logic and
+
+32
+00:01:58,920 --> 00:02:04,900
+it cut and paste that and we get your and this function only returns that year.
+
+33
+00:02:04,910 --> 00:02:13,690
+So now if I say get your just like this and I call to this function is going to give us back the ear.
+
+34
+00:02:13,700 --> 00:02:15,640
+So it's going to work.
+
+35
+00:02:15,650 --> 00:02:16,810
+So this is good.
+
+36
+00:02:16,820 --> 00:02:22,000
+And you can do it right here pretty much whatever you want as long as you return a single expression.
+
+37
+00:02:22,280 --> 00:02:25,770
+So we can do operations kind of a five plus five.
+
+38
+00:02:25,790 --> 00:02:27,020
+That's going to work.
+
+39
+00:02:27,170 --> 00:02:32,690
+We get the data Stan you know it's good we're here to get ears inside but never used.
+
+40
+00:02:32,720 --> 00:02:35,440
+I'm going to delete it just for now.
+
+41
+00:02:35,480 --> 00:02:38,000
+So why is this important.
+
+42
+00:02:38,390 --> 00:02:45,290
+Let's pretend that instead of Hetter we have kind of a user profile so we need we have an object of
+
+43
+00:02:45,290 --> 00:02:50,650
+the user with all the data inside and what we want to do we want to render the user data.
+
+44
+00:02:50,690 --> 00:02:56,570
+So I'm going to say Konst then user is going to be called to an object and it's going to have a name
+
+45
+00:02:56,690 --> 00:03:03,290
+and the name is going to be Frances of course if you if you're it's it's the first time for you in one
+
+46
+00:03:03,290 --> 00:03:04,190
+of my courses.
+
+47
+00:03:04,310 --> 00:03:08,200
+This is my main default user name it's Francis.
+
+48
+00:03:08,210 --> 00:03:09,170
+And the last name.
+
+49
+00:03:09,170 --> 00:03:11,360
+You guessed it Jones.
+
+50
+00:03:11,750 --> 00:03:14,760
+And let's say an age of 16.
+
+51
+00:03:15,050 --> 00:03:16,060
+So this is really important.
+
+52
+00:03:16,050 --> 00:03:17,350
+We just have an object.
+
+53
+00:03:17,360 --> 00:03:25,190
+So now if you want to output a card the card to every user are going to just put it just like this and
+
+54
+00:03:25,280 --> 00:03:30,790
+enclose everything remember everything in Princie just like that.
+
+55
+00:03:30,830 --> 00:03:34,430
+And now this one this dev is going to be the main container we need to.
+
+56
+00:03:34,430 --> 00:03:37,820
+We can only output some GSX inside a container.
+
+57
+00:03:37,820 --> 00:03:42,590
+And right here I can just put Dev and make a reference to that object.
+
+58
+00:03:42,590 --> 00:03:45,020
+It's going to be user name.
+
+59
+00:03:45,260 --> 00:03:47,850
+And if I wanted to get the last name.
+
+60
+00:03:47,870 --> 00:03:48,510
+Same thing.
+
+61
+00:03:48,530 --> 00:03:50,130
+User Data last name.
+
+62
+00:03:50,270 --> 00:03:51,890
+So this is going to be the way.
+
+63
+00:03:52,000 --> 00:03:59,620
+How how can we the way we output output dynamic data inside react and age.
+
+64
+00:03:59,740 --> 00:04:03,110
+And if we go right here we get Frances Jones and 16.
+
+65
+00:04:03,410 --> 00:04:07,470
+So you know this is really really simple but we're going to be using that.
+
+66
+00:04:07,480 --> 00:04:10,990
+Using this the whole the whole time.
+
+67
+00:04:11,100 --> 00:04:19,430
+So let's pretend let's just pretend that this user is going to be validating if the user is able to
+
+68
+00:04:19,520 --> 00:04:20,860
+access right here.
+
+69
+00:04:21,050 --> 00:04:29,390
+So again we can just run a function check if the user it's authorized to enter our our page or web page
+
+70
+00:04:29,390 --> 00:04:30,350
+our application.
+
+71
+00:04:30,620 --> 00:04:33,240
+And right here we get it just past True or false.
+
+72
+00:04:33,380 --> 00:04:40,290
+And this one is going to love the content that the page load are not going to do that later of course.
+
+73
+00:04:40,300 --> 00:04:42,180
+So OK let's keep moving forward.
+
+74
+00:04:42,210 --> 00:04:45,330
+We're going to be talking about types of components.
+
+75
+00:04:45,370 --> 00:04:47,420
+It's going to be really interesting.
+
+76
+00:04:47,430 --> 00:04:49,040
+So let's go to the next one.
+

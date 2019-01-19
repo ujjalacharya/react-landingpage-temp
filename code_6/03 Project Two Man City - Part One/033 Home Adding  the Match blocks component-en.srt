@@ -1,0 +1,868 @@
+1
+00:00:00,910 --> 00:00:02,460
+OK so let's continue with this.
+
+2
+00:00:02,530 --> 00:00:07,150
+Now inside the firebase Well there's actually another way we can to use this.
+
+3
+00:00:07,210 --> 00:00:10,970
+I just did this just to make sure and to show you how this works.
+
+4
+00:00:11,080 --> 00:00:15,850
+But we are not going to really use it like this so I'm going to go to the index and the lead that firebase
+
+5
+00:00:15,910 --> 00:00:22,090
+import later when we use the authentication we can do something similar but not just like this.
+
+6
+00:00:22,090 --> 00:00:27,080
+So inside firebase I'm going to delete this because we are not going to really use it.
+
+7
+00:00:27,160 --> 00:00:32,640
+Now I want I want I want to export you know available with all this logic.
+
+8
+00:00:32,710 --> 00:00:37,230
+So I'm going to go right here and create an export export.
+
+9
+00:00:37,240 --> 00:00:39,770
+So this is just like the misc file with it.
+
+10
+00:00:39,760 --> 00:00:43,490
+Right here we are just creating viral and exporting something.
+
+11
+00:00:43,540 --> 00:00:47,440
+So I'm going to export this firebase right.
+
+12
+00:00:47,750 --> 00:00:53,240
+And I would export more things first begin to make it we're going to make a request to get the matches.
+
+13
+00:00:53,290 --> 00:00:55,750
+So middle of this are going to get the matches.
+
+14
+00:00:55,750 --> 00:00:56,160
+All right.
+
+15
+00:00:56,260 --> 00:01:02,620
+So going to create a viable called firebase matches something like that you can call this whatever you
+
+16
+00:01:02,620 --> 00:01:03,570
+want.
+
+17
+00:01:04,060 --> 00:01:11,020
+So barbus matches and this one is going to be equal to that firebase DVH which is firebase that database
+
+18
+00:01:11,440 --> 00:01:17,650
+and then DOD and are going to make are going to use that reference to matches matches of reference we
+
+19
+00:01:17,650 --> 00:01:19,750
+have on the database right here.
+
+20
+00:01:19,960 --> 00:01:21,120
+We have this matches.
+
+21
+00:01:21,160 --> 00:01:25,810
+So if we wanted to call players we will need to use players and positions and everything else in this
+
+22
+00:01:25,810 --> 00:01:27,310
+case we just want matches.
+
+23
+00:01:27,520 --> 00:01:33,180
+So now I can export firebase matches just like this far as firebase matches.
+
+24
+00:01:33,310 --> 00:01:39,730
+And from a different file include this and it will make a reference to firebase dot database dot ref
+
+25
+00:01:39,830 --> 00:01:43,060
+that matches and there's no need to ride all this.
+
+26
+00:01:43,080 --> 00:01:44,820
+You know all of this again.
+
+27
+00:01:44,820 --> 00:01:45,270
+Right.
+
+28
+00:01:45,310 --> 00:01:46,620
+That's the first thing.
+
+29
+00:01:46,870 --> 00:01:49,300
+So now where do we need to.
+
+30
+00:01:49,340 --> 00:01:51,730
+Where are we going to be making this request.
+
+31
+00:01:51,730 --> 00:01:54,930
+You know the request for these blocks.
+
+32
+00:01:55,090 --> 00:01:59,010
+Well we have a component for that inside matches inside blocks.
+
+33
+00:01:59,120 --> 00:02:00,790
+So I'm going to go two blocks.
+
+34
+00:02:00,880 --> 00:02:06,790
+This is what is going to be a re-act class based component called Gluck's at the top we need to import
+
+35
+00:02:06,820 --> 00:02:08,030
+several things.
+
+36
+00:02:08,050 --> 00:02:10,660
+First we need to import opening close.
+
+37
+00:02:10,870 --> 00:02:18,040
+And we need to import that fire firebase matches from that that for Slash that are for us one more time
+
+38
+00:02:18,370 --> 00:02:20,150
+and it's going to be firebase.
+
+39
+00:02:20,200 --> 00:02:25,480
+So now if we make a request to this when we were able to connect to the database and bring the data
+
+40
+00:02:25,480 --> 00:02:27,330
+we want that's the first thing.
+
+41
+00:02:27,340 --> 00:02:28,050
+All right.
+
+42
+00:02:28,420 --> 00:02:34,720
+So inside the renter for now I'm not going to do anything but we will store the matches through state.
+
+43
+00:02:34,870 --> 00:02:39,940
+So matches open it close and then that's all right.
+
+44
+00:02:40,300 --> 00:02:47,770
+So inside of the render what we will do we will render a div with the class name just like this class
+
+45
+00:02:47,770 --> 00:02:58,750
+name of home matches and inside of here I will just say this show matches something like this show matches
+
+46
+00:02:59,200 --> 00:03:05,740
+opening close and pass the reference to this state that matches when you have this function going to
+
+47
+00:03:05,740 --> 00:03:06,810
+create right now.
+
+48
+00:03:07,060 --> 00:03:11,130
+So you know for now this function is going to do anything first begin to make the request.
+
+49
+00:03:11,230 --> 00:03:17,940
+So show matches equals to a function that returns some GSX later we will be looping all the matches
+
+50
+00:03:17,950 --> 00:03:24,310
+we get from the server and returning you know a deps for now which is going to return a div with match
+
+51
+00:03:24,340 --> 00:03:30,130
+whatever doesn't matter go back and the application should be reloading but it's not because I'm not
+
+52
+00:03:30,130 --> 00:03:34,900
+including blocks on the parent matches right here on the index.
+
+53
+00:03:34,900 --> 00:03:44,530
+So I'm going to go to index import blocks from that forward slash blocks and I'm going to make.
+
+54
+00:03:44,620 --> 00:03:47,620
+I'm going to add the tag right here blocks.
+
+55
+00:03:47,620 --> 00:03:51,430
+So now the application in theory should be reloading.
+
+56
+00:03:51,670 --> 00:03:52,980
+And we get match.
+
+57
+00:03:52,990 --> 00:03:53,440
+All right.
+
+58
+00:03:53,440 --> 00:03:56,440
+So this is what we get from our function show matches.
+
+59
+00:03:56,740 --> 00:03:59,270
+So now we need to make a request to the server.
+
+60
+00:03:59,350 --> 00:04:02,070
+And this is going to be a little bit weird.
+
+61
+00:04:02,080 --> 00:04:04,090
+So first I'm going to do it on the component.
+
+62
+00:04:04,120 --> 00:04:05,770
+Did mount everything.
+
+63
+00:04:06,010 --> 00:04:07,530
+Everything is mounted.
+
+64
+00:04:07,600 --> 00:04:12,130
+We will do river quest and where we have the information about the matches we will set the stage with
+
+65
+00:04:12,130 --> 00:04:17,640
+the new state of matches since we are importing firebase matches at the top.
+
+66
+00:04:17,640 --> 00:04:19,270
+I'm going to put firebase matches.
+
+67
+00:04:19,320 --> 00:04:21,250
+That's the first thing.
+
+68
+00:04:21,340 --> 00:04:22,260
+Now add one more thing.
+
+69
+00:04:22,270 --> 00:04:26,680
+If I'm talking too fast or maybe too slow for you at the bottom.
+
+70
+00:04:26,680 --> 00:04:34,260
+On the other player to me at the bottom in the left you have a button to play the BDO in a slower tempo
+
+71
+00:04:34,450 --> 00:04:36,260
+or to go a little bit faster.
+
+72
+00:04:36,340 --> 00:04:38,570
+You know do that the whole time.
+
+73
+00:04:38,590 --> 00:04:39,120
+All right.
+
+74
+00:04:39,250 --> 00:04:45,910
+So we are making a request to far based matches but we need to do a little bit more right here in the
+
+75
+00:04:45,910 --> 00:04:46,390
+database.
+
+76
+00:04:46,390 --> 00:04:55,040
+We have 1 2 3 4 5 6 7 8 9 10 11 maybe 12 entries with the matches and right here we just have sex.
+
+77
+00:04:55,060 --> 00:05:03,320
+So there's no need for us to retrieve all 12 because we just need six so we can use a method from the
+
+78
+00:05:03,350 --> 00:05:07,990
+you know the firebase the ref and get a limit to last.
+
+79
+00:05:07,990 --> 00:05:09,410
+So this is what he's going to do.
+
+80
+00:05:09,550 --> 00:05:12,000
+It's going to bring the last six.
+
+81
+00:05:12,040 --> 00:05:14,160
+In this case we just need six.
+
+82
+00:05:14,260 --> 00:05:19,840
+So going to do that and we need to use the once again just like with that before once it's going to
+
+83
+00:05:19,840 --> 00:05:20,910
+be bad.
+
+84
+00:05:21,340 --> 00:05:24,040
+And then of course this will return the promise.
+
+85
+00:05:24,130 --> 00:05:27,160
+Inside it will return a snapshot.
+
+86
+00:05:27,190 --> 00:05:35,110
+Just like with that before it's now shut the closes not shot right here of course we can do console
+
+87
+00:05:35,560 --> 00:05:38,160
+log is now shut.
+
+88
+00:05:38,320 --> 00:05:40,670
+And then of course dot.
+
+89
+00:05:40,900 --> 00:05:44,600
+And at least we get to see if we get something back.
+
+90
+00:05:45,170 --> 00:05:50,230
+And I got we get it when we can get the information but we can not use the information just the way
+
+91
+00:05:50,230 --> 00:05:50,570
+it is.
+
+92
+00:05:50,590 --> 00:05:54,760
+You know with a key and then the object inside of an object we cannot do this.
+
+93
+00:05:54,820 --> 00:05:57,690
+We need to convert this into an array of objects.
+
+94
+00:05:57,730 --> 00:06:01,580
+And if you notice this is a string.
+
+95
+00:06:01,720 --> 00:06:03,720
+It's the ID of the actual entry.
+
+96
+00:06:03,730 --> 00:06:07,040
+We have the ID here and we don't have it inside.
+
+97
+00:06:07,210 --> 00:06:12,160
+But sometimes we will need the ID inside of the actual object.
+
+98
+00:06:12,610 --> 00:06:18,510
+So we will need to kind of a convert this resoled into some something else.
+
+99
+00:06:18,550 --> 00:06:24,860
+So what we can do we can create a function that converts this and we can host it inside your tails.
+
+100
+00:06:25,030 --> 00:06:27,560
+And then Mintz told you that mistake.
+
+101
+00:06:28,030 --> 00:06:30,450
+It's going to be really useful.
+
+102
+00:06:30,470 --> 00:06:34,030
+So inside Misc. we're going to create a new function.
+
+103
+00:06:34,030 --> 00:06:35,800
+Let me make this better.
+
+104
+00:06:36,460 --> 00:06:39,460
+And the function you can put whatever name you want.
+
+105
+00:06:39,460 --> 00:06:46,360
+I'm going to click export first do the export than it cost and I'm going to I always call it firebase
+
+106
+00:06:46,630 --> 00:06:53,980
+and then Luper the Firebrace Luper will be a function that at the end will return something and it will
+
+107
+00:06:53,980 --> 00:06:58,420
+return a bit be receiving that snapshot as arguments.
+
+108
+00:06:58,420 --> 00:07:06,550
+So what we do we just need to loop the snapshot first to create Barville with then with the data and
+
+109
+00:07:06,550 --> 00:07:10,340
+it's going to be empty at the beginning after the loop.
+
+110
+00:07:10,390 --> 00:07:13,510
+This data will contain all our records in the way we want.
+
+111
+00:07:13,720 --> 00:07:20,350
+So what we do we do not snapshot dot and we do enter a for each and this is a method of firebase give
+
+112
+00:07:20,350 --> 00:07:23,050
+us for each something like this.
+
+113
+00:07:23,050 --> 00:07:28,730
+Each opening close so we open and we rerun a function.
+
+114
+00:07:28,840 --> 00:07:36,790
+So this for each will be getting a child snapshot and all of this is on the on the documentation of
+
+115
+00:07:36,790 --> 00:07:38,170
+firebase.
+
+116
+00:07:38,170 --> 00:07:44,620
+Now on each loop on each snapshot which is actually each entry of the of the array or the you know the
+
+117
+00:07:44,620 --> 00:07:47,640
+result we can do something else.
+
+118
+00:07:47,650 --> 00:07:51,880
+We can grab some data and push it to data in the way we want.
+
+119
+00:07:51,880 --> 00:07:56,750
+So I'm going to access data are viral and then I'm going to do push just like an array.
+
+120
+00:07:56,890 --> 00:08:01,780
+And what I'm going to be pushing is going to be the entire object now in entire object.
+
+121
+00:08:01,780 --> 00:08:08,110
+We just want two things all the data we have right here and we want to push the idea as well.
+
+122
+00:08:08,110 --> 00:08:15,340
+So I'm going to I'm going to go right here and say that that child snapshot dateable I'm accessing the
+
+123
+00:08:15,340 --> 00:08:20,400
+snapshot and putting inside all the values we have inside for each key.
+
+124
+00:08:20,440 --> 00:08:20,940
+Right.
+
+125
+00:08:21,250 --> 00:08:28,490
+And then I'm going to create a special key called ID and I going to say child snapshot dot key.
+
+126
+00:08:28,600 --> 00:08:28,900
+Right.
+
+127
+00:08:28,900 --> 00:08:34,270
+So we are getting that key and we are pushing a value called ID with the same name.
+
+128
+00:08:34,270 --> 00:08:34,840
+That's the idea.
+
+129
+00:08:34,840 --> 00:08:40,680
+Real simple this is not you know react to firebase is just standard Javascript.
+
+130
+00:08:40,870 --> 00:08:44,840
+And at the end when this is done we will return this data.
+
+131
+00:08:45,100 --> 00:08:45,460
+Right.
+
+132
+00:08:45,460 --> 00:08:46,570
+This is the idea.
+
+133
+00:08:46,570 --> 00:08:54,940
+So now I'm going to go two blocks and import this function import open and close and it's called firebase
+
+134
+00:08:54,940 --> 00:09:00,220
+Luper and we will include it from dot dot for Slash the dot for Slash.
+
+135
+00:09:00,370 --> 00:09:02,810
+And then you I and then Misc..
+
+136
+00:09:03,430 --> 00:09:10,050
+So now whenever we get this a snapshot and not about the whole snapshot we can create a viable called
+
+137
+00:09:10,570 --> 00:09:15,820
+I don't know whatever is you want to call it maybe matches if we are working with matches equals that
+
+138
+00:09:15,850 --> 00:09:17,400
+firebase Luper.
+
+139
+00:09:18,220 --> 00:09:21,200
+And we will be passing that snapshot we get.
+
+140
+00:09:21,280 --> 00:09:26,050
+So whenever we get the snapshot is going to go to firebase Luper Firebrace Luber is going to do that
+
+141
+00:09:26,050 --> 00:09:31,950
+logic and it will return an array with object objects which is what we want.
+
+142
+00:09:32,100 --> 00:09:40,630
+And if I do a console log and then mattress and reload the application you know we get it the correct
+
+143
+00:09:40,630 --> 00:09:46,790
+way where we want the array with the 0 and then of course the ID inside anality.
+
+144
+00:09:46,800 --> 00:09:52,330
+For me the rest of the information we have a lot of information about the match frank here we will be
+
+145
+00:09:52,330 --> 00:09:54,160
+using this later.
+
+146
+00:09:54,160 --> 00:09:54,450
+All right.
+
+147
+00:09:54,460 --> 00:09:55,890
+So that is the first thing.
+
+148
+00:09:55,900 --> 00:09:57,630
+Now we have the firebase Luber.
+
+149
+00:09:57,700 --> 00:10:06,960
+Now if you notice right here we have Manchester City it's Manchester City against Brighton referees.
+
+150
+00:10:06,970 --> 00:10:08,510
+Harry Potter sorry for that.
+
+151
+00:10:08,510 --> 00:10:10,190
+It's against Brighton.
+
+152
+00:10:10,190 --> 00:10:15,920
+So you know it kind of makes sense that this is the maybe the the last game.
+
+153
+00:10:15,920 --> 00:10:20,930
+So if I go right here it is not it's not the last game.
+
+154
+00:10:20,960 --> 00:10:28,070
+So what it does this let me go back to our project this limit to last it drafts the last six.
+
+155
+00:10:28,070 --> 00:10:32,040
+So it starts from the bottom one two three four five six.
+
+156
+00:10:32,180 --> 00:10:34,030
+And this is the first key.
+
+157
+00:10:34,070 --> 00:10:39,230
+Now on the right here I cannot put the first of the six right here.
+
+158
+00:10:39,230 --> 00:10:41,920
+This should be the last game.
+
+159
+00:10:41,960 --> 00:10:42,700
+So what do we do.
+
+160
+00:10:42,700 --> 00:10:44,560
+We need to reverse the array.
+
+161
+00:10:44,800 --> 00:10:47,030
+And from firebase we cannot do that.
+
+162
+00:10:47,030 --> 00:10:52,660
+I can not make a request to far based and get it ready directly from the database.
+
+163
+00:10:52,820 --> 00:10:58,990
+We need to do it on the front and that is one of the things that you know that's how Firebrace works.
+
+164
+00:10:59,030 --> 00:11:06,740
+It just gives you a simple database and you know simple simple API but you can do whatever you want
+
+165
+00:11:06,800 --> 00:11:11,010
+just like I don't know a Ph piece of or something like that on the Apache server.
+
+166
+00:11:11,390 --> 00:11:13,130
+So it doesn't matter.
+
+167
+00:11:13,160 --> 00:11:14,890
+Going to delete this.
+
+168
+00:11:15,500 --> 00:11:21,800
+And what I'm going to do are going to did this that said state for now said state open it close and
+
+169
+00:11:21,800 --> 00:11:25,120
+it seems we have new mattress are going to say matches.
+
+170
+00:11:25,280 --> 00:11:27,720
+Now again I need to reverse the array.
+
+171
+00:11:27,770 --> 00:11:30,520
+The first one goes to the last and the last one go to the first.
+
+172
+00:11:30,510 --> 00:11:34,180
+We just turn the remote right around.
+
+173
+00:11:34,340 --> 00:11:37,310
+So I'm going to create a function inside Minsk.
+
+174
+00:11:37,310 --> 00:11:39,950
+For now I'm going to say this I'm going to go Minsk.
+
+175
+00:11:40,060 --> 00:11:41,840
+Could it go right here at the bottom.
+
+176
+00:11:42,020 --> 00:11:44,470
+And again create a function to reverse.
+
+177
+00:11:44,480 --> 00:11:56,460
+You're right again again this is standard javascript not react so reverse array equals to actually actual.
+
+178
+00:11:56,490 --> 00:12:01,990
+All right which is the array we get after we process with firebase Luper.
+
+179
+00:12:02,030 --> 00:12:04,810
+And of course it's just a function that returns something.
+
+180
+00:12:04,980 --> 00:12:11,010
+So I'm going to create a viral called reversed array some like that.
+
+181
+00:12:11,030 --> 00:12:14,410
+And this one should be let out Konst doesn't matter.
+
+182
+00:12:14,720 --> 00:12:20,320
+So reverse array equals to an empty array just like with it before.
+
+183
+00:12:20,420 --> 00:12:30,410
+So now I'm going to do a for a good old for an VAR or let you know I equals.
+
+184
+00:12:30,710 --> 00:12:35,030
+And this is what we need to do we need to grab the actual array just like this.
+
+185
+00:12:35,030 --> 00:12:38,090
+The actual rate we need to calculate the length.
+
+186
+00:12:38,360 --> 00:12:43,800
+So it's Lenk just like this minus one.
+
+187
+00:12:43,880 --> 00:12:48,410
+And then of course it's equal to I greater than zero.
+
+188
+00:12:48,410 --> 00:12:52,220
+And then we do I minus minus minus.
+
+189
+00:12:52,700 --> 00:12:53,260
+Right.
+
+190
+00:12:53,320 --> 00:12:54,150
+Yes.
+
+191
+00:12:54,710 --> 00:13:03,450
+I'm really glad is 6 game to 2 and all of this because after a while this gets a little bit confusing.
+
+192
+00:13:03,530 --> 00:13:09,740
+So we grab that reversed array just like this which is this marble we have right here and we do the
+
+193
+00:13:09,740 --> 00:13:15,570
+push open and close and we push the actual array.
+
+194
+00:13:16,490 --> 00:13:20,990
+And the key which is the eye we are going back Portes right here.
+
+195
+00:13:20,990 --> 00:13:28,470
+So at the end we do reversed array and we returned the reverse array return.
+
+196
+00:13:28,610 --> 00:13:30,330
+All right.
+
+197
+00:13:30,330 --> 00:13:31,240
+That is it.
+
+198
+00:13:31,560 --> 00:13:37,830
+So now of course we need to bring this function into the blocks just like we did with Firebrace Luper
+
+199
+00:13:38,370 --> 00:13:44,880
+And now instead of returning matches with an empty array just like I'm doing now we do reverse array
+
+200
+00:13:45,180 --> 00:13:48,210
+and this returns matches.
+
+201
+00:13:48,210 --> 00:13:50,470
+We can do this before the setting state of.
+
+202
+00:13:50,480 --> 00:13:52,360
+But you know that's cool.
+
+203
+00:13:52,410 --> 00:13:57,380
+So if I reload the application of course I get nothing.
+
+204
+00:13:57,760 --> 00:14:03,470
+I'm going to go right here to the render and console log this that state.
+
+205
+00:14:03,570 --> 00:14:04,770
+Right.
+
+206
+00:14:05,790 --> 00:14:12,730
+So we get the new state of mattress and I mean a mistake it's returning a function.
+
+207
+00:14:12,890 --> 00:14:14,310
+This is actually my mistake.
+
+208
+00:14:15,230 --> 00:14:19,230
+Return reversal rate it's because reversed a rate.
+
+209
+00:14:19,250 --> 00:14:20,810
+This is my mistake.
+
+210
+00:14:20,900 --> 00:14:26,080
+I'm returning to the actual function and not you know the BHARMAL.
+
+211
+00:14:26,090 --> 00:14:29,210
+So now we get a array of sex and Brighton.
+
+212
+00:14:29,240 --> 00:14:34,300
+It's not the first one it's how does it feel or how town against Manchester City.
+
+213
+00:14:34,310 --> 00:14:37,400
+So we just reversed everything that we're simple.
+
+214
+00:14:37,430 --> 00:14:41,630
+So now we have the database ready to pass it to.
+
+215
+00:14:42,070 --> 00:14:47,450
+You know the show matches the show matches it's going to loop the list of matches and create all the
+
+216
+00:14:47,590 --> 00:14:48,480
+blocks right here.
+
+217
+00:14:48,500 --> 00:14:53,050
+So let's go to the next one and do all the you know the front and for the blocks.
+

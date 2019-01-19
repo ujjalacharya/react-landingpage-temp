@@ -1,0 +1,1120 @@
+1
+00:00:00,860 --> 00:00:06,080
+All right so now we are going to create the links on the header and this is going to be a challenge
+
+2
+00:00:06,080 --> 00:00:08,460
+because they are a little bit weird.
+
+3
+00:00:08,540 --> 00:00:09,090
+Why.
+
+4
+00:00:09,140 --> 00:00:09,520
+OK.
+
+5
+00:00:09,530 --> 00:00:10,900
+Let me show you the final one.
+
+6
+00:00:10,910 --> 00:00:14,510
+Let me go to home now right here.
+
+7
+00:00:14,720 --> 00:00:18,020
+We have some links and this ones are kind of public.
+
+8
+00:00:18,260 --> 00:00:24,260
+So whether you're love then or not you should be getting this option and then you have a different part
+
+9
+00:00:24,300 --> 00:00:27,830
+to the letter which is the user options.
+
+10
+00:00:27,980 --> 00:00:30,470
+And and this one if you are locked out you mean.
+
+11
+00:00:30,590 --> 00:00:32,380
+I mean you're not locked in.
+
+12
+00:00:32,480 --> 00:00:34,100
+You should be getting log in.
+
+13
+00:00:34,100 --> 00:00:37,340
+Now if you logon just like I'm going to do right now.
+
+14
+00:00:37,340 --> 00:00:38,070
+Passport.
+
+15
+00:00:38,150 --> 00:00:39,240
+One two three.
+
+16
+00:00:39,530 --> 00:00:40,560
+I'm going to log in.
+
+17
+00:00:40,560 --> 00:00:41,090
+You sure can.
+
+18
+00:00:41,150 --> 00:00:42,970
+You'd be getting some other options.
+
+19
+00:00:42,980 --> 00:00:44,840
+And the public option.
+
+20
+00:00:44,940 --> 00:00:47,360
+Well now some of these options are links.
+
+21
+00:00:47,360 --> 00:00:50,770
+Most of them are links but the log out for example.
+
+22
+00:00:50,780 --> 00:00:52,290
+It's not a link.
+
+23
+00:00:52,370 --> 00:00:54,860
+We are not going to create a route just to log out.
+
+24
+00:00:55,100 --> 00:00:58,060
+So this one is it's a device that triggers a function.
+
+25
+00:00:58,070 --> 00:01:01,090
+So we need again to remove this.
+
+26
+00:01:01,130 --> 00:01:01,610
+All right.
+
+27
+00:01:01,790 --> 00:01:04,370
+So let's you know let's begin with this.
+
+28
+00:01:04,370 --> 00:01:10,170
+So first before we go right here I want to output the name last name and e-mail right here.
+
+29
+00:01:10,220 --> 00:01:18,840
+Now remember that if we go to a user an index we are just displaying some information now right here.
+
+30
+00:01:18,860 --> 00:01:24,950
+When after we did we did the out of all the components all the children of that you know then that composed
+
+31
+00:01:24,950 --> 00:01:27,820
+component are receiving new props.
+
+32
+00:01:27,860 --> 00:01:31,250
+In this case we could say prompts that user.
+
+33
+00:01:31,370 --> 00:01:33,250
+But I'm going to just bring the user.
+
+34
+00:01:33,470 --> 00:01:40,370
+So now instead of here what I can do I can make corrections to that user that user data just like this
+
+35
+00:01:41,330 --> 00:01:45,770
+user data is a data and bring just a name.
+
+36
+00:01:45,800 --> 00:01:51,440
+So if I reload the application of course when you log in.
+
+37
+00:01:51,440 --> 00:01:57,270
+So Francis and then password 1 2 3 get to log in we get Frances.
+
+38
+00:01:57,350 --> 00:02:02,840
+So instantly we easily get all the information above the user that it's luck and once we are inside
+
+39
+00:02:02,840 --> 00:02:09,160
+this route and this is happening right here and it's happening at home for example if the users log
+
+40
+00:02:09,240 --> 00:02:14,240
+then we should be getting the user information and we should be able to perform some of the actions
+
+41
+00:02:14,450 --> 00:02:18,590
+like we will in a future like adding things to the user account.
+
+42
+00:02:18,590 --> 00:02:19,160
+All right.
+
+43
+00:02:19,490 --> 00:02:21,390
+So let me complete this.
+
+44
+00:02:21,410 --> 00:02:25,050
+We need the username we need to use a last name and then the e-mail.
+
+45
+00:02:25,050 --> 00:02:28,370
+So last name and then e-mail.
+
+46
+00:02:28,520 --> 00:02:35,060
+And if you remember again inside of this user user data we have again the prompts for the history so
+
+47
+00:02:35,060 --> 00:02:38,120
+we can begin to catch a history of the user.
+
+48
+00:02:38,140 --> 00:02:40,940
+OK so now let's go to the head.
+
+49
+00:02:40,960 --> 00:02:44,550
+I'm going to go to the letter like it's all before this is going to be a little bit weird.
+
+50
+00:02:45,080 --> 00:02:48,920
+So right so right here we have the logo at the top.
+
+51
+00:02:48,920 --> 00:02:54,110
+We have some blanks which is the user links and at the bottom we have the public links.
+
+52
+00:02:54,110 --> 00:02:56,860
+Now we don't have any any of this links to see yet.
+
+53
+00:02:56,930 --> 00:03:00,510
+So like with that before you're going to create.
+
+54
+00:03:00,770 --> 00:03:06,170
+Right here on the tablet we go right here you're going to read some kind of a bbls or maybe a state
+
+55
+00:03:06,230 --> 00:03:13,460
+or whatever where we can host the links and they're going to do it through state not state opening close.
+
+56
+00:03:13,460 --> 00:03:17,540
+Now we have the links at the bottom and the links at the top.
+
+57
+00:03:17,560 --> 00:03:21,200
+So I'm going to host them on a different place.
+
+58
+00:03:21,290 --> 00:03:26,340
+So Page is going to be the Public Links and then we can have the user links.
+
+59
+00:03:26,360 --> 00:03:28,990
+So I'm going to say user and we can have more links.
+
+60
+00:03:28,990 --> 00:03:29,590
+All right.
+
+61
+00:03:29,870 --> 00:03:32,790
+So inside of here it's a link.
+
+62
+00:03:32,880 --> 00:03:34,760
+We'll it will have some properties.
+
+63
+00:03:34,760 --> 00:03:38,380
+First the name of what is the name of the link in this case home.
+
+64
+00:03:38,720 --> 00:03:39,980
+Where are we going to be going to.
+
+65
+00:03:39,990 --> 00:03:45,550
+So link to and this one will be home.
+
+66
+00:03:45,890 --> 00:03:50,690
+And then we have a different option which is going to be is this a public link or a private link that
+
+67
+00:03:50,700 --> 00:03:53,840
+users should be getting this should be getting this link.
+
+68
+00:03:54,040 --> 00:03:55,700
+Even they are locked out.
+
+69
+00:03:56,000 --> 00:03:58,420
+Well there's going to be adding in the public.
+
+70
+00:03:58,640 --> 00:04:01,410
+And if it's a public link it's going to be true.
+
+71
+00:04:01,640 --> 00:04:06,550
+That of course we're going to do all we're going to do all this logic in a coma.
+
+72
+00:04:06,560 --> 00:04:13,250
+All right the next one after home we have guitars which is the sharp guitar section.
+
+73
+00:04:13,250 --> 00:04:13,690
+All right.
+
+74
+00:04:13,820 --> 00:04:15,840
+And that one of course is public.
+
+75
+00:04:16,040 --> 00:04:17,020
+So.
+
+76
+00:04:17,480 --> 00:04:24,620
+I'm going to say guitars and then shop are going to name this shop.
+
+77
+00:04:24,650 --> 00:04:27,820
+Of course we need to remember this when we created the real route.
+
+78
+00:04:28,830 --> 00:04:30,090
+Then we have the user.
+
+79
+00:04:30,110 --> 00:04:31,130
+All right.
+
+80
+00:04:31,330 --> 00:04:36,940
+So going to copy and paste now on the user it will get an option that calls my cart.
+
+81
+00:04:37,020 --> 00:04:42,250
+So I'm going to say my card with a capital C and this one will go to user.
+
+82
+00:04:42,570 --> 00:04:45,590
+If you remember for Slash and then cart.
+
+83
+00:04:46,200 --> 00:04:48,180
+And again this Natas this route.
+
+84
+00:04:48,180 --> 00:04:49,190
+It's not public.
+
+85
+00:04:49,320 --> 00:04:56,590
+If the user is logged out we should be able to get this right what else we have my account.
+
+86
+00:04:56,730 --> 00:04:59,490
+So my count.
+
+87
+00:04:59,790 --> 00:05:04,000
+So we're going to get this my account and whenever we click it we're going to go to the user dashboard.
+
+88
+00:05:04,020 --> 00:05:07,340
+So dashboard and this one is false.
+
+89
+00:05:07,380 --> 00:05:08,670
+It's not public.
+
+90
+00:05:08,670 --> 00:05:09,610
+All right.
+
+91
+00:05:09,670 --> 00:05:13,650
+Get a copy again and paste into the next one.
+
+92
+00:05:14,040 --> 00:05:17,590
+And now right here at the top we get the log in.
+
+93
+00:05:17,730 --> 00:05:20,700
+But if the user is locked out begin to open.
+
+94
+00:05:20,720 --> 00:05:22,570
+Oh sorry we are going to get the log in.
+
+95
+00:05:22,740 --> 00:05:32,090
+And if by log in Francis at gmail dot com password 2:59 that log in goes out and we get the log out.
+
+96
+00:05:32,250 --> 00:05:33,190
+Right.
+
+97
+00:05:33,210 --> 00:05:33,970
+All right.
+
+98
+00:05:34,410 --> 00:05:42,580
+So this one it's going to be log in log an I'm sorry.
+
+99
+00:05:42,810 --> 00:05:48,960
+And whenever we do the log in we're going to go to register underscore log in.
+
+100
+00:05:49,230 --> 00:05:54,890
+And now this one should be true because we can get the log in option whenever the user it's not locked.
+
+101
+00:05:54,910 --> 00:05:57,510
+And but this one is on the user options.
+
+102
+00:05:57,540 --> 00:06:01,800
+So this one will be pulled the chair and the next one which just log out.
+
+103
+00:06:01,920 --> 00:06:03,770
+It's pretty much the same thing.
+
+104
+00:06:03,860 --> 00:06:09,380
+Logout and then user for Slash log out.
+
+105
+00:06:09,690 --> 00:06:12,850
+And this one will be public false.
+
+106
+00:06:12,870 --> 00:06:13,510
+All right.
+
+107
+00:06:14,040 --> 00:06:15,600
+So now we have all the options.
+
+108
+00:06:15,670 --> 00:06:17,370
+So of course we need to catch.
+
+109
+00:06:17,370 --> 00:06:21,810
+We need to do something right here maybe create a function or do something else so we can go.
+
+110
+00:06:21,930 --> 00:06:24,840
+And of course render whatever we want.
+
+111
+00:06:25,380 --> 00:06:27,350
+So now I'm going to read a couple of functions.
+
+112
+00:06:27,360 --> 00:06:34,230
+But before we do that the thing is before we do that we need to check we need to access some place in
+
+113
+00:06:34,230 --> 00:06:38,760
+our application so we can check if the user is locked and or the user is locked out.
+
+114
+00:06:38,850 --> 00:06:45,030
+You know if it's out indicated and the problem is right now that we get that information inside the
+
+115
+00:06:45,030 --> 00:06:51,810
+route but we are doing better on the layout so we can not access that prompts that we are doing with
+
+116
+00:06:51,810 --> 00:06:52,630
+the mouth.
+
+117
+00:06:52,830 --> 00:06:58,890
+So what we will need to do is we will need to check with redux need to access this that prompts the
+
+118
+00:06:58,890 --> 00:06:59,440
+user.
+
+119
+00:06:59,580 --> 00:07:02,320
+So we need to bring redux to the equation.
+
+120
+00:07:02,420 --> 00:07:02,690
+Right.
+
+121
+00:07:02,700 --> 00:07:09,060
+So I'm going to go at the top and first begin to import link because we don't need links so import link
+
+122
+00:07:09,510 --> 00:07:15,720
+from Rio re-act router Tom Raigad.
+
+123
+00:07:15,820 --> 00:07:24,970
+Now I'm going to go right here and say import and we need to import connect from UPS connect from and
+
+124
+00:07:25,060 --> 00:07:28,480
+re-act redux.
+
+125
+00:07:28,480 --> 00:07:29,000
+All right.
+
+126
+00:07:29,170 --> 00:07:33,790
+Now of course we need to go at the bottom and you know connect to redux.
+
+127
+00:07:33,790 --> 00:07:42,860
+So export default then connect open and close and then open the header and close it just like this.
+
+128
+00:07:42,880 --> 00:07:47,890
+Now we need to bring map state to prop's because we need to inject the user prompts know the prompt
+
+129
+00:07:47,920 --> 00:07:49,690
+we get from back from redux.
+
+130
+00:07:50,200 --> 00:07:52,900
+So we can use it right here inside of the render.
+
+131
+00:07:52,930 --> 00:08:05,940
+So just like with that before function map state two props open and close we get a state and we say
+
+132
+00:08:05,940 --> 00:08:13,560
+return open enclosed user and we get back whatever we have inside the state that user.
+
+133
+00:08:13,560 --> 00:08:13,830
+All right.
+
+134
+00:08:13,830 --> 00:08:14,620
+Very good.
+
+135
+00:08:14,970 --> 00:08:21,430
+So now of course we pass the maps state to Propst so we can inject the props right here right.
+
+136
+00:08:22,520 --> 00:08:28,090
+Now now we have two different types of links the page and the user.
+
+137
+00:08:28,360 --> 00:08:34,180
+So right here first I got to say this dot show links.
+
+138
+00:08:34,180 --> 00:08:36,280
+We don't have this function we can agree to right now.
+
+139
+00:08:36,290 --> 00:08:38,330
+Capitol show links.
+
+140
+00:08:38,600 --> 00:08:44,200
+And whenever we want to show the links at the bottom I'm just going to pass that does that state that
+
+141
+00:08:44,200 --> 00:08:46,520
+page which are the blanks at the bottom.
+
+142
+00:08:46,660 --> 00:08:52,690
+And whenever we want to render this section the links at the top we're going to say I want to render
+
+143
+00:08:52,750 --> 00:08:53,800
+the users.
+
+144
+00:08:53,860 --> 00:09:00,560
+So now this function will be receiving the items we want to display on each part of the you know the
+
+145
+00:09:00,610 --> 00:09:02,090
+right section of the header.
+
+146
+00:09:02,220 --> 00:09:02,880
+Right.
+
+147
+00:09:03,310 --> 00:09:04,450
+So I'm going to go at the top.
+
+148
+00:09:04,450 --> 00:09:06,270
+Let me just make this.
+
+149
+00:09:06,310 --> 00:09:06,810
+OK.
+
+150
+00:09:07,060 --> 00:09:10,880
+So I'm going to go right here and create this function that we didn't have so far.
+
+151
+00:09:10,960 --> 00:09:15,430
+And that's why we get an error on the page which it says show links and I get a call.
+
+152
+00:09:15,430 --> 00:09:19,600
+I'm going to pass it as time because it's type of page or type user.
+
+153
+00:09:19,600 --> 00:09:21,340
+This one should be user.
+
+154
+00:09:21,750 --> 00:09:23,830
+All right user right.
+
+155
+00:09:23,830 --> 00:09:24,430
+Very good.
+
+156
+00:09:24,650 --> 00:09:26,140
+So now we're going to get this time.
+
+157
+00:09:26,240 --> 00:09:32,770
+Now the thing is again on this section right here at the top we need some of some of them are public.
+
+158
+00:09:32,800 --> 00:09:36,850
+Some of them are you know links some of them are something else.
+
+159
+00:09:36,880 --> 00:09:40,000
+So we need to do some checking and do something else.
+
+160
+00:09:40,090 --> 00:09:47,540
+Now the first problem that we get is that some of the links are only going to show if we are authenticated.
+
+161
+00:09:47,860 --> 00:09:50,860
+So we kind of need to do some checking.
+
+162
+00:09:50,860 --> 00:09:56,410
+And what I'm going to do instead of just rendering whatever we have inside of here I'm going to make
+
+163
+00:09:56,440 --> 00:09:58,560
+a new list right here a new array.
+
+164
+00:09:58,730 --> 00:10:00,360
+I'm going to make some checking.
+
+165
+00:10:00,370 --> 00:10:02,910
+Of course we're going to look them we're going to do some checking.
+
+166
+00:10:02,920 --> 00:10:07,910
+And if the elements should be on the list I'm going to put it on you list.
+
+167
+00:10:08,000 --> 00:10:13,090
+And at the end will render this list that we can't get right here instead of this one.
+
+168
+00:10:13,090 --> 00:10:13,470
+All right.
+
+169
+00:10:13,570 --> 00:10:18,120
+So first we're going to create a new viral called List equals to an empty array.
+
+170
+00:10:18,310 --> 00:10:19,240
+All right.
+
+171
+00:10:19,540 --> 00:10:23,400
+Then of course what we need to do we need to check if the user it's logged in.
+
+172
+00:10:23,530 --> 00:10:31,360
+Since we are using redux we have already injecting the props we use or so this prompts the user and
+
+173
+00:10:31,360 --> 00:10:35,710
+I get to make sure that we have that user data property.
+
+174
+00:10:35,710 --> 00:10:41,710
+Now remember that if we go to a route and if we are not authenticated let's assume that we are not authenticated
+
+175
+00:10:42,070 --> 00:10:48,400
+and we go to home that our file our file that elth logic is still going on.
+
+176
+00:10:48,520 --> 00:10:53,710
+So we will always get some something with user data whether user data or maybe saying that the user
+
+177
+00:10:53,710 --> 00:10:55,390
+is not indicated or something like that.
+
+178
+00:10:55,390 --> 00:10:59,110
+So we will always get it even though we are authenticated or not.
+
+179
+00:10:59,420 --> 00:10:59,870
+OK.
+
+180
+00:11:00,100 --> 00:11:03,970
+So if we do have this this we're going to do something now.
+
+181
+00:11:04,180 --> 00:11:10,360
+What we're going to do I'm going to enter the type which is where we have all this links and I'm going
+
+182
+00:11:10,360 --> 00:11:15,200
+to do a for each for each just like this.
+
+183
+00:11:15,200 --> 00:11:15,810
+OK.
+
+184
+00:11:16,150 --> 00:11:20,170
+Now for each We're going to do something.
+
+185
+00:11:20,380 --> 00:11:24,020
+And what I want to do I went to pass an item on each iteration.
+
+186
+00:11:24,490 --> 00:11:28,020
+Now first we want to check if the user or south indicated or not.
+
+187
+00:11:28,150 --> 00:11:32,420
+So I'm going to say if open and close and if not we're going to do something else.
+
+188
+00:11:32,440 --> 00:11:35,470
+So if the user is not open to it begin to do something.
+
+189
+00:11:35,470 --> 00:11:45,460
+So if this that prompts that user that user data and remember that we have that is off property.
+
+190
+00:11:45,580 --> 00:11:51,460
+So if the user it's not o'th indicated we're going to do something in this case we want to check if
+
+191
+00:11:51,460 --> 00:11:57,950
+the item is public because we have some of the options are public and some other are not really public.
+
+192
+00:11:58,030 --> 00:12:03,100
+So when you get to do or are going to check if they are public because they need to be public so public
+
+193
+00:12:04,210 --> 00:12:10,860
+equals true we could get this because we've already have billions but that's OK.
+
+194
+00:12:11,140 --> 00:12:16,280
+I'm going to enter to that list and I going push this item item.
+
+195
+00:12:16,670 --> 00:12:23,140
+OK so what we are doing we are entering this list and since the user is not out indicated we are creating
+
+196
+00:12:23,140 --> 00:12:26,650
+a new list with only of the items with the public.
+
+197
+00:12:26,650 --> 00:12:28,070
+True only.
+
+198
+00:12:28,120 --> 00:12:31,300
+So for example if you're locked out this one is false.
+
+199
+00:12:31,300 --> 00:12:32,860
+This one would not be on the list.
+
+200
+00:12:32,950 --> 00:12:34,720
+This one will not be on the list.
+
+201
+00:12:34,720 --> 00:12:35,390
+This is the one.
+
+202
+00:12:35,500 --> 00:12:36,030
+Yes.
+
+203
+00:12:36,040 --> 00:12:39,710
+Because we are not logged in so we should be getting the option to log in.
+
+204
+00:12:39,880 --> 00:12:42,220
+And this one will not be on the list.
+
+205
+00:12:42,220 --> 00:12:44,380
+So that is the meaning of doing this.
+
+206
+00:12:44,820 --> 00:12:45,560
+OK.
+
+207
+00:12:46,060 --> 00:12:47,800
+What happens if the users log in.
+
+208
+00:12:47,980 --> 00:12:52,630
+OK so I'm going to go right here I'm going to say f and create one more check.
+
+209
+00:12:52,690 --> 00:12:59,050
+Now for example if the user is not blocked then we shouldn't show this option to the user because they
+
+210
+00:12:59,050 --> 00:13:00,150
+are already logged then.
+
+211
+00:13:00,280 --> 00:13:03,160
+But we need to use it to show the log out.
+
+212
+00:13:03,160 --> 00:13:04,450
+All right.
+
+213
+00:13:04,450 --> 00:13:14,010
+So I'm going to say if item that name it's different then log in and we need to use the same keywords
+
+214
+00:13:14,190 --> 00:13:16,560
+and copy just to be safe.
+
+215
+00:13:17,020 --> 00:13:20,990
+Log in we're going to push that item.
+
+216
+00:13:21,010 --> 00:13:25,530
+So list that push and then item.
+
+217
+00:13:25,540 --> 00:13:31,450
+So now all the items that we have right here that are public falls we're going to push that to the list
+
+218
+00:13:31,810 --> 00:13:33,110
+unless we have the log in.
+
+219
+00:13:33,130 --> 00:13:34,730
+This one will not be on the list.
+
+220
+00:13:34,750 --> 00:13:38,620
+So if these are lost is logged then we're going to get my card my account and log out.
+
+221
+00:13:38,650 --> 00:13:40,000
+That is the idea.
+
+222
+00:13:40,000 --> 00:13:40,760
+All right.
+
+223
+00:13:41,080 --> 00:13:45,800
+So then at the end of course the end of doing all this nonsense.
+
+224
+00:13:46,540 --> 00:13:48,690
+We need to return something.
+
+225
+00:13:48,880 --> 00:13:49,210
+Right.
+
+226
+00:13:49,210 --> 00:13:51,060
+We are just doing the checking right here.
+
+227
+00:13:51,110 --> 00:13:53,380
+But at the end we are not returning anything.
+
+228
+00:13:53,410 --> 00:13:55,150
+So nothing gets displayed on the screen.
+
+229
+00:13:55,300 --> 00:13:59,050
+So I'm going to return and what we will be returning.
+
+230
+00:13:59,140 --> 00:14:00,150
+It's a loop.
+
+231
+00:14:00,310 --> 00:14:01,850
+I'm going to answer to that list.
+
+232
+00:14:01,900 --> 00:14:03,510
+I'm going to map over it.
+
+233
+00:14:03,520 --> 00:14:08,360
+I'm going to return an item and iteration.
+
+234
+00:14:08,440 --> 00:14:08,840
+All right.
+
+235
+00:14:08,950 --> 00:14:13,210
+And then of course we return something so what will you be returning.
+
+236
+00:14:13,210 --> 00:14:17,920
+In this case I'm going to tell you why in a minute we're going to return a new function return.
+
+237
+00:14:18,140 --> 00:14:30,790
+And I'm going to say this dot and default like opening close item that I later we're going to have other
+
+238
+00:14:30,850 --> 00:14:35,050
+options like the cart like Deckard takes a different layout.
+
+239
+00:14:35,140 --> 00:14:40,990
+So for this one we need to have a render a different components or we need to pass more arguments and
+
+240
+00:14:40,990 --> 00:14:42,630
+make the changes on this function.
+
+241
+00:14:42,790 --> 00:14:48,820
+But the default link is just a link with with it you know just a link from Briac rotor to property and
+
+242
+00:14:48,820 --> 00:14:50,510
+the text that's set.
+
+243
+00:14:50,560 --> 00:14:51,640
+That's why I'm creating this.
+
+244
+00:14:51,640 --> 00:14:53,040
+Just a default link.
+
+245
+00:14:53,350 --> 00:14:58,430
+So of course we're going to return this default link and this one will be returning to link.
+
+246
+00:14:58,570 --> 00:14:59,060
+All right.
+
+247
+00:14:59,230 --> 00:15:01,540
+So let's create a default link option.
+
+248
+00:15:01,690 --> 00:15:03,400
+Going to go right here.
+
+249
+00:15:03,550 --> 00:15:11,370
+Default link equals to item II and at the end this one will be returning some GSX.
+
+250
+00:15:11,380 --> 00:15:14,730
+So for now I'm just going to say look we can extend this in a minute.
+
+251
+00:15:14,770 --> 00:15:16,660
+But for now I'm going to say Lenk.
+
+252
+00:15:17,060 --> 00:15:22,000
+So the link if you remember we get it to an inside of the item of this function.
+
+253
+00:15:22,090 --> 00:15:25,460
+We have the item that link to.
+
+254
+00:15:25,840 --> 00:15:26,280
+All right.
+
+255
+00:15:26,620 --> 00:15:33,810
+Then we have a key because we are looping something so key opening close and I can get past the iteration
+
+256
+00:15:34,710 --> 00:15:35,540
+iteration.
+
+257
+00:15:35,710 --> 00:15:42,390
+And then of course we have the contents of the link which is going to be item that name.
+
+258
+00:15:42,460 --> 00:15:43,030
+All right.
+
+259
+00:15:43,030 --> 00:15:44,840
+And that is that.
+
+260
+00:15:44,870 --> 00:15:45,820
+Let's see what happens.
+
+261
+00:15:48,520 --> 00:15:50,380
+Items it's not defined.
+
+262
+00:15:50,380 --> 00:15:51,840
+Let me find the mistake.
+
+263
+00:15:52,020 --> 00:15:57,640
+Item the item its list pushed item.
+
+264
+00:15:57,640 --> 00:15:58,110
+There we go.
+
+265
+00:15:58,120 --> 00:15:59,080
+Sorry for that.
+
+266
+00:15:59,420 --> 00:16:01,690
+Let's try again to get it right.
+
+267
+00:16:01,690 --> 00:16:03,940
+You know we can get it because we are not Blug.
+
+268
+00:16:04,030 --> 00:16:10,560
+So we get the non public true options home guitars and log in.
+
+269
+00:16:10,570 --> 00:16:18,280
+Now if I log in we're going to go to Francis Jamail then password 2:59 are going to log in.
+
+270
+00:16:18,400 --> 00:16:24,880
+Are we going to get it get my card my account log out home and guitars and just like it's all before
+
+271
+00:16:24,880 --> 00:16:29,020
+we need to extend this because the my card it's going to be different.
+
+272
+00:16:29,080 --> 00:16:33,650
+This is a link but with something else on top and the logout.
+
+273
+00:16:33,730 --> 00:16:35,150
+It's not really a link.
+
+274
+00:16:35,230 --> 00:16:36,660
+It's going to be just a function.
+
+275
+00:16:36,670 --> 00:16:42,160
+So we kind of need to create something else maybe a div with an unclick or something like that because
+
+276
+00:16:42,160 --> 00:16:46,710
+by default the linked property of re-act router needs to.
+
+277
+00:16:46,750 --> 00:16:47,350
+All right.
+
+278
+00:16:47,350 --> 00:16:48,980
+So this one went too long already.
+
+279
+00:16:49,040 --> 00:16:50,980
+Let's go to the next one and finish this.
+
+280
+00:16:50,980 --> 00:16:52,240
+It's going to be to resemble.
+

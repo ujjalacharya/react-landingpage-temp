@@ -1,0 +1,868 @@
+1
+00:00:01,110 --> 00:00:01,400
+All right.
+
+2
+00:00:01,410 --> 00:00:07,380
+So since we have a clean clean project we need to have of course an index base index page.
+
+3
+00:00:07,380 --> 00:00:09,060
+This is what we have in this Digest.
+
+4
+00:00:09,090 --> 00:00:11,990
+This is going to be the starting of our application.
+
+5
+00:00:12,150 --> 00:00:13,620
+Of course we need to do a lot of set up.
+
+6
+00:00:13,620 --> 00:00:16,470
+First we need to import just like we did before.
+
+7
+00:00:16,500 --> 00:00:18,490
+Let's create the first template for this.
+
+8
+00:00:18,670 --> 00:00:24,990
+It's going to be import the first components componentry import from Riyadh and we're going to be doing
+
+9
+00:00:24,990 --> 00:00:27,020
+this a lot.
+
+10
+00:00:27,090 --> 00:00:31,080
+Then of course we are going to need import to react on.
+
+11
+00:00:31,080 --> 00:00:35,800
+We need to bring react Dom to the equation and then we act on from.
+
+12
+00:00:35,850 --> 00:00:40,910
+And then of course react down just like it's all before.
+
+13
+00:00:40,910 --> 00:00:43,190
+So it is good if you have a template now.
+
+14
+00:00:43,260 --> 00:00:49,290
+Our main application the main start of the main component of our application is going to be of just
+
+15
+00:00:49,290 --> 00:00:51,620
+a functional functional of components.
+
+16
+00:00:51,640 --> 00:00:56,940
+We don't need a class for this so I'm going to say Konst and it's going to be app and it's going to
+
+17
+00:00:56,940 --> 00:00:58,820
+be equal to a function.
+
+18
+00:00:58,890 --> 00:01:00,950
+And of course we're going to return something.
+
+19
+00:01:00,990 --> 00:01:07,500
+And for now you're going to return some dumb dip just like that and is going to say home whatever.
+
+20
+00:01:07,820 --> 00:01:08,270
+Good.
+
+21
+00:01:08,410 --> 00:01:08,850
+OK.
+
+22
+00:01:08,970 --> 00:01:12,370
+So now we need to use this re-act Dom.
+
+23
+00:01:12,390 --> 00:01:19,050
+So I'm going to go right here and I'm going to say react and then Dohm dot and we need to call the render
+
+24
+00:01:19,050 --> 00:01:25,450
+method the render method it's going to be displaying the app that we have on top.
+
+25
+00:01:25,450 --> 00:01:26,740
+Good.
+
+26
+00:01:26,760 --> 00:01:27,760
+There you go.
+
+27
+00:01:27,780 --> 00:01:33,000
+So then coma in which you specify what we're going to be rendering this.
+
+28
+00:01:33,000 --> 00:01:36,870
+So we say document dot Querrey selector.
+
+29
+00:01:37,020 --> 00:01:42,050
+And then of course we select the route remember route on the H.T. now.
+
+30
+00:01:42,210 --> 00:01:43,530
+Well that's it.
+
+31
+00:01:43,890 --> 00:01:44,120
+OK.
+
+32
+00:01:44,130 --> 00:01:47,600
+In theory if we run this we should be getting at least home.
+
+33
+00:01:47,720 --> 00:01:56,970
+So I'm going to say NPM start and it's going to go is going to give us 3000 not post just home and we
+
+34
+00:01:56,970 --> 00:01:59,640
+get home so that it's working great.
+
+35
+00:01:59,730 --> 00:02:02,180
+So now we are going to be practicing with routes.
+
+36
+00:02:02,190 --> 00:02:06,720
+So we're just going to go ahead and create the routes I'm going to create a folder that is going to
+
+37
+00:02:06,720 --> 00:02:08,840
+be components just like that.
+
+38
+00:02:08,910 --> 00:02:14,470
+Just like before and from the start because we have just three different routes.
+
+39
+00:02:14,490 --> 00:02:19,230
+I'm going to create one file that is going to be home that jast going to create a new one that is going
+
+40
+00:02:19,230 --> 00:02:27,340
+to be posts that jazz is going to create a new one that is going to be profile that jazz.
+
+41
+00:02:27,710 --> 00:02:32,730
+So most of the times when you create your projects you can just do it like this and look at what we
+
+42
+00:02:32,730 --> 00:02:33,290
+need to do.
+
+43
+00:02:33,300 --> 00:02:39,540
+We need to create some at least a little bit of this to create the components or at least whatever we
+
+44
+00:02:39,540 --> 00:02:42,530
+rendered this posts we can get some text.
+
+45
+00:02:42,540 --> 00:02:48,570
+So first we need to import react and then from you guessed it react.
+
+46
+00:02:48,570 --> 00:02:52,380
+This is going to be a functional component so we don't need to do much right here.
+
+47
+00:02:52,430 --> 00:02:59,640
+I'm going to say Konst posts because we are inside posts and is going to be equal to open close and
+
+48
+00:02:59,640 --> 00:03:00,980
+just to function.
+
+49
+00:03:01,380 --> 00:03:08,540
+So this one of course is going to return open close and we need to return a dev.
+
+50
+00:03:08,550 --> 00:03:14,880
+Just like with that before and this one is going to save posts so we can know at least which component
+
+51
+00:03:14,970 --> 00:03:15,920
+we are rendering.
+
+52
+00:03:16,010 --> 00:03:19,310
+Of course we need to make this component available from all other components.
+
+53
+00:03:19,500 --> 00:03:25,490
+So we're going to say the font and then we pass posts.
+
+54
+00:03:25,500 --> 00:03:27,270
+So everything is good.
+
+55
+00:03:27,390 --> 00:03:30,110
+So in theory of course it's not going to work.
+
+56
+00:03:30,120 --> 00:03:33,200
+If we change it right here we need to include this.
+
+57
+00:03:33,240 --> 00:03:37,230
+But first we copy all of this and I get to go home.
+
+58
+00:03:37,340 --> 00:03:40,710
+I'm going to paste it and I'm just going to change the names.
+
+59
+00:03:40,710 --> 00:03:42,750
+That's the only thing that we are going to do right now.
+
+60
+00:03:42,750 --> 00:03:44,630
+Home then home.
+
+61
+00:03:44,670 --> 00:03:46,200
+And of course home.
+
+62
+00:03:46,470 --> 00:03:53,060
+Then we have profile so we get to paste it up sorry when you copy paste it.
+
+63
+00:03:53,130 --> 00:03:58,420
+And this one is going to be profile OCHA profile.
+
+64
+00:03:58,950 --> 00:04:01,250
+And then again profile.
+
+65
+00:04:01,400 --> 00:04:06,050
+So OK so we have all the buse ready now we need to start using.
+
+66
+00:04:06,060 --> 00:04:08,500
+Finally we are going to be using re-act router.
+
+67
+00:04:08,670 --> 00:04:12,710
+So again we installed we've installed and router as a dependency.
+
+68
+00:04:12,720 --> 00:04:14,730
+We have we have it right here.
+
+69
+00:04:14,790 --> 00:04:20,460
+So what we need to do we need to bring the package and begin to say import and then open it close curly
+
+70
+00:04:20,460 --> 00:04:26,200
+braces because you're going to be bringing things from re-act Rotterdam that we're going to say from
+
+71
+00:04:26,430 --> 00:04:33,670
+and then we passed re-act then router and then of course Dom.
+
+72
+00:04:33,840 --> 00:04:39,900
+Now the first thing that we're going to be bringing is going to be something called browser router.
+
+73
+00:04:39,930 --> 00:04:41,850
+I know sounds kind of funny.
+
+74
+00:04:41,940 --> 00:04:42,980
+Browser router.
+
+75
+00:04:43,170 --> 00:04:49,710
+So this this is going to be an object that it's going to interact with the history and it's good to
+
+76
+00:04:49,710 --> 00:04:53,580
+know know pretty much it's going to know what's happening on the your l.
+
+77
+00:04:53,820 --> 00:04:58,910
+OK so this one is the first one that we need and we need to bring something else we need.
+
+78
+00:04:58,910 --> 00:05:04,180
+We need to bring something that is going to be called route with a capital R.
+
+79
+00:05:04,590 --> 00:05:12,600
+So this route is the one that knows what to do when the browser router is saying that the world changed.
+
+80
+00:05:12,780 --> 00:05:13,210
+OK.
+
+81
+00:05:13,230 --> 00:05:19,620
+Again this one interacts with the you are l with history and this one is going to go and execute whatever
+
+82
+00:05:19,620 --> 00:05:22,010
+the browser router is going to pass.
+
+83
+00:05:22,220 --> 00:05:22,620
+OK.
+
+84
+00:05:22,770 --> 00:05:23,760
+That's good.
+
+85
+00:05:23,760 --> 00:05:27,390
+Now we need to import the components we just created.
+
+86
+00:05:27,420 --> 00:05:33,220
+So I'm going to put a comment I'm going to say components just like that components.
+
+87
+00:05:33,690 --> 00:05:36,960
+We need to import and we need to import first home.
+
+88
+00:05:36,990 --> 00:05:43,530
+It's going to be from and we're going to go forward slash components and then home.
+
+89
+00:05:44,450 --> 00:05:46,910
+OK what else we need to import.
+
+90
+00:05:46,950 --> 00:05:51,270
+And then we need to import posts posts.
+
+91
+00:05:51,570 --> 00:05:57,030
+We need to import it from DOD for Slash components and then posts.
+
+92
+00:05:57,030 --> 00:05:58,120
+Right.
+
+93
+00:05:58,170 --> 00:05:59,340
+We have one more to go.
+
+94
+00:05:59,340 --> 00:06:06,590
+It's going to be profile then from and then dart forward slash components and profile.
+
+95
+00:06:06,710 --> 00:06:09,610
+You know we did all this in just a couple of minutes.
+
+96
+00:06:09,870 --> 00:06:12,170
+Is you get the idea of how to how to do it.
+
+97
+00:06:12,420 --> 00:06:14,740
+You're going to do it really really fast.
+
+98
+00:06:15,000 --> 00:06:17,440
+OK so now we need to start using routes.
+
+99
+00:06:17,550 --> 00:06:22,730
+We brought this browser router and the route now inside of the app when we're going to do.
+
+100
+00:06:22,760 --> 00:06:28,730
+I'm going to delete this just for now and whenever we have an application and we want to use routes
+
+101
+00:06:29,700 --> 00:06:34,620
+our main application the starting of our application which is in this case is going to be app.
+
+102
+00:06:34,620 --> 00:06:40,000
+It needs to wrap everything whole up to application inside the router.
+
+103
+00:06:40,290 --> 00:06:46,020
+So we're going to be using this browser router I'm going to open and close a tack just like this and
+
+104
+00:06:46,020 --> 00:06:49,720
+then open and close it.
+
+105
+00:06:49,830 --> 00:06:52,470
+Of course you're going to get some errors but that's fine.
+
+106
+00:06:52,690 --> 00:06:56,570
+Oh model can resolve components and Profar maybe made a mistake.
+
+107
+00:06:56,730 --> 00:07:01,440
+It's going to be profiles on the make sure profile look at.
+
+108
+00:07:01,440 --> 00:07:01,850
+That's good.
+
+109
+00:07:01,860 --> 00:07:04,860
+I made a mistake with an aim but you know we're just going to leave it like that.
+
+110
+00:07:05,250 --> 00:07:10,130
+So now whenever we use a browser or router we can pass routes.
+
+111
+00:07:10,380 --> 00:07:14,210
+So this route is going to be just like that.
+
+112
+00:07:14,310 --> 00:07:22,680
+Now each crowd has a path the path is going to be whatever this router is going to be listening on the
+
+113
+00:07:22,680 --> 00:07:23,590
+history.
+
+114
+00:07:23,590 --> 00:07:27,420
+So I'm going to say path and it's going to be equal to something.
+
+115
+00:07:27,420 --> 00:07:31,020
+In this case I'm going to I'm going to pass the posts right here.
+
+116
+00:07:31,320 --> 00:07:37,030
+So what we want to do we want to listen for the your L for Slash posts.
+
+117
+00:07:37,030 --> 00:07:41,030
+It's going to be localhost three thousand four slash posts.
+
+118
+00:07:41,130 --> 00:07:47,360
+And whenever you use something you see it you use it like this is going to always mean that you want
+
+119
+00:07:47,360 --> 00:07:53,290
+the absolute roud which is the domain and then immediately after the fourth slash posts.
+
+120
+00:07:53,580 --> 00:07:58,720
+So that's going to be where you're going to be using why you're going to be using the the path.
+
+121
+00:07:59,010 --> 00:08:04,910
+Then you have a different option a different attribute and it's going to be components.
+
+122
+00:08:04,980 --> 00:08:11,250
+Whenever we use components we need to tell react and to tell react router which components we want to
+
+123
+00:08:11,250 --> 00:08:14,550
+render whenever we get this route makes sense.
+
+124
+00:08:14,550 --> 00:08:16,770
+So right here we are putting posts.
+
+125
+00:08:16,770 --> 00:08:19,470
+So I'm going to copy posts and put it right here.
+
+126
+00:08:21,350 --> 00:08:27,550
+So I'm going to go right here at the bottom and I'm going to create the route for the profiles.
+
+127
+00:08:27,770 --> 00:08:28,050
+OK.
+
+128
+00:08:28,070 --> 00:08:29,970
+So I'm going to say route.
+
+129
+00:08:30,170 --> 00:08:37,790
+We're going to take a path and the path is going to be profiles called Profiles singler.
+
+130
+00:08:37,790 --> 00:08:43,080
+And then of course we need the components and the components it's going to be just profile.
+
+131
+00:08:43,560 --> 00:08:45,490
+And then of course we need to close it.
+
+132
+00:08:45,510 --> 00:08:48,260
+Let me close this so you can see the whole code.
+
+133
+00:08:48,600 --> 00:08:48,990
+OK.
+
+134
+00:08:49,040 --> 00:08:55,610
+If I go to the browser we can get you if you're going to get a router may have only one child element.
+
+135
+00:08:55,880 --> 00:09:01,350
+So this means pretty much that inside browser router we can cannot have different elements.
+
+136
+00:09:01,370 --> 00:09:03,570
+This is just like returning some GSX.
+
+137
+00:09:03,680 --> 00:09:08,720
+We need to wrap everything inside something and that something could be whatever you want.
+
+138
+00:09:08,720 --> 00:09:12,700
+In this case I'm just going to use it if something simple.
+
+139
+00:09:12,900 --> 00:09:16,830
+If I wrap everything inside of the it passes.
+
+140
+00:09:17,120 --> 00:09:17,400
+OK.
+
+141
+00:09:17,480 --> 00:09:21,130
+So we are getting around four posts and profiles.
+
+142
+00:09:21,260 --> 00:09:26,770
+So in theory if I go to posts we should be getting something going to say posts.
+
+143
+00:09:26,990 --> 00:09:27,370
+OK.
+
+144
+00:09:27,410 --> 00:09:33,390
+You know we are getting posts if you go to the post component's this one is just returning posts.
+
+145
+00:09:33,620 --> 00:09:37,240
+OK let's go to profiles and see what happens.
+
+146
+00:09:37,250 --> 00:09:38,760
+A go to profile.
+
+147
+00:09:38,840 --> 00:09:42,560
+It's profiles and we get profile.
+
+148
+00:09:42,800 --> 00:09:43,500
+Let me change it.
+
+149
+00:09:43,550 --> 00:09:45,560
+I don't like profiles plural.
+
+150
+00:09:45,560 --> 00:09:47,770
+Let me just bring profile.
+
+151
+00:09:47,900 --> 00:09:50,900
+It's going to be profile and ok we get profile.
+
+152
+00:09:51,080 --> 00:09:53,550
+So you know it works.
+
+153
+00:09:53,550 --> 00:09:55,630
+Now let's do the home.
+
+154
+00:09:55,670 --> 00:09:59,890
+Because right now if we go to home you're not getting anything.
+
+155
+00:09:59,960 --> 00:10:03,260
+And we have a component for to render the home.
+
+156
+00:10:03,290 --> 00:10:07,240
+So I'm going to go right here and I'm going to say route.
+
+157
+00:10:08,010 --> 00:10:08,480
+OK.
+
+158
+00:10:08,510 --> 00:10:11,880
+Let me make it self self-closing tag.
+
+159
+00:10:12,050 --> 00:10:15,560
+And now for the home we're going to be passing the path.
+
+160
+00:10:15,860 --> 00:10:21,670
+And you know whenever we go home it's going to be pretty much the main domain the local host 3000 in
+
+161
+00:10:21,670 --> 00:10:28,070
+this case so to specify home we're going to use force slash then we're going to specify the components
+
+162
+00:10:28,160 --> 00:10:30,840
+and it's going to be home of course.
+
+163
+00:10:31,290 --> 00:10:32,000
+OK.
+
+164
+00:10:32,600 --> 00:10:36,500
+So if we go home you know we are getting home now.
+
+165
+00:10:36,500 --> 00:10:40,120
+Let's go two posts again and see what happens.
+
+166
+00:10:40,130 --> 00:10:43,800
+You can go to posts and we get home.
+
+167
+00:10:43,910 --> 00:10:47,010
+So why are we getting home if I go to posts.
+
+168
+00:10:47,190 --> 00:10:48,470
+Let's go to the correct route.
+
+169
+00:10:48,620 --> 00:10:51,620
+We're getting home and posts.
+
+170
+00:10:51,620 --> 00:10:53,300
+So what is going on right here.
+
+171
+00:10:53,300 --> 00:10:55,380
+Let me make this a little bit more.
+
+172
+00:10:55,880 --> 00:11:02,030
+Whenever we load the router we are saying that whenever you get the path of force slash you want to
+
+173
+00:11:02,030 --> 00:11:02,960
+render home.
+
+174
+00:11:03,140 --> 00:11:05,330
+So we're getting a fourth slash right here.
+
+175
+00:11:05,330 --> 00:11:07,340
+So it's rendering home.
+
+176
+00:11:07,520 --> 00:11:14,600
+Then we past posts and you know we are saying right here that whenever you get posts read their posts.
+
+177
+00:11:14,600 --> 00:11:16,990
+So this two routes are valid.
+
+178
+00:11:17,120 --> 00:11:20,320
+That's why we are getting we get we are getting both.
+
+179
+00:11:20,360 --> 00:11:25,980
+Now there's a way to fix this re-act router is going to give us one more option.
+
+180
+00:11:26,030 --> 00:11:30,740
+It's going to be the exact that we're going to do something different with this but for now EXACT is
+
+181
+00:11:30,740 --> 00:11:31,590
+going to work.
+
+182
+00:11:31,910 --> 00:11:39,080
+So if I go to post you know you're not you are now getting on the posts and if you go home of course
+
+183
+00:11:39,140 --> 00:11:40,060
+we get home.
+
+184
+00:11:40,400 --> 00:11:48,390
+So exact is going to say OK I need to listen to this Pat and it needs to be exact and if it's not render
+
+185
+00:11:48,440 --> 00:11:49,690
+something else OK.
+
+186
+00:11:49,700 --> 00:11:57,080
+So it's going to the second one in the chain which is this one and it's only rendering posts just like
+
+187
+00:11:57,080 --> 00:11:58,330
+this.
+
+188
+00:11:58,430 --> 00:12:07,040
+So that works now right here before the routes or after the routes you can output whatever you want.
+
+189
+00:12:07,040 --> 00:12:12,130
+In this case it is going to create a header tag just like that.
+
+190
+00:12:12,410 --> 00:12:20,030
+And you know again to see Hetter so reload the page we always going to get better the magical thing
+
+191
+00:12:20,030 --> 00:12:20,580
+about this.
+
+192
+00:12:20,600 --> 00:12:23,540
+And if I go to posts where getting better.
+
+193
+00:12:23,570 --> 00:12:30,970
+If I go to home we get we still get Hetter And if we go to profile we're still getting beheader.
+
+194
+00:12:31,160 --> 00:12:36,890
+So whenever you go to different routes you're always going to get the better because you know it's inside
+
+195
+00:12:37,010 --> 00:12:38,580
+the components.
+
+196
+00:12:38,600 --> 00:12:43,850
+Now if we look at this this kind of a make sense this is going to be the whole view which is the whole
+
+197
+00:12:43,850 --> 00:12:44,700
+window.
+
+198
+00:12:44,780 --> 00:12:48,800
+We have Hetter on top that it's going to be rendered no matter what.
+
+199
+00:12:48,800 --> 00:12:50,410
+And then of course we have the route.
+
+200
+00:12:50,660 --> 00:12:56,710
+If we have this case if we are inside home he's going to render whatever you have as a component.
+
+201
+00:12:56,720 --> 00:12:58,340
+So after the header.
+
+202
+00:12:58,490 --> 00:13:00,170
+So that's what it's doing.
+
+203
+00:13:00,200 --> 00:13:04,260
+We go to profile First we get the letter and then we get the profile.
+
+204
+00:13:04,330 --> 00:13:08,770
+So this works like this you're going to structure this in different ways.
+
+205
+00:13:08,780 --> 00:13:14,990
+We're going to be creating different routes inside the project we can create different projects and
+
+206
+00:13:14,990 --> 00:13:19,030
+we're going to be using this and different ways.
+
+207
+00:13:19,510 --> 00:13:23,310
+So you're going to have different ways to be to use it of course not.
+
+208
+00:13:23,320 --> 00:13:24,010
+Not this one.
+
+209
+00:13:24,010 --> 00:13:28,870
+We could create a file that is going to be routes and then import it and use it from there.
+
+210
+00:13:28,900 --> 00:13:30,850
+That's a different way to use this.
+
+211
+00:13:31,240 --> 00:13:31,500
+OK.
+
+212
+00:13:31,510 --> 00:13:31,990
+That's fine.
+
+213
+00:13:31,990 --> 00:13:33,630
+This lecture went too long.
+
+214
+00:13:33,760 --> 00:13:35,050
+Let's go to the next section.
+
+215
+00:13:35,080 --> 00:13:41,930
+And I want I would like to do is to add some links right here so we can click the links on the on Hetter
+
+216
+00:13:42,250 --> 00:13:43,720
+and go to different routes.
+
+217
+00:13:43,720 --> 00:13:45,650
+Let's go to the next section.
+

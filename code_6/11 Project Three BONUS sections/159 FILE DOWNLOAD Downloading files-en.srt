@@ -1,0 +1,276 @@
+1
+00:00:01,040 --> 00:00:07,690
+OK so now we need to create around with API users download and a D to you know get the download really
+
+2
+00:00:07,730 --> 00:00:08,650
+simple right.
+
+3
+00:00:08,660 --> 00:00:12,950
+So I'm going to copy this and I'm going to go back to the server now on the server.
+
+4
+00:00:12,950 --> 00:00:16,750
+We need to create a route that is going to be getting something.
+
+5
+00:00:16,790 --> 00:00:22,200
+So get then of course we passed the API users and download.
+
+6
+00:00:22,200 --> 00:00:25,450
+So this one the contents after download.
+
+7
+00:00:25,460 --> 00:00:26,500
+It's dynamic.
+
+8
+00:00:26,510 --> 00:00:32,900
+So again just like the like we did with rehang Browder of course this is different but pretty much same
+
+9
+00:00:32,900 --> 00:00:33,410
+thing.
+
+10
+00:00:33,410 --> 00:00:37,870
+We passed Collen and the ID and this is a dynamic value on this one.
+
+11
+00:00:37,870 --> 00:00:41,250
+Of course we need both and we need admin as well.
+
+12
+00:00:41,270 --> 00:00:48,630
+And then we just run a function with request and response request and response.
+
+13
+00:00:48,710 --> 00:00:49,780
+Right.
+
+14
+00:00:50,540 --> 00:00:57,860
+How can we you know send the file or tell the client or send back a request sent down something sent
+
+15
+00:00:57,860 --> 00:01:00,360
+to the client the actual file.
+
+16
+00:01:00,500 --> 00:01:05,960
+Well with a node you get the download property method it it's really really simple.
+
+17
+00:01:05,960 --> 00:01:11,560
+So first we need to tell the application what download We want to send back to the client.
+
+18
+00:01:11,600 --> 00:01:14,630
+So we do Konst file I'm going to host it here.
+
+19
+00:01:14,900 --> 00:01:18,160
+So we do that path the same thing we did before Pat.
+
+20
+00:01:18,250 --> 00:01:26,210
+Then we go to resolve opening close and we pass the you know this location than we do plus and we do
+
+21
+00:01:26,240 --> 00:01:26,490
+OK.
+
+22
+00:01:26,510 --> 00:01:34,430
+We want to enter the uploads for Slash bloats just like this forward slash and the name of the file
+
+23
+00:01:34,790 --> 00:01:40,140
+and the name of the file since we are passing this as you know a dynamic value.
+
+24
+00:01:40,220 --> 00:01:48,750
+We get it inside to request that pair of rams Dodd and then Id if we put a I don't know something like
+
+25
+00:01:48,780 --> 00:01:49,840
+the something here.
+
+26
+00:01:49,880 --> 00:01:51,680
+Like I don't know file name.
+
+27
+00:01:51,710 --> 00:01:53,870
+This should be filing of course.
+
+28
+00:01:53,870 --> 00:01:54,830
+All right.
+
+29
+00:01:54,950 --> 00:01:57,620
+How can we send the response with a download file.
+
+30
+00:01:57,620 --> 00:02:01,260
+We send the response and we used to download it.
+
+31
+00:02:01,280 --> 00:02:02,600
+No real simple.
+
+32
+00:02:02,720 --> 00:02:06,070
+And then we say file OK we want to send the response with this file.
+
+33
+00:02:06,260 --> 00:02:12,320
+So now when we make a request to this one we should be getting you know something to download.
+
+34
+00:02:12,500 --> 00:02:18,370
+So I'm going to go to this one and we get it in the fight when we do it right here in documents and
+
+35
+00:02:18,370 --> 00:02:22,060
+if I go here we get it.
+
+36
+00:02:22,290 --> 00:02:23,230
+If I open this
+
+37
+00:02:26,400 --> 00:02:28,190
+right here's the file.
+
+38
+00:02:28,190 --> 00:02:29,590
+You know Reader It is simple.
+
+39
+00:02:29,760 --> 00:02:31,380
+Go to another one.
+
+40
+00:02:31,420 --> 00:02:32,490
+We get it.
+
+41
+00:02:32,490 --> 00:02:33,200
+Very good.
+
+42
+00:02:33,450 --> 00:02:38,280
+So of course we're going to close it and this lay out it's pretty pretty basic.
+
+43
+00:02:38,280 --> 00:02:40,420
+You can and you should.
+
+44
+00:02:40,440 --> 00:02:43,190
+You know do something much better with this.
+
+45
+00:02:43,260 --> 00:02:48,480
+But remember all the information it's inside the items and you just need the actual name.
+
+46
+00:02:48,480 --> 00:02:49,780
+That's the only thing we need.
+
+47
+00:02:49,920 --> 00:02:55,520
+Maybe if you want more detailed information and this maybe you will need to go to the database.
+
+48
+00:02:55,520 --> 00:02:56,950
+You know the data uploaded.
+
+49
+00:02:56,970 --> 00:02:59,210
+And you know all the other information.
+
+50
+00:02:59,280 --> 00:03:01,770
+So in that case yeah you need to go to Mongo.
+
+51
+00:03:01,950 --> 00:03:06,280
+But in this case it's just a simple example in how to upload a file.
+
+52
+00:03:06,620 --> 00:03:07,070
+OK.
+
+53
+00:03:07,110 --> 00:03:08,360
+So just like before.
+
+54
+00:03:08,510 --> 00:03:13,930
+I'm going to skip all of this content I can to make it a little bit better.
+
+55
+00:03:14,280 --> 00:03:18,690
+I'm going to change maybe the place where I'm requiring multo and everything else but I'm going to make
+
+56
+00:03:18,690 --> 00:03:23,010
+it a little bit better and I'm going to upload everything so you can download it and of course you can
+
+57
+00:03:23,010 --> 00:03:24,630
+get it from get help.
+
+58
+00:03:24,900 --> 00:03:29,750
+And I believe it the next module and check the next bonus section.
+
+59
+00:03:29,960 --> 00:03:33,580
+Oh the next bonus is the reset passport.
+
+60
+00:03:33,630 --> 00:03:35,370
+That's when it's very useful.
+
+61
+00:03:35,370 --> 00:03:36,710
+So I need to log on.
+
+62
+00:03:36,720 --> 00:03:43,590
+What happens if I want to log in I want to log in and I forgot my password so he can go to a forgat
+
+63
+00:03:43,590 --> 00:03:44,400
+passport.
+
+64
+00:03:44,640 --> 00:03:49,920
+We will put in the e-mail and we will send an e-mail to the user with the token.
+
+65
+00:03:50,090 --> 00:03:55,350
+And whenever we access to the token we can check on the server if the token is valid and everything
+
+66
+00:03:55,350 --> 00:03:55,720
+else.
+
+67
+00:03:55,890 --> 00:03:58,000
+And we're going to let the user change the password.
+
+68
+00:03:58,020 --> 00:04:00,930
+You know the usual stuff when we forget a password.
+
+69
+00:04:00,960 --> 00:04:03,450
+So that's the next bonus section.
+

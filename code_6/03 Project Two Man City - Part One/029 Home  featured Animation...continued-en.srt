@@ -1,0 +1,1168 @@
+1
+00:00:00,920 --> 00:00:01,170
+All right.
+
+2
+00:00:01,170 --> 00:00:05,000
+So now what we need to do we need to render three different stripes.
+
+3
+00:00:05,040 --> 00:00:09,990
+Of course with different properties different rotations and you know different delay and everything
+
+4
+00:00:10,050 --> 00:00:10,990
+else.
+
+5
+00:00:11,040 --> 00:00:17,640
+So I'm going to go right here to the show stripes and what we will do we will map an array of objects
+
+6
+00:00:17,850 --> 00:00:19,400
+with all these properties.
+
+7
+00:00:19,500 --> 00:00:23,730
+We didn't have this we need to create this I'm going to go to St..
+
+8
+00:00:24,020 --> 00:00:26,010
+I'm going to open an array.
+
+9
+00:00:26,150 --> 00:00:30,240
+I'm you are going to open up state and we'll me do it like this.
+
+10
+00:00:30,240 --> 00:00:35,910
+And inside of here I'm going to say tripes now we Strypes is going to be an array of objects since we
+
+11
+00:00:35,910 --> 00:00:37,460
+have three stripes.
+
+12
+00:00:37,530 --> 00:00:43,360
+We need to add three different properties here three different objects open and close.
+
+13
+00:00:43,380 --> 00:00:44,310
+All right.
+
+14
+00:00:44,310 --> 00:00:48,490
+So of course inside of them them we need some properties.
+
+15
+00:00:48,510 --> 00:00:55,650
+So in this case the first one to just put background say back and then just ground and the background
+
+16
+00:00:55,650 --> 00:00:58,410
+of course is going to be the background color is when it's light blue.
+
+17
+00:00:58,410 --> 00:01:02,330
+This one is white and this one again same color than the other one.
+
+18
+00:01:02,340 --> 00:01:05,670
+So I'm going to open it close and the color is going to be in.
+
+19
+00:01:05,760 --> 00:01:06,250
+Oh sorry.
+
+20
+00:01:06,300 --> 00:01:07,750
+Nine eight.
+
+21
+00:01:07,790 --> 00:01:10,490
+See five eat nine.
+
+22
+00:01:10,680 --> 00:01:11,560
+That's a color.
+
+23
+00:01:11,700 --> 00:01:17,700
+So I'm going to copy the same background for the other one pasted and pasted right here and this one
+
+24
+00:01:18,210 --> 00:01:18,720
+it's white.
+
+25
+00:01:18,720 --> 00:01:25,460
+So once through one two three four five six there you go we just have a background for now.
+
+26
+00:01:25,470 --> 00:01:27,640
+Then of course we're going to change everything else.
+
+27
+00:01:28,110 --> 00:01:33,510
+Now instead of here inside show stripes we need to loop you know how many stripes we get.
+
+28
+00:01:33,630 --> 00:01:38,760
+We have four of course is going to render four different stripes but in this case we just went three.
+
+29
+00:01:38,850 --> 00:01:42,080
+So we start with a does that state that.
+
+30
+00:01:42,120 --> 00:01:43,410
+Stripes.
+
+31
+00:01:43,410 --> 00:01:43,990
+All right.
+
+32
+00:01:44,280 --> 00:01:51,660
+And I'm going to use a map and on each iteration I'm going to be passing a stripe and then the iteration
+
+33
+00:01:51,660 --> 00:01:53,540
+number the index.
+
+34
+00:01:53,550 --> 00:01:56,750
+Then I get the opening close and notice I'm not using brackets.
+
+35
+00:01:56,750 --> 00:02:02,280
+I'm using parentheses because we just want to return an element.
+
+36
+00:02:02,850 --> 00:02:08,100
+So in this case what we will need to do if we go to the documentation we need to return.
+
+37
+00:02:08,100 --> 00:02:10,160
+Let me show you the first one.
+
+38
+00:02:10,290 --> 00:02:13,710
+There's one there's one right here.
+
+39
+00:02:13,710 --> 00:02:20,490
+We need to return a new element calls animate and inside of this animate we need to start passing all
+
+40
+00:02:20,490 --> 00:02:21,340
+the properties.
+
+41
+00:02:21,340 --> 00:02:22,080
+All right.
+
+42
+00:02:22,410 --> 00:02:27,690
+So OK so I'm going to go right here and first I'm going to open it close and put the animate.
+
+43
+00:02:27,690 --> 00:02:29,170
+So then open it close.
+
+44
+00:02:29,190 --> 00:02:30,040
+All right.
+
+45
+00:02:30,150 --> 00:02:34,780
+Now we know that this animate returns something for example a div.
+
+46
+00:02:34,830 --> 00:02:38,460
+So I'm going to go and say div open it close.
+
+47
+00:02:38,460 --> 00:02:44,900
+Now this divide will have some properties and in this case we just want to add a class name for now
+
+48
+00:02:45,780 --> 00:02:50,260
+and it's going to be called Strype of course perhaps Strypes this one will be strike.
+
+49
+00:02:50,670 --> 00:02:55,680
+And of course we will have styles are going to put it right now and then I'm going to explain you a
+
+50
+00:02:55,680 --> 00:02:57,070
+little bit better.
+
+51
+00:02:57,120 --> 00:02:58,470
+So background.
+
+52
+00:02:58,800 --> 00:02:59,910
+I'm just going to say background.
+
+53
+00:02:59,910 --> 00:03:00,290
+That's it.
+
+54
+00:03:00,300 --> 00:03:01,710
+I'm just going to say background.
+
+55
+00:03:01,730 --> 00:03:02,170
+OK.
+
+56
+00:03:02,460 --> 00:03:07,350
+So now this animate needs some properties in order to work first.
+
+57
+00:03:07,380 --> 00:03:14,730
+So first since we are looping something we need to add a key so key opening close is that the iteration
+
+58
+00:03:14,730 --> 00:03:16,350
+number we are getting right here.
+
+59
+00:03:16,410 --> 00:03:17,340
+OK.
+
+60
+00:03:18,030 --> 00:03:25,020
+Now this animation needs to know if it if it's going to be starting whenever the element gets mounted
+
+61
+00:03:25,050 --> 00:03:26,920
+or render it or not.
+
+62
+00:03:26,940 --> 00:03:33,340
+So we have a property called show so show in this case it's true we want to animate as soon as this
+
+63
+00:03:33,410 --> 00:03:35,080
+you know generated.
+
+64
+00:03:35,330 --> 00:03:35,810
+OK.
+
+65
+00:03:35,940 --> 00:03:43,860
+So for this case we're going to be using a start property and then we're going to use an Enter property
+
+66
+00:03:44,930 --> 00:03:50,610
+you have more we talked about this we have more and more properties like Update leave or you know yes
+
+67
+00:03:50,630 --> 00:03:56,080
+Abdin a leaf but in this case the element is going to start and then it's going to enter.
+
+68
+00:03:56,110 --> 00:03:57,120
+There is no update.
+
+69
+00:03:57,130 --> 00:04:01,580
+So there is no on an manhunting unmounting.
+
+70
+00:04:01,650 --> 00:04:08,010
+So we just put the enter the start and enter whenever the page loads and whenever the element enters
+
+71
+00:04:08,130 --> 00:04:10,070
+that's it we don't need anything else.
+
+72
+00:04:10,410 --> 00:04:14,620
+So for now we just have one property which is the background.
+
+73
+00:04:14,760 --> 00:04:16,560
+So I'm going to say background right here.
+
+74
+00:04:16,560 --> 00:04:22,520
+Background and the background will start as white will always starts as white.
+
+75
+00:04:22,530 --> 00:04:26,180
+So one two three four five six.
+
+76
+00:04:26,190 --> 00:04:28,680
+All right then when it enters.
+
+77
+00:04:28,770 --> 00:04:34,230
+Of course with other ones for the first one the least in the in the last one we have a different color.
+
+78
+00:04:34,290 --> 00:04:39,000
+So we need to specify well from which color we want to change the element too.
+
+79
+00:04:39,210 --> 00:04:43,800
+So we're going to go to enter and say background and the background.
+
+80
+00:04:43,830 --> 00:04:45,430
+And this is kind of weird.
+
+81
+00:04:45,570 --> 00:04:52,770
+We could put stripes or stripe that back and remember we are looping this and these striped state you
+
+82
+00:04:52,770 --> 00:04:58,230
+know the stripes so we can x axis stripe dot background and get the color.
+
+83
+00:04:58,500 --> 00:05:03,680
+But we cannot pass it just like this we cannot do stripes and then background.
+
+84
+00:05:03,720 --> 00:05:05,060
+This is not going to work.
+
+85
+00:05:05,110 --> 00:05:08,520
+What we need to do we need to put it in square brackets.
+
+86
+00:05:08,580 --> 00:05:12,120
+Yeah I know it's kind of weird but that's the way it works.
+
+87
+00:05:12,150 --> 00:05:14,460
+So now when it enters everything is going to be white.
+
+88
+00:05:14,520 --> 00:05:18,180
+You know the first second and third stripe are going to be white.
+
+89
+00:05:18,180 --> 00:05:20,820
+But the first one is going to change the color.
+
+90
+00:05:20,820 --> 00:05:26,130
+The second one is going to remain wide because we have white and then the last one is going to be blue.
+
+91
+00:05:26,130 --> 00:05:30,450
+Of course if I go right here nothing really not nothing really happens.
+
+92
+00:05:30,450 --> 00:05:32,170
+We are getting this error.
+
+93
+00:05:32,400 --> 00:05:34,920
+So background it's not defined.
+
+94
+00:05:35,100 --> 00:05:40,920
+And this background it means this background you're kind of using of Barville to something that it's
+
+95
+00:05:40,920 --> 00:05:42,150
+not really defined.
+
+96
+00:05:42,150 --> 00:05:46,430
+We have background inside start and interpret no place else.
+
+97
+00:05:46,440 --> 00:05:52,400
+So in this case and this is how it works what it returns it's not going to be a dip.
+
+98
+00:05:52,440 --> 00:05:55,010
+So I'm going to copy and I'm going to copy right.
+
+99
+00:05:55,360 --> 00:05:57,320
+Undeleted going to cop.
+
+100
+00:05:57,390 --> 00:06:01,040
+So what does it because it's going to be returning a function.
+
+101
+00:06:01,050 --> 00:06:04,170
+So first we open brackets.
+
+102
+00:06:04,170 --> 00:06:07,680
+Now inside of the brackets we need to return a function.
+
+103
+00:06:07,680 --> 00:06:12,590
+So we're going to open just like this and I'm going to return just to function.
+
+104
+00:06:12,600 --> 00:06:13,550
+All right.
+
+105
+00:06:13,680 --> 00:06:18,570
+Now inside of this of course inside of the function we need to return some GSX.
+
+106
+00:06:18,750 --> 00:06:21,130
+So I'm going to say return just like this.
+
+107
+00:06:21,180 --> 00:06:24,080
+Open the parenthesis and return that.
+
+108
+00:06:24,090 --> 00:06:25,540
+You know I'm going to paste that depth.
+
+109
+00:06:25,740 --> 00:06:26,840
+We were using before.
+
+110
+00:06:26,850 --> 00:06:29,700
+We're going to be adding some things right here in a minute.
+
+111
+00:06:29,700 --> 00:06:31,470
+And then of course I'm going to add this.
+
+112
+00:06:31,860 --> 00:06:35,630
+So instead of here we need a way to pass to this function.
+
+113
+00:06:35,730 --> 00:06:40,670
+All the properties we are using inside animate in this case we just have the background.
+
+114
+00:06:40,680 --> 00:06:44,140
+Now we look at some other examples.
+
+115
+00:06:44,340 --> 00:06:47,620
+We're right here maybe you get something else maybe you get state.
+
+116
+00:06:47,820 --> 00:06:53,670
+Well state whenever we make reference to state inside of here we are making reference to the state right
+
+117
+00:06:53,880 --> 00:06:54,470
+here.
+
+118
+00:06:54,600 --> 00:07:00,810
+So inside start inside enter we get background so we can get it from that state state that start that
+
+119
+00:07:00,810 --> 00:07:01,540
+background.
+
+120
+00:07:01,680 --> 00:07:08,800
+But in this case we can make use of ESX and I'm just going to say in this case background why my same
+
+121
+00:07:08,820 --> 00:07:15,120
+background because we are animated background so if we were animating opacity we need to pass background
+
+122
+00:07:15,150 --> 00:07:16,230
+and capacity.
+
+123
+00:07:16,350 --> 00:07:20,580
+And if we are animating top top background and capacity.
+
+124
+00:07:20,580 --> 00:07:26,050
+So when once we pass them through here we can pass the new properties to the elements.
+
+125
+00:07:26,100 --> 00:07:29,490
+In this case we are doing so we are passing background.
+
+126
+00:07:29,520 --> 00:07:34,850
+So in theory if I save this we should be getting at least something and we do.
+
+127
+00:07:35,370 --> 00:07:37,470
+And you know we get the three elements.
+
+128
+00:07:37,470 --> 00:07:43,010
+If I inspect this I'm going to go right here and let me select this.
+
+129
+00:07:43,260 --> 00:07:46,970
+We get one stripe two stripes with a different color.
+
+130
+00:07:46,990 --> 00:07:48,340
+You know this one is the blue.
+
+131
+00:07:48,350 --> 00:07:49,370
+This one is still white.
+
+132
+00:07:49,440 --> 00:07:50,410
+And this one is blue.
+
+133
+00:07:50,430 --> 00:07:55,470
+So it's kind of animating them all right because they of course start as white.
+
+134
+00:07:55,470 --> 00:07:57,500
+Let me reload and see if we get it.
+
+135
+00:07:57,520 --> 00:07:58,640
+Well not that.
+
+136
+00:07:58,650 --> 00:07:59,730
+No not really.
+
+137
+00:08:00,090 --> 00:08:07,760
+So let's go back now this animation of course takes some time.
+
+138
+00:08:07,770 --> 00:08:08,790
+I'm going to close this.
+
+139
+00:08:09,150 --> 00:08:14,870
+And of course we need to define how much time this is going to take.
+
+140
+00:08:14,940 --> 00:08:20,170
+So I'm going to go to enter which is the last one in this case the one that actually does the animation
+
+141
+00:08:20,640 --> 00:08:23,050
+and we need to pass on this special property.
+
+142
+00:08:23,220 --> 00:08:25,930
+And only on enter that calls timing.
+
+143
+00:08:26,130 --> 00:08:31,860
+And on the timing we will define all the you know the delay maybe the duration of the animation and
+
+144
+00:08:31,860 --> 00:08:33,990
+everything else so we can set a delay.
+
+145
+00:08:34,020 --> 00:08:35,600
+We can I can put it.
+
+146
+00:08:35,700 --> 00:08:36,710
+I'm going to put 500.
+
+147
+00:08:36,710 --> 00:08:37,820
+We're going to do something else later.
+
+148
+00:08:37,830 --> 00:08:39,110
+But for now it's OK.
+
+149
+00:08:39,390 --> 00:08:44,820
+Then we have a duration now the duration is going to be of course Homan so much time is going to last.
+
+150
+00:08:44,910 --> 00:08:48,330
+So 200 it's going to be really simple you know really fast.
+
+151
+00:08:48,510 --> 00:08:55,110
+And then we can select the easing since we are importing at the top the D-3 East module we can pass
+
+152
+00:08:55,200 --> 00:09:02,670
+the Issing we want and of course if we reload again we see nothing because there's no actual animation
+
+153
+00:09:02,700 --> 00:09:05,090
+which is a change in the background.
+
+154
+00:09:05,120 --> 00:09:13,120
+Now we could see it but I'm going to do something else now on the original we are changing not just
+
+155
+00:09:13,120 --> 00:09:15,810
+the background color but we are changing the position.
+
+156
+00:09:15,810 --> 00:09:20,910
+You know how much of the left and how much this element is rotated by default.
+
+157
+00:09:20,910 --> 00:09:25,390
+It's just you know horizontal but we need to you know rotate this.
+
+158
+00:09:25,410 --> 00:09:29,970
+So again we just could get it from props we can specify right here.
+
+159
+00:09:29,970 --> 00:09:33,570
+What is the rotation for this one for this one and for this one.
+
+160
+00:09:33,630 --> 00:09:37,230
+And then the unmade will be animating this property.
+
+161
+00:09:37,230 --> 00:09:37,820
+All right.
+
+162
+00:09:38,130 --> 00:09:42,300
+So I'm going to go for a hearing and to start putting all the properties are going to say that we have
+
+163
+00:09:42,570 --> 00:09:46,210
+left and then I'm going to say coma.
+
+164
+00:09:46,560 --> 00:09:50,370
+Then we have a rotate which is how much is going to be rotating.
+
+165
+00:09:50,580 --> 00:09:56,760
+So rotate then we going to have a top where it's going to be positioned from the top because we are
+
+166
+00:09:56,760 --> 00:09:59,660
+rotating and then we're going to have the delay.
+
+167
+00:09:59,680 --> 00:09:59,990
+Right.
+
+168
+00:10:00,000 --> 00:10:01,940
+How much is going to take.
+
+169
+00:10:02,170 --> 00:10:04,770
+How do you let me fix it.
+
+170
+00:10:04,800 --> 00:10:05,960
+Delay Burguet.
+
+171
+00:10:06,370 --> 00:10:11,040
+And of course we get pretty much the same thing for all the other properties.
+
+172
+00:10:11,140 --> 00:10:14,920
+So I'm going to copy them and I'm going to paste them below here.
+
+173
+00:10:14,920 --> 00:10:16,830
+We're going to be of course adding something.
+
+174
+00:10:18,180 --> 00:10:20,600
+So they left for the first stripe.
+
+175
+00:10:20,730 --> 00:10:23,250
+It's 120 The rotate.
+
+176
+00:10:23,310 --> 00:10:30,050
+Going to rotate 25 and the top is going to be minus to 60 and the delay for now is going to be zero.
+
+177
+00:10:30,060 --> 00:10:36,300
+The first one waits no amount of time is just God is going to go right away.
+
+178
+00:10:36,540 --> 00:10:41,120
+The second one from the left is going to be three.
+
+179
+00:10:41,450 --> 00:10:52,700
+Then the rotation is going to be 25 the top minus 3 9 7 0 3 9 7 and then the delay.
+
+180
+00:10:52,700 --> 00:10:59,280
+This one is going to wait for the first one to show and then it's going to be animating 200.
+
+181
+00:10:59,300 --> 00:11:06,280
+The last one 600 the rotation is going to be 25 the top.
+
+182
+00:11:06,290 --> 00:11:14,810
+It's going to be minus 4 9 8 and then I know that this is boring but we are almost done and delay 400.
+
+183
+00:11:15,350 --> 00:11:20,390
+So now we have all these properties and we need to pass the properties to the actual animate.
+
+184
+00:11:20,420 --> 00:11:21,170
+So we're going to do that.
+
+185
+00:11:21,170 --> 00:11:23,830
+It's not going to be that hard work.
+
+186
+00:11:24,110 --> 00:11:28,170
+So all the elements they start with the Pasotti of zero.
+
+187
+00:11:28,190 --> 00:11:31,120
+I'm not passing this and just going to do it directly from here.
+
+188
+00:11:31,340 --> 00:11:33,880
+So I could take opacity just like this.
+
+189
+00:11:34,040 --> 00:11:35,880
+And it starts at zero.
+
+190
+00:11:35,940 --> 00:11:36,400
+All right.
+
+191
+00:11:36,410 --> 00:11:37,180
+Coma.
+
+192
+00:11:37,490 --> 00:11:39,620
+Next one is going to be the left position.
+
+193
+00:11:39,620 --> 00:11:41,890
+How much from the left is going to go.
+
+194
+00:11:42,050 --> 00:11:47,930
+So everything is going to start at zero left zero right.
+
+195
+00:11:47,990 --> 00:11:49,980
+So I'm going to go right here at the bottom.
+
+196
+00:11:50,090 --> 00:11:55,640
+And of course we have more properties we two of them again are just going to copy this and paste right
+
+197
+00:11:55,640 --> 00:11:55,810
+here.
+
+198
+00:11:55,820 --> 00:12:04,150
+The one now the capacity of course we need to go from zero to 1 so we can actually see the stripe.
+
+199
+00:12:04,520 --> 00:12:09,640
+And of course remember to put the square brackets and then we need to specify the left position.
+
+200
+00:12:09,770 --> 00:12:13,610
+In this case we are using the whatever we have inside the state.
+
+201
+00:12:13,670 --> 00:12:18,520
+So it's going to be stripe dot left.
+
+202
+00:12:18,920 --> 00:12:25,070
+If I reload the page nothing really happens because we need to pass the opacity property and left just
+
+203
+00:12:25,070 --> 00:12:26,570
+like that with background.
+
+204
+00:12:26,630 --> 00:12:28,430
+Now same idea same idea.
+
+205
+00:12:28,790 --> 00:12:35,090
+So I'm going to go right here and say that we are passing now a left property and then we are passing
+
+206
+00:12:35,410 --> 00:12:36,900
+and passing the property.
+
+207
+00:12:36,980 --> 00:12:40,700
+Then we copy the name so opacity coma.
+
+208
+00:12:40,730 --> 00:12:41,650
+Now again.
+
+209
+00:12:41,720 --> 00:12:47,810
+The Stiles we need to pass this opacity and to pass the left of the left it's not going to be that simple
+
+210
+00:12:47,810 --> 00:12:49,650
+and it's going to look a little bit weird.
+
+211
+00:12:49,670 --> 00:12:57,110
+So what we use and see if we can get something on these you know on the on the left what we're going
+
+212
+00:12:57,110 --> 00:13:00,430
+to do we are going to animate with transform.
+
+213
+00:13:00,710 --> 00:13:06,350
+So I'm going to go right here at the bottom you're going to say transform and this one are going to
+
+214
+00:13:06,350 --> 00:13:09,150
+be using template strings going to close this.
+
+215
+00:13:09,260 --> 00:13:14,220
+So going to put rotate and we don't have all the values right now but we will use rotate.
+
+216
+00:13:14,270 --> 00:13:16,340
+So I'm going to put 0 0 degrees of course.
+
+217
+00:13:16,340 --> 00:13:18,800
+Then of course we're going to be adding this.
+
+218
+00:13:18,890 --> 00:13:24,650
+Then translate translate and inside of translate.
+
+219
+00:13:24,650 --> 00:13:28,500
+Of course we need to pass the left and the top you know the X and Y.
+
+220
+00:13:28,670 --> 00:13:35,120
+So in this case going to use 0 pixels and 0 pixels from the top and I get to go back to the first one
+
+221
+00:13:35,300 --> 00:13:39,760
+because we do have this property which is the left you're going to say left right.
+
+222
+00:13:39,770 --> 00:13:41,080
+I'm using template strings.
+
+223
+00:13:41,210 --> 00:13:42,610
+That's the only thing I'm using.
+
+224
+00:13:42,800 --> 00:13:43,990
+And now we get something different.
+
+225
+00:13:44,000 --> 00:13:48,620
+If we load the application OK at least it's doing something that is good.
+
+226
+00:13:48,980 --> 00:13:54,380
+So now we need to achieve the rotation and the top you know transition.
+
+227
+00:13:54,470 --> 00:13:55,960
+So we do have this.
+
+228
+00:13:56,090 --> 00:13:59,670
+So we have the rotate the top and then begin to do the delete.
+
+229
+00:13:59,870 --> 00:14:05,480
+So I got to go right here at the the actually the actual tack the animate and after the left are going
+
+230
+00:14:05,480 --> 00:14:13,100
+to put rotate which is going to be equal to zero and then top which is going to be equal to zero as
+
+231
+00:14:13,100 --> 00:14:14,380
+well.
+
+232
+00:14:14,390 --> 00:14:14,990
+All right.
+
+233
+00:14:15,050 --> 00:14:17,620
+Now we need to pass the new properties right here.
+
+234
+00:14:17,780 --> 00:14:20,480
+So again going to copy this one at the top.
+
+235
+00:14:20,480 --> 00:14:30,620
+Go right here at the bottom and instead of zero is going to be Strype dot rotate.
+
+236
+00:14:30,660 --> 00:14:31,220
+All right.
+
+237
+00:14:31,530 --> 00:14:35,120
+And the same thing for the other one but the other one is going to be instead of rotate.
+
+238
+00:14:35,220 --> 00:14:36,690
+It's going to be top.
+
+239
+00:14:36,720 --> 00:14:37,160
+All right.
+
+240
+00:14:37,230 --> 00:14:42,140
+So now we have the rotate and the top property of course we need to add them right here.
+
+241
+00:14:42,270 --> 00:14:48,990
+So I'm going to be adding after the left rotate and top and then coma and of course we need to use them
+
+242
+00:14:49,080 --> 00:14:55,070
+inside the transform so the rotate is going to be equal to rotate.
+
+243
+00:14:55,280 --> 00:14:56,180
+That's correct.
+
+244
+00:14:56,250 --> 00:14:59,450
+And then we have the top and top again just like the left.
+
+245
+00:14:59,580 --> 00:15:03,350
+It's going to be equal to top of a mini mistake.
+
+246
+00:15:03,990 --> 00:15:06,440
+Let's go back to top.
+
+247
+00:15:06,600 --> 00:15:07,940
+I got to.
+
+248
+00:15:07,970 --> 00:15:09,010
+There you go.
+
+249
+00:15:09,380 --> 00:15:14,130
+I'm going to reload the application and you know we can get it a little bit fast.
+
+250
+00:15:15,030 --> 00:15:17,440
+But we can we're going to get that transition.
+
+251
+00:15:17,520 --> 00:15:23,910
+Now that thing right now is that they are all the animations are happening after 500 milliseconds.
+
+252
+00:15:23,910 --> 00:15:29,250
+They are all happening at the same time and that's why it's a little bit faster than than the other
+
+253
+00:15:29,250 --> 00:15:30,120
+one.
+
+254
+00:15:30,120 --> 00:15:30,820
+All right.
+
+255
+00:15:31,080 --> 00:15:34,690
+So first we need to specify I did late so I'm going to say delay that's that.
+
+256
+00:15:34,800 --> 00:15:36,630
+That's my first mistake.
+
+257
+00:15:36,630 --> 00:15:40,050
+DeLay should be a little bit slower.
+
+258
+00:15:40,420 --> 00:15:40,740
+OK.
+
+259
+00:15:40,800 --> 00:15:45,390
+Now it's a little bit slower but they're all happening at the same time and I need for this animation
+
+260
+00:15:45,390 --> 00:15:48,960
+to animate the first one then the second one and then the third one.
+
+261
+00:15:48,970 --> 00:15:51,610
+That's why we are passing a delay right here.
+
+262
+00:15:51,720 --> 00:16:01,830
+So instead of making a reference to a delay on the timing we say Strype dot delay right.
+
+263
+00:16:03,410 --> 00:16:10,280
+And that's going to save it just in case a reload it and we get the same animation that is good.
+
+264
+00:16:11,150 --> 00:16:11,580
+Right.
+
+265
+00:16:11,660 --> 00:16:12,680
+And it wasn't that hard.
+
+266
+00:16:12,680 --> 00:16:16,970
+It's kind of hard to understand what is going on when you when you see this.
+
+267
+00:16:17,090 --> 00:16:22,610
+But then then you realize this is simple it just create a new property starting properties.
+
+268
+00:16:22,610 --> 00:16:28,470
+You put the new ones and then you pass it to the you know to the function and the actual elements.
+
+269
+00:16:28,670 --> 00:16:30,730
+You know it's really really simple.
+
+270
+00:16:31,040 --> 00:16:31,310
+All right.
+
+271
+00:16:31,310 --> 00:16:32,150
+And that is it.
+
+272
+00:16:32,180 --> 00:16:36,960
+I'm going to tell you one more thing that might be useful for you in the future.
+
+273
+00:16:37,010 --> 00:16:37,340
+Going to do.
+
+274
+00:16:37,340 --> 00:16:38,050
+Coma.
+
+275
+00:16:38,180 --> 00:16:40,640
+And then you have access to events.
+
+276
+00:16:40,640 --> 00:16:46,520
+So whenever this element it's changing or it's done any mating or whenever it's doing something you
+
+277
+00:16:46,520 --> 00:16:50,970
+have different types of events right here and you can check this on the documentation.
+
+278
+00:16:51,320 --> 00:16:57,380
+So for example if this animation triggers I want to know when when the when whenever the animation it's
+
+279
+00:16:57,380 --> 00:17:01,730
+done after the animation is done I want to maybe run a different function.
+
+280
+00:17:01,730 --> 00:17:02,640
+I don't know whatever.
+
+281
+00:17:02,870 --> 00:17:10,430
+So we can call and and inside and we can do console log animation and finished or something like that.
+
+282
+00:17:10,460 --> 00:17:12,710
+Everything is on the documentation right.
+
+283
+00:17:12,980 --> 00:17:14,560
+Animation finished.
+
+284
+00:17:14,850 --> 00:17:17,850
+Or go to console.
+
+285
+00:17:18,050 --> 00:17:21,160
+And of course it took me a little while to open it.
+
+286
+00:17:21,200 --> 00:17:24,010
+So animation finished.
+
+287
+00:17:24,090 --> 00:17:24,540
+All right.
+
+288
+00:17:24,630 --> 00:17:27,840
+So we get it three times because we have three different elements.
+
+289
+00:17:27,930 --> 00:17:34,550
+And remember that we are inside the map so that it said that that is the Zed with the stripes.
+
+290
+00:17:34,680 --> 00:17:38,890
+So now we are going to be animating the text and you know showing the player.
+
+291
+00:17:38,910 --> 00:17:41,790
+This of course is a passerby with a simple animation.
+
+292
+00:17:41,790 --> 00:17:44,150
+All right so let's go to the next one and start with the text.
+

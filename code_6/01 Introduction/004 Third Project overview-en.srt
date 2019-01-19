@@ -1,0 +1,184 @@
+1
+00:00:01,020 --> 00:00:07,750
+Write so this is going to be the third practice project in our course it calls wastes and it's a guitar
+
+2
+00:00:08,170 --> 00:00:09,400
+selling website.
+
+3
+00:00:09,460 --> 00:00:15,250
+So we are going to sell guitars and when the application loads we get a slider a slider and at this
+
+4
+00:00:15,250 --> 00:00:17,580
+point it should be really simple for us.
+
+5
+00:00:17,680 --> 00:00:22,670
+But then of course if we scroll down we can fetch and perform queries to note.
+
+6
+00:00:22,720 --> 00:00:28,060
+A server using Mongo divi to bring the products we meet right here in this section.
+
+7
+00:00:28,060 --> 00:00:29,190
+Same thing right here.
+
+8
+00:00:29,260 --> 00:00:33,070
+That's one it's best selling and this one it's by new arrivals.
+
+9
+00:00:33,190 --> 00:00:33,980
+Right.
+
+10
+00:00:34,030 --> 00:00:38,920
+And of course we'll get an end point where we can search guitarists and we will do some filtering with
+
+11
+00:00:38,920 --> 00:00:39,900
+the database.
+
+12
+00:00:39,940 --> 00:00:41,370
+We can do load more.
+
+13
+00:00:41,530 --> 00:00:48,020
+And for example if I go to Fender I just see the get the Fender guitars and fender and Ivan as guitars.
+
+14
+00:00:48,070 --> 00:00:53,140
+So again we're going to do a lot of filtering logic right here and same thing right here we can change
+
+15
+00:00:53,140 --> 00:00:54,960
+some some of the layouts.
+
+16
+00:00:55,000 --> 00:01:01,360
+Now of course if a user wants to buy a guitar they need the ability to log in or to register.
+
+17
+00:01:01,360 --> 00:01:04,080
+So if I go to Lagann we can create an account.
+
+18
+00:01:04,110 --> 00:01:11,050
+We don't have an account or we can log in and since I'm I'm already registered customer are going to
+
+19
+00:01:11,050 --> 00:01:17,050
+do password 2:59 again and after I log in we're going to get the dashboard with the user information
+
+20
+00:01:17,080 --> 00:01:18,630
+and the history of purchases.
+
+21
+00:01:18,700 --> 00:01:21,140
+Forget Of course if I want to go to the card.
+
+22
+00:01:21,160 --> 00:01:22,120
+We get it right here.
+
+23
+00:01:22,210 --> 00:01:28,330
+But we can access through here and we can access to the card to the user at the items to the card.
+
+24
+00:01:28,330 --> 00:01:31,850
+I mean we can of course remove the total and everything else.
+
+25
+00:01:31,960 --> 00:01:35,470
+And at the end of course we need to you know pay the guitar.
+
+26
+00:01:35,500 --> 00:01:36,340
+In this case.
+
+27
+00:01:36,460 --> 00:01:40,640
+So we're going to use the Pay-Pal connector to complete the transaction.
+
+28
+00:01:40,690 --> 00:01:41,340
+Right.
+
+29
+00:01:41,680 --> 00:01:42,120
+All right.
+
+30
+00:01:42,130 --> 00:01:47,100
+And of course we get a few more a few more sections like updating the profile of the users.
+
+31
+00:01:47,260 --> 00:01:51,970
+And if we are an administrator we're going to create an endpoint where we can say we can change some
+
+32
+00:01:51,970 --> 00:01:58,600
+of the side information we can at TAR's including uploading the image and we can manage some of the
+
+33
+00:01:58,600 --> 00:01:59,590
+categories.
+
+34
+00:01:59,770 --> 00:02:03,650
+So again just like a just like it's all before this one it's pretty big.
+
+35
+00:02:03,790 --> 00:02:08,260
+We're going to do a lot of coal coding all of this files all of these files.
+
+36
+00:02:08,500 --> 00:02:11,740
+So we're going to spend a lot of time right here.
+
+37
+00:02:11,740 --> 00:02:12,270
+All right.
+
+38
+00:02:12,370 --> 00:02:12,680
+OK.
+
+39
+00:02:12,730 --> 00:02:15,200
+Doing the server and the client.
+
+40
+00:02:15,250 --> 00:02:15,710
+All right.
+
+41
+00:02:15,850 --> 00:02:18,850
+So of course we can log back out.
+
+42
+00:02:19,150 --> 00:02:22,640
+So again this is the final project.
+
+43
+00:02:22,990 --> 00:02:25,460
+And on the next one we're going to start with the first one.
+
+44
+00:02:25,480 --> 00:02:28,980
+If you don't want to do the first one because it's really simple for you.
+
+45
+00:02:29,050 --> 00:02:30,610
+Just go to the second one OK.
+
+46
+00:02:30,730 --> 00:02:31,590
+So let's begin.
+

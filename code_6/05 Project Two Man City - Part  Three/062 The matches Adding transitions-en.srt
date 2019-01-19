@@ -1,0 +1,1040 @@
+1
+00:00:00,880 --> 00:00:03,990
+All right so let's enter the It's create the animation.
+
+2
+00:00:04,030 --> 00:00:09,490
+So first on the container is just a div but I'm going to make reference to a function so open it close
+
+3
+00:00:09,800 --> 00:00:15,310
+this that show matches something like this matches open and close.
+
+4
+00:00:15,310 --> 00:00:17,950
+Of course we don't have this function going to create it right now.
+
+5
+00:00:18,400 --> 00:00:23,650
+So we're going to go right here and we're going to say that the show matches show matches it's equal
+
+6
+00:00:23,650 --> 00:00:24,630
+to a function.
+
+7
+00:00:24,790 --> 00:00:28,930
+And of course when we return something we return some GSX.
+
+8
+00:00:28,930 --> 00:00:33,510
+Now first I'm going to make sure that this state that matches list.
+
+9
+00:00:33,700 --> 00:00:35,900
+It's actually able to use.
+
+10
+00:00:36,100 --> 00:00:37,740
+If not I'm going to return no.
+
+11
+00:00:37,760 --> 00:00:42,310
+Now the usual stuff if we have something we do something if not we don't do anything.
+
+12
+00:00:42,400 --> 00:00:45,800
+Now what we will be returning is this note group from re-act move.
+
+13
+00:00:46,030 --> 00:00:47,340
+We need to import it.
+
+14
+00:00:47,350 --> 00:00:50,980
+So first I'm going to import the transmission remember the ease.
+
+15
+00:00:51,070 --> 00:00:56,150
+So ease ease then Polie and then out.
+
+16
+00:00:56,270 --> 00:01:01,760
+This is what we use so far from D-3 than ease.
+
+17
+00:01:01,780 --> 00:01:02,740
+All right.
+
+18
+00:01:02,740 --> 00:01:13,360
+So import and now we import node and then group just like this note group for our arm and it's re-act
+
+19
+00:01:14,470 --> 00:01:19,200
+move forward slash and then the same name build up.
+
+20
+00:01:19,210 --> 00:01:19,940
+All right.
+
+21
+00:01:20,500 --> 00:01:22,280
+So now we can use this note.
+
+22
+00:01:22,510 --> 00:01:23,370
+So what do we do.
+
+23
+00:01:23,380 --> 00:01:29,020
+We return this you know this component this node group open and close.
+
+24
+00:01:29,080 --> 00:01:31,550
+Of course we wanted to do a lot of things inside of here.
+
+25
+00:01:31,570 --> 00:01:34,600
+Just like with it with the animation of re-act move.
+
+26
+00:01:34,990 --> 00:01:38,290
+So the first property we need to add right here.
+
+27
+00:01:38,290 --> 00:01:42,810
+And of course we get all offers but can it clear them in second no grouped.
+
+28
+00:01:42,820 --> 00:01:44,300
+What it needs it needs.
+
+29
+00:01:44,400 --> 00:01:50,470
+The group that you're going to be animating in this case we need to animate the list and this list at
+
+30
+00:01:50,470 --> 00:01:53,230
+least we have at least I don't know 10 matches.
+
+31
+00:01:53,230 --> 00:01:53,860
+All right.
+
+32
+00:01:54,100 --> 00:01:58,600
+So the way you can pass the list on the data property.
+
+33
+00:01:58,720 --> 00:02:02,520
+So we say this that state that matches list.
+
+34
+00:02:02,530 --> 00:02:04,990
+So this is the list going to be using.
+
+35
+00:02:04,990 --> 00:02:08,590
+Now this one it needs a key accessor.
+
+36
+00:02:08,800 --> 00:02:11,760
+Now for example if on data.
+
+37
+00:02:11,950 --> 00:02:18,960
+Let me just do the console log console log and let's see if we get we can get it before getting to matches
+
+38
+00:02:19,030 --> 00:02:21,600
+list.
+
+39
+00:02:21,780 --> 00:02:23,400
+Maybe not.
+
+40
+00:02:23,780 --> 00:02:28,340
+We just double check and no we are not getting it's failing before that.
+
+41
+00:02:28,560 --> 00:02:34,400
+So I'm going to try to come and that's going to remove it and I'm going at it.
+
+42
+00:02:34,410 --> 00:02:37,980
+I want to show you what we get on the list.
+
+43
+00:02:37,980 --> 00:02:39,780
+So on the list we have this list.
+
+44
+00:02:39,870 --> 00:02:46,470
+And then of course we kind of have an idea and this idea is actually come from comes from firebase.
+
+45
+00:02:46,530 --> 00:02:52,320
+So now whenever we loop something this note group actually is going to be looping this data right this
+
+46
+00:02:52,320 --> 00:02:57,920
+list and it's nice to know what is the key of that of this of each entry.
+
+47
+00:02:57,990 --> 00:03:03,430
+In this case the the entry in each key of each entry sorry is the ID.
+
+48
+00:03:03,450 --> 00:03:06,700
+We know that this is the I.D. We could use whatever we want doesn't matter.
+
+49
+00:03:06,810 --> 00:03:11,190
+But the key one it's this one is the I.D. We are not going to really use it on this.
+
+50
+00:03:11,190 --> 00:03:16,370
+On this example but maybe you need to refer to an idea of something and I it.
+
+51
+00:03:16,520 --> 00:03:18,360
+We're going to talk about this in a minute.
+
+52
+00:03:18,360 --> 00:03:22,850
+So we need to pass a key if not this no group is going to fail.
+
+53
+00:03:22,860 --> 00:03:25,920
+So let me go back to the Prius code.
+
+54
+00:03:25,920 --> 00:03:26,730
+All right.
+
+55
+00:03:26,730 --> 00:03:37,160
+So the property that takes the key its key just like this key accessor All right now Diski accessor
+
+56
+00:03:37,820 --> 00:03:39,890
+of course we do brackets what we do.
+
+57
+00:03:39,890 --> 00:03:41,340
+We pass a function.
+
+58
+00:03:41,370 --> 00:03:47,740
+This function takes the D which is pretty much kind of a state and then D and the ID.
+
+59
+00:03:47,870 --> 00:03:51,060
+So this list could be it's kind of the list.
+
+60
+00:03:51,060 --> 00:03:53,180
+This data this does for data.
+
+61
+00:03:53,210 --> 00:03:58,880
+So we are passing the data and we are saying that the data and we're going to be using the data ID whenever
+
+62
+00:03:58,880 --> 00:04:01,040
+we have inside of here in each iteration.
+
+63
+00:04:01,220 --> 00:04:05,220
+The key ID if we were using I don't know the ID of course.
+
+64
+00:04:05,240 --> 00:04:10,210
+You know our property called cars we all say cars doesn't matter in this case is the idea.
+
+65
+00:04:10,220 --> 00:04:15,710
+We are not going to really use it but we need to tell no group what we could use as an ID.
+
+66
+00:04:15,710 --> 00:04:22,190
+Now if you remember when we do any missions we have a starting point an entering point an update and
+
+67
+00:04:22,190 --> 00:04:22,880
+leave.
+
+68
+00:04:22,880 --> 00:04:25,330
+We didn't do the leave because we didn't need to.
+
+69
+00:04:25,340 --> 00:04:26,410
+Now we're going to do it.
+
+70
+00:04:26,600 --> 00:04:28,240
+So we have a start.
+
+71
+00:04:28,670 --> 00:04:29,350
+Equals.
+
+72
+00:04:29,540 --> 00:04:32,550
+And what we need to do in this case we didn't pass an object.
+
+73
+00:04:32,690 --> 00:04:39,350
+We need to pass a function so we do open it close and we return kind of a some some GSX and inside of
+
+74
+00:04:39,350 --> 00:04:41,600
+here we return an object.
+
+75
+00:04:41,720 --> 00:04:44,770
+So this is the you know what we need to use right here.
+
+76
+00:04:45,020 --> 00:04:51,440
+So inside of the object we need to specify what is the starting point of each element inside the node
+
+77
+00:04:51,440 --> 00:04:52,070
+group.
+
+78
+00:04:52,070 --> 00:04:58,100
+So we're going to use Chesed opacity just like this and it's going to start at zero and the X is going
+
+79
+00:04:58,100 --> 00:05:00,210
+to be minus 200.
+
+80
+00:05:00,420 --> 00:05:03,480
+We are not going to do something very very complex.
+
+81
+00:05:03,500 --> 00:05:04,330
+OK.
+
+82
+00:05:04,820 --> 00:05:11,090
+So the starting point is going to be opacity 0 0 and they're going to be hitting you know after outside
+
+83
+00:05:11,090 --> 00:05:13,280
+the the the viewport.
+
+84
+00:05:13,280 --> 00:05:14,070
+All right.
+
+85
+00:05:14,420 --> 00:05:20,800
+So then we we have an Enter property whenever the element enters what are we going to do.
+
+86
+00:05:21,110 --> 00:05:21,950
+So what do we do.
+
+87
+00:05:21,950 --> 00:05:27,500
+Again we just need to pass a function to open it close and then we return with the object.
+
+88
+00:05:27,500 --> 00:05:29,180
+Same thing with it right here.
+
+89
+00:05:29,180 --> 00:05:30,880
+Now on this one is what we can do.
+
+90
+00:05:30,890 --> 00:05:36,400
+We can say the D and remember that the key word d is the data right here.
+
+91
+00:05:36,710 --> 00:05:40,600
+And then the iteration and this is something we're going to use the iteration.
+
+92
+00:05:40,670 --> 00:05:44,500
+Remember that this group actually creates a loop right.
+
+93
+00:05:44,610 --> 00:05:48,640
+So on each iteration we can grab the index.
+
+94
+00:05:49,250 --> 00:05:51,660
+So it's just a loop inside of here.
+
+95
+00:05:51,680 --> 00:05:53,760
+We can define the opacity.
+
+96
+00:05:53,990 --> 00:05:55,630
+Same thing we did right here.
+
+97
+00:05:56,180 --> 00:05:58,360
+And this works like we did previously.
+
+98
+00:05:58,400 --> 00:06:02,350
+We need to pass the array with what is the final Balou.
+
+99
+00:06:02,390 --> 00:06:04,740
+In this case it's going to be one.
+
+100
+00:06:05,060 --> 00:06:10,120
+And what is the ending point is going to be zero ride show right on the screen.
+
+101
+00:06:10,460 --> 00:06:13,560
+Now we need to add a timing just like we did before.
+
+102
+00:06:13,580 --> 00:06:21,840
+Now the timing timing is again just like the other examples with that timing.
+
+103
+00:06:22,120 --> 00:06:23,060
+There you go.
+
+104
+00:06:23,060 --> 00:06:25,310
+And we need to pass an object on the object.
+
+105
+00:06:25,310 --> 00:06:29,210
+We can set the duration the delay if we wanted a delay.
+
+106
+00:06:29,390 --> 00:06:38,330
+And the ease so for duration I'm going to say 500 koma are going to say delay and on the delay we're
+
+107
+00:06:38,330 --> 00:06:44,000
+going to do the same thing with it which we can move the iteration and I'm going to multiply it.
+
+108
+00:06:44,210 --> 00:06:50,150
+And if we do that we're going to get that escalating animation because they have different values and
+
+109
+00:06:50,150 --> 00:06:52,570
+that's why we get this.
+
+110
+00:06:52,620 --> 00:06:53,820
+All right.
+
+111
+00:06:53,820 --> 00:06:59,370
+So on delay going to grab the iteration and they're going to multiply by 50.
+
+112
+00:06:59,370 --> 00:07:04,830
+Then we have an ease and ease is going to be the one we are using at the top.
+
+113
+00:07:04,830 --> 00:07:05,270
+All right.
+
+114
+00:07:07,190 --> 00:07:12,880
+And let's go back to our project and now we're getting there's the problem children and it's because
+
+115
+00:07:12,880 --> 00:07:14,380
+we don't have anything inside.
+
+116
+00:07:14,380 --> 00:07:14,970
+All right.
+
+117
+00:07:15,370 --> 00:07:18,330
+So let me talk a little bit more about this.
+
+118
+00:07:18,970 --> 00:07:26,080
+If you go to react move documentation this D and if you take the first the first example this one going
+
+119
+00:07:26,090 --> 00:07:28,020
+to see what is that.
+
+120
+00:07:28,150 --> 00:07:29,650
+So let me give you an example right now.
+
+121
+00:07:29,860 --> 00:07:38,200
+Let's say that you have a list of matches you have maybe I don't know objects not objects maybe elements
+
+122
+00:07:38,610 --> 00:07:41,820
+something like that and you have an array of objects.
+
+123
+00:07:42,040 --> 00:07:49,540
+And what you want to do maybe you want to animate this objects right here and you want to pass the properties
+
+124
+00:07:49,540 --> 00:07:51,050
+of what you're going to be any meeting.
+
+125
+00:07:51,220 --> 00:08:01,480
+Let's say that this one has an A pass city of 5 and then and opacity of I don't know actually you know
+
+126
+00:08:01,490 --> 00:08:04,780
+it's going to start at 0 and 1.
+
+127
+00:08:05,180 --> 00:08:11,690
+Let's say that all these properties they come from this you know this object is array of follies.
+
+128
+00:08:11,950 --> 00:08:17,800
+So since you're looping something you're looking this list inside node groups just like here with the
+
+129
+00:08:17,800 --> 00:08:21,750
+data you do have access to data on each iteration.
+
+130
+00:08:21,910 --> 00:08:29,290
+So if you need to pass the opacity instead of hard coding it's doing it like this hard coding the value
+
+131
+00:08:29,600 --> 00:08:30,600
+where you can do.
+
+132
+00:08:30,640 --> 00:08:37,750
+You can specify the dot and then of course it's going to be and opacity and this value is going to be
+
+133
+00:08:37,810 --> 00:08:41,010
+equal to each element on each iteration.
+
+134
+00:08:41,200 --> 00:08:44,400
+So that way you can pass dynamic values.
+
+135
+00:08:44,560 --> 00:08:48,360
+For example right here we get letter and frequency.
+
+136
+00:08:48,370 --> 00:08:57,440
+And for example if we go when we find the actual code we find it slide right here.
+
+137
+00:08:57,450 --> 00:08:58,160
+There we go.
+
+138
+00:08:58,480 --> 00:09:07,960
+So we have the enter D and notice that X is used in scale and then accessing the D and the property
+
+139
+00:09:08,170 --> 00:09:10,940
+letter and the letter we have it right here.
+
+140
+00:09:11,320 --> 00:09:12,190
+All right.
+
+141
+00:09:12,360 --> 00:09:12,790
+So OK.
+
+142
+00:09:12,820 --> 00:09:20,060
+So you can use the D as a reference to each element on that list that you're using.
+
+143
+00:09:20,070 --> 00:09:20,820
+All right.
+
+144
+00:09:20,860 --> 00:09:25,190
+Right now we are not really using this we are just putting fixed values.
+
+145
+00:09:25,460 --> 00:09:27,780
+Ok so we have a start.
+
+146
+00:09:27,910 --> 00:09:31,130
+We have an enter and we have an update.
+
+147
+00:09:31,270 --> 00:09:38,450
+What happens when everything updates so update and it's going to be equal to the same exact thing.
+
+148
+00:09:38,470 --> 00:09:46,360
+So I'm going to copy this and just do passing everything up and then update for now when we don't worry
+
+149
+00:09:46,360 --> 00:09:48,510
+about much about the update.
+
+150
+00:09:48,730 --> 00:09:51,250
+So this is going to do the same thing when it updates.
+
+151
+00:09:51,340 --> 00:09:53,810
+But again we are not running an animation.
+
+152
+00:09:53,980 --> 00:09:59,980
+What we get but we're going to be doing is running an animation when we leave when the element leaves
+
+153
+00:10:00,070 --> 00:10:00,900
+the screen.
+
+154
+00:10:01,060 --> 00:10:03,110
+Then we want to animate it back.
+
+155
+00:10:03,220 --> 00:10:09,300
+And what we're going to do we get to go back to defaults opacity is zero and minus 200 Ryan.
+
+156
+00:10:09,390 --> 00:10:09,840
+OK.
+
+157
+00:10:10,040 --> 00:10:10,840
+So going to copy this.
+
+158
+00:10:10,840 --> 00:10:14,020
+So I don't need to type everything again.
+
+159
+00:10:14,380 --> 00:10:19,730
+And for the timing since you're repeating code you can host this on a variable later.
+
+160
+00:10:19,740 --> 00:10:20,600
+Can it do this.
+
+161
+00:10:20,860 --> 00:10:22,730
+And you know feed it from there.
+
+162
+00:10:22,800 --> 00:10:25,300
+Now there there's no need to do this.
+
+163
+00:10:25,300 --> 00:10:30,730
+We are practicing in real life would be you know a good idea not to repeat this code.
+
+164
+00:10:31,090 --> 00:10:31,670
+OK.
+
+165
+00:10:31,960 --> 00:10:39,940
+So on leave pretty much we do the same thing but we go back to defaults minus 200.
+
+166
+00:10:39,940 --> 00:10:40,940
+All right.
+
+167
+00:10:41,470 --> 00:10:43,140
+So all of this is just right.
+
+168
+00:10:43,180 --> 00:10:45,240
+Ready to ready to use.
+
+169
+00:10:45,280 --> 00:10:49,690
+Now the thing is that the problem and why the application is going to fail is that we don't have anything
+
+170
+00:10:49,720 --> 00:10:50,220
+inside.
+
+171
+00:10:50,230 --> 00:10:51,240
+No drop.
+
+172
+00:10:51,430 --> 00:10:53,670
+And it works in a weird way.
+
+173
+00:10:53,710 --> 00:11:01,480
+Now whenever we let me show you the example they give us inside node group what we need to return first
+
+174
+00:11:01,840 --> 00:11:05,880
+is a function with the notes and inside of the function.
+
+175
+00:11:05,920 --> 00:11:09,670
+We need to return a map which each element.
+
+176
+00:11:10,180 --> 00:11:13,930
+Yeah a little bit we're going to do it right here and it will make sense.
+
+177
+00:11:13,930 --> 00:11:17,130
+So first we need to return inside of this child.
+
+178
+00:11:17,230 --> 00:11:19,140
+This note function.
+
+179
+00:11:19,390 --> 00:11:26,080
+So we do notes we need to pass notes and then open it close and we return some GSX.
+
+180
+00:11:26,080 --> 00:11:33,250
+Now whenever we return this function well when it returns something it always needs to return a single
+
+181
+00:11:33,460 --> 00:11:34,220
+element.
+
+182
+00:11:34,450 --> 00:11:37,350
+So if we pood we create a map right here.
+
+183
+00:11:37,570 --> 00:11:40,870
+And for each element we have on the list we return to Dev.
+
+184
+00:11:40,870 --> 00:11:43,500
+This is going to be something like this.
+
+185
+00:11:43,660 --> 00:11:48,890
+And and this will not work because this is GSX.
+
+186
+00:11:49,150 --> 00:11:52,110
+So we need to return only one div..
+
+187
+00:11:52,260 --> 00:11:54,360
+In this case you're going to use a diff.
+
+188
+00:11:54,400 --> 00:11:58,040
+And if you check the example they are returning a tag.
+
+189
+00:11:58,040 --> 00:11:59,910
+Gee I don't know what it is.
+
+190
+00:11:59,990 --> 00:12:01,530
+G doesn't matter.
+
+191
+00:12:01,600 --> 00:12:02,580
+It's just attack.
+
+192
+00:12:02,590 --> 00:12:09,930
+We return one element now instead of here what we will be returning is the map of whatever notes we
+
+193
+00:12:09,930 --> 00:12:10,230
+have.
+
+194
+00:12:10,230 --> 00:12:17,700
+So this notes is a list that contains all the temptations of all the lists all the elements in our list.
+
+195
+00:12:17,760 --> 00:12:21,400
+So we're going to go out of here open and I get to enter.
+
+196
+00:12:21,400 --> 00:12:23,450
+No it's going to dot.
+
+197
+00:12:23,540 --> 00:12:26,490
+I'm going to do map open and close.
+
+198
+00:12:26,490 --> 00:12:32,770
+Now instead of map of course we need to do something and then run something and what we do we turn is
+
+199
+00:12:32,790 --> 00:12:34,650
+some GSX.
+
+200
+00:12:34,650 --> 00:12:41,320
+Now of course instead of the GSX we will we will be returning a deaf with a lot of things.
+
+201
+00:12:41,580 --> 00:12:47,530
+Now on each iteration we need to tell this element what it needs to do.
+
+202
+00:12:47,640 --> 00:12:53,080
+Whereas going to go where when we have the Pasotti and where it's going to go when we have the x.
+
+203
+00:12:53,130 --> 00:13:01,340
+So we we pass this right here open and close what we do have by default from notes is the key.
+
+204
+00:13:01,350 --> 00:13:05,830
+Remember that when we map something we need to specify the key.
+
+205
+00:13:05,940 --> 00:13:11,000
+So we open curly braces and we say key then we get the data.
+
+206
+00:13:11,010 --> 00:13:18,030
+This is something that we might not really use but we can use it there by default and then we have the
+
+207
+00:13:18,030 --> 00:13:18,710
+state.
+
+208
+00:13:18,870 --> 00:13:22,680
+So inside of the state and it's not the application state.
+
+209
+00:13:22,680 --> 00:13:28,830
+Now this one is the state of this node group and inside of the state we have the information of what
+
+210
+00:13:28,830 --> 00:13:34,440
+we are doing with it you know with the actual transition just like we did with four with animate you
+
+211
+00:13:34,440 --> 00:13:36,310
+know with the same re-act move.
+
+212
+00:13:36,360 --> 00:13:40,460
+So what we going to be bringing it's X and capacity.
+
+213
+00:13:40,560 --> 00:13:41,960
+This is what we're using.
+
+214
+00:13:42,090 --> 00:13:46,230
+If you have transform or something like that you need to bring it here.
+
+215
+00:13:46,650 --> 00:13:49,880
+If not of course not going to really work.
+
+216
+00:13:50,070 --> 00:13:51,380
+So we are growing notes.
+
+217
+00:13:51,420 --> 00:13:55,220
+We are mapping and we are bringing to the three things we can to use.
+
+218
+00:13:55,290 --> 00:14:02,070
+And inside we return some GSX so diff needs a key because we are mapping something we need to pass the
+
+219
+00:14:02,070 --> 00:14:02,840
+key.
+
+220
+00:14:03,510 --> 00:14:06,030
+And then of course this has a class name.
+
+221
+00:14:06,030 --> 00:14:12,540
+This is my class name our class name match box and then back.
+
+222
+00:14:13,230 --> 00:14:19,010
+And of course we need to tell the application how that transition is going to go.
+
+223
+00:14:19,020 --> 00:14:26,280
+So what we do we pass the style and so right now we can do pretty much the same thing with it with all
+
+224
+00:14:26,330 --> 00:14:30,490
+other animations on our you know at home and everything else.
+
+225
+00:14:30,650 --> 00:14:33,990
+I noticed that at least right now the application is not breaking.
+
+226
+00:14:34,290 --> 00:14:39,390
+So what we do inside of style we just pass whatever is going to happen with the passerby.
+
+227
+00:14:39,390 --> 00:14:41,570
+So we grab the value we have from there.
+
+228
+00:14:42,180 --> 00:14:47,020
+And then the transform transform.
+
+229
+00:14:47,910 --> 00:14:48,820
+And what we do.
+
+230
+00:14:48,870 --> 00:14:58,110
+I'm going to use translate translate opening close just like this and are going to be passing the template
+
+231
+00:14:58,110 --> 00:15:01,310
+string with a value X and then of course pixels.
+
+232
+00:15:01,320 --> 00:15:02,160
+All right.
+
+233
+00:15:02,340 --> 00:15:03,840
+That is it.
+
+234
+00:15:03,940 --> 00:15:07,820
+So of course instead of here we don't have anything to have nothing at all.
+
+235
+00:15:07,860 --> 00:15:09,000
+So I'm going to type something.
+
+236
+00:15:09,030 --> 00:15:09,830
+Doesn't matter.
+
+237
+00:15:09,990 --> 00:15:11,860
+And at least we get it.
+
+238
+00:15:11,900 --> 00:15:14,850
+You know it's a transition and it works.
+
+239
+00:15:15,230 --> 00:15:20,760
+And that is it.
+
+240
+00:15:20,890 --> 00:15:21,580
+All right.
+
+241
+00:15:21,790 --> 00:15:29,080
+So now the problem is that we are looping our list within the note group and all the information we
+
+242
+00:15:29,080 --> 00:15:30,430
+need to put right here.
+
+243
+00:15:30,670 --> 00:15:34,410
+It's inside our this that state that matches list.
+
+244
+00:15:34,420 --> 00:15:39,100
+So how can we access the values from our list inside of this.
+
+245
+00:15:39,100 --> 00:15:42,710
+You know this note map we don't have the information inside notes.
+
+246
+00:15:42,940 --> 00:15:48,060
+Well in theory we do whenever we make here we bring data.
+
+247
+00:15:48,190 --> 00:15:53,230
+Data is a quick reference inside of notes to our data right here.
+
+248
+00:15:53,350 --> 00:16:00,730
+So what we can do we can say data that local or data that rissoles and we will be accessing the values
+
+249
+00:16:00,850 --> 00:16:03,510
+of each element on each iteration record.
+
+250
+00:16:03,550 --> 00:16:05,950
+You know it works really really really great.
+
+251
+00:16:05,950 --> 00:16:12,580
+This one and one of this is a little bit hard to understand at first but once you get it it's piece
+
+252
+00:16:12,580 --> 00:16:13,330
+of cake.
+
+253
+00:16:13,720 --> 00:16:19,840
+So on the right here if we check the final one we pretty much have two different things.
+
+254
+00:16:19,990 --> 00:16:26,980
+You have the left side and the right side and we have the team and teams that have left block a block
+
+255
+00:16:26,980 --> 00:16:29,200
+at the top and a block at the bottom.
+
+256
+00:16:29,200 --> 00:16:30,710
+Let me check maybe this.
+
+257
+00:16:30,810 --> 00:16:32,960
+We were 16 minutes too long.
+
+258
+00:16:33,130 --> 00:16:34,560
+So we're going to go to the next one.
+
+259
+00:16:34,750 --> 00:16:39,020
+And at all the you know the actual layout right here.
+
+260
+00:16:39,030 --> 00:16:41,630
+So let's go to the next one and do that going to be pretty simple.
+

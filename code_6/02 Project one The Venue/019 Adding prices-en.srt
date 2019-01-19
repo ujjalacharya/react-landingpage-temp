@@ -1,0 +1,992 @@
+1
+00:00:01,040 --> 00:00:01,570
+Right.
+
+2
+00:00:01,570 --> 00:00:06,280
+So we're going to build the next component which is the pricing component.
+
+3
+00:00:06,320 --> 00:00:07,330
+So OK so I'm going to.
+
+4
+00:00:07,330 --> 00:00:08,410
+This is the final one.
+
+5
+00:00:08,410 --> 00:00:10,590
+You know the local host 3 0 0 2.
+
+6
+00:00:10,680 --> 00:00:14,060
+And if I reload the application we get this transition.
+
+7
+00:00:14,230 --> 00:00:18,250
+So first we get the one in the middle and then we get the other two.
+
+8
+00:00:18,250 --> 00:00:21,760
+So this is what we're going to be doing is going to be really really simple right.
+
+9
+00:00:21,850 --> 00:00:27,460
+So first when I'm going to do to close everything right here because I have a lot of files open I don't
+
+10
+00:00:27,470 --> 00:00:28,450
+really want that.
+
+11
+00:00:28,450 --> 00:00:35,080
+So the first one is the app that I guess which is you know we are going to require import the next component
+
+12
+00:00:35,320 --> 00:00:41,230
+and this one is going to be the prizing so I'm going to go to components create a new directory called
+
+13
+00:00:41,830 --> 00:00:43,240
+prising makes sense.
+
+14
+00:00:43,260 --> 00:00:44,980
+Prising up message.
+
+15
+00:00:45,280 --> 00:00:49,690
+So an inside prizing of course we just need one file.
+
+16
+00:00:49,690 --> 00:00:53,140
+I'm not going to divide this on maybe two different places.
+
+17
+00:00:53,140 --> 00:00:59,110
+So prizing and it's going to be Index index that Jap's.
+
+18
+00:00:59,260 --> 00:00:59,910
+Right.
+
+19
+00:01:00,140 --> 00:01:00,690
+OK.
+
+20
+00:01:00,910 --> 00:01:03,210
+So this one is going to be a class based component.
+
+21
+00:01:03,220 --> 00:01:11,290
+I'm going to feed the boxes from the state so re-act class based component and instead of index this
+
+22
+00:01:11,290 --> 00:01:13,330
+one is going to be prizing.
+
+23
+00:01:13,410 --> 00:01:13,950
+All right.
+
+24
+00:01:13,960 --> 00:01:15,790
+Going to change the name.
+
+25
+00:01:15,970 --> 00:01:24,080
+Now I'm going to go to abdicates and include this imported import prizing from.
+
+26
+00:01:24,090 --> 00:01:30,140
+And same thing DOD for Slash components than for Slash and pricing.
+
+27
+00:01:30,220 --> 00:01:31,610
+Oregon says we have an index.
+
+28
+00:01:31,640 --> 00:01:33,570
+There's no need to put in x.
+
+29
+00:01:33,700 --> 00:01:37,750
+And then of course I will include it right here.
+
+30
+00:01:38,290 --> 00:01:43,650
+Now we're going to go back to our project and of course we get nothing because we pretty much have nothing.
+
+31
+00:01:43,890 --> 00:01:44,430
+OK.
+
+32
+00:01:44,590 --> 00:01:50,650
+So first are going to be adding you know the structure for this the container def is going to be a class
+
+33
+00:01:50,650 --> 00:01:54,170
+name of B C K and then black.
+
+34
+00:01:54,190 --> 00:01:57,760
+Remember we've already used this rather than inside.
+
+35
+00:01:57,760 --> 00:02:00,850
+We will have a div just like this.
+
+36
+00:02:01,090 --> 00:02:09,680
+And with the class name off and I'm going to use the center wrapper we use before center and then wrapper.
+
+37
+00:02:09,970 --> 00:02:13,540
+And this one is going to be the prising section.
+
+38
+00:02:13,540 --> 00:02:14,770
+All right.
+
+39
+00:02:14,770 --> 00:02:20,660
+So on top we get an age to tag with the prising prizing.
+
+40
+00:02:21,250 --> 00:02:25,780
+And then of course we get the you know the container that will contain the three boxes.
+
+41
+00:02:25,840 --> 00:02:32,230
+So I'm going to say Dev and the class name for this one is going to be prising wrapper prizing and then
+
+42
+00:02:32,530 --> 00:02:33,510
+wrapper.
+
+43
+00:02:33,760 --> 00:02:34,410
+All right.
+
+44
+00:02:34,450 --> 00:02:37,210
+And of course right here we get the boxes.
+
+45
+00:02:37,210 --> 00:02:43,530
+So if I reload the application we get prizing and then we get boxes so we are on track.
+
+46
+00:02:43,930 --> 00:02:49,720
+So right here when I want to do I want to run a function trigger function whenever the component renders
+
+47
+00:02:50,170 --> 00:02:56,080
+and that get from state whatever is that we need to output to show.
+
+48
+00:02:56,110 --> 00:02:56,620
+OK.
+
+49
+00:02:56,890 --> 00:03:02,050
+So first to do this before calling the function we need to state where we can get the information.
+
+50
+00:03:02,050 --> 00:03:08,490
+So I'm going to say state open and close and we will have several things we have the price.
+
+51
+00:03:08,640 --> 00:03:13,300
+You know the category the description and the link where is where this is going to go.
+
+52
+00:03:13,410 --> 00:03:15,990
+So OK so first I'm going to start with prizing.
+
+53
+00:03:16,020 --> 00:03:23,710
+So I'm going to say prices prices and since we have three and we need to loop an array I'm going to
+
+54
+00:03:23,800 --> 00:03:25,910
+just loop this charade prizes.
+
+55
+00:03:26,140 --> 00:03:28,350
+So the first box is going to be 100.
+
+56
+00:03:28,360 --> 00:03:30,220
+The second one is going to be 150.
+
+57
+00:03:30,400 --> 00:03:32,970
+And the last one is going to be to 50.
+
+58
+00:03:32,980 --> 00:03:35,410
+You know this one is the expensive one.
+
+59
+00:03:35,590 --> 00:03:40,040
+Then we have the positions you know balcony medium star whatever.
+
+60
+00:03:40,210 --> 00:03:44,380
+So positions you can call again this you can call this whenever you want.
+
+61
+00:03:44,620 --> 00:03:46,420
+So the first one is balcony.
+
+62
+00:03:46,780 --> 00:03:54,040
+The second one I call that medium and the next one is going to be you know the star just in front of
+
+63
+00:03:54,070 --> 00:03:54,890
+the time.
+
+64
+00:03:55,060 --> 00:03:58,800
+Then we have the scription and for this one for now it's going to be an array.
+
+65
+00:03:58,870 --> 00:04:03,500
+We three lines of descriptions so you can do this.
+
+66
+00:04:03,520 --> 00:04:05,580
+You can put whatever you want inside.
+
+67
+00:04:05,730 --> 00:04:08,640
+I got a copy of some I have right here.
+
+68
+00:04:09,340 --> 00:04:15,430
+You can go to learn tips and you know get the text from there that doesn't matter.
+
+69
+00:04:15,430 --> 00:04:17,790
+So I'm going to put koma going to go to the next line.
+
+70
+00:04:17,800 --> 00:04:19,540
+Let me get this one.
+
+71
+00:04:19,540 --> 00:04:22,880
+I'm going to copy the other one.
+
+72
+00:04:23,080 --> 00:04:29,830
+So if there's been you know it's when I I need to do it again at your home you can skip this and the
+
+73
+00:04:29,830 --> 00:04:33,340
+next one is going to be the last line.
+
+74
+00:04:33,340 --> 00:04:35,580
+LMC I got a mistake.
+
+75
+00:04:35,810 --> 00:04:38,580
+See why this is why forget coma.
+
+76
+00:04:38,800 --> 00:04:39,320
+And that's it.
+
+77
+00:04:39,340 --> 00:04:41,520
+We have the description coma description.
+
+78
+00:04:41,530 --> 00:04:42,070
+OK.
+
+79
+00:04:42,890 --> 00:04:45,110
+And then of course we have the link.
+
+80
+00:04:45,140 --> 00:04:50,270
+So I'm going to put a coma on this and then link to I'm going to call that link to.
+
+81
+00:04:50,330 --> 00:04:52,040
+And again we we've got an array.
+
+82
+00:04:52,040 --> 00:05:02,940
+So the first one is I know it's GTP call for Slash and then don't know sales forward slash B for balcony
+
+83
+00:05:03,230 --> 00:05:04,910
+and then pretty much we do the same thing.
+
+84
+00:05:04,910 --> 00:05:07,360
+You can put whatever you want right here.
+
+85
+00:05:07,760 --> 00:05:13,760
+Now on this Web sites most of times when they you know you have you create a page on the page where
+
+86
+00:05:13,760 --> 00:05:15,050
+they sell something.
+
+87
+00:05:15,050 --> 00:05:21,410
+Most of the times the link will take will take the user to a different place where they can complete
+
+88
+00:05:21,410 --> 00:05:23,160
+the purchase.
+
+89
+00:05:23,180 --> 00:05:25,040
+That's the way it works.
+
+90
+00:05:25,070 --> 00:05:28,510
+So I'm going to do the same thing so this one is going to be.
+
+91
+00:05:28,610 --> 00:05:34,420
+There's one is going to be this for medium and the other one is going to be star.
+
+92
+00:05:34,430 --> 00:05:35,520
+Everything is in order.
+
+93
+00:05:35,540 --> 00:05:36,450
+Right.
+
+94
+00:05:36,560 --> 00:05:40,500
+The first one its balcony the first always the same position on the right.
+
+95
+00:05:40,600 --> 00:05:41,650
+So this one is done.
+
+96
+00:05:41,870 --> 00:05:47,280
+So right now we have the stage so we can loop this and generate the content right right here right.
+
+97
+00:05:47,330 --> 00:05:48,360
+So we can add it.
+
+98
+00:05:48,680 --> 00:05:51,620
+So I'm going to create a function called show Buxus.
+
+99
+00:05:51,710 --> 00:05:58,730
+So it's going to be show and then Buxus it's going to be equal to a function and that function will
+
+100
+00:05:58,730 --> 00:06:00,670
+return some GSX.
+
+101
+00:06:00,710 --> 00:06:08,210
+That's why I'm using the parentheses and not this whenever we use parentheses we can return some div
+
+102
+00:06:08,450 --> 00:06:11,150
+and that will be rendered whenever we call the function.
+
+103
+00:06:11,150 --> 00:06:13,270
+For example if I put.
+
+104
+00:06:13,640 --> 00:06:19,050
+And now I go right here and make call to this that shoeboxes.
+
+105
+00:06:20,000 --> 00:06:24,310
+And you know the function I'm going to reload the application and begin to get.
+
+106
+00:06:24,320 --> 00:06:25,150
+Hello.
+
+107
+00:06:25,420 --> 00:06:25,920
+All right.
+
+108
+00:06:25,950 --> 00:06:27,960
+And there's no need to do this.
+
+109
+00:06:28,070 --> 00:06:36,210
+If we do a bracket just like this one will not work and all top this is not going to work.
+
+110
+00:06:36,250 --> 00:06:39,900
+We need to do a return and do this and put to death inside.
+
+111
+00:06:39,910 --> 00:06:44,710
+I'm telling you this because maybe you didn't know you know and you're wondering why are you using brackets
+
+112
+00:06:45,630 --> 00:06:47,480
+or parentheses instead of brackets.
+
+113
+00:06:47,500 --> 00:06:48,250
+So that's fine.
+
+114
+00:06:48,310 --> 00:06:51,360
+But in this case we can use the premises.
+
+115
+00:06:51,400 --> 00:06:51,950
+All right.
+
+116
+00:06:52,300 --> 00:06:53,450
+So now what do we need to do.
+
+117
+00:06:53,500 --> 00:06:59,090
+We need to loop at least the prices because we have always three positions on each array.
+
+118
+00:06:59,200 --> 00:07:04,230
+So we can loop this and then get all the other positions with the iteration number right.
+
+119
+00:07:04,480 --> 00:07:05,830
+So with the index number.
+
+120
+00:07:05,920 --> 00:07:07,430
+So for now I'm going to do this.
+
+121
+00:07:07,470 --> 00:07:08,210
+I don't need it.
+
+122
+00:07:08,470 --> 00:07:14,020
+So I'm going to say this that state that they're going to use prizes.
+
+123
+00:07:14,230 --> 00:07:16,500
+That map going to loop over it.
+
+124
+00:07:16,600 --> 00:07:21,460
+And in each iteration I'm going to be passing something and running something again since we want to
+
+125
+00:07:21,460 --> 00:07:29,050
+return some GSX from this map if we use brackets this one will not work if we use parenthesis it will
+
+126
+00:07:29,050 --> 00:07:30,540
+return some GSX.
+
+127
+00:07:30,760 --> 00:07:36,610
+So if I do dev and now right here are going to say a box makes sense.
+
+128
+00:07:36,700 --> 00:07:38,860
+And then the iteration.
+
+129
+00:07:39,040 --> 00:07:42,200
+So the box is going to be each item on each iteration.
+
+130
+00:07:42,310 --> 00:07:45,510
+The first iteration which is the one the first is going to be 100.
+
+131
+00:07:45,640 --> 00:07:48,520
+Balcony the first description and the first link.
+
+132
+00:07:48,580 --> 00:07:55,690
+So the first div which is the container will have a class name of prizing and then item right.
+
+133
+00:07:55,730 --> 00:07:56,880
+Prising item.
+
+134
+00:07:57,130 --> 00:08:00,280
+Then inside of here we get a different wrapper.
+
+135
+00:08:00,610 --> 00:08:03,080
+Which class can it be.
+
+136
+00:08:03,100 --> 00:08:07,860
+Prising per izing enter.
+
+137
+00:08:07,930 --> 00:08:09,550
+And then we leave it.
+
+138
+00:08:09,700 --> 00:08:11,650
+I call that rubber and I'm going to call.
+
+139
+00:08:11,680 --> 00:08:17,080
+I'm going to copy the prizing keyboard and look at instead of here we have pretty much three different
+
+140
+00:08:17,080 --> 00:08:17,830
+things.
+
+141
+00:08:17,830 --> 00:08:21,560
+We have the title which is that the top part actually.
+
+142
+00:08:21,670 --> 00:08:23,550
+Then the description and then the button.
+
+143
+00:08:23,590 --> 00:08:23,930
+OK.
+
+144
+00:08:23,980 --> 00:08:31,980
+So the first day of going to college and the class name is going to be prising underscore title.
+
+145
+00:08:32,020 --> 00:08:35,210
+And of course right here we're going to get the title.
+
+146
+00:08:35,410 --> 00:08:38,740
+All right the next one is going to be the description.
+
+147
+00:08:38,740 --> 00:08:45,910
+So I'm going to do Dave create just a div with the class name of prizing.
+
+148
+00:08:45,970 --> 00:08:53,920
+And of course the scription and right here we're going to get the description or whatever.
+
+149
+00:08:54,070 --> 00:08:54,600
+OK.
+
+150
+00:08:54,790 --> 00:08:59,780
+So then Dave and the next one the class name and prising buttons.
+
+151
+00:08:59,800 --> 00:09:06,130
+So prizing and then buttons and right here we get a button at the bottom.
+
+152
+00:09:06,460 --> 00:09:12,520
+So in theory I reload this we should be getting three different boxes and we do title this kitchen and
+
+153
+00:09:12,520 --> 00:09:13,300
+then button.
+
+154
+00:09:13,300 --> 00:09:13,890
+OK.
+
+155
+00:09:14,170 --> 00:09:18,820
+So seems we are looping something we can get the values from the loop.
+
+156
+00:09:18,820 --> 00:09:24,820
+The price we can get it from the box or we can call this state the price and then the number of the
+
+157
+00:09:24,850 --> 00:09:25,530
+iteration.
+
+158
+00:09:25,540 --> 00:09:26,840
+We can do that.
+
+159
+00:09:26,860 --> 00:09:29,800
+So for the title we can get two different pens.
+
+160
+00:09:29,800 --> 00:09:32,950
+So the first pen it's the actual prize.
+
+161
+00:09:32,950 --> 00:09:35,830
+So again a dollar sign or currency sign.
+
+162
+00:09:36,130 --> 00:09:40,510
+And I could use box or I could use this that state the price to use.
+
+163
+00:09:40,510 --> 00:09:43,900
+Does that state that prizes.
+
+164
+00:09:44,410 --> 00:09:49,840
+And then of course the position of the iteration and it's going to be of course 0 1 and 2.
+
+165
+00:09:50,170 --> 00:09:52,000
+So we get 1 100 and 200.
+
+166
+00:09:52,000 --> 00:09:53,220
+So that is good.
+
+167
+00:09:53,230 --> 00:09:57,140
+So next one is going to be next the next responder which is the position.
+
+168
+00:09:57,340 --> 00:09:59,020
+So we do the same the same thing.
+
+169
+00:09:59,060 --> 00:10:07,870
+There's that state that positions and again the iteration number the net and the next one is going to
+
+170
+00:10:07,870 --> 00:10:09,450
+be the description.
+
+171
+00:10:09,490 --> 00:10:16,690
+So there's that state that the desk called the desk and then the iteration number.
+
+172
+00:10:16,720 --> 00:10:20,580
+All right all right that is good.
+
+173
+00:10:20,670 --> 00:10:26,420
+So next one is going to be the Bunin if you remember we have a component a reusable component.
+
+174
+00:10:26,630 --> 00:10:32,090
+So what we can do we can include the component at the top and make use of it.
+
+175
+00:10:32,120 --> 00:10:42,520
+So it's going to be import my button from that dot for Slash us that's why we have you Telles.
+
+176
+00:10:42,770 --> 00:10:43,860
+And then my button.
+
+177
+00:10:43,940 --> 00:10:44,490
+All right.
+
+178
+00:10:44,820 --> 00:10:49,930
+So now I'm going to go at the bottom and instead of this are going to be passing the button.
+
+179
+00:10:49,940 --> 00:10:50,440
+Right.
+
+180
+00:10:50,480 --> 00:10:51,720
+So OK.
+
+181
+00:10:52,130 --> 00:10:55,950
+Let me make it right my button.
+
+182
+00:10:56,000 --> 00:11:00,280
+And instead of my brain I could make this a you know self closing.
+
+183
+00:11:00,380 --> 00:11:01,150
+Right.
+
+184
+00:11:01,190 --> 00:11:05,270
+So if you remember we need to pass some configurations.
+
+185
+00:11:05,330 --> 00:11:07,840
+So first it's a text we need to add.
+
+186
+00:11:07,980 --> 00:11:11,780
+In this case I'm going to say I don't know just something simple.
+
+187
+00:11:11,780 --> 00:11:19,130
+The next one is going to be the background color so B C K and B are the property for this same yellow
+
+188
+00:11:19,130 --> 00:11:22,150
+f a 8 zero zero.
+
+189
+00:11:22,400 --> 00:11:27,290
+The next one is going to be the color of the text which in this case it's going to be white because
+
+190
+00:11:27,320 --> 00:11:28,880
+it makes sense.
+
+191
+00:11:29,750 --> 00:11:35,160
+And the next one I don't remember the name I believe was called a link.
+
+192
+00:11:35,480 --> 00:11:35,910
+Yes.
+
+193
+00:11:35,930 --> 00:11:36,640
+Like.
+
+194
+00:11:36,830 --> 00:11:40,710
+All right it's going to go back and the link is going to be.
+
+195
+00:11:40,760 --> 00:11:43,450
+And if you remember we have the link right here.
+
+196
+00:11:43,640 --> 00:11:51,500
+So the property for this is going to be this that state that link or actually link to and then of course
+
+197
+00:11:51,500 --> 00:11:52,890
+the iteration.
+
+198
+00:11:53,140 --> 00:11:55,150
+All right.
+
+199
+00:11:55,430 --> 00:11:56,170
+And so we get it.
+
+200
+00:11:56,170 --> 00:12:02,260
+So if I open this sales B and the next one is going to be I really am.
+
+201
+00:12:02,580 --> 00:12:03,960
+And that works.
+
+202
+00:12:03,970 --> 00:12:05,680
+Everything works.
+
+203
+00:12:05,710 --> 00:12:10,890
+So now the thing is that if we take a look at the original let me just reload the application.
+
+204
+00:12:11,050 --> 00:12:16,020
+We have a transition and first the one that it's appearing at first.
+
+205
+00:12:16,150 --> 00:12:17,090
+It's the middle one.
+
+206
+00:12:17,200 --> 00:12:19,000
+It's going to be this one.
+
+207
+00:12:19,000 --> 00:12:22,180
+So we cannot add a transition in order.
+
+208
+00:12:22,180 --> 00:12:25,900
+What we need to do is to do something else so how can we do this.
+
+209
+00:12:25,900 --> 00:12:31,430
+How can we make this for the second one appear first and then the other ones.
+
+210
+00:12:31,570 --> 00:12:35,750
+All right if you want to do it on your own you can you can do it no problem.
+
+211
+00:12:35,830 --> 00:12:42,490
+I'm going to show you now I'm going to use a state so I can store it inside of the state a delay.
+
+212
+00:12:42,490 --> 00:12:42,910
+Right.
+
+213
+00:12:42,910 --> 00:12:44,470
+Because it makes sense.
+
+214
+00:12:44,470 --> 00:12:46,740
+So OK so I'm going to say delay.
+
+215
+00:12:46,900 --> 00:12:51,250
+So the first iteration on the delay is going to be 500.
+
+216
+00:12:51,250 --> 00:12:56,440
+So the first element before you to Pierce is going to wait a half second.
+
+217
+00:12:56,680 --> 00:12:59,950
+Now the middle one needs to appear first.
+
+218
+00:12:59,980 --> 00:13:01,240
+So there's one it's zero.
+
+219
+00:13:01,250 --> 00:13:02,710
+It's just going to show.
+
+220
+00:13:02,790 --> 00:13:03,110
+Right.
+
+221
+00:13:03,130 --> 00:13:03,880
+Right away.
+
+222
+00:13:04,180 --> 00:13:06,910
+And the third one is going to show with the first one.
+
+223
+00:13:07,040 --> 00:13:07,740
+OK.
+
+224
+00:13:08,170 --> 00:13:12,890
+So now we need to use that transition from re-act reveal.
+
+225
+00:13:12,940 --> 00:13:14,700
+So I'm going to go right here.
+
+226
+00:13:14,930 --> 00:13:18,560
+Import soome from.
+
+227
+00:13:18,640 --> 00:13:26,350
+And then of course re-act reveal four slash and then the name of what we are bringing in right here
+
+228
+00:13:26,380 --> 00:13:27,200
+which is suit.
+
+229
+00:13:27,640 --> 00:13:28,610
+All right.
+
+230
+00:13:29,050 --> 00:13:30,180
+So now what do we need to do.
+
+231
+00:13:30,190 --> 00:13:35,810
+We need to wrap this component and instead of returning just a div we need to return.
+
+232
+00:13:35,920 --> 00:13:37,590
+Assume component.
+
+233
+00:13:37,750 --> 00:13:38,290
+OK.
+
+234
+00:13:38,770 --> 00:13:44,950
+I'm going to copy paste it.
+
+235
+00:13:45,200 --> 00:13:46,660
+And there we go.
+
+236
+00:13:47,510 --> 00:13:50,300
+So now this soon needs some configuration.
+
+237
+00:13:50,300 --> 00:13:51,980
+First we will need a key.
+
+238
+00:13:51,980 --> 00:13:59,240
+Remember that when we act whenever we loop something we need to add a key so key open and close and
+
+239
+00:13:59,240 --> 00:14:01,730
+the key could be the iteration number.
+
+240
+00:14:01,910 --> 00:14:03,750
+And then of course we need to add delay.
+
+241
+00:14:03,950 --> 00:14:06,410
+So delay opening close.
+
+242
+00:14:06,800 --> 00:14:13,550
+And is this that state that delay and iteration number.
+
+243
+00:14:13,790 --> 00:14:14,140
+Right.
+
+244
+00:14:14,150 --> 00:14:18,650
+So let me reload the application and we get it and we try again.
+
+245
+00:14:21,210 --> 00:14:23,190
+OK so let's get this done.
+
+246
+00:14:23,310 --> 00:14:27,120
+So let's move forward to the next component which is going to be real simple.
+
+247
+00:14:27,120 --> 00:14:32,680
+It's going to be the I believe it's going to be the the the location one.
+
+248
+00:14:33,000 --> 00:14:34,160
+So we're going to do that right now.
+

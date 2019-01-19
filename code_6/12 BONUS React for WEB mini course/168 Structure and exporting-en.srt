@@ -1,0 +1,544 @@
+1
+00:00:01,370 --> 00:00:08,590
+So when you work with react or any other single page applications such as maybe bew or angular it's
+
+2
+00:00:08,600 --> 00:00:12,440
+very common to split everything in tiny tiny pieces.
+
+3
+00:00:12,440 --> 00:00:13,390
+This is VERY come.
+
+4
+00:00:13,500 --> 00:00:20,810
+And if you come from maybe Wordpress or the APHC world begin to know that you split everything in tiny
+
+5
+00:00:20,810 --> 00:00:25,100
+tiny tiny parts of it so we can do the same thing right here.
+
+6
+00:00:25,400 --> 00:00:31,550
+Now the first thing that we need to talk about is going to be about project structure begin to build
+
+7
+00:00:31,550 --> 00:00:32,960
+on this re-act basics.
+
+8
+00:00:33,040 --> 00:00:38,900
+S.S. we're going to build a tiny tiny application is going to be in use application and we can have
+
+9
+00:00:38,900 --> 00:00:46,720
+a header where we can filter some news and inside a different component we can have some news of course.
+
+10
+00:00:46,730 --> 00:00:50,720
+So first we need to talk about the structure of this.
+
+11
+00:00:50,720 --> 00:00:56,600
+So I'm going to bring here we can have our application and the first component is going to be the parents
+
+12
+00:00:56,600 --> 00:00:57,570
+component.
+
+13
+00:00:57,620 --> 00:01:03,950
+So we always going to get a parent component that it's going to enclose all the other code all the other
+
+14
+00:01:03,950 --> 00:01:05,410
+components.
+
+15
+00:01:05,450 --> 00:01:11,240
+So the first component is going to be the header so the header is going to contain the logo and then
+
+16
+00:01:11,240 --> 00:01:17,390
+we can add some an input text so we can filter some of the news we get at home.
+
+17
+00:01:17,840 --> 00:01:21,730
+Then we can have a different component which is going to be the news component.
+
+18
+00:01:22,040 --> 00:01:28,440
+This one is going to hold some other components that are going to be the actual news.
+
+19
+00:01:28,450 --> 00:01:31,500
+And now inside you can have each news.
+
+20
+00:01:31,610 --> 00:01:37,230
+Now we can use one component for all the news items that we get at home.
+
+21
+00:01:37,250 --> 00:01:45,740
+Now this news item is going to dynamically feed the information about that news to the news component.
+
+22
+00:01:46,070 --> 00:01:49,660
+So to sum everything up we can have four different components.
+
+23
+00:01:49,670 --> 00:01:51,470
+We have the parent component.
+
+24
+00:01:51,470 --> 00:01:55,870
+We have the better components to begin the news components.
+
+25
+00:01:55,870 --> 00:01:56,810
+That's three.
+
+26
+00:01:56,930 --> 00:02:00,210
+And then the news item we have four components.
+
+27
+00:02:00,440 --> 00:02:02,740
+Now why are we talking about this.
+
+28
+00:02:02,750 --> 00:02:05,520
+Why am i just telling you what we are going to do.
+
+29
+00:02:05,780 --> 00:02:10,960
+Well I'm not making this up but this is the first thing that you're going to need to do.
+
+30
+00:02:10,960 --> 00:02:17,270
+Whenever you start a new project you need to stop or five minutes before you start coding and think
+
+31
+00:02:17,270 --> 00:02:19,320
+about your project structure.
+
+32
+00:02:19,700 --> 00:02:24,830
+And again I'm not making this up you're going to do it because you need to think what are you going
+
+33
+00:02:24,830 --> 00:02:26,930
+to use and how are you going to structure.
+
+34
+00:02:26,930 --> 00:02:32,550
+If you start coding and you make something that it's maybe maybe not.
+
+35
+00:02:32,560 --> 00:02:33,300
+Right.
+
+36
+00:02:33,310 --> 00:02:38,940
+Are you going to you're going to go back to your code and start splitting everything again.
+
+37
+00:02:38,960 --> 00:02:42,810
+And of course if you were a freelancer you're going to be doing it.
+
+38
+00:02:42,870 --> 00:02:48,950
+And if you work in a company the first reunion the first media that you're going to do with maybe other
+
+39
+00:02:48,950 --> 00:02:55,490
+developers is going to be about the project structure not about your payment and not about the time
+
+40
+00:02:55,490 --> 00:02:59,090
+that it's going to take you is going to be the project structure.
+
+41
+00:02:59,090 --> 00:02:59,380
+Good.
+
+42
+00:02:59,400 --> 00:03:04,820
+OK let's keep moving forward and start with the new component the first component which is going to
+
+43
+00:03:04,820 --> 00:03:08,950
+be beheader So OK so let's create the structure for this.
+
+44
+00:03:09,050 --> 00:03:13,470
+I'm going to go right here to the directory I'm going to make this a little bit bigger and I get to
+
+45
+00:03:13,470 --> 00:03:19,440
+go to source now whenever we again we work with this kind of applications you need to have a folder
+
+46
+00:03:19,530 --> 00:03:23,590
+that contains all your components and you can call these components.
+
+47
+00:03:23,600 --> 00:03:31,740
+As I saw some people I know some people that use abuse or MV includes or templates components imbues
+
+48
+00:03:31,830 --> 00:03:33,840
+are the most popular ones.
+
+49
+00:03:33,900 --> 00:03:41,410
+So I'm going to go to source and I'm going to create a new folder that says component's just like that.
+
+50
+00:03:41,540 --> 00:03:43,520
+And now we're going to have three different components.
+
+51
+00:03:43,520 --> 00:03:46,010
+The paranoid one is going to be indexed.
+
+52
+00:03:46,220 --> 00:03:49,880
+And inside here you're going to have a header components.
+
+53
+00:03:50,030 --> 00:03:52,090
+It's going to be Hetter digest.
+
+54
+00:03:52,130 --> 00:03:59,990
+We're going to have a news item that is going to hold all the news so we can say news underscore and
+
+55
+00:03:59,990 --> 00:04:02,880
+list and you can name this files whatever you want.
+
+56
+00:04:03,080 --> 00:04:09,950
+It's essentially up to you again to create a new file that is going to be news on the score list on
+
+57
+00:04:09,950 --> 00:04:11,790
+their score item dodgy.
+
+58
+00:04:11,830 --> 00:04:13,430
+Yes everything is genius.
+
+59
+00:04:13,440 --> 00:04:17,960
+Of course you look at me and make this a little bit smaller.
+
+60
+00:04:17,960 --> 00:04:23,300
+There we go because this one and I'm now just going to close all the components.
+
+61
+00:04:23,630 --> 00:04:28,900
+So the first component that we need to create is going to be the head or component.
+
+62
+00:04:28,910 --> 00:04:32,770
+So first I'm going to just delete this just like this.
+
+63
+00:04:32,810 --> 00:04:36,110
+And of course right here we can have a header and begin to begin to do it right.
+
+64
+00:04:36,130 --> 00:04:41,950
+Right now in a minute we're going to say DIVX and right here we can have the header.
+
+65
+00:04:41,990 --> 00:04:48,050
+Remember that when whenever we turn something we need to return everything wrapped into into it.
+
+66
+00:04:48,140 --> 00:04:50,690
+Inside one element.
+
+67
+00:04:50,690 --> 00:04:54,650
+So right here we can have a header of course just really simple.
+
+68
+00:04:54,740 --> 00:04:56,270
+And if you go get better.
+
+69
+00:04:56,300 --> 00:04:57,100
+That's good.
+
+70
+00:04:57,110 --> 00:04:59,900
+So now let's create the component for this.
+
+71
+00:05:00,140 --> 00:05:06,680
+Now again whenever you work would react since you're going to be using GSX and re-act code you need
+
+72
+00:05:06,680 --> 00:05:10,840
+to import re-act from react to the same thing we did right here.
+
+73
+00:05:11,030 --> 00:05:20,600
+So I'm going to go right here and get a say import react just like that with capital are from react.
+
+74
+00:05:20,810 --> 00:05:25,410
+If you don't do this and you want to use them some re-act code it's not going to work.
+
+75
+00:05:25,430 --> 00:05:30,770
+You to you can get an error message and that's it for now you're not going to be using the other one.
+
+76
+00:05:30,770 --> 00:05:32,800
+They react on the react.
+
+77
+00:05:32,840 --> 00:05:36,950
+It's just to render something on the route says you're not going to do that.
+
+78
+00:05:36,970 --> 00:05:40,470
+You're just going to create the components and include it right here.
+
+79
+00:05:40,730 --> 00:05:45,010
+So we're going to create a components can be Konst just like we did with the other one.
+
+80
+00:05:45,050 --> 00:05:51,020
+This one is going to be called Hetter is going to be equal to is just a function that is going to return
+
+81
+00:05:51,020 --> 00:06:00,310
+some code so I'm going to say return and begin to return a dev that says Hetter real simple.
+
+82
+00:06:00,420 --> 00:06:03,460
+Then of course we're going to be changing this.
+
+83
+00:06:03,920 --> 00:06:06,510
+OK so now we have our component.
+
+84
+00:06:06,870 --> 00:06:14,720
+Now we we need a way to connect all the components right now to the index which is depende one and the
+
+85
+00:06:14,720 --> 00:06:15,320
+header.
+
+86
+00:06:15,380 --> 00:06:17,510
+So we need to tie them together.
+
+87
+00:06:17,700 --> 00:06:22,530
+Now unless we connect them manually they are not related.
+
+88
+00:06:22,550 --> 00:06:28,880
+So to connect things to connect components with other components we need to make them available for
+
+89
+00:06:28,940 --> 00:06:30,270
+other components.
+
+90
+00:06:30,290 --> 00:06:35,240
+So I'm going to go right here at the bottom and we're going to say export than default.
+
+91
+00:06:35,330 --> 00:06:40,160
+And then the name of the component that we want to share with other components.
+
+92
+00:06:40,160 --> 00:06:44,150
+So since our component calls Hetter we're going to say Hetter.
+
+93
+00:06:44,570 --> 00:06:49,650
+So now this component is going to be available from other pieces of code.
+
+94
+00:06:49,700 --> 00:06:55,260
+Now I'm going to save this one and we're going to begin to include that component to Hetter component
+
+95
+00:06:55,640 --> 00:06:58,520
+inside here inside the main components.
+
+96
+00:06:58,790 --> 00:07:02,640
+So I'm going to go right here I'm going to just add a comment.
+
+97
+00:07:02,690 --> 00:07:09,500
+I was going to say component's so right here we're going to have a list of all the components that we
+
+98
+00:07:09,500 --> 00:07:13,500
+need to include inside the main one the parent one.
+
+99
+00:07:13,700 --> 00:07:17,000
+So no how do we import that coat.
+
+100
+00:07:17,080 --> 00:07:20,480
+We're going to say import just like with this before import.
+
+101
+00:07:20,900 --> 00:07:23,660
+And then we need to put the name of what we want to import.
+
+102
+00:07:23,660 --> 00:07:27,430
+This case is going to be beheader so I'm going to say.
+
+103
+00:07:27,890 --> 00:07:35,840
+Now we say from now instead of doing Hetter just like with it right here since this is not a note module
+
+104
+00:07:35,840 --> 00:07:39,040
+is just one component from our application.
+
+105
+00:07:39,200 --> 00:07:45,800
+We need to specify the path I'm going to say Dot than then for Slash and access the components folder
+
+106
+00:07:45,890 --> 00:07:48,820
+for I-Slash and bring the header.
+
+107
+00:07:48,830 --> 00:07:54,890
+Now since Hetter it's already a javascript file there's no need to put the extension if you work with
+
+108
+00:07:54,910 --> 00:07:58,050
+VSS and we're going to be talking about that in a minute.
+
+109
+00:07:58,130 --> 00:07:59,530
+We need to use the extension.
+
+110
+00:07:59,680 --> 00:08:00,500
+But let's get.
+
+111
+00:08:00,530 --> 00:08:04,370
+So I'm going to save the application and check it right here.
+
+112
+00:08:04,370 --> 00:08:08,730
+So we going to get Hetter is defined but never used.
+
+113
+00:08:08,750 --> 00:08:15,230
+So it's whenever you have some code right here that you're not really using it's going to give you a
+
+114
+00:08:15,230 --> 00:08:16,190
+warning.
+
+115
+00:08:16,190 --> 00:08:21,990
+So it's considered bad coding having components that you're not really using.
+
+116
+00:08:22,410 --> 00:08:29,260
+Ok so now how do we include how do we use this Hetter component that we are importing from here.
+
+117
+00:08:29,690 --> 00:08:36,020
+So what we can do if I just copy this and it's happening right now and I paste it and since this is
+
+118
+00:08:36,020 --> 00:08:42,680
+a viral is not going to do anything is just outputting text because we are just using some text.
+
+119
+00:08:42,740 --> 00:08:50,400
+So just like we did before whenever we render the app we need a way to tell react to this component.
+
+120
+00:08:50,400 --> 00:08:53,490
+It's it's an actual component that we are importing.
+
+121
+00:08:53,720 --> 00:08:59,110
+So we need to enclose everything just like this.
+
+122
+00:08:59,150 --> 00:09:05,540
+So now re-act knows that whenever it needs to render this is going to check oh this is this one has
+
+123
+00:09:05,540 --> 00:09:06,080
+takk.
+
+124
+00:09:06,170 --> 00:09:08,290
+So this could be a component.
+
+125
+00:09:08,300 --> 00:09:08,820
+Let me check.
+
+126
+00:09:08,840 --> 00:09:12,330
+Yeah it is a component because we are importing it right here.
+
+127
+00:09:12,500 --> 00:09:17,200
+So if we save it we get Hetter just to make sure that we get something else.
+
+128
+00:09:17,350 --> 00:09:21,840
+We're going to say this is my new header.
+
+129
+00:09:22,450 --> 00:09:23,880
+And if I save it we get.
+
+130
+00:09:23,880 --> 00:09:25,250
+This is my new header.
+
+131
+00:09:25,370 --> 00:09:32,420
+So now we are exporting this component and we are just importing it right here and including the components
+
+132
+00:09:32,450 --> 00:09:34,770
+inside the parent components.
+
+133
+00:09:35,080 --> 00:09:36,670
+That's got you know it's working.
+
+134
+00:09:36,680 --> 00:09:39,780
+We're going to of course make a lot of changes right here to the header.
+
+135
+00:09:39,890 --> 00:09:42,100
+But for now I want to talk about something else.
+
+136
+00:09:42,200 --> 00:09:44,320
+So let's move forward to the next section.
+

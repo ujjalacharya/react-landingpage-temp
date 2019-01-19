@@ -1,0 +1,408 @@
+1
+00:00:03,570 --> 00:00:11,230
+So ask for the latest version or react we are allowed to directly return arrays in the in the render.
+
+2
+00:00:11,520 --> 00:00:17,640
+So this is something that we could not do with re-act 15 but now the 16th version it's out so we can
+
+3
+00:00:17,640 --> 00:00:18,030
+do it.
+
+4
+00:00:18,030 --> 00:00:23,940
+So let me show you first with the old ways when they show you the old way and then we'll just refactor
+
+5
+00:00:23,940 --> 00:00:25,030
+to the new way.
+
+6
+00:00:25,110 --> 00:00:27,340
+And of course all the ways are valid.
+
+7
+00:00:27,600 --> 00:00:31,400
+So I'm going to go to the posts not just inside posts.
+
+8
+00:00:31,410 --> 00:00:35,070
+We just have three links you know same example than before.
+
+9
+00:00:35,160 --> 00:00:36,460
+Didn't change anything.
+
+10
+00:00:36,600 --> 00:00:42,510
+So I'm going to go right here and inside I'm going to create an object an array of objects.
+
+11
+00:00:42,510 --> 00:00:48,910
+So I'm going to say Konst and going to say IDS is going to be equal to an array an inside a created
+
+12
+00:00:49,120 --> 00:00:51,690
+you know the ID for each elements.
+
+13
+00:00:51,700 --> 00:00:55,310
+Right here we have the posed one to three and then the name of the link.
+
+14
+00:00:55,380 --> 00:01:02,850
+So I'm going to do that again to say id and the name is going to be equal to post 1 and we need three
+
+15
+00:01:02,850 --> 00:01:03,320
+links.
+
+16
+00:01:03,330 --> 00:01:04,980
+So I'm going to say coma paste.
+
+17
+00:01:05,220 --> 00:01:09,340
+And then of course coma and paste again they're going to change this.
+
+18
+00:01:09,510 --> 00:01:10,650
+Two and Three.
+
+19
+00:01:10,680 --> 00:01:11,910
+And same thing here.
+
+20
+00:01:11,940 --> 00:01:13,450
+Two and Three.
+
+21
+00:01:13,710 --> 00:01:15,520
+You know we have our array.
+
+22
+00:01:15,930 --> 00:01:20,460
+So now right here what we need to do we need to do something else on this.
+
+23
+00:01:20,490 --> 00:01:26,270
+So we needed to create a variable that hosts a function and this function is going is going to return
+
+24
+00:01:26,280 --> 00:01:31,380
+the list is going to loop the array and then return each link.
+
+25
+00:01:31,400 --> 00:01:35,430
+So OK so I'm going to just say IDs and of course to loop a list.
+
+26
+00:01:35,430 --> 00:01:41,550
+We're going to be using map and of course map is a method and this one is going to take one item on
+
+27
+00:01:41,550 --> 00:01:45,980
+each iteration and then it will return the contents.
+
+28
+00:01:45,990 --> 00:01:49,840
+So I'm going to say return and then open it close.
+
+29
+00:01:50,010 --> 00:01:52,340
+So now here we need to return one thing.
+
+30
+00:01:52,380 --> 00:01:56,660
+So I'm going to wrap everything inside a span and right here we pass.
+
+31
+00:01:56,700 --> 00:01:57,420
+It's link.
+
+32
+00:01:57,630 --> 00:02:00,390
+So we're going to say link just like that.
+
+33
+00:02:00,390 --> 00:02:04,790
+And remember that at the top you're importing link from Brianne Groner Dom.
+
+34
+00:02:04,890 --> 00:02:09,920
+So going to say link and it's link each item that we return from a map.
+
+35
+00:02:09,930 --> 00:02:12,720
+In this case meets you have a key.
+
+36
+00:02:12,840 --> 00:02:18,060
+So we're going to say item that key item that Id sorry.
+
+37
+00:02:18,280 --> 00:02:23,760
+Then of course the space we need to pass it to because we have a link and we're going to say item dot
+
+38
+00:02:23,850 --> 00:02:25,510
+Id just like that.
+
+39
+00:02:26,010 --> 00:02:26,580
+OK.
+
+40
+00:02:26,810 --> 00:02:28,520
+So sorry I made a mistake.
+
+41
+00:02:28,530 --> 00:02:32,950
+The key is going to be inside the actual element know the parent element.
+
+42
+00:02:33,050 --> 00:02:34,390
+The one that it's containing.
+
+43
+00:02:34,410 --> 00:02:36,200
+So in this case is going to be the span.
+
+44
+00:02:36,450 --> 00:02:42,000
+So after that to what we would need to do we need to close the link just like that.
+
+45
+00:02:42,000 --> 00:02:43,620
+And right here we need to pass the name.
+
+46
+00:02:43,620 --> 00:02:47,240
+So it's going to be item that name.
+
+47
+00:02:47,760 --> 00:02:53,580
+And then I'm just going to add just to break me out right here.
+
+48
+00:02:53,580 --> 00:02:55,820
+Break open and close.
+
+49
+00:02:56,370 --> 00:02:56,690
+OK.
+
+50
+00:02:56,730 --> 00:02:57,440
+That's good.
+
+51
+00:02:57,630 --> 00:03:02,580
+So now what we need to do we need to make a reference to this loop is going to enter the map is going
+
+52
+00:03:02,580 --> 00:03:04,070
+to enter the IDs.
+
+53
+00:03:04,260 --> 00:03:08,610
+And for each each item is going to return a span with a link.
+
+54
+00:03:08,610 --> 00:03:16,470
+So with this in the past I'm going to go right here to open and close and make a reference to this OK.
+
+55
+00:03:16,660 --> 00:03:21,830
+So if I go to post we are getting we are getting each link post won.
+
+56
+00:03:21,880 --> 00:03:25,920
+You know post 2 and everything else so everything works this way.
+
+57
+00:03:25,990 --> 00:03:33,550
+Now we are using Riak 16 so there's kind of no need to create a viral to host a map.
+
+58
+00:03:33,580 --> 00:03:38,070
+What we can do we can do it directly in the return statement.
+
+59
+00:03:38,350 --> 00:03:41,390
+So we're going to go right here and get a copy.
+
+60
+00:03:41,710 --> 00:03:46,460
+The whole ID that map and then I'm just going to comment everything.
+
+61
+00:03:46,840 --> 00:03:53,610
+I'm going to go right here the return and what we do we just pasted we read the application.
+
+62
+00:03:53,770 --> 00:03:56,240
+You're getting the same exact result.
+
+63
+00:03:56,440 --> 00:03:58,450
+So you know that works.
+
+64
+00:03:58,450 --> 00:04:05,090
+So remember to always return the key of one of the main item on each iteration.
+
+65
+00:04:05,610 --> 00:04:06,970
+So now we can do more.
+
+66
+00:04:07,090 --> 00:04:10,430
+So I'm going to create a going to create a marvel me.
+
+67
+00:04:10,440 --> 00:04:11,960
+Let me just do this.
+
+68
+00:04:12,110 --> 00:04:14,490
+Either way do you have the code right here.
+
+69
+00:04:14,650 --> 00:04:19,680
+And again common the ID to as well I'm just going to delete all this.
+
+70
+00:04:20,020 --> 00:04:24,950
+So what we can do as well with the re-act 16 we can return an array.
+
+71
+00:04:25,060 --> 00:04:32,200
+So get to open and close an array after the return and I'm going to say hello coma and then just the
+
+72
+00:04:32,200 --> 00:04:33,700
+space.
+
+73
+00:04:34,240 --> 00:04:39,190
+I am just like that space.
+
+74
+00:04:39,430 --> 00:04:46,130
+You know just three values an array with three values a re-act app.
+
+75
+00:04:46,140 --> 00:04:51,400
+If I save this is going to reload it is going to render all the values we have on the array.
+
+76
+00:04:51,430 --> 00:04:54,060
+So this one works as well.
+
+77
+00:04:54,130 --> 00:04:57,690
+And if you think about it this right here is going to be it's a value.
+
+78
+00:04:57,850 --> 00:05:01,460
+So it's converting the value and outputting text.
+
+79
+00:05:01,600 --> 00:05:07,630
+So what we can do instead of returning this we could wrap everything inside a div and it's going to
+
+80
+00:05:07,630 --> 00:05:09,970
+be translated to GSX.
+
+81
+00:05:09,970 --> 00:05:11,400
+So let me just do it right now.
+
+82
+00:05:11,410 --> 00:05:20,560
+It's going to be dev and I'm just going to replace this and do the same thing with the other ones they
+
+83
+00:05:20,590 --> 00:05:22,500
+sold me out to space to save me.
+
+84
+00:05:22,540 --> 00:05:23,440
+Save it.
+
+85
+00:05:23,620 --> 00:05:25,070
+And you know we get the same thing.
+
+86
+00:05:25,090 --> 00:05:31,420
+Hello I am every act up and notice right here that we are getting an error message.
+
+87
+00:05:31,420 --> 00:05:34,470
+Each child in array should have a key.
+
+88
+00:05:34,480 --> 00:05:40,560
+So again whenever we are returning a list of things we always need to add a key for each elements.
+
+89
+00:05:40,600 --> 00:05:46,930
+So you know same thing I'm going to say key and the problem right here is that we need to hard code
+
+90
+00:05:46,930 --> 00:05:53,560
+the key and to do the unwon and just the old one and the keys are unique.
+
+91
+00:05:53,870 --> 00:05:54,330
+OK.
+
+92
+00:05:54,490 --> 00:05:56,500
+So you Fairouz save it reloaded.
+
+93
+00:05:56,500 --> 00:05:57,980
+We are not getting the error message.
+
+94
+00:05:58,000 --> 00:06:00,470
+And we get the actual result.
+
+95
+00:06:00,830 --> 00:06:03,240
+OK let's get let's keep moving forward.
+
+96
+00:06:03,340 --> 00:06:05,760
+We're going to move to h o C's.
+
+97
+00:06:06,040 --> 00:06:11,980
+It's going to be it's not going to be that easy to understand because we have many ways to use high
+
+98
+00:06:12,010 --> 00:06:16,030
+or other components overseas but we're going to do a few things.
+
+99
+00:06:16,030 --> 00:06:17,530
+It's going to get a little bit confusing.
+
+100
+00:06:17,680 --> 00:06:20,890
+So you need to put your thinking hat on.
+
+101
+00:06:21,010 --> 00:06:21,250
+OK.
+
+102
+00:06:21,280 --> 00:06:22,700
+Let's go to the next one.
+

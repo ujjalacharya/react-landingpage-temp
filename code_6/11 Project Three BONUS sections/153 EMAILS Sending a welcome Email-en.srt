@@ -1,0 +1,1060 @@
+1
+00:00:00,390 --> 00:00:02,240
+All right so let's begin with this.
+
+2
+00:00:02,280 --> 00:00:07,140
+I'm going to come in this out because we're not going to really use it right now lived here because
+
+3
+00:00:07,140 --> 00:00:09,710
+I'm going to copy paste later in a minute.
+
+4
+00:00:09,720 --> 00:00:14,870
+So now what we can do we can create a place where we can host all this logic and just like we did with
+
+5
+00:00:14,870 --> 00:00:15,580
+a client.
+
+6
+00:00:15,690 --> 00:00:20,740
+I'm going to create a new directory called you Tilse just you tell us.
+
+7
+00:00:20,790 --> 00:00:26,280
+And instead of if you're going to add the email you know all the logic for mail could be mails but I'm
+
+8
+00:00:26,280 --> 00:00:28,010
+going to call it mails.
+
+9
+00:00:28,020 --> 00:00:33,930
+So we're going to create a folder called mail at one minute.
+
+10
+00:00:34,100 --> 00:00:40,150
+Let me fix it lit and details and then I'll do the same thing.
+
+11
+00:00:40,160 --> 00:00:41,860
+Let me do with the directory.
+
+12
+00:00:42,200 --> 00:00:49,010
+So I'm going to clog mail and this mail will get an index Dunja Yes you can call it whatever you want.
+
+13
+00:00:49,010 --> 00:00:50,850
+I'm just going to call it an X..
+
+14
+00:00:51,020 --> 00:00:56,180
+So on inside of this and this will create a function that you know does all this logic and then we just
+
+15
+00:00:56,240 --> 00:01:01,420
+Later here we'll just make a reference to that function and we sent the email very simple.
+
+16
+00:01:01,410 --> 00:01:09,220
+So let's begin with the function real simple just a function going to create a concept called Send email.
+
+17
+00:01:09,270 --> 00:01:10,870
+Write the send email.
+
+18
+00:01:10,910 --> 00:01:16,090
+It's going to be equal to a function and later of course we need to export dysfunction.
+
+19
+00:01:16,160 --> 00:01:18,120
+So we can include it inside server.
+
+20
+00:01:18,320 --> 00:01:19,460
+And you know use it.
+
+21
+00:01:19,460 --> 00:01:26,760
+So we're going to do module Dionte exports equals send email just like we did before.
+
+22
+00:01:27,230 --> 00:01:32,540
+So we're going to copy and paste up copy and paste right.
+
+23
+00:01:33,880 --> 00:01:39,670
+So now this function it's available from within other components or files.
+
+24
+00:01:39,760 --> 00:01:44,070
+So on the send email we will be passing many many things.
+
+25
+00:01:44,080 --> 00:01:48,200
+First I'm going to send it to you know where are we going to be sending e-mail.
+
+26
+00:01:48,340 --> 00:01:49,990
+Then coma begin to pass.
+
+27
+00:01:49,990 --> 00:01:54,970
+The name of the user of where we are going to be sending is them I'm going to add a token we are not
+
+28
+00:01:54,970 --> 00:01:57,560
+going to really use it right now but I'm just going at it.
+
+29
+00:01:57,760 --> 00:02:02,820
+And then a type and again the type we will use it in a couple of minutes.
+
+30
+00:02:02,920 --> 00:02:08,480
+So pretty much on the sent e-mail what we need to do we need to create transport.
+
+31
+00:02:08,590 --> 00:02:10,540
+So we got it right here.
+
+32
+00:02:10,570 --> 00:02:14,900
+Going to copy and paste and going on come with this.
+
+33
+00:02:14,950 --> 00:02:20,610
+So we are creating an empty as empty transport with Meyler and kwi transport.
+
+34
+00:02:20,610 --> 00:02:22,230
+So the problem is that now we may correct.
+
+35
+00:02:22,240 --> 00:02:26,740
+We are making a reference to Meyler but Meyler it's inside of the server.
+
+36
+00:02:26,740 --> 00:02:32,880
+So I'm going to copy the mailer and remove it save it and I'm going to bring it right here.
+
+37
+00:02:33,100 --> 00:02:35,170
+So now we do have access to Maler.
+
+38
+00:02:35,210 --> 00:02:40,480
+Is this still going to be G-mail and the same Wavves that guitars all the males are going to go through
+
+39
+00:02:40,480 --> 00:02:41,550
+this.
+
+40
+00:02:41,560 --> 00:02:46,840
+Now the thing is that we are adding the password right here and we maybe maybe we don't want to do that
+
+41
+00:02:47,050 --> 00:02:48,710
+because this is going to go to get have.
+
+42
+00:02:48,820 --> 00:02:51,930
+And if you make it public everyone knows your password.
+
+43
+00:02:52,000 --> 00:02:53,560
+So I'm going to copy this.
+
+44
+00:02:53,650 --> 00:03:00,130
+I'm going to go to dot ENP And you know add a passport for this added to the environment variables.
+
+45
+00:03:00,130 --> 00:03:05,410
+Later of course when you go to production you will need to add it you know just like with it before.
+
+46
+00:03:05,470 --> 00:03:07,990
+So I'm going to call it e-mail underscore.
+
+47
+00:03:08,090 --> 00:03:09,670
+Pass it calls.
+
+48
+00:03:09,760 --> 00:03:11,900
+And then the password.
+
+49
+00:03:12,040 --> 00:03:17,800
+Now remember that to use this we need to include the EMV right here.
+
+50
+00:03:18,430 --> 00:03:24,890
+So now whenever we make a reference to that no process that EMV e-mail past we should be getting you
+
+51
+00:03:24,890 --> 00:03:25,790
+know the password.
+
+52
+00:03:25,840 --> 00:03:35,200
+So I'm going to delete this and say Process me make me get right process that and the DOD and we call
+
+53
+00:03:35,200 --> 00:03:39,050
+that email pass that is dead right.
+
+54
+00:03:39,070 --> 00:03:41,820
+Imma pass going to this one for now.
+
+55
+00:03:41,820 --> 00:03:43,280
+Close it OK.
+
+56
+00:03:43,350 --> 00:03:48,070
+So now we have your creating the sim to transport everything.
+
+57
+00:03:48,200 --> 00:03:48,960
+OK.
+
+58
+00:03:49,230 --> 00:03:56,690
+Now the problem is that we need to kind of choose what template are we going to be using.
+
+59
+00:03:56,850 --> 00:04:05,700
+Because if we send a welcome email that the right here the DML is going to look a little bit different
+
+60
+00:04:06,150 --> 00:04:08,330
+than the reset passport email.
+
+61
+00:04:08,550 --> 00:04:13,950
+So we need to create some logic so we can pass that type of what are we going to be doing whenever we
+
+62
+00:04:13,950 --> 00:04:18,910
+trigger this function and send the correct template of course we know.
+
+63
+00:04:18,980 --> 00:04:25,080
+We don't have this function going to create it right now I'm going to say Konst mail just like we did
+
+64
+00:04:25,080 --> 00:04:32,580
+before and I'm going to create a function called get e-mail data or you could call it again choose email
+
+65
+00:04:32,580 --> 00:04:34,610
+template or something like that.
+
+66
+00:04:34,790 --> 00:04:40,830
+And I'm going to be passing all the same probs getting from the you know the function and then of course
+
+67
+00:04:40,920 --> 00:04:51,930
+at the end going to save go to server and we do the S.M. GP transport only uncomment and that is it.
+
+68
+00:04:51,930 --> 00:04:57,510
+So of course we do the A.P. transport we use this one and then we send whatever we get from the mail
+
+69
+00:04:57,690 --> 00:04:59,840
+and whatever we get back from this function.
+
+70
+00:04:59,970 --> 00:05:02,250
+So this function is just really really simple.
+
+71
+00:05:02,250 --> 00:05:07,620
+It's like creating a reusable component in re-act are going to create the function and then we just
+
+72
+00:05:07,620 --> 00:05:08,750
+use a switch.
+
+73
+00:05:09,000 --> 00:05:15,210
+So Konst get e-mail data again open and close and it's just a function.
+
+74
+00:05:15,210 --> 00:05:18,440
+We will be getting pretty much the same thing right here.
+
+75
+00:05:18,570 --> 00:05:21,790
+So instead of type for example you could call it template.
+
+76
+00:05:21,810 --> 00:05:26,610
+It's completely up to you the type it's the type of template to be using.
+
+77
+00:05:26,610 --> 00:05:33,300
+So at the top we can ascend we can to create a viable called data could be called email or template
+
+78
+00:05:33,300 --> 00:05:35,410
+again no.
+
+79
+00:05:36,120 --> 00:05:37,230
+And it starts us.
+
+80
+00:05:37,250 --> 00:05:38,010
+Of course.
+
+81
+00:05:38,130 --> 00:05:45,120
+And then at the end what we return return is the data we return this viral.
+
+82
+00:05:45,240 --> 00:05:52,370
+So in between what we do we use a switch opening close and we say that we want to evaluate the template.
+
+83
+00:05:52,440 --> 00:05:57,500
+So if we have a template of welcome then we will return the welcome configuration.
+
+84
+00:05:57,660 --> 00:06:04,260
+So in this case we're going to create a case and if the case is welcome we're going to do something.
+
+85
+00:06:04,350 --> 00:06:07,440
+And then of course we always need to do break.
+
+86
+00:06:07,680 --> 00:06:15,240
+Of course we get a default scenario default opening close and we just return just data that is that
+
+87
+00:06:16,960 --> 00:06:18,360
+the data equals data.
+
+88
+00:06:18,370 --> 00:06:20,980
+You can do the return right here doesn't matter right now.
+
+89
+00:06:21,430 --> 00:06:21,960
+OK.
+
+90
+00:06:22,200 --> 00:06:25,190
+So what are we going to do if the case is that we get up.
+
+91
+00:06:25,300 --> 00:06:30,720
+I'm going to I'm sorry we get a request for this e-mail and then get e-mail data and we need to check
+
+92
+00:06:30,720 --> 00:06:31,340
+the template.
+
+93
+00:06:31,350 --> 00:06:34,770
+If the case is welcome we can to change the data.
+
+94
+00:06:34,920 --> 00:06:37,770
+So data it's equal to an object.
+
+95
+00:06:37,770 --> 00:06:44,610
+Remember just like with it right here on the server right here and I going a copy of this and paste
+
+96
+00:06:44,610 --> 00:06:45,460
+it right here.
+
+97
+00:06:45,480 --> 00:06:49,520
+All right I'll comment and make it a little bit better.
+
+98
+00:06:49,560 --> 00:06:50,720
+So the from.
+
+99
+00:06:50,730 --> 00:06:53,660
+It's going to be always wave guitars that wrap.
+
+100
+00:06:53,700 --> 00:06:54,170
+Right.
+
+101
+00:06:54,180 --> 00:06:54,910
+OK.
+
+102
+00:06:54,940 --> 00:06:56,600
+Then the two it's going to change.
+
+103
+00:06:56,640 --> 00:07:01,220
+And remember that you're going to be receiving this as an argument and this is an object.
+
+104
+00:07:01,260 --> 00:07:08,520
+So what I can do I can do just this and that's it because we are using ESX now the subject in this case
+
+105
+00:07:08,520 --> 00:07:10,990
+for the welcome we need to kind of a hard code.
+
+106
+00:07:11,040 --> 00:07:11,980
+This right here.
+
+107
+00:07:12,150 --> 00:07:19,710
+So it's going to be welcome to waves and we are passing the name so I can make a reference to the name
+
+108
+00:07:19,710 --> 00:07:22,110
+of the user right here.
+
+109
+00:07:22,110 --> 00:07:28,680
+And of course we need to use templates strings or not we don't read the text.
+
+110
+00:07:28,680 --> 00:07:31,690
+If you want you can delete it just like this.
+
+111
+00:07:31,740 --> 00:07:34,860
+And then of course we say OK we want to send this team out.
+
+112
+00:07:34,910 --> 00:07:35,440
+Right.
+
+113
+00:07:35,490 --> 00:07:36,140
+OK.
+
+114
+00:07:36,420 --> 00:07:39,470
+The thing is that we don't have a template.
+
+115
+00:07:39,640 --> 00:07:42,740
+You're just sending some hard coded data right here.
+
+116
+00:07:42,930 --> 00:07:48,490
+So now we need to create a template to send a welcome and we're going to do that right now.
+
+117
+00:07:48,490 --> 00:07:52,740
+I'm going to add if you check his resources you have a file.
+
+118
+00:07:52,800 --> 00:07:58,070
+It's a welcome template that H Tim L and that one we have all the code for.
+
+119
+00:07:58,090 --> 00:07:59,220
+You know a welcome template.
+
+120
+00:07:59,220 --> 00:08:01,580
+Of course you can use your own if you wish.
+
+121
+00:08:01,610 --> 00:08:04,820
+Just possibly though I did right here Tomales.
+
+122
+00:08:04,980 --> 00:08:05,670
+Right.
+
+123
+00:08:05,670 --> 00:08:08,290
+And then I to show you what we're going to be doing.
+
+124
+00:08:08,340 --> 00:08:14,710
+All right so if I have added the welcome that template now if I double click it this is what we get.
+
+125
+00:08:14,770 --> 00:08:20,730
+I don't know if something is simple welcome to waves and syntax and then a GIF with a.
+
+126
+00:08:20,900 --> 00:08:23,660
+You know doing the super rock position.
+
+127
+00:08:23,900 --> 00:08:24,580
+OK.
+
+128
+00:08:24,890 --> 00:08:30,360
+So this is what we will we will be sending to Francis that John Jones that.
+
+129
+00:08:30,470 --> 00:08:35,810
+Right now if we open this right here is just an h m l template.
+
+130
+00:08:35,810 --> 00:08:41,630
+I'm adding this and giving you this because what are we going to do on the screen.
+
+131
+00:08:41,630 --> 00:08:45,470
+Everything manually is just the table is just a table that does it.
+
+132
+00:08:45,470 --> 00:08:49,700
+So what are we going to do since we want to include this right here we can.
+
+133
+00:08:49,750 --> 00:08:55,370
+We cannot just include a template of an h t m l template we can and need to do it with template strings
+
+134
+00:08:55,550 --> 00:08:58,490
+just like we are doing right here and Javascript.
+
+135
+00:08:58,490 --> 00:09:04,310
+So I'm going to go to mail going to create a new file and this one will be called the same name.
+
+136
+00:09:04,310 --> 00:09:10,860
+Welcome underscore template dot Javascript.
+
+137
+00:09:11,000 --> 00:09:15,740
+So there's this one the only things going to do it's return some strings.
+
+138
+00:09:15,770 --> 00:09:19,460
+You know some HDMI counted inside templates strings.
+
+139
+00:09:19,580 --> 00:09:22,310
+So Konst welcome.
+
+140
+00:09:22,340 --> 00:09:23,140
+Let me do it right here.
+
+141
+00:09:23,150 --> 00:09:33,110
+Konst welcome equals to a function and that function will be returning return some template strings.
+
+142
+00:09:33,110 --> 00:09:37,730
+Right of course with node we need to make this welcome a bail when it's exported.
+
+143
+00:09:37,880 --> 00:09:45,190
+So we do module that exports equals and then welcome.
+
+144
+00:09:45,680 --> 00:09:46,490
+All right.
+
+145
+00:09:46,490 --> 00:09:52,250
+Of course what we need to do we need to put inside of here all this template that's why I'm giving this
+
+146
+00:09:52,250 --> 00:09:52,660
+to you.
+
+147
+00:09:52,700 --> 00:09:54,130
+So you don't need to type it.
+
+148
+00:09:54,510 --> 00:09:57,680
+So I'm going to copy paste and make it a little bit better.
+
+149
+00:09:58,730 --> 00:09:59,870
+Well that's OK.
+
+150
+00:10:00,230 --> 00:10:05,670
+So now what do we need to do instead of index this index of mail.
+
+151
+00:10:05,750 --> 00:10:12,410
+We need to include this function that returns a template and then make a reference of the welcome template
+
+152
+00:10:12,470 --> 00:10:13,130
+right here.
+
+153
+00:10:13,160 --> 00:10:15,730
+Brian will a simple act of a make sense.
+
+154
+00:10:15,740 --> 00:10:22,980
+So I'm going to go and say Konst welcome equals require.
+
+155
+00:10:23,390 --> 00:10:26,170
+And it's inside that forward slash.
+
+156
+00:10:26,330 --> 00:10:29,090
+And then welcome template that jazz.
+
+157
+00:10:29,120 --> 00:10:31,940
+So now we just say welcome.
+
+158
+00:10:31,940 --> 00:10:33,140
+All right.
+
+159
+00:10:33,920 --> 00:10:39,620
+So whenever we make a request on site we make a reference to this send email function within the server
+
+160
+00:10:40,400 --> 00:10:45,950
+send email will receive a to a name a token that we can do this later and a type which is the type of
+
+161
+00:10:45,950 --> 00:10:48,860
+template write the type of e-mail we want sent.
+
+162
+00:10:49,040 --> 00:10:50,600
+It will create the transport.
+
+163
+00:10:50,630 --> 00:10:56,010
+It will get the data from the function that gets the template and then we just send it and we get a
+
+164
+00:10:56,270 --> 00:11:00,600
+look at is it a very very simple not that hard.
+
+165
+00:11:00,830 --> 00:11:01,160
+OK.
+
+166
+00:11:01,280 --> 00:11:04,280
+So we pretty much have everything we need.
+
+167
+00:11:04,520 --> 00:11:06,940
+Hopefully hopefully no mistakes.
+
+168
+00:11:07,100 --> 00:11:08,890
+So we need to export.
+
+169
+00:11:09,110 --> 00:11:10,790
+And so we are already exporting.
+
+170
+00:11:10,790 --> 00:11:16,500
+We need to import this sent email from within the server so we can use it inside around Ryan.
+
+171
+00:11:16,610 --> 00:11:17,100
+OK.
+
+172
+00:11:17,360 --> 00:11:24,710
+So I'm going to go here and say that I want to you know bring something from you tills.
+
+173
+00:11:24,740 --> 00:11:25,510
+All right.
+
+174
+00:11:25,880 --> 00:11:28,120
+So of course we need to include it.
+
+175
+00:11:28,130 --> 00:11:37,500
+So just like with it right here Konst cons opening close in and we call this function sent e-mail right.
+
+176
+00:11:37,540 --> 00:11:40,170
+Yeah send sent e-mail copy.
+
+177
+00:11:40,240 --> 00:11:48,440
+I'm going to paste some space equals and then we do the require opening close and it's not for Slash
+
+178
+00:11:48,720 --> 00:11:56,130
+you tails for Slash mail always lash and then index.
+
+179
+00:11:56,180 --> 00:11:57,210
+All right.
+
+180
+00:11:58,220 --> 00:12:00,220
+So now we have a function right here.
+
+181
+00:12:00,380 --> 00:12:01,690
+So we need to use it.
+
+182
+00:12:01,730 --> 00:12:08,860
+So we're going to be using this inside of the user whenever we register a user.
+
+183
+00:12:09,020 --> 00:12:10,490
+We're going to send this.
+
+184
+00:12:10,490 --> 00:12:17,450
+We can send this e-mail right now and right here you can choose to do this whatever you want.
+
+185
+00:12:17,450 --> 00:12:21,500
+Remember that whenever we do a save on the user we do the preset save.
+
+186
+00:12:21,530 --> 00:12:25,460
+Let me just go so I can refresh your memory whenever we save.
+
+187
+00:12:25,520 --> 00:12:26,990
+We are doing a presale.
+
+188
+00:12:27,110 --> 00:12:32,840
+So you can include that function right here and whenever you you do the pre-sale and everything is done
+
+189
+00:12:33,020 --> 00:12:35,470
+you can trigger that function right there.
+
+190
+00:12:35,570 --> 00:12:39,870
+I'm going to do something simple so everything it's you know kind of clear right here.
+
+191
+00:12:39,890 --> 00:12:45,830
+So after we save the user and we are ready to send the response back to the client I'm going to send
+
+192
+00:12:45,830 --> 00:12:47,830
+the e-mail first.
+
+193
+00:12:47,840 --> 00:12:49,870
+Let me do a return right here.
+
+194
+00:12:50,420 --> 00:12:51,110
+OK.
+
+195
+00:12:51,740 --> 00:12:54,750
+So I'm going to send an e-mail opening close.
+
+196
+00:12:54,860 --> 00:13:01,470
+Now we need to pass that to the name a token if we have one and then type.
+
+197
+00:13:01,580 --> 00:13:02,530
+Right.
+
+198
+00:13:02,600 --> 00:13:03,440
+Very simple.
+
+199
+00:13:03,440 --> 00:13:04,700
+So I'm going to go to server.
+
+200
+00:13:04,790 --> 00:13:05,930
+I'm going to pass it to.
+
+201
+00:13:05,930 --> 00:13:12,260
+So if we are using our we are storing as a user we get the response of that user you know the date of
+
+202
+00:13:12,260 --> 00:13:13,950
+that user inside doc.
+
+203
+00:13:14,000 --> 00:13:17,650
+So the name is going to be on sort of the e-mail it's going to be inside doc.
+
+204
+00:13:17,870 --> 00:13:20,570
+That e-mail Ryan the first property.
+
+205
+00:13:20,570 --> 00:13:21,970
+It's that too.
+
+206
+00:13:21,990 --> 00:13:22,700
+All right.
+
+207
+00:13:22,790 --> 00:13:23,520
+Now in a coma.
+
+208
+00:13:23,540 --> 00:13:26,420
+The second argument is going to be the name.
+
+209
+00:13:26,410 --> 00:13:27,640
+So again doc.
+
+210
+00:13:27,950 --> 00:13:29,440
+And the name of the user.
+
+211
+00:13:29,690 --> 00:13:30,710
+We don't have a token.
+
+212
+00:13:30,710 --> 00:13:37,820
+So in this case we pass no and then coma and we just pacify what is a template.
+
+213
+00:13:37,820 --> 00:13:41,530
+We can never using in this case the index.
+
+214
+00:13:41,540 --> 00:13:43,320
+We say that it's called Welcome.
+
+215
+00:13:43,320 --> 00:13:48,200
+So I'm going to copy and say welcome and that is it.
+
+216
+00:13:48,200 --> 00:13:52,060
+So before we return this we are going to send in e-mail.
+
+217
+00:13:52,130 --> 00:13:53,540
+And there's one more thing you can do.
+
+218
+00:13:53,540 --> 00:13:59,540
+I'm not going to do it right here but you could do it so you can pass the last argument.
+
+219
+00:13:59,570 --> 00:14:02,190
+Could be the last which is going to be a callback.
+
+220
+00:14:02,450 --> 00:14:03,540
+So this callback.
+
+221
+00:14:03,680 --> 00:14:04,960
+It's pretty much a function.
+
+222
+00:14:04,970 --> 00:14:06,720
+Right you can make this a function.
+
+223
+00:14:06,860 --> 00:14:09,880
+So if we're never we send an e-mail right here.
+
+224
+00:14:10,010 --> 00:14:15,800
+You bring the call back from the arguments and you say OK whenever it's sent I want to trigger that
+
+225
+00:14:15,800 --> 00:14:16,870
+callback.
+
+226
+00:14:17,290 --> 00:14:17,860
+Right.
+
+227
+00:14:17,990 --> 00:14:23,690
+And that callback you can execute that call back after you send the e-mail and that call that we'll
+
+228
+00:14:23,690 --> 00:14:25,160
+be executing this code.
+
+229
+00:14:25,160 --> 00:14:31,260
+So you're kind of a changing actions in this case we just send the e-mail and we go straight to generate
+
+230
+00:14:31,560 --> 00:14:32,140
+success.
+
+231
+00:14:32,150 --> 00:14:34,820
+True right.
+
+232
+00:14:34,850 --> 00:14:36,400
+You can do that if you wish.
+
+233
+00:14:36,900 --> 00:14:39,680
+OK so now we are ready to test.
+
+234
+00:14:39,740 --> 00:14:40,690
+Let's see what happens.
+
+235
+00:14:40,880 --> 00:14:46,620
+OK so I'm going to go here to our application and bring my my user.
+
+236
+00:14:46,670 --> 00:14:49,740
+It's Francis Jones that rep.
+
+237
+00:14:49,880 --> 00:14:50,560
+OK.
+
+238
+00:14:50,780 --> 00:14:54,650
+So name Francis last name.
+
+239
+00:14:54,650 --> 00:14:56,570
+Jones let me make it right.
+
+240
+00:14:56,630 --> 00:14:57,380
+Francis
+
+241
+00:15:00,870 --> 00:15:01,550
+All right.
+
+242
+00:15:01,910 --> 00:15:10,500
+The e-mail Francis that Jones died ran at gmail dot com and the passport.
+
+243
+00:15:10,560 --> 00:15:19,420
+The good old passport one two three passport one two three if you're carrying a user remember the passport
+
+244
+00:15:19,440 --> 00:15:24,790
+because we can change the begin to reset the password of these user later.
+
+245
+00:15:24,840 --> 00:15:26,120
+So again to create an account.
+
+246
+00:15:26,310 --> 00:15:29,720
+Congratulations again.
+
+247
+00:15:29,730 --> 00:15:37,620
+It's Francis that Rav and then passport one two three and we are still able to log in and if we go to
+
+248
+00:15:37,680 --> 00:15:45,150
+our you know Gmail waves welcome to waves Francis and we get the welcome to waves and the you know the
+
+249
+00:15:45,150 --> 00:15:46,270
+get.
+
+250
+00:15:46,590 --> 00:15:47,040
+Good man.
+
+251
+00:15:47,070 --> 00:15:48,880
+So everything works.
+
+252
+00:15:49,110 --> 00:15:51,380
+Everything works.
+
+253
+00:15:51,420 --> 00:15:56,820
+Remember to check the documentation because sometimes whenever you're using maybe you're using more
+
+254
+00:15:56,880 --> 00:16:02,630
+much more complex servers for e-mails you need to specify port and you need to do a lot of things.
+
+255
+00:16:02,760 --> 00:16:05,180
+So you need to check the documentation for this.
+
+256
+00:16:05,280 --> 00:16:08,060
+But right out of the box is real simple.
+
+257
+00:16:08,070 --> 00:16:10,770
+Create a transport passee.
+
+258
+00:16:10,800 --> 00:16:13,490
+You know the data of the work.
+
+259
+00:16:13,770 --> 00:16:18,480
+Which one we know which user is going to be receiving the e-mail and then you just send the mail.
+
+260
+00:16:18,570 --> 00:16:19,490
+And that is it.
+
+261
+00:16:19,910 --> 00:16:20,380
+OK.
+
+262
+00:16:20,430 --> 00:16:21,790
+So this is pretty much done.
+
+263
+00:16:21,870 --> 00:16:26,160
+I'm going to skip the the project so far I'm going to give you the code anyways.
+
+264
+00:16:26,170 --> 00:16:28,750
+It's going to everything is going to be at get help a get help.
+
+265
+00:16:29,100 --> 00:16:31,790
+And let's go to the next bonus section.
+

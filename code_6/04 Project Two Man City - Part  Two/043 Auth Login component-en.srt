@@ -1,0 +1,808 @@
+1
+00:00:00,710 --> 00:00:01,030
+All right.
+
+2
+00:00:01,030 --> 00:00:03,010
+So they home which is pretty much finished.
+
+3
+00:00:03,140 --> 00:00:08,180
+There's nothing else we need to do now the next thing is going to be creating a log in.
+
+4
+00:00:08,210 --> 00:00:15,530
+If I go to the final project you know this is what is on a different port and I go to for Shlash sign
+
+5
+00:00:15,660 --> 00:00:21,890
+n we get you know the place log in and we will be able to enter an e-mail and a password and it will
+
+6
+00:00:21,890 --> 00:00:28,400
+go to the database check if we have a user on that database we can enable authentication.
+
+7
+00:00:28,550 --> 00:00:34,610
+And of course if the user is on the database of the you know our users if it's OK we're going to let
+
+8
+00:00:34,610 --> 00:00:36,210
+the user and if not of course.
+
+9
+00:00:36,240 --> 00:00:36,540
+OK.
+
+10
+00:00:36,620 --> 00:00:41,480
+If not of course we going to let the user out of course.
+
+11
+00:00:41,730 --> 00:00:41,980
+OK.
+
+12
+00:00:42,020 --> 00:00:48,830
+So if we go to authentication if we go to firebase and we go to authentication of course we get that
+
+13
+00:00:48,830 --> 00:00:50,660
+we get this just like this.
+
+14
+00:00:50,840 --> 00:00:57,440
+And I'm going to say OK when we get an AD user and whatever version of this is OK and it says to add
+
+15
+00:00:57,440 --> 00:01:03,380
+users man it manually enabled password and password e-mail and sign in Methot.
+
+16
+00:01:03,500 --> 00:01:11,210
+So by default we need to provide firebase to tell firebase what kind of what kind of method to be using
+
+17
+00:01:11,210 --> 00:01:12,930
+for signing in users.
+
+18
+00:01:12,980 --> 00:01:20,600
+Because firebase they give you several waste to you know log in a user or log out a user we can use
+
+19
+00:01:20,600 --> 00:01:22,640
+email and password by phone.
+
+20
+00:01:22,710 --> 00:01:25,510
+You know they have an Gool connector.
+
+21
+00:01:25,550 --> 00:01:31,340
+You know we can sign end with a Google account with Facebook and you know whatever for now we're going
+
+22
+00:01:31,340 --> 00:01:37,020
+to use does want to use e-mail and password so I can get email going to enable.
+
+23
+00:01:37,100 --> 00:01:40,610
+And for now I'm going to say just this.
+
+24
+00:01:40,730 --> 00:01:41,600
+All right.
+
+25
+00:01:41,600 --> 00:01:48,170
+So if we go to users we can manually add users so I'm going to do that right now I'm going to add Francis
+
+26
+00:01:48,230 --> 00:01:56,360
+at G-mail that come and are going to add a password very simple password pass word 1 to 3 that's the
+
+27
+00:01:56,360 --> 00:01:57,480
+password.
+
+28
+00:01:57,680 --> 00:02:02,780
+So I'm going to add the user of course they will need a token and everything else will hash the passwords
+
+29
+00:02:02,810 --> 00:02:03,820
+and everything else.
+
+30
+00:02:03,830 --> 00:02:05,250
+This is the user ID.
+
+31
+00:02:05,450 --> 00:02:12,020
+So now if you want to connect and check if the user can log in to this you're going to do it from here.
+
+32
+00:02:12,080 --> 00:02:13,370
+We don't have it so far.
+
+33
+00:02:13,370 --> 00:02:14,720
+We get it created right now.
+
+34
+00:02:14,840 --> 00:02:17,380
+So let's go back to our project first.
+
+35
+00:02:17,570 --> 00:02:19,550
+And this log in section.
+
+36
+00:02:19,550 --> 00:02:24,230
+This one is going to be pretty pretty similar with that right here.
+
+37
+00:02:24,320 --> 00:02:29,180
+So we can do copy paste of a lot of things on the next section on the next section now and the next
+
+38
+00:02:29,180 --> 00:02:36,680
+project begin to use a different way of sign an end of this a big forms and the reset forms and everything
+
+39
+00:02:36,680 --> 00:02:42,300
+else we will use it pretty much the same but on a different ways going to be much much nicer.
+
+40
+00:02:42,300 --> 00:02:42,740
+All right.
+
+41
+00:02:42,980 --> 00:02:44,700
+So first what do we need.
+
+42
+00:02:44,780 --> 00:02:46,390
+We need a route right.
+
+43
+00:02:46,400 --> 00:02:51,610
+We need a way to go to four SLAs sign in and get at least the screen.
+
+44
+00:02:51,770 --> 00:02:56,810
+So OK I'm going to go right here close everything we have home because home is finished and I'm going
+
+45
+00:02:56,810 --> 00:03:00,650
+to go to components and create of course a place for this.
+
+46
+00:03:00,740 --> 00:03:10,250
+So I'm going to call it sign n now inside assign n I will add an index that is of course sign in it's
+
+47
+00:03:10,250 --> 00:03:12,730
+going to be a reac classmates component.
+
+48
+00:03:12,950 --> 00:03:18,400
+So let me go and I'm going to change it to sign in.
+
+49
+00:03:18,410 --> 00:03:19,660
+All right.
+
+50
+00:03:19,760 --> 00:03:23,620
+Copy paste and say sign in doesn't matter right now.
+
+51
+00:03:23,860 --> 00:03:27,000
+OK so now of course we need to create a route.
+
+52
+00:03:27,020 --> 00:03:30,690
+We need to set the routes so we can listen for this route.
+
+53
+00:03:30,740 --> 00:03:38,960
+So I'm going to go to routes and I'm going to import import just like this and then sign in from that
+
+54
+00:03:38,960 --> 00:03:42,920
+forward slash components for Slash and sign in.
+
+55
+00:03:43,130 --> 00:03:47,720
+And of course I'm going to make a reference to this route so I'm going to copy the one we have right
+
+56
+00:03:47,720 --> 00:03:48,430
+now.
+
+57
+00:03:48,440 --> 00:03:56,000
+I'm going to go on top of this home route and of course I'm going to pass this sign in and the route
+
+58
+00:03:56,090 --> 00:03:59,100
+is going to be signed underscore in.
+
+59
+00:03:59,150 --> 00:04:00,300
+All right.
+
+60
+00:04:00,510 --> 00:04:02,250
+That is that.
+
+61
+00:04:02,270 --> 00:04:04,060
+Of course the application reloads.
+
+62
+00:04:04,100 --> 00:04:10,220
+And if I go to sign and of course we get this but if we inspect this we should be getting that you know
+
+63
+00:04:10,220 --> 00:04:13,970
+that sign and text inside of the main div..
+
+64
+00:04:14,090 --> 00:04:16,610
+So let me let me just try to find it.
+
+65
+00:04:16,610 --> 00:04:16,900
+There we go.
+
+66
+00:04:16,900 --> 00:04:18,110
+We get it right here.
+
+67
+00:04:18,190 --> 00:04:22,250
+And so we are able to render the route.
+
+68
+00:04:22,250 --> 00:04:28,130
+Now we need to do all the logic for you know showing what we are doing right now.
+
+69
+00:04:28,160 --> 00:04:32,870
+You know showing the the contents and the inputs and the everything else.
+
+70
+00:04:32,870 --> 00:04:37,550
+So just like the end role we have right here we need this state.
+
+71
+00:04:37,760 --> 00:04:42,710
+So I'm going to copy all of this and get a copy the state overall and leave and roll open because we're
+
+72
+00:04:42,710 --> 00:04:44,630
+going to do some copying from here.
+
+73
+00:04:45,030 --> 00:04:48,260
+And I'm going to go to sign in and I'm going to say OK.
+
+74
+00:04:48,380 --> 00:04:54,020
+So we want to get a state with the form error from success and inside form data we'll have an e-mail
+
+75
+00:04:54,380 --> 00:04:55,020
+right.
+
+76
+00:04:55,040 --> 00:04:57,230
+And for now everything else is the same.
+
+77
+00:04:57,230 --> 00:05:00,900
+The only thing the only thing right now is that we need a passport input.
+
+78
+00:05:00,900 --> 00:05:04,000
+So I'm going to copy this one I'm going to put a coma.
+
+79
+00:05:04,100 --> 00:05:09,230
+And of course I'm going to add one different one so this one is going to be password right.
+
+80
+00:05:09,240 --> 00:05:09,800
+Makes sense.
+
+81
+00:05:09,800 --> 00:05:14,070
+Passport and the element is still going to be unemployed.
+
+82
+00:05:14,180 --> 00:05:18,570
+The name of course is Passport input passport.
+
+83
+00:05:18,990 --> 00:05:25,670
+The type is going to be of course passport and enter your passport.
+
+84
+00:05:25,670 --> 00:05:26,560
+Right.
+
+85
+00:05:26,600 --> 00:05:28,900
+The validation it's not an e-mail.
+
+86
+00:05:29,480 --> 00:05:33,980
+And the only thing I'm going to be using right now is going to be required.
+
+87
+00:05:34,040 --> 00:05:39,380
+And of course we're still getting the ballot and the validation message now just like we did before.
+
+88
+00:05:39,380 --> 00:05:43,190
+We need to use the form fields we created on the roll you know.
+
+89
+00:05:43,370 --> 00:05:49,820
+So again going to grab grab the form fields and I'm going to put it right here at the top.
+
+90
+00:05:49,820 --> 00:05:52,250
+Now the location it's a little bit different.
+
+91
+00:05:52,340 --> 00:05:57,580
+We need to do dot dot force last July and then form fills.
+
+92
+00:05:57,830 --> 00:06:00,680
+Now just like here we are using the validate methods.
+
+93
+00:06:00,800 --> 00:06:03,890
+So I'm going to copy validate can it go right here.
+
+94
+00:06:03,950 --> 00:06:05,480
+Paste it at the bottom.
+
+95
+00:06:05,570 --> 00:06:07,960
+And again one directory down.
+
+96
+00:06:08,120 --> 00:06:09,710
+All right.
+
+97
+00:06:10,520 --> 00:06:13,720
+Of course if you reload the application nothing happens.
+
+98
+00:06:13,710 --> 00:06:19,400
+But we're not getting any errors in saying that we are not using this but you know it's a warning not
+
+99
+00:06:19,400 --> 00:06:20,120
+an error.
+
+100
+00:06:20,390 --> 00:06:20,860
+OK.
+
+101
+00:06:21,020 --> 00:06:27,440
+So now we need to start creating the lay out where are we going to be putting the input input the name
+
+102
+00:06:27,440 --> 00:06:30,210
+the username the e-mail actually and the password.
+
+103
+00:06:30,230 --> 00:06:32,050
+So I'm going to go to the render.
+
+104
+00:06:32,300 --> 00:06:38,390
+And of course going into this and inside I'm going to say class name and it's going to be container
+
+105
+00:06:39,200 --> 00:06:43,130
+can are there go inside of here.
+
+106
+00:06:43,130 --> 00:06:50,240
+Another div is going to put another div and the class for this one again is going to be sign in wrapper
+
+107
+00:06:50,990 --> 00:06:55,850
+class name sign an underscore wrapper.
+
+108
+00:06:55,880 --> 00:06:57,360
+No camel case.
+
+109
+00:06:57,710 --> 00:07:03,650
+And I'm going to add some styles to this I can add a margin.
+
+110
+00:07:03,650 --> 00:07:04,440
+There we go.
+
+111
+00:07:04,540 --> 00:07:09,140
+Margin and the margin is going to be 100 pixels.
+
+112
+00:07:09,140 --> 00:07:10,280
+Let me do it right.
+
+113
+00:07:10,310 --> 00:07:12,170
+There we go.
+
+114
+00:07:12,350 --> 00:07:16,190
+It's winter in my country so my house right now it's a little bit cold.
+
+115
+00:07:16,370 --> 00:07:19,210
+My hands are you know kind of frozen.
+
+116
+00:07:19,250 --> 00:07:27,830
+So of course we're going to get a form in the form if you remember we will add this on submit equals
+
+117
+00:07:27,980 --> 00:07:32,120
+and of course we will get a function just to function right.
+
+118
+00:07:32,150 --> 00:07:38,640
+And we will be passing that event function and we will call a function that calls this submit form.
+
+119
+00:07:38,900 --> 00:07:42,630
+Just like with the before mid form.
+
+120
+00:07:42,880 --> 00:07:43,460
+All right.
+
+121
+00:07:43,460 --> 00:07:46,250
+And of course who will be passing this event.
+
+122
+00:07:46,670 --> 00:07:50,190
+We don't have the submit form are going to be created right now.
+
+123
+00:07:50,330 --> 00:07:52,860
+So it's bad form opening close.
+
+124
+00:07:52,940 --> 00:07:56,170
+And for now that is inside the form.
+
+125
+00:07:56,240 --> 00:07:57,790
+Of course we will have a title.
+
+126
+00:07:57,950 --> 00:08:00,030
+So I have used an h.
+
+127
+00:08:00,050 --> 00:08:02,650
+So please log in.
+
+128
+00:08:02,690 --> 00:08:04,500
+All right let's see what we get.
+
+129
+00:08:06,390 --> 00:08:09,830
+All right so we get to get the log in when we close the console.
+
+130
+00:08:09,840 --> 00:08:11,110
+So please log in.
+
+131
+00:08:11,130 --> 00:08:13,630
+So now we need to add the form feels so right.
+
+132
+00:08:13,770 --> 00:08:20,610
+We kind of know this so I'm going to go to and roll back and go back to the bottom and right here we
+
+133
+00:08:20,610 --> 00:08:23,480
+have the form fill and it's pretty much the same one.
+
+134
+00:08:23,490 --> 00:08:29,190
+So going to copy this one and paste it right here on the bottom where you still have the idea of e-mail
+
+135
+00:08:29,400 --> 00:08:34,530
+the form data is is still the form data and we didn't have this update form so I'm going to go right
+
+136
+00:08:34,560 --> 00:08:38,960
+here and copy the name and create a function update form.
+
+137
+00:08:39,030 --> 00:08:40,170
+Right.
+
+138
+00:08:40,170 --> 00:08:43,380
+Of course we have one more field which is the password.
+
+139
+00:08:43,380 --> 00:08:46,600
+So copy paste and then password.
+
+140
+00:08:46,890 --> 00:08:47,620
+All right.
+
+141
+00:08:47,670 --> 00:08:54,380
+Now right here this that state that form data e-mail no is going to be passport and then changed.
+
+142
+00:08:54,390 --> 00:08:55,010
+Same thing.
+
+143
+00:08:55,020 --> 00:08:58,640
+Does that update form with the elements if we check it out.
+
+144
+00:08:58,730 --> 00:09:00,950
+Enter e-mail and enter password.
+
+145
+00:09:00,960 --> 00:09:07,260
+So we are get you know once you create one you know for the forms and everything else everything else
+
+146
+00:09:07,380 --> 00:09:09,100
+you know gets a little bit easier.
+
+147
+00:09:09,210 --> 00:09:12,690
+That's why it took us a long time to do this and roll.
+
+148
+00:09:12,690 --> 00:09:13,230
+All right.
+
+149
+00:09:13,320 --> 00:09:13,880
+So what else.
+
+150
+00:09:13,920 --> 00:09:14,830
+We need a button.
+
+151
+00:09:14,910 --> 00:09:21,720
+So are going to go back to enroll and you know copy the same button now instead of in roll.
+
+152
+00:09:21,750 --> 00:09:24,390
+Of course it's going to be in.
+
+153
+00:09:24,490 --> 00:09:24,930
+Right.
+
+154
+00:09:24,960 --> 00:09:25,640
+Makes sense.
+
+155
+00:09:25,740 --> 00:09:27,650
+So log in.
+
+156
+00:09:28,160 --> 00:09:28,820
+OK.
+
+157
+00:09:29,430 --> 00:09:31,120
+So far so good.
+
+158
+00:09:31,930 --> 00:09:37,780
+Now of course we need to fill the submit form and the update form right.
+
+159
+00:09:37,780 --> 00:09:38,230
+So OK.
+
+160
+00:09:38,290 --> 00:09:39,560
+So we have it right here.
+
+161
+00:09:39,610 --> 00:09:46,120
+So I'm going to go to enroll and go to the update form because we need to update the state just like
+
+162
+00:09:46,120 --> 00:09:46,940
+with it before.
+
+163
+00:09:47,110 --> 00:09:50,290
+Now what are we going to be using right here is the exact same thing.
+
+164
+00:09:50,290 --> 00:09:56,000
+So I'm going to copy this function going to go right here and pasted right here.
+
+165
+00:09:56,380 --> 00:09:58,880
+Now in theory if this works OK.
+
+166
+00:09:59,500 --> 00:10:04,780
+Whenever we go to here and we type something know we are getting everything and we are even getting
+
+167
+00:10:04,780 --> 00:10:05,560
+validation.
+
+168
+00:10:05,560 --> 00:10:08,640
+So again why typing all of this again.
+
+169
+00:10:08,650 --> 00:10:10,500
+We just need to copy paste.
+
+170
+00:10:10,700 --> 00:10:15,820
+Like totally for in the future we're going to use this in a different way so we will not be doing copy
+
+171
+00:10:16,120 --> 00:10:16,660
+pasting.
+
+172
+00:10:16,660 --> 00:10:18,370
+We're not going to copy paste.
+
+173
+00:10:18,370 --> 00:10:18,810
+All right.
+
+174
+00:10:19,060 --> 00:10:19,690
+So what is next.
+
+175
+00:10:19,690 --> 00:10:21,680
+We have the submit form right.
+
+176
+00:10:21,850 --> 00:10:22,230
+OK.
+
+177
+00:10:22,270 --> 00:10:23,710
+We go to submit form.
+
+178
+00:10:23,950 --> 00:10:26,280
+Let me go right here submit form.
+
+179
+00:10:26,320 --> 00:10:30,600
+We have this so I'm going to copy the whole segment for him for now.
+
+180
+00:10:32,130 --> 00:10:36,230
+I get to go to here submit form and paste it.
+
+181
+00:10:36,420 --> 00:10:40,830
+And of course a lot of things we are not going to really use which is to firebase and everything else
+
+182
+00:10:40,950 --> 00:10:41,950
+stays the same.
+
+183
+00:10:42,070 --> 00:10:48,410
+The only thing I did I did the I deleted the firebase request and for now that is it right now.
+
+184
+00:10:48,420 --> 00:10:49,420
+We're going to right here.
+
+185
+00:10:49,440 --> 00:10:50,400
+We're going to do.
+
+186
+00:10:50,400 --> 00:10:55,040
+We're going to send the request to find ways to check if the user is healthy and decayed and if not.
+
+187
+00:10:55,140 --> 00:10:56,810
+But first we're going to check.
+
+188
+00:10:56,940 --> 00:10:59,970
+We get everything we need inside data to submit.
+
+189
+00:10:59,970 --> 00:11:04,710
+So I'm going to do console log opening close data to submit.
+
+190
+00:11:04,710 --> 00:11:06,520
+We make this a little bit bigger.
+
+191
+00:11:06,870 --> 00:11:09,550
+So inspect.
+
+192
+00:11:09,590 --> 00:11:10,190
+There we go.
+
+193
+00:11:10,220 --> 00:11:17,330
+So if I go to console and I type whatever and then whatever doesn't matter I'm going to log in and we
+
+194
+00:11:17,330 --> 00:11:19,340
+get the e-mail and the password.
+
+195
+00:11:19,340 --> 00:11:20,120
+So all right.
+
+196
+00:11:20,150 --> 00:11:22,460
+So everything works ok.
+
+197
+00:11:22,520 --> 00:11:27,800
+Real simple like it's all there once we have this one all the logic for this one.
+
+198
+00:11:27,800 --> 00:11:30,210
+Everything else is just you know piece of cake.
+
+199
+00:11:30,590 --> 00:11:35,990
+Ok so now in the next section we're going to go to the next section and we will make this request we'll
+
+200
+00:11:35,990 --> 00:11:41,500
+make a request to firebase and check if the user needs really authenticated or not.
+
+201
+00:11:41,590 --> 00:11:48,260
+And if the user it's authenticated right if the e-mail and password are true we will send the user to
+
+202
+00:11:48,260 --> 00:11:51,770
+the admin dashboard that we don't have so far we can create it of course.
+

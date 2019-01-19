@@ -1,0 +1,648 @@
+1
+00:00:01,290 --> 00:00:06,960
+OK so now we going be talking about state and for re-act state it's kind of important.
+
+2
+00:00:07,050 --> 00:00:09,520
+So there's no easy way to understand this.
+
+3
+00:00:09,570 --> 00:00:11,640
+And if you don't completely get it don't worry.
+
+4
+00:00:11,670 --> 00:00:15,460
+We're going to use it the whole time so you can get it by practice.
+
+5
+00:00:15,480 --> 00:00:22,500
+So the state it's an object that serves us like a database so we can be can stored values we can check
+
+6
+00:00:22,500 --> 00:00:28,680
+for events you can pretty much control how the application behaves through state.
+
+7
+00:00:28,680 --> 00:00:33,070
+So remember we talked about functional components and class based components.
+
+8
+00:00:33,070 --> 00:00:40,060
+Well every time we create a class just like this one we have right here we get by default from re-act
+
+9
+00:00:40,380 --> 00:00:42,030
+a default state.
+
+10
+00:00:42,480 --> 00:00:49,630
+And if we have a functional component not like this one we don't have the ability to get a default state.
+
+11
+00:00:49,710 --> 00:00:53,920
+The functional components don't have state and they are stateless.
+
+12
+00:00:53,940 --> 00:01:00,920
+And you're going to hear that term a lot stateless but classes classmates based components have a state.
+
+13
+00:01:01,230 --> 00:01:03,900
+So how can we set a state.
+
+14
+00:01:04,110 --> 00:01:06,330
+So I'm going to say state just like this.
+
+15
+00:01:06,480 --> 00:01:10,270
+Just use the keyword state and this one is going to be equal to.
+
+16
+00:01:10,350 --> 00:01:12,870
+And we open and close an object.
+
+17
+00:01:12,990 --> 00:01:18,660
+So right here we can put whatever we want to say keyboard's just like an object and keywords is going
+
+18
+00:01:18,660 --> 00:01:19,530
+to start with.
+
+19
+00:01:19,650 --> 00:01:20,490
+Hello.
+
+20
+00:01:20,750 --> 00:01:21,520
+OK.
+
+21
+00:01:22,320 --> 00:01:24,390
+So the class starts.
+
+22
+00:01:24,510 --> 00:01:28,530
+We're going to set a default value for keywords inside the state.
+
+23
+00:01:28,540 --> 00:01:36,480
+So inside the render what I could do I can do a console log of this that state that keyboards just like
+
+24
+00:01:36,480 --> 00:01:37,630
+this.
+
+25
+00:01:37,710 --> 00:01:42,990
+So when the application starts it's going to recognize the state that's going to read the function and
+
+26
+00:01:42,990 --> 00:01:44,280
+then it's going to do the render.
+
+27
+00:01:44,280 --> 00:01:46,100
+And we can get the keyboards.
+
+28
+00:01:46,140 --> 00:01:46,910
+Hello.
+
+29
+00:01:47,070 --> 00:01:48,110
+So we get hello.
+
+30
+00:01:48,160 --> 00:01:48,980
+That's good.
+
+31
+00:01:49,320 --> 00:01:52,250
+But if you notice this is just it looks like an object.
+
+32
+00:01:52,380 --> 00:01:57,930
+So what's the difference between in between using this state and a regular object.
+
+33
+00:01:57,930 --> 00:02:04,420
+The thing is that if we change the state re-act is going to recognize that you're changing the state.
+
+34
+00:02:04,560 --> 00:02:09,950
+And since this is a special property it's going to render the application is going to say Oh OK.
+
+35
+00:02:09,960 --> 00:02:11,980
+So the dude changed the state.
+
+36
+00:02:12,090 --> 00:02:18,780
+So I'm going to re render the application because now for this keyboards we have a new Ballew.
+
+37
+00:02:18,780 --> 00:02:21,060
+That's the main idea of state.
+
+38
+00:02:21,450 --> 00:02:28,680
+So I'm going to commandeer the console and right here instead of doing the console log from the change
+
+39
+00:02:28,680 --> 00:02:33,150
+handler you know if I type something we are not getting anything on the console.
+
+40
+00:02:33,330 --> 00:02:34,940
+I want to change the state.
+
+41
+00:02:35,220 --> 00:02:42,330
+So in theory if I changed the state every time I type something on the input this render should render
+
+42
+00:02:42,390 --> 00:02:46,140
+again and we can get the new state of keywords.
+
+43
+00:02:46,950 --> 00:02:51,370
+So to set States we need to use a pretty fine method.
+
+44
+00:02:51,390 --> 00:02:57,980
+We need to use a special method but re-act is going to give us is going to be this dot and we use the
+
+45
+00:02:57,980 --> 00:03:03,940
+set state and of course Methot inside we need to pass an object.
+
+46
+00:03:03,990 --> 00:03:07,810
+And now we need to make a reference of whatever value we want to change.
+
+47
+00:03:07,830 --> 00:03:13,500
+So we are going to say keyboard's now every time we type something keyboard's is going to be equal to
+
+48
+00:03:13,590 --> 00:03:18,630
+event the target value which is equal to whatever we are typing right here.
+
+49
+00:03:18,900 --> 00:03:23,570
+So I'm going to copy this and paste it down here.
+
+50
+00:03:23,730 --> 00:03:27,050
+Now if I type something we're going to get an error.
+
+51
+00:03:27,480 --> 00:03:31,190
+And remember I told you about the bind property.
+
+52
+00:03:31,290 --> 00:03:31,770
+OK.
+
+53
+00:03:31,980 --> 00:03:37,920
+I'm going to use it right now and at the end of the section I can explain why I'm using bind and then
+
+54
+00:03:37,920 --> 00:03:40,220
+this.
+
+55
+00:03:40,740 --> 00:03:42,900
+So the application reloads.
+
+56
+00:03:42,940 --> 00:03:49,050
+So if I type something is going to go to the change handler This is when it's going to set the state.
+
+57
+00:03:49,120 --> 00:03:53,210
+And since you're setting a new state the application is going to read render.
+
+58
+00:03:53,440 --> 00:03:54,100
+OK.
+
+59
+00:03:54,430 --> 00:03:58,890
+So I'm going to type an F and we are getting the value it's doing this cancel.
+
+60
+00:03:58,900 --> 00:04:00,540
+So he's doing the render again.
+
+61
+00:04:00,550 --> 00:04:02,840
+Let me make this a little bit smaller.
+
+62
+00:04:04,700 --> 00:04:06,140
+Not like that.
+
+63
+00:04:07,050 --> 00:04:07,750
+There we go.
+
+64
+00:04:08,000 --> 00:04:16,620
+So right now if I type something else f a and this console log it's doing the FAA.
+
+65
+00:04:16,790 --> 00:04:20,850
+If I type on our air on our sorry.
+
+66
+00:04:21,090 --> 00:04:22,140
+We're getting far.
+
+67
+00:04:22,210 --> 00:04:23,120
+OK that's good.
+
+68
+00:04:23,120 --> 00:04:29,660
+So every time we type something and we set the state react we renders it's not reloading the page is
+
+69
+00:04:29,660 --> 00:04:31,170
+just rendering the.
+
+70
+00:04:31,190 --> 00:04:32,620
+This piece of code.
+
+71
+00:04:32,700 --> 00:04:33,250
+Good.
+
+72
+00:04:33,350 --> 00:04:33,970
+OK.
+
+73
+00:04:34,400 --> 00:04:39,660
+So now let me explain you a little bit about the scientists.
+
+74
+00:04:39,950 --> 00:04:43,870
+OK so let me explain you what the mind is doing right here.
+
+75
+00:04:43,910 --> 00:04:45,370
+So we are.
+
+76
+00:04:45,530 --> 00:04:50,310
+Let me just first delete this and see that error message again.
+
+77
+00:04:50,450 --> 00:04:56,040
+I'm going to type a name and we're getting cannot read properly set state of undefined.
+
+78
+00:04:56,540 --> 00:04:57,160
+OK.
+
+79
+00:04:57,590 --> 00:05:01,690
+We're just invoking we are calling this function whenever we make an odd change.
+
+80
+00:05:01,700 --> 00:05:02,290
+That's good.
+
+81
+00:05:02,480 --> 00:05:04,790
+So it's going to go all the way to the top.
+
+82
+00:05:04,880 --> 00:05:08,140
+Inside the function and it's going to say this.
+
+83
+00:05:08,450 --> 00:05:14,810
+Now whenever we use a function just like this whenever we make a reference to this it's not going to
+
+84
+00:05:14,810 --> 00:05:15,890
+be declasse.
+
+85
+00:05:15,920 --> 00:05:20,300
+It's not the class header is going to be this function.
+
+86
+00:05:20,300 --> 00:05:29,360
+So whenever we use bind does we're telling that function that whenever we are saying this and this function
+
+87
+00:05:29,360 --> 00:05:33,730
+we are saying that whenever we use this keyboard inside of the function.
+
+88
+00:05:33,720 --> 00:05:41,120
+This means the actual class you know means the parent component and not the actual function.
+
+89
+00:05:41,120 --> 00:05:43,210
+That's why we're doing bind this.
+
+90
+00:05:43,280 --> 00:05:49,090
+So we're telling that whenever we use this inside of the function it means the class.
+
+91
+00:05:49,160 --> 00:05:56,060
+So since the class has the said State method we didn't get an error message it's working because the
+
+92
+00:05:56,060 --> 00:05:58,080
+said state it is defined.
+
+93
+00:05:58,280 --> 00:06:03,950
+OK so now the thing is that you're going to crawl the Web maybe in the future you're going to see some
+
+94
+00:06:04,010 --> 00:06:08,720
+other examples of react and you're going to find this on a different way.
+
+95
+00:06:08,720 --> 00:06:13,080
+You're not going to see the bind this and you're not going to understand why.
+
+96
+00:06:13,380 --> 00:06:15,310
+So I'm going the mind is.
+
+97
+00:06:15,580 --> 00:06:18,400
+And of course it's not going to work again.
+
+98
+00:06:18,770 --> 00:06:24,330
+So what can we use we can to use a fat Aro function instead of a function.
+
+99
+00:06:24,350 --> 00:06:29,610
+Now with iOS 6 the fat Aro functions are really really smart.
+
+100
+00:06:29,630 --> 00:06:36,980
+They know that whenever you make a reference to this you're meeting the class and not the actual the
+
+101
+00:06:36,980 --> 00:06:38,850
+actual function.
+
+102
+00:06:39,230 --> 00:06:42,040
+So if I just check again it's going to work.
+
+103
+00:06:42,110 --> 00:06:43,670
+So this is working.
+
+104
+00:06:43,700 --> 00:06:50,270
+So in the future you should avoid using bind and use the new method which is going to be a arrow function
+
+105
+00:06:50,570 --> 00:06:51,050
+bind.
+
+106
+00:06:51,050 --> 00:06:52,990
+It's from the old call.
+
+107
+00:06:53,120 --> 00:06:56,310
+You can still use it for a few other things.
+
+108
+00:06:56,450 --> 00:07:00,800
+But if you can use a find arrow function that it's better.
+
+109
+00:07:00,800 --> 00:07:05,990
+Now I'm telling you this again because you're going to find some examples with mind and you're not going
+
+110
+00:07:05,990 --> 00:07:08,150
+to know what to do if you don't know this.
+
+111
+00:07:08,540 --> 00:07:10,730
+OK so what's next next.
+
+112
+00:07:10,920 --> 00:07:16,730
+All the things that you can find inside the Web is going to be something like this you're going to find
+
+113
+00:07:16,730 --> 00:07:24,470
+a constructor then inside you can have a super And then inside you can have the set state just like
+
+114
+00:07:24,470 --> 00:07:30,080
+this and inside it instead of a state you're going to find this that state.
+
+115
+00:07:30,090 --> 00:07:30,710
+So OK.
+
+116
+00:07:30,710 --> 00:07:35,260
+And inside here I'm going to have something like probably going to be talking about props in a minute.
+
+117
+00:07:35,260 --> 00:07:36,010
+Don't worry.
+
+118
+00:07:36,500 --> 00:07:40,090
+So if I try this something like this it's still going to work.
+
+119
+00:07:40,280 --> 00:07:46,030
+So what this is doing and this is related to the previous section with when we were when we spoke about
+
+120
+00:07:46,600 --> 00:07:48,330
+IOS 6 constructor.
+
+121
+00:07:48,560 --> 00:07:55,860
+So this class it's starting and we are extending component and right here we are creating our own constructor
+
+122
+00:07:56,360 --> 00:08:01,700
+and right here we are bringing whatever prompts whatever values we get from components.
+
+123
+00:08:01,730 --> 00:08:08,720
+And this case prompts and then we are setting a new property for this constructor.
+
+124
+00:08:08,720 --> 00:08:12,140
+So we are adding this state to the prototype.
+
+125
+00:08:12,140 --> 00:08:17,810
+Now the thing is that whenever you react the state it's already on the prototype of whatever you are
+
+126
+00:08:17,810 --> 00:08:18,580
+extending.
+
+127
+00:08:18,740 --> 00:08:21,210
+So there's no need to do set state.
+
+128
+00:08:21,620 --> 00:08:29,000
+So I was I use this a lot in the past and I'm not using it right now not just using it a lot it's because
+
+129
+00:08:29,060 --> 00:08:32,270
+state it's already defined inside the components.
+
+130
+00:08:32,480 --> 00:08:39,870
+It's already in size so there's no need to do the constructor unless you really need for some reason.
+
+131
+00:08:39,890 --> 00:08:42,680
+So if we type this it's going to work.
+
+132
+00:08:42,680 --> 00:08:47,230
+So you can manage and you can use state for whatever you want.
+
+133
+00:08:47,240 --> 00:08:51,800
+I'm going to delete the hello I'm going to leave the key words empty and I can add a title just like
+
+134
+00:08:51,800 --> 00:08:52,830
+this.
+
+135
+00:08:52,860 --> 00:08:59,300
+Let's say that whenever the application loads you want to have some content text right here that maybe
+
+136
+00:08:59,300 --> 00:09:01,930
+it's going to come from a database.
+
+137
+00:09:02,240 --> 00:09:07,480
+So this title is maybe the key words something like that something really dumb.
+
+138
+00:09:07,490 --> 00:09:11,230
+The keywords are common.
+
+139
+00:09:11,270 --> 00:09:15,440
+So instead of of course coma because this is an object.
+
+140
+00:09:15,560 --> 00:09:23,480
+So instead of putting right here maybe creating a div that says the title is whatever you're going to
+
+141
+00:09:23,540 --> 00:09:25,940
+just call this that.
+
+142
+00:09:26,040 --> 00:09:33,830
+Probs sorry not prop's this state and that title just like that and this is going to print whatever
+
+143
+00:09:33,980 --> 00:09:41,670
+you have inside the state it of course if the state changes the application is going to render and you're
+
+144
+00:09:41,670 --> 00:09:50,340
+going to have that does that state just like that this state and then keyboard's.
+
+145
+00:09:50,510 --> 00:09:56,990
+And whenever I type something we renderers type anay type something is going to rerun under anti-body
+
+146
+00:09:57,470 --> 00:09:59,260
+and so on and so on.
+
+147
+00:09:59,270 --> 00:10:03,290
+So no state it's really useful for us.
+
+148
+00:10:03,380 --> 00:10:09,350
+But the thing is that whenever you use state it's kind of a it's going to be a little bit harder to
+
+149
+00:10:09,670 --> 00:10:10,690
+maintain.
+
+150
+00:10:10,730 --> 00:10:18,800
+So you should always avoid using class components with states because they use more memory and they
+
+151
+00:10:18,800 --> 00:10:25,670
+are hard to maintain if you can use a functional components if you can use a functional component that's
+
+152
+00:10:25,670 --> 00:10:26,110
+better.
+
+153
+00:10:26,170 --> 00:10:33,500
+No that's less code and less logic for you or for your application but of course it's not bad using
+
+154
+00:10:33,500 --> 00:10:34,270
+class components.
+
+155
+00:10:34,280 --> 00:10:36,360
+If you really need it you can use it.
+
+156
+00:10:36,380 --> 00:10:43,070
+No problem but you always try to think a little bit more about what you're going to do and what you
+
+157
+00:10:43,220 --> 00:10:47,910
+need instead of using a class or instead of using a functional component.
+
+158
+00:10:48,290 --> 00:10:49,710
+OK that's good.
+
+159
+00:10:49,820 --> 00:10:51,380
+Let's keep moving forward.
+
+160
+00:10:51,380 --> 00:10:53,380
+Remember I said props right here.
+
+161
+00:10:53,390 --> 00:10:57,530
+And then I made a mistake saying this that prompts well on the next section we're going to be talking
+
+162
+00:10:57,530 --> 00:10:58,360
+about props.
+
