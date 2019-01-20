@@ -4,9 +4,19 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
+import SideDrawer from './SideDrawer';
 
 class Header extends Component {
+  state = {
+    right: false
+  }
+
+  toggleClose = open => {
+    this.setState({right: open})
+  }
+
   render() {
+    console.log(this.state)
     return (
       <AppBar position="fixed" 
       style={{
@@ -21,6 +31,12 @@ class Header extends Component {
             </div>
             <div className="header_logo_title">Musical Events</div>
           </div>
+          <IconButton color="inherit" aria-label="Menu" onClick={
+         () => this.toggleClose(true)
+          }>
+            <MenuIcon />
+          </IconButton>
+          <SideDrawer onClose={value =>this.toggleClose(value)} open={this.state.right}/>
         </Toolbar>
       </AppBar>
     )
