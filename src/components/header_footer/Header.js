@@ -8,7 +8,18 @@ import SideDrawer from './SideDrawer';
 
 class Header extends Component {
   state = {
-    right: false
+    right: false,
+    showHeader: false
+  }
+
+  componentDidMount(){
+    window.addEventListener("scroll", ()=>{
+      if(window.scrollY > 0){
+        this.setState({showHeader: true})
+      }else{
+        this.setState({showHeader: false})
+      }
+    })
   }
 
   toggleClose = open => {
@@ -20,7 +31,7 @@ class Header extends Component {
     return (
       <AppBar position="fixed" 
       style={{
-        backgroundColor: '#2f2f2f',
+        backgroundColor: this.state.showHeader ? '#2f2f2f' : 'transparent',
         boxShadow: 'none',
         padding: '10px 0px'
       }}>
