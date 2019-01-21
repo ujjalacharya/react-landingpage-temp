@@ -4,6 +4,8 @@ import slideone from "../../resources/images/slide_one.jpg";
 import slidetwo from "../../resources/images/slide_two.jpg";
 import slidethree from "../../resources/images/slide_three.jpg";
 
+import TimeUntil from './TimeUntil';
+
 class Carrousel extends React.Component {
   render() {
     const settings = {
@@ -50,6 +52,7 @@ class Carrousel extends React.Component {
             />
           </div>
         </Slider>
+        <TimeUntil />
       </div>
     );
   }
